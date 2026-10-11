@@ -528,7 +528,7 @@ function NebulaGUI:CreateWindow(opts)
         end
     end
 
-    -- Conectar los botones del header
+        -- Conectar los botones del header
     minimizeBtn.MouseButton1Click:Connect(function()
         self:SetMinimized(not self.Minimized)
     end)
@@ -536,23 +536,8 @@ function NebulaGUI:CreateWindow(opts)
     closeBtn.MouseButton1Click:Connect(function()
         self:Destroy()
     end)
-        else
-            bubble.Visible = false
-            root.Visible = true
-            root.Size = UDim2.fromOffset(0, 0)
-            root.BackgroundTransparency = 1
-            tween(root, 0.25, {
-                Size = self.Size,
-                BackgroundTransparency = 0.05,
-            }, Enum.EasingStyle.Back)
-            tween(rootStroke, 0.25, { Transparency = 0.4 })
-            tween(header, 0.25, { BackgroundTransparency = 0.3 })
-            tween(titleLbl, 0.25, { TextTransparency = 0 })
-            tween(subtitleLbl, 0.25, { TextTransparency = 0 })
-            tween(tabBar, 0.25, { BackgroundTransparency = 0.6 })
-            tween(content, 0.25, { BackgroundTransparency = 0 })
-        end
-    end
+
+    function self:Destroy()
 
     function self:Destroy()
         screen:Destroy()
