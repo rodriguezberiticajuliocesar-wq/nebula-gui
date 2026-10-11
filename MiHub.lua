@@ -537,7 +537,7 @@ function NebulaGUI:CreateWindow(opts)
 
         local btn = create("TextButton", {
             Name = "Tab_" .. name,
-            Size = UDim2.fromOffset(isMobile() and 76 or 88, 22),
+            Size = UDim2.fromOffset(isMobile() and 62 or 72, 22),
             BackgroundColor3 = Theme.PanelLight,
             BackgroundTransparency = 0.2,
             BorderSizePixel = 0,
