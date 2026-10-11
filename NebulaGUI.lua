@@ -1,4 +1,10 @@
---[[ NebulaGUI v1.0 — Parte A ]]
+--[[
+    ═══════════════════════════════════════════════════════════════
+    NebulaGUI v1.0 — Librería de interfaz para Roblox
+    Repositorio: github.com/rodriguezberiticajuliocesar-wq/nebula-gui
+    Made by Honen
+    ═══════════════════════════════════════════════════════════════
+]]
 
 local NebulaGUI = {}
 NebulaGUI.__index = NebulaGUI
@@ -79,6 +85,7 @@ local function isMobile()
     return touch or vp.X < 900
 end
 
+-- ═══ NOTIFICACIONES ═══
 local Notify = {}
 local notifyContainer = nil
 
@@ -170,6 +177,7 @@ end
 
 NebulaGUI.Notify = Notify
 
+-- ═══ CLASE TAB ═══
 local Tab = {}
 Tab.__index = Tab
 
@@ -711,43 +719,7 @@ function Tab:AddDropdown(text, options, callback, default, icon)
     }
 end
 
--- Exportar para Parte B
-_G.NebulaGUI_PartA = {
-    NebulaGUI = NebulaGUI,
-    Services = Services,
-    Theme = Theme,
-    Fonts = Fonts,
-    create = create,
-    corner = corner,
-    stroke = stroke,
-    tween = tween,
-    isMobile = isMobile,
-    Tab = Tab,
-    LocalPlayer = LocalPlayer,
-    PlayerGui = PlayerGui,
-}
-
-return "OK_A"
---[[ NebulaGUI v1.0 — Parte B ]]
-
-local A = _G.NebulaGUI_PartA
-if not A then
-    warn("[NebulaGUI_B] Falta Parte A")
-    return
-end
-
-local NebulaGUI = A.NebulaGUI
-local Services = A.Services
-local Theme = A.Theme
-local Fonts = A.Fonts
-local create = A.create
-local corner = A.corner
-local stroke = A.stroke
-local tween = A.tween
-local isMobile = A.isMobile
-local LocalPlayer = A.LocalPlayer
-local PlayerGui = A.PlayerGui
-
+-- ═══ CLASE WINDOW ═══
 local Window = {}
 Window.__index = Window
 
@@ -1102,7 +1074,7 @@ function NebulaGUI:CreateWindow(opts)
             Page = page,
             Layout = pageLayout,
             _order = 0,
-        }, A.Tab)
+        }, Tab)
 
         btn.MouseButton1Click:Connect(function()
             self:SelectTab(name)
