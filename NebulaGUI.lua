@@ -526,8 +526,9 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         BackgroundColor3 = Theme.Row,
         BackgroundTransparency = 0.2,
         BorderSizePixel = 0,
-        ClipsDescendants = true,
+        ClipsDescendants = false,
         LayoutOrder = self:_nextOrder(),
+        ZIndex = 10,
     }, self.Page)
     corner(holder, 8)
     stroke(holder, Theme.Border, 1, 0.7)
@@ -537,6 +538,7 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         BackgroundTransparency = 1,
         Text = "",
         AutoButtonColor = false,
+        ZIndex = 11,
     }, holder)
 
     create("TextLabel", {
@@ -548,6 +550,7 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         Font = Fonts.Body,
         TextSize = 12,
         TextXAlignment = Enum.TextXAlignment.Left,
+        ZIndex = 11,
     }, header)
 
     local valueLbl = create("TextLabel", {
@@ -561,6 +564,7 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         TextSize = 11,
         TextXAlignment = Enum.TextXAlignment.Right,
         TextTruncate = Enum.TextTruncate.AtEnd,
+        ZIndex = 11,
     }, header)
 
     local arrow = create("TextLabel", {
@@ -572,21 +576,26 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         TextColor3 = Theme.AccentLight,
         Font = Fonts.Body,
         TextSize = 10,
+        ZIndex = 11,
     }, header)
 
     local optionsFrame = create("ScrollingFrame", {
         Position = UDim2.fromOffset(0, 34),
         Size = UDim2.new(1, 0, 0, 0),
-        BackgroundTransparency = 1,
+        BackgroundColor3 = Theme.Background,
+        BackgroundTransparency = 0.05,
         BorderSizePixel = 0,
         ScrollBarThickness = 3,
         ScrollBarImageColor3 = Theme.Accent,
         CanvasSize = UDim2.new(0, 0, 0, 0),
+        ZIndex = 20,
     }, holder)
+    corner(optionsFrame, 8)
+    stroke(optionsFrame, Theme.AccentLight, 1, 0.4)
     create("UIPadding", {
         PaddingLeft = UDim.new(0, 6),
         PaddingRight = UDim.new(0, 6),
-        PaddingTop = UDim.new(0, 2),
+        PaddingTop = UDim.new(0, 4),
         PaddingBottom = UDim.new(0, 4),
     }, optionsFrame)
     local optsLayout = create("UIListLayout", {
@@ -613,6 +622,7 @@ function Tab:AddDropdown(text, options, callback, default, icon)
                 TextXAlignment = Enum.TextXAlignment.Left,
                 AutoButtonColor = false,
                 LayoutOrder = i,
+                ZIndex = 21,
             }, optionsFrame)
             corner(optBtn, 6)
             create("UIPadding", { PaddingLeft = UDim.new(0, 8) }, optBtn)
@@ -642,11 +652,15 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         isOpen = open
         local targetH = 34
         if isOpen then
-            local maxH = math.min(140, #options * 28 + 10)
+            local maxH = math.min(160, #options * 28 + 10)
             targetH = 34 + maxH
             tween(arrow, 0.15, { Rotation = 180 })
+            holder.ZIndex = 100
+            optionsFrame.ZIndex = 100
         else
             tween(arrow, 0.15, { Rotation = 0 })
+            holder.ZIndex = 10
+            optionsFrame.ZIndex = 20
         end
         tween(optionsFrame, 0.18, { Size = UDim2.new(1, 0, 0, targetH - 34) })
         tween(holder, 0.18, { Size = UDim2.new(1, 0, 0, targetH) })
@@ -819,6 +833,7 @@ function NebulaGUI:CreateWindow(opts)
         Minimized = false,
         Size = size,
         _tabCounter = 0,
+        _bubbleMoved = false,
     }, Window)
 
     local dragging = false
@@ -903,6 +918,7 @@ function NebulaGUI:CreateWindow(opts)
                 bStartPos.X.Scale, bStartPos.X.Offset + delta.X,
                 bStartPos.Y.Scale, bStartPos.Y.Offset + delta.Y
             )
+            self._bubbleMoved = true
         end
     end)
 
@@ -936,7 +952,9 @@ function NebulaGUI:CreateWindow(opts)
             tween(header, 0.2, { BackgroundTransparency = 1 })
             tween(tabBar, 0.2, { BackgroundTransparency = 1 })
             tween(content, 0.2, { BackgroundTransparency = 1 })
-            bubble.Position = root.Position
+            if not self._bubbleMoved then
+                bubble.Position = root.Position
+            end
             bubble.Visible = true
             task.delay(0.15, function()
                 if self.Minimized then
@@ -948,12 +966,15 @@ function NebulaGUI:CreateWindow(opts)
             bubble.Visible = false
             root.Visible = true
             root.Size = UDim2.fromOffset(0, 0)
+            root.BackgroundColor3 = Theme.Background
             root.BackgroundTransparency = 1
             tween(root, 0.25, { Size = self.Size, BackgroundTransparency = 0.05 }, Enum.EasingStyle.Back)
             tween(rootStroke, 0.25, { Transparency = 0.4 })
             tween(header, 0.25, { BackgroundTransparency = 0.3 })
             tween(tabBar, 0.25, { BackgroundTransparency = 0.6 })
             tween(content, 0.25, { BackgroundTransparency = 0 })
+            local grad = root:FindFirstChildOfClass("UIGradient")
+            if grad then grad.Enabled = true end
         end
     end
 
@@ -1058,9 +1079,5 @@ function NebulaGUI:CreateWindow(opts)
 
     return self
 end
-
--- ═══ FALTA ESTO: definir Window ANTES de usarlo ═══
-Window = Window or {}
-Window.__index = Window
 
 return NebulaGUI
