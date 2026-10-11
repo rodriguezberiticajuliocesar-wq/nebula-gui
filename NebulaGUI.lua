@@ -998,16 +998,27 @@ function NebulaGUI:CreateWindow(opts)
         else
             bubble.Visible = false
             root.Visible = true
-            root.Size = UDim2.fromOffset(0, 0)
-            root.BackgroundColor3 = Theme.Background
-            root.BackgroundTransparency = 1
-            tween(root, 0.25, { Size = self.Size, BackgroundTransparency = 0 }, Enum.EasingStyle.Back)
-            tween(rootStroke, 0.25, { Transparency = 0.4 })
-            tween(header, 0.25, { BackgroundTransparency = 0.3 })
-            tween(tabBar, 0.25, { BackgroundTransparency = 0.6 })
-            tween(content, 0.25, { BackgroundTransparency = 0 })
+            -- IMPORTANTE: fijar color y transparencia ANTES de los tweens
+            root.BackgroundColor3 = Color3.fromRGB(14, 10, 22)
+            root.BackgroundTransparency = 0
+            root.Size = self.Size
+            rootStroke.Transparency = 0.4
+            header.BackgroundTransparency = 0.3
+            tabBar.BackgroundTransparency = 0.6
+            content.BackgroundTransparency = 0
+            -- Resetear el gradiente
             local grad = root:FindFirstChildOfClass("UIGradient")
-            if grad then grad.Enabled = true end
+            if grad then
+                grad.Enabled = true
+                grad.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(14, 10, 22)),
+                    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(18, 12, 28)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(14, 10, 22)),
+                })
+            end
+            -- NO hacemos tween de BackgroundColor3 ni BackgroundTransparency
+            -- Solo animamos el tamaño
+            local scaleIn = tween(root, 0.25, { Size = self.Size }, Enum.EasingStyle.Back)
         end
     end
 
