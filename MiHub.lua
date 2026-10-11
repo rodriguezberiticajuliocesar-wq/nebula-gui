@@ -1,13 +1,8 @@
 --[[
-    ═══════════════════════════════════════════════════════
-    HonenxWhite Reborn — Made by Honen
-    Todo en un archivo (librería NebulaGUI incluida)
-    ═══════════════════════════════════════════════════════
+    HonenxWhite Reborn — Parte 1/5
+    Librería NebulaGUI + ventana + tabs vacíos
 ]]
 
--- ═══════════════════════════════════════════════════════
--- [SECCIÓN 1] LIBRERÍA NebulaGUI v1.0
--- ═══════════════════════════════════════════════════════
 local NebulaGUI = {}
 NebulaGUI.__index = NebulaGUI
 
@@ -91,7 +86,6 @@ local function isMobile()
     return touch or vp.X < 900
 end
 
--- ═══ Notificaciones ═══
 local Notify = {}
 local notifyContainer = nil
 
@@ -199,7 +193,6 @@ local function createControlLabel(parent, text, icon)
     }, parent)
 end
 
--- ═══ Clase Window ═══
 local Window = {}
 Window.__index = Window
 
@@ -376,7 +369,6 @@ function NebulaGUI:CreateWindow(opts)
         _tabCounter = 0,
     }, Window)
 
-    -- Drag
     local dragging = false
     local dragStart, startPos
 
@@ -414,7 +406,6 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
-    -- Burbuja minimizar
     local bubble = create("TextButton", {
         Name = "Bubble",
         Size = UDim2.fromOffset(56, 56),
@@ -476,7 +467,6 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
-    -- Click burbuja (drag vs click)
     local clickGuard = false
     bubble.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1
@@ -499,7 +489,6 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
-    -- Función SetMinimized
     function self:SetMinimized(minimized)
         self.Minimized = minimized
         if minimized then
@@ -536,12 +525,10 @@ function NebulaGUI:CreateWindow(opts)
         end
     end
 
-    -- Función Destroy
     function self:Destroy()
         screen:Destroy()
     end
 
-    -- Conectar botones del header
     minimizeBtn.MouseButton1Click:Connect(function()
         self:SetMinimized(not self.Minimized)
     end)
@@ -550,7 +537,6 @@ function NebulaGUI:CreateWindow(opts)
         self:Destroy()
     end)
 
-    -- Añadir tab
     function self:AddTab(name, icon)
         self._tabCounter = self._tabCounter + 1
         local order = self._tabCounter
@@ -665,7 +651,6 @@ function NebulaGUI:CreateWindow(opts)
     return self
 end
 
--- ═══ Controles ═══
 function Window:AddLabel(text, icon)
     return create("TextLabel", {
         Size = UDim2.new(1, 0, 0, 20),
@@ -1146,12 +1131,12 @@ function Window:AddDropdown(text, options, callback, default, icon)
 end
 
 -- ═══════════════════════════════════════════════════════
--- [SECCIÓN 2] SCRIPT PRINCIPAL (HonenxWhite)
+-- SCRIPT PRINCIPAL — Parte 1: ventana + tabs (vacíos)
 -- ═══════════════════════════════════════════════════════
 
--- Anti-AFK
+local AntiAFKEnabled = true
 LocalPlayer.Idled:Connect(function()
-    if MainState and MainState.AntiAFK then
+    if AntiAFKEnabled then
         pcall(function()
             Services.VirtualUser:CaptureController()
             Services.VirtualUser:ClickButton2(Vector2.new(0, 0))
@@ -1160,14 +1145,12 @@ LocalPlayer.Idled:Connect(function()
     end
 end)
 
--- Crear ventana
 local win = NebulaGUI:CreateWindow({
     Title = "HonenxWhite | Reborn",
     Subtitle = "Made by Honen",
     Size = UDim2.fromOffset(820, 520),
 })
 
--- Tabs
 local Tabs = {
     Main      = win:AddTab("Main", "🏠"),
     Killing   = win:AddTab("Killing", "⚔️"),
@@ -1182,374 +1165,10 @@ local Tabs = {
     Info      = win:AddTab("Info", "ℹ️"),
 }
 
--- ═══ TAB: MAIN ═══
-
--- Estado del tab Main
-local MainState = {
-    AntiFling = { Enabled = false, BodyVelocity = nil, Connection = nil },
-    LockPosition = { Enabled = false, BodyPosition = nil, Position = nil, Connection = nil },
-    HidePets = false,
-    HidePopups = false,
-    WalkWater = { Enabled = false, Floor = nil, Connection = nil },
-    InfiniteJump = false,
-    Fly = { Enabled = false, Gyro = nil, Velocity = nil, Level = 10 },
-    AntiAFK = true,
-}
-
--- ═══ UTILIDADES ═══
-local function getCharacter()
-    return LocalPlayer.Character
-end
-
-local function getHumanoid()
-    local char = getCharacter()
-    return char and char:FindFirstChildOfClass("Humanoid")
-end
-
-local function getRoot()
-    local char = getCharacter()
-    return char and char:FindFirstChild("HumanoidRootPart")
-end
-
--- ═══ ANTI FLING ═══
-local function enableAntiFling()
-    local root = getRoot()
-    if not root then return end
-    if MainState.AntiFling.BodyVelocity and MainState.AntiFling.BodyVelocity.Parent then
-        MainState.AntiFling.BodyVelocity:Destroy()
-    end
-    local bv = Instance.new("BodyVelocity")
-    bv.Name = "Young0xAntiFling"
-    bv.MaxForce = Vector3.new(100000, 0, 100000)
-    bv.Velocity = Vector3.zero
-    bv.P = 1250
-    bv.Parent = root
-    MainState.AntiFling.BodyVelocity = bv
-end
-
-local function disableAntiFling()
-    if MainState.AntiFling.BodyVelocity then
-        MainState.AntiFling.BodyVelocity:Destroy()
-        MainState.AntiFling.BodyVelocity = nil
-    end
-end
-
--- ═══ LOCK POSITION ═══
-local function enableLockPosition()
-    local root = getRoot()
-    if not root then return end
-    MainState.LockPosition.Position = root.Position
-    if MainState.LockPosition.BodyPosition and MainState.LockPosition.BodyPosition.Parent then
-        MainState.LockPosition.BodyPosition:Destroy()
-    end
-    local bp = Instance.new("BodyPosition")
-    bp.Name = "Young0xLockPosition"
-    bp.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-    bp.Position = MainState.LockPosition.Position
-    bp.P = 100000
-    bp.Parent = root
-    MainState.LockPosition.BodyPosition = bp
-end
-
-local function disableLockPosition()
-    if MainState.LockPosition.BodyPosition then
-        MainState.LockPosition.BodyPosition:Destroy()
-        MainState.LockPosition.BodyPosition = nil
-    end
-    MainState.LockPosition.Position = nil
-end
-
--- ═══ HIDE PETS ═══
-local function applyHidePets(hide)
-    local char = getCharacter()
-    if not char then return end
-    for _, obj in ipairs(char:GetDescendants()) do
-        if obj:IsA("Model") and obj:FindFirstChild("petMovementScript", true) then
-            for _, part in ipairs(obj:GetDescendants()) do
-                if part:IsA("BasePart") then
-                    part.LocalTransparencyModifier = hide and 1 or 0
-                elseif part:IsA("Decal") or part:IsA("Texture") then
-                    part.Transparency = hide and 1 or 0
-                end
-            end
-        end
-    end
-end
-
--- ═══ WALK ON WATER ═══
-local function enableWalkWater()
-    if MainState.WalkWater.Floor then
-        MainState.WalkWater.Floor:Destroy()
-    end
-    local floor = Instance.new("Part")
-    floor.Name = "Young0xWaterFloor"
-    floor.Size = Vector3.new(2048, 1, 2048)
-    floor.Anchored = true
-    floor.CanCollide = true
-    floor.CanTouch = false
-    floor.CanQuery = false
-    floor.Transparency = 1
-    floor.CastShadow = false
-    floor.Position = Vector3.new(0, -9.5, 0)
-    floor.Parent = workspace
-    MainState.WalkWater.Floor = floor
-
-    MainState.WalkWater.Connection = Services.RunService.Heartbeat:Connect(function()
-        if not MainState.WalkWater.Enabled then return end
-        local root = getRoot()
-        if root and floor and floor.Parent then
-            local x = math.floor(root.Position.X / 256 + 0.5) * 256
-            local z = math.floor(root.Position.Z / 256 + 0.5) * 256
-            floor.Position = Vector3.new(x, -9.5, z)
-        end
-    end)
-end
-
-local function disableWalkWater()
-    if MainState.WalkWater.Connection then
-        MainState.WalkWater.Connection:Disconnect()
-        MainState.WalkWater.Connection = nil
-    end
-    if MainState.WalkWater.Floor then
-        MainState.WalkWater.Floor:Destroy()
-        MainState.WalkWater.Floor = nil
-    end
-end
-
--- ═══ FLY ═══
-local function enableFly()
-    local root = getRoot()
-    local humanoid = getHumanoid()
-    if not root or not humanoid then return end
-    if MainState.Fly.Gyro then MainState.Fly.Gyro:Destroy() end
-    if MainState.Fly.Velocity then MainState.Fly.Velocity:Destroy() end
-
-    local gyro = Instance.new("BodyGyro")
-    gyro.Name = "Young0xFlyGyro"
-    gyro.P = 9e4
-    gyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
-    gyro.CFrame = root.CFrame
-    gyro.Parent = root
-    MainState.Fly.Gyro = gyro
-
-    local bv = Instance.new("BodyVelocity")
-    bv.Name = "Young0xFlyVelocity"
-    bv.P = 1250
-    bv.MaxForce = Vector3.new(9e9, 9e9, 9e9)
-    bv.Velocity = Vector3.zero
-    bv.Parent = root
-    MainState.Fly.Velocity = bv
-end
-
-local function disableFly()
-    if MainState.Fly.Gyro then MainState.Fly.Gyro:Destroy(); MainState.Fly.Gyro = nil end
-    if MainState.Fly.Velocity then MainState.Fly.Velocity:Destroy(); MainState.Fly.Velocity = nil end
-end
-
--- Loop de Fly
-task.spawn(function()
-    while task.wait(0.1) do
-        if MainState.Fly.Enabled then
-            local root = getRoot()
-            local humanoid = getHumanoid()
-            local cam = workspace.CurrentCamera
-            if root and humanoid and cam then
-                if not MainState.Fly.Gyro or not MainState.Fly.Gyro.Parent then
-                    enableFly()
-                end
-                local speed = 160 + (math.clamp(MainState.Fly.Level, 1, 30) - 1) * 24
-                local move = Vector3.zero
-                if Services.UserInputService:IsKeyDown(Enum.KeyCode.W) then
-                    move = move + cam.CFrame.LookVector
-                end
-                if Services.UserInputService:IsKeyDown(Enum.KeyCode.S) then
-                    move = move - cam.CFrame.LookVector
-                end
-                if Services.UserInputService:IsKeyDown(Enum.KeyCode.D) then
-                    move = move + cam.CFrame.RightVector
-                end
-                if Services.UserInputService:IsKeyDown(Enum.KeyCode.A) then
-                    move = move - cam.CFrame.RightVector
-                end
-                if move.Magnitude < 0.05 and humanoid.MoveDirection.Magnitude > 0.05 then
-                    move = humanoid.MoveDirection
-                end
-                if move.Magnitude > 0 then move = move.Unit end
-
-                local vertical = 0
-                if Services.UserInputService:IsKeyDown(Enum.KeyCode.Space) then
-                    vertical = 1
-                elseif Services.UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then
-                    vertical = -1
-                end
-                humanoid.PlatformStand = true
-                MainState.Fly.Gyro.CFrame = cam.CFrame
-                MainState.Fly.Velocity.Velocity = move * speed + Vector3.new(0, vertical * speed, 0)
-            end
-        end
-    end
-end)
-
--- Loop de Lock Position (re-aplica si el character respawnea)
-task.spawn(function()
-    while task.wait(0.2) do
-        if MainState.LockPosition.Enabled and MainState.LockPosition.Position then
-            local root = getRoot()
-            if root then
-                if not MainState.LockPosition.BodyPosition or not MainState.LockPosition.BodyPosition.Parent then
-                    enableLockPosition()
-                else
-                    MainState.LockPosition.BodyPosition.Position = MainState.LockPosition.Position
-                end
-            end
-        end
-    end
-end)
-
--- Loop de Hide Pets (reaplica cuando aparecen nuevas)
-task.spawn(function()
-    while task.wait(0.5) do
-        if MainState.HidePets then
-            applyHidePets(true)
-        end
-    end
-end)
-
--- Re-aplicar todo al respawnear
-LocalPlayer.CharacterAdded:Connect(function()
-    task.wait(1)
-    if MainState.AntiFling.Enabled then enableAntiFling() end
-    if MainState.LockPosition.Enabled then enableLockPosition() end
-    if MainState.HidePets then applyHidePets(true) end
-end)
-
--- ═══ UI ═══
-Tabs.Main:AddSection("User Settings", "⚙️")
-
-Tabs.Main:AddSwitch("Anti Fling", function(state)
-    MainState.AntiFling.Enabled = state
-    if state then
-        enableAntiFling()
-        NebulaGUI.Notify.show("Anti Fling", "Activado", 2, "success")
-    else
-        disableAntiFling()
-        NebulaGUI.Notify.show("Anti Fling", "Desactivado", 2, "info")
-    end
-end)
-
-Tabs.Main:AddSwitch("Lock Position", function(state)
-    MainState.LockPosition.Enabled = state
-    if state then
-        enableLockPosition()
-        NebulaGUI.Notify.show("Lock Position", "Activado", 2, "success")
-    else
-        disableLockPosition()
-        NebulaGUI.Notify.show("Lock Position", "Desactivado", 2, "info")
-    end
-end)
-
-Tabs.Main:AddSwitch("Hide Pets", function(state)
-    MainState.HidePets = state
-    applyHidePets(state)
-    NebulaGUI.Notify.show("Hide Pets", state and "Activado" or "Desactivado", 2, state and "success" or "info")
-end)
-
-Tabs.Main:AddSwitch("Hide Popups", function(state)
-    MainState.HidePopups = state
-    -- Intenta ocultar popups del juego
-    pcall(function()
-        local gameGui = PlayerGui:FindFirstChild("gameGui")
-        if gameGui then
-            for _, obj in ipairs(gameGui:GetDescendants()) do
-                if obj:IsA("GuiObject") and obj.Name:lower():find("popup") then
-                    obj.Visible = not state
-                end
-            end
-        end
-    end)
-    NebulaGUI.Notify.show("Hide Popups", state and "Activado" or "Desactivado", 2, state and "success" or "info")
-end)
-
-Tabs.Main:AddSwitch("Walk on Water", function(state)
-    MainState.WalkWater.Enabled = state
-    if state then
-        enableWalkWater()
-        NebulaGUI.Notify.show("Walk on Water", "Activado", 2, "success")
-    else
-        disableWalkWater()
-        NebulaGUI.Notify.show("Walk on Water", "Desactivado", 2, "info")
-    end
-end)
-
-Tabs.Main:AddSwitch("Infinite Jump", function(state)
-    MainState.InfiniteJump = state
-    NebulaGUI.Notify.show("Infinite Jump", state and "Activado" or "Desactivado", 2, state and "success" or "info")
-end)
-
--- Infinite Jump connection
-Services.UserInputService.JumpRequest:Connect(function()
-    if MainState.InfiniteJump then
-        local humanoid = getHumanoid()
-        if humanoid then
-            humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-        end
-    end
-end)
-
-Tabs.Main:AddSwitch("Fly", function(state)
-    MainState.Fly.Enabled = state
-    if state then
-        enableFly()
-        NebulaGUI.Notify.show("Fly", "Activado (Space=subir, Ctrl=bajar)", 3, "success")
-    else
-        disableFly()
-        local humanoid = getHumanoid()
-        if humanoid then humanoid.PlatformStand = false end
-        NebulaGUI.Notify.show("Fly", "Desactivado", 2, "info")
-    end
-end)
-
-Tabs.Main:AddSlider("Fly Speed", 1, 30, 10, function(value)
-    MainState.Fly.Level = value
-end)
-
-Tabs.Main:AddSwitch("Anti AFK", function(state)
-    MainState.AntiAFK = state
-    NebulaGUI.Notify.show("Anti AFK", state and "Activado" or "Desactivado", 2, state and "success" or "info")
-end, true)
-
-Tabs.Main:AddSection("Otros", "🌐")
-
-Tabs.Main:AddDropdown("Cambiar Hora", {"Day", "Night"}, function(opt)
-    Services.Lighting.ClockTime = (opt == "Night") and 0 or 14
-    NebulaGUI.Notify.show("Hora", "Cambiado a: " .. opt, 2, "success")
-end, "Day")
-
-Tabs.Main:AddSlider("FOV", 50, 120, 70, function(value)
-    local cam = workspace.CurrentCamera
-    if cam then cam.FieldOfView = value end
-end)
-
-Tabs.Main:AddButton("🔄 Reset Character", function()
-    local humanoid = getHumanoid()
-    if humanoid then humanoid.Health = 0 end
-end)
--- ═══ TAB: INFO ═══
-Tabs.Info:AddSection("Información", "ℹ️")
+Tabs.Main:AddLabel("Cargando funciones... (Parte 1)")
 Tabs.Info:AddLabel("Made by Honen")
 Tabs.Info:AddLabel("Version 1.0 - Reborn")
-Tabs.Info:AddLabel("")
 
-Tabs.Info:AddButton("📋 Copiar Discord", function()
-    if setclipboard then
-        setclipboard("https://discord.gg/bVDtwKF92")
-        NebulaGUI.Notify.show("Discord", "Link copiado al portapapeles", 2, "success")
-    else
-        NebulaGUI.Notify.show("Error", "Tu executor no soporta clipboard", 3, "error")
-    end
-end)
-
--- Notificación inicial
-NebulaGUI.Notify.show("HonenxWhite", "Hub cargado correctamente", 3, "success")
+NebulaGUI.Notify.show("HonenxWhite", "Parte 1 cargada (librería + tabs)", 3, "success")
 
 return win
