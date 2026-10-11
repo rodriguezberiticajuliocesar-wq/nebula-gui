@@ -673,6 +673,9 @@ function Tab:AddDropdown(text, options, callback, default, icon)
 end
 
 -- ═══ CLASE WINDOW ═══
+local Window = {}
+Window.__index = Window
+
 function NebulaGUI:CreateWindow(opts)
     opts = opts or {}
     local title = opts.Title or "Nebula Hub"
