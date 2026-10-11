@@ -491,7 +491,7 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
-    function self:SetMinimized(minimized)
+        function self:SetMinimized(minimized)
         self.Minimized = minimized
         if minimized then
             tween(root, 0.2, { Size = UDim2.fromOffset(56, 56), BackgroundTransparency = 1 })
@@ -502,12 +502,40 @@ function NebulaGUI:CreateWindow(opts)
             tween(tabBar, 0.2, { BackgroundTransparency = 1 })
             tween(content, 0.2, { BackgroundTransparency = 1 })
             bubble.Position = root.Position
+            bubble.ZIndex = 999
+            bubble.Visible = true
             task.delay(0.15, function()
                 if self.Minimized then
                     root.Visible = false
                     bubble.Visible = true
                 end
             end)
+        else
+            bubble.Visible = false
+            root.Visible = true
+            root.Size = UDim2.fromOffset(0, 0)
+            root.BackgroundTransparency = 1
+            tween(root, 0.25, {
+                Size = self.Size,
+                BackgroundTransparency = 0.05,
+            }, Enum.EasingStyle.Back)
+            tween(rootStroke, 0.25, { Transparency = 0.4 })
+            tween(header, 0.25, { BackgroundTransparency = 0.3 })
+            tween(titleLbl, 0.25, { TextTransparency = 0 })
+            tween(subtitleLbl, 0.25, { TextTransparency = 0 })
+            tween(tabBar, 0.25, { BackgroundTransparency = 0.6 })
+            tween(content, 0.25, { BackgroundTransparency = 0 })
+        end
+    end
+
+    -- Conectar los botones del header
+    minimizeBtn.MouseButton1Click:Connect(function()
+        self:SetMinimized(not self.Minimized)
+    end)
+
+    closeBtn.MouseButton1Click:Connect(function()
+        self:Destroy()
+    end)
         else
             bubble.Visible = false
             root.Visible = true
