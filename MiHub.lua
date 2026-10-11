@@ -133,7 +133,6 @@ local Tabs = {
 _G.Young0xTabs = Tabs
 
 -- Placeholder para verificar que carga
-Tabs.Main:AddLabel("Cargando... (Parte 1)")
 Tabs.Info:AddLabel("Made by Honen")
 Tabs.Info:AddLabel("Rebuild 2026")
 
@@ -2226,3 +2225,4 @@ end)
 -- NOTIFICACIÓN FINAL
 -- ═══════════════════════════════════════════════════════════════
 Utils.notify("HonenxWhite Reborn", "Hub cargado correctamente ✅", 4, "success")
+return win
