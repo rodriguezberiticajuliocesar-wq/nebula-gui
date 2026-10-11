@@ -85,7 +85,6 @@ local function isMobile()
     return touch or vp.X < 900
 end
 
--- ═══ Notificaciones ═══
 local Notify = {}
 local notifyContainer = nil
 
@@ -819,7 +818,6 @@ function NebulaGUI:CreateWindow(opts)
         _tabCounter = 0,
     }, Window)
 
-    -- Drag
     local dragging = false
     local dragStart, startPos
 
@@ -853,7 +851,6 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
-    -- Burbuja
     local bubble = create("TextButton", {
         Name = "Bubble",
         Size = UDim2.fromOffset(56, 56),
@@ -1058,5 +1055,9 @@ function NebulaGUI:CreateWindow(opts)
 
     return self
 end
+
+-- ═══ FALTA ESTO: definir Window ANTES de usarlo ═══
+Window = Window or {}
+Window.__index = Window
 
 return NebulaGUI
