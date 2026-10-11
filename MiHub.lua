@@ -703,7 +703,7 @@ local function refreshPlayerDropdowns()
     local list = {}
     for _, p in ipairs(Services.Players:GetPlayers()) do
         if p ~= LocalPlayer then
-            table.insert(list, p.Name)
+            table.insert(list, p.DisplayName .. " | " .. p.Name)
         end
     end
     table.sort(list)
