@@ -673,7 +673,7 @@ function Tab:AddDropdown(text, options, callback, default, icon)
             dropdownPanel.Size = UDim2.fromOffset(holder.AbsoluteSize.X, panelHeight)
             dropdownPanel.Position = UDim2.fromOffset(
                 holder.AbsolutePosition.X,
-                holder.AbsolutePosition.Y + 36
+                holder.AbsolutePosition.Y + holder.AbsoluteSize.Y + 2
             )
             dropdownPanel.Visible = true
             tween(arrow, 0.15, { Rotation = 180 })
@@ -754,7 +754,7 @@ function NebulaGUI:CreateWindow(opts)
     corner(root, 14)
     local rootStroke = stroke(root, Theme.BorderBright, 1.4, 0.4)
 
-    create("UIGradient", {
+    local bgGradient = create("UIGradient", {
         Color = ColorSequence.new({
             ColorSequenceKeypoint.new(0, Theme.Background),
             ColorSequenceKeypoint.new(0.5, Color3.fromRGB(18, 12, 28)),
@@ -1000,21 +1000,27 @@ function NebulaGUI:CreateWindow(opts)
                     bubble.Visible = true
                 end
             end)
+
         else
             bubble.Visible = false
             root.Visible = true
-            root.Size = UDim2.fromOffset(0, 0)
+            root.Size = self.Size
             root.BackgroundColor3 = Theme.Background
-            root.BackgroundTransparency = 1
+            root.BackgroundTransparency = 0
+            rootStroke.Transparency = 0.4
+            header.BackgroundTransparency = 0.3
+            tabBar.BackgroundTransparency = 0.6
+            content.BackgroundTransparency = 0
+            local grad = root:FindFirstChildOfClass("UIGradient")
+            if grad then
+                grad.Enabled = true
+            end
             tween(root, 0.25, { Size = self.Size, BackgroundTransparency = 0 }, Enum.EasingStyle.Back)
             tween(rootStroke, 0.25, { Transparency = 0.4 })
             tween(header, 0.25, { BackgroundTransparency = 0.3 })
             tween(tabBar, 0.25, { BackgroundTransparency = 0.6 })
             tween(content, 0.25, { BackgroundTransparency = 0 })
-            local grad = root:FindFirstChildOfClass("UIGradient")
-            if grad then grad.Enabled = true end
         end
-    end
 
     function self:Destroy()
         screen:Destroy()
