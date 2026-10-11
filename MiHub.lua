@@ -1150,9 +1150,8 @@ end
 -- ═══════════════════════════════════════════════════════
 
 -- Anti-AFK
-local AntiAFKEnabled = true
 LocalPlayer.Idled:Connect(function()
-    if AntiAFKEnabled then
+    if MainState and MainState.AntiAFK then
         pcall(function()
             Services.VirtualUser:CaptureController()
             Services.VirtualUser:ClickButton2(Vector2.new(0, 0))
