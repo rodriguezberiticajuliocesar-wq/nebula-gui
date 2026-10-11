@@ -754,7 +754,7 @@ function NebulaGUI:CreateWindow(opts)
     corner(root, 14)
     local rootStroke = stroke(root, Theme.BorderBright, 1.4, 0.4)
 
-    local bgGradient = create("UIGradient", {
+    create("UIGradient", {
         Color = ColorSequence.new({
             ColorSequenceKeypoint.new(0, Theme.Background),
             ColorSequenceKeypoint.new(0.5, Color3.fromRGB(18, 12, 28)),
@@ -1000,27 +1000,21 @@ function NebulaGUI:CreateWindow(opts)
                     bubble.Visible = true
                 end
             end)
-
         else
             bubble.Visible = false
             root.Visible = true
-            root.Size = self.Size
+            root.Size = UDim2.fromOffset(0, 0)
             root.BackgroundColor3 = Theme.Background
-            root.BackgroundTransparency = 0
-            rootStroke.Transparency = 0.4
-            header.BackgroundTransparency = 0.3
-            tabBar.BackgroundTransparency = 0.6
-            content.BackgroundTransparency = 0
-            local grad = root:FindFirstChildOfClass("UIGradient")
-            if grad then
-                grad.Enabled = true
-            end
+            root.BackgroundTransparency = 1
             tween(root, 0.25, { Size = self.Size, BackgroundTransparency = 0 }, Enum.EasingStyle.Back)
             tween(rootStroke, 0.25, { Transparency = 0.4 })
             tween(header, 0.25, { BackgroundTransparency = 0.3 })
             tween(tabBar, 0.25, { BackgroundTransparency = 0.6 })
             tween(content, 0.25, { BackgroundTransparency = 0 })
+            local grad = root:FindFirstChildOfClass("UIGradient")
+            if grad then grad.Enabled = true end
         end
+    end
 
     function self:Destroy()
         screen:Destroy()
