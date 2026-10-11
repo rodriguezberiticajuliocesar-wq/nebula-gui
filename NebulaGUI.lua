@@ -1,10 +1,4 @@
---[[
-    ═══════════════════════════════════════════════════════════════
-    NebulaGUI v1.0 — Librería de interfaz para Roblox
-    Repositorio: github.com/rodriguezberiticajuliocesar-wq/nebula-gui
-    Made by Honen
-    ═══════════════════════════════════════════════════════════════
-]]
+--[[ NebulaGUI v1.0 — Parte A ]]
 
 local NebulaGUI = {}
 NebulaGUI.__index = NebulaGUI
@@ -85,7 +79,6 @@ local function isMobile()
     return touch or vp.X < 900
 end
 
--- ═══ NOTIFICACIONES ═══
 local Notify = {}
 local notifyContainer = nil
 
@@ -177,7 +170,6 @@ end
 
 NebulaGUI.Notify = Notify
 
--- ═══ CLASE TAB ═══
 local Tab = {}
 Tab.__index = Tab
 
@@ -580,17 +572,12 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         ZIndex = 11,
     }, header)
 
-    -- Encontrar la ScreenGui subiendo por los padres
     local screenGui = self.Page
     while screenGui and not screenGui:IsA("ScreenGui") do
         screenGui = screenGui.Parent
     end
-    if not screenGui then
-        warn("[NebulaGUI] No se encontró ScreenGui para el dropdown")
-        screenGui = PlayerGui
-    end
+    if not screenGui then screenGui = PlayerGui end
 
-    -- Panel flotante
     local dropdownPanel = create("Frame", {
         Name = "DropdownPanel_" .. text,
         BackgroundColor3 = Theme.Background,
@@ -724,7 +711,43 @@ function Tab:AddDropdown(text, options, callback, default, icon)
     }
 end
 
--- ═══ CLASE WINDOW ═══
+-- Exportar para Parte B
+_G.NebulaGUI_PartA = {
+    NebulaGUI = NebulaGUI,
+    Services = Services,
+    Theme = Theme,
+    Fonts = Fonts,
+    create = create,
+    corner = corner,
+    stroke = stroke,
+    tween = tween,
+    isMobile = isMobile,
+    Tab = Tab,
+    LocalPlayer = LocalPlayer,
+    PlayerGui = PlayerGui,
+}
+
+return "OK_A"
+--[[ NebulaGUI v1.0 — Parte B ]]
+
+local A = _G.NebulaGUI_PartA
+if not A then
+    warn("[NebulaGUI_B] Falta Parte A")
+    return
+end
+
+local NebulaGUI = A.NebulaGUI
+local Services = A.Services
+local Theme = A.Theme
+local Fonts = A.Fonts
+local create = A.create
+local corner = A.corner
+local stroke = A.stroke
+local tween = A.tween
+local isMobile = A.isMobile
+local LocalPlayer = A.LocalPlayer
+local PlayerGui = A.PlayerGui
+
 local Window = {}
 Window.__index = Window
 
@@ -1079,7 +1102,7 @@ function NebulaGUI:CreateWindow(opts)
             Page = page,
             Layout = pageLayout,
             _order = 0,
-        }, Tab)
+        }, A.Tab)
 
         btn.MouseButton1Click:Connect(function()
             self:SelectTab(name)
