@@ -13,38 +13,38 @@ local NebulaGUI = {}
 NebulaGUI.__index = NebulaGUI
 
 local Services = {
-    Players        = game:GetService("Players"),
-    RunService     = game:GetService("RunService"),
-    UserInputService = game:GetService("UserInputService"),
-    TweenService   = game:GetService("TweenService"),
-    CoreGui        = game:GetService("CoreGui"),
-    StarterGui     = game:GetService("StarterGui"),
-    ReplicatedStorage = game:GetService("ReplicatedStorage"),
-    VirtualUser    = game:GetService("VirtualUser"),
+    Players             = game:GetService("Players"),
+    RunService          = game:GetService("RunService"),
+    UserInputService    = game:GetService("UserInputService"),
+    TweenService        = game:GetService("TweenService"),
+    CoreGui             = game:GetService("CoreGui"),
+    StarterGui          = game:GetService("StarterGui"),
+    ReplicatedStorage   = game:GetService("ReplicatedStorage"),
+    VirtualUser         = game:GetService("VirtualUser"),
     VirtualInputManager = game:GetService("VirtualInputManager"),
-    Lighting       = game:GetService("Lighting"),
-    Stats          = game:GetService("Stats"),
+    Lighting            = game:GetService("Lighting"),
+    Stats               = game:GetService("Stats"),
 }
 local LocalPlayer = Services.Players.LocalPlayer
 local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
 local Backpack = LocalPlayer:WaitForChild("Backpack")
 
 local Theme = {
-    Background      = Color3.fromRGB(14, 10, 22),
-    Panel           = Color3.fromRGB(20, 15, 32),
-    PanelLight      = Color3.fromRGB(28, 22, 42),
-    Row             = Color3.fromRGB(24, 18, 38),
-    RowHover        = Color3.fromRGB(36, 26, 55),
-    Accent          = Color3.fromRGB(155, 70, 255),
-    AccentLight     = Color3.fromRGB(190, 120, 255),
-    AccentDark      = Color3.fromRGB(100, 40, 180),
-    Success         = Color3.fromRGB(80, 220, 140),
-    Warning         = Color3.fromRGB(255, 200, 80),
-    Danger          = Color3.fromRGB(255, 80, 110),
-    Text            = Color3.fromRGB(240, 235, 255),
-    TextDim         = Color3.fromRGB(160, 150, 190),
-    Border          = Color3.fromRGB(70, 50, 110),
-    BorderBright    = Color3.fromRGB(155, 70, 255),
+    Background   = Color3.fromRGB(14, 10, 22),
+    Panel        = Color3.fromRGB(20, 15, 32),
+    PanelLight   = Color3.fromRGB(28, 22, 42),
+    Row          = Color3.fromRGB(24, 18, 38),
+    RowHover     = Color3.fromRGB(36, 26, 55),
+    Accent       = Color3.fromRGB(155, 70, 255),
+    AccentLight  = Color3.fromRGB(190, 120, 255),
+    AccentDark   = Color3.fromRGB(100, 40, 180),
+    Success      = Color3.fromRGB(80, 220, 140),
+    Warning      = Color3.fromRGB(255, 200, 80),
+    Danger       = Color3.fromRGB(255, 80, 110),
+    Text         = Color3.fromRGB(240, 235, 255),
+    TextDim      = Color3.fromRGB(160, 150, 190),
+    Border       = Color3.fromRGB(70, 50, 110),
+    BorderBright = Color3.fromRGB(155, 70, 255),
 }
 
 local Fonts = {
@@ -92,7 +92,7 @@ local function isMobile()
     return touch or vp.X < 900
 end
 
--- Notificaciones
+-- ═══ Notificaciones ═══
 local Notify = {}
 local notifyContainer = nil
 
@@ -200,7 +200,7 @@ local function createControlLabel(parent, text, icon)
     }, parent)
 end
 
--- Clase Window
+-- ═══ Clase Window ═══
 local Window = {}
 Window.__index = Window
 
@@ -208,7 +208,7 @@ function NebulaGUI:CreateWindow(opts)
     opts = opts or {}
     local title = opts.Title or "Nebula Hub"
     local subtitle = opts.Subtitle or "Made by Honen"
-    local size = opts.Size or UDim2.fromOffset(isMobile() and 340 or 640, isMobile() and 420 or 480)
+    local size = opts.Size or UDim2.fromOffset(isMobile() and 340 or 820, isMobile() and 420 or 520)
 
     local screen = create("ScreenGui", {
         Name = "NebulaHub",
@@ -320,6 +320,19 @@ function NebulaGUI:CreateWindow(opts)
     local closeBtn = makeHeaderBtn("✕", Theme.Danger)
     closeBtn.Position = UDim2.fromOffset(30, 0)
 
+    minimizeBtn.MouseEnter:Connect(function()
+        tween(minimizeBtn, 0.12, { BackgroundTransparency = 0.5 })
+    end)
+    minimizeBtn.MouseLeave:Connect(function()
+        tween(minimizeBtn, 0.12, { BackgroundTransparency = 0.85 })
+    end)
+    closeBtn.MouseEnter:Connect(function()
+        tween(closeBtn, 0.12, { BackgroundTransparency = 0.5 })
+    end)
+    closeBtn.MouseLeave:Connect(function()
+        tween(closeBtn, 0.12, { BackgroundTransparency = 0.85 })
+    end)
+
     local tabBar = create("ScrollingFrame", {
         Name = "TabBar",
         Position = UDim2.fromOffset(0, 42),
@@ -412,7 +425,7 @@ function NebulaGUI:CreateWindow(opts)
         Text = "",
         Visible = false,
         AutoButtonColor = false,
-        ZIndex = 5,
+        ZIndex = 999,
     }, screen)
     corner(bubble, 28)
     stroke(bubble, Theme.BorderBright, 1.5, 0.2)
@@ -464,12 +477,8 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
+    -- Click en burbuja (detección drag vs click)
     local clickGuard = false
-    bubble.MouseButton1Click:Connect(function()
-        if clickGuard then return end
-        self:SetMinimized(false)
-    end)
-
     bubble.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1
             or input.UserInputType == Enum.UserInputType.Touch then
@@ -480,7 +489,7 @@ function NebulaGUI:CreateWindow(opts)
                 if input.UserInputState == Enum.UserInputState.End then
                     conn:Disconnect()
                     local dist = (input.Position - startPosClick).Magnitude
-                    if dist < 8 and tick() - startTime < 0.3 then
+                    if dist < 8 and tick() - startTime < 0.3 and not clickGuard then
                         clickGuard = true
                         self:SetMinimized(false)
                         task.wait(0.1)
@@ -491,7 +500,8 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
-        function self:SetMinimized(minimized)
+    -- Función SetMinimized
+    function self:SetMinimized(minimized)
         self.Minimized = minimized
         if minimized then
             tween(root, 0.2, { Size = UDim2.fromOffset(56, 56), BackgroundTransparency = 1 })
@@ -528,7 +538,7 @@ function NebulaGUI:CreateWindow(opts)
         end
     end
 
-        -- Conectar los botones del header
+    -- Conectar botones del header
     minimizeBtn.MouseButton1Click:Connect(function()
         self:SetMinimized(not self.Minimized)
     end)
@@ -538,12 +548,10 @@ function NebulaGUI:CreateWindow(opts)
     end)
 
     function self:Destroy()
-
-    function self:Destroy()
         screen:Destroy()
     end
 
-    -- Tabs
+    -- Añadir tab
     function self:AddTab(name, icon)
         self._tabCounter = self._tabCounter + 1
         local order = self._tabCounter
@@ -635,17 +643,31 @@ function NebulaGUI:CreateWindow(opts)
             })
         end
         self.ActiveTab = name
-    end
 
-    -- Cerrar
-    closeBtn.MouseButton1Click:Connect(function()
-        self:Destroy()
-    end)
+        -- Auto-scroll: centrar el tab activo
+        local tab = self.Tabs[name]
+        if tab and tab.Button and self.TabBar then
+            task.defer(function()
+                local bar = self.TabBar
+                local btn = tab.Button
+                if not btn or not btn.Parent then return end
+                local btnCenter = btn.AbsolutePosition.X + btn.AbsoluteSize.X / 2
+                local barLeft = bar.AbsolutePosition.X
+                local barWidth = bar.AbsoluteSize.X
+                local targetX = btnCenter - barLeft - barWidth / 2
+                local maxScroll = math.max(0, bar.AbsoluteCanvasSize.X - barWidth)
+                targetX = math.clamp(targetX, 0, maxScroll)
+                tween(bar, 0.2, {
+                    CanvasPosition = Vector2.new(targetX, 0)
+                })
+            end)
+        end
+    end
 
     return self
 end
 
--- Controles (Label, Section, Switch, Button, TextBox, Slider, Dropdown)
+-- ═══ Controles ═══
 function Window:AddLabel(text, icon)
     return create("TextLabel", {
         Size = UDim2.new(1, 0, 0, 20),
@@ -1091,7 +1113,7 @@ function Window:AddDropdown(text, options, callback, default, icon)
         optionsFrame.CanvasSize = UDim2.new(0, 0, 0, optsLayout.AbsoluteContentSize.Y + 8)
     end
 
-    local function setOpen(open)
+    function setOpen(open)
         isOpen = open
         local targetH = 34
         if isOpen then
@@ -1145,7 +1167,7 @@ end)
 local win = NebulaGUI:CreateWindow({
     Title = "HonenxWhite | Reborn",
     Subtitle = "Made by Honen",
-    Size = UDim2.fromOffset(640, 480),
+    Size = UDim2.fromOffset(820, 520),
 })
 
 -- Tabs
@@ -1163,7 +1185,7 @@ local Tabs = {
     Info      = win:AddTab("Info", "ℹ️"),
 }
 
--- TAB MAIN
+-- ═══ TAB: MAIN ═══
 Tabs.Main:AddSection("User Settings", "⚙️")
 
 Tabs.Main:AddSwitch("Anti Fling", function(state)
@@ -1215,7 +1237,7 @@ Tabs.Main:AddSlider("FOV", 50, 120, 70, function(value)
     if cam then cam.FieldOfView = value end
 end)
 
--- TAB INFO
+-- ═══ TAB: INFO ═══
 Tabs.Info:AddSection("Información", "ℹ️")
 Tabs.Info:AddLabel("Made by Honen")
 Tabs.Info:AddLabel("Version 1.0 - Reborn")
@@ -1224,7 +1246,7 @@ Tabs.Info:AddLabel("")
 Tabs.Info:AddButton("📋 Copiar Discord", function()
     if setclipboard then
         setclipboard("https://discord.gg/bVDtwKF92")
-        NebulaGUI.Notify.show("Discord", "Link copiado", 2, "success")
+        NebulaGUI.Notify.show("Discord", "Link copiado al portapapeles", 2, "success")
     else
         NebulaGUI.Notify.show("Error", "Tu executor no soporta clipboard", 3, "error")
     end
