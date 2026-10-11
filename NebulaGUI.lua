@@ -579,29 +579,33 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         ZIndex = 11,
     }, header)
 
-    local optionsFrame = create("ScrollingFrame", {
-        Position = UDim2.fromOffset(0, 34),
-        Size = UDim2.new(1, 0, 0, 0),
+    -- Panel flotante (hijo del ScreenGui para que flote encima de todo)
+    local screenGui = self.Page.Parent.Parent
+    local dropdownPanel = create("Frame", {
+        Name = "DropdownPanel_" .. text,
         BackgroundColor3 = Theme.Background,
-        BackgroundTransparency = 0.05,
+        BackgroundTransparency = 0.02,
+        BorderSizePixel = 0,
+        Visible = false,
+        ZIndex = 500,
+    }, screenGui)
+    corner(dropdownPanel, 8)
+    stroke(dropdownPanel, Theme.AccentLight, 1.2, 0.2)
+
+    local optionsList = create("ScrollingFrame", {
+        Size = UDim2.new(1, -8, 1, -8),
+        Position = UDim2.fromOffset(4, 4),
+        BackgroundTransparency = 1,
         BorderSizePixel = 0,
         ScrollBarThickness = 3,
         ScrollBarImageColor3 = Theme.Accent,
         CanvasSize = UDim2.new(0, 0, 0, 0),
-        ZIndex = 20,
-    }, holder)
-    corner(optionsFrame, 8)
-    stroke(optionsFrame, Theme.AccentLight, 1, 0.4)
-    create("UIPadding", {
-        PaddingLeft = UDim.new(0, 6),
-        PaddingRight = UDim.new(0, 6),
-        PaddingTop = UDim.new(0, 4),
-        PaddingBottom = UDim.new(0, 4),
-    }, optionsFrame)
-    local optsLayout = create("UIListLayout", {
+        ZIndex = 501,
+    }, dropdownPanel)
+    create("UIListLayout", {
         SortOrder = Enum.SortOrder.LayoutOrder,
         Padding = UDim.new(0, 2),
-    }, optionsFrame)
+    }, optionsList)
 
     local isOpen = false
     local optionButtons = {}
@@ -611,7 +615,7 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         optionButtons = {}
         for i, opt in ipairs(options) do
             local optBtn = create("TextButton", {
-                Size = UDim2.new(1, -8, 0, 26),
+                Size = UDim2.new(1, 0, 0, 26),
                 BackgroundColor3 = Theme.PanelLight,
                 BackgroundTransparency = (opt == selected) and 0.2 or 0.6,
                 BorderSizePixel = 0,
@@ -622,8 +626,8 @@ function Tab:AddDropdown(text, options, callback, default, icon)
                 TextXAlignment = Enum.TextXAlignment.Left,
                 AutoButtonColor = false,
                 LayoutOrder = i,
-                ZIndex = 21,
-            }, optionsFrame)
+                ZIndex = 502,
+            }, optionsList)
             corner(optBtn, 6)
             create("UIPadding", { PaddingLeft = UDim.new(0, 8) }, optBtn)
 
@@ -645,29 +649,54 @@ function Tab:AddDropdown(text, options, callback, default, icon)
             end)
             table.insert(optionButtons, optBtn)
         end
-        optionsFrame.CanvasSize = UDim2.new(0, 0, 0, optsLayout.AbsoluteContentSize.Y + 8)
+        local layout = optionsList:FindFirstChildOfClass("UIListLayout")
+        if layout then
+            optionsList.CanvasSize = UDim2.new(0, 0, 0, layout.AbsoluteContentSize.Y + 8)
+        end
     end
 
     function setOpen(open)
         isOpen = open
-        local targetH = 34
         if isOpen then
-            local maxH = math.min(160, #options * 28 + 10)
-            targetH = 34 + maxH
+            local count = math.min(#options, 6)
+            local panelHeight = count * 28 + 10
+            dropdownPanel.Size = UDim2.fromOffset(holder.AbsoluteSize.X, panelHeight)
+            dropdownPanel.Position = UDim2.fromOffset(
+                holder.AbsolutePosition.X,
+                holder.AbsolutePosition.Y + 36
+            )
+            dropdownPanel.Visible = true
             tween(arrow, 0.15, { Rotation = 180 })
-            holder.ZIndex = 100
-            optionsFrame.ZIndex = 100
         else
+            dropdownPanel.Visible = false
             tween(arrow, 0.15, { Rotation = 0 })
-            holder.ZIndex = 10
-            optionsFrame.ZIndex = 20
         end
-        tween(optionsFrame, 0.18, { Size = UDim2.new(1, 0, 0, targetH - 34) })
-        tween(holder, 0.18, { Size = UDim2.new(1, 0, 0, targetH) })
     end
 
     header.MouseButton1Click:Connect(function()
         setOpen(not isOpen)
+    end)
+
+    -- Cerrar al hacer click fuera
+    Services.UserInputService.InputBegan:Connect(function(input, processed)
+        if processed then return end
+        if input.UserInputType == Enum.UserInputType.MouseButton1
+            or input.UserInputType == Enum.UserInputType.Touch then
+            if isOpen then
+                local mx, my = input.Position.X, input.Position.Y
+                local panelPos = dropdownPanel.AbsolutePosition
+                local panelSize = dropdownPanel.AbsoluteSize
+                local inPanel = mx >= panelPos.X and mx <= panelPos.X + panelSize.X
+                    and my >= panelPos.Y and my <= panelPos.Y + panelSize.Y
+                local holderPos = holder.AbsolutePosition
+                local holderSize = holder.AbsoluteSize
+                local inHolder = mx >= holderPos.X and mx <= holderPos.X + holderSize.X
+                    and my >= holderPos.Y and my <= holderPos.Y + holderSize.Y
+                if not inPanel and not inHolder then
+                    setOpen(false)
+                end
+            end
+        end
     end)
 
     renderOptions()
@@ -710,7 +739,7 @@ function NebulaGUI:CreateWindow(opts)
         Position = UDim2.new(0.5, 0, 0.5, 0),
         Size = size,
         BackgroundColor3 = Theme.Background,
-        BackgroundTransparency = 0.05,
+        BackgroundTransparency = 0,
         BorderSizePixel = 0,
     }, screen)
     corner(root, 14)
@@ -968,7 +997,7 @@ function NebulaGUI:CreateWindow(opts)
             root.Size = UDim2.fromOffset(0, 0)
             root.BackgroundColor3 = Theme.Background
             root.BackgroundTransparency = 1
-            tween(root, 0.25, { Size = self.Size, BackgroundTransparency = 0.05 }, Enum.EasingStyle.Back)
+            tween(root, 0.25, { Size = self.Size, BackgroundTransparency = 0 }, Enum.EasingStyle.Back)
             tween(rootStroke, 0.25, { Transparency = 0.4 })
             tween(header, 0.25, { BackgroundTransparency = 0.3 })
             tween(tabBar, 0.25, { BackgroundTransparency = 0.6 })
