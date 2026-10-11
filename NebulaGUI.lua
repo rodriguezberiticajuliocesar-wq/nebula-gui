@@ -85,6 +85,7 @@ local function isMobile()
     return touch or vp.X < 900
 end
 
+-- ═══ NOTIFICACIONES ═══
 local Notify = {}
 local notifyContainer = nil
 
@@ -579,8 +580,17 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         ZIndex = 11,
     }, header)
 
-    -- Panel flotante (hijo del ScreenGui para que flote encima de todo)
-    local screenGui = self.Page.Parent.Parent
+    -- Encontrar la ScreenGui subiendo por los padres
+    local screenGui = self.Page
+    while screenGui and not screenGui:IsA("ScreenGui") do
+        screenGui = screenGui.Parent
+    end
+    if not screenGui then
+        warn("[NebulaGUI] No se encontró ScreenGui para el dropdown")
+        screenGui = PlayerGui
+    end
+
+    -- Panel flotante
     local dropdownPanel = create("Frame", {
         Name = "DropdownPanel_" .. text,
         BackgroundColor3 = Theme.Background,
@@ -677,7 +687,6 @@ function Tab:AddDropdown(text, options, callback, default, icon)
         setOpen(not isOpen)
     end)
 
-    -- Cerrar al hacer click fuera
     Services.UserInputService.InputBegan:Connect(function(input, processed)
         if processed then return end
         if input.UserInputType == Enum.UserInputType.MouseButton1
