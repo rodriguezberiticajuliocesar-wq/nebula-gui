@@ -2,7 +2,6 @@
     ═══════════════════════════════════════════════════════
     HonenxWhite Reborn — Made by Honen
     Todo en un archivo (librería NebulaGUI incluida)
-    Repositorio: github.com/rodriguezberiticajuliocesar-wq/nebula-gui
     ═══════════════════════════════════════════════════════
 ]]
 
@@ -477,7 +476,7 @@ function NebulaGUI:CreateWindow(opts)
         end
     end)
 
-    -- Click en burbuja (detección drag vs click)
+    -- Click burbuja (drag vs click)
     local clickGuard = false
     bubble.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1
@@ -512,7 +511,6 @@ function NebulaGUI:CreateWindow(opts)
             tween(tabBar, 0.2, { BackgroundTransparency = 1 })
             tween(content, 0.2, { BackgroundTransparency = 1 })
             bubble.Position = root.Position
-            bubble.ZIndex = 999
             bubble.Visible = true
             task.delay(0.15, function()
                 if self.Minimized then
@@ -538,6 +536,11 @@ function NebulaGUI:CreateWindow(opts)
         end
     end
 
+    -- Función Destroy
+    function self:Destroy()
+        screen:Destroy()
+    end
+
     -- Conectar botones del header
     minimizeBtn.MouseButton1Click:Connect(function()
         self:SetMinimized(not self.Minimized)
@@ -546,10 +549,6 @@ function NebulaGUI:CreateWindow(opts)
     closeBtn.MouseButton1Click:Connect(function()
         self:Destroy()
     end)
-
-    function self:Destroy()
-        screen:Destroy()
-    end
 
     -- Añadir tab
     function self:AddTab(name, icon)
@@ -644,7 +643,6 @@ function NebulaGUI:CreateWindow(opts)
         end
         self.ActiveTab = name
 
-        -- Auto-scroll: centrar el tab activo
         local tab = self.Tabs[name]
         if tab and tab.Button and self.TabBar then
             task.defer(function()
