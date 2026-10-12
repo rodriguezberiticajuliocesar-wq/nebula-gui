@@ -13,6 +13,27 @@ if not KNI then
     return
 end
 
+-- ═══ JUGADOR ═══
+local player = game:GetService("Players").LocalPlayer
+
+-- ═══ WHITELIST CHECK ═══
+local WhitelistURL = "https://pastebin.com/raw/0Ne1DxbB"
+local whitelistOk, whitelist = pcall(function()
+    return loadstring(game:HttpGet(WhitelistURL, true))()
+end)
+
+if not whitelistOk or type(whitelist) ~= "table" then
+    player:Kick("[HonenxWhite] Error al verificar whitelist. Contactá al staff.")
+    return
+end
+
+if not whitelist[player.UserId] then
+    player:Kick("[HonenxWhite] No estás autorizado. Unite a discord.gg/bVDtwKF92")
+    return
+end
+
+print("[HonenxWhite] Whitelist verificada ✅")
+
 -- ═══ SERVICIOS ═══
 local services = {
     Players = game:GetService("Players"),
@@ -27,8 +48,6 @@ local services = {
     HttpService = game:GetService("HttpService"),
     Stats = game:GetService("Stats"),
 }
-
-local player = services.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 local backpack = player:WaitForChild("Backpack")
 
