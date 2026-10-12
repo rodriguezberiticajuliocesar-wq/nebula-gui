@@ -1,5 +1,5 @@
 --[[
-    KNI_MuscleLegends.client.lua
+    HonenxWhite | Reborn
     Hub completo para Muscle Legends usando KNI_UI
     Made by Honen / cyanam1 / White
 ]]
@@ -9,7 +9,7 @@ local KNI_URL = "https://raw.githubusercontent.com/rodriguezberiticajuliocesar-w
 local KNI = loadstring(game:HttpGet(KNI_URL, true))()
 
 if not KNI then
-    warn("[KNI] Error al cargar KNI_UI")
+    warn("[HonenxWhite] Error al cargar KNI_UI")
     return
 end
 
@@ -97,13 +97,13 @@ end
 
 -- ═══ CREAR VENTANA ═══
 local window = KNI.new({
-    Name = "KNI_MuscleLegends",
-    Title = "KNI | Muscle Legends",
-    Width = 600,
-    Height = 400,
+    Name = "HonenxWhite",
+    Title = "HonenxWhite | Reborn",
+    Width = 620,
+    Height = 420,
 })
 
-_G.KNIWindow = window
+_G.HonenxWhiteWindow = window
 
 -- ═══ TABS ═══
 local tabs = {
@@ -317,7 +317,6 @@ task.spawn(function()
     end
 end)
 
--- Hide Pets / Popups
 tabs.main.VisibilitySettings = {
     HidePets = false,
     HidePopups = false,
@@ -336,7 +335,6 @@ tabs.main.HidePopupsSwitch = tabs.main:AddSwitch("Hide Popups", function(state)
 end)
 tabs.main.HidePopupsSwitch:Set(false)
 
--- Redact Name / Stats
 tabs.main.RedactConfigPath = "HonenxWhite/MuscleLegendsMainConfig.json"
 tabs.main.RedactConfig = {
     RedactName = false,
@@ -380,7 +378,6 @@ tabs.main.RedactStatsSwitch = tabs.main:AddSwitch("Redact Stats", function(state
 end)
 tabs.main.RedactStatsSwitch:Set(tabs.main.RedactConfig.RedactStats)
 
--- Walk on Water
 tabs.main.WaterParts = {
     Parts = {},
     PartSize = 2048,
@@ -418,7 +415,6 @@ tabs.main.WalkOnWaterSwitch = tabs.main:AddSwitch("Walk on Water", function(bool
 end)
 tabs.main.WalkOnWaterSwitch:Set(false)
 
--- Other
 tabs.main:AddSection("Other")
 
 tabs.main:AddSwitch("Infinite Jump", function(bool)
@@ -433,7 +429,6 @@ tabs.main:AddSwitch("Infinite Jump", function(bool)
     end
 end)
 
--- Fortune Wheel
 tabs.main.FortuneWheelData = {
     Running = false,
     Generation = 0,
@@ -464,7 +459,6 @@ tabs.main:AddSwitch("Spin Fortune Wheel", function(state)
     end)
 end)
 
--- Change Time
 local timeDropdown = tabs.main:AddDropdown("Change Time", function(selection)
     services.Lighting.ClockTime = selection == "Night" and 0 or 9
 end)
@@ -476,7 +470,7 @@ timeDropdown:Add("Day")
 -- ═══════════════════════════════════════════════════════════════
 
 tabs.info:AddSection("Información")
-tabs.info:AddLabel("KNI | Muscle Legends")
+tabs.info:AddLabel("HonenxWhite | Reborn")
 tabs.info:AddLabel("Made by Honen / cyanam1 / White")
 tabs.info:AddLabel("")
 
@@ -493,6 +487,6 @@ tabs.info:AddLabel("- cyanam1 (@honey)")
 tabs.info:AddLabel("- White @chilin6369")
 tabs.info:AddLabel("- Honen @Owner")
 tabs.info:AddLabel("")
-tabs.info:AddLabel("KNI UI - v1.0")
+tabs.info:AddLabel("KNI UI - v2.0")
 
-utils.notify("KNI", "Hub cargado correctamente ✅", 3, "success")
+utils.notify("HonenxWhite", "Hub cargado correctamente ✅", 3, "success")
