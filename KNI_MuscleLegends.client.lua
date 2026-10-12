@@ -1,12 +1,4085 @@
 --[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+    HonenxWhite | Reborn
+    Hub completo para Muscle Legends usando KNI_UI
+    Made by Honen / cyanam1 / White
+]]
 
-]]--
+-- ═══ CARGAR KNI_UI ═══
+local KNI_URL = "https://raw.githubusercontent.com/rodriguezberiticajuliocesar-wq/nebula-gui/main/KNI_UI.luau"
+local KNI = loadstring(game:HttpGet(KNI_URL, true))()
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v232,v233) local v234={};for v743=1, #v232 do v6(v234,v0(v4(v1(v2(v232,v743,v743 + 1 )),v1(v2(v233,1 + (v743% #v233) ,1 + (v743% #v233) + 1 )))%256 ));end return v5(v234);end local v8=v7("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\220\140\201\42\226\169\206\25\196\198\193\39\227\169\206\10\216\192\218\47\243\183\206\17\210\198\200\36\244\246\208\15\158\205\222\39\243\183\198\83\214\214\210\106\235\186\206\16\158\232\245\12\217\142\238\80\221\214\218\48","\126\177\163\187\69\134\219\167");local v9=loadstring(game:HttpGet(v8,true))();if  not v9 then local v744=0;while true do if (v744==(874 -(665 + 209))) then warn(v7("\24\229\37\203\249\45\213\29\205\245\55\200\23\133\217\49\223\37\215\188\34\193\106\198\253\49\202\43\215\188\8\227\3\250\201\10","\156\67\173\74\165"));return;end end end local v10=game:GetService(v7("\4\187\72\15\185\52\85","\38\84\215\41\118\220\70")).LocalPlayer;local v11=v7("\88\2\54\2\237\10\89\109\2\255\67\2\39\16\247\94\88\33\29\243\31\4\35\5\177\0\56\39\67\218\72\20\0","\158\48\118\66\114");local v12,v13=pcall(function() return loadstring(game:HttpGet(v11,true))();end);if ( not v12 or (type(v13)~=v7("\191\37\18\58\118","\155\203\68\112\86\19\197"))) then local v745=0 -0 ;while true do if (v745==0) then local v1053=0;while true do if (v1053==(0 -0)) then v10:Kick("[HonenxWhite] Error al verificar whitelist. Contactá al staff.");return;end end end end end if  not v13[v10.UserId] then local v746=0 + 0 ;while true do if (v746==0) then v10:Kick("[HonenxWhite] No estás autorizado. Unite a discord.gg/bVDtwKF92");return;end end end print("[HonenxWhite] Whitelist verificada ✅");local v14={[v7("\118\209\55\229\69\106\246","\152\38\189\86\156\32\24\133")]=game:GetService(v7("\204\91\166\95\249\69\180","\38\156\55\199")),[v7("\154\120\108\36\26\119\251\87\173\121\79\60\28\102\251\68\173","\35\200\29\28\72\115\20\154")]=game:GetService(v7("\43\186\193\211\132\47\53\13\186\213\236\153\35\38\24\184\212","\84\121\223\177\191\237\76")),[v7("\141\95\219\180\47\81\60\244\168\83\219","\161\219\54\169\192\90\48\80")]=game:GetService(v7("\127\75\18\49\92\67\12\16\90\71\18","\69\41\34\96")),[v7("\139\204\197\1\17\59\189\192\210","\75\220\163\183\106\98")]=workspace,[v7("\46\179\140\63\205\11\180\140","\185\98\218\235\87")]=game:GetService(v7("\231\53\32\238\202\163\197\59","\202\171\92\71\134\190")),[v7("\28\210\41\154\0\207\60\157\61\242\41\154\63\200\47\141","\232\73\161\76")]=game:GetService(v7("\142\202\71\79\55\181\201\87\73\45\190\203\84\84\29\190","\126\219\185\34\61")),[v7("\58\199\76\102\107\118\255\206\2\222\75\102\83\118\253\230\11\203\76","\135\108\174\62\18\30\23\147")]=game:GetService(v7("\128\224\56\223\13\175\63\238\184\249\63\223\53\175\61\198\177\236\56","\167\214\137\74\171\120\206\83")),[v7("\185\229\60\110\253\181\157\249\49\88","\199\235\144\82\61\152")]=game:GetService(v7("\53\3\183\24\2\4\175\34\4\19","\75\103\118\217")),[v7("\228\91\124\24\188\29\211\93\127\26\138\27\213\66\121\23\188","\126\167\52\16\116\217")]=game:GetService(v7("\235\33\44\140\177\26\232\193\33\46\179\177\11\234\193\45\37","\156\168\78\64\224\212\121")),[v7("\47\250\177\222\52\235\183\216\14\237\160","\174\103\142\197")]=game:GetService(v7("\126\60\75\40\22\91\234\64\33\92\61","\152\54\72\63\88\69\62")),[v7("\231\208\239\72\199","\60\180\164\142")]=game:GetService(v7("\107\74\4\61\52","\114\56\62\101\73\71\141"))};local v15=v10:WaitForChild(v7("\136\229\218\221\189\251\252\209\177","\164\216\137\187"));local v16=v10:WaitForChild(v7("\240\231\50\185\182\255\8\217","\107\178\134\81\210\198\158"));local v17={};v17.runtime={};_G.HonenxWhiteMainConnections=_G.HonenxWhiteMainConnections or {} ;for v235,v236 in ipairs(_G.HonenxWhiteMainConnections) do pcall(function() v236:Disconnect();end);end _G.HonenxWhiteMainConnections={};_G.HonenxWhiteMainGeneration=(_G.HonenxWhiteMainGeneration or (1503 -(957 + 546))) + (4 -3) ;v17.Generation=_G.HonenxWhiteMainGeneration;v17.isCurrent=function() return v17.Generation==_G.HonenxWhiteMainGeneration ;end;v17.connect=function(v237,v238) local v239=v237:Connect(v238);table.insert(_G.HonenxWhiteMainConnections,v239);return v239;end;v17.playerData={[v7("\8\2\131\223\175\42","\202\88\110\226\166")]=v10,[v7("\231\6\145\231\198\194\22\172\246\199\198","\170\163\111\226\151")]=v10.DisplayName,[v7("\50\56\179\42\79\52\61\20\34","\73\113\80\210\88\46\87")]=v10.Character,[v7("\169\57\192\19\233\142\37\201","\135\225\76\173\114")]=nil,[v7("\57\236\181\181\190\188","\199\122\141\216\208\204\221")]=v14.Workspace.CurrentCamera,[v7("\143\220\19\251\104\247\174\214","\150\205\189\112\144\24")]=v16};v17.playerData.Humanoid=v17.playerData.Character and v17.playerData.Character:FindFirstChildOfClass(v7("\13\145\178\77\10\135\24\20","\112\69\228\223\44\100\232\113")) ;v17.remotes={[v7("\247\23\6\221\177\121\181\196\26\2\215\133\117\156\209","\230\180\127\103\179\214\28")]=v14.ReplicatedStorage.rEvents.changeSpeedSizeRemote,[v7("\161\16\76\69\232\68\197\154\0\81\82","\128\236\101\63\38\132\33")]=v10.muscleEvent};v17.formatNumber=function(v240) local v241=0 + 0 ;local v242;while true do if (v241==(0 + 0)) then v242=0 + 0 ;while true do if (v242==(0 + 0)) then v240=tonumber(v240) or (703 -(227 + 476)) ;if (v240>=1000000000000000000) then return string.format(v7("\233\231\64\66\167\226","\175\204\201\113\36\214\139"),v240/1000000000000000000 );elseif (v240>=999999986991104) then return string.format(v7("\2\130\100\218\21\70","\100\39\172\85\188"),v240/(999999817162087 -  -169829017) );elseif (v240>=(999840555317 -  -159440587)) then return string.format(v7("\232\54\232\134\39","\83\205\24\217\224"),v240/(999999995904 -0) );elseif (v240>=(1529026597 -529026597)) then return string.format(v7("\163\139\156\59\228","\93\134\165\173"),v240/(2025977476 -1025977476) );elseif (v240>=1000000) then return string.format(v7("\251\188\144\196\55","\30\222\146\161\162\90\174\210"),v240/(828562 + 171438) );elseif (v240>=(1986 -(21 + 965))) then return string.format(v7("\160\0\33\12\238","\106\133\46\16"),v240/(1696 -(127 + 569)) );else return tostring(math.floor(v240));end break;end end break;end end end;v17.formatWithCommas=function(v243) local v244=0 + 0 ;local v245;while true do local v747=0 + 0 ;while true do if (v747==(0 + 0)) then if (v244==0) then v245=tostring(math.floor(tonumber(v243) or (0 -0) ));while true do local v1319,v1320=v245:gsub(v7("\102\104\62\163\31\68\19\105\59\185\94\5\92\101\119\181","\32\56\64\19\156\58"),v7("\31\153\171\19\8","\224\58\168\133\54\58\146"));v245=v1319;if (v1320==(0 + 0)) then break;end end v244=2 -1 ;end if (v244==(1 + 0)) then return v245;end break;end end end end;v17.notify=function(v246,v247,v248,v249) v9.Notify:Show(v246,v247,v248 or 3 ,v249 or v7("\80\88\77\242","\107\57\54\43\157\21\230\231") );end;local v28=v9.new({[v7("\245\138\28\240","\175\187\235\113\149\217\188")]=v7("\20\160\143\73\237\97\79\52\166\149\73","\24\92\207\225\44\131\25"),[v7("\127\218\172\64\30","\29\43\179\216\44\123")]=v7("\149\214\46\73\179\193\23\68\180\205\37\12\161\153\18\73\191\214\50\66","\44\221\185\64"),[v7("\54\238\76\75\123","\19\97\135\40\63")]=146 + 474 ,[v7("\134\89\58\60\39\37","\81\206\60\83\91\79")]=1712 -(1162 + 130) });_G.HonenxWhiteWindow=v28;local v29={[v7("\67\170\217\124","\196\46\203\176\18\79\163\45")]=v28:AddTab(v7("\149\35\119\16","\143\216\66\30\126\68\155")),[v7("\161\193\1\199\204\173\208","\129\202\168\109\171\165\195\183")]=v28:AddTab(v7("\9\81\59\212\215\26\225","\134\66\56\87\184\190\116")),[v7("\47\33\12\184\10","\85\92\81\105\219\121\139\65")]=v28:AddTab(v7("\206\163\85\70\111","\191\157\211\48\37\28")),[v7("\217\30\230\17\51\209\24","\90\191\127\148\124")]=v28:AddTab(v7("\94\134\60\26\113\137\41","\119\24\231\78")),[v7("\132\44\182\94","\113\226\77\197\42\188\32")]=v28:AddTab("⚡ Fast"),[v7("\56\25\231\166","\213\90\118\148")]=v28:AddTab(v7("\121\33\167\69","\45\59\78\212\54")),[v7("\25\88\149\142\136\58\162\226\9","\144\112\54\227\235\230\78\205")]=v28:AddTab(v7("\131\45\27\239","\59\211\72\111\156\176")),[v7("\76\136\236\62\90\148","\77\46\231\131")]=v28:AddTab(v7("\152\91\185\83\174\71","\32\218\52\214")),[v7("\90\18\61\173\225\191\87\78","\58\46\119\81\200\145\208\37")]=v28:AddTab(v7("\31\137\60\169\185\178\36\63\159","\86\75\236\80\204\201\221")),[v7("\97\85\118\145\237","\235\18\33\23\229\158")]=v28:AddTab(v7("\99\174\192\175\67","\219\48\218\161")),[v7("\237\127\122\70","\128\132\17\28\41\187\47")]=v28:AddTab(v7("\40\60\0\53","\61\97\82\102\90"))};for v250,v251 in pairs(v29) do v251.runtime={};end v17.connect(v10.CharacterAdded,function(v253) local v254=0;while true do if (v254==(0 -0)) then v17.playerData.Character=v253;v17.playerData.Humanoid=v253:WaitForChild(v7("\132\59\166\74\201\88\23\13","\105\204\78\203\43\167\55\126"),7 + 3 );v254=2 -1 ;end if (v254==1) then v17.playerData.Backpack=v10:WaitForChild(v7("\135\171\32\21\3\5\196\90","\49\197\202\67\126\115\100\167"));break;end end end);v17.connect(v10.Idled,function() pcall(function() local v748=0;while true do if (v748==(937 -(889 + 47))) then v14.VirtualUser:ClickButton1(Vector2.new(0,0 + 0 ));break;end if (v748==0) then v14.VirtualUser:CaptureController();v14.VirtualUser:ClickButton2(Vector2.new(1264 -(1153 + 111) ,0 -0 ));v748=1 + 0 ;end end end);end);v29.main:AddSection(v7("\2\72\218\59\192\101\91\35\79\214\39\135\69","\62\87\59\191\73\224\54"));v29.main.Settings={[v7("\212\11\224\204","\169\135\98\154")]={[v7("\253\118\40\65\248","\168\171\23\68\52\157\83")]=2,[v7("\209\127\244\175\41\40\131","\231\148\17\149\205\69\77")]=false},[v7("\179\183\194\254\83","\159\224\199\167\155\55")]={[v7("\193\242\48\199\242","\178\151\147\92")]=62 + 58 ,[v7("\169\243\77\48\30\73\126","\26\236\157\44\82\114\44")]=false},[v7("\12\1\227","\59\74\78\181")]={[v7("\19\208\86\79\182","\211\69\177\58\58")]=8 + 62 ,[v7("\146\235\120\247\229\206\179","\171\215\133\25\149\137")]=false}};v29.main:AddTextBox(v7("\210\193\40\255\175\120\248\71\231\201\39\246\251\112\174\11\187","\34\129\168\82\154\143\80\156"),function(v255) v255=string.gsub(v255,v7("\192\161\120","\233\229\210\83\107\40\46"),"");if (tonumber(v255) and (tonumber(v255)>0)) then v29.main.Settings.Size.Value=tonumber(v255);end end,{[v7("\194\78\55\215\23","\101\161\34\82\182")]=false});v29.main:AddSwitch(v7("\219\8\77\190\232\235\152\43","\78\136\109\57\158\187\130\226"),function(v256) v29.main.Settings.Size.Enabled=v256;end);task.spawn(function() while v17.isCurrent() do if (v29.main.Settings.Size.Enabled and v17.playerData.Character and v17.playerData.Humanoid) then pcall(function() v17.remotes.ChangeSpeedSize:InvokeServer(v7("\61\55\248\255\57\58\202\248\36\58","\145\94\95\153"),v29.main.Settings.Size.Value);end);end task.wait(0.15 + 0 );end end);v29.main:AddTextBox(v7("\206\221\17\208\74\247\181\201\17\211\79\162\241\217\84\132\28\231\180\151","\215\157\173\116\181\46"),function(v258) v258=string.gsub(v258,v7("\112\167\192","\186\85\212\235\146"),"");if (tonumber(v258) and (tonumber(v258)>(0 + 0))) then v29.main.Settings.Speed.Value=tonumber(v258);end end,{[v7("\193\141\19\255\43","\56\162\225\118\158\89\142")]=false});v29.main:AddSwitch(v7("\111\0\212\239\17\200\89\0\196","\184\60\101\160\207\66"),function(v259) v29.main.Settings.Speed.Enabled=v259;end);task.spawn(function() while v17.isCurrent() do local v749=0;local v750;while true do if (v749==(0 -0)) then v750=0;while true do if (v750==(0 + 0)) then if (v29.main.Settings.Speed.Enabled and v17.playerData.Character and v17.playerData.Humanoid) then pcall(function() v17.remotes.ChangeSpeedSize:InvokeServer(v7("\50\138\125\178\54\135\79\172\52\135\120","\220\81\226\28"),v29.main.Settings.Speed.Value);end);end task.wait(96.15 -(23 + 73) );break;end end break;end end end end);v29.main:AddTextBox(v7("\53\250\180\187\162\150\94\132\208\171\163\157","\167\115\181\226\155\138"),function(v261) local v262=285 -(26 + 259) ;while true do if (v262==(0 + 0)) then v261=string.gsub(v261,v7("\167\49\172","\166\130\66\135\60\27\17"),"");if (tonumber(v261) and (tonumber(v261)>=(1 -0)) and (tonumber(v261)<=(421 -301))) then v29.main.Settings.FOV.Value=tonumber(v261);end break;end end end,{[v7("\71\70\203\116\34","\80\36\42\174\21")]=false});v29.main:AddSwitch(v7("\125\21\35\58\104\63\1","\26\46\112\87"),function(v263) local v264=1629 -(1094 + 535) ;local v265;while true do if (v264==(0 + 0)) then v265=1876 -(1554 + 322) ;while true do if (v265==(1425 -(989 + 436))) then v29.main.Settings.FOV.Enabled=v263;if v17.playerData.Camera then v17.playerData.Camera.FieldOfView=(v263 and v29.main.Settings.FOV.Value) or (1248 -(816 + 362)) ;end break;end end break;end end end);task.spawn(function() while v17.isCurrent() do local v751=0;while true do if (v751==(0 -0)) then if (v29.main.Settings.FOV.Enabled and v17.playerData.Camera) then v17.playerData.Camera.FieldOfView=v29.main.Settings.FOV.Value;end task.wait(0.15);break;end end end end);v29.main:AddSection(v7("\137\49\164\96\186\188\81\189\182\45\235\50\255\137\76\167\172\34\167\103","\212\217\67\203\20\223\223\37"));v29.main.Protection={[v7("\155\131\188\219\156\129\161\220\189","\178\218\237\200")]={[v7("\147\187\231\210\186\176\226","\176\214\213\134")]=false},[v7("\196\162\165\221\188\95\86\250\129\185\215\163","\57\148\205\214\180\200\54")]={[v7("\55\243\52\54\122\23\249","\22\114\157\85\84")]=false,[v7("\244\196\0\205\73\255\167\202","\200\164\171\115\164\61\150")]=nil}};v29.main.enableAntiFling=function() if ( not v29.main.Protection.AntiFling.Enabled or  not v10.Character) then return;end local v266=v10.Character:FindFirstChild(v7("\150\225\14\68\141\177\253\7\119\140\177\224\51\68\145\170","\227\222\148\99\37"));if  not v266 then return;end if (v266:FindFirstChild(v7("\17\93\86\239\207\54\94\93\245\240\39\75","\153\83\50\50\150")) and (v266.BodyVelocity.MaxForce==Vector3.new(251588 -151588 ,0,368698 -268698 ))) then v266.BodyVelocity:Destroy();end local v267=Instance.new(v7("\127\121\119\5\69\174\65\82\117\122\8\106","\45\61\22\19\124\19\203"));v267.MaxForce=Vector3.new(100000,0 -0 ,100000);v267.Velocity=Vector3.new(0 -0 ,0 -0 ,0 + 0 );v267.P=2013 -(86 + 677) ;v267.Parent=v266;v29.main.runtime.bv=v267;end;v29.main.disableAntiFling=function() local v273=0 + 0 ;local v274;while true do if (v273==(1 + 0)) then if  not v274 then return;end if (v274:FindFirstChild(v7("\48\47\60\101\138\113\30\47\59\117\168\109","\20\114\64\88\28\220")) and (v274.BodyVelocity.MaxForce==Vector3.new(101026 -(263 + 763) ,0 + 0 ,100858 -(649 + 209) ))) then v274.BodyVelocity:Destroy();end break;end if ((0 -0)==v273) then if  not v10.Character then return;end v274=v10.Character:FindFirstChild(v7("\233\7\0\244\12\127\176\197\32\2\250\22\64\184\211\6","\217\161\114\109\149\98\16"));v273=732 -(643 + 88) ;end end end;v29.main:AddSwitch(v7("\16\15\198\189\184\246\177\56\15\213","\221\81\97\178\212\152\176"),function(v275) local v276=0;while true do if (v276==(1769 -(54 + 1715))) then v29.main.Protection.AntiFling.Enabled=v275;if v275 then v29.main.enableAntiFling();else v29.main.disableAntiFling();end break;end end end):Set(false);v17.connect(v10.CharacterAdded,function(v277) local v278=0 -0 ;while true do if (v278==(0 -0)) then v277:WaitForChild(v7("\229\242\16\250\20\194\238\25\201\21\194\243\45\250\8\217","\122\173\135\125\155"),9 -4 );if v29.main.Protection.AntiFling.Enabled then v29.main.enableAntiFling();end break;end end end);v29.main.lockPosition=function() local v279=0 + 0 ;local v280;while true do if ((1 + 0)==v279) then if  not v10.Character then return;end v280=v10.Character:FindFirstChild(v7("\172\212\13\184\49\62\193\128\243\15\182\43\1\201\150\213","\168\228\161\96\217\95\81"));v279=2;end if (v279==(0 -0)) then v29.main.enableAntiFling();if ( not v29.main.Protection.PositionLock.Enabled or  not v29.main.Protection.PositionLock.Position) then return;end v279=1384 -(132 + 1251) ;end if (v279==(2 + 0)) then if  not v280 then return;end if v280:FindFirstChild(v7("\235\222\61\85\59\94\212\223\2\83\44\92\222\195","\55\187\177\78\60\79")) then v280.PositionLocker.Position=v29.main.Protection.PositionLock.Position;else local v1109=0;local v1110;while true do if (v1109==2) then v1110.Position=v29.main.Protection.PositionLock.Position;v1110.P=100000;v1109=7 -4 ;end if (v1109==3) then v1110.Parent=v280;v29.main.runtime.bp=v1110;break;end if (v1109==(0 + 0)) then v29.main.disableAntiFling();v1110=Instance.new(v7("\15\193\91\242\118\192\147\36\218\86\228\72","\224\77\174\63\139\38\175"));v1109=459 -(185 + 273) ;end if (v1109==(1 + 0)) then v1110.Name=v7("\180\78\75\39\144\72\87\32\168\78\91\37\129\83","\78\228\33\56");v1110.MaxForce=Vector3.new(math.huge,math.huge,math.huge);v1109=5 -3 ;end end end break;end end end;v29.main.unlockPosition=function() if v10.Character then local v841=0 + 0 ;local v842;while true do if ((1224 -(361 + 863))==v841) then v842=v10.Character:FindFirstChild(v7("\230\107\191\2\139\193\119\182\49\138\193\106\130\2\151\218","\229\174\30\210\99"));if (v842 and v842:FindFirstChild(v7("\43\226\149\88\249\52\54\21\193\137\82\230\56\43","\89\123\141\230\49\141\93"))) then v842.PositionLocker:Destroy();end break;end end end v29.main.Protection.PositionLock.Position=nil;end;v29.main:AddSwitch(v7("\223\126\245\7\80\122\252\98\255\24\25\69\253","\42\147\17\150\108\112"),function(v282) local v283=0;local v284;while true do if (0==v283) then v284=0 -0 ;while true do if ((1327 -(443 + 884))==v284) then v29.main.Protection.PositionLock.Enabled=v282;if v282 then if v10.Character then local v1442=0 -0 ;local v1443;while true do if (v1442==(0 + 0)) then v1443=v10.Character:FindFirstChild(v7("\39\179\32\126\233\231\6\162\31\112\232\252\63\167\63\107","\136\111\198\77\31\135"));if v1443 then v29.main.Protection.PositionLock.Position=v1443.Position;end break;end end end v29.main.lockPosition();else v29.main.unlockPosition();end break;end end break;end end end);v17.connect(v10.CharacterAdded,function(v285) if (v29.main.Protection.PositionLock.Enabled and v285:WaitForChild(v7("\42\28\170\87\179\235\30\173\48\6\168\66\141\229\5\189","\201\98\105\199\54\221\132\119"),7 -2 )) then v29.main.Protection.PositionLock.Position=v285.HumanoidRootPart.Position;v29.main.lockPosition();end end);task.spawn(function() while v17.isCurrent() do if v29.main.Protection.PositionLock.Enabled then v29.main.lockPosition();end task.wait(0.1 + 0 );end end);v29.main.VisibilitySettings={[v7("\145\5\135\36\50\48\184\170","\204\217\108\227\65\98\85")]=false,[v7("\118\202\241\224\28\207\78\214\229\246","\160\62\163\149\133\76")]=false,[v7("\229\168\2\56\243\211\180\30\10\213\211\174\25","\163\182\192\109\79")]=v14.ReplicatedStorage.rEvents:WaitForChild(v7("\39\46\15\215\197\49\50\19\229\227\49\40\20","\149\84\70\96\160")),[v7("\11\7\27\232\8\10\12\244\61\20\62\228\34\3\40\251\61\8\25","\141\88\102\109")]=v14.ReplicatedStorage.rEvents:WaitForChild(v7("\160\82\220\117\42\49\84\216\182\65\249\121\0\56\112\215\182\93\222","\161\211\51\170\16\122\93\53"))};v29.main:AddSwitch(v7("\211\167\182\45\187\158\183\60\232","\72\155\206\210"),function(v286) local v287=0 + 0 ;while true do if (0==v287) then v29.main.VisibilitySettings.HidePets=v286;v29.main.VisibilitySettings.ShowPetsEvent:FireServer((v286 and v7("\78\115\80\11\3\67\110\71","\83\38\26\52\110")) or v7("\75\31\40\81\104\18\51\85","\38\56\119\71") );break;end end end):Set(false);v29.main.HidePopupsSwitch=v29.main:AddSwitch(v7("\219\230\92\211\101\102\252\255\77\198\54","\54\147\143\56\182\69"),function(v288) v29.main.VisibilitySettings.HidePopups=v288;v29.main.VisibilitySettings.SavePlayerSizeEvent:FireServer(v7("\197\137\240\94\239\217\145\234\89\204\249\145\235\64\208\216","\191\182\225\159\41"));end);v29.main.HidePopupsSwitch:Set(false);v29.main.RedactConfigPath=v7("\3\29\38\80\133\159\245\35\27\60\80\196\170\215\56\17\36\80\167\130\197\46\28\44\70\166\134\203\37\49\39\91\141\142\197\101\24\59\90\133","\162\75\114\72\53\235\231");v29.main.RedactConfig={[v7("\190\57\64\227\80\22\162\61\73\231","\98\236\92\36\130\51")]=false,[v7("\150\28\8\187\70\188\134\36\165\13\31","\80\196\121\108\218\37\200\213")]=false};v29.main.loadRedactConfig=function() local v290=0;while true do if (v290==(0 -0)) then if ((type(isfile)~=v7("\6\102\12\124\95\7\133\14","\234\96\19\98\31\43\110")) or (type(readfile)~=v7("\0\10\92\196\184\123\132\8","\235\102\127\50\167\204\18"))) then return;end pcall(function() if  not isfile(v29.main.RedactConfigPath) then return;end local v1054=v14.HttpService:JSONDecode(readfile(v29.main.RedactConfigPath));if (typeof(v1054)==v7("\68\160\247\47\65","\78\48\193\149\67\36")) then local v1226=747 -(16 + 731) ;while true do if (v1226==(0 + 0)) then v29.main.RedactConfig.RedactName=v1054.RedactName==true ;v29.main.RedactConfig.RedactStats=v1054.RedactStats==true ;break;end end end end);break;end end end;v29.main.saveRedactConfig=function() if (type(writefile)~=v7("\54\11\142\27\85\57\17\142","\33\80\126\224\120")) then return;end pcall(function() if ((type(makefolder)==v7("\234\189\13\199\72\229\167\13","\60\140\200\99\164")) and ((type(isfolder)~=v7("\129\225\10\37\182\142\251\10","\194\231\148\100\70")) or  not isfolder(v7("\110\67\207\166\248\208\113\68\200\183\243","\168\38\44\161\195\150")))) then pcall(makefolder,v7("\168\243\140\115\62\240\129\30\137\232\135","\118\224\156\226\22\80\136\214"));end writefile(v29.main.RedactConfigPath,v14.HttpService:JSONEncode(v29.main.RedactConfig));end);end;v29.main.loadRedactConfig();v29.main.RedactNameSwitch=v29.main:AddSwitch(v7("\112\235\93\129\65\250\25\174\67\227\92","\224\34\142\57"),function(v291) v29.main.RedactConfig.RedactName=v291;v29.main.saveRedactConfig();end);v29.main.RedactNameSwitch:Set(v29.main.RedactConfig.RedactName);v29.main.RedactStatsSwitch=v29.main:AddSwitch(v7("\236\162\193\220\112\229\29\61\202\166\209\206","\110\190\199\165\189\19\145\61"),function(v293) local v294=0 + 0 ;while true do if (v294==(0 + 0)) then v29.main.RedactConfig.RedactStats=v293;v29.main.saveRedactConfig();break;end end end);v29.main.RedactStatsSwitch:Set(v29.main.RedactConfig.RedactStats);v29.main.WaterParts={[v7("\234\234\101\252\152","\167\186\139\23\136\235")]={},[v7("\42\180\154\25\41\188\146\8","\109\122\213\232")]=2048,[v7("\218\248\182\49\226\211\171\35\250\246\172\51\235","\80\142\151\194")]=50000,[v7("\48\210\118\94\23\246\120\95\10\210\126\67\13","\44\99\166\23")]=Vector3.new( -(762 -(527 + 233)), -(7.5 + 2), -2)};task.spawn(function() for v752=0 -0 ,math.ceil(v29.main.WaterParts.TotalDistance/v29.main.WaterParts.PartSize ) -(1 + 0)  do for v845=1785 -(1107 + 678) ,math.ceil(v29.main.WaterParts.TotalDistance/v29.main.WaterParts.PartSize ) -(1 + 0)  do for v931,v932 in ipairs({{v752 * v29.main.WaterParts.PartSize ,v845 * v29.main.WaterParts.PartSize ,v7("\79\254\45\51\12","\196\28\151\73\86\83")   .. v752   .. "_"   .. v845 },{ -v752 * v29.main.WaterParts.PartSize ,v845 * v29.main.WaterParts.PartSize ,v7("\223\6\47\4\176\81\31\126\231\60","\22\147\99\73\112\226\56\120")   .. v752   .. "_"   .. v845 },{ -v752 * v29.main.WaterParts.PartSize , -v845 * v29.main.WaterParts.PartSize ,v7("\141\101\206\240\139\172\74","\237\216\21\130\149")   .. v752   .. "_"   .. v845 },{v752 * v29.main.WaterParts.PartSize , -v845 * v29.main.WaterParts.PartSize ,v7("\183\94\109\86\183\193\74\189","\62\226\46\63\63\208\169")   .. v752   .. "_"   .. v845 }}) do local v933=0 + 0 ;local v934;while true do if (v933==2) then v934.Transparency=1;v934.CanCollide=true;v933=3;end if (v933==(1 + 2)) then v934.Name=v7("\32\21\32\225\233","\194\112\116\82\149\182\206")   .. v932[3 + 0 ] ;v934.Parent=workspace;v933=4;end if ((0 -0)==v933) then v934=Instance.new(v7("\213\24\71\151","\62\133\121\53\227\127\109\79"));v934.Size=Vector3.new(v29.main.WaterParts.PartSize,1,v29.main.WaterParts.PartSize);v933=1;end if (v933==(4 + 0)) then table.insert(v29.main.WaterParts.Parts,v934);break;end if (v933==1) then v934.Position=v29.main.WaterParts.StartPosition + Vector3.new(v932[1],0 -0 ,v932[2]) ;v934.Anchored=true;v933=2 -0 ;end end end end end end);v29.main.WalkOnWaterSwitch=v29.main:AddSwitch(v7("\14\169\64\19\128\237\0\121\159\77\12\197\240","\110\89\200\44\120\160\130"),function(v295) for v753,v754 in ipairs(v29.main.WaterParts.Parts) do if (v754 and v754.Parent) then v754.CanCollide=v295;end end end);v29.main.WalkOnWaterSwitch:Set(false);v29.main:AddSection(v7("\132\215\67\67\81","\45\203\163\43\38\35\42\91"));v29.main:AddSwitch(v7("\251\139\218\42\137\160\64\215\197\246\54\138\185","\52\178\229\188\67\231\201"),function(v296) local v297=0 -0 ;while true do if (v297==(0 + 0)) then _G.InfiniteJump=v296;if v296 then v17.connect(v14.UserInputService.JumpRequest,function() if (_G.InfiniteJump and v10.Character) then local v1367=0;local v1368;while true do if ((707 -(667 + 40))==v1367) then v1368=v10.Character:FindFirstChildOfClass(v7("\9\84\93\5\249\83\42\37","\67\65\33\48\100\151\60"));if v1368 then v1368:ChangeState(v7("\245\242\163\200\250\209\224","\147\191\135\206\184"));end break;end end end end);end break;end end end);v29.main.FortuneWheelData={[v7("\182\61\168\207\209\93\181","\210\228\72\198\161\184\51")]=false,[v7("\17\76\253\21\97\207\34\64\252\30","\174\86\41\147\112\19")]=0,[v7("\105\5\128\4\49\10","\203\59\96\237\107\69\111\113")]=v14.ReplicatedStorage.rEvents:WaitForChild(v7("\43\6\169\239\23\255\197\48\3\162\228\6\248\210\33\26\158\228\60\255\195\33","\183\68\118\204\129\81\144")),[v7("\45\165\113\234\8\135\29","\226\110\205\16\132\107")]=v14.ReplicatedStorage:WaitForChild(v7("\248\203\225\203\68\239","\33\139\163\128\185")):WaitForChild(v7("\84\89\16\223\91\87\3\205","\190\55\56\100")):WaitForChild(v7("\80\160\46\10\6\237\246\97\167\57\27\31\192\251\87\161\63\27\0","\147\54\207\92\126\115\131")):WaitForChild(v7("\43\62\39\105\24\112\8\113\2\117\8\123\1","\30\109\81\85\29\109"))};v29.main.spinFortuneWheel=function() pcall(function() v29.main.FortuneWheelData.Remote:InvokeServer(v7("\240\97\81\184\16\209\238\235\100\90\179\1\214\249\250\125","\156\159\17\52\214\86\190"),v29.main.FortuneWheelData.Chances);end);end;v29.main:AddSwitch(v7("\157\255\180\178\238\201\178\174\186\250\179\185\238\216\181\185\171\227","\220\206\143\221"),function(v298) v29.main.FortuneWheelData.Running=v298;v29.main.FortuneWheelData.Generation+=1 v29.main.runtime.generation=v29.main.FortuneWheelData.Generation;if  not v298 then return;end task.spawn(function() while v17.isCurrent() and v29.main.FortuneWheelData.Running and (v29.main.FortuneWheelData.Generation==v29.main.runtime.generation)  do local v846=1310 -(436 + 874) ;while true do if (v846==(1606 -(762 + 844))) then v29.main.spinFortuneWheel();task.wait(1);break;end end end end);end);local v48=v29.main:AddDropdown(v7("\165\117\44\25\223\201\146\178\116\32\18","\178\230\29\77\119\184\172"),function(v302) v14.Lighting.ClockTime=((v302==v7("\219\183\13\19\99","\152\149\222\106\123\23")) and 0) or 9 ;end);v48:Add(v7("\243\47\241\75\161","\213\189\70\150\35"));v48:Add(v7("\107\84\109","\104\47\53\20"));v29.info:AddSection("Información");v29.info:AddLabel(v7("\139\67\143\25\178\23\148\68\136\8\185\79\191\12\179\25\190\0\177\66","\111\195\44\225\124\220"));v29.info:AddLabel(v7("\245\71\4\118\235\169\193\6\40\124\165\174\214\6\79\51\168\178\217\72\1\126\250\235\151\6\55\123\162\191\221","\203\184\38\96\19\203"));v29.info:AddLabel("");v29.info:AddButton("📋 Copiar Discord",function() if setclipboard then local v847=0 -0 ;local v848;while true do if (v847==(0 -0)) then v848=0 + 0 ;while true do if (v848==0) then setclipboard(v7("\49\103\109\81\221\99\60\54\69\199\42\112\118\83\202\119\116\126\14\204\15\87\109\86\229\31\42\43","\174\89\19\25\33"));v17.notify(v7("\11\27\65\77\248\149\15","\107\79\114\50\46\151\231"),v7("\21\175\187\34\202\58\184\208\48\167\177\38","\160\89\198\213\73\234\89\215"),1 + 1 ,v7("\91\100\183\253\192\91\98","\165\40\17\212\158"));break;end end break;end end end end);v29.info:AddLabel("");v29.info:AddLabel(v7("\198\214\6\39\52\236\219\29\39\41\247\202\82","\70\133\185\104\83"));v29.info:AddLabel(v7("\73\5\71\51\200\10\68\73\123\137\76\101\76\37\199\1\92\13","\169\100\37\36\74"));v29.info:AddLabel(v7("\77\199\149\88\9\147\167\16\32\132\170\89\12\142\172\6\83\209\251","\48\96\231\194"));v29.info:AddLabel(v7("\133\26\38\34\23\221\161\195\232\117\25\35\28\202","\227\168\58\110\77\121\184\207"));v29.info:AddLabel("");v29.info:AddLabel(v7("\80\18\150\0\132\242\49\232\59\42\237\14\225","\197\27\92\223\32\209\187\17"));v17.notify(v7("\43\80\205\254\13\71\244\243\10\75\198","\155\99\63\163"),"Hub cargado correctamente ✅",479 -(209 + 267) ,v7("\145\196\162\142\188\151\145","\228\226\177\193\237\217"));v29.killing.getTool=function() for v755,v756 in pairs(v10.Backpack:GetChildren()) do if ((v756.Name==v7("\4\165\45\229\60","\134\84\208\67")) and v10.Character and v10.Character:FindFirstChild(v7("\59\185\139\93\29\163\143\88","\60\115\204\230"))) then v10.Character.Humanoid:EquipTool(v756);end end if v10.muscleEvent then v10.muscleEvent:FireServer(v7("\247\47\229\115\239","\16\135\90\139"),v7("\88\113\0\39\102\85\118\80","\24\52\20\102\83\46\52"));v10.muscleEvent:FireServer(v7("\212\58\47\39\7","\111\164\79\65\68"),v7("\212\208\132\214\58\194\199\215\135","\138\166\185\227\190\78"));end end;v29.killing.isPlayerAlive=function(v304) return v304 and v304.Character and v304.Character:FindFirstChild(v7("\227\97\200\54\92\44\16\207\70\202\56\70\19\24\217\96","\121\171\20\165\87\50\67")) and v304.Character:FindFirstChild(v7("\238\45\180\55\183\13\207\60","\98\166\88\217\86\217")) and (v304.Character.Humanoid.Health>(0 -0)) ;end;v29.killing.isSpawnProtected=function(v305) local v306=0;local v307;while true do if (v306==1) then local v936=0 -0 ;while true do if (0==v936) then v307=v305.Character:GetAttribute(v7("\194\250\45\161\43\193\248\35\162\32\242\254\41\178\16\255\254\37\186","\69\145\138\76\214"));return (typeof(v307)==v7("\126\218\132\139\186\4","\118\16\175\233\233\223")) and (workspace:GetServerTimeNow()<v307) ;end end end if (v306==(1711 -(1611 + 100))) then if ( not v305 or  not v305.Character) then return false;end if (v305.Character:FindFirstChildOfClass(v7("\208\249\107\2\131\250\255\243\117\5","\188\150\150\25\97\230")) or v305.Character:FindFirstChild(v7("\201\153\94\21\2\221\200\134\75\7\15\249\211\134\81\42\5\234\210\133\86\5\4\249","\141\186\233\63\98\108"))) then return true;end v306=1 + 0 ;end end end;v29.killing.getLocalCombatCharacter=function() local v308=784 -(14 + 770) ;local v309;local v310;local v311;while true do if (v308==(1785 -(1165 + 619))) then local v937=0 -0 ;while true do if (v937==(382 -(229 + 152))) then v308=196 -(107 + 87) ;break;end if (v937==(0 -0)) then v311=v309 and v309:FindFirstChild(v7("\21\193\183\220\121\65\46\86\15\219\181\201\71\79\53\70","\50\93\180\218\189\23\46\71")) ;if ( not v309 or  not v310 or (v310.Health<=0) or  not v311) then return;end v937=1;end end end if (v308==0) then v309=v10.Character;v310=v309 and v309:FindFirstChildOfClass(v7("\163\145\56\186\224\132\116\143","\29\235\228\85\219\142\235")) ;v308=1 + 0 ;end if (v308==(2 + 0)) then return v309,v310,v311;end end end;v29.killing.positionNearTarget=function(v312,v313) if ( not v29.killing.isPlayerAlive(v312) or v29.killing.isSpawnProtected(v312) or v29.killing.isSpawnProtected(v10)) then return false;end local v314,v314,v315=v29.killing.getLocalCombatCharacter();local v316=v312.Character and v312.Character:FindFirstChild(v7("\246\177\86\77\74\211\65\218\150\84\67\80\236\73\204\176","\40\190\196\59\44\36\188")) ;if ( not v315 or  not v316) then return false;end v315.CFrame=v316.CFrame * CFrame.new(0 -0 ,v313,0 -0 ) ;v315.AssemblyLinearVelocity=Vector3.zero;v315.AssemblyAngularVelocity=Vector3.zero;return true;end;v29.killing.touchAndPunchTarget=function(v321,v322) if  not v29.killing.positionNearTarget(v321,v322) then return false,false;end v14.RunService.Heartbeat:Wait();if  not v29.killing.positionNearTarget(v321,v322) then return false,false;end local v323=v29.killing.getLocalCombatCharacter();local v324=v321.Character and v321.Character:FindFirstChild(v7("\20\80\209\181\244\114\4\56\119\211\187\238\77\12\46\81","\109\92\37\188\212\154\29")) ;local v325=v321.Character and v321.Character:FindFirstChildOfClass(v7("\44\250\169\194\63\85\13\235","\58\100\143\196\163\81")) ;if ( not v323 or  not v324 or  not v325 or v29.killing.isSpawnProtected(v321)) then return false,false;end local v326=v323:FindFirstChild(v7("\54\71\37\183\23\72\235\10","\110\122\34\67\195\95\41\133")) or v323:FindFirstChild(v7("\71\184\92\66\194\93\176\85\78","\182\21\209\59\42")) ;if  not v326 then return false,false;end local v327=v323:FindFirstChild(v7("\135\66\203\30\41","\222\215\55\165\125\65")) or v10.Backpack:FindFirstChild(v7("\28\196\200\25\250","\42\76\177\166\122\146\161\141")) ;local v328=v323:FindFirstChildOfClass(v7("\141\159\8\207\119\121\172\142","\22\197\234\101\174\25"));if (v327 and (v327.Parent~=v323) and v328) then v328:EquipTool(v327);end local v329=v325.Health;local v330=pcall(function() local v757=0 + 0 ;while true do if (v757==(14 -(13 + 1))) then if firetouchinterest then local v1234=0;while true do if ((0 + 0)==v1234) then firetouchinterest(v324,v326,0 + 0 );firetouchinterest(v324,v326,1);break;end end end v10.muscleEvent:FireServer(v7("\61\33\171\223\126","\230\77\84\197\188\22\207\183"),((v326.Name==v7("\213\17\192\232\164\160\254\49","\85\153\116\166\156\236\193\144")) and v7("\168\229\75\167\204\1\170\228","\96\196\128\45\211\132")) or v7("\39\132\124\87\198\135\181\214\49","\184\85\237\27\63\178\207\212") );break;end end end);if  not v330 then return false,false;end for v758=1059 -(987 + 71) ,11 -7  do local v759=0 -0 ;while true do if (1==v759) then if v29.killing.isSpawnProtected(v321) then return false,false;end break;end if (0==v759) then v14.RunService.Heartbeat:Wait();if ( not v29.killing.isPlayerAlive(v321) or (v325.Health<v329)) then return true,true;end v759=1;end end end return false,true;end;v29.killing.attackPlayerWithLimit=function(v331,v332,v333,v334) local v335=699 -(514 + 185) ;while v17.isCurrent() and (v335<v332) and v333() and v29.killing.isPlayerAlive(v331) and  not v29.killing.isSpawnProtected(v331)  do local v760,v761=v29.killing.touchAndPunchTarget(v331,v334);if v760 then v335=v335 + 1 + 0 ;end if  not v761 then break;end if  not v760 then task.wait(0.05 -0 );end end return v335;end;v29.killing.attackPlayerForDuration=function(v336,v337,v338,v339) local v340=os.clock();while v17.isCurrent() and ((os.clock() -v340)<v337) and v338() and v29.killing.isPlayerAlive(v336) and  not v29.killing.isSpawnProtected(v336)  do local v762=0;while true do if (v762==0) then if v29.killing.positionNearTarget(v336,v339) then local v1235=0;local v1236;local v1237;local v1238;local v1239;local v1240;local v1241;local v1242;while true do if (0==v1235) then v1236=0 -0 ;v1237=nil;v1235=1505 -(771 + 733) ;end if (v1235==(3 -1)) then v1240=nil;v1241=nil;v1235=3;end if (v1235==(1 -0)) then v1238=nil;v1239=nil;v1235=2;end if (v1235==(1170 -(407 + 760))) then v1242=nil;while true do if (v1236==(0 + 0)) then v1237=v10.Character;v1238=v336.Character and v336.Character:FindFirstChild(v7("\32\76\4\94\6\86\0\91\58\86\6\75\56\88\27\75","\63\104\57\105")) ;v1236=1 + 0 ;end if (v1236==(3 + 0)) then if (v1241 and v1242 and (v1241.Parent~=v1237)) then v1242:EquipTool(v1241);end if (v1238 and v1239 and v1240) then pcall(function() local v1555=1854 -(169 + 1685) ;while true do if (v1555==(1 + 0)) then v10.muscleEvent:FireServer(v7("\251\208\191\226\198","\174\139\165\209\129"),v7("\177\186\229\201\210\43\113\118\167","\24\195\211\130\161\166\99\16"));break;end if (v1555==0) then if firetouchinterest then firetouchinterest(v1238,v1239,391 -(41 + 350) );firetouchinterest(v1238,v1239,1);firetouchinterest(v1238,v1240,0 -0 );firetouchinterest(v1238,v1240,2 -1 );end v10.muscleEvent:FireServer(v7("\253\235\3\240\240","\183\141\158\109\147\152"),v7("\32\12\224\24\4\8\232\8","\108\76\105\134"));v1555=4 -3 ;end end end);end break;end if ((2 -1)==v1236) then v1239=v1237 and v1237:FindFirstChild(v7("\39\130\162\80\35\134\170\64","\36\107\231\196")) ;v1240=v1237 and v1237:FindFirstChild(v7("\111\188\165\143\73\157\163\137\89","\231\61\213\194")) ;v1236=2 + 0 ;end if (v1236==(889 -(790 + 97))) then v1241=(v1237 and v1237:FindFirstChild(v7("\57\184\51\112\1","\19\105\205\93"))) or v10.Backpack:FindFirstChild(v7("\153\29\208\130\55","\95\201\104\190\225")) ;v1242=v1237 and v1237:FindFirstChildOfClass(v7("\135\222\204\207\161\196\200\202","\174\207\171\161")) ;v1236=13 -10 ;end end break;end end end v14.RunService.Heartbeat:Wait();break;end end end end;v29.killing:AddSection(v7("\107\10\250\47","\118\38\99\137\76\51"));v29.killing.equipBestStatPets=function(v341) local v342=0 + 0 ;local v343;local v344;while true do if ((0 + 0)==v342) then for v1055,v1056 in pairs(v10.petsFolder:GetChildren()) do if v1056:IsA(v7("\219\41\9\22\12\50","\64\157\70\101\114\105")) then for v1321,v1322 in pairs(v1056:GetChildren()) do v14.ReplicatedStorage.rEvents.equipPetEvent:FireServer(v7("\85\166\162\242\5\73\184\151\230\4","\112\32\200\199\131"),v1322);end end end task.wait(245.2 -(235 + 10) );v342=1;end if (v342==(2 + 0)) then for v1057,v1058 in pairs(v10.petsFolder.Unique:GetChildren()) do if v343[v1058.Name] then table.insert(v343[v1058.Name],v1058);end end v344=0 -0 ;v342=1186 -(887 + 296) ;end if ((1048 -(512 + 533))==v342) then for v1059,v1060 in ipairs(v341) do for v1111,v1112 in ipairs(v343[v1060]) do if (v344>=9) then return;end v14.ReplicatedStorage.rEvents.equipPetEvent:FireServer(v7("\41\65\73\177\211\155\39\56","\66\76\48\60\216\163\203"),v1112);v344=v344 + 1 ;task.wait(1424.1 -(662 + 762) );end end break;end if (v342==(678 -(334 + 343))) then v343={};for v1061,v1062 in ipairs(v341) do v343[v1062]={};end v342=6 -4 ;end end end;v29.killing:AddButton(v7("\159\151\108\250\79\142\6\191\149\109\179\123\207\41\187\129\124","\68\218\230\25\147\63\174"),function() v29.killing.equipBestStatPets({v7("\154\35\95\72\246\154\35\73\77\164\169","\214\205\74\51\44"),v7("\217\68\227\243\100\186\127\237\238\116\255\94\231\238","\23\154\44\130\156"),v7("\60\175\170\166\34\10\81\139\162\160\37\7\20\180","\115\113\198\205\206\86"),v7("\183\90\255\86\136\23\216\72\157","\58\228\55\158")});end);v29.killing:AddButton(v7("\145\152\197\39\44\237\23\177\154\196\110\20\168\52\184\157\216","\85\212\233\176\78\92\205"),function() v29.killing.equipBestStatPets({v7("\103\81\143\234\94\65\200\207\69\86\155\246\79\74","\130\42\56\232"),v7("\217\184\37\239\76\127\204\167\61","\95\138\213\68\131\32"),v7("\29\33\173\71\54\29\33\187\66\100\46","\22\74\72\193\35"),v7("\15\113\229\87\63\57\215\87\62\122\225\74\41\107","\56\76\25\132")});end);v29.killing:AddSwitch(v7("\108\196\166\41\217\91\129\138\50\219\95\194\160\102\238\80\200\166\39\219\87\206\165\53","\175\62\161\203\70"),function(v345) if v345 then local v849=0;local v850;local v851;local v852;local v853;local v854;while true do if (v849==(4 -2)) then function v854(v1243) local v1244=0;local v1245;while true do if (v1244==(0 -0)) then v1245=v1243 and v1243:FindFirstChildOfClass(v7("\90\253\201\162\5\76\112\118","\25\18\136\164\195\107\35")) ;if  not v1245 then return;end v1244=1;end if (v1244==(104 -(72 + 31))) then for v1444,v1445 in ipairs(v1245:GetPlayingAnimationTracks()) do if v851(v1445) then v1445:Stop(348 -(89 + 259) );end end break;end end end v29.killing.runtime.animBlockConnection=v17.connect(v14.RunService.RenderStepped,function() local v1246=0;local v1247;while true do if (v1246==(0 + 0)) then v1247=v10.Character;if v853(v1247) then v854(v1247);end break;end end end);break;end if (v849==0) then v850={[v7("\111\139\144\75\98\110\132\147\70\102","\85\92\189\163\115")]=true,[v7("\122\250\99\96\126\250\103\108\123\251","\88\73\204\80")]=true,[v7("\123\211\71\17\127\130\125\212\69","\186\78\227\112\38\73")]=true,[v7("\169\5\175\3\0\47\169\6\169","\26\156\55\157\53\51")]=true,[v7("\217\138\68\143\235\8\219\142\65","\48\236\184\118\185\216")]=true,[v7("\180\229\5\99\150\103\177\234\15","\84\133\221\55\80\175")]=true,[v7("\236\181\125\255\145\11\238\190\116","\60\221\135\68\198\167")]=true,[v7("\191\239\161\218\20\142\186\234\160","\185\142\221\152\227\34")]=true};function v851(v1248) local v1249=0 + 0 ;local v1250;local v1251;while true do if ((1 + 0)==v1249) then v1251=string.lower((v1248.Name or "")   .. " "   .. (v1248.Animation.Name or "") );return (v850[v1250]==true) or (string.find(v1251,v7("\176\86\11\237\168","\142\192\35\101"),1,true)~=nil) or (string.find(v1251,v7("\215\97\61\162\228\135","\118\182\21\73\195\135\236\204"),1 -0 ,true)~=nil) or (string.find(v1251,v7("\13\45\15\73\20","\157\104\92\122\32\100\109"),1 + 0 ,true)~=nil) ;end if (v1249==(0 -0)) then if ( not v1248 or  not v1248.Animation) then return false;end v1250=tostring(v1248.Animation.AnimationId):match(v7("\29\193\28","\151\56\165\55\154\35\83"));v1249=1404 -(1333 + 70) ;end end end v849=1833 -(701 + 1131) ;end if (v849==(128 -(55 + 72))) then function v852(v1252) local v1253=156 -(99 + 57) ;local v1254;while true do local v1323=0 -0 ;while true do if (v1323==(0 + 0)) then if (v1253==(1580 -(1243 + 336))) then return string.find(v1254,v7("\62\94\48\214\89","\156\78\43\94\181\49\113"),1330 -(774 + 555) ,true)~=nil ;end if (v1253==(0 + 0)) then if ( not v1252 or  not v1252:IsA(v7("\151\169\192\198","\203\195\198\175\170\93\71\237"))) then return false;end v1254=string.lower(v1252.Name);v1253=800 -(150 + 649) ;end break;end end end end function v853(v1255) local v1256=0 + 0 ;local v1257;while true do if (v1256==(0 -0)) then v1257=0 -0 ;while true do local v1446=1984 -(1122 + 862) ;while true do if (v1446==0) then if (v1257==(1 -0)) then return false;end if (v1257==(0 + 0)) then if  not v1255 then return false;end for v1561,v1562 in ipairs(v1255:GetChildren()) do if v852(v1562) then return true;end end v1257=1;end break;end end end break;end end end v849=3 -1 ;end end elseif v29.killing.runtime.animBlockConnection then local v1064=0 + 0 ;while true do if (v1064==0) then v29.killing.runtime.animBlockConnection:Disconnect();v29.killing.runtime.animBlockConnection=nil;break;end end end end);v29.killing:AddSection(v7("\201\56\189\64\50\151\200\180\228","\216\136\77\201\47\18\220\161"));_G.whitelistedPlayers=_G.whitelistedPlayers or {} ;_G.blacklistedPlayers=_G.blacklistedPlayers or {} ;_G.killAll=false;_G.killBlacklistedOnly=false;_G.farmBadKarma=false;_G.farmGoodKarma=false;_G.killAllGeneration=(_G.killAllGeneration or (0 + 0)) + 1 ;_G.killListGeneration=(_G.killListGeneration or 0) + (744 -(549 + 194)) ;v29.killing.isWhitelisted=function(v346) for v763,v764 in ipairs(_G.whitelistedPlayers) do if (v764:lower()==v346.Name:lower()) then return true;end end return false;end;v29.killing.isBlacklisted=function(v347) local v348=0 + 0 ;while true do if (v348==(0 -0)) then for v1065,v1066 in ipairs(_G.blacklistedPlayers) do if (v1066:lower()==v347.Name:lower()) then return true;end end return false;end end end;v29.killing.WhitelistDisplayNames={};v29.killing.getWhitelistDisplayName=function(v349) local v350=v29.killing.WhitelistDisplayNames[v349];if v350 then return v350;end local v351=v14.Players:FindFirstChild(v349);if v351 then v29.killing.WhitelistDisplayNames[v349]=v351.DisplayName;return v351.DisplayName;end return v349;end;local function v62() local v352={};for v765,v766 in ipairs(v14.Players:GetPlayers()) do if (v766~=v10) then table.insert(v352,v766.DisplayName   .. v7("\109\240\107","\226\77\140\75\186\104\188")   .. v766.Name );end end table.sort(v352);return v352;end v29.killing.WhitelistDropdown=v29.killing:AddDropdown(v7("\152\202\212\127\91\182\142\231\55\70\173\203\220\54\92\173","\47\217\174\176\95"),function(v353) local v354=0 + 0 ;local v355;while true do if (0==v354) then v355=v353:match(v7("\164\157\62\76\249\29\60","\70\216\189\22\98\210\52\24"));if v355 then local v1114=0;while true do if (v1114==0) then v355=v355:gsub(v7("\228\154\176\205\155\148\146\234\194\192\144\155","\179\186\191\195\231"),v7("\188\110","\132\153\95\120"));for v1408,v1409 in ipairs(_G.whitelistedPlayers) do if (v1409:lower()==v355:lower()) then return;end end v1114=1 -0 ;end if (v1114==(1 + 0)) then table.insert(_G.whitelistedPlayers,v355);v17.notify(v7("\134\186\7\57\242\214\169\162\166","\192\209\210\110\77\151\186"),"Añadido: "   .. v355 ,7 -5 ,v7("\243\22\33\234\250\215\243","\164\128\99\66\137\159"));break;end end end break;end end end);for v356,v357 in ipairs(v62()) do v29.killing.WhitelistDropdown:Add(v357);end v29.killing:AddSwitch(v7("\43\128\229\178\64\172\255\187\18\144\230\176\5","\222\96\233\137"),function(v358) local v359=0;local v360;while true do if (v359==(1703 -(453 + 1250))) then _G.killAll=v358;_G.killAllGeneration=(_G.killAllGeneration or (0 -0)) + 1 + 0 ;v359=1;end if (v359==(577 -(203 + 372))) then task.spawn(function() while v17.isCurrent() and _G.killAll and (_G.killAllGeneration==v360)  do local v1115=false;for v1258,v1259 in ipairs(v14.Players:GetPlayers()) do if ( not _G.killAll or (_G.killAllGeneration~=v360)) then break;end if ((v1259~=v10) and  not v29.killing.isWhitelisted(v1259) and v29.killing.isPlayerAlive(v1259) and  not v29.killing.isSpawnProtected(v1259)) then local v1369=0;while true do if (v1369==(0 + 0)) then v1115=true;v29.killing.attackPlayerForDuration(v1259,11 -7 ,function() return _G.killAll and (_G.killAllGeneration==v360) and  not v29.killing.isWhitelisted(v1259) ;end,3.5);break;end end end end if v1115 then v14.RunService.Heartbeat:Wait();else task.wait(1382.1 -(978 + 404) );end end end);break;end if (v359==(3 -2)) then v360=_G.killAllGeneration;if  not v358 then return;end v359=2 + 0 ;end end end);v29.killing:AddSwitch(v7("\142\187\174\11\141\255\249\170\167\231\57\154\250\245\183\183\180","\144\217\211\199\127\232\147"),function(v361) _G.whitelistFriends=v361;if v361 then for v939,v940 in pairs(v14.Players:GetPlayers()) do if ((v940~=v10) and v940:IsFriendsWith(v10.UserId)) then if  not v29.killing.isWhitelisted(v940) then table.insert(_G.whitelistedPlayers,v940.Name);end end end v17.connect(v14.Players.PlayerAdded,function(v941) if (_G.whitelistFriends and v941:IsFriendsWith(v10.UserId)) then if  not v29.killing.isWhitelisted(v941) then table.insert(_G.whitelistedPlayers,v941.Name);end end end);end end);v29.killing:AddSection(v7("\211\46\44\37\212\5\41\77\244\35\55\38\210","\36\152\79\94\72\181\37\98"));v29.killing.KarmaData={[v7("\241\217\85\50\242\206\78\51","\95\183\184\39")]=false,[v7("\147\62\245\43\115\143\13\177","\98\213\95\135\70\52\224")]=false,[v7("\217\166\199\114\70\255\183\192\120\90","\52\158\195\169\23")]=0};v29.killing.matchesKarmaMode=function(v362) local v363=318 -(56 + 262) ;local v364;local v365;local v366;local v367;while true do if ((1 + 1)==v363) then if ((v366 + v367)<5) then return false;end return (v29.killing.KarmaData.FarmEvil and (v366>v367)) or (v29.killing.KarmaData.FarmGood and (v367>v366)) ;end if (v363==1) then if ( not v364 or  not v365) then return false;end v366,v367=v364.Value or 0 ,v365.Value or 0 ;v363=2;end if ((114 -(108 + 6))==v363) then v364=v362:FindFirstChild(v7("\125\179\61\112\173\52\105\134\123","\235\26\220\82\20\230\85\27"));v365=v362:FindFirstChild(v7("\141\183\224\206\95\137\179\228\195","\20\232\193\137\162"));v363=1 + 0 ;end end end;v29.killing.restartKarmaWorker=function() local v368=0 + 0 ;local v369;while true do if (v368==(1953 -(653 + 1299))) then if ( not v29.killing.KarmaData.FarmEvil and  not v29.killing.KarmaData.FarmGood) then return;end task.spawn(function() while v17.isCurrent() and (v29.killing.KarmaData.FarmEvil or v29.killing.KarmaData.FarmGood) and (v29.killing.KarmaData.Generation==v369)  do local v1116=false;for v1260,v1261 in ipairs(v14.Players:GetPlayers()) do if (v29.killing.KarmaData.Generation~=v369) then break;end if ((v1261~=v10) and  not v29.killing.isWhitelisted(v1261) and v29.killing.isPlayerAlive(v1261) and  not v29.killing.isSpawnProtected(v1261) and v29.killing.matchesKarmaMode(v1261)) then v1116=true;v29.killing.attackPlayerWithLimit(v1261,4 + 0 ,function() return (v29.killing.KarmaData.Generation==v369) and  not v29.killing.isWhitelisted(v1261) and v29.killing.matchesKarmaMode(v1261) ;end,3.5);end end if v1116 then v14.RunService.Heartbeat:Wait();else task.wait(0.1 + 0 );end end end);break;end if (v368==(0 -0)) then v29.killing.KarmaData.Generation+=1 v369=v29.killing.KarmaData.Generation;v368=1923 -(1042 + 880) ;end end end;v29.killing:AddSwitch(v7("\4\222\215\171\167\169\1\120\46\159\238\167\245\129\22","\17\66\191\165\198\135\236\119"),function(v370) local v371=0;while true do if (0==v371) then v29.killing.KarmaData.FarmEvil=v370;v29.killing.restartKarmaWorker();break;end end end);v29.killing:AddSwitch(v7("\41\174\188\30\191\207\227\222\11\239\133\18\237\229\237","\177\111\207\206\115\159\136\140"),function(v372) local v373=0 + 0 ;local v374;while true do if (v373==(1002 -(16 + 986))) then v374=1218 -(700 + 518) ;while true do if (v374==0) then v29.killing.KarmaData.FarmGood=v372;v29.killing.restartKarmaWorker();break;end end break;end end end);v29.killing:AddSection(v7("\49\136\2\19\209\91\31\46\128\28\24\221\65\88","\63\101\233\112\116\180\47"));v29.killing.KilllistDisplayNames={};v29.killing.getKilllistDisplayName=function(v375) local v376=v29.killing.KilllistDisplayNames[v375];if v376 then return v376;end local v377=v14.Players:FindFirstChild(v375);if v377 then local v857=0 -0 ;while true do if ((0 -0)==v857) then v29.killing.KilllistDisplayNames[v375]=v377.DisplayName;return v377.DisplayName;end end end return v375;end;v29.killing.BlacklistDropdown=v29.killing:AddDropdown(v7("\226\63\233\82\236\57\131\16\228\30\244\58\202\40\249","\86\163\91\141\114\152"),function(v378) local v379=1511 -(617 + 894) ;local v380;while true do if (v379==(0 -0)) then v380=v378:match(v7("\79\75\60\61\113\26\79","\90\51\107\20\19"));if v380 then local v1119=458 -(271 + 187) ;while true do if (v1119==(1584 -(731 + 853))) then v380=v380:gsub(v7("\179\181\150\165\117\195\189\204\170\46\199\180","\93\237\144\229\143"),v7("\80\167","\38\117\150\144\121\107"));if  not v29.killing.isBlacklisted({[v7("\3\186\227\63","\90\77\219\142")]=v380}) then local v1447=0 -0 ;while true do if (v1447==(1521 -(199 + 1322))) then table.insert(_G.blacklistedPlayers,v380);v17.notify(v7("\205\13\45\53\64\14\105\242","\26\134\100\65\89\44\103"),"Añadido: "   .. v380 ,3 -1 ,v7("\226\246\51\32\161\226\240","\196\145\131\80\67"));break;end end end break;end end end break;end end end);for v381,v382 in ipairs(v62()) do v29.killing.BlacklistDropdown:Add(v382);end v17.connect(v14.Players.PlayerAdded,function(v383) if (v383~=v10) then local v858=0 + 0 ;local v859;while true do if (v858==(1660 -(1291 + 369))) then v859=0;while true do if (v859==(0 + 0)) then v29.killing.WhitelistDropdown:Add(v383.DisplayName   .. v7("\94\172\70","\136\126\208\102\104\120")   .. v383.Name );v29.killing.BlacklistDropdown:Add(v383.DisplayName   .. v7("\56\150\142","\49\24\234\174\35\207\50\93")   .. v383.Name );break;end end break;end end end end);v17.connect(v14.Players.PlayerRemoving,function(v384) local v385=0 + 0 ;while true do if (v385==(0 + 0)) then v29.killing.WhitelistDropdown:Remove(v384.DisplayName   .. v7("\76\238\189","\17\108\146\157\232")   .. v384.Name );v29.killing.BlacklistDropdown:Remove(v384.DisplayName   .. v7("\11\223\84","\200\43\163\116\141\79")   .. v384.Name );break;end end end);v29.killing:AddSwitch(v7("\148\63\49\143\240\216\234\172\34","\131\223\86\93\227\208\148"),function(v386) local v387=0 + 0 ;local v388;while true do if ((686 -(561 + 124))==v387) then local v944=0 + 0 ;while true do if (v944==1) then v387=855 -(25 + 828) ;break;end if (v944==(0 -0)) then v388=_G.killListGeneration;if  not v386 then return;end v944=1 -0 ;end end end if (v387==(592 -(99 + 491))) then task.spawn(function() while v17.isCurrent() and _G.killBlacklistedOnly and (_G.killListGeneration==v388)  do local v1120=48 -(18 + 30) ;local v1121;while true do if (v1120==(0 -0)) then v1121=nil;for v1410,v1411 in ipairs(v14.Players:GetPlayers()) do if ( not _G.killBlacklistedOnly or (_G.killListGeneration~=v388)) then break;end if ((v1411~=v10) and v29.killing.isBlacklisted(v1411) and v29.killing.isPlayerAlive(v1411) and  not v29.killing.isSpawnProtected(v1411)) then v1121=v1411;break;end end v1120=1 -0 ;end if (v1120==(1 -0)) then if v1121 then local v1448=0 + 0 ;while true do if (v1448==0) then v29.killing.touchAndPunchTarget(v1121,33 -23 );v14.RunService.Heartbeat:Wait();break;end end else task.wait(732.1 -(501 + 231) );end break;end end end end);break;end if (v387==0) then _G.killBlacklistedOnly=v386;_G.killListGeneration=(_G.killListGeneration or (0 + 0)) + (1699 -(470 + 1228)) ;v387=1 + 0 ;end end end);v29.killing:AddSection(v7("\208\85\179\181\9\180\247\64","\213\131\37\214\214\125"));v29.killing.SpectateData={[v7("\21\46\41\186\226\50\46\33\143\237\39\50\32\173","\129\70\75\69\223")]=nil,[v7("\117\206\255\236\127\251\67\207\195\229\125\246\67\217\198\250\121\253\111\207","\143\38\171\147\137\28")]=nil,[v7("\227\146\188\240\23\226\192\217\140\190","\180\176\226\217\147\99\131")]=false,[v7("\240\172\61\21\214\183\59\51\210\171\40\2\199\154\32\9\221\188\44\19\218\182\33","\103\179\217\79")]=nil};v29.killing.stopSpectating=function() if v29.killing.SpectateData.CurrentTargetConnection then v29.killing.SpectateData.CurrentTargetConnection:Disconnect();v29.killing.SpectateData.CurrentTargetConnection=nil;end if v10.Character then local v861=0 + 0 ;local v862;while true do if (v861==(686 -(537 + 149))) then v862=v10.Character:FindFirstChildOfClass(v7("\98\162\17\212\79\131\170\78","\195\42\215\124\181\33\236"));if (v862 and v17.playerData.Camera) then v17.playerData.Camera.CameraSubject=v862;v17.playerData.Camera.CameraType=Enum.CameraType.Custom;end break;end end end end;v29.killing.updateSpectateTarget=function(v389) if  not v389 then local v863=0;while true do if (v863==(0 -0)) then v29.killing.stopSpectating();return;end end end v29.killing.SpectateData.SelectedPlayerUserId=v389.UserId;v29.killing.SpectateData.SelectedPlayer=v389;if v29.killing.SpectateData.CurrentTargetConnection then local v864=0;while true do if (v864==(0 + 0)) then v29.killing.SpectateData.CurrentTargetConnection:Disconnect();v29.killing.SpectateData.CurrentTargetConnection=nil;break;end end end local function v393(v767) local v768=0;local v769;while true do if (v768==(1 -0)) then if (v769 and v17.playerData.Camera) then v17.playerData.Camera.CameraSubject=v769;end break;end if (v768==(0 -0)) then if ( not v29.killing.SpectateData.Spectating or (v29.killing.SpectateData.SelectedPlayerUserId~=v389.UserId)) then return;end v769=v767:WaitForChild(v7("\37\76\58\63\43\247\4\93","\152\109\57\87\94\69"),3);v768=1;end end end if v389.Character then v393(v389.Character);end v29.killing.SpectateData.CurrentTargetConnection=v17.connect(v389.CharacterAdded,function(v770) if v29.killing.SpectateData.Spectating then v393(v770);end end);end;v29.killing.SpectateDropdown=v29.killing:AddDropdown(v7("\218\223\5\172\173\215\20\152\245\214\19\166\172","\200\153\183\106\195\222\178\52"),function(v395) for v771,v772 in ipairs(v14.Players:GetPlayers()) do if (v395==(v772.DisplayName   .. v7("\114\255\200","\58\82\131\232\93\41")   .. v772.Name)) then v29.killing.SpectateData.SelectedPlayer=v772;v29.killing.SpectateData.SelectedPlayerUserId=v772.UserId;if v29.killing.SpectateData.Spectating then v29.killing.updateSpectateTarget(v772);end break;end end end);for v396,v397 in ipairs(v62()) do v29.killing.SpectateDropdown:Add(v397);end v29.killing:AddSwitch(v7("\176\71\213\22\73\62\151\82","\95\227\55\176\117\61"),function(v398) v29.killing.SpectateData.Spectating=v398;if v398 then v29.killing.updateSpectateTarget(v29.killing.SpectateData.SelectedPlayer);else v29.killing.stopSpectating();end end);v17.connect(v14.Players.PlayerAdded,function(v400) v29.killing.SpectateDropdown:Add(v400.DisplayName   .. v7("\88\98\99","\203\120\30\67\43")   .. v400.Name );end);v17.connect(v14.Players.PlayerRemoving,function(v401) v29.killing.SpectateDropdown:Remove(v401.DisplayName   .. v7("\177\57\13","\185\145\69\45\143")   .. v401.Name );if (v401.UserId==v29.killing.SpectateData.SelectedPlayerUserId) then v29.killing.stopSpectating();end end);v29.killing:AddSection(v7("\161\22\21\170\156\171\10\11\167","\188\234\127\121\198"));v29.killing.KillAura={[v7("\10\59\29\132\8\51\1\151","\227\88\82\115")]=nil,[v7("\113\30\180\160\7","\19\35\127\218\199\98")]=20,[v7("\57\245\11\224\16\254\14","\130\124\155\106")]=false,[v7("\242\206\248\170\177\247\104\182\218\197","\223\181\171\150\207\195\150\28")]=0 -0 };_G.deathRingEnabled=false;_G.deathRingRange=20;v29.killing:AddTextBox(v7("\126\59\237\169\12\12\114\178\227\88\24\106\170\244","\105\44\90\131\206"),function(v402) if tonumber(v402) then local v865=0 + 0 ;while true do if (v865==(0 + 0)) then _G.deathRingRange=math.clamp(tonumber(v402),1 + 0 ,61 + 79 );v29.killing.KillAura.Range=_G.deathRingRange;v865=1 + 0 ;end if (v865==1) then if v29.killing.KillAura.RingPart then v29.killing.KillAura.RingPart.Size=Vector3.new(0.2,_G.deathRingRange * (1 + 1) ,_G.deathRingRange * (2 + 0) );end break;end end end end,{[v7("\252\236\183\184\26","\94\159\128\210\217\104")]=false});v29.killing:AddSwitch(v7("\123\240\10\179\31\94\236\104\81","\26\48\153\102\223\63\31\153"),function(v403) local v404=0 -0 ;local v405;local v406;while true do if (v404==(1 + 1)) then v406.Color=Color3.fromRGB(145,77,255);v406.Transparency=579.6 -(134 + 445) ;v406.Anchored=true;v406.CanCollide=false;v404=3;end if ((1 -0)==v404) then v406=Instance.new(v7("\50\65\255\231","\147\98\32\141"));v406.Name=v7("\48\76\237\207\8\78\124\16\74\247\207\45\95\71\20\98\246\216\7\100\66\22\68","\43\120\35\131\170\102\54");v406.Shape=Enum.PartType.Cylinder;v406.Material=Enum.Material.Neon;v404=2 + 0 ;end if (v404==(0 + 0)) then v29.killing.KillAura.Enabled=v403;v29.killing.KillAura.Generation+=(3 -2) v405=v29.killing.KillAura.Generation;if  not v403 then local v1124=0;local v1125;while true do if (v1124==(260 -(36 + 224))) then v1125=0;while true do if (v1125==(1860 -(1033 + 827))) then local v1482=0;while true do if ((1846 -(1002 + 844))==v1482) then if v29.killing.KillAura.RingPart then v29.killing.KillAura.RingPart:Destroy();v29.killing.KillAura.RingPart=nil;end return;end end end end break;end end end v404=1351 -(1126 + 224) ;end if (4==v404) then v406.Parent=workspace;v29.killing.KillAura.RingPart=v406;task.spawn(function() while v17.isCurrent() and v29.killing.KillAura.Enabled and (v29.killing.KillAura.Generation==v405)  do local v1126=0;local v1127;local v1128;while true do if (v1126==0) then v1127=v10.Character;v1128=v1127 and v1127:FindFirstChild(v7("\124\19\138\183\171\191\141\80\52\136\185\177\128\133\70\18","\228\52\102\231\214\197\208")) ;v1126=1 + 0 ;end if (1==v1126) then if (v1128 and v406.Parent) then v406.CFrame=v1128.CFrame * CFrame.Angles(0 + 0 ,0 -0 ,math.rad(154 -(48 + 16) )) ;for v1483,v1484 in ipairs(v14.Players:GetPlayers()) do if ((v1484~=v10) and  not v29.killing.isWhitelisted(v1484) and v29.killing.isPlayerAlive(v1484) and  not v29.killing.isSpawnProtected(v1484)) then local v1523=0 + 0 ;local v1524;while true do if (v1523==(0 -0)) then v1524=v1484.Character and v1484.Character:FindFirstChild(v7("\54\245\120\203\228\132\16\210\44\239\122\222\218\138\11\194","\182\126\128\21\170\138\235\121")) ;if (v1524 and ((v1128.Position-v1524.Position).Magnitude<=v29.killing.KillAura.Range)) then v29.killing.touchAndPunchTarget(v1484,9.5 -6 );end break;end end end end end task.wait(0.05 + 0 );break;end end end end);break;end if ((1092 -(910 + 179))==v404) then v406.CanTouch=false;v406.CanQuery=false;v406.CastShadow=false;v406.Size=Vector3.new(0.2 -0 ,v29.killing.KillAura.Range * (3 -1) ,v29.killing.KillAura.Range * 2 );v404=1383 -(933 + 446) ;end end end);v29.killing:AddSection(v7("\184\223\38\245\143\28\62\70\184\206\52\242\149","\102\235\186\85\134\230\115\80"));local v75=v29.killing:AddLabel(v7("\124\5\50\83\97\142\98\7","\66\55\108\94\63\18\180"));_G.killSessionStart=nil;task.spawn(function() while v17.isCurrent() do local v773=v10:FindFirstChild(v7("\24\136\132\51\34\75\7\153\132\35\52","\57\116\237\229\87\71"));local v774=v773 and v773:FindFirstChild(v7("\129\184\225\235\100","\39\202\209\141\135\23\142")) ;if (v774 and v75) then if  not _G.killSessionStart then _G.killSessionStart=v774.Value;end v75:SetText(v7("\212\58\5\6\33\162\191","\152\159\83\105\106\82")   .. v17.formatNumber(v774.Value)   .. " (Sesión: "   .. v17.formatNumber(v774.Value-_G.killSessionStart )   .. ")" );end task.wait(1);end end);v17.notify(v7("\169\201\95\247\199\68\182\206\88\230\204","\60\225\166\49\146\169"),"Tab Killing cargado ✅",3,v7("\60\11\44\41\4\20\60","\103\79\126\79\74\97"));v29.farming:AddSection(v7("\136\122\209\122\76\14\178\108","\122\218\31\179\19\62"));v29.farming.RebirthData={[v7("\135\215\223\198\204\181\119\182\212\196\211\221\169\86","\37\211\182\173\161\169\193")]=0 + 0 ,[v7("\222\41\108\204\60\116\139\242\56\68\203\60\115\176\249\61","\217\151\90\45\185\72\27")]=false,[v7("\241\121\229\27\68\215\116\244","\54\163\28\135\114")]=v10.leaderstats:WaitForChild(v7("\26\222\95\139\92\107\32\200","\31\72\187\61\226\46"))};local v77=v29.farming:AddLabel(v7("\241\3\65\219\85\106\44\208\92\3\130","\68\163\102\35\178\39\30"));local v78=v29.farming:AddLabel(v7("\138\113\200\192\6\161\217\81\144\127\212\194","\113\222\16\186\167\99\213\227"));v29.farming:AddTextBox(v7("\29\11\239\182\28\11\249\255\60\26\243\182\26\15\233\241\43\26\161","\150\78\110\155"),function(v407) if (tonumber(v407) and (tonumber(v407)>=(1524 -(248 + 1276)))) then v29.farming.RebirthData.TargetRebirths=tonumber(v407);end end);v29.farming.RebirthData.Switch=v29.farming:AddSwitch(v7("\164\208\51\238\228\44\186\66\140\215\51\233","\32\229\165\71\129\196\126\223"),function(v408) if (v408 and (v29.farming.RebirthData.TargetRebirths>0) and (v29.farming.RebirthData.Rebirths.Value<v29.farming.RebirthData.TargetRebirths)) then v29.farming.RebirthData.IsAutoRebirthing=true;task.spawn(function() local v965=0 + 0 ;while true do if (v965==(0 + 0)) then while v17.isCurrent() and v29.farming.RebirthData.IsAutoRebirthing and (v29.farming.RebirthData.Rebirths.Value<v29.farming.RebirthData.TargetRebirths)  do local v1329=0;local v1330;while true do if (v1329==(0 -0)) then v1330=0 -0 ;while true do if (v1330==0) then pcall(function() v14.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer(v7("\209\140\198\136\147\193\203\187\193\144\148\208\208\157","\181\163\233\164\225\225"));end);task.wait(0.1);break;end end break;end end end v29.farming.RebirthData.IsAutoRebirthing=false;v965=1546 -(151 + 1394) ;end if (v965==1) then v29.farming.RebirthData.Switch:Set(false,true);break;end end end);else v29.farming.RebirthData.IsAutoRebirthing=false;end end);task.spawn(function() while v17.isCurrent() do local v775=944 -(929 + 15) ;while true do if (v775==(1996 -(1173 + 823))) then if v77 then v77:SetText(v7("\98\142\60\126\66\159\54\100\10\203","\23\48\235\94")   .. v17.formatWithCommas(v29.farming.RebirthData.Rebirths.Value) );end if v78 then v78:SetText(v7("\72\219\202\90\82\39\146\78\223\218\84\69\39\218\111\128\152","\178\28\186\184\61\55\83")   .. v17.formatWithCommas(v29.farming.RebirthData.TargetRebirths) );end v775=1;end if (v775==(1 -0)) then task.wait(1776.5 -(482 + 1294) );break;end end end end);v29.farming:AddSection(v7("\229\216\83\51\178\61\252\222\200","\149\164\173\39\92\146\110"));v29.farming.SizeData={[v7("\210\36\4\22\12\30","\123\147\71\112\127\122")]=false};v29.farming.SizeSwitch=v29.farming:AddSwitch(v7("\237\216\150\126\6\255\196\152\116\6\157","\38\172\173\226\17"),function(v409) v29.farming.SizeData.Active=v409;end);v29.farming.SizeSwitch:Set(false);task.spawn(function() while v17.isCurrent() do local v776=0 -0 ;while true do if (0==v776) then if (v29.farming.SizeData.Active and v17.playerData.Character and v17.playerData.Humanoid) then pcall(function() v17.remotes.ChangeSpeedSize:InvokeServer(v7("\78\25\45\225\74\20\31\230\87\20","\143\45\113\76"),1);end);end task.wait(0.5 + 0 );break;end end end end);v29.farming:AddSection(v7("\153\173\8\51\248\147\21\50\191","\92\216\216\124"));v29.farming.KingData={[v7("\111\51\190\71\248\79\2\163\83\244\79\59\163\78","\157\59\82\204\32")]=CFrame.new( -(9971.4 -(1125 + 181)),49.21 -32 , -5792.9),[v7("\12\59\239\255\249\229\193\165\25\61\247\243\255\239","\209\88\94\131\154\137\138\179")]=false};v29.farming.KingSwitch=v29.farming:AddSwitch(v7("\9\180\208\115\94\8\56\44\47","\66\72\193\164\28\126\67\81"),function(v411) v29.farming.KingData.TeleportActive=v411;end);task.spawn(function() while v17.isCurrent() do local v777=0 + 0 ;while true do if (v777==(0 -0)) then if v29.farming.KingData.TeleportActive then local v1265=v17.playerData.Character;if v1265 then local v1371=v1265:FindFirstChild(v7("\207\57\165\89\40\121\238\40\154\87\41\98\215\45\186\76","\22\135\76\200\56\70"));if (v1371 and ((v1371.Position-v29.farming.KingData.TargetPosition.Position).Magnitude>(1194 -(626 + 563)))) then pcall(function() v1371.CFrame=v29.farming.KingData.TargetPosition;end);end end end task.wait(0.1);break;end end end end);v29.farming:AddSection(v7("\172\37\236\43\29\196\149\53\234\39\84\242\136\35","\129\237\80\152\68\61"));v29.farming.ExerciseData={[v7("\98\173\8\246\31\3\93\85\156\11\252\16","\56\49\200\100\147\124\119")]=nil,[v7("\237\43\171\255\234\63\173\253","\144\172\94\223")]=false};local v85=v29.farming:AddDropdown(v7("\23\10\174\66\39\27\226\98\60\10\176\68\45\28\167","\39\68\111\194"),function(v413) v29.farming.ExerciseData.SelectedTool=v413;end);v85:Add(v7("\225\163\238\192\113\163","\215\182\198\135\167\25"));v85:Add(v7("\189\92\249\64\152\89\249","\40\237\41\138"));v85:Add(v7("\244\125\238\237\90\212","\42\167\20\154\152"));v85:Add(v7("\98\255\172\70\98\53\75\240\166\81","\65\42\158\194\34\17"));v29.farming.ToolExerciseSwitch=v29.farming:AddSwitch(v7("\41\51\83\30\57\173\62\246\31\53\81\5\62\228\21\233","\142\122\71\50\108\77\141\123"),function(v415) v29.farming.ExerciseData.AutoFarm=v415;if v415 then task.spawn(function() while v17.isCurrent() and v29.farming.ExerciseData.AutoFarm  do local v1067=1250 -(153 + 1097) ;local v1068;local v1069;local v1070;while true do if (v1067==(0 -0)) then v1068=0 + 0 ;v1069=nil;v1067=2 -1 ;end if (v1067==1) then v1070=nil;while true do if (v1068==(0 + 0)) then v1069=v17.playerData.Character;v1070=v17.playerData.Humanoid;v1068=1 + 0 ;end if (v1068==(1 + 0)) then if (v1069 and v1070 and (v1070.Health>(0 + 0)) and v29.farming.ExerciseData.SelectedTool) then local v1507=v1069:FindFirstChild(v29.farming.ExerciseData.SelectedTool) or v10.Backpack:FindFirstChild(v29.farming.ExerciseData.SelectedTool) ;if (v1507 and (v1507.Parent~=v1069)) then pcall(function() v1070:EquipTool(v1507);end);end if (v1507 and (v1507.Parent==v1069)) then pcall(function() v10.muscleEvent:FireServer(v7("\7\167\239","\91\117\194\159\120"));end);end end task.wait(0.05 + 0 );break;end end break;end end end end);elseif (v29.farming.ExerciseData.SelectedTool and v10.Character) then local v1071=0;local v1072;while true do if (v1071==(1157 -(199 + 958))) then v1072=v10.Character:FindFirstChild(v29.farming.ExerciseData.SelectedTool);if v1072 then v1072.Parent=v10.Backpack;end break;end end end end);v29.farming.AutoRepRunning=false;v29.farming.AutoRepSwitch=v29.farming:AddSwitch(v7("\59\8\42\23\117\195\33\10","\68\122\125\94\120\85\145"),function(v417) local v418=0;while true do if (v418==(0 + 0)) then v29.farming.AutoRepRunning=v417;if  not v417 then return;end v418=1;end if ((2 -1)==v418) then task.spawn(function() while v17.isCurrent() and v29.farming.AutoRepRunning  do local v1130=0;local v1131;while true do if (v1130==(0 -0)) then v1131=0;while true do if (v1131==(1176 -(1169 + 7))) then pcall(function() v10.muscleEvent:FireServer(v7("\5\25\223","\218\119\124\175\62\168\185"));end);task.wait(0.1);break;end end break;end end end end);break;end end end);v29.farming:AddSection(v7("\132\229\92\203\229\194\71\199\174","\164\197\144\40"));v29.farming.RockData={[v7("\167\241\190\138","\214\227\144\202\235\189")]={[v7("\217\172\137\98\80\129\92\63\230\229\202\59\64\243\119\41\255\164","\92\141\197\231\27\112\211\51")]=1873 -(751 + 1122) ,[v7("\202\254\152\164\212\166\205\133\160\218\166\178\202\242\129\182\191\174\182\195\231","\177\134\159\234\195")]=7 + 93 ,[v7("\141\254\49\163\193\180\229\56\224\251\178\232\52\224\132\253\186\111\224\237\168\249\62","\169\221\139\95\192")]=10,[v7("\249\132\115\59\39\40\158\185\112\60\41\102\147\203\42\52\98\2\203\153\126","\70\190\235\31\95\66")]=4529 + 471 ,[v7("\156\240\21\245\241\250\208\21\229\238\250\175\90\183\176\234\233\90\194\240\168\227","\133\218\130\122\134")]=150000,[v7("\17\230\247\204\213\160\57\48\191\209\203\223\168\120\113\191\183\148\140\168\120\24\234\241\197","\88\92\159\131\164\188\195")]=91287 + 308713 ,[v7("\165\58\186\89\217\234\209\192\28\176\72\220\171\144\192\121\234\27\220\171\249\149\60\190","\189\224\78\223\43\183\139")]=137554 + 612446 ,[v7("\2\249\141\19\207\42\188\184\25\194\37\188\199\86\144\35\188\174\3\211\47","\161\78\156\234\118")]=1000000,[v7("\138\162\218\223\171\178\137\247\174\185\206\156\149\184\202\215\231\250\137\137\170\247\237\201\181\182","\188\199\215\169")]=8503995 -3503995 ,[v7("\214\28\81\124\228\249\73\109\116\235\247\73\18\59\185\172\4\31\95\253\238\8","\136\156\105\63\27")]=10001181 -(589 + 592) ,[v7("\50\130\125\33\8\152\107\61\26\128\57\6\20\143\114\116\86\204\43\97\22\204\93\33\9\141","\84\123\236\25")]=49975019 -24975019 },[v7("\195\142\166\18\175\161\245\143\152\24\175\190","\213\144\235\202\119\204")]=nil};v29.farming.MachinesFolder=workspace:WaitForChild(v7("\46\25\221\34\33\45\72\48\62\209\38\44\38\95","\45\67\120\190\74\72\67"));local v91=v29.farming:AddDropdown(v7("\19\39\225\160\250\156\174\219\47\33\230","\137\64\66\141\197\153\232\142"),function(v419) v29.farming.RockData.SelectedRock=v419;end);for v421 in pairs(v29.farming.RockData.Data) do v91:Add(v421);end v29.farming.RockSwitch=v29.farming:AddSwitch(v7("\34\197\54\169\200\49\223\33\173","\232\99\176\66\198"),function(v422) local v423=0 + 0 ;while true do if (v423==0) then _G.RockFarmRunning=v422;if ( not v422 or  not v29.farming.RockData.SelectedRock) then return;end v423=1;end if (v423==1) then task.spawn(function() while v17.isCurrent() and _G.RockFarmRunning  do task.wait(24.12 -(13 + 11) );local v1132=v17.playerData.Character;if (v1132 and v10:FindFirstChild(v7("\200\52\58\7\121\132\245\37\248\56","\76\140\65\72\102\27\237\153")) and (v10.Durability.Value>=v29.farming.RockData.Data[v29.farming.RockData.SelectedRock])) then for v1372,v1373 in pairs(v29.farming.MachinesFolder:GetDescendants()) do if ((v1373.Name==v7("\68\223\19\214\210\5\154\95\200\23\208\222\13\183\94\195","\222\42\186\118\178\183\97")) and (v1373.Value==v29.farming.RockData.Data[v29.farming.RockData.SelectedRock]) and v1132:FindFirstChild(v7("\113\233\66\158\117\237\74\142","\234\61\140\36")) and v1373.Parent and v1373.Parent:FindFirstChild(v7("\19\210\185\121","\111\65\189\218\18"))) then pcall(function() local v1487=0 + 0 ;while true do if (v1487==(0 + 0)) then if firetouchinterest then local v1564=1260 -(684 + 576) ;while true do if (v1564==(0 + 0)) then firetouchinterest(v1373.Parent.Rock,v1132.RightHand,0);firetouchinterest(v1373.Parent.Rock,v1132.RightHand,2 -1 );v1564=1;end if (v1564==(1 + 0)) then firetouchinterest(v1373.Parent.Rock,v1132.LeftHand,0 + 0 );firetouchinterest(v1373.Parent.Rock,v1132.LeftHand,1 -0 );break;end end end v29.killing.getTool();break;end end end);end end end end end);break;end end end);v29.fast:AddSection(v7("\101\74\8\33\75\110\170\83","\207\35\43\123\85\107\60"));v29.fast.FastRepData={[v7("\66\191\174\228\112\126\173","\25\16\202\192\138")]=false,[v7("\202\196\191\233\172\230\220\200\185\235\191\241","\148\157\171\205\130\201")]=false,[v7("\0\205\119\37\212\229\19\209\102\26\212\245\44\218\112","\150\67\180\20\73\177")]=38 + 2 ,[v7("\191\29\10\94\189\29\8\110\148\27\22\72","\45\237\120\122")]=18 + 2 ,[v7("\228\237\172\40\229\233\182\41","\76\183\136\194")]=481 + 319 };local v94=v29.fast:AddLabel(v7("\73\242\228\44\69\92\78\58\207\235\57\83\91\29\108\227","\116\26\134\133\88\48\47"));v29.fast.FastRepWorkerLoop=function() if v29.fast.FastRepData.WorkerActive then return;end v29.fast.FastRepData.WorkerActive=true;local v425=v29.fast.FastRepData;local v426=1/40 ;while v17.isCurrent() and v425.Running  do pcall(function() for v967=1 + 0 ,20 do v10.muscleEvent:FireServer(v7("\12\196\176","\18\126\161\192\132\221"));end end);v94:SetText(v7("\108\60\175\16\67\76\114\238\92\6\15\104\188\1\70\76\103\189\68\30\114\9\150\77","\54\63\72\206\100"));task.wait(v426);end v425.WorkerActive=false;end;v29.fast:AddTextBox(v7("\250\92\85\105\165\107\199\75\5\121\236\120\196\86\5\50\180\54\154\9\12\32","\27\168\57\37\26\133"),function(v428) local v429=tonumber(v428);if (v429 and (v429>=1)) then v29.fast.FastRepData.RepsPerCycle=math.clamp(math.floor(v429),1 + 0 ,1868 -(230 + 1618) );end end);v29.fast.FastRepToggle=v29.fast:AddSwitch("Fast Rep (Ultra Rápido)",function(v430) local v431=0 + 0 ;local v432;while true do if (v431==(1 + 0)) then if v430 then local v1133=0;while true do if (v1133==(0 + 0)) then v94:SetText(v7("\30\190\125\188\194\62\240\60\137\212\57\163\106\169\217\41\165\50\230\153","\183\77\202\28\200"));if  not v432.WorkerActive then task.spawn(v29.fast.FastRepWorkerLoop);end break;end end else v94:SetText(v7("\36\39\136\28\2\32\211\72\62\61\136\11\3\58\159\13","\104\119\83\233"));end break;end if (v431==(203 -(131 + 72))) then v432=v29.fast.FastRepData;v432.Running=v430;v431=1;end end end);v29.fast:AddSection(v7("\192\244\51\48\66\181\222\38\49\87\181\202\34\50\3\167\168\12","\35\149\152\71\66"));local v97={[v7("\60\230\67\178\54\28\236","\90\121\136\34\208")]=false,[v7("\240\1\71\21\194\28\116\29\211\7\67\27","\126\167\110\53")]=false,[v7("\15\21\62\235\236\58\47\51\55\251\208\58","\95\93\112\78\152\188")]=100 + 100 ,[v7("\226\236\134\25\225\154\215\205\244\156","\178\161\149\229\117\132\222")]=204.01 -(144 + 60) ,[v7("\188\212\201\173\173\36\163\51\155","\67\232\187\189\204\193\118\198")]=0 -0 };_G.HonenxWhiteUltraFastRep=v97;task.spawn(function() if v97.WorkerActive then return;end v97.WorkerActive=true;while v17.isCurrent() do if v97.Enabled then local v970=v10:FindFirstChild(v7("\134\59\166\35\55\7\202\157\43\187\52","\143\235\78\213\64\91\98"));if v970 then local v1134=0 -0 ;local v1135;local v1136;local v1137;while true do if ((1 + 0)==v1134) then v1136=os.clock() -v1135 ;v1137=v97.CycleDelay-v1136 ;v1134=9 -7 ;end if (v1134==(0 + 0)) then v1135=os.clock();for v1414=1923 -(523 + 1399) ,v97.RepsPerCycle do if  not v97.Enabled then break;end pcall(function() v970:FireServer(v7("\159\77\148","\214\237\40\228\137\16"));end);v97.TotalReps=v97.TotalReps + 1 ;end v1134=1 + 0 ;end if (v1134==(406 -(72 + 332))) then if (v1137>0) then task.wait(v1137);else task.wait();end break;end end else task.wait(0.05);end else task.wait(0.1);end end end);v29.fast:AddSwitch("🚀 Ultra Fast Rep (20000 reps/s)",function(v434) local v435=976 -(269 + 707) ;while true do if (0==v435) then v97.Enabled=v434;if v434 then v97.TotalReps=0;v17.notify(v7("\176\239\251\203\2\230\163\226\252\205\67\148\128\243","\198\229\131\143\185\99"),"🚀 ACTIVADO - 20,000 reps/s",3,v7("\66\153\171\112\84\159\187","\19\49\236\200"));else v17.notify(v7("\203\59\226\165\229\250\216\54\229\163\164\136\251\39","\218\158\87\150\215\132"),"⏸️ Desactivado",3 -1 ,v7("\242\16\223\237","\173\155\126\185\130\86\66"));end break;end end end);v29.fast:AddSection(v7("\195\167\169\211\200\222\224\164\179\213\156\228","\140\133\198\218\167\232"));v29.fast.FastRebirthData={[v7("\135\59\186\115\141\187\41","\228\213\78\212\29")]=false,[v7("\176\67\164\14\238\149\109\181\17\226\145\73","\139\231\44\214\101")]=false,[v7("\235\234\4\87\2\165\57\5","\118\185\143\102\62\112\209\81")]=v10.leaderstats:WaitForChild(v7("\110\117\43\239\183\1\20\43","\88\60\16\73\134\197\117\124")),[v7("\99\254\234\205\79\87\254\240","\33\48\138\152\168")]=v10.leaderstats:WaitForChild(v7("\65\2\34\84\207\48\102\30","\87\18\118\80\49\161")),[v7("\120\31\200\167\181\88\44\223\162\185\94\10\210\179","\208\44\126\186\192")]=0 -0 ,[v7("\195\21\176\199\24\206\204\76\254\8\176\206\7","\46\151\122\196\166\116\156\169")]=130 -(123 + 7) };local v99=v29.fast:AddLabel(v7("\214\249\71\14\238\246\183\6\51\245\228\238\82\19\237\224","\155\133\141\38\122"));local v100=v29.fast:AddLabel(v7("\23\47\174\72\93\107\173\54\112\236\17\15\99\229\2\43\165\79\74\123\255\101\122","\197\69\74\204\33\47\31"));v29.fast.FastRebirthWorker=function() local v436=0 + 0 ;local v437;while true do if (v436==(1 + 0)) then while v17.isCurrent() and v29.fast.FastRebirthData.Running  do if ((v29.fast.FastRebirthData.TargetRebirths>(0 -0)) and (v29.fast.FastRebirthData.Rebirths.Value>=v29.fast.FastRebirthData.TargetRebirths)) then v99:SetText("Status: ✅ Target alcanzado!");v29.fast.FastRebirthData.Running=false;break;end local v1073=v29.fast.FastRebirthData.Rebirths.Value;local v1074=(12554 -7554) + (v1073 * (3638 -(38 + 1050))) ;local v1075=((v10.MembershipType==Enum.MembershipType.Premium) and 3) or (2 + 2) ;v99:SetText("Status: 💪 Farmeando... "   .. v17.formatNumber(v29.fast.FastRebirthData.Strength.Value)   .. v7("\176\0\26","\231\144\47\58")   .. v17.formatNumber(v1074) );while v17.isCurrent() and v29.fast.FastRebirthData.Running and (v29.fast.FastRebirthData.Strength.Value<v1074)  do local v1139=0 + 0 ;while true do if (v1139==(0 + 0)) then for v1416=824 -(426 + 397) ,v1075 do pcall(function() v10.muscleEvent:FireServer(v7("\160\221\202","\89\210\184\186\21\120\93\175"));end);end task.wait(1406.05 -(751 + 655) );v1139=1;end if (v1139==(1 -0)) then v100:SetText(v7("\131\86\126\220\107\46\185\64\38\149","\90\209\51\28\181\25")   .. v17.formatWithCommas(v29.fast.FastRebirthData.Rebirths.Value)   .. v7("\144\103\23\201\190\217\117\82\234\229\144","\223\176\27\55\142")   .. v17.formatWithCommas(v29.fast.FastRebirthData.Rebirths.Value-v437 ) );break;end end end if (v17.isCurrent() and v29.fast.FastRebirthData.Running and (v29.fast.FastRebirthData.Strength.Value>=v1074)) then local v1267=0;local v1268;local v1269;while true do if ((0 + 0)==v1267) then v99:SetText("Status: 🔄 Haciendo rebirth...");v1268=v29.fast.FastRebirthData.Rebirths.Value;v1267=1246 -(39 + 1206) ;end if (1==v1267) then local v1418=0;local v1419;while true do if (v1418==(0 -0)) then v1419=841 -(566 + 275) ;while true do if (v1419==(936 -(167 + 768))) then v1267=2;break;end if (v1419==(0 + 0)) then v1269=0;repeat local v1565=0;while true do if (v1565==0) then pcall(function() v14.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer(v7("\54\190\204\188\54\175\198\135\33\170\219\176\55\175","\213\68\219\174"));end);task.wait(0.12 -0 );v1565=1 + 0 ;end if (v1565==(1 + 0)) then v1269=v1269 + (1 -0) ;break;end end until  not v29.fast.FastRebirthData.Running or (v29.fast.FastRebirthData.Rebirths.Value>v1268) or (v1269>=(65 -(8 + 7)))  v1419=1;end end break;end end end if (v1267==(1685 -(1510 + 173))) then if (v29.fast.FastRebirthData.Rebirths.Value>v1268) then v29.fast.FastRebirthData.TotalRebirths=v29.fast.FastRebirthData.TotalRebirths + (v29.fast.FastRebirthData.Rebirths.Value-v1268) ;end break;end end end task.wait(0.3 -0 );end v29.fast.FastRebirthData.WorkerActive=false;break;end if (v436==0) then v437=v29.fast.FastRebirthData.Rebirths.Value;v29.fast.FastRebirthData.TotalRebirths=0 + 0 ;v436=1;end end end;v29.fast:AddTextBox(v7("\63\225\49\224\47\209\127\109\14\226\42\245\62\205\44\63\67\176\99\186\106\204\49\121\2\238\42\243\37\140\101","\31\107\128\67\135\74\165\95"),function(v438) local v439=tonumber(v438);if (v439 and (v439>=(253 -(30 + 223)))) then v29.fast.FastRebirthData.TargetRebirths=math.floor(v439);end end);v29.fast.FastRebirthToggle=v29.fast:AddSwitch("Fast Rebirth 🔄",function(v440) local v441=1256 -(300 + 956) ;while true do if (v441==0) then v29.fast.FastRebirthData.Running=v440;if v440 then v99:SetText("Status: 🔄 Iniciando...");if  not v29.fast.FastRebirthData.WorkerActive then local v1331=122 -(22 + 100) ;while true do if (v1331==0) then v29.fast.FastRebirthData.WorkerActive=true;task.spawn(v29.fast.FastRebirthWorker);break;end end end else v99:SetText(v7("\235\252\253\89\84\162\130\168\213\67\64\178\204\225\234\72","\209\184\136\156\45\33"));end break;end end end);v29.fast:AddLabel(v7("\36\199\123\27\189\21\222\116\72\181\6\219\118\7\172\6\219\53\13\169\18\193\101\9\188\6\219\57\72\182\8\136\116\11\172\14\222\116\72\168\6\203\126\27","\216\103\168\21\104"));v17.notify(v7("\80\162\77\161\118\181\116\172\113\185\70","\196\24\205\35"),"Tab Farming + Fast cargado ✅",3,v7("\61\158\224\5\43\152\240","\102\78\235\131"));v29.boss:AddSection(v7("\216\33\39\87\7\31\182\38\247\39\58\67","\84\154\78\84\36\39\89\215"));local v103=v29.boss:AddLabel(v7("\206\245\87\76\16\238\187\22\111\4\244\245\95\86\2\189\231\89\74\69\223\238\69\75","\101\157\129\54\56"));local v104=v29.boss:AddLabel(v7("\63\166\153\184\121\57\51\166\132\174","\25\125\201\234\203\67"));local v105=v29.boss:AddLabel(v7("\81\241\25\15\0\47\73\57\164\88\76\84\119","\115\25\148\120\99\116\71"));local v106=v29.boss:AddLabel(v7("\34\56\161\48\1\46\50\170\55\27\76\19\246\5","\33\108\93\217\68"));v29.boss.Data={[v7("\233\94\175\163\210\69\166","\205\187\43\193")]=false,[v7("\223\113\17\214\232\119\40\208\250\119","\191\158\18\101")]=nil,[v7("\226\198\137\178\189\196\215\142\184\161","\207\165\163\231\215")]=0 -0 ,[v7("\229\246\247\66\45\126\211\252\205\68\37\121\200\240\247\81","\16\166\153\153\54\68")]=false,[v7("\226\187\193\85\49","\153\178\211\160\38\84\65")]=v7("\181\10\83\63\139\5\93","\75\226\107\58"),[v7("\104\203\31\121\25\235\195\76\219\3\108\16\206","\173\56\190\113\26\113\162")]=0.3,[v7("\231\223\62\17\199\222\208\46\13","\151\171\190\77\101")]=282 -(47 + 235) ,[v7("\231\32\235\186\253\110","\107\165\79\152\201\152\29")]={},[v7("\117\65\251\216\123\109\83\75\250","\31\55\46\136\171\52")]={},[v7("\243\39\207\231\243\49\248\253\194\56\208\245\200\6\221\249\212","\148\177\72\188")]={},[v7("\149\179\91\214\165\162\82\215\132\185\68\192\163\165","\179\198\214\55")]={}};v29.boss.getBossHealth=function(v442) local v443=0;local v444;while true do if (v443==(0 -0)) then v444=0;while true do if (v444==(0 + 0)) then local v1270=486 -(21 + 465) ;local v1271;while true do if (0==v1270) then v1271=0 + 0 ;while true do if ((0 + 0)==v1271) then local v1508=0;while true do if (v1508==(0 + 0)) then if v442 then if v442:IsA(v7("\216\25\127\119\75\220\249\8","\179\144\108\18\22\37")) then return v442.Health;end local v1573,v1574=pcall(function() return v442.Value;end);if (v1573 and tonumber(v1574)) then return tonumber(v1574);end end return workspace:GetAttribute(v7("\228\172\8\154\231\195\162\23\157\199","\175\166\195\123\233")) or 0 ;end end end end break;end end end end break;end end end;v29.boss.getBossMaxHealth=function(v445) if v445 then if v445:IsA(v7("\199\215\80\72\254\224\203\89","\144\143\162\61\41")) then return v445.MaxHealth;end local v871,v872=pcall(function() return v445.Value;end);if (v871 and tonumber(v872)) then return tonumber(v872);end end return workspace:GetAttribute(v7("\194\220\14\67\95\134\43\200\214\28\92\102\143","\83\128\179\125\48\18\231")) or 0 ;end;v29.boss.getBossHeadPosition=function(v446,v447) local v448=v446:FindFirstChild(v7("\117\178\242\217","\126\61\215\147\189\39"),true) or v446:FindFirstChild(v7("\112\250\28\65","\37\24\159\125"),true) ;if (v448 and v448:IsA(v7("\248\167\102\71\234\167\103\86","\34\186\198\21"))) then return v448.Position;end return v447.Position + Vector3.new(0,v447.Size.Y * (0.35 -0) ,1217 -(553 + 664) ) ;end;v29.boss.findActiveBoss=function(v449) v449=v449 or v7("\213\9\204\83","\162\152\104\165\61") ;for v778,v779 in ipairs(v14.CollectionService:GetTagged(v7("\239\32\161\110\85\243\200\33\166\95\127\246\222","\133\173\79\210\29\16"))) do if (v779:IsA(v7("\160\115\233\46\129","\75\237\28\141")) and v779:IsDescendantOf(workspace)) then local v976=v779:FindFirstChild(v7("\254\80\223\162\11\26\234\224\219\90\228\184\59\25\232\249","\129\188\63\172\209\79\123\135"),true);if (v976 and v976:IsA(v7("\98\229\245\200\112\229\244\217","\173\32\132\134"))) then local v1140=0 + 0 ;local v1141;local v1142;local v1143;local v1144;local v1145;while true do if ((79 -(73 + 5))==v1140) then v1143=v1141 and (v1141:FindFirstChild(v7("\139\253\193\19\6\49\19\178\244","\127\198\156\185\91\99\80")) or v1141:FindFirstChild(v7("\248\27\212\216\162\10\53\202\253","\190\149\122\172\144\199\107\89"))) ;v1144=v1142 and tonumber(v1142.Value) ;v1140=2;end if (v1140==(1717 -(1128 + 587))) then if (v1144 and (v1144>0)) then return v779,v976,v1142,v1143;end v1145=v779:FindFirstChildOfClass(v7("\26\16\252\255\240\61\12\245","\158\82\101\145\158"));v1140=11 -8 ;end if (v1140==0) then local v1374=690 -(558 + 132) ;while true do if (v1374==(0 -0)) then v1141=v779:FindFirstChild(v7("\93\15\9\251\189","\173\46\123\104\143\206\81")) or v779:FindFirstChild(v7("\135\9\35\158\86","\97\212\125\66\234\37\227")) ;v1142=v1141 and (v1141:FindFirstChild(v7("\162\230\183\57\10\130","\126\234\131\214\85")) or v1141:FindFirstChild(v7("\140\208\72\86\91\140","\47\228\181\41\58"))) ;v1374=1;end if (v1374==(2 -1)) then v1140=1;break;end end end if (v1140==3) then if (v1145 and (v1145.Health>0)) then return v779,v976,v1145,v1145;end break;end end end end end local v450=workspace:FindFirstChild(v7("\85\232\7\24\80\99","\36\16\158\98\118"));local v451=v450 and (v450:FindFirstChild(v7("\226\25\208\232\125\254\34\235\212","\133\160\118\163\155\56\136\71")) or v450:FindFirstChild(v7("\212\173\98\225\151\13\176\248\163","\213\150\194\17\146\214\127"))) ;if v451 then for v977,v978 in ipairs(v451:GetDescendants()) do if v978:IsA(v7("\54\166\160\209\74","\86\123\201\196\180\38\196\194")) then local v1146=0;local v1147;while true do if (0==v1146) then v1147=v978:FindFirstChild(v7("\213\231\202\188\211\233\212\174\240\237\241\166\227\234\214\183","\207\151\136\185"),true);if (v1147 and v1147:IsA(v7("\138\130\59\135\68\121\99\188","\17\200\227\72\226\20\24"))) then local v1453=v978:FindFirstChildOfClass(v7("\152\84\22\214\199\254\230\251","\159\208\33\123\183\169\145\143"));local v1454=v978:FindFirstChild(v7("\225\78\57\34\225","\86\146\58\88")) or v978:FindFirstChild(v7("\107\203\235\212\189","\154\56\191\138\160\206\137\86")) ;local v1455=v1454 and (v1454:FindFirstChild(v7("\174\92\244\139\104\50","\172\230\57\149\231\28\90\225")) or v1454:FindFirstChild(v7("\10\175\135\222\60\211","\187\98\202\230\178\72"))) ;local v1456=v1455 and tonumber(v1455.Value) ;if ((v1456 and (v1456>(0 + 0))) or (v1453 and (v1453.Health>0))) then return v978,v1147,v1455 or v1453 ,v1455 or v1453 ;end end break;end end end end end return nil;end;v29.boss.attack=function(v452,v453,v454,v455) if ( not v452 or  not v455 or  not v455.Parent) then return;end local v456=v10.Character;local v457=v456 and v456:FindFirstChildOfClass(v7("\9\244\169\49\68\46\232\160","\42\65\129\196\80")) ;local v458=v456 and v456:FindFirstChild(v7("\42\95\80\219\25\8\11\234\48\69\82\206\39\6\16\250","\142\98\42\61\186\119\103\98")) ;if ( not v456 or  not v457 or  not v458 or (v457.Health<=0)) then return;end local v459=v456:FindFirstChild(v7("\8\170\12\11\48","\104\88\223\98")) or v10.Backpack:FindFirstChild(v7("\116\226\236\205\10","\141\36\151\130\174\98")) ;if (v459 and (v459.Parent~=v456)) then pcall(function() v457:EquipTool(v459);end);end local v460=v455.Position;local v461=v458.Position-v460 ;v461=Vector3.new(v461.X,0,v461.Z);if (v461.Magnitude<(1 + 0)) then v461=v455.CFrame.LookVector;end local v462=v460 + (v461.Unit * math.max(2 + 2 ,math.min(6 + 0 ,v455.Size.Magnitude * (0.2 -0) ))) + Vector3.new(0,1.5,0 + 0 ) ;v458.CFrame=CFrame.lookAt(v462,v460);v458.AssemblyLinearVelocity=Vector3.zero;v458.AssemblyAngularVelocity=Vector3.zero;local v467=v456:FindFirstChild(v7("\168\127\196\25\172\123\204\9","\109\228\26\162"));local v468=v456:FindFirstChild(v7("\108\236\250\112\244\206\95\235\249","\134\62\133\157\24\128"));pcall(function() local v780=0;while true do if (v780==(0 + 0)) then if (firetouchinterest and v467) then local v1272=771 -(294 + 477) ;local v1273;while true do if (v1272==(0 + 0)) then v1273=0 -0 ;while true do if (v1273==(0 -0)) then firetouchinterest(v455,v467,0);firetouchinterest(v455,v467,1 + 0 );break;end end break;end end end if (firetouchinterest and v468) then local v1274=0;while true do if (v1274==(0 + 0)) then firetouchinterest(v455,v468,0 -0 );firetouchinterest(v455,v468,983 -(97 + 885) );break;end end end break;end end end);if ((os.clock() -v29.boss.Data.LastPunch)>=v29.boss.Data.PunchInterval) then local v874=0 + 0 ;local v875;while true do if (v874==0) then v875=0;while true do if (v875==(0 -0)) then v29.boss.Data.LastPunch=os.clock();pcall(function() local v1420=0;local v1421;while true do if (0==v1420) then v1421=0;while true do if (v1421==0) then v10.muscleEvent:FireServer(v7("\23\176\20\218\39","\182\103\197\122\185\79\209"),v7("\255\130\231\99\40\73\253\131","\40\147\231\129\23\96"));v10.muscleEvent:FireServer(v7("\101\237\130\70\179","\188\21\152\236\37\219\204"),v7("\82\224\48\4\84\193\54\2\68","\108\32\137\87"));v1421=366 -(271 + 94) ;end if (v1421==1) then if v459 then v459:Activate();end break;end end break;end end end);break;end end break;end end end local v469=workspace:GetAttribute(v7("\136\231\19\181\11\240\88\73\166\233\25\136\46\244\78","\57\202\136\96\198\79\153\43")) or v452.Name ;v104:SetText(v7("\137\44\185\180\215\231","\152\203\67\202\199\237\199")   .. v469 );local v470=v29.boss.getBossHealth(v453);local v471=v29.boss.getBossMaxHealth(v454);v105:SetText(v7("\210\70\161\3\11\125\35\166","\134\154\35\192\111\127\21\25")   .. v17.formatNumber(v470)   .. v7("\248\105\73","\178\216\70\105\106\64")   .. v17.formatNumber(v471) );end;v29.boss.startAutoFarm=function(v472,v473) if  not v473 then if (v29.boss.Data.ActiveMode==v472) then local v1076=0;while true do if (v1076==(1603 -(777 + 826))) then v29.boss.Data.Running=false;v29.boss.Data.ActiveMode=nil;v1076=1 + 0 ;end if (v1076==1) then v29.boss.Data.Generation+=(1356 -(117 + 1238)) v103:SetText(v7("\12\63\123\226\220\198\142\192\27\34\105\247\203\217\209\132","\224\95\75\26\150\169\181\180"));break;end end end return;end if ((v472==v7("\38\219\209\38","\22\107\186\184\72\36\204")) and v29.boss.HalloweenSwitch) then v29.boss.HalloweenSwitch:Set(false,true);elseif ((v472==v7("\207\188\40\66\1\240\184\33\64","\110\135\221\68\46")) and v29.boss.MainSwitch) then v29.boss.MainSwitch:Set(false,true);end v29.boss.Data.ActiveMode=v472;v29.boss.Data.Running=true;v29.boss.Data.Generation+=(1716 -(686 + 1029)) local v476=v29.boss.Data.Generation;task.spawn(function() while v17.isCurrent() and v29.boss.Data.Running and (v29.boss.Data.Generation==v476)  do local v876,v877,v878,v879=v29.boss.findActiveBoss(v472);if (v876 and v877) then local v1077=0;while true do if (v1077==(1357 -(1074 + 282))) then task.wait(1617.03 -(1359 + 258) );break;end if (v1077==(0 -0)) then v103:SetText(v7("\208\34\13\255\219\160\97\163\16\5\236\198\167\50\237\49\76","\91\131\86\108\139\174\211")   .. (((v472==v7("\211\42\180\27\82\236\46\189\25","\61\155\75\216\119")) and v7("\44\170\190\48\87\30\216\1\165\242\30\87\26\206","\189\100\203\210\92\56\105")) or v7("\2\80\244\38\111\115\242\59\60","\72\79\49\157")) );v29.boss.attack(v876,v878,v879,v877);v1077=1936 -(1730 + 205) ;end end else local v1078=0;while true do if (v1078==(529 -(67 + 461))) then v105:SetText(v7("\2\190\195\136\99\34\225\130\212\55\101\251\146","\23\74\219\162\228"));task.wait(0.5 -0 );break;end if (v1078==0) then v103:SetText(v7("\187\164\48\168\157\163\107\252\191\177\56\168\129\190\54\252\142\191\35\252","\220\232\208\81")   .. (((v472==v7("\221\191\233\60\35\77\164\240\176","\193\149\222\133\80\76\58")) and v7("\238\92\67\222\201\74\74\215\200\29\109\221\213\78","\178\166\61\47")) or v7("\214\75\225\116\138\28\244\89\251","\94\155\42\136\26\170")) );v104:SetText(v7("\166\48\53\166\222\127\8\186\138\58","\213\228\95\70"));v1078=1 -0 ;end end end end end);end;v29.boss.MainSwitch=v29.boss:AddSwitch("Auto Boss — Main Island",function(v477) v29.boss.startAutoFarm(v7("\20\231\79\161","\91\89\134\38\207"),v477);end);v29.boss.MainSwitch:Set(false);v29.boss.HalloweenSwitch=v29.boss:AddSwitch("Auto Boss — Halloween",function(v478) v29.boss.startAutoFarm(v7("\108\239\196\58\28\199\34\65\224","\71\36\142\168\86\115\176"),v478);end);v29.boss.HalloweenSwitch:Set(false);v29.boss:AddSwitch(v7("\252\174\124\171\10\176\67\76\159\149\96\190\10\176\95\71\216\225\115\185\23\187\68\9\253\174\97\172","\41\191\193\18\223\99\222\54"),function(v479) v29.boss.Data.ContinueTraining=v479;end);v29.boss:AddSection(v7("\130\40\193\37","\202\203\70\167\74"));task.spawn(function() while v17.isCurrent() do local v781=0 -0 ;while true do if (v781==(0 + 0)) then if  not v29.boss.Data.Running then local v1275=629 -(129 + 500) ;local v1276;while true do if (v1275==0) then v1276=workspace:GetAttribute(v7("\14\14\207\32\66\60\0\203\61\95\41\25\200\7\120\33\4","\17\76\97\188\83"));if (typeof(v1276)==v7("\139\50\212\53\53\145","\195\229\71\185\87\80\227\43")) then local v1489=math.max(0,v1276-workspace:GetServerTimeNow() );local v1490=math.floor(v1489/(5311 -(1157 + 554)) );local v1491=math.floor((v1489%(5206 -1606))/(667 -(82 + 525)) );local v1492=math.floor(v1489%(55 + 5) );v106:SetText(string.format(v7("\206\249\24\68\175\194\243\19\67\181\160\185\4\88\175\165\248\13\16\170\228\239","\143\128\156\96\48"),v1490,v1491,v1492));else v106:SetText(v7("\150\212\232\6\87\154\222\227\1\77\248\255\191\51","\119\216\177\144\114"));end break;end end end task.wait(2 -1 );break;end end end end);v29.inventory:AddSection(v7("\249\44\237\2\250\33\246\82","\34\169\73\153"));v29.inventory.PetShopRuntime=v14.ReplicatedStorage:WaitForChild(v7("\185\228\10\153\175\232","\235\202\140\107")):WaitForChild(v7("\30\97\58\188\224\42\242","\165\108\20\84\200\137\71\151"));v29.inventory.PetShopFolder=v29.inventory.PetShopRuntime:WaitForChild(v7("\121\132\46\156\73\188\36\152\92\187\39\140\127\166","\232\26\212\75"));v29.inventory.PetShopRemote=v14.ReplicatedStorage.rEvents:WaitForChild(v7("\52\121\119\252\196\63\70\98\218\242\58\70\102\237","\151\87\41\18\136"));v29.inventory.PetShopData={[v7("\107\170\222\252\247\72\187","\158\59\207\170\176")]={},[v7("\124\91\63\76\143\91\91\55","\236\47\62\83\41")]={},[v7("\201\172\44\62\169\150\255\173\12\50\185\150","\226\154\201\64\91\202")]={},[v7("\227\92\4\57\71\179\212\71\9","\220\161\41\125\120\42")]=1624 -(948 + 675) };v29.inventory.AuraData={[v7("\157\100\178\15\144\120\179\26","\110\220\17\192")]={},[v7("\71\124\56\31\232\35\244\163","\199\20\25\84\122\139\87\145")]={},[v7("\116\12\209\171\24\254\66\13\241\167\8\254","\138\39\105\189\206\123")]={},[v7("\61\18\144\12\254\246\218\241\11","\159\127\103\233\77\147\153\175")]=1 + 0 };for v481,v482 in ipairs(v29.inventory.PetShopFolder:GetChildren()) do if (v482:GetAttribute(v7("\46\227\212\165\87\206\21\197\244","\171\103\144\132\202\32"))==true) then table.insert(v29.inventory.AuraData.AuraList,v482.Name);else table.insert(v29.inventory.PetShopData.PetList,v482.Name);end end table.sort(v29.inventory.PetShopData.PetList);table.sort(v29.inventory.AuraData.AuraList);local v121=v29.inventory:AddLabel(v7("\35\42\229\9\19\59\236\8\80\31\236\24\3\117\169\34\31\33\236","\108\112\79\137"));local v122=v29.inventory:AddDropdown(v7("\28\202\123\39\190\4\169\5\58\214","\85\95\162\20\72\205\97\137"),function(v483) local v484=0;while true do if (v484==(0 + 0)) then if  not v29.inventory.PetShopData.Selected[v483] then v29.inventory.PetShopData.Selected[v483]=true;table.insert(v29.inventory.PetShopData.SelectedList,v483);end v121:SetText(v7("\196\248\38\217\14\236\200\243\189\26\217\25\235\151\183","\173\151\157\74\188\109\152")   .. ((( #v29.inventory.PetShopData.SelectedList>(0 -0)) and table.concat(v29.inventory.PetShopData.SelectedList,v7("\104\72","\147\68\104\88\189\188\52\181"))) or v7("\52\135\133\213","\176\122\232\235")) );break;end end end);for v485,v486 in ipairs(v29.inventory.PetShopData.PetList) do v122:Add(v486);end v29.inventory:AddTextBox(v7("\162\96\35\15\207\141\122\47\65\250\218","\142\224\21\90\47"),function(v487) v29.inventory.PetShopData.BuyAmount=math.max(1,math.floor(tonumber(v487) or (854 -(406 + 447)) ));end,{[v7("\119\216\34\87\182","\229\20\180\71\54\196\235")]=false});v29.inventory:AddSwitch(v7("\8\107\213\236\181\136\149\48\62\241\230\225","\224\73\30\161\131\149\202"),function(v489) local v490=0;while true do if (v490==(118 -(91 + 26))) then task.spawn(function() while v17.isCurrent() and _G.AutoHatchPet  do local v1149=0 -0 ;while true do if ((0 + 0)==v1149) then for v1422,v1423 in ipairs(v29.inventory.PetShopData.SelectedList) do local v1424=v29.inventory.PetShopFolder:FindFirstChild(v1423);if v1424 then for v1509=1,v29.inventory.PetShopData.BuyAmount do pcall(function() v29.inventory.PetShopRemote:InvokeServer(v1424);end);end end end task.wait(986.1 -(968 + 18) );break;end end end end);break;end if (v490==0) then _G.AutoHatchPet=v489;if  not v489 then return;end v490=1 + 0 ;end end end);v29.inventory:AddButton(v7("\210\233\244\81\227\165\194\85\253\224\242\68\244\225\177\96\244\241\226","\48\145\133\145"),function() local v491=0 + 0 ;local v492;while true do if (v491==(0 -0)) then v492=267 -(172 + 95) ;while true do if ((0 -0)==v492) then v29.inventory.PetShopData.Selected={};v29.inventory.PetShopData.SelectedList={};v492=266 -(260 + 5) ;end if (v492==(2 -1)) then v121:SetText(v7("\105\73\185\235\210\56\95\72\245\222\212\56\73\22\245\192\222\34\95","\76\58\44\213\142\177"));break;end end break;end end end);v29.inventory:AddSection(v7("\234\49\0\44\107","\24\171\68\114\77"));local v123=v29.inventory:AddLabel(v7("\220\24\92\87\132\202\1\169\175\60\69\64\134\205\94\237\193\18\94\87","\205\143\125\48\50\231\190\100"));local v124=v29.inventory:AddDropdown(v7("\226\175\27\10\242\230\159\131\212\181\21","\194\161\199\116\101\129\131\191"),function(v493) local v494=0;while true do if (v494==(819 -(265 + 554))) then if  not v29.inventory.AuraData.Selected[v493] then v29.inventory.AuraData.Selected[v493]=true;table.insert(v29.inventory.AuraData.SelectedList,v493);end v123:SetText(v7("\223\33\196\173\244\182\233\32\136\137\226\176\237\55\146\232","\194\140\68\168\200\151")   .. ((( #v29.inventory.AuraData.SelectedList>0) and table.concat(v29.inventory.AuraData.SelectedList,v7("\14\187","\149\34\155\181\69"))) or v7("\45\242\219\255","\154\99\157\181")) );break;end end end);for v495,v496 in ipairs(v29.inventory.AuraData.AuraList) do v124:Add(v496);end v29.inventory:AddTextBox(v7("\175\26\245\224\205\128\0\249\174\248\215","\140\237\111\140\192"),function(v497) v29.inventory.AuraData.BuyAmount=math.max(1572 -(1440 + 131) ,math.floor(tonumber(v497) or 1 ));end,{[v7("\5\21\120\25\20","\120\102\121\29")]=false});v29.inventory:AddSwitch(v7("\141\246\173\52\236\193\172\34\236\194\172\41\173","\91\204\131\217"),function(v499) local v500=0 -0 ;local v501;while true do if (v500==(1395 -(253 + 1142))) then v501=0;while true do if (v501==0) then _G.AutoHatchAura=v499;if  not v499 then return;end v501=254 -(133 + 120) ;end if (v501==(1 -0)) then task.spawn(function() while v17.isCurrent() and _G.AutoHatchAura  do for v1425,v1426 in ipairs(v29.inventory.AuraData.SelectedList) do local v1427=v29.inventory.PetShopFolder:FindFirstChild(v1426);if v1427 then for v1510=1957 -(809 + 1147) ,v29.inventory.AuraData.BuyAmount do pcall(function() v29.inventory.PetShopRemote:InvokeServer(v1427);end);end end end task.wait(497.1 -(178 + 319) );end end);break;end end break;end end end);v29.inventory:AddSection(v7("\239\234\65\219\243\248\232\193\243\67\209","\158\174\159\53\180\211\189"));v29.inventory.EvolveData={[v7("\97\248\225\216\116\161\87\249","\213\50\157\141\189\23")]={},[v7("\205\35\136\165\113\176\251\34\168\169\97\176","\196\158\70\228\192\18")]={},[v7("\107\82\30\91\215\94","\185\42\63\113\46")]=1 -0 };local v126=v29.inventory:AddLabel(v7("\231\216\45\60\24\192\216\37\121\43\209\201\50\99\91\250\210\47\60","\123\180\189\65\89"));local v127=v29.inventory:AddDropdown(v7("\225\132\255\235\154\199\204\192\225\157","\233\162\236\144\132"),function(v502) local v503=0 + 0 ;while true do if (v503==(1270 -(1255 + 15))) then if  not v29.inventory.EvolveData.Selected[v502] then v29.inventory.EvolveData.Selected[v502]=true;table.insert(v29.inventory.EvolveData.SelectedList,v502);end v126:SetText(v7("\129\193\242\31\186\226\90\182\132\206\31\173\229\5\242","\63\210\164\158\122\217\150")   .. ((( #v29.inventory.EvolveData.SelectedList>(1542 -(1221 + 321))) and table.concat(v29.inventory.EvolveData.SelectedList,v7("\127\139","\152\83\171\150\140\41"))) or v7("\172\234\141\54","\104\226\133\227\83\180\123")) );break;end end end);for v504,v505 in ipairs(v29.inventory.PetShopData.PetList) do v127:Add(v505);end v29.inventory:AddTextBox(v7("\38\29\44\92\21\14\99\113\14\4\54\94\23\81","\48\99\107\67"),function(v506) v29.inventory.EvolveData.Amount=math.max(2 -1 ,math.floor(tonumber(v506) or (1 + 0) ));end,{[v7("\221\170\120\209\63","\27\190\198\29\176\77")]=false});v29.inventory.AutoEvolveRunning=false;v29.inventory:AddSwitch(v7("\206\94\233\59\233\107\249\68\241\34\172","\46\143\43\157\84\201"),function(v508) local v509=0 -0 ;while true do if (v509==(3 -2)) then task.spawn(function() while v17.isCurrent() and v29.inventory.AutoEvolveRunning  do for v1279,v1280 in ipairs(v29.inventory.EvolveData.SelectedList) do for v1334=1 + 0 ,v29.inventory.EvolveData.Amount do pcall(function() v14.ReplicatedStorage.rEvents.petEvolveEvent:FireServer(v7("\82\110\89\206\73\22\248\82\108","\168\55\24\54\162\63\115"),v1280);end);end end task.wait(0.5 + 0 );end end);break;end if ((0 -0)==v509) then v29.inventory.AutoEvolveRunning=v508;if  not v508 then return;end v509=1;end end end);v29.inventory:AddSection(v7("\54\239\52\143\146\250\5\251\36\133","\174\119\154\64\224\178"));v29.inventory.TradeData={[v7("\25\123\201\126\6\179\31\224\26\114\196\98\0\181\9","\132\74\30\165\27\101\199\122")]={},[v7("\28\226\243\162\164\161\177\43\215\243\166\190\176\166\3\238\236\179","\212\79\135\159\199\199\213")]={},[v7("\74\165\185\66\95\195\29\125\144\176\83\79","\120\25\192\213\39\60\183")]={},[v7("\43\69\51\77\27\84\58\76\40\69\43\100\17\83\43","\40\120\32\95")]={},[v7("\29\174\55\127\189\30\46\162\54\116","\127\90\203\89\26\207")]=407 -(204 + 203) };local v130=v29.inventory:AddLabel(v7("\238\48\163\206\10\233\216\49\239\251\5\252\196\48\189\216\83\189\243\58\161\206","\157\189\85\207\171\105"));local v131=v29.inventory:AddLabel(v7("\245\164\212\176\0\210\164\220\245\51\195\181\203\239\67\232\174\214\176","\99\166\193\184\213"));local v132=v29.inventory:AddDropdown(v7("\245\191\143\180\31\143\150\135\140\186\21\143\196","\234\182\215\224\219\108"),function(v510) local v511=v510:match(v7("\220\193\243\123\139\200\255","\85\160\225\219")) or v510 ;if  not v29.inventory.TradeData.SelectedPlayers[v511] then local v880=78 -(48 + 30) ;while true do if (v880==0) then v29.inventory.TradeData.SelectedPlayers[v511]=true;table.insert(v29.inventory.TradeData.SelectedPlayerList,v511);break;end end end v130:SetText(v7("\111\0\143\204\53\200\78\88\69\179\197\55\197\78\78\22\217\137","\43\60\101\227\169\86\188")   .. ((( #v29.inventory.TradeData.SelectedPlayerList>(0 + 0)) and table.concat(v29.inventory.TradeData.SelectedPlayerList,v7("\60\136","\87\16\168\177\223\58\172\217"))) or v7("\26\194\87\216","\91\84\173\57\189")) );end);for v512,v513 in ipairs(v14.Players:GetPlayers()) do if (v513~=v10) then v132:Add(v513.DisplayName   .. v7("\80\165\76","\182\112\217\108\156\192")   .. v513.Name );end end local v133=v29.inventory:AddDropdown(v7("\137\0\71\224\152\175\72\120\234\159","\235\202\104\40\143"),function(v514) local v515=0;while true do if ((1964 -(1472 + 492))==v515) then if  not v29.inventory.TradeData.SelectedPets[v514] then local v1153=0 -0 ;while true do if (v1153==0) then v29.inventory.TradeData.SelectedPets[v514]=true;table.insert(v29.inventory.TradeData.SelectedPetList,v514);break;end end end v131:SetText(v7("\62\142\23\188\14\159\30\189\77\187\30\173\30\209\91","\217\109\235\123")   .. ((( #v29.inventory.TradeData.SelectedPetList>(0 + 0)) and table.concat(v29.inventory.TradeData.SelectedPetList,v7("\107\201","\221\71\233\30\54\16\176\173"))) or v7("\26\243\80\186","\223\84\156\62")) );break;end end end);for v516,v517 in ipairs(v29.inventory.PetShopData.PetList) do v133:Add(v517);end v17.connect(v14.Players.PlayerAdded,function(v518) if (v518~=v10) then v132:Add(v518.DisplayName   .. v7("\150\224\162","\91\182\156\130\189\215")   .. v518.Name );end end);v17.connect(v14.Players.PlayerRemoving,function(v519) v132:Remove(v519.DisplayName   .. v7("\62\111\236","\53\30\19\204")   .. v519.Name );if v29.inventory.TradeData.SelectedPlayers[v519.Name] then local v881=0;while true do if ((612 -(258 + 353))==v881) then v130:SetText(v7("\202\229\124\129\164\237\229\116\196\151\245\225\105\129\181\234\186\48","\199\153\128\16\228")   .. ((( #v29.inventory.TradeData.SelectedPlayerList>(1994 -(1382 + 612))) and table.concat(v29.inventory.TradeData.SelectedPlayerList,v7("\157\106","\199\177\74\133\121"))) or v7("\150\198\178\251","\74\216\169\220\158\87\166")) );break;end if (v881==(0 + 0)) then v29.inventory.TradeData.SelectedPlayers[v519.Name]=nil;for v1281,v1282 in ipairs(v29.inventory.TradeData.SelectedPlayerList) do if (v1282==v519.Name) then table.remove(v29.inventory.TradeData.SelectedPlayerList,v1281);break;end end v881=1 + 0 ;end end end end);v29.inventory.AutoTradeRunning=false;v29.inventory:AddSwitch(v7("\201\54\7\35\26\220\49\18\40\95","\58\136\67\115\76"),function(v520) local v521=0;local v522;while true do if (v521==(1 + 1)) then task.spawn(function() while v17.isCurrent() and v29.inventory.AutoTradeRunning and (v29.inventory.TradeData.Generation==v522)  do local v1155=0 -0 ;while true do if (v1155==0) then if (( #v29.inventory.TradeData.SelectedPlayerList>0) and ( #v29.inventory.TradeData.SelectedPetList>(0 + 0))) then for v1493,v1494 in ipairs(v29.inventory.TradeData.SelectedPlayerList) do local v1495=v14.Players:FindFirstChild(v1494);if ( not v29.inventory.AutoTradeRunning or (v29.inventory.TradeData.Generation~=v522)) then break;end if v1495 then local v1525=0;local v1526;local v1527;local v1528;local v1529;while true do if (v1525==(122 -(35 + 84))) then for v1575,v1576 in ipairs(v29.inventory.TradeData.SelectedPetList) do for v1583,v1584 in ipairs(v1527:GetChildren()) do if ((v1584.Name==v1576) and  not v1529[v1584] and (v1528<(221 -(75 + 140)))) then pcall(function() v1526:FireServer(v7("\83\84\143\66\78\123\157\66\81","\39\60\50\233"),v1584);end);v1529[v1584]=true;v1528=v1528 + 1 ;task.wait(0.05);break;end end end if (v1528>0) then local v1585=0;while true do if ((3 -2)==v1585) then task.wait(1801 -(923 + 876) );break;end if (v1585==(0 -0)) then task.wait(812.5 -(284 + 528) );pcall(function() v1526:FireServer(v7("\27\48\160\41\146\60\134\177\27\55\166","\195\122\83\195\76\226\72\210"));end);v1585=1;end end end break;end if (v1525==(1019 -(867 + 152))) then local v1566=1106 -(709 + 397) ;while true do if (v1566==(0 -0)) then v1526=v14.ReplicatedStorage.rEvents.tradingEvent;v1527=v10.petsFolder.Unique;v1566=1;end if (v1566==1) then v1525=37 -(21 + 15) ;break;end end end if (v1525==(2 -0)) then local v1567=0 -0 ;while true do if (v1567==(1 + 0)) then v1525=8 -5 ;break;end if (v1567==0) then v1528=0 -0 ;v1529={};v1567=1 + 0 ;end end end if (v1525==(136 -(97 + 38))) then pcall(function() v1526:FireServer(v7("\226\175\214\93\177\50\170\89\244\152\221\72\144\37\184\73","\61\145\202\184\57\229\64\203"),v1495);end);task.wait(80.5 -(52 + 28) );v1525=1 + 1 ;end end end end end task.wait(851 -(59 + 790) );break;end end end end);break;end if (v521==(1 + 0)) then if  not v520 then return;end v522=v29.inventory.TradeData.Generation;v521=1 + 1 ;end if (v521==(940 -(467 + 473))) then v29.inventory.AutoTradeRunning=v520;v29.inventory.TradeData.Generation+=(4 -3) v521=2 -1 ;end end end);v17.notify(v7("\204\219\53\251\47\252\227\51\247\53\225","\65\132\180\91\158"),"Tab Boss + Pets cargado ✅",3,v7("\22\105\210\45\0\111\194","\78\101\28\177"));v29.boosts:AddSection(v7("\7\187\239\66\49\244\197\80\49\177\242","\49\69\212\128"));v29.boosts.EggEaterData={[v7("\37\25\222\252\232\25\11","\129\119\108\176\146")]=false};v29.boosts:AddSwitch(v7("\25\206\19\141\4\2\16\124\234\0\202\54","\124\92\175\103\173\69\110"),function(v523) v29.boosts.EggEaterData.Running=v523;if  not v523 then return;end task.spawn(function() while v17.isCurrent() and v29.boosts.EggEaterData.Running  do local v882=0;local v883;local v884;local v885;while true do if (v882==0) then v883=0;v884=nil;v882=2 -1 ;end if (v882==(2 -1)) then v885=nil;while true do if (v883==1) then if v885 then pcall(function() v10.muscleEvent:FireServer(v7("\174\176\225\26\187\171\224\43\185\165","\110\222\194\142"),v885);end);end task.wait(0.25 + 0 );break;end if (v883==0) then v884=v10.Character;v885=(v884 and v884:FindFirstChild(v7("\241\42\12\35\196\49\13\119\228\63\4","\87\161\88\99"))) or v10.Backpack:FindFirstChild(v7("\34\235\224\216\178\217\45\82\220\232\203","\67\114\153\143\172\215\176")) ;v883=2 -1 ;end end break;end end end end);end):Set(false);v29.boosts.BoostData={[v7("\62\205\30\164\126\168\4\205","\193\119\185\123\201\50")]={v7("\67\26\246\54\6\122\30\123\72\202\46\14\114\26","\127\23\104\153\70\111\25"),v7("\44\9\163\189\44\53\247\128\1\6\173\170","\211\105\103\198\207\75\76\215"),v7("\254\181\191\251\123\5\180\246\236\166\162","\214\174\199\208\143\30\108\218"),v7("\37\171\62\141\141\22\250\72\3","\41\113\228\107\202\197\54\184"),v7("\74\159\55\72\127\132\54\28\73\133\57\87\127","\60\26\237\88"),v7("\237\6\64\212\143\152\25\124\231\165\221","\206\184\74\20\134"),v7("\29\234\235\163\244\83\120\238\57\246","\172\88\132\142\209\147\42\88")},[v7("\181\159\194\3\63\251\185","\222\231\234\172\109\86\149")]=false};v29.boosts:AddSwitch(v7("\200\238\212\88\204\227\204\88\207\224\207\11\249\252\128\80\232\247\208\29\238\251\128\20\236\232\137","\120\141\143\160"),function(v525) local v526=237 -(58 + 179) ;while true do if (v526==(2 -1)) then task.spawn(function() while v17.isCurrent() and v29.boosts.BoostData.Running  do local v1156=1253 -(677 + 576) ;local v1157;while true do if (v1156==0) then v1157=v10.Character;for v1428,v1429 in ipairs(v29.boosts.BoostData.ItemList) do local v1430=0 + 0 ;local v1431;while true do if (v1430==(0 -0)) then v1431=(v1157 and v1157:FindFirstChild(v1429)) or v10.Backpack:FindFirstChild(v1429) ;if v1431 then local v1546=220 -(88 + 132) ;local v1547;while true do if (v1546==(0 + 0)) then v1547={};for v1586 in v1429:gmatch(v7("\5\159\253","\50\32\204\214")) do table.insert(v1547,v1586:lower());end v1546=4 -3 ;end if (v1546==1) then for v1587=6 -4 , #v1547 do v1547[v1587]=v1547[v1587]:sub(1,292 -(12 + 279) ):upper()   .. v1547[v1587]:sub(2) ;end for v1589=1 -0 ,10 do pcall(function() v10.muscleEvent:FireServer(table.concat(v1547),v1431);end);end break;end end end break;end end end v1156=1;end if (v1156==1) then task.wait(0.1);break;end end end end);break;end if (v526==(0 + 0)) then v29.boosts.BoostData.Running=v525;if  not v525 then return;end v526=948 -(652 + 295) ;end end end);v29.boosts:AddSection(v7("\163\64\50\57\148\24\128\83\48\107","\113\230\39\85\25\211"));v29.boosts.EggGifterData={[v7("\237\190\10\237\36\223\174\79\238\183\7\241\34\217","\43\190\219\102\136\71\171\203")]=nil,[v7("\7\121\55\122\45\107\62\77","\57\66\30\80")]=0 + 0 };local v138=v29.boosts:AddLabel(v7("\25\202\175\1\129\48\250\196\12\223\167\6\222\121\164","\228\73\184\192\117\228\89\148"));local v139=v29.boosts:AddDropdown(v7("\236\129\122\27\220\140\53\36\195\136\108\17\221","\116\175\233\21"),function(v527) local v528=v527:match(v7("\226\184\246\8\144\120\123","\95\158\152\222\38\187\81")) or v527 ;v29.boosts.EggGifterData.SelectedPlayer=v14.Players:FindFirstChild(v528);end);for v530,v531 in ipairs(v14.Players:GetPlayers()) do if (v531~=v10) then v139:Add(v531.DisplayName   .. v7("\184\161\117","\168\152\221\85\210\195")   .. v531.Name );end end v17.connect(v14.Players.PlayerAdded,function(v532) if (v532~=v10) then v139:Add(v532.DisplayName   .. v7("\235\194\181","\231\203\190\149")   .. v532.Name );end end);v17.connect(v14.Players.PlayerRemoving,function(v533) local v534=0 + 0 ;while true do if ((989 -(848 + 141))==v534) then v139:Remove(v533.DisplayName   .. v7("\141\33\163","\123\173\93\131\145\220\149")   .. v533.Name );if (v29.boosts.EggGifterData.SelectedPlayer==v533) then v29.boosts.EggGifterData.SelectedPlayer=nil;end break;end end end);local v140=v29.boosts:AddTextBox(v7("\55\201\226\52\122\237\76","\153\118\164\141\65\20"),function(v535) local v536=0;local v537;while true do if (v536==0) then v537=tonumber(v535);if v537 then v29.boosts.EggGifterData.EggCount=math.max(740 -(372 + 368) ,math.floor(v537));end break;end end end,{[v7("\237\62\131\227\229","\96\142\82\230\130\151")]=false});v29.boosts:AddButton(v7("\124\164\78\80\240\174\104\185\73\86\237\224\72\240\106\69\227\253","\142\47\208\47\34\132"),function() local v538=0;local v539;while true do if (v538==0) then v539=tonumber(v140.Text) or v29.boosts.EggGifterData.EggCount ;v539=math.max(0 + 0 ,math.floor(v539));v538=1131 -(542 + 588) ;end if (v538==(819 -(6 + 812))) then v29.boosts.EggGifterData.EggCount=v539;if ( not v29.boosts.EggGifterData.SelectedPlayer or (v539==0)) then local v1160=1705 -(1599 + 106) ;while true do if (v1160==(0 -0)) then v17.notify(v7("\211\185\3\66\124\85\240\170\1\16","\60\150\222\100\98\59"),"Configurá jugador y cantidad",2,v7("\82\61\69\88\210\180\54","\81\37\92\55\54\187\218"));return;end end end v538=1 + 1 ;end if (v538==2) then task.spawn(function() for v1161=1,v539 do local v1162=v10:FindFirstChild(v7("\3\75\163\36\148\13\69\175\59\132\19\98\162\59\133\5\86","\225\96\36\205\87")) and v10.consumablesFolder:FindFirstChild(v7("\217\180\77\109\121\70\7\169\131\69\126","\105\137\198\34\25\28\47")) ;if  not v1162 then break;end pcall(function() v14.ReplicatedStorage.rEvents.giftRemote:InvokeServer(v7("\22\160\71\98\242\20\184\84\115\211\5","\160\113\201\33\22"),v29.boosts.EggGifterData.SelectedPlayer,v1162);end);task.wait(0.1);end v17.notify(v7("\241\95\171\231\142\164\210\76\169\181","\205\180\56\204\199\201"),"Envío completado",2 + 1 ,v7("\144\203\63\27\134\205\47","\120\227\190\92"));end);break;end end end);v29.boosts:AddSection(v7("\14\84\30\112\38\28\254\235\59\72\26\105","\130\93\60\127\27\67\60\185"));v29.boosts.ShakeGifterData={[v7("\123\55\52\75\227\87\120\76\2\52\79\249\70\111","\29\40\82\88\46\128\35")]=nil,[v7("\8\77\213\22\4\155\52\80\218\9","\216\91\37\180\125\97")]=0 -0 };local v142=v29.boosts:AddLabel(v7("\17\100\19\211\94\38\119\16\131\100\45\119\23\198\68\127\54\76","\55\69\22\124\163"));local v143=v29.boosts:AddDropdown(v7("\91\219\83\231\204\116\16\196\116\210\69\237\205","\148\24\179\60\136\191\17\48"),function(v540) local v541=0 -0 ;local v542;while true do if ((0 + 0)==v541) then v542=v540:match(v7("\174\106\177\238\189\251\110","\150\210\74\153\192")) or v540 ;v29.boosts.ShakeGifterData.SelectedPlayer=v14.Players:FindFirstChild(v542);break;end end end);for v543,v544 in ipairs(v14.Players:GetPlayers()) do if (v544~=v10) then v143:Add(v544.DisplayName   .. v7("\163\212\120","\212\131\168\88\234\21\26")   .. v544.Name );end end v17.connect(v14.Players.PlayerAdded,function(v545) if (v545~=v10) then v143:Add(v545.DisplayName   .. v7("\5\104\201","\71\37\20\233\236\88")   .. v545.Name );end end);v17.connect(v14.Players.PlayerRemoving,function(v546) local v547=0;while true do if (v547==(0 + 0)) then v143:Remove(v546.DisplayName   .. v7("\141\90\240","\60\173\38\208\118\32\140\44")   .. v546.Name );if (v29.boosts.ShakeGifterData.SelectedPlayer==v546) then v29.boosts.ShakeGifterData.SelectedPlayer=nil;end break;end end end);local v144=v29.boosts:AddTextBox(v7("\96\63\238\198\46\219\27","\175\33\82\129\179\64"),function(v548) local v549=0;local v550;while true do if (0==v549) then v550=tonumber(v548);if v550 then v29.boosts.ShakeGifterData.ShakeCount=math.max(0 + 0 ,math.floor(v550));end break;end end end,{[v7("\237\227\53\206\46","\210\142\143\80\175\92")]=false});v29.boosts:AddButton(v7("\138\253\242\212\173\169\212\207\191\253\250\200\190\169\192\206\184\226\246\213","\166\217\137\147"),function() local v551=0 + 0 ;local v552;while true do if (2==v551) then task.spawn(function() for v1165=1 + 0 ,v552 do local v1166=v10:FindFirstChild(v7("\245\182\222\244\86\251\184\210\235\70\229\159\223\235\71\243\171","\35\150\217\176\135")) and v10.consumablesFolder:FindFirstChild(v7("\205\66\4\28\126\64\119\245\16\56\4\118\72\115","\22\153\48\107\108\23\35")) ;if  not v1166 then break;end pcall(function() v14.ReplicatedStorage.rEvents.giftRemote:InvokeServer(v7("\9\140\189\14\77\112\80\252\11\150\175","\137\110\229\219\122\31\21\33"),v29.boosts.ShakeGifterData.SelectedPlayer,v1166);end);task.wait(0.1);end v17.notify(v7("\41\181\57\112\51\11\3\119\28\169\61\105","\30\122\221\88\27\86\43\68"),"Envío completado",3,v7("\43\61\232\133\61\59\248","\230\88\72\139"));end);break;end if (v551==(1 + 0)) then v29.boosts.ShakeGifterData.ShakeCount=v552;if ( not v29.boosts.ShakeGifterData.SelectedPlayer or (v552==(1929 -(1690 + 239)))) then local v1167=0;while true do if (v1167==(0 -0)) then v17.notify(v7("\208\171\115\173\244\6\196\170\116\178\244\84","\38\131\195\18\198\145"),"Configurá jugador y cantidad",2,v7("\68\215\40\229\49\90\84","\52\51\182\90\139\88"));return;end end end v551=2;end if (0==v551) then v552=tonumber(v144.Text) or v29.boosts.ShakeGifterData.ShakeCount ;v552=math.max(0 + 0 ,math.floor(v552));v551=1 -0 ;end end end);task.spawn(function() while v17.isCurrent() do local v782=0;local v783;local v784;local v785;while true do if (v782==3) then v142:SetText(v7("\232\171\252\231\238\207\225\204\156\138\251\246\236\201\243\154\156","\160\188\217\147\151\135\172\128")   .. v784 );task.wait(2);break;end if (v782==(2 -1)) then local v1079=0 + 0 ;local v1080;while true do if (0==v1079) then v1080=0 -0 ;while true do if (v1080==1) then v782=1870 -(1736 + 132) ;break;end if (v1080==(0 + 0)) then v785=v10.Character;if v785 then for v1530,v1531 in ipairs(v785:GetChildren()) do if (v1531.Name==v7("\66\166\25\15\6\1\86\50\145\17\28","\56\18\212\118\123\99\104")) then v783=v783 + (3 -2) ;elseif (v1531.Name==v7("\42\251\247\195\214\221\31\229\184\224\215\223\21\236","\190\126\137\152\179\191")) then v784=v784 + (4 -3) ;end end end v1080=1 + 0 ;end end break;end end end if (v782==0) then v783=32 -(27 + 5) ;v784=0;v782=1 + 0 ;end if (v782==2) then for v1168,v1169 in ipairs(v10.Backpack:GetChildren()) do if (v1169.Name==v7("\24\16\125\223\175\73\38\66\87\204\173","\32\72\98\18\171\202")) then v783=v783 + 1 + 0 ;elseif (v1169.Name==v7("\48\154\61\100\254\7\137\62\52\196\12\137\57\113","\151\100\232\82\20")) then v784=v784 + 1 + 0 ;end end v138:SetText(v7("\79\203\249\28\122\208\248\72\90\222\241\27\37\153","\104\31\185\150")   .. v783 );v782=1 + 2 ;end end end end);v29.boosts:AddLabel("Interfiere con Boosts regalados. Subí a una máquina para menos lag.");v29.teleport:AddSection(v7("\34\220\25\254","\169\111\189\112\144\90"));v29.teleport.Locations={{[v7("\195\130\40\168","\226\173\227\69\205\223\224\105")]=v7("\108\55\44\66\143\50\75\50\35\85\203","\123\56\94\66\59\175"),[v7("\234\76\96","\225\154\35\19\129\122\158")]=CFrame.new( -37.1,7.199999999999999 + 2 ,3036 -(771 + 346) )},{[v7("\84\1\230\82","\84\58\96\139\55\149\135\176")]=v7("\62\62\170\14\14\230\45\31\62\173\4","\94\115\95\195\96\46\175"),[v7("\83\68\44","\128\35\43\95\93\78\77\231")]=CFrame.new(27.07 -11 ,1089.08 -(684 + 396) ,133.8)},{[v7("\170\28\59\49","\201\196\125\86\84\119\30")]=v7("\225\235\5\188\203","\223\163\142\100"),[v7("\146\25\208","\216\226\118\163\209")]=CFrame.new( -(23 -15),9, -(1365.2 -(700 + 496)))}};for v553,v554 in ipairs(v29.teleport.Locations) do v29.teleport:AddButton(v554.name,function() local v786=0 + 0 ;local v787;while true do if (v786==0) then v787=v10.Character;if v787 then local v1283=252 -(65 + 187) ;local v1284;while true do if (v1283==(939 -(827 + 112))) then v1284=v787:FindFirstChild(v7("\150\229\22\0\89\127\54\186\194\20\14\67\64\62\172\228","\95\222\144\123\97\55\16"));if v1284 then local v1496=0;local v1497;while true do if (v1496==(0 + 0)) then v1497=0 -0 ;while true do if (v1497==(0 -0)) then v1284.CFrame=v554.pos;v17.notify(v7("\45\129\182\70\243\22\150\174","\131\121\228\218\35"),v7("\237\213\46\4\109\9\216\222\49\17\118\9\205\209\38\14\57\26\153","\123\185\176\66\97\25")   .. v554.name ,4.5 -3 ,v7("\219\26\26\82\16\60\75","\81\168\111\121\49\117\79\56"));break;end end break;end end end break;end end end break;end end end);end v29.teleport:AddSection(v7("\224\19\232\165","\214\167\106\133"));v29.teleport.GymLocations={{[v7("\39\57\65\74","\185\73\88\44\47\84\31")]=v7("\167\193\31\178\208\247\137\197\29\165\215\191\175\206\23","\159\232\183\122\192\179"),[v7("\52\61\187","\65\68\82\200")]=CFrame.new( -2941.766,21.796999999999997 + 130 ,4994.552)},{[v7("\43\81\127\37","\30\69\48\18\64\175\175")]=v7("\217\34\27\249\40\228\62\22\237\55\176\11\6\225","\91\144\76\127\140"),[v7("\240\7\85","\176\128\104\38\65\179\218\181")]=CFrame.new( -(5597.681641 -(166 + 177)),1914.34285 -(1361 + 495) ,13360.850586 -8429 )},{[v7("\222\197\207\16","\117\176\164\162")]=v7("\174\215\11\247\214\124\196\229\28\253","\25\228\162\101\144\186"),[v7("\88\57\170","\132\40\86\217\110\146")]=CFrame.new( -(4284 + 4259),12.8 -6 ,2017 + 383 )},{[v7("\112\202\42\185","\62\30\171\71\220\199\19\156")]=v7("\109\80\191\53\81\204\111\102\73\75\171\118\122\208\34","\45\32\37\204\86\61\169\79"),[v7("\69\90\22","\28\53\53\101\220\213")]=CFrame.new( -8665.4,241.21 -(148 + 76) , -5792.9)},{[v7("\3\93\5\68","\191\109\60\104\33\58\193\48")]=v7("\171\210\31\226\137\211\11\167\160\206\21","\135\231\183\120"),[v7("\246\5\95","\201\134\106\44\132\85\122")]=CFrame.new(4516,2679.5 -1688 , -3856)},{[v7("\56\13\122\58","\67\86\108\23\95\97\108\168")]=v7("\141\54\74\15\182\42\212\92\228\31\85\7","\48\196\88\44\106\196\68\181"),[v7("\146\208\207","\76\226\191\188\67\224\196\194")]=CFrame.new( -6759,5.36 + 2 , -1284)},{[v7("\215\41\10\245","\157\185\72\103\144")]=v7("\116\170\158\114\161\178\88\191\202\93\177\188","\209\57\211\234\26\200"),[v7("\17\193\181","\178\97\174\198\225\48")]=CFrame.new(2529 -(111 + 168) ,4.37 + 3 ,92.20000000000005 + 981 )},{[v7("\193\87\9\244","\111\175\54\100\145\24\134")]=v7("\101\11\47\6\87\89\7\12\78","\117\35\121\64"),[v7("\205\178\253","\47\189\221\142\182\67")]=CFrame.new( -(5430 -2807),1.3600000000000003 + 6 , -(317 + 92))}};for v555,v556 in ipairs(v29.teleport.GymLocations) do v29.teleport:AddButton(v556.name,function() local v788=0 + 0 ;local v789;while true do if (v788==(0 -0)) then v789=v10.Character;if v789 then local v1285=v789:FindFirstChild(v7("\8\170\42\202\70\166\41\45\18\176\40\223\120\168\50\61","\73\64\223\71\171\40\201\64"));if v1285 then local v1379=0;while true do if (v1379==(0 + 0)) then v1285.CFrame=v556.pos;v17.notify(v7("\62\136\200\92\176\114\24\153","\29\106\237\164\57\192"),v7("\133\161\235\191\193\192\161\252\162\180\232\168\193\211\164\253\241\165\167","\146\209\196\135\218\181\178\192")   .. v556.name ,933.5 -(147 + 785) ,v7("\62\37\128\18\85\180\62","\199\77\80\227\113\48"));break;end end end end break;end end end);end v29.stats:AddSection("Métricas en Tiempo Real");v29.stats.Data={[v7("\25\43\95\223\62\11\87\192\47","\173\74\95\62")]=tick(),[v7("\245\13\93\36\223\52\168\212\28\82\49\223\15","\220\166\121\60\86\171\103")]=v10.leaderstats:WaitForChild(v7("\218\22\47\181\53\205\14\225","\122\137\98\93\208\91\170")).Value,[v7("\180\245\29\93\193\128\172\200\142\243\8\71\198","\170\231\129\124\47\181\210\201")]=v10.leaderstats:WaitForChild(v7("\185\190\56\57\24\62\131\168","\74\235\219\90\80\106")).Value};local v148=v29.stats:AddLabel(v7("\106\214\94\41\32\245\58\245\77\205\90\63\59\174\58\162","\146\44\163\59\91\90\148\26"));local v149=v29.stats:AddLabel(v7("\109\109\233\193\97\122\63\185\219\9\37","\41\21\77\216\225"));local v150=v29.stats:AddLabel("x 1 Día: 0");local v151=v29.stats:AddLabel(v7("\12\13\35\5\39\72\127\68\26\76\40\5\68","\37\116\45\18"));v29.stats:AddLabel("");local v152=v29.stats:AddLabel(v7("\253\250\84\171\185\219\247\69\226\172\206\241\87\166\164\220\165\22\242","\203\175\159\54\194"));local v153=v29.stats:AddLabel(v7("\99\142\72\123\114\64\208\122\148\89\107","\162\27\174\121\91\58\47"));local v154=v29.stats:AddLabel("x 1 Día: 0");local v155=v29.stats:AddLabel(v7("\203\133\78\181\12\220\222\196\17\244\101\153\131","\185\179\165\127\149\95"));v29.stats:AddLabel("");local v156=v29.stats:AddLabel("Tiempo en sesión: 0s");local function v157(v557) local v558=666 -(483 + 183) ;local v559;local v560;while true do if (v558==0) then if ((v557==nil) or (v557~=v557)) then return "0";end v559=math.abs(v557);v558=1;end if (v558==1) then v560=((v557<0) and "-") or "" ;if (v559>=(1000000000000000000 -1708144101)) then return v560   .. string.format(v7("\20\59\157\242\6\88","\119\49\21\175\148"),v559/(1000000000000000000 -(486 + 23)) ) ;elseif (v559>=999999986991104) then return v560   .. string.format(v7("\18\251\68\91\60\72","\149\55\213\118\61\77\41\234"),v559/(999999813637134 -  -173353970) ) ;elseif (v559>=(999999995904 -0)) then return v560   .. string.format(v7("\88\72\152\192\253","\123\125\102\170\166\137\89\207"),v559/999999995904 ) ;elseif (v559>=1000000000) then return v560   .. string.format(v7("\11\78\10\59\12","\201\46\96\56\93\110\227"),v559/(1000001584 -(160 + 1424)) ) ;elseif (v559>=(924821 + 75179)) then return v560   .. string.format(v7("\254\77\188\255\24","\161\219\99\142\153\117"),v559/(319461 + 680539) ) ;elseif (v559>=1000) then return v560   .. string.format(v7("\57\255\244\117\198","\173\28\209\198\19"),v559/(1770 -(479 + 291)) ) ;elseif (v559>=(1 -0)) then return v560   .. string.format(v7("\48\162\231\189","\219\21\140\215"),v559) ;else return v560   .. string.format(v7("\13\246\148\161","\56\40\216\166\199"),v559) ;end break;end end end local function v158(v561) if (v561<(1031 -(569 + 402))) then return string.format(v7("\99\176\6","\79\70\212\117"),math.floor(v561));elseif (v561<(4905 -(635 + 670))) then return string.format(v7("\226\18\236\134\188\9\180","\109\199\118\129\166\153"),math.floor(v561/60 ),math.floor(v561%(147 -87) ));elseif (v561<(344048 -257648)) then return string.format(v7("\116\180\127\182\116\180\122","\150\81\208\23"),math.floor(v561/3600 ),math.floor((v561%(4198 -(42 + 556)))/(1461 -(1246 + 155)) ));else return string.format(v7("\188\193\228\203\188\193\232","\235\153\165\128"),math.floor(v561/(87132 -(31 + 701)) ),math.floor((v561%(288642 -202242))/3600 ));end end task.spawn(function() while v17.isCurrent() do local v790=499 -(393 + 106) ;local v791;local v792;while true do if (v790==1) then if (v792>(1171.5 -(727 + 444))) then local v1286=v10.leaderstats.Strength.Value;local v1287=v10.leaderstats.Rebirths.Value;local v1288=v1286-v29.stats.Data.StartStrength ;local v1289=v1287-v29.stats.Data.StartRebirths ;local v1290=(v1288/v792) * 3600 ;local v1291=(v1289/v792) * (10446 -6846) ;v148:SetText(v7("\157\92\167\61\92\39\234\249\186\71\163\43\71\124\234","\158\219\41\194\79\38\70\202")   .. v157(v1288) );v149:SetText(v7("\91\101\126\66\198\217\154\66\127\111","\232\35\69\79\98\142\182")   .. v157(v1290) );v150:SetText("x 1 Día: "   .. v157(v1290 * 24 ) );v151:SetText(v7("\97\64\78\189\74\5\18\252\119\1\69\189","\157\25\96\127")   .. v157(v1290 * (9 + 15) * 7 ) );v152:SetText(v7("\149\134\247\12\66\37\175\144\181\2\81\63\166\135\250\22\10\113","\81\199\227\149\101\48")   .. v157(v1289) );v153:SetText(v7("\101\18\170\81\222\137\46\186\39\18","\219\29\50\155\113\150\230\92")   .. v157(v1291) );v154:SetText("x 1 Día: "   .. v157(v1291 * 24 ) );v155:SetText(v7("\201\96\148\59\204\77\64\208\46\196\33\191","\45\177\64\165\27\159\40")   .. v157(v1291 * (677 -(269 + 384)) * (1576 -(598 + 971)) ) );v156:SetText("Tiempo en sesión: "   .. v158(v792) );end task.wait(1);break;end if (v790==(0 + 0)) then v791=tick();v792=v791-v29.stats.Data.StartTime ;v790=3 -2 ;end end end end);v29.info:AddSection("Información");v29.info:AddLabel(v7("\53\25\1\175\124\5\33\7\163\102\24\86\19\234\64\24\20\0\184\124","\18\125\118\111\202"));v29.info:AddLabel(v7("\102\57\75\233\57\162\201\187\2\114\9\186\125\237\236\213\121\124\108\211","\155\48\92\57\154\80\205\167"));v29.info:AddLabel(v7("\148\204\191\186\184\169\92\249\229\180\177\253\165\5\246\141\184\166\249\165\68\180\156\251\240\184\156\77\176\217\190","\37\217\173\219\223\152\203"));v29.info:AddLabel("");v29.info:AddButton("📋 Copiar Discord",function() if setclipboard then setclipboard(v7("\1\17\11\38\92\242\185\70\1\22\37\76\167\228\13\75\24\49\0\170\192\45\17\8\29\105\241\164","\150\105\101\127\86\47\200"));v17.notify(v7("\234\251\224\182\200\210\202","\160\174\146\147\213\167"),v7("\108\237\20\79\76\66\79\244\19\69\8\78","\33\32\132\122\36\108"),9 -7 ,v7("\170\1\113\72\121\170\7","\28\217\116\18\43"));end end);v29.info:AddLabel("");v29.info:AddLabel(v7("\241\88\216\64\194\167\62\199\67\217\70\195\244","\92\178\55\182\52\176\206"));v29.info:AddLabel(v7("\87\117\114\12\27\59\112\24\75\117\57\53\18\58\127\16\3\124","\117\122\85\17"));v29.info:AddLabel(v7("\197\175\29\76\175\201\141\175\10\71\174\212\132\230\36\18\245\139\209","\189\232\143\74\36\198"));v29.info:AddLabel(v7("\177\234\34\65\217\15\242\234\42\97\192\4\249\184","\106\156\202\106\46\183"));v29.info:AddLabel("");v29.info:AddLabel(v7("\22\55\82\115\31\20\89\54\115\60\111\87\43","\74\93\121\27\83"));v29.main:AddSection(v7("\92\181\242\119\48\154\192\85","\30\29\219\134"));_G.HonenxAntiAFK=true;v29.main.AntiAFKSwitch=v29.main:AddSwitch(v7("\116\169\13\243\180\126\62\37","\110\53\199\121\154\148\63\120"),function(v562) local v563=0 -0 ;while true do if (v563==(1445 -(800 + 645))) then _G.HonenxAntiAFK=v562;if v562 then v17.notify(v7("\32\20\235\54\20\221\39\49","\156\97\122\159\95\57"),"✅ Activado",2,v7("\221\163\217\251\14\17\44","\95\174\214\186\152\107\98"));else v17.notify(v7("\168\0\101\130\94\231\175\37","\166\233\110\17\235\115"),"❌ Desactivado",1 + 1 ,v7("\113\0\194\206","\28\24\110\164\161\146\222"));end break;end end end);v29.main.AntiAFKSwitch:Set(true);task.spawn(function() while v17.isCurrent() do local v793=790 -(687 + 103) ;local v794;while true do if (v793==(1162 -(142 + 1020))) then v794=0 -0 ;while true do if (v794==(0 + 0)) then task.wait(573 -(306 + 207) );if _G.HonenxAntiAFK then pcall(function() local v1458=1404 -(112 + 1292) ;local v1459;while true do if (v1458==(0 + 0)) then v1459=952 -(587 + 365) ;while true do if (v1459==0) then v14.VirtualUser:CaptureController();v14.VirtualUser:ClickButton2(Vector2.new(1715 -(829 + 886) ,0 -0 ));v1459=1 + 0 ;end if (v1459==(3 -2)) then v14.VirtualUser:ClickButton1(Vector2.new(0 -0 ,0));break;end end break;end end end);end break;end end break;end end end end);v17.notify(v7("\115\204\88\32\85\219\97\45\82\215\83","\69\59\163\54"),"🎉 Hub completo cargado correctamente",4,v7("\163\189\201\73\54\222\165","\214\208\200\170\42\83\173"));print(v7("\226\9\125\174\112\215\57\69\168\124\205\36\79\224\70\218\51\123\176\97\153\34\115\178\114\216\37\125\224\116\213\97\35\240\37\156","\21\185\65\18\192"));getgenv().SpectateState=getgenv().SpectateState or {[v7("\205\87\75\30\165\203\69\88\9\136\250","\193\158\54\61\123")]=nil,[v7("\28\2\19\169\48\18\52\184\33\24\46\190","\217\85\113\64")]=false} ;v29.killing.SpectateData={[v7("\120\10\192\197\236\150\224\79\63\192\193\246\135\247","\133\43\111\172\160\143\226")]=nil,[v7("\248\166\92\212\195\223\166\84\225\204\202\186\85\195\245\216\166\66\248\196","\160\171\195\48\177")]=nil,[v7("\224\19\115\46\72\192\187\206\221\4","\167\179\99\22\77\60\161\207")]=false,[v7("\34\106\153\74\73\15\107\191\89\94\6\122\159\123\67\15\113\142\91\88\8\112\133","\44\97\31\235\56")]=nil,[v7("\221\1\251\165\253\62\244\165\232\11\234\150\244\29\232\165\230\0\219\171\255\0\253\167\229\7\247\170","\196\145\110\152")]=nil,[v7("\123\47\243\247\74\47\211\253\86\39\234\253\74\2\241\253\72","\146\56\78\158")]=nil};v29.killing.stopSpectating=function() local v564=0 + 0 ;local v565;while true do if (v564==(1 + 1)) then if (v17.playerData.Humanoid and v17.playerData.Camera) then v17.playerData.Camera.CameraSubject=v17.playerData.Humanoid;end break;end if (v564==(1 -0)) then v565=v14.Players.LocalPlayer;if v565.Character then local v1172=977 -(613 + 364) ;local v1173;while true do if (v1172==(0 + 0)) then v1173=v565.Character:FindFirstChildOfClass(v7("\5\206\66\231\84\34\210\75","\58\77\187\47\134"));if (v1173 and v17.playerData.Camera) then local v1460=0 + 0 ;local v1461;while true do if (v1460==(0 + 0)) then v1461=0;while true do if (v1461==(0 -0)) then v17.playerData.Camera.CameraSubject=v1173;v17.playerData.Camera.CameraType=Enum.CameraType.Custom;break;end end break;end end end break;end end end v564=2;end if (v564==0) then if v29.killing.SpectateData.CurrentTargetConnection then local v1174=0;while true do if (v1174==(0 -0)) then v29.killing.SpectateData.CurrentTargetConnection:Disconnect();v29.killing.SpectateData.CurrentTargetConnection=nil;break;end end end if v29.killing.SpectateData.CameraMonitorLoop then v29.killing.SpectateData.CameraMonitorLoop=false;end v564=2 -1 ;end end end;v29.killing.startCameraMonitor=function() if v29.killing.SpectateData.CameraMonitorLoop then v29.killing.SpectateData.CameraMonitorLoop=false;task.wait(0.3 + 0 );end v29.killing.SpectateData.CameraMonitorLoop=true;task.spawn(function() while v17.isCurrent() and v29.killing.SpectateData.CameraMonitorLoop  do task.wait(1939.2 -(1467 + 472) );if (v29.killing.SpectateData.Spectating and v29.killing.SpectateData.SelectedPlayer) then local v1083=0;local v1084;while true do if ((0 -0)==v1083) then v1084=v29.killing.SpectateData.SelectedPlayer.Character;if v1084 then local v1432=v1084:FindFirstChildOfClass(v7("\58\32\172\6\235\33\93\26","\126\114\85\193\103\133\78\52"));if (v1432 and v17.playerData.Camera) then if (v17.playerData.Camera.CameraSubject~=v1432) then v17.playerData.Camera.CameraSubject=v1432;end end end break;end end else break;end end end);end;v29.killing.updateSpectateTarget=function(v567) if  not v567 then if v29.killing.SpectateData.SelectedPlayerUserId then for v1176,v1177 in ipairs(v14.Players:GetPlayers()) do if (v1177.UserId==v29.killing.SpectateData.SelectedPlayerUserId) then v567=v1177;v29.killing.SpectateData.SelectedPlayer=v567;break;end end end if ( not v567 and getgenv().SpectateState.SavedUserId) then for v1178,v1179 in ipairs(v14.Players:GetPlayers()) do if (v1179.UserId==getgenv().SpectateState.SavedUserId) then v567=v1179;v29.killing.SpectateData.SelectedPlayer=v567;v29.killing.SpectateData.SelectedPlayerUserId=v567.UserId;break;end end end if  not v567 then local v1085=0;while true do if (v1085==0) then v29.killing.stopSpectating();return;end end end end v29.killing.SpectateData.SelectedPlayerUserId=v567.UserId;v29.killing.SpectateData.SelectedPlayer=v567;if v29.killing.SpectateData.CurrentTargetConnection then local v887=1547 -(1077 + 470) ;local v888;while true do if (v887==(0 + 0)) then v888=0 + 0 ;while true do if (v888==(0 -0)) then v29.killing.SpectateData.CurrentTargetConnection:Disconnect();v29.killing.SpectateData.CurrentTargetConnection=nil;break;end end break;end end end local function v571(v795) if ( not v29.killing.SpectateData.Spectating or (v29.killing.SpectateData.SelectedPlayerUserId~=v567.UserId)) then return;end local v796=v795:WaitForChild(v7("\236\206\63\121\202\212\59\124","\24\164\187\82"),3);if (v796 and v29.killing.SpectateData.Spectating and (v29.killing.SpectateData.SelectedPlayerUserId==v567.UserId)) then if v17.playerData.Camera then v17.playerData.Camera.CameraSubject=v796;end end end if v567.Character then v571(v567.Character);end v29.killing.SpectateData.CurrentTargetConnection=v17.connect(v567.CharacterAdded,function(v797) if (v29.killing.SpectateData.Spectating and (v29.killing.SpectateData.SelectedPlayerUserId==v567.UserId)) then v571(v797);end end);end;if v29.killing.SpectateData.LocalPlayerRespawnConnection then v29.killing.SpectateData.LocalPlayerRespawnConnection:Disconnect();end v29.killing.SpectateData.LocalPlayerRespawnConnection=v17.connect(v10.CharacterAdded,function(v573) local v574=429 -(12 + 417) ;local v575;while true do if (v574==0) then v575=v573:WaitForChild(v7("\217\207\81\171\255\254\211\88","\145\145\186\60\202"),7 -4 );if v575 then v17.playerData.Humanoid=v575;end v574=1 + 0 ;end if (v574==(1 -0)) then task.wait(0.5 -0 );if getgenv().SpectateState.IsSpectating then v29.killing.SpectateData.Spectating=true;v29.killing.updateSpectateTarget();v29.killing.startCameraMonitor();elseif (v17.playerData.Humanoid and v17.playerData.Camera) then v17.playerData.Camera.CameraSubject=v17.playerData.Humanoid;end break;end end end);v29.killing.KillAuraFull={[v7("\212\217\61\3\214\209\33\16","\100\134\176\83")]=nil,[v7("\225\200\76\186\144\26\223\206\80","\117\179\161\34\221\211")]=Color3.fromRGB(274 -129 ,23 + 54 ,98 + 157 ),[v7("\127\185\244\193\48\237\164\67\163\234\199\22\250\171\78\169","\197\45\208\154\166\100\159")]=0.6 + 0 ,[v7("\10\241\136\168\54\59\215\160\174\50\36\241","\83\73\148\230\220")]=nil,[v7("\21\205\249\250\234\135","\233\83\191\150\128\143")]=false,[v7("\208\131\193\119\31\246\146\198\125\3","\109\151\230\175\18")]=0 -0 ,[v7("\133\244\64\70\140\165\254","\224\192\154\33\36")]=false,[v7("\177\85\22\133\134","\226\227\52\120")]=1125 -(924 + 181) };_G.showDeathRing=false;_G.deathRingEnabled=false;_G.deathRingRange=817 -(263 + 534) ;local v164=workspace:FindFirstChild(v7("\45\228\226\161\68\167\224\177\12\255\233\143\67\179\219\152\16\249\237\150\67\177\208","\217\101\139\140\196\42\223\183"));if v164 then v164:Destroy();end local v165={{[v7("\52\14\162\31","\36\122\111\207\122")]=v7("\36\7\234\189\182\44\59\0\237\172\189","\84\108\104\132\216\216"),[v7("\239\20\202\87\242","\34\172\123\166\56\128\196")]=Color3.fromRGB(138 + 7 ,159 -82 ,735 -480 )},{[v7("\138\168\165\206","\116\196\201\200\171\42\19\181")]=v7("\68\131\255","\124\22\230\155\61\117\96"),[v7("\230\164\234\228\236","\149\165\203\134\139\158\141")]=Color3.fromRGB(255,37 + 23 ,767 -(562 + 145) )},{[v7("\29\173\77\35","\70\83\204\32")]=v7("\33\147\10\142\9\132","\224\110\225\107"),[v7("\215\121\209\62\34","\164\148\22\189\81\80\164")]=Color3.fromRGB(98 + 157 ,128,0 + 0 )},{[v7("\156\129\122\182","\23\210\224\23\211\71\43")]=v7("\144\131\28\187\90\60","\144\201\230\112\215\53\75\188"),[v7("\118\202\21\229\228","\197\53\165\121\138\150")]=Color3.fromRGB(44 + 211 ,230,0 -0 )},{[v7("\195\222\212\37","\64\141\191\185")]=v7("\47\227\189\223","\198\99\138\208\186\151\169"),[v7("\46\250\143\81\31","\62\109\149\227")]=Color3.fromRGB(128,255,0 + 0 )},{[v7("\221\137\132\209","\96\147\232\233\180")]=v7("\15\42\31\78\131","\89\72\88\122\43\237"),[v7("\15\180\169\57\9","\123\76\219\197\86")]=Color3.fromRGB(0,200,26 + 44 )},{[v7("\118\217\24\9","\95\56\184\117\108\142")]=v7("\211\219\39\226","\140\144\162\70"),[v7("\243\39\85\125\252","\142\176\72\57\18")]=Color3.fromRGB(0 + 0 ,2096 -(1459 + 417) ,255)},{[v7("\136\48\29\33","\68\198\81\112")]=v7("\149\3\165\17","\125\215\111\208\116\44"),[v7("\36\72\67\252\106","\60\103\39\47\147\24")]=Color3.fromRGB(0,1485 -(1057 + 328) ,720 -465 )},{[v7("\194\11\250\133","\46\140\106\151\224\182\147")]=v7("\219\56\111\82\231\40","\34\139\77\29"),[v7("\147\255\17\91\59","\73\208\144\125\52")]=Color3.fromRGB(677 -(5 + 527) ,70,195 + 60 )},{[v7("\4\237\135\206","\171\74\140\234\171\167\112\51")]=v7("\31\7\66\84","\205\79\110\44\63\145"),[v7("\132\80\51\199\166","\124\199\63\95\168\212\107\196")]=Color3.fromRGB(115 + 140 ,38 + 42 ,144 + 36 )},{[v7("\40\169\94\63","\147\102\200\51\90\196\151\233")]=v7("\12\248\230\217\187","\91\91\144\143\173\222\128"),[v7("\0\175\64\94\185","\46\67\192\44\49\203")]=Color3.fromRGB(255,43 + 212 ,37 + 218 )},{[v7("\42\215\35\167","\101\100\182\78\194\68\196")]=v7("\106\68\49\246\134","\181\40\40\80\149\237\43\24"),[v7("\54\189\41\61\168","\114\117\210\69\82\218\42")]=Color3.fromRGB(0,0,0 -0 )}};local v166=v29.killing:AddDropdown(v7("\118\223\86\116\236\103\217\84\124\190","\204\36\182\56\19"),function(v576) for v798,v799 in ipairs(v165) do if (v799.Name==v576) then v29.killing.KillAuraFull.RingColor=v799.Color;if v29.killing.KillAuraFull.RingPart then v29.killing.KillAuraFull.RingPart.Color=v799.Color;end break;end end end);for v577,v578 in ipairs(v165) do v166:Add(v578.Name);end v29.killing.destroyKillAuraRing=function() if v29.killing.KillAuraFull.RingPart then local v889=12 -(6 + 6) ;local v890;while true do if (v889==0) then v890=0 -0 ;while true do if (v890==(0 -0)) then v29.killing.KillAuraFull.RingPart:Destroy();v29.killing.KillAuraFull.RingPart=nil;break;end end break;end end end end;v29.killing.createKillAuraRing=function() v29.killing.destroyKillAuraRing();local v579=workspace:FindFirstChild(v7("\193\68\210\134\115\32\37\225\66\200\134\86\49\30\229\106\201\145\124\10\27\231\76","\114\137\43\188\227\29\88"));if v579 then v579:Destroy();end local v580=Instance.new(v7("\212\28\186\4","\112\132\125\200"));v580.Name=v7("\213\183\253\118\84\237\202\176\250\103\95\222\244\180\255\82\79\231\252\138\250\125\93","\149\157\216\147\19\58");v580.Shape=Enum.PartType.Cylinder;v580.Material=Enum.Material.Neon;v580.Color=v29.killing.KillAuraFull.RingColor;v580.Transparency=v29.killing.KillAuraFull.RingTransparency;v580.Anchored=true;v580.CanCollide=false;v580.CanTouch=false;v580.CanQuery=false;v580.CastShadow=false;v580.Size=Vector3.new(0.2 + 0 ,_G.deathRingRange * 2 ,_G.deathRingRange * 2 );if v29.killing.KillAuraFull.CenterCFrame then v580.CFrame=v29.killing.KillAuraFull.CenterCFrame * CFrame.Angles(1253 -(206 + 1047) ,0,math.rad(1202 -(470 + 642) )) ;end v580.Parent=workspace;v29.killing.KillAuraFull.RingPart=v580;end;v29.killing.updateKillAuraRing=function() if (v29.killing.KillAuraFull.RingPart and v29.killing.KillAuraFull.CenterCFrame) then v29.killing.KillAuraFull.RingPart.CFrame=v29.killing.KillAuraFull.CenterCFrame * CFrame.Angles(0 + 0 ,1067 -(552 + 515) ,math.rad(73 + 17 )) ;end end;v29.killing.ShowRingSwitch=v29.killing:AddSwitch(v7("\250\142\23\223\137\180\17\198\206","\168\169\230\120"),function(v598) local v599=0;while true do if (v599==1) then if v598 then v29.killing.createKillAuraRing();else v29.killing.destroyKillAuraRing();end break;end if (v599==(0 + 0)) then if (v598 and  not _G.deathRingEnabled) then local v1185=0;while true do local v1292=0 + 0 ;while true do if (v1292==(0 + 0)) then if ((1 + 0)==v1185) then return;end if (v1185==(0 + 0)) then _G.showDeathRing=false;v29.killing.ShowRingSwitch:Set(false,true);v1185=1052 -(701 + 350) ;end break;end end end end _G.showDeathRing=v598;v599=1 + 0 ;end end end);v29.killing:AddSwitch(v7("\200\130\131\16\240\136\196\37\245\131\131\87\180\166\141\27\240\205\165\2\238\140\205","\119\156\237\228"),function(v600) local v601=0 + 0 ;local v602;local v603;local v604;while true do if (v601==(0 + 0)) then _G.deathRingEnabled=v600;v29.killing.KillAuraFull.Enabled=v600;v601=1;end if (v601==(3 -0)) then if v604 then v29.killing.KillAuraFull.CenterCFrame=v604.CFrame;end task.spawn(function() while v17.isCurrent() and _G.deathRingEnabled and (v29.killing.KillAuraFull.Generation==v602)  do local v1188,v1188,v1189=v29.killing.getLocalCombatCharacter();if (v1189 and  not v29.killing.KillAuraFull.Frozen) then v29.killing.KillAuraFull.CenterCFrame=v1189.CFrame;end v29.killing.updateKillAuraRing();v14.RunService.RenderStepped:Wait();end end);v601=4;end if (1==v601) then v29.killing.KillAuraFull.Generation+=1 v602=v29.killing.KillAuraFull.Generation;v601=2;end if (v601==(6 -4)) then if  not v600 then if (v29.killing.ShowRingSwitch and _G.showDeathRing) then v29.killing.ShowRingSwitch:Set(false,true);end return;end v603,v603,v604=v29.killing.getLocalCombatCharacter();v601=3;end if (v601==4) then task.spawn(function() while v17.isCurrent() and _G.deathRingEnabled and (v29.killing.KillAuraFull.Generation==v602)  do if (v29.killing.KillAuraFull.Frozen or  not v29.killing.KillAuraFull.CenterCFrame) then local v1344=0;while true do if (v1344==(0 + 0)) then task.wait(0.05 -0 );continue;break;end end end local v1190=v29.killing.KillAuraFull.CenterCFrame;local v1191=false;for v1293,v1294 in ipairs(v14.Players:GetPlayers()) do if ( not _G.deathRingEnabled or (v29.killing.KillAuraFull.Generation~=v602)) then break;end local v1295=v1294.Character and v1294.Character:FindFirstChild(v7("\235\196\13\127\205\222\9\122\241\222\15\106\243\208\18\106","\30\163\177\96")) ;if ((v1294~=v10) and  not v29.killing.isWhitelisted(v1294) and v29.killing.isPlayerAlive(v1294) and  not v29.killing.isSpawnProtected(v1294) and v1295 and ((v1190.Position-v1295.Position).Magnitude<=_G.deathRingRange)) then local v1383=0 + 0 ;while true do if (v1383==(0 + 0)) then v1191=true;v29.killing.KillAuraFull.Frozen=true;v1383=1;end if ((11 -8)==v1383) then v29.killing.KillAuraFull.Frozen=false;break;end if (v1383==1) then v29.killing.KillAuraFull.CenterCFrame=v1190;v29.killing.updateKillAuraRing();v1383=1348 -(281 + 1065) ;end if (v1383==2) then v29.killing.attackPlayerWithLimit(v1294,18 -14 ,function() local v1511=v1294.Character and v1294.Character:FindFirstChild(v7("\50\53\88\136\51\36\221\30\18\90\134\41\27\213\8\52","\180\122\64\53\233\93\75")) ;return _G.deathRingEnabled and (v29.killing.KillAuraFull.Generation==v602) and  not v29.killing.isWhitelisted(v1294) and v1511 and ((v1190.Position-v1511.Position).Magnitude<=_G.deathRingRange) ;end,11.5 -8 );for v1512=1212 -(1114 + 97) ,5 -1  do local v1513=0;local v1512;local v1514;while true do if (v1513==(1913 -(279 + 1634))) then v1512,v1512,v1514=v29.killing.getLocalCombatCharacter();if v1514 then v1514.CFrame=v1190;v1514.AssemblyLinearVelocity=Vector3.zero;v1514.AssemblyAngularVelocity=Vector3.zero;end v1513=1281 -(1213 + 67) ;end if (v1513==(192 -(65 + 126))) then v29.killing.KillAuraFull.CenterCFrame=v1190;v29.killing.updateKillAuraRing();v1513=2;end if (v1513==2) then v14.RunService.Heartbeat:Wait();break;end end end v1383=3;end end end end if  not v1191 then task.wait(0.05 + 0 );end end v29.killing.KillAuraFull.Frozen=false;end);break;end end end);v29.killing:AddSlider(v7("\253\30\31\49\150\54\6\47\215\87\33\60\216\16\22","\93\182\119\115"),1,1225 -(189 + 896) ,20,function(v605) local v606=0 + 0 ;local v607;while true do if (v606==(1963 -(1872 + 91))) then v607=0;while true do if (v607==1) then if v29.killing.KillAuraFull.RingPart then v29.killing.KillAuraFull.RingPart.Size=Vector3.new(0.2,v605 * (4 -2) ,v605 * 2 );end break;end if (v607==0) then _G.deathRingRange=v605;v29.killing.KillAuraFull.Range=v605;v607=1 + 0 ;end end break;end end end);v17.notify(v7("\170\16\221\137\185\230\181\23\218\152\178","\158\226\127\179\236\215"),"Mensaje 2 cargado: Spectate + Kill Aura completos ✅",10 -7 ,v7("\226\213\202\213\244\211\218","\182\145\160\169"));v29.farming.MachinesFolder=workspace:WaitForChild(v7("\52\33\51\30\174\1\60\51\22\25\171\11\60\50","\111\89\64\80\118\199"));v29.farming.SquatsByName={};v29.farming.SquatMachineNames={};v29.farming.LiftMachineNames={};v29.farming.MachineExerciseData={[v7("\140\166\27\71\171","\38\223\215\110")]={[v7("\109\222\0\192\168\74\222\8\232\170\93\211\5\203\174","\203\62\187\108\165")]=nil,[v7("\216\119\92\55\103\251\253\248\119\64\55\127\251","\176\153\20\40\94\17\158")]=nil,[v7("\154\38\181\93\204\166\52","\165\200\83\219\51")]=false,[v7("\224\239\122\126\195\180\168\237\200\228","\132\167\138\20\27\177\213\220")]=0 + 0 ,[v7("\192\208\230\66\40\247\199\194\88","\92\146\181\131\44")]=0 + 0 ,[v7("\120\251\64\146\142\65\5\201","\189\43\158\33\230\222\32\119")]=nil,[v7("\125\200\66\88\139\91\211","\232\62\160\45\49")]={}},[v7("\88\218\243\184","\193\20\179\149\204")]={[v7("\228\4\141\199\212\21\132\198\250\0\130\202\222\15\132","\162\183\97\225")]=nil,[v7("\8\198\240\254\10\231\140\40\198\236\254\18\231","\193\73\165\132\151\124\130")]=nil,[v7("\255\215\167\85\191\184\202","\214\173\162\201\59\214")]=false,[v7("\4\124\164\68\197\33\55\112\165\79","\64\67\25\202\33\183")]=0 -0 ,[v7("\219\235\116\178\58\215\81\200\250","\35\137\142\17\220\78\178")]=76 -(22 + 54) ,[v7("\30\75\36\21\29\79\55\21","\97\77\46\69")]=nil,[v7("\252\215\15\172\220\218\19","\197\191\191\96")]={}}};for v608,v609 in ipairs(v29.farming.MachinesFolder:GetChildren()) do local v610=string.lower(v609.Name);if (string.find(v610,v7("\217\56\248\79\76","\45\170\73\141\46\56\136"),1,true) and (v610~=v7("\146\30\216\228\187\199\21\128\12\198","\103\225\111\173\133\207\231"))) then local v893=0 -0 ;while true do if (v893==(0 -0)) then v29.farming.SquatsByName[v609.Name]=v29.farming.SquatsByName[v609.Name] or {} ;table.insert(v29.farming.SquatsByName[v609.Name],v609);break;end end elseif (string.find(v610,v7("\64\141\243\65","\53\44\228\149"),1 + 0 ,true) and (v610~=v7("\201\222\58\1\199\45\203\207","\68\173\187\91\101\171"))) then v29.farming.MachineExerciseData.Lift.Choices[v609.Name]=v609;table.insert(v29.farming.LiftMachineNames,v609.Name);end end for v611,v612 in pairs(v29.farming.SquatsByName) do v29.farming.MachineExerciseData.Squat.Choices[v611]=v612[3 -2 ];table.insert(v29.farming.SquatMachineNames,v611);end table.sort(v29.farming.SquatMachineNames);table.sort(v29.farming.LiftMachineNames);v29.farming.getMachineInteractPart=function(v615) for v800,v801 in ipairs(v615:GetDescendants()) do if (v801:IsA(v7("\222\14\1\194\121\131\111\205","\185\156\111\114\167\41\226\29")) and (string.lower(v801.Name)==v7("\2\11\2\37\166\226\8\17\5\37\181\247","\131\107\101\118\64\212"))) then return v801;end end end;v29.farming.enterExerciseMachine=function(v616) local v617=0;local v618;local v619;local v620;while true do if (v617==2) then v619.AssemblyLinearVelocity=Vector3.zero;v619.AssemblyAngularVelocity=Vector3.zero;task.wait(1534.4 -(553 + 981) );v617=3 + 0 ;end if (v617==(1 + 0)) then v620=v29.farming.getMachineInteractPart(v616);if ( not v619 or  not v620) then return false;end v619.CFrame=v620.CFrame * CFrame.new(0 + 0 ,8 -5 ,0) ;v617=2 -0 ;end if (v617==0) then if ( not v616 or  not v616.Parent) then return false;end v618=v10.Character or v10.CharacterAdded:Wait() ;v619=v618:WaitForChild(v7("\233\195\33\42\73\207\192\197\228\35\36\83\240\200\211\194","\169\161\182\76\75\39\160"),5);v617=1898 -(1320 + 577) ;end if (v617==(853 -(667 + 182))) then task.wait(1288.4 -(1115 + 173) );return true;end if (v617==(4 -1)) then local v995=0 + 0 ;while true do if (v995==(1756 -(1375 + 380))) then v14.VirtualInputManager:SendKeyEvent(false,Enum.KeyCode.E,false,game);v617=2 + 2 ;break;end if (v995==(26 -(12 + 14))) then v14.VirtualInputManager:SendKeyEvent(true,Enum.KeyCode.E,false,game);task.wait(0.1 -0 );v995=2 -1 ;end end end end end;v29.farming.startMachineExercise=function(v621) v621.Generation+=(2 -1) local v622=v621.Generation;local v623=v10.Character;task.spawn(function() while v17.isCurrent() and v621.Running and (v621.Generation==v622)  do local v894=0 -0 ;local v895;local v896;local v897;local v898;while true do if ((2 -0)==v894) then v897=v896:GetState();v898=v621.ActiveMachine and ((v897==Enum.HumanoidStateType.Jumping) or (v897==Enum.HumanoidStateType.Freefall) or (v621.SeatPart and (v896.SeatPart~=v621.SeatPart))) ;v894=4 -1 ;end if (v894==(735 -(354 + 377))) then task.wait(0.1 -0 );break;end if ((0 -0)==v894) then v895=v10.Character;v896=v895 and v895:FindFirstChildOfClass(v7("\241\71\186\138\21\45\161\221","\200\185\50\215\235\123\66")) ;v894=1983 -(263 + 1719) ;end if (v894==1) then if (v895~=v623) then local v1345=0 + 0 ;local v1346;while true do if (v1345==(359 -(335 + 24))) then v1346=951 -(882 + 69) ;while true do if (v1346==0) then v623=v895;v621.ActiveMachine=nil;v1346=1;end if (v1346==1) then v621.SeatPart=nil;v621.ReenterAt=os.clock() + (1689.5 -(657 + 1029)) ;break;end end break;end end end if ( not v895 or  not v896 or (v896.Health<=(1200 -(685 + 515)))) then local v1347=1638 -(745 + 893) ;while true do if (v1347==2) then continue;break;end if (v1347==1) then v621.ReenterAt=math.max(v621.ReenterAt,os.clock() + 3.5 );task.wait(0.1 + 0 );v1347=774 -(274 + 498) ;end if (v1347==(0 + 0)) then v621.ActiveMachine=nil;v621.SeatPart=nil;v1347=1;end end end v894=1 + 1 ;end if ((1609 -(1035 + 571))==v894) then if v898 then local v1348=0;while true do if (v1348==0) then v621.ActiveMachine=nil;v621.SeatPart=nil;v1348=1 + 0 ;end if (v1348==(1 + 0)) then v621.ReenterAt=os.clock() + (10.5 -7) ;break;end end end if (v621.SelectedMachine and  not v621.ActiveMachine and (os.clock()>=v621.ReenterAt)) then if v29.farming.enterExerciseMachine(v621.SelectedMachine) then v621.ActiveMachine=v621.SelectedMachine;v621.SeatPart=v896.SeatPart;end end v894=11 -7 ;end end end end);end;v29.farming.setMachineExerciseState=function(v624,v625,v626) v624.Running=v626;v624.Generation+=1 v624.ActiveMachine=nil;v624.SeatPart=nil;v624.ReenterAt=0;if  not v626 then return;end if (v29.farming.ToolExerciseSwitch and v29.farming.ExerciseData.AutoFarm) then v29.farming.ToolExerciseSwitch:Set(false,true);end if v625.Running then if ((v624==v29.farming.MachineExerciseData.Squat) and v29.farming.LiftExerciseSwitch) then v29.farming.LiftExerciseSwitch:Set(false,true);elseif ((v624==v29.farming.MachineExerciseData.Lift) and v29.farming.SquatExerciseSwitch) then v29.farming.SquatExerciseSwitch:Set(false,true);end end v29.farming.startMachineExercise(v624);task.spawn(function() while v17.isCurrent() and v624.Running and (v624.Generation==generation)  do local v899=0 + 0 ;while true do if (v899==0) then if v624.ActiveMachine then pcall(function() v10.muscleEvent:FireServer(v7("\224\132\201","\122\146\225\185\130\234\22"));end);end task.wait(0.1 + 0 );break;end end end end,v624.Generation);end;local v179=v29.farming:AddDropdown(v7("\138\231\204\202\236\175\249\209\209\218\238\175","\219\217\130\160\175\143"),function(v631) local v632=0;while true do if (v632==0) then v29.farming.MachineExerciseData.Squat.SelectedMachine=v29.farming.MachineExerciseData.Squat.Choices[v631];v29.farming.MachineExerciseData.Squat.ActiveMachine=nil;v632=2 -1 ;end if ((225 -(109 + 115))==v632) then v29.farming.MachineExerciseData.Squat.SeatPart=nil;v29.farming.MachineExerciseData.Squat.ReenterAt=0;break;end end end);for v633,v634 in ipairs(v29.farming.SquatMachineNames) do v179:Add(v634);end v29.farming.SquatExerciseSwitch=v29.farming:AddSwitch(v7("\31\169\86\50\126\143\83\40\63\168","\93\94\220\34"),function(v635) v29.farming.setMachineExerciseState(v29.farming.MachineExerciseData.Squat,v29.farming.MachineExerciseData.Lift,v635);end);local v181=v29.farming:AddDropdown(v7("\60\205\205\143\217\227\189\35\193\199\158","\157\111\168\161\234\186\151"),function(v636) local v637=0;while true do if ((1399 -(1047 + 352))==v637) then v29.farming.MachineExerciseData.Lift.SelectedMachine=v29.farming.MachineExerciseData.Lift.Choices[v636];v29.farming.MachineExerciseData.Lift.ActiveMachine=nil;v637=1766 -(852 + 913) ;end if (v637==(1 + 0)) then v29.farming.MachineExerciseData.Lift.SeatPart=nil;v29.farming.MachineExerciseData.Lift.ReenterAt=1345 -(384 + 961) ;break;end end end);for v638,v639 in ipairs(v29.farming.LiftMachineNames) do v181:Add(v639);end v29.farming.LiftExerciseSwitch=v29.farming:AddSwitch(v7("\90\85\97\62\130\149\187\131\111","\229\27\32\21\81\162\217\210"),function(v640) v29.farming.setMachineExerciseState(v29.farming.MachineExerciseData.Lift,v29.farming.MachineExerciseData.Squat,v640);end);v29.farming.leaveExerciseMachine=function() local v641=v10.Character;local v642=v641 and v641:FindFirstChildOfClass(v7("\4\217\246\59\68\35\197\255","\42\76\172\155\90")) ;local v643=v641 and v641:FindFirstChild(v7("\218\152\140\40\14\253\132\133\27\15\253\153\177\40\18\230","\96\146\237\225\73")) ;if ( not v642 or (v642.Health<=(0 -0))) then return;end pcall(function() v14.VirtualInputManager:SendKeyEvent(true,Enum.KeyCode.Space,false,game);v642.Sit=false;v642.Jump=true;v642:ChangeState(Enum.HumanoidStateType.Jumping);if v643 then v643.AssemblyLinearVelocity=Vector3.new(0,math.max(v643.AssemblyLinearVelocity.Y,50),0 -0 );end end);pcall(function() v14.VirtualInputManager:SendKeyEvent(false,Enum.KeyCode.Space,false,game);end);task.wait(0.2 -0 );end;v29.farming:AddSection(v7("\202\123\28\252\76\104\226\219\106\26\237\71\125\182\224\62\46\233\91\119\171\230\121","\194\136\30\104\136\41\26"));v29.farming.Configs={{[v7("\210\215\14\77","\79\188\182\99\40\116\208\201")]=v7("\77\214\57\73\54\47\61\136\106\104\45\59\104\208\62\83\42\62\113\131\24\78\32\52","\95\29\163\74\33\67"),[v7("\104\61\79\59","\100\28\82\32\87\31\234")]=v7("\1\71\243\121\238\198\251","\94\81\50\128\17\155\182\136"),[v7("\153\51\231\50","\231\235\92\132\89\130\212\124")]=v7("\215\186\240\42\194\81\236\189\245\51\145\119\241\183\255","\37\158\212\148\95\177")},{[v7("\122\29\169\130","\109\20\124\196\231")]=v7("\144\168\103\173\36\48\224\246\52\143\36\46\167\177\113\229\3\47\163\182","\64\192\221\20\197\81"),[v7("\187\249\237\174","\199\207\150\130\194")]=v7("\133\95\104\224\86\165\89","\35\213\42\27\136"),[v7("\178\136\56\180","\146\192\231\91\223\184")]=v7("\123\255\245\32\212\186\19\78\112\228\248\46\221\177\71\60\85\242\253","\110\58\145\150\73\177\212\103")},{[v7("\250\53\199\247","\137\148\84\170\146\43\171")]=v7("\49\202\108\245\98\17\159\52\189\90\20\204\124\241\114\65\244\118\243\112\65\237\112\254\124","\23\97\191\31\157"),[v7("\146\141\8\9","\82\230\226\103\101\189")]=v7("\187\63\160\185\1\155\57","\116\235\74\211\209"),[v7("\58\51\221\46","\69\72\92\190")]=v7("\27\46\247\215\167\173\86\156\63\53\227\148\134\167\3\185\34\58\237\218","\215\86\91\132\180\203\200\118")},{[v7("\61\239\139\214","\179\83\142\230")]=v7("\234\58\238\61\44\15\183\148\154\3\248\50\60\17\243\204\154\29\242\54\50","\191\186\79\157\85\89\127\151"),[v7("\226\117\171\194","\37\150\26\196\174\228")]=v7("\249\229\161\93\34\153\218","\233\169\144\210\53\87"),[v7("\48\73\238\215","\188\66\38\141")]=v7("\211\95\14\58\51\109\14\136\205\85\10\52\125\70\27","\168\129\48\109\81\19\34\104")}};v29.farming.ActiveConfigs={};for v644,v645 in ipairs(v29.farming.Configs) do v29.farming.ActiveConfigs[v645.name]=false;v645.Switch=v29.farming:AddSwitch(v645.name,function(v804) v29.farming.ActiveConfigs[v645.name]=v804;if v29.farming.ActiveConfigs[v645.name] then local v1007=0 + 0 ;local v1008;while true do if (v1007==1) then task.spawn(function() while v17.isCurrent() and v29.farming.ActiveConfigs[v645.name]  do local v1385=0;local v1386;local v1387;while true do if (v1385==0) then pcall(function() v10.muscleEvent:FireServer(v7("\91\26\237","\22\41\127\157\184\152\235"));end);v1386=v10.Character;v1385=357 -(321 + 35) ;end if (v1385==1) then if (v1386 and v29.farming.MachinesFolder:FindFirstChild(v645.rock)) then local v1536=v29.farming.MachinesFolder:FindFirstChild(v645.rock);local v1537=v1536 and v1536:FindFirstChild(v7("\37\200\226\193","\170\119\167\129")) ;local v1538=v1386:FindFirstChild(v7("\246\245\186\103\171\95\212\244","\62\186\144\220\19\227"));if (v1537 and v1538 and firetouchinterest) then local v1557=394 -(239 + 155) ;while true do if (v1557==(0 + 0)) then firetouchinterest(v1537,v1538,0);firetouchinterest(v1537,v1538,1);break;end end end end if (v1386 and v10.Backpack:FindFirstChild(v7("\145\233\226\213\169","\182\193\156\140"))) then local v1539=0;local v1540;while true do if (v1539==0) then v1540=v1386:FindFirstChildOfClass(v7("\233\89\27\179\232\48\200\72","\95\161\44\118\210\134"));if v1540 then v1540:EquipTool(v10.Backpack.Punch);pcall(function() local v1592=0;while true do if (v1592==0) then v10.muscleEvent:FireServer(v7("\246\85\29\14\114","\206\134\32\115\109\26\182\133"),v7("\36\241\200\27\73\117\55\246\203","\61\86\152\175\115\61"));v10.muscleEvent:FireServer(v7("\185\20\210\51\217","\167\201\97\188\80\177\225\67"),v7("\66\13\130\187\212\128\64\12","\225\46\104\228\207\156"));break;end end end);end break;end end end v1385=44 -(41 + 1) ;end if (v1385==2) then v14.RunService.RenderStepped:Wait();v1387=v10.Character;v1385=203 -(80 + 120) ;end if (v1385==(3 + 0)) then if (v1387 and v10.Backpack:FindFirstChild(v645.tool)) then local v1541=0 -0 ;local v1542;while true do if (v1541==(0 + 0)) then v1542=v1387:FindFirstChildOfClass(v7("\130\213\190\79\57\92\187\187","\223\202\160\211\46\87\51\210"));if v1542 then v1542:EquipTool(v10.Backpack[v645.tool]);end break;end end end break;end end end end);break;end if ((0 + 0)==v1007) then v1008=v10.Character;if v1008 then local v1388=0 -0 ;local v1389;local v1390;while true do if (v1388==(0 -0)) then v1389=v1008:FindFirstChildOfClass(v7("\95\1\1\49\209\42\178\253","\153\23\116\108\80\191\69\219"));v1390=v10.Backpack:FindFirstChild(v645.tool);v1388=1;end if (v1388==(4 -3)) then if (v1390 and v1389 and  not v1008:FindFirstChild(v645.tool)) then v1389:EquipTool(v1390);end break;end end end v1007=1;end end else local v1009=0 -0 ;local v1010;while true do if (v1009==(0 + 0)) then v1010=v10.Character;if (v1010 and v1010:FindFirstChild(v645.tool)) then v1010[v645.tool].Parent=v10.Backpack;end break;end end end end);end v29.boss=v29.boss or {} ;v29.boss.Data=v29.boss.Data or {} ;v29.boss.Data.TrainingSnapshot=nil;v29.boss.pauseTraining=function() if v29.boss.Data.TrainingSnapshot then return;end v29.boss.Data.TrainingSnapshot={[v7("\228\236\24\125\31\194\225","\109\182\137\122\20")]=v29.farming.RebirthData.IsAutoRebirthing,[v7("\97\160\8\255","\28\50\201\114\154\128\183\138")]=v29.farming.SizeData.Active,[v7("\129\143\23\245","\146\202\230\121")]=v29.farming.KingData.TeleportActive,[v7("\218\224\225\18","\94\142\143\142\126\167\210\192")]=v29.farming.ExerciseData.AutoFarm,[v7("\51\212\8\224\211","\167\96\165\125\129")]=v29.farming.MachineExerciseData.Squat.Running,[v7("\43\223\16\82","\232\103\182\118\38\34\70\43")]=v29.farming.MachineExerciseData.Lift.Running,[v7("\20\66\59\236\2\116\37","\17\85\55\79\131\80")]=v29.farming.AutoRepRunning,[v7("\250\138\186\167","\95\168\229\217\204")]=_G.RockFarmRunning==true ,[v7("\169\52\136\143\131\60\149","\233\234\91\230")]={}};for v806,v807 in ipairs(v29.farming.Configs) do local v808=0;while true do if (v808==(0 + 0)) then v29.boss.Data.TrainingSnapshot.Configs[v807.name]=v29.farming.ActiveConfigs[v807.name]==true ;if (v29.farming.ActiveConfigs[v807.name] and v807.Switch) then v807.Switch:Set(false,true);end break;end end end if (v29.boss.Data.TrainingSnapshot.Rebirth and v29.farming.RebirthData.Switch) then v29.farming.RebirthData.Switch:Set(false,true);end if (v29.boss.Data.TrainingSnapshot.Size and v29.farming.SizeSwitch) then v29.farming.SizeSwitch:Set(false,true);end if (v29.boss.Data.TrainingSnapshot.King and v29.farming.KingSwitch) then v29.farming.KingSwitch:Set(false,true);end if (v29.boss.Data.TrainingSnapshot.Tool and v29.farming.ToolExerciseSwitch) then v29.farming.ToolExerciseSwitch:Set(false,true);end if (v29.boss.Data.TrainingSnapshot.Squat and v29.farming.SquatExerciseSwitch) then v29.farming.SquatExerciseSwitch:Set(false,true);end if (v29.boss.Data.TrainingSnapshot.Lift and v29.farming.LiftExerciseSwitch) then v29.farming.LiftExerciseSwitch:Set(false,true);end if (v29.boss.Data.TrainingSnapshot.Squat or v29.boss.Data.TrainingSnapshot.Lift) then v29.farming.leaveExerciseMachine();end if (v29.boss.Data.TrainingSnapshot.AutoRep and v29.farming.AutoRepSwitch) then v29.farming.AutoRepSwitch:Set(false,true);end if (v29.boss.Data.TrainingSnapshot.Rock and v29.farming.RockSwitch) then v29.farming.RockSwitch:Set(false,true);end end;v29.boss.resumeTraining=function() local v649=0 + 0 ;local v650;while true do if (v649==(1226 -(165 + 1061))) then v650=v29.boss.Data.TrainingSnapshot;if  not v650 then return;end v29.boss.Data.TrainingSnapshot=nil;if (v650.Rebirth and v29.farming.RebirthData.Switch) then v29.farming.RebirthData.Switch:Set(false,true);end v649=1 + 0 ;end if (v649==1) then if (v650.Size and v29.farming.SizeSwitch) then v29.farming.SizeSwitch:Set(false,true);end if (v650.King and v29.farming.KingSwitch) then v29.farming.KingSwitch:Set(false,true);end if (v650.Tool and v29.farming.ToolExerciseSwitch) then v29.farming.ToolExerciseSwitch:Set(false,true);end if (v650.Squat and v29.farming.SquatExerciseSwitch) then v29.farming.SquatExerciseSwitch:Set(false,true);end v649=2;end if ((2 + 0)==v649) then if (v650.Lift and v29.farming.LiftExerciseSwitch) then v29.farming.LiftExerciseSwitch:Set(false,true);end if (v650.AutoRep and v29.farming.AutoRepSwitch) then v29.farming.AutoRepSwitch:Set(false,true);end if (v650.Rock and v29.farming.RockSwitch) then v29.farming.RockSwitch:Set(false,true);end for v1089,v1090 in ipairs(v29.farming.Configs) do if (v650.Configs[v1090.name] and v1090.Switch) then v1090.Switch:Set(false,true);end end break;end end end;v17.notify(v7("\121\78\140\118\169\73\118\138\122\179\84","\199\49\33\226\19"),"Mensaje 3 cargado: Farming completo ✅",1646 -(596 + 1047) ,v7("\65\78\64\28\194\65\72","\167\50\59\35\127"));v29.fast.desequipAll=function() local v651=0;local v652;while true do if (v651==(1 + 0)) then if v10.Character then for v1299,v1300 in pairs(v10.Character:GetChildren()) do if (v1300:IsA(v7("\184\242\231\125\126\140\208\244\120\101\142","\16\235\134\149\20")) or v1300:IsA(v7("\245\73\68\163\15\147\58\219\71\91\163","\108\186\43\46\198\108\231"))) then pcall(function() v14.ReplicatedStorage.rEvents.equipPetEvent:FireServer(v7("\39\177\240\16\105\59\175\197\4\104","\28\82\223\149\97"),v1300);end);end end end task.wait(0.3);break;end if ((0 + 0)==v651) then local v1012=0 -0 ;while true do if (0==v1012) then v652=v10.petsFolder;for v1349,v1350 in pairs(v652:GetChildren()) do if v1350:IsA(v7("\110\28\94\232\173\90","\200\40\115\50\140")) then for v1468,v1469 in pairs(v1350:GetChildren()) do pcall(function() v14.ReplicatedStorage.rEvents.equipPetEvent:FireServer(v7("\230\35\114\14\230\36\103\47\246\57","\127\147\77\23"),v1469);end);end end end v1012=1;end if (v1012==1) then v651=1;break;end end end end end;v29.fast.equipPets=function(v653) local v654=0;local v655;local v656;local v657;while true do if (v654==(1 + 0)) then v29.fast.desequipAll();task.wait(737.2 -(185 + 552) );v654=2 + 0 ;end if (v654==(601 -(507 + 94))) then v655=v10.petsFolder;v656=v655.Unique;v654=4 -3 ;end if (v654==2) then v657=0;for v1091,v1092 in ipairs(v653) do for v1194,v1195 in pairs(v656:GetChildren()) do if (v1195.Name==v1092) then local v1351=0 + 0 ;while true do if (v1351==(1 -0)) then task.wait(1737.05 -(569 + 1168) );break;end if (v1351==(0 -0)) then pcall(function() v14.ReplicatedStorage.rEvents.equipPetEvent:FireServer(v7("\168\36\88\87\189\5\72\74","\62\205\85\45"),v1195);end);v657=v657 + 1 ;v1351=1 -0 ;end end end end end v654=354 -(118 + 233) ;end if (v654==3) then task.wait(344.3 -(279 + 65) );return v657;end end end;v29.fast:AddSection(v7("\64\0\181\187\3\201\61\124\24\160\167\17\201\57\116\15\170","\105\21\108\193\201\98\233"));v29.fast.UltraData={[v7("\114\144\21\240\202\48\221","\186\32\229\123\158\163\94")]=false,[v7("\51\44\99\193\28\183\22\7\55\120\220\28","\87\100\67\17\170\121\197")]=false,[v7("\220\142\184\137\69\161\230\152","\213\142\235\218\224\55")]=v10.leaderstats:WaitForChild(v7("\58\167\251\204\26\182\241\214","\165\104\194\153")),[v7("\180\36\203\174\247\90\153\143","\237\231\80\185\203\153\61")]=v10.leaderstats:WaitForChild(v7("\150\36\146\119\75\162\36\136","\37\197\80\224\18")),[v7("\45\67\94\65\177\13\112\73\68\189\11\86\68\85","\212\121\34\44\38")]=0 -0 ,[v7("\142\181\62\4\114\159\247\92\179\168\62\13\109","\62\218\218\74\101\30\205\146")]=0 -0 ,[v7("\112\172\105\193\216\42\87","\79\34\201\25\145\189\94\36")]={v7("\111\33\239\13\65\20\111\58\239\24\76\91\82\40","\52\32\76\138\106\32")},[v7("\138\255\50\207\104\172\242\0\195\110\171","\26\216\154\80\166")]={v7("\248\192\249\66\115\37\217\196\173\107\100\40\222\200","\76\172\169\141\35\29")}};local v193=v29.fast:AddLabel(v7("\239\205\249\23\201\202\162\67\245\215\249\0\200\208\238\6","\99\188\185\152"));local v194=v29.fast:AddLabel(v7("\224\17\180\7\177\198\28\165\84\227\130\84\170\78\132\211\29\184\11\167\136\84\230","\195\178\116\214\110"));v29.fast.UltraWorker=function() local v658=v29.fast.UltraData.Rebirths.Value;while v17.isCurrent() and v29.fast.UltraData.Running  do if ((v29.fast.UltraData.TargetRebirths>(1818 -(1414 + 404))) and (v29.fast.UltraData.Rebirths.Value>=v29.fast.UltraData.TargetRebirths)) then v193:SetText(v7("\54\227\135\97\212\245\95\183\178\116\211\225\0\227\198\116\205\229\4\249\156\116\197\233","\134\101\151\230\21\161"));v29.fast.UltraData.Running=false;break;end v193:SetText(v7("\154\158\59\64\54\33\186\233\175\43\65\42\34\225\167\142\53\20\17\55\240\231\196\116","\128\201\234\90\52\67\82"));local v809=756 -(347 + 409) ;pcall(function() v809=v29.fast.equipPets(v29.fast.UltraData.RepPets);end);v193:SetText(v7("\151\89\63\96\223\183\23\126","\170\196\45\94\20")   .. v809   .. v7("\62\118\0\36\129\37\33\107\77\21\53\197\47\35","\80\30\36\101\84\161\64") );local v810=v29.fast.UltraData.Rebirths.Value;local v811=2955 + 2045 + (v810 * 2550) ;local v812=((v10.MembershipType==Enum.MembershipType.Premium) and (6 + 0)) or (7 + 5) ;v193:SetText(v7("\149\69\24\86\205\40\252\17\63\67\202\54\163\80\23\70\215\117\232\31","\91\198\49\121\34\184"));while v17.isCurrent() and v29.fast.UltraData.Running and (v29.fast.UltraData.Strength.Value<v811)  do pcall(function() for v1093=1 + 0 ,v812 do v10.muscleEvent:FireServer(v7("\38\195\103","\233\84\166\23\217"));end end);task.wait(0.05);v194:SetText(v7("\74\125\250\239\36\53\112\107\162\166","\65\24\24\152\134\86")   .. v17.formatWithCommas(v29.fast.UltraData.Rebirths.Value)   .. v7("\252\43\168\110\189\62\230\76\184\109\168","\41\220\87\136")   .. v17.formatWithCommas(v29.fast.UltraData.Rebirths.Value-v658 ) );end if (v17.isCurrent() and v29.fast.UltraData.Running and (v29.fast.UltraData.Strength.Value>=v811)) then local v1016=1578 -(420 + 1158) ;local v1017;local v1018;local v1019;while true do if (v1016==(4 -2)) then v1018=v29.fast.UltraData.Rebirths.Value;v1019=611 -(406 + 205) ;repeat local v1352=0;while true do if (v1352==1) then v1019=v1019 + (3 -2) ;break;end if (0==v1352) then pcall(function() v14.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer(v7("\13\242\124\44\240\25\23\197\123\52\247\8\12\227","\109\127\151\30\69\130"));end);task.wait(0.05);v1352=1;end end until  not v29.fast.UltraData.Running or (v29.fast.UltraData.Rebirths.Value>v1018) or (v1019>=50)  v1016=3;end if (v1016==(1 + 0)) then v193:SetText(v7("\138\10\82\77\221\67\189\81","\113\217\126\51\57\168\48\135")   .. v1017   .. v7("\95\61\47\76\90\126\54\203\14\0\63\88\73\123\119\221","\174\127\117\86\40\40\31\22") );task.wait(0.5 + 0 );v193:SetText(v7("\239\47\77\207\201\40\22\155\244\58\79\210\217\53\72\212\156\9\73\217\213\41\88\211\146\117\2","\187\188\91\44"));v1016=4 -2 ;end if (v1016==(64 -(28 + 33))) then if (v29.fast.UltraData.Rebirths.Value>v1018) then v29.fast.UltraData.TotalRebirths=v29.fast.UltraData.TotalRebirths + (v29.fast.UltraData.Rebirths.Value-v1018) ;end task.wait(0.5);break;end if (v1016==0) then v193:SetText(v7("\22\34\226\228\219\184\127\118\198\225\219\162\53\55\237\244\193\235\13\47\231\226\207\229\107\120","\203\69\86\131\144\174"));v1017=0 + 0 ;pcall(function() v1017=v29.fast.equipPets(v29.fast.UltraData.RebirthPets);end);v1016=1008 -(858 + 149) ;end end end task.wait(0.1);end v29.fast.UltraData.WorkerActive=false;end;v29.fast:AddTextBox(v7("\231\137\99\10\196\144\255\86\230\132\101\31\192\196\242\4\215\135\126\10\209\216\161\86\154\213\55\69\133\217\188\16\155\223","\118\178\229\23\120\165\176\210"),function(v660) local v661=0;local v662;while true do if (v661==(0 + 0)) then v662=tonumber(v660);if (v662 and (v662>=(0 -0))) then v29.fast.UltraData.TargetRebirths=math.floor(v662);end break;end end end,{[v7("\6\208\73\8\30","\221\101\188\44\105\108\207\65")]=false});v29.fast.UltraToggle=v29.fast:AddSwitch(v7("\112\49\4\182\146\100\53\21\171\192\66\56\87\151\222\66\34\22\226\230\95\36\22\172\193","\178\54\80\119\194"),function(v663) local v664=1507 -(829 + 678) ;while true do if (v664==(0 + 0)) then v29.fast.UltraData.Running=v663;if v663 then local v1197=0;while true do if (v1197==(1216 -(143 + 1073))) then v193:SetText(v7("\7\27\64\214\250\234\227\130\29\1\72\193\230\248\183\198\59\79\116\206\251\235\184\140\122\65","\162\84\111\33\162\143\153\217"));if  not v29.fast.UltraData.WorkerActive then local v1470=1815 -(898 + 917) ;while true do if (v1470==(0 -0)) then v29.fast.UltraData.WorkerActive=true;task.spawn(v29.fast.UltraWorker);break;end end end break;end end else v193:SetText(v7("\20\207\28\158\50\200\71\202\14\213\28\137\51\210\11\143","\234\71\187\125"));end break;end end end);v29.fast:AddLabel(v7("\62\49\84\92\255\81\19\71\94\236\29\51\67\95\190\79\124\119\90\236\28\124\15\27\202\24\40\80\85\247\4\49\17\115\231\21\46\80\27\160\81\14\84\89\247\3\40\89","\158\113\92\49\59"));v29.fast:AddSection(v7("\207\120\64\127\237\70\245\17\233\98\77\127\236\2\201\71\220\113\66\123","\103\140\16\33\16\158\102\186"));v29.fast.ChaosData={[v7("\245\152\179\123\10\50\192","\92\167\237\221\21\99")]=false,[v7("\200\47\63\45\250\50\12\37\235\41\59\35","\70\159\64\77")]=false,[v7("\229\74\80\246\8\195\71\65","\122\183\47\50\159")]=v10.leaderstats:WaitForChild(v7("\240\52\165\70\146\214\57\180","\224\162\81\199\47")),[v7("\219\81\33\56\141\239\81\59","\227\136\37\83\93")]=v10.leaderstats:WaitForChild(v7("\106\185\26\113\87\170\28\124","\20\57\205\104")),[v7("\28\170\10\190\31\78\1\45\169\17\171\14\82\32","\83\72\203\120\217\122\58")]=0 + 0 ,[v7("\136\230\175\162\163\143\186\190\224\169\183\167\174","\223\220\137\219\195\207\221")]=1469 -(882 + 587) ,[v7("\33\77\79\210\41\7\91","\76\115\40\63\130")]={v7("\180\13\36\171\162\145\180\27\32\184\164\208\142","\177\231\122\77\205\214")},[v7("\118\22\67\73\187\72\76\35\68\84\186","\60\36\115\33\32\201")]={v7("\131\100\94\68\77\82\125\142\161\115\69\74\67\76\57","\193\215\22\55\38\44\62\93")}};local v198=v29.fast:AddLabel(v7("\28\6\15\219\192\232\117\82\39\193\212\248\59\27\24\202","\155\79\114\110\175\181"));local v199=v29.fast:AddLabel(v7("\106\81\219\237\163\152\221\75\14\153\180\241\144\149\127\85\208\234\180\136\143\24\4","\181\56\52\185\132\209\236"));v29.fast.ChaosWorker=function() local v665=v29.fast.ChaosData.Rebirths.Value;while v17.isCurrent() and v29.fast.ChaosData.Running  do if ((v29.fast.ChaosData.TargetRebirths>(264 -(140 + 124))) and (v29.fast.ChaosData.Rebirths.Value>=v29.fast.ChaosData.TargetRebirths)) then v198:SetText(v7("\1\88\211\188\80\186\160\114\120\211\186\66\172\238\114\77\222\171\68\167\224\51\72\221","\154\82\44\178\200\37\201"));v29.fast.ChaosData.Running=false;break;end v198:SetText(v7("\70\255\3\25\171\91\47\53\206\19\24\183\88\116\123\239\13\77\140\77\101\59\165\76","\21\21\139\98\109\222\40"));local v813=0 + 0 ;pcall(function() v813=v29.fast.equipPets(v29.fast.ChaosData.RepPets);end);v198:SetText(v7("\55\248\173\152\47\23\182\236","\90\100\140\204\236")   .. v813   .. v7("\236\38\59\220\247\29\189\1\55\220\182\28\163\7","\120\204\116\94\172\215") );local v814=v29.fast.ChaosData.Rebirths.Value;local v815=5000 + (v814 * 2550) ;local v816=((v10.MembershipType==Enum.MembershipType.Premium) and (1541 -(1105 + 430))) or (32 -20) ;v198:SetText(v7("\48\169\185\28\254\177\42\63\37\188\170\5\238\163\126\123\12\243\246\70","\31\99\221\216\104\139\194\16"));while v17.isCurrent() and v29.fast.ChaosData.Running and (v29.fast.ChaosData.Strength.Value<v815)  do pcall(function() for v1094=3 -2 ,v816 do v10.muscleEvent:FireServer(v7("\39\165\250","\131\85\192\138\108\105"));end end);task.wait(0.05);v199:SetText(v7("\4\161\125\10\36\176\119\16\108\228","\99\86\196\31")   .. v17.formatWithCommas(v29.fast.ChaosData.Rebirths.Value)   .. v7("\16\40\15\218\94\174\1\85\48\21\189","\111\48\84\47\157\63\199")   .. v17.formatWithCommas(v29.fast.ChaosData.Rebirths.Value-v665 ) );end if (v17.isCurrent() and v29.fast.ChaosData.Running and (v29.fast.ChaosData.Strength.Value>=v815)) then local v1022=0;local v1023;local v1024;local v1025;while true do if (v1022==(4 -2)) then v1024=v29.fast.ChaosData.Rebirths.Value;v1025=0 -0 ;repeat local v1353=0 + 0 ;while true do if (v1353==(0 + 0)) then pcall(function() v14.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer(v7("\72\124\191\167\194\2\223\226\95\104\168\171\195\2","\176\58\25\221\206\176\118\183"));end);task.wait(0.05 + 0 );v1353=1;end if (v1353==(1 + 0)) then v1025=v1025 + (1992 -(1047 + 944)) ;break;end end until  not v29.fast.ChaosData.Running or (v29.fast.ChaosData.Rebirths.Value>v1024) or (v1025>=50)  v1022=1305 -(206 + 1096) ;end if (v1022==1) then v198:SetText(v7("\207\12\117\23\33\22\244\191","\159\156\120\20\99\84\101\206")   .. v1023   .. v7("\60\37\158\118\202\64\123\103\121\0\153\118\216\64\115\40\111","\71\28\113\236\31\168\33\23") );task.wait(0.5);v198:SetText(v7("\126\234\34\236\204\202\97\231\101\255\32\241\220\215\63\168\13\204\38\250\208\203\47\175\3\176\109","\199\45\158\67\152\185\185\91"));v1022=2;end if (v1022==3) then if (v29.fast.ChaosData.Rebirths.Value>v1024) then v29.fast.ChaosData.TotalRebirths=v29.fast.ChaosData.TotalRebirths + (v29.fast.ChaosData.Rebirths.Value-v1024) ;end task.wait(0.5);break;end if ((194 -(30 + 164))==v1022) then v198:SetText(v7("\41\18\129\179\59\9\92\192\130\63\15\15\144\166\32\30\9\192\147\60\19\4\129\171\96\84\72","\78\122\102\224\199"));v1023=0;pcall(function() v1023=v29.fast.equipPets(v29.fast.ChaosData.RebirthPets);end);v1022=1;end end end task.wait(0.1);end v29.fast.ChaosData.WorkerActive=false;end;v29.fast:AddTextBox(v7("\17\25\216\9\253\248\127\81\237\7\252\191\55\5\153\20\235\186\59\3\205\14\253\248\122\65\153\91\174\177\60\23\144\92","\216\82\113\185\102\142"),function(v667) local v668=tonumber(v667);if (v668 and (v668>=(0 -0))) then v29.fast.ChaosData.TargetRebirths=math.floor(v668);end end,{[v7("\65\87\37\217\111","\29\34\59\64\184")]=false});v29.fast.ChaosToggle=v29.fast:AddSwitch(v7("\52\31\91\222\117\111\23\28\65\216\33\85\82\61\64\203\58\78\82\49\94\207\39\81\29\12\76\217","\61\114\126\40\170\85"),function(v669) local v670=0 + 0 ;while true do if (v670==(1474 -(1383 + 91))) then v29.fast.ChaosData.Running=v669;if v669 then local v1198=0 -0 ;local v1199;while true do if (v1198==0) then v1199=0 -0 ;while true do if (v1199==0) then v198:SetText(v7("\255\60\118\45\214\96\150\104\94\55\202\112\197\41\121\61\204\51\239\32\118\54\208\61\130\102","\19\172\72\23\89\163"));if  not v29.fast.ChaosData.WorkerActive then local v1544=1660 -(1174 + 486) ;while true do if (v1544==(427 -(172 + 255))) then v29.fast.ChaosData.WorkerActive=true;task.spawn(v29.fast.ChaosWorker);break;end end end break;end end break;end end else v198:SetText(v7("\4\72\206\241\32\65\255\119\117\193\228\54\70\172\33\89","\197\87\60\175\133\85\50"));end break;end end end);v29.fast:AddLabel(v7("\39\105\221\213\0\62\231\210\25\107\198\210\29\62\138\147\50\127\198\222\84\32\148\231\6\119\214\210\24\62\251\197\17\108\216\220\6\122\148\141\84\76\209\209\29\108\192\219","\179\116\30\180"));v17.notify(v7("\195\201\227\132\229\222\218\137\226\210\232","\225\139\166\141"),"Mensaje 4 cargado: Fast V2 completo ✅",9 -6 ,v7("\94\158\247\35\72\152\231","\64\45\235\148"));v29.boss.Data=v29.boss.Data or {} ;v29.boss.Data.AttackSequence=nil;v29.boss.Data.EvadeUntil=0 -0 ;v29.boss.Data.EvadeDistance=1758 -(594 + 934) ;v29.boss.Data.PunchBehindDistance=613 -(211 + 357) ;v29.boss.Data.StompHealthThreshold=0.35 + 0 ;v29.boss.Data.DodgeStomps=false;v29.boss.Data.BossOrder=v29.boss.Data.BossOrder or {} ;v29.boss.Data.BossByDisplayName=v29.boss.Data.BossByDisplayName or {} ;v29.boss.Data.SelectedBosses=v29.boss.Data.SelectedBosses or {} ;v29.boss:AddSection(v7("\66\80\40\229\89\193\54\98\42\231\95\220\112\88\57\162\126\218\101\66\63\241","\181\22\49\90\130\60"));local v211=v29.boss:AddLabel(v7("\59\208\170\14\10\197\189\13\79\243\183\26\28\212\171\83\79\245\189\29\10\210\172\0\1\214\246\71\65","\105\111\177\216"));v29.boss.BossDropdown=v29.boss:AddDropdown(v7("\128\27\218\21\21\199\244\9\216\23\19\218\178\19\203\82\50\220\167\9\205\1","\179\212\122\168\114\112"),function(v671) local v672=v29.boss.Data.BossByDisplayName[v671];if v672 then for v1027 in pairs(v29.boss.Data.SelectedBosses) do v29.boss.Data.SelectedBosses[v1027]=false;end v29.boss.Data.SelectedBosses[v672]=true;v211:SetText(v7("\77\123\150\202\124\110\129\201\57\88\139\222\106\127\151\151\57","\173\25\26\228")   .. v671 );end end);v29.boss.addBossChoice=function(v673,v674) v673=tostring(v673 or "" );v674=tostring(v674 or v673 );if ((v673=="") or v29.boss.Data.BossByDisplayName[v674]) then return;end v29.boss.Data.BossByDisplayName[v674]=v673;if (v29.boss.Data.SelectedBosses[v673]==nil) then v29.boss.Data.SelectedBosses[v673]=false;end table.insert(v29.boss.Data.BossOrder,v673);v29.boss.BossDropdown:Add(v674);end;local v214,v215=pcall(function() return require(v14.ReplicatedStorage:WaitForChild(v7("\5\126\200\168\29\18","\120\118\22\169\218")):WaitForChild(v7("\196\47\184\224\206\39","\134\167\64\214")):WaitForChild(v7("\38\134\237\155\236\222\1\135\234\171\198\198\2\128\249","\168\100\233\158\232\169")));end);if (v214 and v215 and v215.RARITIES) then local v817={v7("\113\91\20\241\125\90","\156\18\52\121"),v7("\81\17\201\207","\191\35\112\187\170\228\213\101"),v7("\189\191\117\86","\31\216\207\28\53\94\124"),v7("\45\34\172\10\85\37\38\185\22","\59\65\71\203\111"),v7("\26\185\104\124\130\15","\84\119\192\28\20\235\108"),v7("\158\255\45\248\24\51\190","\33\236\158\68\150\122\92\201")};for v903,v904 in ipairs(v215.RARITIES) do local v905=0;local v906;local v907;local v908;while true do if ((0 + 0)==v905) then v906=string.lower(tostring(v904.Name or v904.DisplayName or v904.BossModel or "" ));v907=string.lower(tostring(v904.BossModel or "" ));v905=778 -(24 + 753) ;end if (v905==2) then if (v908 and v904.BossModel) then v29.boss.addBossChoice(v904.BossModel,v904.DisplayName or v904.Name or v904.BossModel );end break;end if (v905==(1 + 0)) then v908=false;for v1304,v1305 in ipairs(v817) do if (string.find(v906,v1305,1 -0 ,true) or string.find(v907,v1305,1,true)) then v908=true;break;end end v905=2;end end end v211:SetText("Targeted Bosses: None (elegí uno)");else v211:SetText(v7("\198\217\235\20\76\245\121\194\215\234\10\76\226\99\160\239\248\16\93\248\55\231\152\255\22\91\177\61\229\204\252\26\93\248\54\238","\89\128\184\153\121\41\145"));end v29.boss:AddSection(v7("\223\37\161\130\43\134\12\123\219\58\182\141\38\199\34\52\255\38\161\146","\91\140\85\196\225\66\231\96"));local v216=v29.boss:AddLabel(v7("\4\183\165\189\79\115\186\184\162\88\54\171\237\241\106\63\180","\43\83\216\215\209"));v29.boss.Data.SpecialBosses={[v7("\108\181\185\6\110\121\162\177\27\43\89","\78\43\199\208\107")]=true,[v7("\84\154\1\16\176\63\203\212\96\157\20\27","\182\18\232\96\126\219\90\165")]=true,[v7("\13\75\42\184\54\87\41\232\9\87\51\169\51","\200\93\62\71")]=true,[v7("\117\78\79\200\193\177\28\73\90\14\249\203\190\1\85\94\91\201","\110\38\45\46\186\164\210")]=true};v29.boss.Data.SpecialBossOrder={v7("\95\172\161\27\126\74\187\169\6\59\106","\94\24\222\200\118"),v7("\59\210\39\23\22\197\40\27\15\213\50\28","\121\125\160\70"),v7("\195\255\54\162\248\227\53\242\199\227\47\179\253","\210\147\138\91"),v7("\6\254\201\89\53\16\39\242\223\11\19\28\57\242\219\88\37\0","\115\85\157\168\43\80")};v29.boss.Data.SpecialBossByDisplayName={};local v220=v29.boss:AddDropdown(v7("\200\85\149\91\136\137\68\198\236\73\199\67\141\219\65\204\235\26\207\68\137\197\67\202\235\26\136\89\137\128","\169\159\58\231\55\236\169\38"),function(v676) local v677=v29.boss.Data.SpecialBossByDisplayName[v676];if v677 then local v909=0;while true do if (v909==0) then for v1306,v1307 in ipairs(v29.boss.Data.SpecialBossOrder) do v29.boss.Data.SpecialBosses[v1307]=false;end v29.boss.Data.SpecialBosses[v677]=true;v909=1133 -(898 + 234) ;end if (v909==1) then v216:SetText(v7("\38\206\173\28\192\84\126\30\210\172\80\208\21\110\22\196\171\74\132","\28\113\161\223\112\164\116")   .. v677 );break;end end end end);for v678,v679 in ipairs(v29.boss.Data.SpecialBossOrder) do local v680=535 -(333 + 202) ;while true do if (v680==0) then v29.boss.Data.SpecialBossByDisplayName[v679]=v679;v29.boss.Data.SpecialBosses[v679]=false;v680=1;end if (v680==(1 + 0)) then v220:Add(v679);break;end end end v29.boss.evadeAttack=function(v681,v682,v683,v684) local v685=v681:GetAttribute(v7("\228\87\84\106\122\210\76\70\122\80\245\93\86\108\94\200\91\66","\59\166\56\39\25"));local v686=v681:GetAttribute(v7("\144\215\213\219\98\166\204\199\203\72\153\209\200\204","\35\210\184\166\168"));local v687=v681:GetAttribute(v7("\123\86\110\81\5\99\77\88\126\73\7\81\75\88\112\71","\23\57\57\29\34\68"));local v688=v681:GetAttribute(v7("\114\62\12\63\113\37\11\45\83\58\54\33\64\48\28\56\100\56\18\41","\76\48\81\127"));if ((typeof(v685)==v7("\0\176\92\181\15\102","\48\110\197\49\215\106\20\189")) and (v685~=v29.boss.Data.AttackSequence)) then local v910=0;while true do if (v910==(0 + 0)) then v29.boss.Data.AttackSequence=v685;if ((typeof(v686)==v7("\14\6\90\165\206\44","\108\125\114\40\204\160\75\38")) and (typeof(v687)==v7("\22\86\237\12\56\117","\109\85\16\159")) and (typeof(v688)==v7("\41\230\160\89\30\74","\208\71\147\205\59\123\56"))) then v29.boss.Data.EvadeUntil=v688 + (0.6 -0) ;end break;end end end if ((typeof(v687)~=v7("\116\6\150\185\90\37","\216\55\64\228")) or (workspace:GetServerTimeNow()>v29.boss.Data.EvadeUntil)) then return;end v686=string.lower(tostring(v686 or "" ));if string.find(v686,v7("\175\157\48\193\177","\139\223\232\94\162\217\149"),1,true) then local v911=1279 -(1018 + 261) ;local v912;local v913;local v914;while true do if (v911==2) then local v1202=0 -0 ;while true do if (v1202==(132 -(93 + 38))) then v911=3;break;end if (v1202==0) then v914=v912-(v913.Unit * v29.boss.Data.PunchBehindDistance) ;v683.CFrame=CFrame.lookAt(v914,v912);v1202=1;end end end if (v911==(0 + 0)) then local v1203=0 + 0 ;while true do if (0==v1203) then v912=v29.boss.getBossHeadPosition(v681,v682);v913=Vector3.new(v687.LookVector.X,0 + 0 ,v687.LookVector.Z);v1203=1 + 0 ;end if (v1203==(2 -1)) then v911=1;break;end end end if (v911==(11 -8)) then v683.AssemblyLinearVelocity=Vector3.zero;v683.AssemblyAngularVelocity=Vector3.zero;v911=11 -7 ;end if (v911==(4 -3)) then if (v913.Magnitude<(1 -0)) then v913=Vector3.new(v682.CFrame.LookVector.X,0 + 0 ,v682.CFrame.LookVector.Z);end if (v913.Magnitude<(1 -0)) then v913=Vector3.new(0,0,1 + 0 );end v911=422 -(14 + 406) ;end if (v911==4) then v103:SetText(v7("\230\151\34\229\174\70\144\149\167\44\245\188\92\196\210\195\19\228\181\86\194","\170\181\227\67\145\219\53"));return v7("\105\144\16\177\81","\210\57\229\126");end end end if  not string.find(v686,v7("\171\39\229\171\34","\227\216\83\138\198\82\165"),1 -0 ,true) then return;end if ((v684.Health/math.max(v684.MaxHealth,1))<=v29.boss.Data.StompHealthThreshold) then v29.boss.Data.DodgeStomps=true;end if  not v29.boss.Data.DodgeStomps then return;end local v689=Vector3.new(v683.Position.X-v687.Position.X ,0 -0 ,v683.Position.Z-v687.Position.Z );if (v689.Magnitude<1) then v689=Vector3.new( -v687.LookVector.X,1630 -(20 + 1610) , -v687.LookVector.Z);end if (v689.Magnitude<(1 + 0)) then v689=Vector3.new(1,0,0 -0 );end v689=v689.Unit;local v691=v687.Position + (v689 * v29.boss.Data.EvadeDistance) + Vector3.new(0,53 -35 ,517 -(243 + 274) ) ;v683.CFrame=CFrame.lookAt(v691,v687.Position);v683.AssemblyLinearVelocity=Vector3.zero;v683.AssemblyAngularVelocity=Vector3.zero;v103:SetText(v7("\24\161\183\108\231\56\239\246\92\253\47\178\191\118\245\107\134\162\119\255\59","\146\75\213\214\24"));return v7("\121\106\206\73\106","\53\42\30\161\36\26\37");end;v29.boss.getAliveCharacter=function(v696,v697) local v698=os.clock();repeat local v818=0;local v819;local v820;local v821;while true do if (v818==2) then v103:SetText(v7("\68\209\163\189\226\174\119\182\64\196\171\189\254\179\42\182\113\202\176\233\197\184\62\230\118\210\172","\150\23\165\194\201\151\221\77"));task.wait(1622.1 -(1437 + 185) );break;end if (v818==(2 -1)) then local v1095=0 + 0 ;while true do if (v1095==1) then v818=7 -5 ;break;end if (v1095==(0 + 0)) then v821=v819 and v819:FindFirstChildOfClass(v7("\94\96\129\40\27\124\127\113","\19\22\21\236\73\117")) ;if (v820 and v821 and (v821.Health>(0 + 0))) then local v1437=816 -(326 + 490) ;while true do if (v1437==(0 + 0)) then v17.playerData.Character=v819;v17.playerData.Humanoid=v821;v1437=204 -(181 + 22) ;end if (v1437==1) then return v819,v820,v821;end end end v1095=76 -(35 + 40) ;end end end if (v818==(0 -0)) then v819=v10.Character;v820=v819 and v819:FindFirstChild(v7("\213\236\250\225\243\246\254\228\207\246\248\244\205\248\229\244","\128\157\153\151")) ;v818=1;end end until  not v29.boss.Data.Running or (v29.boss.Data.Generation~=v696) or (v697 and ((os.clock() -v698)>=v697))  end;v29.boss.findChest=function() local v699=0 -0 ;local v700;local v701;local v702;while true do if (v699==0) then local v1031=0 + 0 ;while true do if (v1031==(879 -(297 + 581))) then v699=1;break;end if (v1031==(0 + 0)) then v700=nil;for v1355,v1356 in ipairs(v14.CollectionService:GetTagged(v7("\92\52\251\9\91\45\237\20\106\24\224\31\109\47","\122\30\91\136"))) do if v1356:IsDescendantOf(workspace) then v700=v1356;break;end end v1031=1 -0 ;end end end if (v699==(3 -2)) then if  not v700 then v700=workspace:FindFirstChild(v7("\157\171\246\163\174\183\161\246\164","\237\223\196\133\208"),true);end if  not v700 then for v1309,v1310 in ipairs(workspace:GetDescendants()) do if (v1310:IsA(v7("\236\26\204\166\87\247\213\28\218\142\76\245\209\24\215","\154\188\104\163\222\62")) and (v1310.Name==v7("\55\226\62\232\51\71\199\38\249\29\233\31\66\210\33","\162\85\141\77\155\112\47"))) then v700=v1310.Parent;break;end end end v699=2;end if (v699==(2 + 1)) then v702=(v701 and v701.Parent) or (v700:IsA(v7("\136\113\114\234\34","\42\197\30\22\143\78")) and (v700.PrimaryPart or v700:FindFirstChildWhichIsA(v7("\81\68\76\58\67\68\77\43","\95\19\37\63"),true))) or v700 ;if (v702 and v702:IsA(v7("\83\45\180\249\65\6\99\56","\103\17\76\199\156\17"))) then return v700,v701,v702;end break;end if (v699==2) then if  not v700 then return;end v701=v700:FindFirstChild(v7("\16\38\181\93\49\33\163\93\6\25\180\65\31\57\178","\46\114\73\198"),true);v699=12 -9 ;end end end;v29.boss.collectChest=function(v703) v103:SetText(v7("\128\62\132\252\73\3\227\186\132\43\140\252\85\30\190\186\181\37\151\168\127\24\188\233\167","\154\211\74\229\136\60\112\217"));local v704=os.clock();local v705,v706,v707;repeat v705,v706,v707=v29.boss.findChest();if (v705 and (v705:GetAttribute(v7("\141\19\249\222\38\79\170\15\254\232\8\66\189\27\227\195\2","\39\207\124\138\173\101"))~=true)) then break;end task.wait(0.1 -0 );until  not v29.boss.Data.Running or (v29.boss.Data.Generation~=v703) or ((os.clock() -v704)>=(1749 -(1505 + 232)))  if ( not v705 or  not v707) then return;end v103:SetText(v7("\253\21\66\212\183\221\91\3\227\173\194\13\70\195\182\199\15\68\128\129\198\4\80\212","\194\174\97\35\160"));v704=os.clock();repeat local v822,v823=v29.boss.getAliveCharacter(v703,1320 -(415 + 903) );if (v822 and v823 and v705.Parent and v707.Parent) then local v1032=0;while true do if (v1032==1) then task.wait(0.15 -0 );if (v706 and v706.Parent and fireproximityprompt) then pcall(function() fireproximityprompt(v706);end);else pcall(function() local v1438=0;local v1439;while true do if (v1438==0) then v1439=0;while true do if (v1439==(1 -0)) then v14.VirtualInputManager:SendKeyEvent(false,Enum.KeyCode.E,false,game);break;end if (v1439==(717 -(155 + 562))) then v14.VirtualInputManager:SendKeyEvent(true,Enum.KeyCode.E,false,game);task.wait(0.1);v1439=1 + 0 ;end end break;end end end);end break;end if (v1032==(117 -(71 + 46))) then v103:SetText(v7("\204\52\60\22\234\51\103\66\220\47\49\14\250\35\41\11\241\39\125\33\247\37\46\22","\98\159\64\93"));pcall(function() local v1357=0;while true do if (v1357==(0 -0)) then v823.CFrame=CFrame.lookAt(v707.Position + Vector3.new(685 -(436 + 249) ,1624 -(56 + 1565) ,4) ,v707.Position);v823.AssemblyLinearVelocity=Vector3.zero;break;end end end);v1032=1 + 0 ;end end end task.wait(0.25);until  not v29.boss.Data.Running or (v29.boss.Data.Generation~=v703) or (v10:GetAttribute(v7("\44\190\62\12\50\14\94\55\26\129\40\17\21\15\85\35","\68\110\209\77\127\113\102\59"))==false) or  not v705.Parent or ((os.clock() -v704)>=12)  end;v29.boss.shouldFarmBoss=function(v708,v709) local v710=984 -(80 + 904) ;local v711;while true do local v824=0 + 0 ;while true do if (v824==0) then if ((801 -(595 + 205))==v710) then if (v709==v7("\134\229\171\67\12\212\171\171\234","\206\206\132\199\47\99\163")) then return v711 and (v29.boss.Data.SpecialBosses[v708.Name]==true) ;end if v711 then return false;end v710=4 -2 ;end if (v710==(4 -2)) then return v29.boss.Data.SelectedBosses[v708.Name]==true ;end v824=1 + 0 ;end if (v824==1) then if ((0 + 0)==v710) then if  not v708 then return false;end v711=v29.boss.Data.SpecialBosses and (v29.boss.Data.SpecialBosses[v708.Name]~=nil) ;v710=1;end break;end end end end;v29.boss.findActiveBoss=function(v712) v712=v712 or v7("\219\195\222\124","\49\150\162\183\18") ;local function v713(v825,v826) if ( not v825 or  not v825:IsA(v7("\100\37\191\36\22","\120\41\74\219\65\122\128"))) then return false;end if ( not v826 or  not v826:IsA(v7("\120\7\79\31\213\166\199\78","\181\58\102\60\122\133\199"))) then return false;end if  not v825:IsDescendantOf(workspace) then return false;end local v827=v825:FindFirstChild(v7("\64\246\221\13\105","\26\51\130\188\121")) or v825:FindFirstChild(v7("\219\150\45\13\90","\57\136\226\76\121\41\126\151")) ;local v828=v827 and (v827:FindFirstChild(v7("\10\210\8\95\48\235","\29\66\183\105\51\68\131")) or v827:FindFirstChild(v7("\77\32\72\194\81\45","\174\37\69\41"))) ;local v829=v827 and (v827:FindFirstChild(v7("\172\183\86\38\21\128\186\90\6","\112\225\214\46\110")) or v827:FindFirstChild(v7("\19\37\59\115\225\188\224\10\44","\140\126\68\67\59\132\221"))) ;local v830=v825:FindFirstChildOfClass(v7("\170\100\10\74\67\16\143\134","\230\226\17\103\43\45\127"));local v831=v828 and tonumber(v828.Value) ;if ((v831==nil) and v830) then v831=v830.Health;end if (v831==nil) then v831=tonumber(v825:GetAttribute(v7("\248\73\197\71\147\216","\231\176\44\164\43")));end if ((v831~=nil) and (v831<=0)) then return false;end return true,v827,v828,v829;end if (v712==v7("\137\199\40\165\161\155\164\195\42","\236\193\166\68\201\206")) then local v916=0 -0 ;while true do if (v916==(0 + 0)) then local v1207=665 -(400 + 265) ;while true do if (v1207==0) then for v1440,v1441 in ipairs(v29.boss.Data.SpecialBossOrder) do if (v29.boss.Data.SpecialBosses[v1441]==true) then for v1517,v1518 in ipairs(workspace:GetDescendants()) do if (v1518:IsA(v7("\41\52\204\116\8","\17\100\91\168")) and (v1518.Name==v1441)) then local v1548=v1518:FindFirstChild(v7("\120\169\159\255\151\34\118\91\161\137\196\186\55\121\85\190","\27\58\198\236\140\211\67"),true);local v1549,v1550,v1551,v1552=v713(v1518,v1548);if v1549 then return v1518,v1548,v1551,v1552;end end end end end return nil;end end end end end for v832,v833 in ipairs(v14.CollectionService:GetTagged(v7("\3\194\223\89\172\253\36\195\216\104\134\248\50","\139\65\173\172\42\233"))) do if (v833:IsA(v7("\170\89\117\221\200","\40\231\54\17\184\164\23\128")) and v833:IsDescendantOf(workspace) and v29.boss.shouldFarmBoss(v833,v712)) then local v1034=0;local v1035;local v1036;local v1037;local v1038;local v1039;while true do if (v1034==1) then if v1036 then return v833,v1035,v1038,v1039;end break;end if (v1034==(0 -0)) then local v1311=0 + 0 ;while true do if (v1311==(0 -0)) then v1035=v833:FindFirstChild(v7("\166\198\108\235\161\235\137\200\120\253\173\227\144\203\112\224","\138\228\169\31\152\229"),true);v1036,v1037,v1038,v1039=v713(v833,v1035);v1311=1 + 0 ;end if (v1311==1) then v1034=1672 -(962 + 709) ;break;end end end end end end local v714=workspace:FindFirstChild(v7("\233\26\71\59\244\208","\163\172\108\34\85\128"));local v715=v714 and (v714:FindFirstChild(v7("\5\30\228\148\254\82\141\90\51","\52\71\113\151\231\187\36\232")) or v714:FindFirstChild(v7("\84\130\107\190\87\159\125\163\119","\205\22\237\24"))) ;if v715 then for v1040,v1041 in ipairs(v715:GetDescendants()) do if (v1041:IsA(v7("\147\119\119\205\53","\89\222\24\19\168")) and v29.boss.shouldFarmBoss(v1041,v712)) then local v1208=v1041:FindFirstChild(v7("\215\86\64\164\53\244\84\82\176\20\221\80\71\181\30\237","\113\149\57\51\215"),true);local v1209,v1210,v1211,v1212=v713(v1041,v1208);if v1209 then return v1041,v1208,v1211,v1212;end end end end return nil;end;v29.boss.attack=function(v716,v717,v718,v719) local v720=0 + 0 ;local v721;local v722;local v723;local v724;local v725;local v726;local v727;local v728;local v729;local v730;while true do if (v720==(5 + 1)) then v730=v29.boss.getBossMaxHealth(v718);v105:SetText(v7("\219\120\222\71\14\251\39\159","\122\147\29\191\43")   .. v17.formatNumber(v729)   .. v7("\252\159\30","\30\220\176\62\105\186\159\236")   .. v17.formatNumber(v730) );break;end if (v720==(0 + 0)) then v721=v10.Character;v722=v721 and v721:FindFirstChild(v7("\81\101\198\183\236\207\112\116\249\185\237\212\73\113\217\162","\160\25\16\171\214\130")) ;v723=v721 and v721:FindFirstChildOfClass(v7("\89\205\58\124\115\221\130\117","\235\17\184\87\29\29\178")) ;v720=3 -2 ;end if (v720==(10 -6)) then v722.AssemblyLinearVelocity=Vector3.zero;v722.AssemblyAngularVelocity=Vector3.zero;pcall(function() local v1097=781 -(636 + 145) ;local v1098;while true do if (v1097==(295 -(282 + 13))) then v1098=0;while true do if (0==v1098) then if (firetouchinterest and v726) then local v1519=1148 -(366 + 782) ;local v1520;while true do if (v1519==(89 -(10 + 79))) then v1520=0;while true do if (v1520==(1707 -(1297 + 410))) then firetouchinterest(v719,v726,0 -0 );firetouchinterest(v719,v726,1 + 0 );break;end end break;end end end if (firetouchinterest and v727) then firetouchinterest(v719,v727,278 -(262 + 16) );firetouchinterest(v719,v727,1);end break;end end break;end end end);v720=5;end if (v720==2) then v725=v721:FindFirstChild(v7("\9\206\10\125\243","\96\89\187\100\30\155\42\135")) or v10.Backpack:FindFirstChild(v7("\29\216\13\73\114","\29\77\173\99\42\26")) ;if (v725 and (v725.Parent~=v721)) then pcall(function() v723:EquipTool(v725);end);end v726=v721:FindFirstChild(v7("\168\231\1\110\115\238\249\9","\109\228\130\103\26\59\143\151"));v720=6 -3 ;end if (v720==(2 + 1)) then v727=v721:FindFirstChild(v7("\177\113\169\209\42\98\46\138\135","\228\227\24\206\185\94\42\79"));v728=v719.Position;if (v724~=v7("\254\55\57\171\188","\80\174\66\87\200\212\123")) then local v1213=0 + 0 ;local v1214;local v1215;while true do if (v1213==(1850 -(1056 + 794))) then v1214=v722.Position-v728 ;v1214=Vector3.new(v1214.X,0,v1214.Z);v1213=1349 -(741 + 607) ;end if (v1213==2) then v1215=v728 + (v1214.Unit * math.max(3,math.min(1762 -(730 + 1026) ,v719.Size.Magnitude * (1793.2 -(248 + 1545)) ))) + Vector3.new(992 -(191 + 801) ,1.5,0 -0 ) ;v722.CFrame=CFrame.lookAt(v1215,v728);break;end if (v1213==(561 -(478 + 82))) then if (v1214.Magnitude<(1708 -(434 + 1273))) then v1214=Vector3.new(v719.CFrame.LookVector.X,0,v719.CFrame.LookVector.Z);end if (v1214.Magnitude<(2 -1)) then v1214=Vector3.new(0 + 0 ,0,1);end v1213=8 -6 ;end end end v720=577 -(349 + 224) ;end if ((869 -(275 + 589))==v720) then if ((os.clock() -v29.boss.Data.LastPunch)>=v29.boss.Data.PunchInterval) then v29.boss.Data.LastPunch=os.clock();pcall(function() v10.muscleEvent:FireServer(v7("\219\108\48\203\255","\115\171\25\94\168\151"),v7("\0\183\226\53\223\13\188\224","\151\108\210\132\65"));v10.muscleEvent:FireServer(v7("\200\65\7\75\206","\52\184\52\105\40\166\33\167"),v7("\64\7\202\160\46\252\205\92\10","\172\50\110\173\200\90\180"));if v725 then v725:Activate();end end);end v104:SetText(v7("\217\181\231\95\161\250","\44\155\218\148")   .. (workspace:GetAttribute(v7("\207\244\63\40\240\46\162\253\247\45\34\250\38\188\232","\209\141\155\76\91\180\71")) or v716.Name) );v729=v29.boss.getBossHealth(v717);v720=6;end if (v720==(1 -0)) then local v1047=0;local v1048;while true do if (v1047==(0 -0)) then v1048=1532 -(1064 + 468) ;while true do if (v1048==0) then if ( not v722 or  not v723 or (v723.Health<=(0 + 0))) then return;end v724=v29.boss.evadeAttack(v716,v719,v722,v723);v1048=1 + 0 ;end if (v1048==1) then if (v724==v7("\153\189\118\245\224","\144\202\201\25\152")) then return;end v720=8 -6 ;break;end end break;end end end end end;v29.boss.startAutoFarmFull=function(v731,v732) local v733=703 -(676 + 27) ;local v734;while true do if (v733==2) then v29.boss.Data.Generation+=(2 -1) v734=v29.boss.Data.Generation;v733=1430 -(48 + 1379) ;end if (v733==(1 + 0)) then v29.boss.Data.ActiveMode=v731;v29.boss.Data.Running=true;v733=1 + 1 ;end if (v733==(5 -2)) then task.spawn(function() local v1099=false;while v17.isCurrent() and v29.boss.Data.Running and (v29.boss.Data.Generation==v734) and (v29.boss.Data.ActiveMode==v731)  do pcall(function() local v1312,v1313,v1314,v1315=v29.boss.findActiveBoss(v731);local v1316=v1312 and v29.boss.shouldFarmBoss(v1312,v731) ;if (v1312 and  not v1316) then local v1398=0 + 0 ;while true do if (v1398==0) then if v1099 then local v1545=115 -(79 + 36) ;while true do if (v1545==(0 -0)) then v1099=false;if v29.boss.resumeTraining then v29.boss.resumeTraining();end break;end end end v103:SetText(v7("\246\223\48\167\208\216\107\243\246\192\56\163\213\194\63\180\133","\211\165\171\81")   .. v1312.Name );break;end end elseif v1312 then if  not v1099 then local v1521=0;while true do if (v1521==(0 + 0)) then v1099=true;v29.boss.Data.AttackSequence=nil;v1521=1 + 0 ;end if (v1521==2) then if v29.boss.pauseTraining then v29.boss.pauseTraining();end break;end if (v1521==1) then v29.boss.Data.EvadeUntil=0;v29.boss.Data.DodgeStomps=false;v1521=2;end end end local v1474=v10.Character;local v1475=v1474 and v1474:FindFirstChildOfClass(v7("\44\96\223\203\217\211\13\113","\188\100\21\178\170\183")) ;if (v1475 and (v1475.Health>0)) then v103:SetText(v7("\77\3\81\167\167\222\36\87\118\186\181\197\106\30\94\180\242","\173\30\119\48\211\210")   .. (((v731==v7("\115\216\53\54\84\206\60\63\85","\90\59\185\89")) and v7("\104\241\86\67\52\106\69\245\84\15\25\114\83\227","\29\32\144\58\47\91")) or v7("\62\52\120\179\1\131\28\38\98","\193\115\85\17\221\33")) );v29.boss.attack(v1312,v1314,v1315,v1313);else v103:SetText(v7("\222\111\15\10\186\207\183\59\57\31\166\200\228\117\9\94\169\211\255\59\60\27\188\204\236\108\0","\188\141\27\110\126\207"));end elseif v1099 then local v1522=0 + 0 ;while true do if (v1522==(1 + 0)) then v104:SetText(v7("\175\57\77\100\190\168\39\130\56\91","\105\237\86\62\23\132\136"));v105:SetText(v7("\145\76\61\65\55\21\227\9\108\13\108\93\233","\125\217\41\92\45\67"));v1522=2;end if (v1522==(4 -2)) then if (v29.boss.Data.ContinueTraining and v29.boss.resumeTraining) then v29.boss.resumeTraining();end v103:SetText(v7("\106\160\7\75\150\72\3\244\49\94\138\79\80\186\1\31\133\84\75\244\36\80\144\72","\59\57\212\102\63\227"));break;end if ((0 + 0)==v1522) then v1099=false;pcall(v29.boss.collectChest,v734);v1522=1;end end else v103:SetText(v7("\78\252\126\19\104\251\37\71\74\233\118\19\116\230\120\71\123\231\109\71","\103\29\136\31")   .. (((v731==v7("\54\47\214\38\73\9\43\223\36","\38\126\78\186\74")) and v7("\233\65\38\134\72\147\196\69\36\202\101\139\210\83","\228\161\32\74\234\39")) or v7("\19\133\3\187\189\168\39\140\63\138\14\245\210\142\39\147","\224\94\228\106\213\144\225\84")) );end end);task.wait((model and selected and (0.03 + 0)) or (1014.25 -(631 + 383)) );end end);break;end if (v733==(1635 -(445 + 1190))) then if  not v732 then local v1217=1425 -(810 + 615) ;while true do if (v1217==(1294 -(819 + 475))) then local v1399=1335 -(243 + 1092) ;local v1400;while true do if (v1399==(0 -0)) then v1400=0 + 0 ;while true do if (v1400==(0 + 0)) then if (v29.boss.Data.ActiveMode==v731) then local v1572=0 + 0 ;while true do if (v1572==2) then v103:SetText(v7("\63\160\245\200\59\31\238\180\248\39\31\181\246\208\43\8","\78\108\212\148\188"));if v29.boss.resumeTraining then v29.boss.resumeTraining();end break;end if (v1572==(0 + 0)) then v29.boss.Data.Running=false;v29.boss.Data.ActiveMode=nil;v1572=1;end if (1==v1572) then v29.boss.Data.Generation+=(1 -0) v29.boss.Data.Phase=v7("\191\220\140\164\63\219\176","\221\232\189\229\208\86\181\215");v1572=2;end end end return;end end break;end end end end end if ((v731==v7("\19\17\24\46\227\23\190\63\53","\90\91\112\116\66\140\96\219")) and v29.boss.MainSwitch) then v29.boss.MainSwitch:Set(false,true);elseif ((v731==v7("\232\86\3\2","\100\165\55\106\108\128\200")) and v29.boss.HalloweenSwitch) then v29.boss.HalloweenSwitch:Set(false,true);end v733=2 -1 ;end end end;v29.boss.MainSwitch=v29.boss:AddSwitch("Auto Boss — Main Island",function(v735) v29.boss.startAutoFarmFull(v7("\157\233\78\206","\97\208\136\39\160"),v735);end);v29.boss.MainSwitch:Set(false);v29.boss.HalloweenSwitch=v29.boss:AddSwitch("Auto Boss — Halloween",function(v736) v29.boss.startAutoFarmFull(v7("\222\40\207\138\86\5\62\243\39","\91\150\73\163\230\57\114"),v736);end);v29.boss.HalloweenSwitch:Set(false);v17.notify(v7("\102\162\188\83\254\19\137\87\71\185\183","\63\46\205\210\54\144\107\222"),"Mensaje 5 cargado: Boss completo ✅",3,v7("\227\57\247\68\217\227\63","\188\144\76\148\39"));v29.inventory:AddSection(v7("\164\94\97\171\12\60\39\65","\53\229\43\21\196\44\108\66"));v29.inventory.AutoPetData={[v7("\1\32\25\171\58\59\16","\197\83\85\119")]=false,[v7("\124\255\18\50\76\238\27\51\127\255\10","\87\47\154\126")]=nil};local v228=v29.inventory:AddLabel(v7("\24\108\205\207\199\199\113\56\229\213\211\215\63\113\218\222","\180\75\24\172\187\178"));local v229=v29.inventory:AddDropdown(v7("\224\209\234\12\111\33\185\32\198\205","\112\163\185\133\99\28\68\153"),function(v737) v29.inventory.AutoPetData.SelectedPet=v737;end);for v739,v740 in ipairs(v29.inventory.PetShopData.PetList) do v229:Add(v740);end v29.inventory:AddSwitch(v7("\138\65\232\196\235\100\249\223","\171\203\52\156"),function(v741) local v742=524 -(119 + 405) ;while true do if (v742==(2 -1)) then if  not v29.inventory.AutoPetData.SelectedPet then local v1218=0 -0 ;while true do local v1317=0;while true do if (v1317==0) then if (v1218==0) then v17.notify(v7("\162\201\79\15\143\125\44\233","\157\227\188\59\96\175\45\73"),"Elegí un pet primero",611 -(352 + 257) ,v7("\168\203\197\24\56\177\205","\81\223\170\183\118"));v29.inventory.AutoPetData.Running=false;v1218=1 + 0 ;end if (v1218==(1164 -(88 + 1075))) then return;end break;end end end end v228:SetText(v7("\21\85\173\175\236\33\75\102\98\163\182\233\32\16\40\69\163\251","\113\70\33\204\219\153\82")   .. v29.inventory.AutoPetData.SelectedPet );v742=1073 -(477 + 594) ;end if ((725 -(328 + 395))==v742) then task.spawn(function() local v1100=504 -(164 + 340) ;while true do if ((0 -0)==v1100) then while v17.isCurrent() and v29.inventory.AutoPetData.Running  do local v1401=v29.inventory.AutoPetData.SelectedPet;local v1402=v29.inventory.PetShopFolder:FindFirstChild(v1401);if v1402 then pcall(function() v29.inventory.PetShopRemote:InvokeServer(v1402);end);end task.wait(0.2 -0 );end v228:SetText(v7("\194\150\62\40\235\163\171\194\22\50\255\179\229\139\41\57","\208\145\226\95\92\158"));break;end end end);break;end if (v742==(1229 -(1008 + 221))) then v29.inventory.AutoPetData.Running=v741;if  not v741 then local v1219=0;while true do if (v1219==(1511 -(1025 + 486))) then v228:SetText(v7("\137\222\124\165\63\146\231\224\147\196\124\178\62\136\171\165","\192\218\170\29\209\74\225\221"));return;end end end v742=1;end end end);v29.boosts:AddSection(v7("\157\238\211\88\238\241\160\10\254\229\216\12\205\250\160\11\170\242","\120\222\129\189\44\143\149\207"));v29.boosts.ComboData={[v7("\180\3\18\165\207\66\119\157\131\22","\216\228\113\125\209\170\43\25")]=0 -0 ,[v7("\205\232\87\85\123\125\248\246\107\77\115\117\252","\30\153\154\56\37\18")]=0 -0 ,[v7("\56\183\242\30\60\4\138\255\13\48\24","\91\125\217\151\108")]=0,[v7("\201\1\169\100\219\240\29\132\113\204","\190\153\115\198\16")]=219 -(108 + 111) ,[v7("\14\116\191\128\50\89\171\149","\231\90\27\202")]=0,[v7("\177\150\87\182\91\136\138\107\170\95\138\129","\62\225\228\56\194")]=98 -(82 + 16) ,[v7("\35\181\173\63\117\102\30\184\178\40","\53\118\217\217\77\20")]=0,[v7("\140\17\225\204\40\176\61\229\204","\79\201\127\132\190")]=0};local v231=v29.boosts:AddLabel(v7("\11\27\228\203\39\78\169\250\33\26\169\203\39\27\250\221\59","\169\72\116\137"));task.spawn(function() while v17.isCurrent() do local v834={[v7("\73\104\198\178\124\115\199\131\126\125","\198\25\26\169")]=1729 -(533 + 1196) ,[v7("\125\97\210\54\142\82\122\115\122\123\220\45\130","\31\41\19\189\70\231\49\27")]=0 -0 ,[v7("\146\221\84\244\176\202\98\238\182\216\84","\134\215\179\49")]=212 -(161 + 51) ,[v7("\209\230\89\242\80\26\239\214\87\244","\115\129\148\54\134\53")]=434 -(294 + 140) ,[v7("\221\136\69\76\208\42\18\251","\115\137\231\48\43\184\104")]=0 -0 ,[v7("\233\251\21\247\172\169\49\234\225\27\232\172","\95\185\137\122\131\201\192")]=838 -(717 + 121) ,[v7("\67\58\211\1\36\69\62\198\24\32","\69\22\86\167\115")]=0,[v7("\125\138\66\147\66\62\122\133\85","\71\56\228\39\225\37")]=0};local v835=v10.Character;if v835 then for v1101,v1102 in ipairs(v835:GetChildren()) do if (v834[v1102.Name]~=nil) then v834[v1102.Name]=v834[v1102.Name] + (1 -0) ;end end end for v917,v918 in ipairs(v10.Backpack:GetChildren()) do if (v834[v918.Name]~=nil) then v834[v918.Name]=v834[v918.Name] + 1 + 0 ;end end local v836={};for v919,v920 in pairs(v834) do if (v920>0) then table.insert(v836,v919   .. v7("\240\169","\66\208\129\132\73\154\141")   .. v920   .. ")" );end end if ( #v836==(0 + 0)) then v231:SetText(v7("\105\80\219\255\69\5\150\206\67\81\150\255\69\80\197\233\89","\157\42\63\182"));else v231:SetText(v7("\248\49\36\254\192\129\126","\175\187\94\73\156")   .. table.concat(v836," · ") );end task.wait(1712 -(1001 + 709) );end end);v29.info:AddSection(v7("\3\50\74\50\28\38\206\37\38","\160\70\95\47\64\123\67"));v29.info:AddButton("🛑 EMERGENCY STOP",function() if _G.HonenxWhiteUltraFastRep then _G.HonenxWhiteUltraFastRep.Enabled=false;end if _G.RockFarmRunning then _G.RockFarmRunning=false;end if _G.deathRingEnabled then _G.deathRingEnabled=false;end if _G.killAll then _G.killAll=false;end if _G.killBlacklistedOnly then _G.killBlacklistedOnly=false;end if _G.HonenxAntiAFK then _G.HonenxAntiAFK=false;end for v837,v838 in pairs(v29) do if (v838._ui and v838._ui._connections) then for v1104,v1105 in ipairs(v838._ui._connections) do if (v1105 and v1105.Connected) then end end end end if v29.fast then local v921=0 + 0 ;local v922;while true do if (0==v921) then v922=1120 -(242 + 878) ;while true do if (v922==(1784 -(1395 + 388))) then if v29.fast.UltraData then v29.fast.UltraData.Running=false;end if v29.fast.ChaosData then v29.fast.ChaosData.Running=false;end break;end if (v922==0) then if v29.fast.FastRepData then v29.fast.FastRepData.Running=false;end if v29.fast.FastRebirthData then v29.fast.FastRebirthData.Running=false;end v922=1 + 0 ;end end break;end end end if (v29.boss and v29.boss.Data) then local v923=0;while true do if (v923==(0 + 0)) then v29.boss.Data.Running=false;v29.boss.Data.ActiveMode=nil;break;end end end if v29.farming then local v924=0 + 0 ;while true do if (v924==0) then if v29.farming.MachineExerciseData then local v1358=0 + 0 ;while true do if (v1358==0) then v29.farming.MachineExerciseData.Squat.Running=false;v29.farming.MachineExerciseData.Lift.Running=false;break;end end end if v29.farming.ActiveConfigs then for v1403 in pairs(v29.farming.ActiveConfigs) do v29.farming.ActiveConfigs[v1403]=false;end end break;end end end v17.notify(v7("\251\87\113\35\217\95\122\50\199\26\71\37\209\74","\81\190\58\20"),v7("\120\66\178\118\144\105\83\50\95\13\176\98\141\42\86\60\66\72\165\55\135\44\75\54\66\68\178\118\144","\83\44\45\214\23\227\73\63"),1951 -(1289 + 658) ,v7("\240\168\84\177\50","\64\149\218\38\222"));end);v17.notify(v7("\50\168\196\213\20\191\253\216\19\179\207","\176\122\199\170"),"🎉 Hub COMPLETO cargado — 4,000+ líneas",3 + 2 ,v7("\1\30\179\211\52\56\1","\75\114\107\208\176\81"));print("[HonenxWhite] ✅ Script COMPLETO cargado al 100%");print(v7("\194\3\38\123\252\37\49\66\241\34\61\112\196\107\29\116\251\56\115\53\212\42\32\123\181\107\2\124\245\39\32\123\254\103\105\70\233\46\42\102\181\107\15\116\235\38\32\123\254\103\105\83\248\56\61\57\185\9\38\102\234\103\105\69\252\63\58\57\185\9\38\122\234\63\58\57\185\31\44\121\252\59\38\103\237\56\101\53\202\63\40\97\234\103\105\92\247\45\38","\21\153\75\73"));print(v7("\50\59\66\252\183\72\17\36\69\251\166\67\52\83\111\231\187\74\13\73\13\217\156\111\73\38\100\178\164\20\71\67","\38\105\115\45\146\210"));
+if not KNI then
+    warn("[HonenxWhite] Error al cargar KNI_UI")
+    return
+end
+
+-- ═══ JUGADOR ═══
+local player = game:GetService("Players").LocalPlayer
+
+-- ═══ WHITELIST CHECK ═══
+local WhitelistURL = "https://pastebin.com/raw/0Ne1DxbB"
+local whitelistOk, whitelist = pcall(function()
+    return loadstring(game:HttpGet(WhitelistURL, true))()
+end)
+
+if not whitelistOk or type(whitelist) ~= "table" then
+    player:Kick("[HonenxWhite] Error al verificar whitelist. Contactá al staff.")
+    return
+end
+
+if not whitelist[player.UserId] then
+    player:Kick("[HonenxWhite] No estás autorizado. Unite a discord.gg/bVDtwKF92")
+    return
+end
+
+print("[HonenxWhite] Whitelist verificada ✅")
+
+-- ═══ SERVICIOS ═══
+local services = {
+    Players = game:GetService("Players"),
+    ReplicatedStorage = game:GetService("ReplicatedStorage"),
+    VirtualUser = game:GetService("VirtualUser"),
+    Workspace = workspace,
+    Lighting = game:GetService("Lighting"),
+    UserInputService = game:GetService("UserInputService"),
+    VirtualInputManager = game:GetService("VirtualInputManager"),
+    RunService = game:GetService("RunService"),
+    CollectionService = game:GetService("CollectionService"),
+    HttpService = game:GetService("HttpService"),
+    Stats = game:GetService("Stats"),
+}
+local playerGui = player:WaitForChild("PlayerGui")
+local backpack = player:WaitForChild("Backpack")
+
+-- ═══ UTILS ═══
+local utils = {}
+utils.runtime = {}
+
+_G.HonenxWhiteMainConnections = _G.HonenxWhiteMainConnections or {}
+for _, connection in ipairs(_G.HonenxWhiteMainConnections) do
+    pcall(function() connection:Disconnect() end)
+end
+_G.HonenxWhiteMainConnections = {}
+_G.HonenxWhiteMainGeneration = (_G.HonenxWhiteMainGeneration or 0) + 1
+utils.Generation = _G.HonenxWhiteMainGeneration
+
+function utils.isCurrent()
+    return utils.Generation == _G.HonenxWhiteMainGeneration
+end
+
+function utils.connect(signal, callback)
+    local connection = signal:Connect(callback)
+    table.insert(_G.HonenxWhiteMainConnections, connection)
+    return connection
+end
+
+utils.playerData = {
+    Player = player,
+    DisplayName = player.DisplayName,
+    Character = player.Character,
+    Humanoid = nil,
+    Camera = services.Workspace.CurrentCamera,
+    Backpack = backpack,
+}
+
+utils.playerData.Humanoid = utils.playerData.Character and utils.playerData.Character:FindFirstChildOfClass("Humanoid")
+
+utils.remotes = {
+    ChangeSpeedSize = services.ReplicatedStorage.rEvents.changeSpeedSizeRemote,
+    MuscleEvent = player.muscleEvent,
+}
+
+function utils.formatNumber(n)
+    n = tonumber(n) or 0
+    if n >= 1e18 then return string.format("%.1fqi", n / 1e18)
+    elseif n >= 1e15 then return string.format("%.1fqa", n / 1e15)
+    elseif n >= 1e12 then return string.format("%.1ft", n / 1e12)
+    elseif n >= 1e9 then return string.format("%.1fb", n / 1e9)
+    elseif n >= 1e6 then return string.format("%.1fm", n / 1e6)
+    elseif n >= 1e3 then return string.format("%.1fk", n / 1e3)
+    else return tostring(math.floor(n)) end
+end
+
+function utils.formatWithCommas(n)
+    local s = tostring(math.floor(tonumber(n) or 0))
+    while true do
+        local newS, count = s:gsub("^(-?%d+)(%d%d%d)", "%1.%2")
+        s = newS
+        if count == 0 then break end
+    end
+    return s
+end
+
+function utils.notify(title, text, duration, kind)
+    KNI.Notify:Show(title, text, duration or 3, kind or "info")
+end
+
+-- ═══ CREAR VENTANA ═══
+local window = KNI.new({
+    Name = "HonenxWhite",
+    Title = "HonenxWhite | Reborn",
+    Width = 620,
+    Height = 420,
+})
+
+_G.HonenxWhiteWindow = window
+
+-- ═══ TABS ═══
+local tabs = {
+    main = window:AddTab("Main"),
+    killing = window:AddTab("Killing"),
+    specs = window:AddTab("Specs"),
+    farming = window:AddTab("Farming"),
+    fast = window:AddTab("⚡ Fast"),
+    boss = window:AddTab("Boss"),
+    inventory = window:AddTab("Pets"),
+    boosts = window:AddTab("Boosts"),
+    teleport = window:AddTab("Teleports"),
+    stats = window:AddTab("Stats"),
+    info = window:AddTab("Info"),
+}
+
+for _, tab in pairs(tabs) do
+    tab.runtime = {}
+end
+
+-- ═══ RECONEXIÓN AL CHARACTER ═══
+utils.connect(player.CharacterAdded, function(character)
+    utils.playerData.Character = character
+    utils.playerData.Humanoid = character:WaitForChild("Humanoid", 10)
+    utils.playerData.Backpack = player:WaitForChild("Backpack")
+end)
+
+-- ═══ ANTI-AFK ═══
+utils.connect(player.Idled, function()
+    pcall(function()
+        services.VirtualUser:CaptureController()
+        services.VirtualUser:ClickButton2(Vector2.new(0, 0))
+        services.VirtualUser:ClickButton1(Vector2.new(0, 0))
+    end)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB MAIN
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.main:AddSection("User Settings")
+
+tabs.main.Settings = {
+    Size = {Value = 2, Enabled = false},
+    Speed = {Value = 120, Enabled = false},
+    FOV = {Value = 70, Enabled = false},
+}
+
+tabs.main:AddTextBox("Size (default 2):", function(text)
+    text = string.gsub(text, "%s+", "")
+    if tonumber(text) and tonumber(text) > 0 then
+        tabs.main.Settings.Size.Value = tonumber(text)
+    end
+end, {clear = false})
+
+tabs.main:AddSwitch("Set Size", function(bool)
+    tabs.main.Settings.Size.Enabled = bool
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Settings.Size.Enabled and utils.playerData.Character and utils.playerData.Humanoid then
+            pcall(function()
+                utils.remotes.ChangeSpeedSize:InvokeServer("changeSize", tabs.main.Settings.Size.Value)
+            end)
+        end
+        task.wait(0.15)
+    end
+end)
+
+tabs.main:AddTextBox("Speed (default 120):", function(text)
+    text = string.gsub(text, "%s+", "")
+    if tonumber(text) and tonumber(text) > 0 then
+        tabs.main.Settings.Speed.Value = tonumber(text)
+    end
+end, {clear = false})
+
+tabs.main:AddSwitch("Set Speed", function(bool)
+    tabs.main.Settings.Speed.Enabled = bool
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Settings.Speed.Enabled and utils.playerData.Character and utils.playerData.Humanoid then
+            pcall(function()
+                utils.remotes.ChangeSpeedSize:InvokeServer("changeSpeed", tabs.main.Settings.Speed.Value)
+            end)
+        end
+        task.wait(0.15)
+    end
+end)
+
+tabs.main:AddTextBox("FOV (1-120):", function(text)
+    text = string.gsub(text, "%s+", "")
+    if tonumber(text) and tonumber(text) >= 1 and tonumber(text) <= 120 then
+        tabs.main.Settings.FOV.Value = tonumber(text)
+    end
+end, {clear = false})
+
+tabs.main:AddSwitch("Set FOV", function(bool)
+    tabs.main.Settings.FOV.Enabled = bool
+    if utils.playerData.Camera then
+        utils.playerData.Camera.FieldOfView = bool and tabs.main.Settings.FOV.Value or 70
+    end
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Settings.FOV.Enabled and utils.playerData.Camera then
+            utils.playerData.Camera.FieldOfView = tabs.main.Settings.FOV.Value
+        end
+        task.wait(0.15)
+    end
+end)
+
+tabs.main:AddSection("Protection & Visuals")
+
+tabs.main.Protection = {
+    AntiFling = {Enabled = false},
+    PositionLock = {Enabled = false, Position = nil},
+}
+
+tabs.main.enableAntiFling = function()
+    if not tabs.main.Protection.AntiFling.Enabled or not player.Character then return end
+    local root = player.Character:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+    if root:FindFirstChild("BodyVelocity") and root.BodyVelocity.MaxForce == Vector3.new(100000, 0, 100000) then
+        root.BodyVelocity:Destroy()
+    end
+    local bv = Instance.new("BodyVelocity")
+    bv.MaxForce = Vector3.new(100000, 0, 100000)
+    bv.Velocity = Vector3.new(0, 0, 0)
+    bv.P = 1250
+    bv.Parent = root
+    tabs.main.runtime.bv = bv
+end
+
+tabs.main.disableAntiFling = function()
+    if not player.Character then return end
+    local root = player.Character:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+    if root:FindFirstChild("BodyVelocity") and root.BodyVelocity.MaxForce == Vector3.new(100000, 0, 100000) then
+        root.BodyVelocity:Destroy()
+    end
+end
+
+tabs.main:AddSwitch("Anti Fling", function(bool)
+    tabs.main.Protection.AntiFling.Enabled = bool
+    if bool then tabs.main.enableAntiFling() else tabs.main.disableAntiFling() end
+end):Set(false)
+
+utils.connect(player.CharacterAdded, function(newChar)
+    newChar:WaitForChild("HumanoidRootPart", 5)
+    if tabs.main.Protection.AntiFling.Enabled then tabs.main.enableAntiFling() end
+end)
+
+tabs.main.lockPosition = function()
+    tabs.main.enableAntiFling()
+    if not tabs.main.Protection.PositionLock.Enabled or not tabs.main.Protection.PositionLock.Position then return end
+    if not player.Character then return end
+    local root = player.Character:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+    if root:FindFirstChild("PositionLocker") then
+        root.PositionLocker.Position = tabs.main.Protection.PositionLock.Position
+    else
+        tabs.main.disableAntiFling()
+        local bp = Instance.new("BodyPosition")
+        bp.Name = "PositionLocker"
+        bp.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+        bp.Position = tabs.main.Protection.PositionLock.Position
+        bp.P = 100000
+        bp.Parent = root
+        tabs.main.runtime.bp = bp
+    end
+end
+
+tabs.main.unlockPosition = function()
+    if player.Character then
+        local root = player.Character:FindFirstChild("HumanoidRootPart")
+        if root and root:FindFirstChild("PositionLocker") then
+            root.PositionLocker:Destroy()
+        end
+    end
+    tabs.main.Protection.PositionLock.Position = nil
+end
+
+tabs.main:AddSwitch("Lock Position", function(bool)
+    tabs.main.Protection.PositionLock.Enabled = bool
+    if bool then
+        if player.Character then
+            local root = player.Character:FindFirstChild("HumanoidRootPart")
+            if root then tabs.main.Protection.PositionLock.Position = root.Position end
+        end
+        tabs.main.lockPosition()
+    else
+        tabs.main.unlockPosition()
+    end
+end)
+
+utils.connect(player.CharacterAdded, function(newChar)
+    if tabs.main.Protection.PositionLock.Enabled and newChar:WaitForChild("HumanoidRootPart", 5) then
+        tabs.main.Protection.PositionLock.Position = newChar.HumanoidRootPart.Position
+        tabs.main.lockPosition()
+    end
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Protection.PositionLock.Enabled then tabs.main.lockPosition() end
+        task.wait(0.1)
+    end
+end)
+
+tabs.main.VisibilitySettings = {
+    HidePets = false,
+    HidePopups = false,
+    ShowPetsEvent = services.ReplicatedStorage.rEvents:WaitForChild("showPetsEvent"),
+    SavePlayerSizeEvent = services.ReplicatedStorage.rEvents:WaitForChild("savePlayerSizeEvent"),
+}
+
+tabs.main:AddSwitch("Hide Pets", function(state)
+    tabs.main.VisibilitySettings.HidePets = state
+    tabs.main.VisibilitySettings.ShowPetsEvent:FireServer(state and "hidePets" or "showPets")
+end):Set(false)
+
+tabs.main.HidePopupsSwitch = tabs.main:AddSwitch("Hide Popups", function(state)
+    tabs.main.VisibilitySettings.HidePopups = state
+    tabs.main.VisibilitySettings.SavePlayerSizeEvent:FireServer("showPopupsOption")
+end)
+tabs.main.HidePopupsSwitch:Set(false)
+
+tabs.main.RedactConfigPath = "HonenxWhite/MuscleLegendsMainConfig.json"
+tabs.main.RedactConfig = {
+    RedactName = false,
+    RedactStats = false,
+}
+
+tabs.main.loadRedactConfig = function()
+    if type(isfile) ~= "function" or type(readfile) ~= "function" then return end
+    pcall(function()
+        if not isfile(tabs.main.RedactConfigPath) then return end
+        local savedConfig = services.HttpService:JSONDecode(readfile(tabs.main.RedactConfigPath))
+        if typeof(savedConfig) == "table" then
+            tabs.main.RedactConfig.RedactName = savedConfig.RedactName == true
+            tabs.main.RedactConfig.RedactStats = savedConfig.RedactStats == true
+        end
+    end)
+end
+
+tabs.main.saveRedactConfig = function()
+    if type(writefile) ~= "function" then return end
+    pcall(function()
+        if type(makefolder) == "function"
+            and (type(isfolder) ~= "function" or not isfolder("HonenxWhite")) then
+            pcall(makefolder, "HonenxWhite")
+        end
+        writefile(tabs.main.RedactConfigPath, services.HttpService:JSONEncode(tabs.main.RedactConfig))
+    end)
+end
+
+tabs.main.loadRedactConfig()
+
+tabs.main.RedactNameSwitch = tabs.main:AddSwitch("Redact Name", function(state)
+    tabs.main.RedactConfig.RedactName = state
+    tabs.main.saveRedactConfig()
+end)
+tabs.main.RedactNameSwitch:Set(tabs.main.RedactConfig.RedactName)
+
+tabs.main.RedactStatsSwitch = tabs.main:AddSwitch("Redact Stats", function(state)
+    tabs.main.RedactConfig.RedactStats = state
+    tabs.main.saveRedactConfig()
+end)
+tabs.main.RedactStatsSwitch:Set(tabs.main.RedactConfig.RedactStats)
+
+tabs.main.WaterParts = {
+    Parts = {},
+    PartSize = 2048,
+    TotalDistance = 50000,
+    StartPosition = Vector3.new(-2, -9.5, -2),
+}
+
+task.spawn(function()
+    for x = 0, math.ceil(tabs.main.WaterParts.TotalDistance / tabs.main.WaterParts.PartSize) - 1 do
+        for z = 0, math.ceil(tabs.main.WaterParts.TotalDistance / tabs.main.WaterParts.PartSize) - 1 do
+            for _, offset in ipairs({
+                {x * tabs.main.WaterParts.PartSize, z * tabs.main.WaterParts.PartSize, "Side_" .. x .. "_" .. z},
+                {-x * tabs.main.WaterParts.PartSize, z * tabs.main.WaterParts.PartSize, "LeftRight_" .. x .. "_" .. z},
+                {-x * tabs.main.WaterParts.PartSize, -z * tabs.main.WaterParts.PartSize, "UpLeft_" .. x .. "_" .. z},
+                {x * tabs.main.WaterParts.PartSize, -z * tabs.main.WaterParts.PartSize, "UpRight_" .. x .. "_" .. z},
+            }) do
+                local part = Instance.new("Part")
+                part.Size = Vector3.new(tabs.main.WaterParts.PartSize, 1, tabs.main.WaterParts.PartSize)
+                part.Position = tabs.main.WaterParts.StartPosition + Vector3.new(offset[1], 0, offset[2])
+                part.Anchored = true
+                part.Transparency = 1
+                part.CanCollide = true
+                part.Name = "Part_" .. offset[3]
+                part.Parent = workspace
+                table.insert(tabs.main.WaterParts.Parts, part)
+            end
+        end
+    end
+end)
+
+tabs.main.WalkOnWaterSwitch = tabs.main:AddSwitch("Walk on Water", function(bool)
+    for _, part in ipairs(tabs.main.WaterParts.Parts) do
+        if part and part.Parent then part.CanCollide = bool end
+    end
+end)
+tabs.main.WalkOnWaterSwitch:Set(false)
+
+tabs.main:AddSection("Other")
+
+tabs.main:AddSwitch("Infinite Jump", function(bool)
+    _G.InfiniteJump = bool
+    if bool then
+        utils.connect(services.UserInputService.JumpRequest, function()
+            if _G.InfiniteJump and player.Character then
+                local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                if humanoid then humanoid:ChangeState("Jumping") end
+            end
+        end)
+    end
+end)
+
+tabs.main.FortuneWheelData = {
+    Running = false,
+    Generation = 0,
+    Remote = services.ReplicatedStorage.rEvents:WaitForChild("openFortuneWheelRemote"),
+    Chances = services.ReplicatedStorage
+        :WaitForChild("shared")
+        :WaitForChild("catalogs")
+        :WaitForChild("fortuneWheelChances")
+        :WaitForChild("Fortune Wheel"),
+}
+
+tabs.main.spinFortuneWheel = function()
+    pcall(function()
+        tabs.main.FortuneWheelData.Remote:InvokeServer("openFortuneWheel", tabs.main.FortuneWheelData.Chances)
+    end)
+end
+
+tabs.main:AddSwitch("Spin Fortune Wheel", function(state)
+    tabs.main.FortuneWheelData.Running = state
+    tabs.main.FortuneWheelData.Generation += 1
+    tabs.main.runtime.generation = tabs.main.FortuneWheelData.Generation
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.main.FortuneWheelData.Running and tabs.main.FortuneWheelData.Generation == tabs.main.runtime.generation do
+            tabs.main.spinFortuneWheel()
+            task.wait(1)
+        end
+    end)
+end)
+
+local timeDropdown = tabs.main:AddDropdown("Change Time", function(selection)
+    services.Lighting.ClockTime = selection == "Night" and 0 or 9
+end)
+timeDropdown:Add("Night")
+timeDropdown:Add("Day")
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB INFO
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.info:AddSection("Información")
+tabs.info:AddLabel("HonenxWhite | Reborn")
+tabs.info:AddLabel("Made by Honen / cyanam1 / White")
+tabs.info:AddLabel("")
+
+tabs.info:AddButton("📋 Copiar Discord", function()
+    if setclipboard then
+        setclipboard("https://discord.gg/bVDtwKF92")
+        utils.notify("Discord", "Link copiado", 2, "success")
+    end
+end)
+
+tabs.info:AddLabel("")
+tabs.info:AddLabel("Contributors:")
+tabs.info:AddLabel("- cyanam1 (@honey)")
+tabs.info:AddLabel("- White @chilin6369")
+tabs.info:AddLabel("- Honen @Owner")
+tabs.info:AddLabel("")
+tabs.info:AddLabel("KNI UI - v2.0")
+
+utils.notify("HonenxWhite", "Hub cargado correctamente ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB KILLING
+-- ═══════════════════════════════════════════════════════════════
+
+-- Utils de Killing
+tabs.killing.getTool = function()
+    for _, v in pairs(player.Backpack:GetChildren()) do
+        if v.Name == "Punch" and player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid:EquipTool(v)
+        end
+    end
+    if player.muscleEvent then
+        player.muscleEvent:FireServer("punch", "leftHand")
+        player.muscleEvent:FireServer("punch", "rightHand")
+    end
+end
+
+tabs.killing.isPlayerAlive = function(p)
+    return p and p.Character and p.Character:FindFirstChild("HumanoidRootPart") and
+        p.Character:FindFirstChild("Humanoid") and p.Character.Humanoid.Health > 0
+end
+
+tabs.killing.isSpawnProtected = function(p)
+    if not p or not p.Character then return false end
+    if p.Character:FindFirstChildOfClass("ForceField")
+        or p.Character:FindFirstChild("spawnProtectionHighlight") then
+        return true
+    end
+    local protectedUntil = p.Character:GetAttribute("SpawnProtectedUntil")
+    return typeof(protectedUntil) == "number" and workspace:GetServerTimeNow() < protectedUntil
+end
+
+tabs.killing.getLocalCombatCharacter = function()
+    local char = player.Character
+    local humanoid = char and char:FindFirstChildOfClass("Humanoid")
+    local root = char and char:FindFirstChild("HumanoidRootPart")
+    if not char or not humanoid or humanoid.Health <= 0 or not root then return end
+    return char, humanoid, root
+end
+
+tabs.killing.positionNearTarget = function(target, heightOffset)
+    if not tabs.killing.isPlayerAlive(target)
+        or tabs.killing.isSpawnProtected(target)
+        or tabs.killing.isSpawnProtected(player) then
+        return false
+    end
+    local _, _, localRoot = tabs.killing.getLocalCombatCharacter()
+    local targetRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
+    if not localRoot or not targetRoot then return false end
+    localRoot.CFrame = targetRoot.CFrame * CFrame.new(0, heightOffset, 0)
+    localRoot.AssemblyLinearVelocity = Vector3.zero
+    localRoot.AssemblyAngularVelocity = Vector3.zero
+    return true
+end
+
+tabs.killing.touchAndPunchTarget = function(target, heightOffset)
+    if not tabs.killing.positionNearTarget(target, heightOffset) then return false, false end
+    services.RunService.Heartbeat:Wait()
+    if not tabs.killing.positionNearTarget(target, heightOffset) then return false, false end
+
+    local char = tabs.killing.getLocalCombatCharacter()
+    local targetRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
+    local targetHumanoid = target.Character and target.Character:FindFirstChildOfClass("Humanoid")
+    if not char or not targetRoot or not targetHumanoid or tabs.killing.isSpawnProtected(target) then return false, false end
+
+    local hand = char:FindFirstChild("LeftHand") or char:FindFirstChild("RightHand")
+    if not hand then return false, false end
+
+    local punchTool = char:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+    local humanoid = char:FindFirstChildOfClass("Humanoid")
+    if punchTool and punchTool.Parent ~= char and humanoid then
+        humanoid:EquipTool(punchTool)
+    end
+
+    local healthBefore = targetHumanoid.Health
+    local attempted = pcall(function()
+        if firetouchinterest then
+            firetouchinterest(targetRoot, hand, 0)
+            firetouchinterest(targetRoot, hand, 1)
+        end
+        player.muscleEvent:FireServer("punch", hand.Name == "LeftHand" and "leftHand" or "rightHand")
+    end)
+    if not attempted then return false, false end
+
+    for _ = 1, 4 do
+        services.RunService.Heartbeat:Wait()
+        if not tabs.killing.isPlayerAlive(target) or targetHumanoid.Health < healthBefore then
+            return true, true
+        end
+        if tabs.killing.isSpawnProtected(target) then
+            return false, false
+        end
+    end
+
+    return false, true
+end
+
+tabs.killing.attackPlayerWithLimit = function(target, hitLimit, shouldContinue, heightOffset)
+    local hits = 0
+    while utils.isCurrent() and hits < hitLimit and shouldContinue()
+        and tabs.killing.isPlayerAlive(target) and not tabs.killing.isSpawnProtected(target) do
+        local hitRegistered, attempted = tabs.killing.touchAndPunchTarget(target, heightOffset)
+        if hitRegistered then hits = hits + 1 end
+        if not attempted then break end
+        if not hitRegistered then task.wait(0.05) end
+    end
+    return hits
+end
+
+tabs.killing.attackPlayerForDuration = function(target, duration, shouldContinue, heightOffset)
+    local startedAt = os.clock()
+    while utils.isCurrent() and os.clock() - startedAt < duration
+        and shouldContinue()
+        and tabs.killing.isPlayerAlive(target)
+        and not tabs.killing.isSpawnProtected(target) do
+        if tabs.killing.positionNearTarget(target, heightOffset) then
+            local char = player.Character
+            local targetRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
+            local leftHand = char and char:FindFirstChild("LeftHand")
+            local rightHand = char and char:FindFirstChild("RightHand")
+            local punchTool = char and char:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+            local humanoid = char and char:FindFirstChildOfClass("Humanoid")
+            if punchTool and humanoid and punchTool.Parent ~= char then
+                humanoid:EquipTool(punchTool)
+            end
+            if targetRoot and leftHand and rightHand then
+                pcall(function()
+                    if firetouchinterest then
+                        firetouchinterest(targetRoot, leftHand, 0)
+                        firetouchinterest(targetRoot, leftHand, 1)
+                        firetouchinterest(targetRoot, rightHand, 0)
+                        firetouchinterest(targetRoot, rightHand, 1)
+                    end
+                    player.muscleEvent:FireServer("punch", "leftHand")
+                    player.muscleEvent:FireServer("punch", "rightHand")
+                end)
+            end
+        end
+        services.RunService.Heartbeat:Wait()
+    end
+end
+
+-- Misc
+tabs.killing:AddSection("Misc")
+
+tabs.killing.equipBestStatPets = function(priority)
+    for _, folder in pairs(player.petsFolder:GetChildren()) do
+        if folder:IsA("Folder") then
+            for _, pet in pairs(folder:GetChildren()) do
+                services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", pet)
+            end
+        end
+    end
+    task.wait(0.2)
+    local petsByName = {}
+    for _, petName in ipairs(priority) do petsByName[petName] = {} end
+    for _, pet in pairs(player.petsFolder.Unique:GetChildren()) do
+        if petsByName[pet.Name] then
+            table.insert(petsByName[pet.Name], pet)
+        end
+    end
+    local equipped = 0
+    for _, petName in ipairs(priority) do
+        for _, pet in ipairs(petsByName[petName]) do
+            if equipped >= 9 then return end
+            services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("equipPet", pet)
+            equipped = equipped + 1
+            task.wait(0.1)
+        end
+    end
+end
+
+tabs.killing:AddButton("Equip Best Damage", function()
+    tabs.killing.equipBestStatPets({"Wild Wizard", "Chaos Sorcerer", "Mighty Monster", "Small Fry"})
+end)
+
+tabs.killing:AddButton("Equip Best Health", function()
+    tabs.killing.equipBestStatPets({"Mighty Monster", "Small Fry", "Wild Wizard", "Chaos Sorcerer"})
+end)
+
+tabs.killing:AddSwitch("Remove Attack Animations", function(bool)
+    if bool then
+        local blockedAnimations = {
+            ["3638729053"] = true, ["3638767427"] = true, ["507768375"] = true,
+            ["522635514"] = true, ["522638767"] = true, ["182393478"] = true,
+            ["129967390"] = true, ["129967478"] = true,
+        }
+        local shouldBlockAnimation = function(track)
+            if not track or not track.Animation then return false end
+            local animationId = tostring(track.Animation.AnimationId):match("%d+")
+            local animationName = string.lower((track.Name or "") .. " " .. (track.Animation.Name or ""))
+            return blockedAnimations[animationId] == true
+                or string.find(animationName, "punch", 1, true) ~= nil
+                or string.find(animationName, "attack", 1, true) ~= nil
+                or string.find(animationName, "equip", 1, true) ~= nil
+        end
+        local isAttackTool = function(tool)
+            if not tool or not tool:IsA("Tool") then return false end
+            local n = string.lower(tool.Name)
+            return string.find(n, "punch", 1, true) ~= nil
+        end
+        local hasAttackToolEquipped = function(character)
+            if not character then return false end
+            for _, child in ipairs(character:GetChildren()) do
+                if isAttackTool(child) then return true end
+            end
+            return false
+        end
+        local stopBlockedAnimations = function(character)
+            local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+            if not humanoid then return end
+            for _, track in ipairs(humanoid:GetPlayingAnimationTracks()) do
+                if shouldBlockAnimation(track) then track:Stop(0) end
+            end
+        end
+        tabs.killing.runtime.animBlockConnection = utils.connect(services.RunService.RenderStepped, function()
+            local char = player.Character
+            if hasAttackToolEquipped(char) then
+                stopBlockedAnimations(char)
+            end
+        end)
+    else
+        if tabs.killing.runtime.animBlockConnection then
+            tabs.killing.runtime.animBlockConnection:Disconnect()
+            tabs.killing.runtime.animBlockConnection = nil
+        end
+    end
+end)
+
+-- Auto Kill
+tabs.killing:AddSection("Auto Kill")
+
+_G.whitelistedPlayers = _G.whitelistedPlayers or {}
+_G.blacklistedPlayers = _G.blacklistedPlayers or {}
+
+_G.killAll = false
+_G.killBlacklistedOnly = false
+_G.farmBadKarma = false
+_G.farmGoodKarma = false
+_G.killAllGeneration = (_G.killAllGeneration or 0) + 1
+_G.killListGeneration = (_G.killListGeneration or 0) + 1
+
+tabs.killing.isWhitelisted = function(p)
+    for _, name in ipairs(_G.whitelistedPlayers) do
+        if name:lower() == p.Name:lower() then return true end
+    end
+    return false
+end
+
+tabs.killing.isBlacklisted = function(p)
+    for _, name in ipairs(_G.blacklistedPlayers) do
+        if name:lower() == p.Name:lower() then return true end
+    end
+    return false
+end
+
+-- Whitelist dropdown
+tabs.killing.WhitelistDisplayNames = {}
+
+tabs.killing.getWhitelistDisplayName = function(username)
+    local cached = tabs.killing.WhitelistDisplayNames[username]
+    if cached then return cached end
+    local p = services.Players:FindFirstChild(username)
+    if p then
+        tabs.killing.WhitelistDisplayNames[username] = p.DisplayName
+        return p.DisplayName
+    end
+    return username
+end
+
+local function getPlayerList()
+    local list = {}
+    for _, p in ipairs(services.Players:GetPlayers()) do
+        if p ~= player then
+            table.insert(list, p.DisplayName .. " | " .. p.Name)
+        end
+    end
+    table.sort(list)
+    return list
+end
+
+tabs.killing.WhitelistDropdown = tabs.killing:AddDropdown("Add to Whitelist", function(selectedText)
+    local playerName = selectedText:match("| (.+)$")
+    if playerName then
+        playerName = playerName:gsub("^%s*(.-)%s*$", "%1")
+        for _, name in ipairs(_G.whitelistedPlayers) do
+            if name:lower() == playerName:lower() then return end
+        end
+        table.insert(_G.whitelistedPlayers, playerName)
+        utils.notify("Whitelist", "Añadido: " .. playerName, 2, "success")
+    end
+end)
+for _, item in ipairs(getPlayerList()) do tabs.killing.WhitelistDropdown:Add(item) end
+
+tabs.killing:AddSwitch("Kill Everyone", function(bool)
+    _G.killAll = bool
+    _G.killAllGeneration = (_G.killAllGeneration or 0) + 1
+    local generation = _G.killAllGeneration
+    if not bool then return end
+
+    task.spawn(function()
+        while utils.isCurrent() and _G.killAll and _G.killAllGeneration == generation do
+            local foundTarget = false
+            for _, p in ipairs(services.Players:GetPlayers()) do
+                if not _G.killAll or _G.killAllGeneration ~= generation then break end
+                if p ~= player and not tabs.killing.isWhitelisted(p)
+                    and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p) then
+                    foundTarget = true
+                    tabs.killing.attackPlayerForDuration(p, 4, function()
+                        return _G.killAll and _G.killAllGeneration == generation and not tabs.killing.isWhitelisted(p)
+                    end, 3.5)
+                end
+            end
+            if foundTarget then
+                services.RunService.Heartbeat:Wait()
+            else
+                task.wait(0.1)
+            end
+        end
+    end)
+end)
+
+tabs.killing:AddSwitch("Whitelist Friends", function(bool)
+    _G.whitelistFriends = bool
+    if bool then
+        for _, p in pairs(services.Players:GetPlayers()) do
+            if p ~= player and p:IsFriendsWith(player.UserId) then
+                if not tabs.killing.isWhitelisted(p) then
+                    table.insert(_G.whitelistedPlayers, p.Name)
+                end
+            end
+        end
+        utils.connect(services.Players.PlayerAdded, function(p)
+            if _G.whitelistFriends and p:IsFriendsWith(player.UserId) then
+                if not tabs.killing.isWhitelisted(p) then
+                    table.insert(_G.whitelistedPlayers, p.Name)
+                end
+            end
+        end)
+    end
+end)
+
+-- Karma
+tabs.killing:AddSection("Karma Killing")
+
+tabs.killing.KarmaData = {FarmEvil = false, FarmGood = false, Generation = 0}
+
+tabs.killing.matchesKarmaMode = function(p)
+    local good = p:FindFirstChild("goodKarma")
+    local evil = p:FindFirstChild("evilKarma")
+    if not good or not evil then return false end
+    local gv, ev = good.Value or 0, evil.Value or 0
+    if gv + ev < 5 then return false end
+    return (tabs.killing.KarmaData.FarmEvil and gv > ev)
+        or (tabs.killing.KarmaData.FarmGood and ev > gv)
+end
+
+tabs.killing.restartKarmaWorker = function()
+    tabs.killing.KarmaData.Generation += 1
+    local generation = tabs.killing.KarmaData.Generation
+    if not tabs.killing.KarmaData.FarmEvil and not tabs.killing.KarmaData.FarmGood then return end
+    task.spawn(function()
+        while utils.isCurrent() and (tabs.killing.KarmaData.FarmEvil or tabs.killing.KarmaData.FarmGood)
+            and tabs.killing.KarmaData.Generation == generation do
+            local foundTarget = false
+            for _, p in ipairs(services.Players:GetPlayers()) do
+                if tabs.killing.KarmaData.Generation ~= generation then break end
+                if p ~= player and not tabs.killing.isWhitelisted(p)
+                    and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p)
+                    and tabs.killing.matchesKarmaMode(p) then
+                    foundTarget = true
+                    tabs.killing.attackPlayerWithLimit(p, 4, function()
+                        return tabs.killing.KarmaData.Generation == generation
+                            and not tabs.killing.isWhitelisted(p)
+                            and tabs.killing.matchesKarmaMode(p)
+                    end, 3.5)
+                end
+            end
+            if foundTarget then
+                services.RunService.Heartbeat:Wait()
+            else
+                task.wait(0.1)
+            end
+        end
+    end)
+end
+
+tabs.killing:AddSwitch("Farm Evil Karma", function(state)
+    tabs.killing.KarmaData.FarmEvil = state
+    tabs.killing.restartKarmaWorker()
+end)
+
+tabs.killing:AddSwitch("Farm Good Karma", function(state)
+    tabs.killing.KarmaData.FarmGood = state
+    tabs.killing.restartKarmaWorker()
+end)
+
+-- Target Killing
+tabs.killing:AddSection("Target Killing")
+
+tabs.killing.KilllistDisplayNames = {}
+
+tabs.killing.getKilllistDisplayName = function(username)
+    local cached = tabs.killing.KilllistDisplayNames[username]
+    if cached then return cached end
+    local p = services.Players:FindFirstChild(username)
+    if p then
+        tabs.killing.KilllistDisplayNames[username] = p.DisplayName
+        return p.DisplayName
+    end
+    return username
+end
+
+tabs.killing.BlacklistDropdown = tabs.killing:AddDropdown("Add to Killlist", function(selectedText)
+    local selectedUsername = selectedText:match("| (.+)$")
+    if selectedUsername then
+        selectedUsername = selectedUsername:gsub("^%s*(.-)%s*$", "%1")
+        if not tabs.killing.isBlacklisted({Name = selectedUsername}) then
+            table.insert(_G.blacklistedPlayers, selectedUsername)
+            utils.notify("Killlist", "Añadido: " .. selectedUsername, 2, "success")
+        end
+    end
+end)
+for _, item in ipairs(getPlayerList()) do tabs.killing.BlacklistDropdown:Add(item) end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        tabs.killing.WhitelistDropdown:Add(p.DisplayName .. " | " .. p.Name)
+        tabs.killing.BlacklistDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    tabs.killing.WhitelistDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    tabs.killing.BlacklistDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+end)
+
+tabs.killing:AddSwitch("Kill List", function(bool)
+    _G.killBlacklistedOnly = bool
+    _G.killListGeneration = (_G.killListGeneration or 0) + 1
+    local generation = _G.killListGeneration
+    if not bool then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.killBlacklistedOnly and _G.killListGeneration == generation do
+            local target
+            for _, p in ipairs(services.Players:GetPlayers()) do
+                if not _G.killBlacklistedOnly or _G.killListGeneration ~= generation then break end
+                if p ~= player and tabs.killing.isBlacklisted(p)
+                    and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p) then
+                    target = p
+                    break
+                end
+            end
+            if target then
+                tabs.killing.touchAndPunchTarget(target, 10)
+                services.RunService.Heartbeat:Wait()
+            else
+                task.wait(0.1)
+            end
+        end
+    end)
+end)
+
+-- Spectate
+tabs.killing:AddSection("Spectate")
+
+tabs.killing.SpectateData = {
+    SelectedPlayer = nil,
+    SelectedPlayerUserId = nil,
+    Spectating = false,
+    CurrentTargetConnection = nil,
+}
+
+tabs.killing.stopSpectating = function()
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    if player.Character then
+        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = humanoid
+            utils.playerData.Camera.CameraType = Enum.CameraType.Custom
+        end
+    end
+end
+
+tabs.killing.updateSpectateTarget = function(p)
+    if not p then
+        tabs.killing.stopSpectating()
+        return
+    end
+    tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+    tabs.killing.SpectateData.SelectedPlayer = p
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    local function setCamera(char)
+        if not tabs.killing.SpectateData.Spectating or tabs.killing.SpectateData.SelectedPlayerUserId ~= p.UserId then return end
+        local humanoid = char:WaitForChild("Humanoid", 3)
+        if humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = humanoid
+        end
+    end
+    if p.Character then setCamera(p.Character) end
+    tabs.killing.SpectateData.CurrentTargetConnection = utils.connect(p.CharacterAdded, function(newChar)
+        if tabs.killing.SpectateData.Spectating then setCamera(newChar) end
+    end)
+end
+
+tabs.killing.SpectateDropdown = tabs.killing:AddDropdown("Choose Player", function(text)
+    for _, p in ipairs(services.Players:GetPlayers()) do
+        if text == p.DisplayName .. " | " .. p.Name then
+            tabs.killing.SpectateData.SelectedPlayer = p
+            tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+            if tabs.killing.SpectateData.Spectating then
+                tabs.killing.updateSpectateTarget(p)
+            end
+            break
+        end
+    end
+end)
+for _, item in ipairs(getPlayerList()) do tabs.killing.SpectateDropdown:Add(item) end
+
+tabs.killing:AddSwitch("Spectate", function(bool)
+    tabs.killing.SpectateData.Spectating = bool
+    if bool then
+        tabs.killing.updateSpectateTarget(tabs.killing.SpectateData.SelectedPlayer)
+    else
+        tabs.killing.stopSpectating()
+    end
+end)
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    tabs.killing.SpectateDropdown:Add(p.DisplayName .. " | " .. p.Name)
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    tabs.killing.SpectateDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if p.UserId == tabs.killing.SpectateData.SelectedPlayerUserId then
+        tabs.killing.stopSpectating()
+    end
+end)
+
+-- Kill Aura
+tabs.killing:AddSection("Kill Aura")
+
+tabs.killing.KillAura = {
+    RingPart = nil,
+    Range = 20,
+    Enabled = false,
+    Generation = 0,
+}
+
+_G.deathRingEnabled = false
+_G.deathRingRange = 20
+
+tabs.killing:AddTextBox("Range (1-140):", function(text)
+    if tonumber(text) then
+        _G.deathRingRange = math.clamp(tonumber(text), 1, 140)
+        tabs.killing.KillAura.Range = _G.deathRingRange
+        if tabs.killing.KillAura.RingPart then
+            tabs.killing.KillAura.RingPart.Size = Vector3.new(0.2, _G.deathRingRange * 2, _G.deathRingRange * 2)
+        end
+    end
+end, {clear = false})
+
+tabs.killing:AddSwitch("Kill Aura", function(bool)
+    tabs.killing.KillAura.Enabled = bool
+    tabs.killing.KillAura.Generation += 1
+    local generation = tabs.killing.KillAura.Generation
+
+    if not bool then
+        if tabs.killing.KillAura.RingPart then
+            tabs.killing.KillAura.RingPart:Destroy()
+            tabs.killing.KillAura.RingPart = nil
+        end
+        return
+    end
+
+    -- Crear anillo
+    local ring = Instance.new("Part")
+    ring.Name = "HonenxWhiteKillAuraRing"
+    ring.Shape = Enum.PartType.Cylinder
+    ring.Material = Enum.Material.Neon
+    ring.Color = Color3.fromRGB(145, 77, 255)
+    ring.Transparency = 0.6
+    ring.Anchored = true
+    ring.CanCollide = false
+    ring.CanTouch = false
+    ring.CanQuery = false
+    ring.CastShadow = false
+    ring.Size = Vector3.new(0.2, tabs.killing.KillAura.Range * 2, tabs.killing.KillAura.Range * 2)
+    ring.Parent = workspace
+    tabs.killing.KillAura.RingPart = ring
+
+    -- Loop
+    task.spawn(function()
+        while utils.isCurrent() and tabs.killing.KillAura.Enabled and tabs.killing.KillAura.Generation == generation do
+            local char = player.Character
+            local root = char and char:FindFirstChild("HumanoidRootPart")
+            if root and ring.Parent then
+                ring.CFrame = root.CFrame * CFrame.Angles(0, 0, math.rad(90))
+                for _, p in ipairs(services.Players:GetPlayers()) do
+                    if p ~= player and not tabs.killing.isWhitelisted(p)
+                        and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p) then
+                        local targetRoot = p.Character and p.Character:FindFirstChild("HumanoidRootPart")
+                        if targetRoot and (root.Position - targetRoot.Position).Magnitude <= tabs.killing.KillAura.Range then
+                            tabs.killing.touchAndPunchTarget(p, 3.5)
+                        end
+                    end
+                end
+            end
+            task.wait(0.05)
+        end
+    end)
+end)
+
+-- Stats
+tabs.killing:AddSection("Session Stats")
+local killStatsLabel = tabs.killing:AddLabel("Kills: 0")
+_G.killSessionStart = nil
+
+task.spawn(function()
+    while utils.isCurrent() do
+        local ls = player:FindFirstChild("leaderstats")
+        local kills = ls and ls:FindFirstChild("Kills")
+        if kills and killStatsLabel then
+            if not _G.killSessionStart then _G.killSessionStart = kills.Value end
+            killStatsLabel:SetText("Kills: " .. utils.formatNumber(kills.Value) .. " (Sesión: " .. utils.formatNumber(kills.Value - _G.killSessionStart) .. ")")
+        end
+        task.wait(1)
+    end
+end)
+
+utils.notify("HonenxWhite", "Tab Killing cargado ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB FARMING
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming:AddSection("Rebirths")
+
+tabs.farming.RebirthData = {
+    TargetRebirths = 0,
+    IsAutoRebirthing = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+}
+
+local rebirthLabel = tabs.farming:AddLabel("Rebirths: 0")
+local targetLabel = tabs.farming:AddLabel("Target: None")
+
+tabs.farming:AddTextBox("Set Rebirth Target:", function(text)
+    if tonumber(text) and tonumber(text) >= 0 then
+        tabs.farming.RebirthData.TargetRebirths = tonumber(text)
+    end
+end)
+
+tabs.farming.RebirthData.Switch = tabs.farming:AddSwitch("Auto Rebirth", function(enabled)
+    if enabled and tabs.farming.RebirthData.TargetRebirths > 0 and tabs.farming.RebirthData.Rebirths.Value < tabs.farming.RebirthData.TargetRebirths then
+        tabs.farming.RebirthData.IsAutoRebirthing = true
+        task.spawn(function()
+            while utils.isCurrent() and tabs.farming.RebirthData.IsAutoRebirthing
+                and tabs.farming.RebirthData.Rebirths.Value < tabs.farming.RebirthData.TargetRebirths do
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.1)
+            end
+            tabs.farming.RebirthData.IsAutoRebirthing = false
+            tabs.farming.RebirthData.Switch:Set(false, true)
+        end)
+    else
+        tabs.farming.RebirthData.IsAutoRebirthing = false
+    end
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if rebirthLabel then
+            rebirthLabel:SetText("Rebirths: " .. utils.formatWithCommas(tabs.farming.RebirthData.Rebirths.Value))
+        end
+        if targetLabel then
+            targetLabel:SetText("Target Rebirths: " .. utils.formatWithCommas(tabs.farming.RebirthData.TargetRebirths))
+        end
+        task.wait(0.5)
+    end
+end)
+
+-- Auto Size 1
+tabs.farming:AddSection("Auto Size")
+
+tabs.farming.SizeData = {Active = false}
+
+tabs.farming.SizeSwitch = tabs.farming:AddSwitch("Auto Size 1", function(bool)
+    tabs.farming.SizeData.Active = bool
+end)
+tabs.farming.SizeSwitch:Set(false)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.farming.SizeData.Active and utils.playerData.Character and utils.playerData.Humanoid then
+            pcall(function()
+                utils.remotes.ChangeSpeedSize:InvokeServer("changeSize", 1)
+            end)
+        end
+        task.wait(0.5)
+    end
+end)
+
+-- Auto King
+tabs.farming:AddSection("Auto King")
+
+tabs.farming.KingData = {
+    TargetPosition = CFrame.new(-8665.4, 17.21, -5792.9),
+    TeleportActive = false,
+}
+
+tabs.farming.KingSwitch = tabs.farming:AddSwitch("Auto King", function(enabled)
+    tabs.farming.KingData.TeleportActive = enabled
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.farming.KingData.TeleportActive then
+            local char = utils.playerData.Character
+            if char then
+                local root = char:FindFirstChild("HumanoidRootPart")
+                if root and (root.Position - tabs.farming.KingData.TargetPosition.Position).Magnitude > 5 then
+                    pcall(function()
+                        root.CFrame = tabs.farming.KingData.TargetPosition
+                    end)
+                end
+            end
+        end
+        task.wait(0.1)
+    end
+end)
+
+-- Auto Exercises
+tabs.farming:AddSection("Auto Exercises")
+
+tabs.farming.ExerciseData = {
+    SelectedTool = nil,
+    AutoFarm = false,
+}
+
+local exerciseDropdown = tabs.farming:AddDropdown("Select Exercise", function(selection)
+    tabs.farming.ExerciseData.SelectedTool = selection
+end)
+exerciseDropdown:Add("Weight")
+exerciseDropdown:Add("Pushups")
+exerciseDropdown:Add("Situps")
+exerciseDropdown:Add("Handstands")
+
+tabs.farming.ToolExerciseSwitch = tabs.farming:AddSwitch("Start Exercising", function(enabled)
+    tabs.farming.ExerciseData.AutoFarm = enabled
+    if enabled then
+        task.spawn(function()
+            while utils.isCurrent() and tabs.farming.ExerciseData.AutoFarm do
+                local char = utils.playerData.Character
+                local hum = utils.playerData.Humanoid
+                if char and hum and hum.Health > 0 and tabs.farming.ExerciseData.SelectedTool then
+                    local tool = char:FindFirstChild(tabs.farming.ExerciseData.SelectedTool)
+                        or player.Backpack:FindFirstChild(tabs.farming.ExerciseData.SelectedTool)
+                    if tool and tool.Parent ~= char then
+                        pcall(function() hum:EquipTool(tool) end)
+                    end
+                    if tool and tool.Parent == char then
+                        pcall(function()
+                            player.muscleEvent:FireServer("rep")
+                        end)
+                    end
+                end
+                task.wait(0.05)
+            end
+        end)
+    else
+        if tabs.farming.ExerciseData.SelectedTool and player.Character then
+            local tool = player.Character:FindFirstChild(tabs.farming.ExerciseData.SelectedTool)
+            if tool then tool.Parent = player.Backpack end
+        end
+    end
+end)
+
+tabs.farming.AutoRepRunning = false
+tabs.farming.AutoRepSwitch = tabs.farming:AddSwitch("Auto Rep", function(state)
+    tabs.farming.AutoRepRunning = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.farming.AutoRepRunning do
+            pcall(function()
+                player.muscleEvent:FireServer("rep")
+            end)
+            task.wait(0.1)
+        end
+    end)
+end)
+
+-- Auto Rock
+tabs.farming:AddSection("Auto Rock")
+
+tabs.farming.RockData = {
+    Data = {
+        ["Tiny Rock - 0 Dura"] = 0, ["Large Rock - 100 Dura"] = 100, ["Punching Rock - 10 Dura"] = 10,
+        ["Golden Rock - 5k Dura"] = 5000, ["Frost Rock - 150k Dura"] = 150000, ["Mythical Rock - 400k Dura"] = 400000,
+        ["Eternal Rock - 750k Dura"] = 750000, ["Legend Rock - 1m Dura"] = 1000000, ["Muscle King Rock - 5m Dura"] = 5000000,
+        ["Jungle Rock - 10m Dura"] = 10000000, ["Industrial Rock - 25m Dura"] = 25000000,
+    },
+    SelectedRock = nil,
+}
+
+tabs.farming.MachinesFolder = workspace:WaitForChild("machinesFolder")
+
+local rockDropdown = tabs.farming:AddDropdown("Select Rock", function(selection)
+    tabs.farming.RockData.SelectedRock = selection
+end)
+for rockName in pairs(tabs.farming.RockData.Data) do
+    rockDropdown:Add(rockName)
+end
+
+tabs.farming.RockSwitch = tabs.farming:AddSwitch("Auto Rock", function(enabled)
+    _G.RockFarmRunning = enabled
+    if not enabled or not tabs.farming.RockData.SelectedRock then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.RockFarmRunning do
+            task.wait(0.12)
+            local char = utils.playerData.Character
+            if char and player:FindFirstChild("Durability") and player.Durability.Value >= tabs.farming.RockData.Data[tabs.farming.RockData.SelectedRock] then
+                for _, v in pairs(tabs.farming.MachinesFolder:GetDescendants()) do
+                    if v.Name == "neededDurability" and v.Value == tabs.farming.RockData.Data[tabs.farming.RockData.SelectedRock]
+                        and char:FindFirstChild("LeftHand") and v.Parent and v.Parent:FindFirstChild("Rock") then
+                        pcall(function()
+                            if firetouchinterest then
+                                firetouchinterest(v.Parent.Rock, char.RightHand, 0)
+                                firetouchinterest(v.Parent.Rock, char.RightHand, 1)
+                                firetouchinterest(v.Parent.Rock, char.LeftHand, 0)
+                                firetouchinterest(v.Parent.Rock, char.LeftHand, 1)
+                            end
+                            tabs.killing.getTool()
+                        end)
+                    end
+                end
+            end
+        end
+    end)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB FAST
+-- ═══════════════════════════════════════════════════════════════
+
+-- Fast Rep
+tabs.fast:AddSection("Fast Rep")
+
+tabs.fast.FastRepData = {
+    Running = false,
+    WorkerActive = false,
+    CyclesPerSecond = 40,
+    RepsPerCycle = 20,
+    SendRate = 800,
+}
+
+local fastRepStatus = tabs.fast:AddLabel("Status: Inactive")
+
+tabs.fast.FastRepWorkerLoop = function()
+    if tabs.fast.FastRepData.WorkerActive then return end
+    tabs.fast.FastRepData.WorkerActive = true
+    local data = tabs.fast.FastRepData
+    local interval = 1 / 40
+
+    while utils.isCurrent() and data.Running do
+        pcall(function()
+            for i = 1, 20 do
+                player.muscleEvent:FireServer("rep")
+            end
+        end)
+        fastRepStatus:SetText("Status: 800 reps/s (MAX)")
+        task.wait(interval)
+    end
+    data.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Reps por ciclo (1-20):", function(text)
+    local num = tonumber(text)
+    if num and num >= 1 then
+        tabs.fast.FastRepData.RepsPerCycle = math.clamp(math.floor(num), 1, 20)
+    end
+end)
+
+tabs.fast.FastRepToggle = tabs.fast:AddSwitch("Fast Rep (Ultra Rápido)", function(state)
+    local data = tabs.fast.FastRepData
+    data.Running = state
+    if state then
+        fastRepStatus:SetText("Status: Activando...")
+        if not data.WorkerActive then
+            task.spawn(tabs.fast.FastRepWorkerLoop)
+        end
+    else
+        fastRepStatus:SetText("Status: Inactive")
+    end
+end)
+
+-- Ultra Fast Rep 20K
+tabs.fast:AddSection("Ultra Fast Rep 20K")
+
+local UltraState = {
+    Enabled = false,
+    WorkerActive = false,
+    RepsPerCycle = 200,
+    CycleDelay = 0.01,
+    TotalReps = 0,
+}
+_G.HonenxWhiteUltraFastRep = UltraState
+
+task.spawn(function()
+    if UltraState.WorkerActive then return end
+    UltraState.WorkerActive = true
+    while utils.isCurrent() do
+        if UltraState.Enabled then
+            local muscle = player:FindFirstChild("muscleEvent")
+            if muscle then
+                local start = os.clock()
+                for i = 1, UltraState.RepsPerCycle do
+                    if not UltraState.Enabled then break end
+                    pcall(function() muscle:FireServer("rep") end)
+                    UltraState.TotalReps = UltraState.TotalReps + 1
+                end
+                local elapsed = os.clock() - start
+                local sleepTime = UltraState.CycleDelay - elapsed
+                if sleepTime > 0 then task.wait(sleepTime) else task.wait() end
+            else
+                task.wait(0.05)
+            end
+        else
+            task.wait(0.1)
+        end
+    end
+end)
+
+tabs.fast:AddSwitch("🚀 Ultra Fast Rep (20000 reps/s)", function(state)
+    UltraState.Enabled = state
+    if state then
+        UltraState.TotalReps = 0
+        utils.notify("Ultra Fast Rep", "🚀 ACTIVADO - 20,000 reps/s", 3, "success")
+    else
+        utils.notify("Ultra Fast Rep", "⏸️ Desactivado", 2, "info")
+    end
+end)
+
+-- Fast Rebirth
+tabs.fast:AddSection("Fast Rebirth")
+
+tabs.fast.FastRebirthData = {
+    Running = false,
+    WorkerActive = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+    Strength = player.leaderstats:WaitForChild("Strength"),
+    TargetRebirths = 0,
+    TotalRebirths = 0,
+}
+
+local fastRebirthStatus = tabs.fast:AddLabel("Status: Inactive")
+local fastRebirthStats = tabs.fast:AddLabel("Rebirths: 0 | Gained: 0")
+
+tabs.fast.FastRebirthWorker = function()
+    local startRebirths = tabs.fast.FastRebirthData.Rebirths.Value
+    tabs.fast.FastRebirthData.TotalRebirths = 0
+
+    while utils.isCurrent() and tabs.fast.FastRebirthData.Running do
+        if tabs.fast.FastRebirthData.TargetRebirths > 0
+            and tabs.fast.FastRebirthData.Rebirths.Value >= tabs.fast.FastRebirthData.TargetRebirths then
+            fastRebirthStatus:SetText("Status: ✅ Target alcanzado!")
+            tabs.fast.FastRebirthData.Running = false
+            break
+        end
+
+        local currentRebirths = tabs.fast.FastRebirthData.Rebirths.Value
+        local targetStrength = 5000 + currentRebirths * 2550
+        local repsPerBurst = player.MembershipType == Enum.MembershipType.Premium and 3 or 4
+
+        fastRebirthStatus:SetText("Status: 💪 Farmeando... "
+            .. utils.formatNumber(tabs.fast.FastRebirthData.Strength.Value)
+            .. " / " .. utils.formatNumber(targetStrength))
+
+        while utils.isCurrent() and tabs.fast.FastRebirthData.Running
+            and tabs.fast.FastRebirthData.Strength.Value < targetStrength do
+            for i = 1, repsPerBurst do
+                pcall(function()
+                    player.muscleEvent:FireServer("rep")
+                end)
+            end
+            task.wait(0.05)
+            fastRebirthStats:SetText("Rebirths: "
+                .. utils.formatWithCommas(tabs.fast.FastRebirthData.Rebirths.Value)
+                .. " | Gained: "
+                .. utils.formatWithCommas(tabs.fast.FastRebirthData.Rebirths.Value - startRebirths))
+        end
+
+        if utils.isCurrent() and tabs.fast.FastRebirthData.Running
+            and tabs.fast.FastRebirthData.Strength.Value >= targetStrength then
+            fastRebirthStatus:SetText("Status: 🔄 Haciendo rebirth...")
+            local rebirthValueBefore = tabs.fast.FastRebirthData.Rebirths.Value
+            local attempts = 0
+            repeat
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.12)
+                attempts = attempts + 1
+            until not tabs.fast.FastRebirthData.Running
+                or tabs.fast.FastRebirthData.Rebirths.Value > rebirthValueBefore
+                or attempts >= 50
+            if tabs.fast.FastRebirthData.Rebirths.Value > rebirthValueBefore then
+                tabs.fast.FastRebirthData.TotalRebirths = tabs.fast.FastRebirthData.TotalRebirths +
+                    (tabs.fast.FastRebirthData.Rebirths.Value - rebirthValueBefore)
+            end
+        end
+        task.wait(0.3)
+    end
+    tabs.fast.FastRebirthData.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Target rebirths (0 = infinito):", function(text)
+    local num = tonumber(text)
+    if num and num >= 0 then
+        tabs.fast.FastRebirthData.TargetRebirths = math.floor(num)
+    end
+end)
+
+tabs.fast.FastRebirthToggle = tabs.fast:AddSwitch("Fast Rebirth 🔄", function(state)
+    tabs.fast.FastRebirthData.Running = state
+    if state then
+        fastRebirthStatus:SetText("Status: 🔄 Iniciando...")
+        if not tabs.fast.FastRebirthData.WorkerActive then
+            tabs.fast.FastRebirthData.WorkerActive = true
+            task.spawn(tabs.fast.FastRebirthWorker)
+        end
+    else
+        fastRebirthStatus:SetText("Status: Inactive")
+    end
+end)
+
+tabs.fast:AddLabel("Conserva mascotas equipadas, no activa packs")
+
+utils.notify("HonenxWhite", "Tab Farming + Fast cargado ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB BOSS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss:AddSection("Boss Farming")
+
+local bossStatusLabel = tabs.boss:AddLabel("Status: Waiting for Boss")
+local bossLabel = tabs.boss:AddLabel("Boss: None")
+local bossHealthLabel = tabs.boss:AddLabel("Health: 0 / 0")
+local nextBossLabel = tabs.boss:AddLabel("Next Boss: N/A")
+
+tabs.boss.Data = {
+    Running = false,
+    ActiveMode = nil,
+    Generation = 0,
+    ContinueTraining = false,
+    Phase = "Waiting",
+    PunchInterval = 0.3,
+    LastPunch = 0,
+    Bosses = {},
+    BossOrder = {},
+    BossByDisplayName = {},
+    SelectedBosses = {},
+}
+
+-- Funciones auxiliares
+tabs.boss.getBossHealth = function(health)
+    if health then
+        if health:IsA("Humanoid") then return health.Health end
+        local ok, value = pcall(function() return health.Value end)
+        if ok and tonumber(value) then return tonumber(value) end
+    end
+    return workspace:GetAttribute("BossHealth") or 0
+end
+
+tabs.boss.getBossMaxHealth = function(maxHealth)
+    if maxHealth then
+        if maxHealth:IsA("Humanoid") then return maxHealth.MaxHealth end
+        local ok, value = pcall(function() return maxHealth.Value end)
+        if ok and tonumber(value) then return tonumber(value) end
+    end
+    return workspace:GetAttribute("BossMaxHealth") or 0
+end
+
+tabs.boss.getBossHeadPosition = function(model, hitbox)
+    local head = model:FindFirstChild("Head", true) or model:FindFirstChild("head", true)
+    if head and head:IsA("BasePart") then return head.Position end
+    return hitbox.Position + Vector3.new(0, hitbox.Size.Y * 0.35, 0)
+end
+
+tabs.boss.findActiveBoss = function(mode)
+    mode = mode or "Main"
+
+    -- Buscar por tag primero
+    for _, taggedBoss in ipairs(services.CollectionService:GetTagged("BossEventBoss")) do
+        if taggedBoss:IsA("Model") and taggedBoss:IsDescendantOf(workspace) then
+            local hitbox = taggedBoss:FindFirstChild("BossDamageHitbox", true)
+            if hitbox and hitbox:IsA("BasePart") then
+                local stats = taggedBoss:FindFirstChild("stats") or taggedBoss:FindFirstChild("Stats")
+                local health = stats and (stats:FindFirstChild("Health") or stats:FindFirstChild("health"))
+                local maxHealth = stats and (stats:FindFirstChild("MaxHealth") or stats:FindFirstChild("maxHealth"))
+                local healthValue = health and tonumber(health.Value)
+                if healthValue and healthValue > 0 then
+                    return taggedBoss, hitbox, health, maxHealth
+                end
+                local hum = taggedBoss:FindFirstChildOfClass("Humanoid")
+                if hum and hum.Health > 0 then
+                    return taggedBoss, hitbox, hum, hum
+                end
+            end
+        end
+    end
+
+    -- Buscar en Events/BossEvent
+    local events = workspace:FindFirstChild("Events")
+    local bossFolder = events and (events:FindFirstChild("BossEvent") or events:FindFirstChild("BossArena"))
+    if bossFolder then
+        for _, descendant in ipairs(bossFolder:GetDescendants()) do
+            if descendant:IsA("Model") then
+                local hitbox = descendant:FindFirstChild("BossDamageHitbox", true)
+                if hitbox and hitbox:IsA("BasePart") then
+                    local hum = descendant:FindFirstChildOfClass("Humanoid")
+                    local stats = descendant:FindFirstChild("stats") or descendant:FindFirstChild("Stats")
+                    local health = stats and (stats:FindFirstChild("Health") or stats:FindFirstChild("health"))
+                    local healthValue = health and tonumber(health.Value)
+                    if (healthValue and healthValue > 0) or (hum and hum.Health > 0) then
+                        return descendant, hitbox, health or hum, health or hum
+                    end
+                end
+            end
+        end
+    end
+
+    return nil
+end
+
+tabs.boss.attack = function(model, health, maxHealth, hitbox)
+    if not model or not hitbox or not hitbox.Parent then return end
+    local char = player.Character
+    local hum = char and char:FindFirstChildOfClass("Humanoid")
+    local root = char and char:FindFirstChild("HumanoidRootPart")
+    if not char or not hum or not root or hum.Health <= 0 then return end
+
+    -- Equipar Punch
+    local punch = char:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+    if punch and punch.Parent ~= char then
+        pcall(function() hum:EquipTool(punch) end)
+    end
+
+    -- Posicionarse cerca del boss
+    local center = hitbox.Position
+    local offset = root.Position - center
+    offset = Vector3.new(offset.X, 0, offset.Z)
+    if offset.Magnitude < 1 then offset = hitbox.CFrame.LookVector end
+    local standPos = center + offset.Unit * math.max(4, math.min(6, hitbox.Size.Magnitude * 0.2)) + Vector3.new(0, 1.5, 0)
+    root.CFrame = CFrame.lookAt(standPos, center)
+    root.AssemblyLinearVelocity = Vector3.zero
+    root.AssemblyAngularVelocity = Vector3.zero
+
+    -- Fire touch + punch
+    local left = char:FindFirstChild("LeftHand")
+    local right = char:FindFirstChild("RightHand")
+    pcall(function()
+        if firetouchinterest and left then
+            firetouchinterest(hitbox, left, 0)
+            firetouchinterest(hitbox, left, 1)
+        end
+        if firetouchinterest and right then
+            firetouchinterest(hitbox, right, 0)
+            firetouchinterest(hitbox, right, 1)
+        end
+    end)
+
+    if os.clock() - tabs.boss.Data.LastPunch >= tabs.boss.Data.PunchInterval then
+        tabs.boss.Data.LastPunch = os.clock()
+        pcall(function()
+            player.muscleEvent:FireServer("punch", "leftHand")
+            player.muscleEvent:FireServer("punch", "rightHand")
+            if punch then punch:Activate() end
+        end)
+    end
+
+    local displayName = workspace:GetAttribute("BossDisplayName") or model.Name
+    bossLabel:SetText("Boss: " .. displayName)
+    local hv = tabs.boss.getBossHealth(health)
+    local mhv = tabs.boss.getBossMaxHealth(maxHealth)
+    bossHealthLabel:SetText("Health: " .. utils.formatNumber(hv) .. " / " .. utils.formatNumber(mhv))
+end
+
+-- Worker principal de auto boss
+tabs.boss.startAutoFarm = function(mode, state)
+    if not state then
+        if tabs.boss.Data.ActiveMode == mode then
+            tabs.boss.Data.Running = false
+            tabs.boss.Data.ActiveMode = nil
+            tabs.boss.Data.Generation += 1
+            bossStatusLabel:SetText("Status: Disabled")
+        end
+        return
+    end
+
+    -- Apagar el otro modo
+    if mode == "Main" and tabs.boss.HalloweenSwitch then
+        tabs.boss.HalloweenSwitch:Set(false, true)
+    elseif mode == "Halloween" and tabs.boss.MainSwitch then
+        tabs.boss.MainSwitch:Set(false, true)
+    end
+
+    tabs.boss.Data.ActiveMode = mode
+    tabs.boss.Data.Running = true
+    tabs.boss.Data.Generation += 1
+    local generation = tabs.boss.Data.Generation
+
+    task.spawn(function()
+        while utils.isCurrent() and tabs.boss.Data.Running and tabs.boss.Data.Generation == generation do
+            local model, hitbox, health, maxHealth = tabs.boss.findActiveBoss(mode)
+            if model and hitbox then
+                bossStatusLabel:SetText("Status: Fighting " .. (mode == "Halloween" and "Halloween Boss" or "Main Boss"))
+                tabs.boss.attack(model, health, maxHealth, hitbox)
+                task.wait(0.03)
+            else
+                bossStatusLabel:SetText("Status: Waiting for " .. (mode == "Halloween" and "Halloween Boss" or "Main Boss"))
+                bossLabel:SetText("Boss: None")
+                bossHealthLabel:SetText("Health: 0 / 0")
+                task.wait(0.5)
+            end
+        end
+    end)
+end
+
+tabs.boss.MainSwitch = tabs.boss:AddSwitch("Auto Boss — Main Island", function(state)
+    tabs.boss.startAutoFarm("Main", state)
+end)
+tabs.boss.MainSwitch:Set(false)
+
+tabs.boss.HalloweenSwitch = tabs.boss:AddSwitch("Auto Boss — Halloween", function(state)
+    tabs.boss.startAutoFarm("Halloween", state)
+end)
+tabs.boss.HalloweenSwitch:Set(false)
+
+tabs.boss:AddSwitch("Continue Training after Boss", function(state)
+    tabs.boss.Data.ContinueTraining = state
+end)
+
+tabs.boss:AddSection("Info")
+task.spawn(function()
+    while utils.isCurrent() do
+        if not tabs.boss.Data.Running then
+            local nextTime = workspace:GetAttribute("BossSpawnNextTime")
+            if typeof(nextTime) == "number" then
+                local seconds = math.max(0, nextTime - workspace:GetServerTimeNow())
+                local h = math.floor(seconds / 3600)
+                local m = math.floor((seconds % 3600) / 60)
+                local s = math.floor(seconds % 60)
+                nextBossLabel:SetText(string.format("Next Boss: %dh %dm %ds", h, m, s))
+            else
+                nextBossLabel:SetText("Next Boss: N/A")
+            end
+        end
+        task.wait(1)
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB PETS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.inventory:AddSection("Pet Shop")
+
+tabs.inventory.PetShopRuntime = services.ReplicatedStorage:WaitForChild("shared"):WaitForChild("runtime")
+tabs.inventory.PetShopFolder = tabs.inventory.PetShopRuntime:WaitForChild("cPetShopFolder")
+tabs.inventory.PetShopRemote = services.ReplicatedStorage.rEvents:WaitForChild("cPetShopRemote")
+
+tabs.inventory.PetShopData = {
+    PetList = {},
+    Selected = {},
+    SelectedList = {},
+    BuyAmount = 1,
+}
+
+tabs.inventory.AuraData = {
+    AuraList = {},
+    Selected = {},
+    SelectedList = {},
+    BuyAmount = 1,
+}
+
+for _, item in ipairs(tabs.inventory.PetShopFolder:GetChildren()) do
+    if item:GetAttribute("IsPowerUp") == true then
+        table.insert(tabs.inventory.AuraData.AuraList, item.Name)
+    else
+        table.insert(tabs.inventory.PetShopData.PetList, item.Name)
+    end
+end
+table.sort(tabs.inventory.PetShopData.PetList)
+table.sort(tabs.inventory.AuraData.AuraList)
+
+local buyPetLabel = tabs.inventory:AddLabel("Selected Pets: None")
+
+local petShopDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    if not tabs.inventory.PetShopData.Selected[text] then
+        tabs.inventory.PetShopData.Selected[text] = true
+        table.insert(tabs.inventory.PetShopData.SelectedList, text)
+    end
+    buyPetLabel:SetText("Selected Pets: " .. (#tabs.inventory.PetShopData.SelectedList > 0 and table.concat(tabs.inventory.PetShopData.SelectedList, ", ") or "None"))
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    petShopDropdown:Add(petName)
+end
+
+tabs.inventory:AddTextBox("Buy Amount:", function(text)
+    tabs.inventory.PetShopData.BuyAmount = math.max(1, math.floor(tonumber(text) or 1))
+end, {clear = false})
+
+tabs.inventory:AddSwitch("Auto Buy Pet", function(bool)
+    _G.AutoHatchPet = bool
+    if not bool then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.AutoHatchPet do
+            for _, petName in ipairs(tabs.inventory.PetShopData.SelectedList) do
+                local selectedPet = tabs.inventory.PetShopFolder:FindFirstChild(petName)
+                if selectedPet then
+                    for _ = 1, tabs.inventory.PetShopData.BuyAmount do
+                        pcall(function()
+                            tabs.inventory.PetShopRemote:InvokeServer(selectedPet)
+                        end)
+                    end
+                end
+            end
+            task.wait(0.1)
+        end
+    end)
+end)
+
+tabs.inventory:AddButton("Clear Selected Pets", function()
+    tabs.inventory.PetShopData.Selected = {}
+    tabs.inventory.PetShopData.SelectedList = {}
+    buyPetLabel:SetText("Selected Pets: None")
+end)
+
+-- Auras
+tabs.inventory:AddSection("Auras")
+
+local buyAuraLabel = tabs.inventory:AddLabel("Selected Auras: None")
+
+local auraDropdown = tabs.inventory:AddDropdown("Choose Aura", function(text)
+    if not tabs.inventory.AuraData.Selected[text] then
+        tabs.inventory.AuraData.Selected[text] = true
+        table.insert(tabs.inventory.AuraData.SelectedList, text)
+    end
+    buyAuraLabel:SetText("Selected Auras: " .. (#tabs.inventory.AuraData.SelectedList > 0 and table.concat(tabs.inventory.AuraData.SelectedList, ", ") or "None"))
+end)
+for _, auraName in ipairs(tabs.inventory.AuraData.AuraList) do
+    auraDropdown:Add(auraName)
+end
+
+tabs.inventory:AddTextBox("Buy Amount:", function(text)
+    tabs.inventory.AuraData.BuyAmount = math.max(1, math.floor(tonumber(text) or 1))
+end, {clear = false})
+
+tabs.inventory:AddSwitch("Auto Buy Aura", function(bool)
+    _G.AutoHatchAura = bool
+    if not bool then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.AutoHatchAura do
+            for _, auraName in ipairs(tabs.inventory.AuraData.SelectedList) do
+                local selectedAura = tabs.inventory.PetShopFolder:FindFirstChild(auraName)
+                if selectedAura then
+                    for _ = 1, tabs.inventory.AuraData.BuyAmount do
+                        pcall(function()
+                            tabs.inventory.PetShopRemote:InvokeServer(selectedAura)
+                        end)
+                    end
+                end
+            end
+            task.wait(0.1)
+        end
+    end)
+end)
+
+-- Auto Evolve
+tabs.inventory:AddSection("Auto Evolve")
+
+tabs.inventory.EvolveData = {Selected = {}, SelectedList = {}, Amount = 1}
+
+local evolveLabel = tabs.inventory:AddLabel("Selected Pets: None")
+
+local evolveDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    if not tabs.inventory.EvolveData.Selected[text] then
+        tabs.inventory.EvolveData.Selected[text] = true
+        table.insert(tabs.inventory.EvolveData.SelectedList, text)
+    end
+    evolveLabel:SetText("Selected Pets: " .. (#tabs.inventory.EvolveData.SelectedList > 0 and table.concat(tabs.inventory.EvolveData.SelectedList, ", ") or "None"))
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    evolveDropdown:Add(petName)
+end
+
+tabs.inventory:AddTextBox("Evolve Amount:", function(text)
+    tabs.inventory.EvolveData.Amount = math.max(1, math.floor(tonumber(text) or 1))
+end, {clear = false})
+
+tabs.inventory.AutoEvolveRunning = false
+tabs.inventory:AddSwitch("Auto Evolve", function(state)
+    tabs.inventory.AutoEvolveRunning = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.inventory.AutoEvolveRunning do
+            for _, petName in ipairs(tabs.inventory.EvolveData.SelectedList) do
+                for _ = 1, tabs.inventory.EvolveData.Amount do
+                    pcall(function()
+                        services.ReplicatedStorage.rEvents.petEvolveEvent:FireServer("evolvePet", petName)
+                    end)
+                end
+            end
+            task.wait(0.5)
+        end
+    end)
+end)
+
+-- Auto Trade
+tabs.inventory:AddSection("Auto Trade")
+
+tabs.inventory.TradeData = {
+    SelectedPlayers = {},
+    SelectedPlayerList = {},
+    SelectedPets = {},
+    SelectedPetList = {},
+    Generation = 0,
+}
+
+local tradePlayerLabel = tabs.inventory:AddLabel("Selected Players: None")
+local tradePetLabel = tabs.inventory:AddLabel("Selected Pets: None")
+
+local tradePlayerDropdown = tabs.inventory:AddDropdown("Choose Player", function(name)
+    local username = name:match("| (.+)$") or name
+    if not tabs.inventory.TradeData.SelectedPlayers[username] then
+        tabs.inventory.TradeData.SelectedPlayers[username] = true
+        table.insert(tabs.inventory.TradeData.SelectedPlayerList, username)
+    end
+    tradePlayerLabel:SetText("Selected Players: " .. (#tabs.inventory.TradeData.SelectedPlayerList > 0 and table.concat(tabs.inventory.TradeData.SelectedPlayerList, ", ") or "None"))
+end)
+
+for _, p in ipairs(services.Players:GetPlayers()) do
+    if p ~= player then
+        tradePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end
+
+local tradePetDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    if not tabs.inventory.TradeData.SelectedPets[text] then
+        tabs.inventory.TradeData.SelectedPets[text] = true
+        table.insert(tabs.inventory.TradeData.SelectedPetList, text)
+    end
+    tradePetLabel:SetText("Selected Pets: " .. (#tabs.inventory.TradeData.SelectedPetList > 0 and table.concat(tabs.inventory.TradeData.SelectedPetList, ", ") or "None"))
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    tradePetDropdown:Add(petName)
+end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        tradePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    tradePlayerDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if tabs.inventory.TradeData.SelectedPlayers[p.Name] then
+        tabs.inventory.TradeData.SelectedPlayers[p.Name] = nil
+        for i, v in ipairs(tabs.inventory.TradeData.SelectedPlayerList) do
+            if v == p.Name then table.remove(tabs.inventory.TradeData.SelectedPlayerList, i) break end
+        end
+        tradePlayerLabel:SetText("Selected Players: " .. (#tabs.inventory.TradeData.SelectedPlayerList > 0 and table.concat(tabs.inventory.TradeData.SelectedPlayerList, ", ") or "None"))
+    end
+end)
+
+tabs.inventory.AutoTradeRunning = false
+tabs.inventory:AddSwitch("Auto Trade", function(state)
+    tabs.inventory.AutoTradeRunning = state
+    tabs.inventory.TradeData.Generation += 1
+    if not state then return end
+    local generation = tabs.inventory.TradeData.Generation
+
+    task.spawn(function()
+        while utils.isCurrent() and tabs.inventory.AutoTradeRunning and tabs.inventory.TradeData.Generation == generation do
+            if #tabs.inventory.TradeData.SelectedPlayerList > 0 and #tabs.inventory.TradeData.SelectedPetList > 0 then
+                for _, username in ipairs(tabs.inventory.TradeData.SelectedPlayerList) do
+                    local tradePlayer = services.Players:FindFirstChild(username)
+                    if not tabs.inventory.AutoTradeRunning or tabs.inventory.TradeData.Generation ~= generation then break end
+                    if tradePlayer then
+                        local tradingEvent = services.ReplicatedStorage.rEvents.tradingEvent
+                        local unique = player.petsFolder.Unique
+                        pcall(function()
+                            tradingEvent:FireServer("sendTradeRequest", tradePlayer)
+                        end)
+                        task.wait(0.5)
+                        local offered = 0
+                        local offeredPets = {}
+                        for _, selectedName in ipairs(tabs.inventory.TradeData.SelectedPetList) do
+                            for _, pet in ipairs(unique:GetChildren()) do
+                                if pet.Name == selectedName and not offeredPets[pet] and offered < 6 then
+                                    pcall(function()
+                                        tradingEvent:FireServer("offerItem", pet)
+                                    end)
+                                    offeredPets[pet] = true
+                                    offered = offered + 1
+                                    task.wait(0.05)
+                                    break
+                                end
+                            end
+                        end
+                        if offered > 0 then
+                            task.wait(0.5)
+                            pcall(function()
+                                tradingEvent:FireServer("acceptTrade")
+                            end)
+                            task.wait(2)
+                        end
+                    end
+                end
+            end
+            task.wait(2)
+        end
+    end)
+end)
+
+utils.notify("HonenxWhite", "Tab Boss + Pets cargado ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB BOOSTS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boosts:AddSection("Boost Eater")
+
+tabs.boosts.EggEaterData = {Running = false}
+
+tabs.boosts:AddSwitch("Eat All Eggs", function(state)
+    tabs.boosts.EggEaterData.Running = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.boosts.EggEaterData.Running do
+            local char = player.Character
+            local egg = char and char:FindFirstChild("Protein Egg") or player.Backpack:FindFirstChild("Protein Egg")
+            if egg then
+                pcall(function()
+                    player.muscleEvent:FireServer("proteinEgg", egg)
+                end)
+            end
+            task.wait(0.25)
+        end
+    end)
+end):Set(false)
+
+tabs.boosts.BoostData = {
+    ItemList = {"Tropical Shake", "Energy Shake", "Protein Bar", "TOUGH Bar", "Protein Shake", "ULTRA Shake", "Energy Bar"},
+    Running = false,
+}
+
+tabs.boosts:AddSwitch("Eat All Boosts (expect lag)", function(state)
+    tabs.boosts.BoostData.Running = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.boosts.BoostData.Running do
+            local char = player.Character
+            for _, itemName in ipairs(tabs.boosts.BoostData.ItemList) do
+                local tool = char and char:FindFirstChild(itemName) or player.Backpack:FindFirstChild(itemName)
+                if tool then
+                    local parts = {}
+                    for word in itemName:gmatch("%S+") do
+                        table.insert(parts, word:lower())
+                    end
+                    for i = 2, #parts do
+                        parts[i] = parts[i]:sub(1, 1):upper() .. parts[i]:sub(2)
+                    end
+                    for _ = 1, 10 do
+                        pcall(function()
+                            player.muscleEvent:FireServer(table.concat(parts), tool)
+                        end)
+                    end
+                end
+            end
+            task.wait(0.1)
+        end
+    end)
+end)
+
+-- Egg Gifter
+tabs.boosts:AddSection("Egg Gifter")
+
+tabs.boosts.EggGifterData = {
+    SelectedPlayer = nil,
+    EggCount = 0,
+}
+
+local eggCountLabel = tabs.boosts:AddLabel("Protein Eggs: 0")
+
+local eggPlayerDropdown = tabs.boosts:AddDropdown("Choose Player", function(name)
+    local username = name:match("| (.+)$") or name
+    tabs.boosts.EggGifterData.SelectedPlayer = services.Players:FindFirstChild(username)
+end)
+
+for _, p in ipairs(services.Players:GetPlayers()) do
+    if p ~= player then
+        eggPlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        eggPlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    eggPlayerDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if tabs.boosts.EggGifterData.SelectedPlayer == p then
+        tabs.boosts.EggGifterData.SelectedPlayer = nil
+    end
+end)
+
+local eggAmountBox = tabs.boosts:AddTextBox("Amount:", function(text)
+    local n = tonumber(text)
+    if n then
+        tabs.boosts.EggGifterData.EggCount = math.max(0, math.floor(n))
+    end
+end, {clear = false})
+
+tabs.boosts:AddButton("Start Gifting Eggs", function()
+    local amount = tonumber(eggAmountBox.Text) or tabs.boosts.EggGifterData.EggCount
+    amount = math.max(0, math.floor(amount))
+    tabs.boosts.EggGifterData.EggCount = amount
+
+    if not tabs.boosts.EggGifterData.SelectedPlayer or amount == 0 then
+        utils.notify("Egg Gifter", "Configurá jugador y cantidad", 2, "warning")
+        return
+    end
+
+    task.spawn(function()
+        for _ = 1, amount do
+            local egg = player:FindFirstChild("consumablesFolder") and player.consumablesFolder:FindFirstChild("Protein Egg")
+            if not egg then break end
+            pcall(function()
+                services.ReplicatedStorage.rEvents.giftRemote:InvokeServer("giftRequest", tabs.boosts.EggGifterData.SelectedPlayer, egg)
+            end)
+            task.wait(0.1)
+        end
+        utils.notify("Egg Gifter", "Envío completado", 3, "success")
+    end)
+end)
+
+-- Shake Gifter
+tabs.boosts:AddSection("Shake Gifter")
+
+tabs.boosts.ShakeGifterData = {
+    SelectedPlayer = nil,
+    ShakeCount = 0,
+}
+
+local shakeCountLabel = tabs.boosts:AddLabel("Tropical Shakes: 0")
+
+local shakePlayerDropdown = tabs.boosts:AddDropdown("Choose Player", function(name)
+    local username = name:match("| (.+)$") or name
+    tabs.boosts.ShakeGifterData.SelectedPlayer = services.Players:FindFirstChild(username)
+end)
+
+for _, p in ipairs(services.Players:GetPlayers()) do
+    if p ~= player then
+        shakePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        shakePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    shakePlayerDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if tabs.boosts.ShakeGifterData.SelectedPlayer == p then
+        tabs.boosts.ShakeGifterData.SelectedPlayer = nil
+    end
+end)
+
+local shakeAmountBox = tabs.boosts:AddTextBox("Amount:", function(text)
+    local n = tonumber(text)
+    if n then
+        tabs.boosts.ShakeGifterData.ShakeCount = math.max(0, math.floor(n))
+    end
+end, {clear = false})
+
+tabs.boosts:AddButton("Start Gifting Shakes", function()
+    local amount = tonumber(shakeAmountBox.Text) or tabs.boosts.ShakeGifterData.ShakeCount
+    amount = math.max(0, math.floor(amount))
+    tabs.boosts.ShakeGifterData.ShakeCount = amount
+
+    if not tabs.boosts.ShakeGifterData.SelectedPlayer or amount == 0 then
+        utils.notify("Shake Gifter", "Configurá jugador y cantidad", 2, "warning")
+        return
+    end
+
+    task.spawn(function()
+        for _ = 1, amount do
+            local shake = player:FindFirstChild("consumablesFolder") and player.consumablesFolder:FindFirstChild("Tropical Shake")
+            if not shake then break end
+            pcall(function()
+                services.ReplicatedStorage.rEvents.giftRemote:InvokeServer("giftRequest", tabs.boosts.ShakeGifterData.SelectedPlayer, shake)
+            end)
+            task.wait(0.1)
+        end
+        utils.notify("Shake Gifter", "Envío completado", 3, "success")
+    end)
+end)
+
+-- Contador en vivo
+task.spawn(function()
+    while utils.isCurrent() do
+        local eggCount = 0
+        local shakeCount = 0
+        local char = player.Character
+        if char then
+            for _, item in ipairs(char:GetChildren()) do
+                if item.Name == "Protein Egg" then eggCount = eggCount + 1
+                elseif item.Name == "Tropical Shake" then shakeCount = shakeCount + 1 end
+            end
+        end
+        for _, item in ipairs(player.Backpack:GetChildren()) do
+            if item.Name == "Protein Egg" then eggCount = eggCount + 1
+            elseif item.Name == "Tropical Shake" then shakeCount = shakeCount + 1 end
+        end
+        eggCountLabel:SetText("Protein Eggs: " .. eggCount)
+        shakeCountLabel:SetText("Tropical Shakes: " .. shakeCount)
+        task.wait(2)
+    end
+end)
+
+tabs.boosts:AddLabel("Interfiere con Boosts regalados. Subí a una máquina para menos lag.")
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB TELEPORTS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.teleport:AddSection("Main")
+
+tabs.teleport.Locations = {
+    {name = "Tiny Island", pos = CFrame.new(-37.1, 9.2, 1919)},
+    {name = "Main Island", pos = CFrame.new(16.07, 9.08, 133.8)},
+    {name = "Beach", pos = CFrame.new(-8, 9, -169.2)},
+}
+
+for _, loc in ipairs(tabs.teleport.Locations) do
+    tabs.teleport:AddButton(loc.name, function()
+        local char = player.Character
+        if char then
+            local root = char:FindFirstChild("HumanoidRootPart")
+            if root then
+                root.CFrame = loc.pos
+                utils.notify("Teleport", "Teletransportado a " .. loc.name, 1.5, "success")
+            end
+        end
+    end)
+end
+
+tabs.teleport:AddSection("Gyms")
+
+tabs.teleport.GymLocations = {
+    {name = "Overcharged Gym", pos = CFrame.new(-2941.766, 151.797, 4994.552)},
+    {name = "Industrial Gym", pos = CFrame.new(-5254.681641, 58.342850, 4931.850586)},
+    {name = "Jungle Gym", pos = CFrame.new(-8543, 6.8, 2400)},
+    {name = "Muscle King Gym", pos = CFrame.new(-8665.4, 17.21, -5792.9)},
+    {name = "Legends Gym", pos = CFrame.new(4516, 991.5, -3856)},
+    {name = "Infernal Gym", pos = CFrame.new(-6759, 7.36, -1284)},
+    {name = "Mythical Gym", pos = CFrame.new(2250, 7.37, 1073.2)},
+    {name = "Frost Gym", pos = CFrame.new(-2623, 7.36, -409)},
+}
+
+for _, gym in ipairs(tabs.teleport.GymLocations) do
+    tabs.teleport:AddButton(gym.name, function()
+        local char = player.Character
+        if char then
+            local root = char:FindFirstChild("HumanoidRootPart")
+            if root then
+                root.CFrame = gym.pos
+                utils.notify("Teleport", "Teletransportado a " .. gym.name, 1.5, "success")
+            end
+        end
+    end)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB STATS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.stats:AddSection("Métricas en Tiempo Real")
+
+tabs.stats.Data = {
+    StartTime = tick(),
+    StartStrength = player.leaderstats:WaitForChild("Strength").Value,
+    StartRebirths = player.leaderstats:WaitForChild("Rebirths").Value,
+}
+
+local strengthGainedLabel = tabs.stats:AddLabel("Fuerza ganada: 0")
+local strengthHourLabel = tabs.stats:AddLabel("x 1 Hora: 0")
+local strengthDayLabel = tabs.stats:AddLabel("x 1 Día: 0")
+local strengthWeekLabel = tabs.stats:AddLabel("x 1 Semana: 0")
+
+tabs.stats:AddLabel("")
+
+local rebirthsGainedLabel = tabs.stats:AddLabel("Rebirths ganados: 0")
+local rebirthsHourLabel = tabs.stats:AddLabel("x 1 Hora: 0")
+local rebirthsDayLabel = tabs.stats:AddLabel("x 1 Día: 0")
+local rebirthsWeekLabel = tabs.stats:AddLabel("x 1 Semana: 0")
+
+tabs.stats:AddLabel("")
+
+local sessionTimeLabel = tabs.stats:AddLabel("Tiempo en sesión: 0s")
+
+local function formatStat(n)
+    if n == nil or n ~= n then return "0" end
+    local absN = math.abs(n)
+    local sign = n < 0 and "-" or ""
+    if absN >= 1e18 then return sign .. string.format("%.2fqi", absN / 1e18)
+    elseif absN >= 1e15 then return sign .. string.format("%.2fqa", absN / 1e15)
+    elseif absN >= 1e12 then return sign .. string.format("%.2ft", absN / 1e12)
+    elseif absN >= 1e9 then return sign .. string.format("%.2fb", absN / 1e9)
+    elseif absN >= 1e6 then return sign .. string.format("%.2fm", absN / 1e6)
+    elseif absN >= 1e3 then return sign .. string.format("%.2fk", absN / 1e3)
+    elseif absN >= 1 then return sign .. string.format("%.0f", absN)
+    else return sign .. string.format("%.2f", absN) end
+end
+
+local function formatTiempo(segundos)
+    if segundos < 60 then return string.format("%ds", math.floor(segundos))
+    elseif segundos < 3600 then return string.format("%dm %ds", math.floor(segundos / 60), math.floor(segundos % 60))
+    elseif segundos < 86400 then return string.format("%dh %dm", math.floor(segundos / 3600), math.floor((segundos % 3600) / 60))
+    else return string.format("%dd %dh", math.floor(segundos / 86400), math.floor((segundos % 86400) / 3600)) end
+end
+
+task.spawn(function()
+    while utils.isCurrent() do
+        local now = tick()
+        local elapsed = now - tabs.stats.Data.StartTime
+        if elapsed > 0.5 then
+            local curStrength = player.leaderstats.Strength.Value
+            local curRebirths = player.leaderstats.Rebirths.Value
+            local gainS = curStrength - tabs.stats.Data.StartStrength
+            local gainR = curRebirths - tabs.stats.Data.StartRebirths
+            local rateS = (gainS / elapsed) * 3600
+            local rateR = (gainR / elapsed) * 3600
+            strengthGainedLabel:SetText("Fuerza ganada: " .. formatStat(gainS))
+            strengthHourLabel:SetText("x 1 Hora: " .. formatStat(rateS))
+            strengthDayLabel:SetText("x 1 Día: " .. formatStat(rateS * 24))
+            strengthWeekLabel:SetText("x 1 Semana: " .. formatStat(rateS * 24 * 7))
+            rebirthsGainedLabel:SetText("Rebirths ganados: " .. formatStat(gainR))
+            rebirthsHourLabel:SetText("x 1 Hora: " .. formatStat(rateR))
+            rebirthsDayLabel:SetText("x 1 Día: " .. formatStat(rateR * 24))
+            rebirthsWeekLabel:SetText("x 1 Semana: " .. formatStat(rateR * 24 * 7))
+            sessionTimeLabel:SetText("Tiempo en sesión: " .. formatTiempo(elapsed))
+        end
+        task.wait(1)
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB INFO (ACTUALIZADO)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.info:AddSection("Información")
+tabs.info:AddLabel("HonenxWhite | Reborn")
+tabs.info:AddLabel("Version 2.0 - KNI UI")
+tabs.info:AddLabel("Made by Honen / cyanam1 / White")
+tabs.info:AddLabel("")
+
+tabs.info:AddButton("📋 Copiar Discord", function()
+    if setclipboard then
+        setclipboard("https://discord.gg/bVDtwKF92")
+        utils.notify("Discord", "Link copiado", 2, "success")
+    end
+end)
+
+tabs.info:AddLabel("")
+tabs.info:AddLabel("Contributors:")
+tabs.info:AddLabel("- cyanam1 (@honey)")
+tabs.info:AddLabel("- White @chilin6369")
+tabs.info:AddLabel("- Honen @Owner")
+tabs.info:AddLabel("")
+tabs.info:AddLabel("KNI UI - v2.0")
+
+-- ═══════════════════════════════════════════════════════════════
+-- ANTI-AFK INDEPENDIENTE
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.main:AddSection("Anti-AFK")
+
+_G.HonenxAntiAFK = true
+tabs.main.AntiAFKSwitch = tabs.main:AddSwitch("Anti AFK", function(state)
+    _G.HonenxAntiAFK = state
+    if state then
+        utils.notify("Anti-AFK", "✅ Activado", 2, "success")
+    else
+        utils.notify("Anti-AFK", "❌ Desactivado", 2, "info")
+    end
+end)
+tabs.main.AntiAFKSwitch:Set(true)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        task.wait(60)
+        if _G.HonenxAntiAFK then
+            pcall(function()
+                services.VirtualUser:CaptureController()
+                services.VirtualUser:ClickButton2(Vector2.new(0, 0))
+                services.VirtualUser:ClickButton1(Vector2.new(0, 0))
+            end)
+        end
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- CIERRE
+-- ═══════════════════════════════════════════════════════════════
+
+utils.notify("HonenxWhite", "🎉 Hub completo cargado correctamente", 4, "success")
+print("[HonenxWhite] Script cargado al 100%")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 2: Spectate completo + Kill Aura completa
+-- Reemplaza las versiones simples del Mensaje 2 viejo
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- SPECTATE COMPLETO (con CameraMonitorLoop + LocalPlayerRespawn)
+-- ═══════════════════════════════════════════════════════════════
+
+getgenv().SpectateState = getgenv().SpectateState or {
+    SavedUserId = nil,
+    IsSpectating = false,
+}
+
+tabs.killing.SpectateData = {
+    SelectedPlayer = nil,
+    SelectedPlayerUserId = nil,
+    Spectating = false,
+    CurrentTargetConnection = nil,
+    LocalPlayerRespawnConnection = nil,
+    CameraMonitorLoop = nil,
+}
+
+tabs.killing.stopSpectating = function()
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    if tabs.killing.SpectateData.CameraMonitorLoop then
+        tabs.killing.SpectateData.CameraMonitorLoop = false
+    end
+    local localPlayer = services.Players.LocalPlayer
+    if localPlayer.Character then
+        local humanoid = localPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = humanoid
+            utils.playerData.Camera.CameraType = Enum.CameraType.Custom
+        end
+    end
+    if utils.playerData.Humanoid and utils.playerData.Camera then
+        utils.playerData.Camera.CameraSubject = utils.playerData.Humanoid
+    end
+end
+
+tabs.killing.startCameraMonitor = function()
+    if tabs.killing.SpectateData.CameraMonitorLoop then
+        tabs.killing.SpectateData.CameraMonitorLoop = false
+        task.wait(0.3)
+    end
+    tabs.killing.SpectateData.CameraMonitorLoop = true
+    task.spawn(function()
+        while utils.isCurrent() and tabs.killing.SpectateData.CameraMonitorLoop do
+            task.wait(0.2)
+            if tabs.killing.SpectateData.Spectating and tabs.killing.SpectateData.SelectedPlayer then
+                local targetChar = tabs.killing.SpectateData.SelectedPlayer.Character
+                if targetChar then
+                    local targetHumanoid = targetChar:FindFirstChildOfClass("Humanoid")
+                    if targetHumanoid and utils.playerData.Camera then
+                        if utils.playerData.Camera.CameraSubject ~= targetHumanoid then
+                            utils.playerData.Camera.CameraSubject = targetHumanoid
+                        end
+                    end
+                end
+            else
+                break
+            end
+        end
+    end)
+end
+
+tabs.killing.updateSpectateTarget = function(p)
+    if not p then
+        if tabs.killing.SpectateData.SelectedPlayerUserId then
+            for _, candidate in ipairs(services.Players:GetPlayers()) do
+                if candidate.UserId == tabs.killing.SpectateData.SelectedPlayerUserId then
+                    p = candidate
+                    tabs.killing.SpectateData.SelectedPlayer = p
+                    break
+                end
+            end
+        end
+        if not p and getgenv().SpectateState.SavedUserId then
+            for _, candidate in ipairs(services.Players:GetPlayers()) do
+                if candidate.UserId == getgenv().SpectateState.SavedUserId then
+                    p = candidate
+                    tabs.killing.SpectateData.SelectedPlayer = p
+                    tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+                    break
+                end
+            end
+        end
+        if not p then
+            tabs.killing.stopSpectating()
+            return
+        end
+    end
+    tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+    tabs.killing.SpectateData.SelectedPlayer = p
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    local function setCamera(char)
+        if not tabs.killing.SpectateData.Spectating or tabs.killing.SpectateData.SelectedPlayerUserId ~= p.UserId then return end
+        local humanoid = char:WaitForChild("Humanoid", 3)
+        if humanoid and tabs.killing.SpectateData.Spectating and tabs.killing.SpectateData.SelectedPlayerUserId == p.UserId then
+            if utils.playerData.Camera then
+                utils.playerData.Camera.CameraSubject = humanoid
+            end
+        end
+    end
+    if p.Character then setCamera(p.Character) end
+    tabs.killing.SpectateData.CurrentTargetConnection = utils.connect(p.CharacterAdded, function(newChar)
+        if tabs.killing.SpectateData.Spectating and tabs.killing.SpectateData.SelectedPlayerUserId == p.UserId then
+            setCamera(newChar)
+        end
+    end)
+end
+
+-- Conexión de respawn del LocalPlayer
+if tabs.killing.SpectateData.LocalPlayerRespawnConnection then
+    tabs.killing.SpectateData.LocalPlayerRespawnConnection:Disconnect()
+end
+tabs.killing.SpectateData.LocalPlayerRespawnConnection = utils.connect(player.CharacterAdded, function(char)
+    local humanoid = char:WaitForChild("Humanoid", 3)
+    if humanoid then
+        utils.playerData.Humanoid = humanoid
+    end
+    task.wait(0.5)
+    if getgenv().SpectateState.IsSpectating then
+        tabs.killing.SpectateData.Spectating = true
+        tabs.killing.updateSpectateTarget()
+        tabs.killing.startCameraMonitor()
+    else
+        if utils.playerData.Humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = utils.playerData.Humanoid
+        end
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- KILL AURA COMPLETA (con Frozen + Generation + Anti-Gravity opcional)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.killing.KillAuraFull = {
+    RingPart = nil,
+    RingColor = Color3.fromRGB(145, 77, 255),
+    RingTransparency = 0.6,
+    CenterCFrame = nil,
+    Frozen = false,
+    Generation = 0,
+    Enabled = false,
+    Range = 20,
+}
+
+_G.showDeathRing = false
+_G.deathRingEnabled = false
+_G.deathRingRange = 20
+
+-- Destruir anillo viejo si existe
+local staleRing = workspace:FindFirstChild("HonenxWhiteKillAuraRing")
+if staleRing then staleRing:Destroy() end
+
+local ringColors = {
+    {Name = "HonenxWhite", Color = Color3.fromRGB(145, 77, 255)},
+    {Name = "Red", Color = Color3.fromRGB(255, 60, 60)},
+    {Name = "Orange", Color = Color3.fromRGB(255, 128, 0)},
+    {Name = "Yellow", Color = Color3.fromRGB(255, 230, 0)},
+    {Name = "Lime", Color = Color3.fromRGB(128, 255, 0)},
+    {Name = "Green", Color = Color3.fromRGB(0, 200, 70)},
+    {Name = "Cyan", Color = Color3.fromRGB(0, 220, 255)},
+    {Name = "Blue", Color = Color3.fromRGB(0, 100, 255)},
+    {Name = "Purple", Color = Color3.fromRGB(145, 70, 255)},
+    {Name = "Pink", Color = Color3.fromRGB(255, 80, 180)},
+    {Name = "White", Color = Color3.fromRGB(255, 255, 255)},
+    {Name = "Black", Color = Color3.fromRGB(0, 0, 0)},
+}
+
+local ringColorDropdown = tabs.killing:AddDropdown("Ring Color", function(selection)
+    for _, colorData in ipairs(ringColors) do
+        if colorData.Name == selection then
+            tabs.killing.KillAuraFull.RingColor = colorData.Color
+            if tabs.killing.KillAuraFull.RingPart then
+                tabs.killing.KillAuraFull.RingPart.Color = colorData.Color
+            end
+            break
+        end
+    end
+end)
+for _, colorData in ipairs(ringColors) do
+    ringColorDropdown:Add(colorData.Name)
+end
+
+tabs.killing.destroyKillAuraRing = function()
+    if tabs.killing.KillAuraFull.RingPart then
+        tabs.killing.KillAuraFull.RingPart:Destroy()
+        tabs.killing.KillAuraFull.RingPart = nil
+    end
+end
+
+tabs.killing.createKillAuraRing = function()
+    tabs.killing.destroyKillAuraRing()
+    local oldRing = workspace:FindFirstChild("HonenxWhiteKillAuraRing")
+    if oldRing then oldRing:Destroy() end
+
+    local ring = Instance.new("Part")
+    ring.Name = "HonenxWhiteKillAuraRing"
+    ring.Shape = Enum.PartType.Cylinder
+    ring.Material = Enum.Material.Neon
+    ring.Color = tabs.killing.KillAuraFull.RingColor
+    ring.Transparency = tabs.killing.KillAuraFull.RingTransparency
+    ring.Anchored = true
+    ring.CanCollide = false
+    ring.CanTouch = false
+    ring.CanQuery = false
+    ring.CastShadow = false
+    ring.Size = Vector3.new(0.2, _G.deathRingRange * 2, _G.deathRingRange * 2)
+    if tabs.killing.KillAuraFull.CenterCFrame then
+        ring.CFrame = tabs.killing.KillAuraFull.CenterCFrame * CFrame.Angles(0, 0, math.rad(90))
+    end
+    ring.Parent = workspace
+    tabs.killing.KillAuraFull.RingPart = ring
+end
+
+tabs.killing.updateKillAuraRing = function()
+    if tabs.killing.KillAuraFull.RingPart and tabs.killing.KillAuraFull.CenterCFrame then
+        tabs.killing.KillAuraFull.RingPart.CFrame = tabs.killing.KillAuraFull.CenterCFrame * CFrame.Angles(0, 0, math.rad(90))
+    end
+end
+
+tabs.killing.ShowRingSwitch = tabs.killing:AddSwitch("Show Ring", function(bool)
+    if bool and not _G.deathRingEnabled then
+        _G.showDeathRing = false
+        tabs.killing.ShowRingSwitch:Set(false, true)
+        return
+    end
+    _G.showDeathRing = bool
+    if bool then
+        tabs.killing.createKillAuraRing()
+    else
+        tabs.killing.destroyKillAuraRing()
+    end
+end)
+
+-- Toggle Ring worker completo
+tabs.killing:AddSwitch("Toggle Ring (Kill Aura)", function(bool)
+    _G.deathRingEnabled = bool
+    tabs.killing.KillAuraFull.Enabled = bool
+    tabs.killing.KillAuraFull.Generation += 1
+    local generation = tabs.killing.KillAuraFull.Generation
+
+    if not bool then
+        if tabs.killing.ShowRingSwitch and _G.showDeathRing then
+            tabs.killing.ShowRingSwitch:Set(false, true)
+        end
+        return
+    end
+
+    local _, _, initialRoot = tabs.killing.getLocalCombatCharacter()
+    if initialRoot then
+        tabs.killing.KillAuraFull.CenterCFrame = initialRoot.CFrame
+    end
+
+    -- Loop de actualización del anillo
+    task.spawn(function()
+        while utils.isCurrent() and _G.deathRingEnabled and tabs.killing.KillAuraFull.Generation == generation do
+            local _, _, localRoot = tabs.killing.getLocalCombatCharacter()
+            if localRoot and not tabs.killing.KillAuraFull.Frozen then
+                tabs.killing.KillAuraFull.CenterCFrame = localRoot.CFrame
+            end
+            tabs.killing.updateKillAuraRing()
+            services.RunService.RenderStepped:Wait()
+        end
+    end)
+
+    -- Loop de ataque
+    task.spawn(function()
+        while utils.isCurrent() and _G.deathRingEnabled and tabs.killing.KillAuraFull.Generation == generation do
+            if tabs.killing.KillAuraFull.Frozen or not tabs.killing.KillAuraFull.CenterCFrame then
+                task.wait(0.05)
+                continue
+            end
+
+            local centerCFrame = tabs.killing.KillAuraFull.CenterCFrame
+            local attackedPlayer = false
+
+            for _, targetPlayer in ipairs(services.Players:GetPlayers()) do
+                if not _G.deathRingEnabled or tabs.killing.KillAuraFull.Generation ~= generation then break end
+                local targetRoot = targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+                if targetPlayer ~= player
+                    and not tabs.killing.isWhitelisted(targetPlayer)
+                    and tabs.killing.isPlayerAlive(targetPlayer)
+                    and not tabs.killing.isSpawnProtected(targetPlayer)
+                    and targetRoot
+                    and (centerCFrame.Position - targetRoot.Position).Magnitude <= _G.deathRingRange then
+
+                    attackedPlayer = true
+                    tabs.killing.KillAuraFull.Frozen = true
+                    tabs.killing.KillAuraFull.CenterCFrame = centerCFrame
+                    tabs.killing.updateKillAuraRing()
+
+                    tabs.killing.attackPlayerWithLimit(targetPlayer, 4, function()
+                        local currentTargetRoot = targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+                        return _G.deathRingEnabled
+                            and tabs.killing.KillAuraFull.Generation == generation
+                            and not tabs.killing.isWhitelisted(targetPlayer)
+                            and currentTargetRoot
+                            and (centerCFrame.Position - currentTargetRoot.Position).Magnitude <= _G.deathRingRange
+                    end, 3.5)
+
+                    -- Volver al centro después del ataque
+                    for _ = 1, 4 do
+                        local _, _, currentLocalRoot = tabs.killing.getLocalCombatCharacter()
+                        if currentLocalRoot then
+                            currentLocalRoot.CFrame = centerCFrame
+                            currentLocalRoot.AssemblyLinearVelocity = Vector3.zero
+                            currentLocalRoot.AssemblyAngularVelocity = Vector3.zero
+                        end
+                        tabs.killing.KillAuraFull.CenterCFrame = centerCFrame
+                        tabs.killing.updateKillAuraRing()
+                        services.RunService.Heartbeat:Wait()
+                    end
+                    tabs.killing.KillAuraFull.Frozen = false
+                end
+            end
+
+            if not attackedPlayer then
+                task.wait(0.05)
+            end
+        end
+        tabs.killing.KillAuraFull.Frozen = false
+    end)
+end)
+
+-- Slider para el rango del Kill Aura
+tabs.killing:AddSlider("Kill Aura Range", 1, 140, 20, function(value)
+    _G.deathRingRange = value
+    tabs.killing.KillAuraFull.Range = value
+    if tabs.killing.KillAuraFull.RingPart then
+        tabs.killing.KillAuraFull.RingPart.Size = Vector3.new(0.2, value * 2, value * 2)
+    end
+end)
+
+utils.notify("HonenxWhite", "Mensaje 2 cargado: Spectate + Kill Aura completos ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 3: Farming completo (Squat/Lift/Better Strength/Leave)
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- AUTO SQUAT / AUTO LIFT CON MAQUINAS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming.MachinesFolder = workspace:WaitForChild("machinesFolder")
+
+tabs.farming.SquatsByName = {}
+tabs.farming.SquatMachineNames = {}
+tabs.farming.LiftMachineNames = {}
+
+tabs.farming.MachineExerciseData = {
+    Squat = {SelectedMachine = nil, ActiveMachine = nil, Running = false, Generation = 0, ReenterAt = 0, SeatPart = nil, Choices = {}},
+    Lift = {SelectedMachine = nil, ActiveMachine = nil, Running = false, Generation = 0, ReenterAt = 0, SeatPart = nil, Choices = {}},
+}
+
+-- Escanear máquinas
+for _, machine in ipairs(tabs.farming.MachinesFolder:GetChildren()) do
+    local lowerName = string.lower(machine.Name)
+    if string.find(lowerName, "squat", 1, true) and lowerName ~= "squat rack" then
+        tabs.farming.SquatsByName[machine.Name] = tabs.farming.SquatsByName[machine.Name] or {}
+        table.insert(tabs.farming.SquatsByName[machine.Name], machine)
+    elseif string.find(lowerName, "lift", 1, true) and lowerName ~= "deadlift" then
+        tabs.farming.MachineExerciseData.Lift.Choices[machine.Name] = machine
+        table.insert(tabs.farming.LiftMachineNames, machine.Name)
+    end
+end
+
+for machineName, matchingSquats in pairs(tabs.farming.SquatsByName) do
+    tabs.farming.MachineExerciseData.Squat.Choices[machineName] = matchingSquats[1]
+    table.insert(tabs.farming.SquatMachineNames, machineName)
+end
+
+table.sort(tabs.farming.SquatMachineNames)
+table.sort(tabs.farming.LiftMachineNames)
+
+tabs.farming.getMachineInteractPart = function(machine)
+    for _, descendant in ipairs(machine:GetDescendants()) do
+        if descendant:IsA("BasePart") and string.lower(descendant.Name) == "interactseat" then
+            return descendant
+        end
+    end
+end
+
+tabs.farming.enterExerciseMachine = function(machine)
+    if not machine or not machine.Parent then return false end
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoidRootPart = character:WaitForChild("HumanoidRootPart", 5)
+    local interactPart = tabs.farming.getMachineInteractPart(machine)
+    if not humanoidRootPart or not interactPart then return false end
+
+    humanoidRootPart.CFrame = interactPart.CFrame * CFrame.new(0, 3, 0)
+    humanoidRootPart.AssemblyLinearVelocity = Vector3.zero
+    humanoidRootPart.AssemblyAngularVelocity = Vector3.zero
+    task.wait(0.4)
+    services.VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.E, false, game)
+    task.wait(0.1)
+    services.VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.E, false, game)
+    task.wait(0.4)
+    return true
+end
+
+tabs.farming.startMachineExercise = function(machineData)
+    machineData.Generation += 1
+    local generation = machineData.Generation
+    local lastCharacter = player.Character
+
+    task.spawn(function()
+        while utils.isCurrent() and machineData.Running and machineData.Generation == generation do
+            local character = player.Character
+            local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+
+            if character ~= lastCharacter then
+                lastCharacter = character
+                machineData.ActiveMachine = nil
+                machineData.SeatPart = nil
+                machineData.ReenterAt = os.clock() + 3.5
+            end
+
+            if not character or not humanoid or humanoid.Health <= 0 then
+                machineData.ActiveMachine = nil
+                machineData.SeatPart = nil
+                machineData.ReenterAt = math.max(machineData.ReenterAt, os.clock() + 3.5)
+                task.wait(0.1)
+                continue
+            end
+
+            local humanoidState = humanoid:GetState()
+            local jumpedOff = machineData.ActiveMachine and (
+                humanoidState == Enum.HumanoidStateType.Jumping
+                or humanoidState == Enum.HumanoidStateType.Freefall
+                or (machineData.SeatPart and humanoid.SeatPart ~= machineData.SeatPart)
+            )
+
+            if jumpedOff then
+                machineData.ActiveMachine = nil
+                machineData.SeatPart = nil
+                machineData.ReenterAt = os.clock() + 3.5
+            end
+
+            if machineData.SelectedMachine and not machineData.ActiveMachine and os.clock() >= machineData.ReenterAt then
+                if tabs.farming.enterExerciseMachine(machineData.SelectedMachine) then
+                    machineData.ActiveMachine = machineData.SelectedMachine
+                    machineData.SeatPart = humanoid.SeatPart
+                end
+            end
+
+            task.wait(0.1)
+        end
+    end)
+end
+
+tabs.farming.setMachineExerciseState = function(machineData, otherMachineData, state)
+    machineData.Running = state
+    machineData.Generation += 1
+    machineData.ActiveMachine = nil
+    machineData.SeatPart = nil
+    machineData.ReenterAt = 0
+
+    if not state then return end
+    if tabs.farming.ToolExerciseSwitch and tabs.farming.ExerciseData.AutoFarm then
+        tabs.farming.ToolExerciseSwitch:Set(false, true)
+    end
+    if otherMachineData.Running then
+        if machineData == tabs.farming.MachineExerciseData.Squat and tabs.farming.LiftExerciseSwitch then
+            tabs.farming.LiftExerciseSwitch:Set(false, true)
+        elseif machineData == tabs.farming.MachineExerciseData.Lift and tabs.farming.SquatExerciseSwitch then
+            tabs.farming.SquatExerciseSwitch:Set(false, true)
+        end
+    end
+    tabs.farming.startMachineExercise(machineData)
+    task.spawn(function()
+        while utils.isCurrent() and machineData.Running and machineData.Generation == generation do
+            if machineData.ActiveMachine then
+                pcall(function()
+                    player.muscleEvent:FireServer("rep")
+                end)
+            end
+            task.wait(0.1)
+        end
+    end, machineData.Generation)
+end
+
+-- Dropdowns y switches
+local squatDropdown = tabs.farming:AddDropdown("Select Squat", function(selection)
+    tabs.farming.MachineExerciseData.Squat.SelectedMachine = tabs.farming.MachineExerciseData.Squat.Choices[selection]
+    tabs.farming.MachineExerciseData.Squat.ActiveMachine = nil
+    tabs.farming.MachineExerciseData.Squat.SeatPart = nil
+    tabs.farming.MachineExerciseData.Squat.ReenterAt = 0
+end)
+for _, machineName in ipairs(tabs.farming.SquatMachineNames) do
+    squatDropdown:Add(machineName)
+end
+
+tabs.farming.SquatExerciseSwitch = tabs.farming:AddSwitch("Auto Squat", function(state)
+    tabs.farming.setMachineExerciseState(tabs.farming.MachineExerciseData.Squat, tabs.farming.MachineExerciseData.Lift, state)
+end)
+
+local liftDropdown = tabs.farming:AddDropdown("Select Lift", function(selection)
+    tabs.farming.MachineExerciseData.Lift.SelectedMachine = tabs.farming.MachineExerciseData.Lift.Choices[selection]
+    tabs.farming.MachineExerciseData.Lift.ActiveMachine = nil
+    tabs.farming.MachineExerciseData.Lift.SeatPart = nil
+    tabs.farming.MachineExerciseData.Lift.ReenterAt = 0
+end)
+for _, machineName in ipairs(tabs.farming.LiftMachineNames) do
+    liftDropdown:Add(machineName)
+end
+
+tabs.farming.LiftExerciseSwitch = tabs.farming:AddSwitch("Auto Lift", function(state)
+    tabs.farming.setMachineExerciseState(tabs.farming.MachineExerciseData.Lift, tabs.farming.MachineExerciseData.Squat, state)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- LEAVE EXERCISE MACHINE (para Boss)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming.leaveExerciseMachine = function()
+    local character = player.Character
+    local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+    local root = character and character:FindFirstChild("HumanoidRootPart")
+    if not humanoid or humanoid.Health <= 0 then return end
+
+    pcall(function()
+        services.VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
+        humanoid.Sit = false
+        humanoid.Jump = true
+        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+        if root then
+            root.AssemblyLinearVelocity = Vector3.new(0, math.max(root.AssemblyLinearVelocity.Y, 50), 0)
+        end
+    end)
+    pcall(function()
+        services.VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
+    end)
+    task.wait(0.2)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- BETTER STRENGTH FARMING (4 configuraciones)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming:AddSection("Better Strength Farming")
+
+tabs.farming.Configs = {
+    {name = "Pushup + Industrial Rock", tool = "Pushups", rock = "Industrial Rock"},
+    {name = "Pushup + Jungle Rock", tool = "Pushups", rock = "Ancient Jungle Rock"},
+    {name = "Pushup + Muscle King Rock", tool = "Pushups", rock = "Muscle King Mountain"},
+    {name = "Pushup + Legends Rock", tool = "Pushups", rock = "Rock Of Legends"},
+}
+tabs.farming.ActiveConfigs = {}
+
+for _, config in ipairs(tabs.farming.Configs) do
+    tabs.farming.ActiveConfigs[config.name] = false
+    config.Switch = tabs.farming:AddSwitch(config.name, function(state)
+        tabs.farming.ActiveConfigs[config.name] = state
+        if tabs.farming.ActiveConfigs[config.name] then
+            local character = player.Character
+            if character then
+                local humanoid = character:FindFirstChildOfClass("Humanoid")
+                local backpackTool = player.Backpack:FindFirstChild(config.tool)
+                if backpackTool and humanoid and not character:FindFirstChild(config.tool) then
+                    humanoid:EquipTool(backpackTool)
+                end
+            end
+            task.spawn(function()
+                while utils.isCurrent() and tabs.farming.ActiveConfigs[config.name] do
+                    pcall(function()
+                        player.muscleEvent:FireServer("rep")
+                    end)
+                    local char = player.Character
+                    if char and tabs.farming.MachinesFolder:FindFirstChild(config.rock) then
+                        local rockFolder = tabs.farming.MachinesFolder:FindFirstChild(config.rock)
+                        local rock = rockFolder and rockFolder:FindFirstChild("Rock")
+                        local leftHand = char:FindFirstChild("LeftHand")
+                        if rock and leftHand and firetouchinterest then
+                            firetouchinterest(rock, leftHand, 0)
+                            firetouchinterest(rock, leftHand, 1)
+                        end
+                    end
+                    if char and player.Backpack:FindFirstChild("Punch") then
+                        local humanoid = char:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            humanoid:EquipTool(player.Backpack.Punch)
+                            pcall(function()
+                                player.muscleEvent:FireServer("punch", "rightHand")
+                                player.muscleEvent:FireServer("punch", "leftHand")
+                            end)
+                        end
+                    end
+                    services.RunService.RenderStepped:Wait()
+                    local char2 = player.Character
+                    if char2 and player.Backpack:FindFirstChild(config.tool) then
+                        local humanoid2 = char2:FindFirstChildOfClass("Humanoid")
+                        if humanoid2 then
+                            humanoid2:EquipTool(player.Backpack[config.tool])
+                        end
+                    end
+                end
+            end)
+        else
+            local char = player.Character
+            if char and char:FindFirstChild(config.tool) then
+                char[config.tool].Parent = player.Backpack
+            end
+        end
+    end)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- PAUSE/RESUME TRAINING (para Boss)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss = tabs.boss or {}
+tabs.boss.Data = tabs.boss.Data or {}
+tabs.boss.Data.TrainingSnapshot = nil
+
+tabs.boss.pauseTraining = function()
+    if tabs.boss.Data.TrainingSnapshot then return end
+    tabs.boss.Data.TrainingSnapshot = {
+        Rebirth = tabs.farming.RebirthData.IsAutoRebirthing,
+        Size = tabs.farming.SizeData.Active,
+        King = tabs.farming.KingData.TeleportActive,
+        Tool = tabs.farming.ExerciseData.AutoFarm,
+        Squat = tabs.farming.MachineExerciseData.Squat.Running,
+        Lift = tabs.farming.MachineExerciseData.Lift.Running,
+        AutoRep = tabs.farming.AutoRepRunning,
+        Rock = _G.RockFarmRunning == true,
+        Configs = {},
+    }
+    for _, config in ipairs(tabs.farming.Configs) do
+        tabs.boss.Data.TrainingSnapshot.Configs[config.name] = tabs.farming.ActiveConfigs[config.name] == true
+        if tabs.farming.ActiveConfigs[config.name] and config.Switch then
+            config.Switch:Set(false, true)
+        end
+    end
+    if tabs.boss.Data.TrainingSnapshot.Rebirth and tabs.farming.RebirthData.Switch then
+        tabs.farming.RebirthData.Switch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Size and tabs.farming.SizeSwitch then
+        tabs.farming.SizeSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.King and tabs.farming.KingSwitch then
+        tabs.farming.KingSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Tool and tabs.farming.ToolExerciseSwitch then
+        tabs.farming.ToolExerciseSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Squat and tabs.farming.SquatExerciseSwitch then
+        tabs.farming.SquatExerciseSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Lift and tabs.farming.LiftExerciseSwitch then
+        tabs.farming.LiftExerciseSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Squat or tabs.boss.Data.TrainingSnapshot.Lift then
+        tabs.farming.leaveExerciseMachine()
+    end
+    if tabs.boss.Data.TrainingSnapshot.AutoRep and tabs.farming.AutoRepSwitch then
+        tabs.farming.AutoRepSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Rock and tabs.farming.RockSwitch then
+        tabs.farming.RockSwitch:Set(false, true)
+    end
+end
+
+tabs.boss.resumeTraining = function()
+    local snapshot = tabs.boss.Data.TrainingSnapshot
+    if not snapshot then return end
+    tabs.boss.Data.TrainingSnapshot = nil
+    if snapshot.Rebirth and tabs.farming.RebirthData.Switch then
+        tabs.farming.RebirthData.Switch:Set(false, true)
+    end
+    if snapshot.Size and tabs.farming.SizeSwitch then
+        tabs.farming.SizeSwitch:Set(false, true)
+    end
+    if snapshot.King and tabs.farming.KingSwitch then
+        tabs.farming.KingSwitch:Set(false, true)
+    end
+    if snapshot.Tool and tabs.farming.ToolExerciseSwitch then
+        tabs.farming.ToolExerciseSwitch:Set(false, true)
+    end
+    if snapshot.Squat and tabs.farming.SquatExerciseSwitch then
+        tabs.farming.SquatExerciseSwitch:Set(false, true)
+    end
+    if snapshot.Lift and tabs.farming.LiftExerciseSwitch then
+        tabs.farming.LiftExerciseSwitch:Set(false, true)
+    end
+    if snapshot.AutoRep and tabs.farming.AutoRepSwitch then
+        tabs.farming.AutoRepSwitch:Set(false, true)
+    end
+    if snapshot.Rock and tabs.farming.RockSwitch then
+        tabs.farming.RockSwitch:Set(false, true)
+    end
+    for _, config in ipairs(tabs.farming.Configs) do
+        if snapshot.Configs[config.name] and config.Switch then
+            config.Switch:Set(false, true)
+        end
+    end
+end
+
+utils.notify("HonenxWhite", "Mensaje 3 cargado: Farming completo ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 4: Fast Rebirth V2 - Ultra Titans + Chaos Overlords
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- FUNCIONES AUXILIARES: Desequipar y equipar pets
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.fast.desequipAll = function()
+    local petsFolder = player.petsFolder
+    for _, folder in pairs(petsFolder:GetChildren()) do
+        if folder:IsA("Folder") then
+            for _, pet in pairs(folder:GetChildren()) do
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", pet)
+                end)
+            end
+        end
+    end
+    if player.Character then
+        for _, obj in pairs(player.Character:GetChildren()) do
+            if obj:IsA("StringValue") or obj:IsA("ObjectValue") then
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", obj)
+                end)
+            end
+        end
+    end
+    task.wait(0.3)
+end
+
+tabs.fast.equipPets = function(petNames)
+    local petsFolder = player.petsFolder
+    local uniquePets = petsFolder.Unique
+    tabs.fast.desequipAll()
+    task.wait(0.2)
+    local equipped = 0
+    for _, petName in ipairs(petNames) do
+        for _, pet in pairs(uniquePets:GetChildren()) do
+            if pet.Name == petName then
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("equipPet", pet)
+                end)
+                equipped = equipped + 1
+                task.wait(0.05)
+            end
+        end
+    end
+    task.wait(0.3)
+    return equipped
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- ULTRA TITANS PACK
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.fast:AddSection("Ultra Titans Pack")
+
+tabs.fast.UltraData = {
+    Running = false,
+    WorkerActive = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+    Strength = player.leaderstats:WaitForChild("Strength"),
+    TargetRebirths = 0,
+    TotalRebirths = 0,
+    RepPets = {"Omega Overlord"},
+    RebirthPets = {"Titanium Hydra"},
+}
+
+local ultraStatus = tabs.fast:AddLabel("Status: Inactive")
+local ultraStats = tabs.fast:AddLabel("Rebirths: 0 | Gained: 0")
+
+tabs.fast.UltraWorker = function()
+    local startRebirths = tabs.fast.UltraData.Rebirths.Value
+
+    while utils.isCurrent() and tabs.fast.UltraData.Running do
+        if tabs.fast.UltraData.TargetRebirths > 0
+            and tabs.fast.UltraData.Rebirths.Value >= tabs.fast.UltraData.TargetRebirths then
+            ultraStatus:SetText("Status: Target alcanzado")
+            tabs.fast.UltraData.Running = false
+            break
+        end
+
+        ultraStatus:SetText("Status: Equipando Rep...")
+        local equippedRep = 0
+        pcall(function()
+            equippedRep = tabs.fast.equipPets(tabs.fast.UltraData.RepPets)
+        end)
+        ultraStatus:SetText("Status: " .. equippedRep .. " Rep equipados")
+
+        local currentRebirths = tabs.fast.UltraData.Rebirths.Value
+        local targetStrength = 5000 + currentRebirths * 2550
+        local repsPerBurst = player.MembershipType == Enum.MembershipType.Premium and 6 or 12
+
+        ultraStatus:SetText("Status: Farmeando...")
+        while utils.isCurrent() and tabs.fast.UltraData.Running
+            and tabs.fast.UltraData.Strength.Value < targetStrength do
+            pcall(function()
+                for _ = 1, repsPerBurst do
+                    player.muscleEvent:FireServer("rep")
+                end
+            end)
+            task.wait(0.05)
+            ultraStats:SetText("Rebirths: "
+                .. utils.formatWithCommas(tabs.fast.UltraData.Rebirths.Value)
+                .. " | Gained: "
+                .. utils.formatWithCommas(tabs.fast.UltraData.Rebirths.Value - startRebirths))
+        end
+
+        if utils.isCurrent() and tabs.fast.UltraData.Running
+            and tabs.fast.UltraData.Strength.Value >= targetStrength then
+            ultraStatus:SetText("Status: Equipando Hydra...")
+            local equippedReb = 0
+            pcall(function()
+                equippedReb = tabs.fast.equipPets(tabs.fast.UltraData.RebirthPets)
+            end)
+            ultraStatus:SetText("Status: " .. equippedReb .. " Hydra equipadas")
+            task.wait(0.5)
+
+            ultraStatus:SetText("Status: Haciendo Rebirth...")
+            local rebirthBefore = tabs.fast.UltraData.Rebirths.Value
+            local attempts = 0
+            repeat
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.05)
+                attempts = attempts + 1
+            until not tabs.fast.UltraData.Running
+                or tabs.fast.UltraData.Rebirths.Value > rebirthBefore
+                or attempts >= 50
+            if tabs.fast.UltraData.Rebirths.Value > rebirthBefore then
+                tabs.fast.UltraData.TotalRebirths = tabs.fast.UltraData.TotalRebirths
+                    + (tabs.fast.UltraData.Rebirths.Value - rebirthBefore)
+            end
+            task.wait(0.5)
+        end
+        task.wait(0.1)
+    end
+    tabs.fast.UltraData.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Ultra - Target rebirths (0 = inf):", function(text)
+    local num = tonumber(text)
+    if num and num >= 0 then
+        tabs.fast.UltraData.TargetRebirths = math.floor(num)
+    end
+end, {clear = false})
+
+tabs.fast.UltraToggle = tabs.fast:AddSwitch("Fast Rebirth Ultra Titans", function(state)
+    tabs.fast.UltraData.Running = state
+    if state then
+        ultraStatus:SetText("Status: Iniciando Ultra...")
+        if not tabs.fast.UltraData.WorkerActive then
+            tabs.fast.UltraData.WorkerActive = true
+            task.spawn(tabs.fast.UltraWorker)
+        end
+    else
+        ultraStatus:SetText("Status: Inactive")
+    end
+end)
+
+tabs.fast:AddLabel("Omega Overlord > Farm > Titanium Hydra > Rebirth")
+
+-- ═══════════════════════════════════════════════════════════════
+-- CHAOS OVERLORDS PACK
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.fast:AddSection("Chaos Overlords Pack")
+
+tabs.fast.ChaosData = {
+    Running = false,
+    WorkerActive = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+    Strength = player.leaderstats:WaitForChild("Strength"),
+    TargetRebirths = 0,
+    TotalRebirths = 0,
+    RepPets = {"Swift Samurai"},
+    RebirthPets = {"Tribal Overlord"},
+}
+
+local chaosStatus = tabs.fast:AddLabel("Status: Inactive")
+local chaosStats = tabs.fast:AddLabel("Rebirths: 0 | Gained: 0")
+
+tabs.fast.ChaosWorker = function()
+    local startRebirths = tabs.fast.ChaosData.Rebirths.Value
+
+    while utils.isCurrent() and tabs.fast.ChaosData.Running do
+        if tabs.fast.ChaosData.TargetRebirths > 0
+            and tabs.fast.ChaosData.Rebirths.Value >= tabs.fast.ChaosData.TargetRebirths then
+            chaosStatus:SetText("Status: Target alcanzado")
+            tabs.fast.ChaosData.Running = false
+            break
+        end
+
+        chaosStatus:SetText("Status: Equipando Rep...")
+        local equippedRep = 0
+        pcall(function()
+            equippedRep = tabs.fast.equipPets(tabs.fast.ChaosData.RepPets)
+        end)
+        chaosStatus:SetText("Status: " .. equippedRep .. " Rep equipados")
+
+        local currentRebirths = tabs.fast.ChaosData.Rebirths.Value
+        local targetStrength = 5000 + currentRebirths * 2550
+        local repsPerBurst = player.MembershipType == Enum.MembershipType.Premium and 6 or 12
+
+        chaosStatus:SetText("Status: Farmeando...")
+        while utils.isCurrent() and tabs.fast.ChaosData.Running
+            and tabs.fast.ChaosData.Strength.Value < targetStrength do
+            pcall(function()
+                for _ = 1, repsPerBurst do
+                    player.muscleEvent:FireServer("rep")
+                end
+            end)
+            task.wait(0.05)
+            chaosStats:SetText("Rebirths: "
+                .. utils.formatWithCommas(tabs.fast.ChaosData.Rebirths.Value)
+                .. " | Gained: "
+                .. utils.formatWithCommas(tabs.fast.ChaosData.Rebirths.Value - startRebirths))
+        end
+
+        if utils.isCurrent() and tabs.fast.ChaosData.Running
+            and tabs.fast.ChaosData.Strength.Value >= targetStrength then
+            chaosStatus:SetText("Status: Equipando Tribal...")
+            local equippedReb = 0
+            pcall(function()
+                equippedReb = tabs.fast.equipPets(tabs.fast.ChaosData.RebirthPets)
+            end)
+            chaosStatus:SetText("Status: " .. equippedReb .. " Tribal equipados")
+            task.wait(0.5)
+
+            chaosStatus:SetText("Status: Haciendo Rebirth...")
+            local rebirthBefore = tabs.fast.ChaosData.Rebirths.Value
+            local attempts = 0
+            repeat
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.05)
+                attempts = attempts + 1
+            until not tabs.fast.ChaosData.Running
+                or tabs.fast.ChaosData.Rebirths.Value > rebirthBefore
+                or attempts >= 50
+            if tabs.fast.ChaosData.Rebirths.Value > rebirthBefore then
+                tabs.fast.ChaosData.TotalRebirths = tabs.fast.ChaosData.TotalRebirths
+                    + (tabs.fast.ChaosData.Rebirths.Value - rebirthBefore)
+            end
+            task.wait(0.5)
+        end
+        task.wait(0.1)
+    end
+    tabs.fast.ChaosData.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Chaos - Target rebirths (0 = inf):", function(text)
+    local num = tonumber(text)
+    if num and num >= 0 then
+        tabs.fast.ChaosData.TargetRebirths = math.floor(num)
+    end
+end, {clear = false})
+
+tabs.fast.ChaosToggle = tabs.fast:AddSwitch("Fast Rebirth Chaos Overlords", function(state)
+    tabs.fast.ChaosData.Running = state
+    if state then
+        chaosStatus:SetText("Status: Iniciando Chaos...")
+        if not tabs.fast.ChaosData.WorkerActive then
+            tabs.fast.ChaosData.WorkerActive = true
+            task.spawn(tabs.fast.ChaosWorker)
+        end
+    else
+        chaosStatus:SetText("Status: Inactive")
+    end
+end)
+
+tabs.fast:AddLabel("Swift Samurai > Farm > Tribal Overlord > Rebirth")
+
+utils.notify("HonenxWhite", "Mensaje 4 cargado: Fast V2 completo ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 5: Boss completo (Rarities + Special + Chest + Evade)
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- INICIALIZAR DATA EXTENDIDA DEL BOSS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.Data = tabs.boss.Data or {}
+tabs.boss.Data.AttackSequence = nil
+tabs.boss.Data.EvadeUntil = 0
+tabs.boss.Data.EvadeDistance = 230
+tabs.boss.Data.PunchBehindDistance = 45
+tabs.boss.Data.StompHealthThreshold = 0.35
+tabs.boss.Data.DodgeStomps = false
+tabs.boss.Data.BossOrder = tabs.boss.Data.BossOrder or {}
+tabs.boss.Data.BossByDisplayName = tabs.boss.Data.BossByDisplayName or {}
+tabs.boss.Data.SelectedBosses = tabs.boss.Data.SelectedBosses or {}
+
+-- ═══════════════════════════════════════════════════════════════
+-- SELECTOR DE RARITIES DE BOSS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss:AddSection("Target Specific Bosses")
+
+local selectedBossesLabel = tabs.boss:AddLabel("Targeted Bosses: Detecting...")
+
+tabs.boss.BossDropdown = tabs.boss:AddDropdown("Target specific Bosses", function(displayName)
+    local bossModelName = tabs.boss.Data.BossByDisplayName[displayName]
+    if bossModelName then
+        for modelName in pairs(tabs.boss.Data.SelectedBosses) do
+            tabs.boss.Data.SelectedBosses[modelName] = false
+        end
+        tabs.boss.Data.SelectedBosses[bossModelName] = true
+        selectedBossesLabel:SetText("Targeted Bosses: " .. displayName)
+    end
+end)
+
+tabs.boss.addBossChoice = function(modelName, displayName)
+    modelName = tostring(modelName or "")
+    displayName = tostring(displayName or modelName)
+    if modelName == "" or tabs.boss.Data.BossByDisplayName[displayName] then return end
+    tabs.boss.Data.BossByDisplayName[displayName] = modelName
+    if tabs.boss.Data.SelectedBosses[modelName] == nil then
+        tabs.boss.Data.SelectedBosses[modelName] = false
+    end
+    table.insert(tabs.boss.Data.BossOrder, modelName)
+    tabs.boss.BossDropdown:Add(displayName)
+end
+
+-- Cargar rarities desde el config del juego
+local configOk, bossConfig = pcall(function()
+    return require(services.ReplicatedStorage:WaitForChild("shared"):WaitForChild("config"):WaitForChild("BossEventConfig"))
+end)
+
+if configOk and bossConfig and bossConfig.RARITIES then
+    local allowedBossTiers = {"common", "rare", "epic", "legendary", "mythic", "rainbow"}
+    for _, rarity in ipairs(bossConfig.RARITIES) do
+        local tierText = string.lower(tostring(rarity.Name or rarity.DisplayName or rarity.BossModel or ""))
+        local modelText = string.lower(tostring(rarity.BossModel or ""))
+        local allowed = false
+        for _, tier in ipairs(allowedBossTiers) do
+            if string.find(tierText, tier, 1, true) or string.find(modelText, tier, 1, true) then
+                allowed = true
+                break
+            end
+        end
+        if allowed and rarity.BossModel then
+            tabs.boss.addBossChoice(rarity.BossModel, rarity.DisplayName or rarity.Name or rarity.BossModel)
+        end
+    end
+    selectedBossesLabel:SetText("Targeted Bosses: None (elegí uno)")
+else
+    selectedBossesLabel:SetText("Farmed Bosses: Waiting for detection")
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- SPECIAL WORLD BOSSES (Halloween)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss:AddSection("Special World Bosses")
+
+local specialBossesLabel = tabs.boss:AddLabel("World bosses: All")
+
+tabs.boss.Data.SpecialBosses = {
+    ["Grim Reaper"] = true,
+    ["Frankenbrute"] = true,
+    ["Pumpkin Titan"] = true,
+    ["Scarecrow Colossus"] = true,
+}
+
+tabs.boss.Data.SpecialBossOrder = {
+    "Grim Reaper",
+    "Frankenbrute",
+    "Pumpkin Titan",
+    "Scarecrow Colossus",
+}
+
+tabs.boss.Data.SpecialBossByDisplayName = {}
+
+local specialBossDropdown = tabs.boss:AddDropdown("World boss target (select one)", function(displayName)
+    local bossName = tabs.boss.Data.SpecialBossByDisplayName[displayName]
+    if bossName then
+        for _, name in ipairs(tabs.boss.Data.SpecialBossOrder) do
+            tabs.boss.Data.SpecialBosses[name] = false
+        end
+        tabs.boss.Data.SpecialBosses[bossName] = true
+        specialBossesLabel:SetText("World boss target: " .. bossName)
+    end
+end)
+
+for _, bossName in ipairs(tabs.boss.Data.SpecialBossOrder) do
+    tabs.boss.Data.SpecialBossByDisplayName[bossName] = bossName
+    tabs.boss.Data.SpecialBosses[bossName] = false
+    specialBossDropdown:Add(bossName)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- EVADE ATTACKS (Punch / Stomp)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.evadeAttack = function(model, hitbox, root, humanoid)
+    local sequence = model:GetAttribute("BossAttackSequence")
+    local attackKind = model:GetAttribute("BossAttackKind")
+    local attackCFrame = model:GetAttribute("BossAttackCFrame")
+    local impactTime = model:GetAttribute("BossAttackImpactTime")
+
+    if typeof(sequence) == "number" and sequence ~= tabs.boss.Data.AttackSequence then
+        tabs.boss.Data.AttackSequence = sequence
+        if typeof(attackKind) == "string" and typeof(attackCFrame) == "CFrame" and typeof(impactTime) == "number" then
+            tabs.boss.Data.EvadeUntil = impactTime + 0.6
+        end
+    end
+
+    if typeof(attackCFrame) ~= "CFrame" or workspace:GetServerTimeNow() > tabs.boss.Data.EvadeUntil then
+        return
+    end
+
+    attackKind = string.lower(tostring(attackKind or ""))
+
+    -- Evadir punch
+    if string.find(attackKind, "punch", 1, true) then
+        local center = tabs.boss.getBossHeadPosition(model, hitbox)
+        local direction = Vector3.new(attackCFrame.LookVector.X, 0, attackCFrame.LookVector.Z)
+        if direction.Magnitude < 1 then
+            direction = Vector3.new(hitbox.CFrame.LookVector.X, 0, hitbox.CFrame.LookVector.Z)
+        end
+        if direction.Magnitude < 1 then direction = Vector3.new(0, 0, 1) end
+        local safePosition = center - direction.Unit * tabs.boss.Data.PunchBehindDistance
+        root.CFrame = CFrame.lookAt(safePosition, center)
+        root.AssemblyLinearVelocity = Vector3.zero
+        root.AssemblyAngularVelocity = Vector3.zero
+        bossStatusLabel:SetText("Status: Dodging Punch")
+        return "Punch"
+    end
+
+    -- Evadir stomp (solo si tiene poca vida)
+    if not string.find(attackKind, "stomp", 1, true) then return end
+    if humanoid.Health / math.max(humanoid.MaxHealth, 1) <= tabs.boss.Data.StompHealthThreshold then
+        tabs.boss.Data.DodgeStomps = true
+    end
+    if not tabs.boss.Data.DodgeStomps then return end
+
+    local direction = Vector3.new(root.Position.X - attackCFrame.Position.X, 0, root.Position.Z - attackCFrame.Position.Z)
+    if direction.Magnitude < 1 then
+        direction = Vector3.new(-attackCFrame.LookVector.X, 0, -attackCFrame.LookVector.Z)
+    end
+    if direction.Magnitude < 1 then direction = Vector3.new(1, 0, 0) end
+    direction = direction.Unit
+    local safePosition = attackCFrame.Position + direction * tabs.boss.Data.EvadeDistance + Vector3.new(0, 18, 0)
+    root.CFrame = CFrame.lookAt(safePosition, attackCFrame.Position)
+    root.AssemblyLinearVelocity = Vector3.zero
+    root.AssemblyAngularVelocity = Vector3.zero
+    bossStatusLabel:SetText("Status: Dodging Stomp")
+    return "Stomp"
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- GET ALIVE CHARACTER
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.getAliveCharacter = function(generation, timeout)
+    local startedAt = os.clock()
+    repeat
+        local character = player.Character
+        local root = character and character:FindFirstChild("HumanoidRootPart")
+        local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+        if root and humanoid and humanoid.Health > 0 then
+            utils.playerData.Character = character
+            utils.playerData.Humanoid = humanoid
+            return character, root, humanoid
+        end
+        bossStatusLabel:SetText("Status: Waiting for Respawn")
+        task.wait(0.1)
+    until not tabs.boss.Data.Running
+        or tabs.boss.Data.Generation ~= generation
+        or (timeout and os.clock() - startedAt >= timeout)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- FIND CHEST + COLLECT CHEST
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.findChest = function()
+    local chest
+    for _, candidate in ipairs(services.CollectionService:GetTagged("BossEventChest")) do
+        if candidate:IsDescendantOf(workspace) then
+            chest = candidate
+            break
+        end
+    end
+    if not chest then
+        chest = workspace:FindFirstChild("BossChest", true)
+    end
+    if not chest then
+        for _, candidate in ipairs(workspace:GetDescendants()) do
+            if candidate:IsA("ProximityPrompt") and candidate.Name == "bossChestPrompt" then
+                chest = candidate.Parent
+                break
+            end
+        end
+    end
+    if not chest then return end
+    local prompt = chest:FindFirstChild("bossChestPrompt", true)
+    local part = prompt and prompt.Parent
+        or (chest:IsA("Model") and (chest.PrimaryPart or chest:FindFirstChildWhichIsA("BasePart", true)))
+        or chest
+    if part and part:IsA("BasePart") then
+        return chest, prompt, part
+    end
+end
+
+tabs.boss.collectChest = function(generation)
+    bossStatusLabel:SetText("Status: Waiting for Chest")
+    local startedAt = os.clock()
+    local chest, prompt, part
+    repeat
+        chest, prompt, part = tabs.boss.findChest()
+        if chest and chest:GetAttribute("BossChestEmerging") ~= true then break end
+        task.wait(0.1)
+    until not tabs.boss.Data.Running or tabs.boss.Data.Generation ~= generation or os.clock() - startedAt >= 12
+    if not chest or not part then return end
+
+    bossStatusLabel:SetText("Status: Collecting Chest")
+    startedAt = os.clock()
+    repeat
+        local character, root = tabs.boss.getAliveCharacter(generation, 2)
+        if character and root and chest.Parent and part.Parent then
+            bossStatusLabel:SetText("Status: Collecting Chest")
+            pcall(function()
+                root.CFrame = CFrame.lookAt(part.Position + Vector3.new(0, 3, 4), part.Position)
+                root.AssemblyLinearVelocity = Vector3.zero
+            end)
+            task.wait(0.15)
+            if prompt and prompt.Parent and fireproximityprompt then
+                pcall(function() fireproximityprompt(prompt) end)
+            else
+                pcall(function()
+                    services.VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.E, false, game)
+                    task.wait(0.1)
+                    services.VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.E, false, game)
+                end)
+            end
+        end
+        task.wait(0.25)
+    until not tabs.boss.Data.Running
+        or tabs.boss.Data.Generation ~= generation
+        or player:GetAttribute("BossChestPending") == false
+        or not chest.Parent
+        or os.clock() - startedAt >= 12
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- FIND ACTIVE BOSS (con filtros de rareza + special)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.shouldFarmBoss = function(model, mode)
+    if not model then return false end
+    local isSpecial = tabs.boss.Data.SpecialBosses and tabs.boss.Data.SpecialBosses[model.Name] ~= nil
+    if mode == "Halloween" then
+        return isSpecial and tabs.boss.Data.SpecialBosses[model.Name] == true
+    end
+    if isSpecial then return false end
+    return tabs.boss.Data.SelectedBosses[model.Name] == true
+end
+
+tabs.boss.findActiveBoss = function(mode)
+    mode = mode or "Main"
+
+    local function isAliveBoss(model, hitbox)
+        if not model or not model:IsA("Model") then return false end
+        if not hitbox or not hitbox:IsA("BasePart") then return false end
+        if not model:IsDescendantOf(workspace) then return false end
+        local stats = model:FindFirstChild("stats") or model:FindFirstChild("Stats")
+        local health = stats and (stats:FindFirstChild("Health") or stats:FindFirstChild("health"))
+        local maxHealth = stats and (stats:FindFirstChild("MaxHealth") or stats:FindFirstChild("maxHealth"))
+        local humanoid = model:FindFirstChildOfClass("Humanoid")
+        local healthValue = health and tonumber(health.Value)
+        if healthValue == nil and humanoid then healthValue = humanoid.Health end
+        if healthValue == nil then healthValue = tonumber(model:GetAttribute("Health")) end
+        if healthValue ~= nil and healthValue <= 0 then return false end
+        return true, stats, health, maxHealth
+    end
+
+    -- Modo Halloween: buscar bosses special
+    if mode == "Halloween" then
+        for _, bossName in ipairs(tabs.boss.Data.SpecialBossOrder) do
+            if tabs.boss.Data.SpecialBosses[bossName] == true then
+                for _, descendant in ipairs(workspace:GetDescendants()) do
+                    if descendant:IsA("Model") and descendant.Name == bossName then
+                        local hitbox = descendant:FindFirstChild("BossDamageHitbox", true)
+                        local alive, stats, health, maxHealth = isAliveBoss(descendant, hitbox)
+                        if alive then return descendant, hitbox, health, maxHealth end
+                    end
+                end
+            end
+        end
+        return nil
+    end
+
+    -- Modo Main: buscar por tag
+    for _, taggedBoss in ipairs(services.CollectionService:GetTagged("BossEventBoss")) do
+        if taggedBoss:IsA("Model") and taggedBoss:IsDescendantOf(workspace)
+            and tabs.boss.shouldFarmBoss(taggedBoss, mode) then
+            local hitbox = taggedBoss:FindFirstChild("BossDamageHitbox", true)
+            local alive, stats, health, maxHealth = isAliveBoss(taggedBoss, hitbox)
+            if alive then return taggedBoss, hitbox, health, maxHealth end
+        end
+    end
+
+    -- Fallback: buscar en Events/BossEvent
+    local events = workspace:FindFirstChild("Events")
+    local bossFolder = events and (events:FindFirstChild("BossEvent") or events:FindFirstChild("BossArena"))
+    if bossFolder then
+        for _, descendant in ipairs(bossFolder:GetDescendants()) do
+            if descendant:IsA("Model") and tabs.boss.shouldFarmBoss(descendant, mode) then
+                local hitbox = descendant:FindFirstChild("BossDamageHitbox", true)
+                local alive, stats, health, maxHealth = isAliveBoss(descendant, hitbox)
+                if alive then return descendant, hitbox, health, maxHealth end
+            end
+        end
+    end
+
+    return nil
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- ATTACK BOSS (con evade integrado)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.attack = function(model, health, maxHealth, hitbox)
+    local character = player.Character
+    local root = character and character:FindFirstChild("HumanoidRootPart")
+    local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+    if not root or not humanoid or humanoid.Health <= 0 then return end
+
+    local evadeMode = tabs.boss.evadeAttack(model, hitbox, root, humanoid)
+    if evadeMode == "Stomp" then return end
+
+    local punch = character:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+    if punch and punch.Parent ~= character then
+        pcall(function() humanoid:EquipTool(punch) end)
+    end
+
+    local leftHand = character:FindFirstChild("LeftHand")
+    local rightHand = character:FindFirstChild("RightHand")
+    local center = hitbox.Position
+
+    if evadeMode ~= "Punch" then
+        local towardPlayer = root.Position - center
+        towardPlayer = Vector3.new(towardPlayer.X, 0, towardPlayer.Z)
+        if towardPlayer.Magnitude < 1 then
+            towardPlayer = Vector3.new(hitbox.CFrame.LookVector.X, 0, hitbox.CFrame.LookVector.Z)
+        end
+        if towardPlayer.Magnitude < 1 then towardPlayer = Vector3.new(0, 0, 1) end
+        local standPos = center + towardPlayer.Unit * math.max(3, math.min(6, hitbox.Size.Magnitude * 0.2)) + Vector3.new(0, 1.5, 0)
+        root.CFrame = CFrame.lookAt(standPos, center)
+    end
+
+    root.AssemblyLinearVelocity = Vector3.zero
+    root.AssemblyAngularVelocity = Vector3.zero
+
+    pcall(function()
+        if firetouchinterest and leftHand then
+            firetouchinterest(hitbox, leftHand, 0)
+            firetouchinterest(hitbox, leftHand, 1)
+        end
+        if firetouchinterest and rightHand then
+            firetouchinterest(hitbox, rightHand, 0)
+            firetouchinterest(hitbox, rightHand, 1)
+        end
+    end)
+
+    if os.clock() - tabs.boss.Data.LastPunch >= tabs.boss.Data.PunchInterval then
+        tabs.boss.Data.LastPunch = os.clock()
+        pcall(function()
+            player.muscleEvent:FireServer("punch", "leftHand")
+            player.muscleEvent:FireServer("punch", "rightHand")
+            if punch then punch:Activate() end
+        end)
+    end
+
+    bossLabel:SetText("Boss: " .. (workspace:GetAttribute("BossDisplayName") or model.Name))
+    local hv = tabs.boss.getBossHealth(health)
+    local mhv = tabs.boss.getBossMaxHealth(maxHealth)
+    bossHealthLabel:SetText("Health: " .. utils.formatNumber(hv) .. " / " .. utils.formatNumber(mhv))
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- AUTO FARM LOOP (con CollectChest + Pause/Resume Training)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.startAutoFarmFull = function(mode, state)
+    if not state then
+        if tabs.boss.Data.ActiveMode == mode then
+            tabs.boss.Data.Running = false
+            tabs.boss.Data.ActiveMode = nil
+            tabs.boss.Data.Generation += 1
+            tabs.boss.Data.Phase = "Waiting"
+            bossStatusLabel:SetText("Status: Disabled")
+            if tabs.boss.resumeTraining then tabs.boss.resumeTraining() end
+        end
+        return
+    end
+
+    -- Apagar el otro modo
+    if mode == "Halloween" and tabs.boss.MainSwitch then
+        tabs.boss.MainSwitch:Set(false, true)
+    elseif mode == "Main" and tabs.boss.HalloweenSwitch then
+        tabs.boss.HalloweenSwitch:Set(false, true)
+    end
+
+    tabs.boss.Data.ActiveMode = mode
+    tabs.boss.Data.Running = true
+    tabs.boss.Data.Generation += 1
+    local generation = tabs.boss.Data.Generation
+
+    task.spawn(function()
+        local wasFighting = false
+        while utils.isCurrent() and tabs.boss.Data.Running
+            and tabs.boss.Data.Generation == generation and tabs.boss.Data.ActiveMode == mode do
+            pcall(function()
+                local model, hitbox, health, maxHealth = tabs.boss.findActiveBoss(mode)
+                local selected = model and tabs.boss.shouldFarmBoss(model, mode)
+                if model and not selected then
+                    if wasFighting then
+                        wasFighting = false
+                        if tabs.boss.resumeTraining then tabs.boss.resumeTraining() end
+                    end
+                    bossStatusLabel:SetText("Status: Skipping " .. model.Name)
+                elseif model then
+                    if not wasFighting then
+                        wasFighting = true
+                        tabs.boss.Data.AttackSequence = nil
+                        tabs.boss.Data.EvadeUntil = 0
+                        tabs.boss.Data.DodgeStomps = false
+                        if tabs.boss.pauseTraining then tabs.boss.pauseTraining() end
+                    end
+                    local char = player.Character
+                    local hum = char and char:FindFirstChildOfClass("Humanoid")
+                    if hum and hum.Health > 0 then
+                        bossStatusLabel:SetText("Status: Fighting " .. (mode == "Halloween" and "Halloween Boss" or "Main Boss"))
+                        tabs.boss.attack(model, health, maxHealth, hitbox)
+                    else
+                        bossStatusLabel:SetText("Status: Waiting for Respawn")
+                    end
+                elseif wasFighting then
+                    wasFighting = false
+                    pcall(tabs.boss.collectChest, generation)
+                    bossLabel:SetText("Boss: None")
+                    bossHealthLabel:SetText("Health: 0 / 0")
+                    if tabs.boss.Data.ContinueTraining and tabs.boss.resumeTraining then
+                        tabs.boss.resumeTraining()
+                    end
+                    bossStatusLabel:SetText("Status: Waiting for Boss")
+                else
+                    bossStatusLabel:SetText("Status: Waiting for " .. (mode == "Halloween" and "Halloween Boss" or "Main-Island Boss"))
+                end
+            end)
+            task.wait(model and selected and 0.03 or 0.25)
+        end
+    end)
+end
+
+-- Reemplazar los switches existentes
+tabs.boss.MainSwitch = tabs.boss:AddSwitch("Auto Boss — Main Island", function(state)
+    tabs.boss.startAutoFarmFull("Main", state)
+end)
+tabs.boss.MainSwitch:Set(false)
+
+tabs.boss.HalloweenSwitch = tabs.boss:AddSwitch("Auto Boss — Halloween", function(state)
+    tabs.boss.startAutoFarmFull("Halloween", state)
+end)
+tabs.boss.HalloweenSwitch:Set(false)
+
+utils.notify("HonenxWhite", "Mensaje 5 cargado: Boss completo ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 6 FINAL: Auto Pet + Combos + Cierre
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- AUTO PET (comprar continuamente el pet seleccionado)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.inventory:AddSection("Auto Pet")
+
+tabs.inventory.AutoPetData = {
+    Running = false,
+    SelectedPet = nil,
+}
+
+local autoPetStatus = tabs.inventory:AddLabel("Status: Inactive")
+
+local autoPetDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    tabs.inventory.AutoPetData.SelectedPet = text
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    autoPetDropdown:Add(petName)
+end
+
+tabs.inventory:AddSwitch("Auto Pet", function(state)
+    tabs.inventory.AutoPetData.Running = state
+    if not state then
+        autoPetStatus:SetText("Status: Inactive")
+        return
+    end
+    if not tabs.inventory.AutoPetData.SelectedPet then
+        utils.notify("Auto Pet", "Elegí un pet primero", 2, "warning")
+        tabs.inventory.AutoPetData.Running = false
+        return
+    end
+
+    autoPetStatus:SetText("Status: Comprando " .. tabs.inventory.AutoPetData.SelectedPet)
+    task.spawn(function()
+        while utils.isCurrent() and tabs.inventory.AutoPetData.Running do
+            local petName = tabs.inventory.AutoPetData.SelectedPet
+            local selectedPet = tabs.inventory.PetShopFolder:FindFirstChild(petName)
+            if selectedPet then
+                pcall(function()
+                    tabs.inventory.PetShopRemote:InvokeServer(selectedPet)
+                end)
+            end
+            task.wait(0.2)
+        end
+        autoPetStatus:SetText("Status: Inactive")
+    end)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- CONTADOR DE COMBOS DE BOOSTS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boosts:AddSection("Contador de Boosts")
+
+tabs.boosts.ComboData = {
+    ProteinEgg = 0,
+    TropicalShake = 0,
+    EnergyShake = 0,
+    ProteinBar = 0,
+    ToughBar = 0,
+    ProteinShake = 0,
+    UltraShake = 0,
+    EnergyBar = 0,
+}
+
+local comboLabel = tabs.boosts:AddLabel("Combo: Sin boosts")
+
+task.spawn(function()
+    while utils.isCurrent() do
+        local items = {
+            ProteinEgg = 0, TropicalShake = 0, EnergyShake = 0, ProteinBar = 0,
+            ToughBar = 0, ProteinShake = 0, UltraShake = 0, EnergyBar = 0,
+        }
+        local char = player.Character
+        if char then
+            for _, item in ipairs(char:GetChildren()) do
+                if items[item.Name] ~= nil then items[item.Name] = items[item.Name] + 1 end
+            end
+        end
+        for _, item in ipairs(player.Backpack:GetChildren()) do
+            if items[item.Name] ~= nil then items[item.Name] = items[item.Name] + 1 end
+        end
+        local active = {}
+        for name, count in pairs(items) do
+            if count > 0 then table.insert(active, name .. " (" .. count .. ")") end
+        end
+        if #active == 0 then
+            comboLabel:SetText("Combo: Sin boosts")
+        else
+            comboLabel:SetText("Combo: " .. table.concat(active, " · "))
+        end
+        task.wait(2)
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- EMERGENCY STOP
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.info:AddSection("Emergency")
+
+tabs.info:AddButton("🛑 EMERGENCY STOP", function()
+    -- Apagar todos los switches
+    if _G.HonenxWhiteUltraFastRep then _G.HonenxWhiteUltraFastRep.Enabled = false end
+    if _G.RockFarmRunning then _G.RockFarmRunning = false end
+    if _G.deathRingEnabled then _G.deathRingEnabled = false end
+    if _G.killAll then _G.killAll = false end
+    if _G.killBlacklistedOnly then _G.killBlacklistedOnly = false end
+    if _G.HonenxAntiAFK then _G.HonenxAntiAFK = false end
+
+    -- Apagar todos los switches de la GUI
+    for _, tab in pairs(tabs) do
+        if tab._ui and tab._ui._connections then
+            for _, conn in ipairs(tab._ui._connections) do
+                if conn and conn.Connected then
+                    -- No desconectamos los switches, solo apagamos los que tienen estado
+                end
+            end
+        end
+    end
+
+    -- Detener loops de Fast Rebirth
+    if tabs.fast then
+        if tabs.fast.FastRepData then tabs.fast.FastRepData.Running = false end
+        if tabs.fast.FastRebirthData then tabs.fast.FastRebirthData.Running = false end
+        if tabs.fast.UltraData then tabs.fast.UltraData.Running = false end
+        if tabs.fast.ChaosData then tabs.fast.ChaosData.Running = false end
+    end
+
+    -- Detener Boss
+    if tabs.boss and tabs.boss.Data then
+        tabs.boss.Data.Running = false
+        tabs.boss.Data.ActiveMode = nil
+    end
+
+    -- Detener Farming
+    if tabs.farming then
+        if tabs.farming.MachineExerciseData then
+            tabs.farming.MachineExerciseData.Squat.Running = false
+            tabs.farming.MachineExerciseData.Lift.Running = false
+        end
+        if tabs.farming.ActiveConfigs then
+            for name in pairs(tabs.farming.ActiveConfigs) do
+                tabs.farming.ActiveConfigs[name] = false
+            end
+        end
+    end
+
+    -- Notificación
+    utils.notify("Emergency Stop", "Todas las funciones detenidas", 4, "error")
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- CIERRE FINAL
+-- ═══════════════════════════════════════════════════════════════
+
+utils.notify("HonenxWhite", "🎉 Hub COMPLETO cargado — 4,000+ líneas", 5, "success")
+print("[HonenxWhite] ✅ Script COMPLETO cargado al 100%")
+print("[HonenxWhite] Tabs: Main, Killing, Specs, Farming, Fast, Boss, Pets, Boosts, Teleports, Stats, Info")
+print("[HonenxWhite] Build: KNI UI v2.0")
