@@ -1,6 +1,6 @@
 -- KNI_UI.luau v2.0
 -- Librería de interfaz compacta para Roblox.
--- Incluye: AddTab, AddLabel, AddButton, AddSwitch, AddTextBox, AddDropdown, AddSlider, AddSection
+-- Incluye: AddTab, AddLabel, AddSection, AddButton, AddSwitch, AddTextBox, AddDropdown, AddSlider
 -- Con :Set(), :Get(), notificaciones, dropdowns dinámicos y más.
 
 local KNI = {}
@@ -171,7 +171,6 @@ function KNI.new(options)
     self._tabs = {}
     self._destroyed = false
     self._minimized = false
-    self._bubbleMoved = false
 
     local gui = make("ScreenGui", {
         Name = options.Name or "KNI_Interface",
@@ -186,7 +185,7 @@ function KNI.new(options)
         Name = "Window",
         AnchorPoint = Vector2.new(0.5, 0.5),
         Position = UDim2.fromScale(0.5, 0.5),
-        Size = UDim2.fromOffset(options.Width or 600, options.Height or 400),
+        Size = UDim2.fromOffset(options.Width or 620, options.Height or 420),
         BackgroundColor3 = COLORS.Background,
         BorderSizePixel = 0,
     }, gui)
@@ -216,7 +215,7 @@ function KNI.new(options)
         Position = UDim2.fromOffset(14, 0),
         Size = UDim2.new(1, -150, 1, 0),
         Font = Enum.Font.GothamBold,
-        Text = options.Title or "KNI | Muscle Legends",
+        Text = options.Title or "HonenxWhite | Reborn",
         TextColor3 = COLORS.Text,
         TextSize = 14,
         TextXAlignment = Enum.TextXAlignment.Left,
@@ -246,7 +245,7 @@ function KNI.new(options)
         Size = UDim2.fromOffset(52, 52),
         BackgroundColor3 = COLORS.Accent,
         BorderSizePixel = 0,
-        Text = "KNI",
+        Text = "HW",
         TextColor3 = COLORS.Text,
         TextSize = 15,
         Font = Enum.Font.GothamBlack,
@@ -291,7 +290,6 @@ function KNI.new(options)
     corner(pages, 10)
     self.Pages = pages
 
-    -- Drag
     local dragging, dragStart, startPos
     table.insert(self._connections, top.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -392,7 +390,6 @@ function KNI:AddTab(name)
         return frame
     end
 
-    -- ═══ AddLabel ═══
     function tab:AddLabel(text)
         local r = row(28)
         r.BackgroundTransparency = 1
@@ -419,7 +416,6 @@ function KNI:AddTab(name)
         return control
     end
 
-    -- ═══ AddSection ═══
     function tab:AddSection(text)
         local r = row(26)
         r.BackgroundTransparency = 1
@@ -443,7 +439,6 @@ function KNI:AddTab(name)
         return {Instance = label}
     end
 
-    -- ═══ AddButton ═══
     function tab:AddButton(text, callback)
         local r = row(32)
         local b = make("TextButton", {
@@ -463,7 +458,6 @@ function KNI:AddTab(name)
         return b
     end
 
-    -- ═══ AddSwitch ═══
     function tab:AddSwitch(text, callback, default)
         local r = row(36)
         make("TextLabel", {
@@ -518,7 +512,6 @@ function KNI:AddTab(name)
         return control
     end
 
-    -- ═══ AddTextBox ═══
     function tab:AddTextBox(text, callback, opts)
         local r = row(56)
         make("TextLabel", {
@@ -556,7 +549,6 @@ function KNI:AddTab(name)
         return box
     end
 
-    -- ═══ AddSlider ═══
     function tab:AddSlider(text, min, max, default, callback)
         min, max = min or 0, max or 100
         default = math.clamp(default or min, min, max)
@@ -646,7 +638,6 @@ function KNI:AddTab(name)
         }
     end
 
-    -- ═══ AddDropdown ═══
     function tab:AddDropdown(text, callback, default)
         local control = {Items = {}, Selected = default, _ui = self._ui}
         local r = row(56)
@@ -763,7 +754,6 @@ function KNI:AddTab(name)
         return control
     end
 
-    -- ═══ Show (activar tab por código) ═══
     function tab:Show()
         activate()
     end
@@ -771,7 +761,6 @@ function KNI:AddTab(name)
     return tab
 end
 
--- ═══ KNI:Destroy ═══
 function KNI:Destroy()
     if self._destroyed then return end
     self._destroyed = true
