@@ -1,6 +1,7 @@
--- KNI_UI.luau
--- Librería de interfaz compacta para Roblox Studio (ModuleScript).
--- Sin librerías remotas. Incluye minimizar, restaurar, cerrar, pestañas y controles básicos.
+-- KNI_UI.luau v2.0
+-- Librería de interfaz compacta para Roblox.
+-- Incluye: AddTab, AddLabel, AddButton, AddSwitch, AddTextBox, AddDropdown, AddSlider, AddSection
+-- Con :Set(), :Get(), notificaciones, dropdowns dinámicos y más.
 
 local KNI = {}
 KNI.__index = KNI
@@ -15,6 +16,15 @@ local COLORS = {
     Muted = Color3.fromRGB(160, 158, 181),
     Border = Color3.fromRGB(55, 48, 78),
     Good = Color3.fromRGB(80, 220, 160),
+    Bad = Color3.fromRGB(220, 80, 100),
+    Warn = Color3.fromRGB(240, 180, 80),
+}
+
+local Services = {
+    Players = game:GetService("Players"),
+    UserInputService = game:GetService("UserInputService"),
+    TweenService = game:GetService("TweenService"),
+    RunService = game:GetService("RunService"),
 }
 
 local function make(className, props, parent)
@@ -28,8 +38,12 @@ local function corner(parent, radius)
     make("UICorner", {CornerRadius = UDim.new(0, radius or 10)}, parent)
 end
 
-local function stroke(parent, color, thickness)
-    make("UIStroke", {Color = color or COLORS.Border, Thickness = thickness or 1, Transparency = 0.15}, parent)
+local function stroke(parent, color, thickness, transparency)
+    make("UIStroke", {
+        Color = color or COLORS.Border,
+        Thickness = thickness or 1,
+        Transparency = transparency or 0.15,
+    }, parent)
 end
 
 local function padding(parent, left, right, top, bottom)
@@ -41,9 +55,114 @@ local function padding(parent, left, right, top, bottom)
     }, parent)
 end
 
+local function tween(obj, time, props, style, dir)
+    local t = Services.TweenService:Create(
+        obj,
+        TweenInfo.new(time or 0.15, style or Enum.EasingStyle.Quart, dir or Enum.EasingDirection.Out),
+        props
+    )
+    t:Play()
+    return t
+end
+
+-- ═══ NOTIFICACIONES ═══
+local Notify = {}
+local notifyContainer = nil
+
+local function ensureNotifyContainer()
+    if notifyContainer and notifyContainer.Parent then return notifyContainer end
+    local player = Services.Players.LocalPlayer
+    local pg = player:WaitForChild("PlayerGui")
+    local screen = make("ScreenGui", {
+        Name = "KNI_Notify",
+        ResetOnSpawn = false,
+        IgnoreGuiInset = true,
+        DisplayOrder = 1000,
+        ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+    }, pg)
+    local holder = make("Frame", {
+        Name = "Holder",
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -16, 0, 16),
+        Size = UDim2.fromOffset(280, 500),
+        BackgroundTransparency = 1,
+    }, screen)
+    make("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        VerticalAlignment = Enum.VerticalAlignment.Top,
+        HorizontalAlignment = Enum.HorizontalAlignment.Right,
+    }, holder)
+    notifyContainer = holder
+    return holder
+end
+
+function Notify:Show(title, text, duration, kind)
+    local holder = ensureNotifyContainer()
+    duration = duration or 4
+    kind = kind or "info"
+    local color = COLORS.Accent
+    if kind == "success" then color = COLORS.Good
+    elseif kind == "warning" then color = COLORS.Warn
+    elseif kind == "error" then color = COLORS.Bad end
+
+    local card = make("Frame", {
+        Size = UDim2.new(1, 0, 0, 52),
+        BackgroundColor3 = COLORS.Panel,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+    }, holder)
+    corner(card, 8)
+    stroke(card, color, 1.2, 0.2)
+
+    make("Frame", {
+        Size = UDim2.fromOffset(3, 36),
+        Position = UDim2.new(0, 6, 0.5, -18),
+        BackgroundColor3 = color,
+        BorderSizePixel = 0,
+    }, card)
+
+    make("TextLabel", {
+        Size = UDim2.new(1, -20, 0, 16),
+        Position = UDim2.fromOffset(14, 6),
+        BackgroundTransparency = 1,
+        Text = title,
+        TextColor3 = color,
+        Font = Enum.Font.GothamBold,
+        TextSize = 12,
+        TextXAlignment = Enum.TextXAlignment.Left,
+    }, card)
+
+    make("TextLabel", {
+        Size = UDim2.new(1, -20, 0, 24),
+        Position = UDim2.fromOffset(14, 22),
+        BackgroundTransparency = 1,
+        Text = text,
+        TextColor3 = COLORS.Muted,
+        Font = Enum.Font.Gotham,
+        TextSize = 10,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        TextWrapped = true,
+    }, card)
+
+    card.Position = UDim2.new(1, 300, 0, 0)
+    tween(card, 0.25, { Position = UDim2.new(0, 0, 0, 0) }, Enum.EasingStyle.Back)
+
+    task.delay(duration, function()
+        if card and card.Parent then
+            tween(card, 0.2, { Position = UDim2.new(1, 300, 0, 0) })
+            task.wait(0.25)
+            card:Destroy()
+        end
+    end)
+end
+
+KNI.Notify = Notify
+
+-- ═══ KNI.new ═══
 function KNI.new(options)
     options = options or {}
-    local player = game:GetService("Players").LocalPlayer
+    local player = Services.Players.LocalPlayer
     assert(player, "KNI_UI debe iniciarse desde un LocalScript")
     local guiParent = player:WaitForChild("PlayerGui")
 
@@ -52,11 +171,12 @@ function KNI.new(options)
     self._tabs = {}
     self._destroyed = false
     self._minimized = false
+    self._bubbleMoved = false
 
     local gui = make("ScreenGui", {
         Name = options.Name or "KNI_Interface",
         ResetOnSpawn = false,
-        IgnoreGuiInset = false,
+        IgnoreGuiInset = true,
         ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
         DisplayOrder = 50,
     }, guiParent)
@@ -66,7 +186,7 @@ function KNI.new(options)
         Name = "Window",
         AnchorPoint = Vector2.new(0.5, 0.5),
         Position = UDim2.fromScale(0.5, 0.5),
-        Size = UDim2.fromOffset(options.Width or 560, options.Height or 390),
+        Size = UDim2.fromOffset(options.Width or 600, options.Height or 400),
         BackgroundColor3 = COLORS.Background,
         BorderSizePixel = 0,
     }, gui)
@@ -76,28 +196,42 @@ function KNI.new(options)
     self.Root = root
 
     local top = make("Frame", {
-        Name = "TopBar", Size = UDim2.new(1, 0, 0, 42),
-        BackgroundColor3 = COLORS.Panel, BorderSizePixel = 0,
+        Name = "TopBar",
+        Size = UDim2.new(1, 0, 0, 42),
+        BackgroundColor3 = COLORS.Panel,
+        BorderSizePixel = 0,
     }, root)
     self.TopBar = top
     corner(top, 14)
     make("Frame", {
-        Position = UDim2.new(0, 0, 1, -12), Size = UDim2.new(1, 0, 0, 12),
-        BackgroundColor3 = COLORS.Panel, BorderSizePixel = 0,
+        Position = UDim2.new(0, 0, 1, -12),
+        Size = UDim2.new(1, 0, 0, 12),
+        BackgroundColor3 = COLORS.Panel,
+        BorderSizePixel = 0,
     }, top)
 
     make("TextLabel", {
-        Name = "Title", BackgroundTransparency = 1,
-        Position = UDim2.fromOffset(14, 0), Size = UDim2.new(1, -150, 1, 0),
-        Font = Enum.Font.GothamBold, Text = options.Title or "KNI | Muscle Legends",
-        TextColor3 = COLORS.Text, TextSize = 14, TextXAlignment = Enum.TextXAlignment.Left,
+        Name = "Title",
+        BackgroundTransparency = 1,
+        Position = UDim2.fromOffset(14, 0),
+        Size = UDim2.new(1, -150, 1, 0),
+        Font = Enum.Font.GothamBold,
+        Text = options.Title or "KNI | Muscle Legends",
+        TextColor3 = COLORS.Text,
+        TextSize = 14,
+        TextXAlignment = Enum.TextXAlignment.Left,
     }, top)
 
     local function topButton(text, x, color, callback)
         local b = make("TextButton", {
-            Size = UDim2.fromOffset(28, 26), Position = UDim2.new(1, x, 0, 8),
-            BackgroundColor3 = color, BorderSizePixel = 0, Text = text,
-            TextColor3 = COLORS.Text, TextSize = 16, Font = Enum.Font.GothamBold,
+            Size = UDim2.fromOffset(28, 26),
+            Position = UDim2.new(1, x, 0, 8),
+            BackgroundColor3 = color,
+            BorderSizePixel = 0,
+            Text = text,
+            TextColor3 = COLORS.Text,
+            TextSize = 16,
+            Font = Enum.Font.GothamBold,
             AutoButtonColor = true,
         }, top)
         corner(b, 8)
@@ -106,27 +240,41 @@ function KNI.new(options)
     end
 
     local restore = make("TextButton", {
-        Name = "RestoreButton", AnchorPoint = Vector2.new(1, 1),
-        Position = UDim2.new(1, -18, 1, -18), Size = UDim2.fromOffset(52, 52),
-        BackgroundColor3 = COLORS.Accent, BorderSizePixel = 0, Text = "KNI",
-        TextColor3 = COLORS.Text, TextSize = 15, Font = Enum.Font.GothamBlack,
-        Visible = false, ZIndex = 100,
+        Name = "RestoreButton",
+        AnchorPoint = Vector2.new(1, 1),
+        Position = UDim2.new(1, -18, 1, -18),
+        Size = UDim2.fromOffset(52, 52),
+        BackgroundColor3 = COLORS.Accent,
+        BorderSizePixel = 0,
+        Text = "KNI",
+        TextColor3 = COLORS.Text,
+        TextSize = 15,
+        Font = Enum.Font.GothamBlack,
+        Visible = false,
+        ZIndex = 100,
     }, gui)
     corner(restore, 18)
-    stroke(restore, COLORS.Text, 1)
+    stroke(restore, COLORS.Text, 1, 0.3)
     self.RestoreButton = restore
 
     local content = make("Frame", {
-        Name = "Content", Position = UDim2.fromOffset(0, 42),
-        Size = UDim2.new(1, 0, 1, -42), BackgroundTransparency = 1,
+        Name = "Content",
+        Position = UDim2.fromOffset(0, 42),
+        Size = UDim2.new(1, 0, 1, -42),
+        BackgroundTransparency = 1,
     }, root)
     self.Content = content
 
     local rail = make("ScrollingFrame", {
-        Name = "TabRail", Position = UDim2.fromOffset(10, 10),
-        Size = UDim2.new(0, 132, 1, -20), BackgroundColor3 = COLORS.Panel,
-        BorderSizePixel = 0, ScrollBarThickness = 3, ScrollBarImageColor3 = COLORS.Accent,
-        CanvasSize = UDim2.new(0, 0, 0, 0), AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        Name = "TabRail",
+        Position = UDim2.fromOffset(10, 10),
+        Size = UDim2.new(0, 132, 1, -20),
+        BackgroundColor3 = COLORS.Panel,
+        BorderSizePixel = 0,
+        ScrollBarThickness = 3,
+        ScrollBarImageColor3 = COLORS.Accent,
+        CanvasSize = UDim2.new(0, 0, 0, 0),
+        AutomaticCanvasSize = Enum.AutomaticSize.Y,
     }, content)
     corner(rail, 10)
     padding(rail, 7, 7, 8, 8)
@@ -134,13 +282,16 @@ function KNI.new(options)
     self.TabRail = rail
 
     local pages = make("Frame", {
-        Name = "Pages", Position = UDim2.new(0, 152, 0, 10),
-        Size = UDim2.new(1, -162, 1, -20), BackgroundColor3 = COLORS.Panel,
+        Name = "Pages",
+        Position = UDim2.new(0, 152, 0, 10),
+        Size = UDim2.new(1, -162, 1, -20),
+        BackgroundColor3 = COLORS.Panel,
         BorderSizePixel = 0,
     }, content)
     corner(pages, 10)
     self.Pages = pages
 
+    -- Drag
     local dragging, dragStart, startPos
     table.insert(self._connections, top.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -149,14 +300,16 @@ function KNI.new(options)
             startPos = root.Position
         end
     end))
-    table.insert(self._connections, game:GetService("UserInputService").InputChanged:Connect(function(input)
+    table.insert(self._connections, Services.UserInputService.InputChanged:Connect(function(input)
         if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
             local delta = input.Position - dragStart
             root.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
         end
     end))
-    table.insert(self._connections, game:GetService("UserInputService").InputEnded:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = false end
+    table.insert(self._connections, Services.UserInputService.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = false
+        end
     end))
 
     topButton("—", -72, COLORS.Panel2, function()
@@ -183,22 +336,33 @@ function KNI.new(options)
     return self
 end
 
+-- ═══ KNI:AddTab ═══
 function KNI:AddTab(name)
     assert(not self._destroyed, "La interfaz fue cerrada")
     local tab = {Name = name, _ui = self, _controls = {}}
     local button = make("TextButton", {
-        Name = "Tab_" .. tostring(name), Size = UDim2.new(1, 0, 0, 32),
-        BackgroundColor3 = COLORS.Panel2, BorderSizePixel = 0,
-        Text = tostring(name), TextColor3 = COLORS.Muted, TextSize = 11,
-        Font = Enum.Font.GothamSemibold, TextWrapped = true,
+        Name = "Tab_" .. tostring(name),
+        Size = UDim2.new(1, 0, 0, 32),
+        BackgroundColor3 = COLORS.Panel2,
+        BorderSizePixel = 0,
+        Text = tostring(name),
+        TextColor3 = COLORS.Muted,
+        TextSize = 11,
+        Font = Enum.Font.GothamSemibold,
+        TextWrapped = true,
     }, self.TabRail)
     corner(button, 8)
 
     local page = make("ScrollingFrame", {
-        Name = "Page_" .. tostring(name), Size = UDim2.fromScale(1, 1),
-        BackgroundTransparency = 1, BorderSizePixel = 0, Visible = false,
-        ScrollBarThickness = 4, ScrollBarImageColor3 = COLORS.Accent,
-        CanvasSize = UDim2.new(0, 0, 0, 0), AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        Name = "Page_" .. tostring(name),
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        Visible = false,
+        ScrollBarThickness = 4,
+        ScrollBarImageColor3 = COLORS.Accent,
+        CanvasSize = UDim2.new(0, 0, 0, 0),
+        AutomaticCanvasSize = Enum.AutomaticSize.Y,
     }, self.Pages)
     padding(page, 10, 10, 10, 10)
     make("UIListLayout", {Padding = UDim.new(0, 7), SortOrder = Enum.SortOrder.LayoutOrder}, page)
@@ -221,33 +385,75 @@ function KNI:AddTab(name)
     local function row(height)
         local frame = make("Frame", {
             Size = UDim2.new(1, 0, 0, height or 34),
-            BackgroundColor3 = COLORS.Panel2, BorderSizePixel = 0,
+            BackgroundColor3 = COLORS.Panel2,
+            BorderSizePixel = 0,
         }, page)
         corner(frame, 8)
         return frame
     end
 
+    -- ═══ AddLabel ═══
     function tab:AddLabel(text)
-        local r = row(30)
+        local r = row(28)
         r.BackgroundTransparency = 1
         local label = make("TextLabel", {
-            BackgroundTransparency = 1, Size = UDim2.new(1, 0, 1, 0),
-            Text = tostring(text), TextColor3 = COLORS.Muted, TextSize = 11,
-            Font = Enum.Font.Gotham, TextWrapped = true, TextXAlignment = Enum.TextXAlignment.Left,
+            BackgroundTransparency = 1,
+            Size = UDim2.new(1, 0, 1, 0),
+            Text = tostring(text),
+            TextColor3 = COLORS.Muted,
+            TextSize = 11,
+            Font = Enum.Font.Gotham,
+            TextWrapped = true,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            TextYAlignment = Enum.TextYAlignment.Center,
         }, r)
         local control = {Instance = label}
         function control:SetText(value) label.Text = tostring(value) end
-        setmetatable(control, {__index = function(_, key) if key == "Text" then return label.Text end end,
-            __newindex = function(t, key, value) if key == "Text" then label.Text = tostring(value) else rawset(t, key, value) end end})
+        function control:Set(value) label.Text = tostring(value) end
+        setmetatable(control, {
+            __index = function(_, key) if key == "Text" then return label.Text end end,
+            __newindex = function(t, key, value)
+                if key == "Text" then label.Text = tostring(value) else rawset(t, key, value) end
+            end,
+        })
         return control
     end
 
+    -- ═══ AddSection ═══
+    function tab:AddSection(text)
+        local r = row(26)
+        r.BackgroundTransparency = 1
+        local label = make("TextLabel", {
+            BackgroundTransparency = 1,
+            Size = UDim2.new(1, -60, 1, 0),
+            Text = tostring(text),
+            TextColor3 = COLORS.Accent,
+            TextSize = 11,
+            Font = Enum.Font.GothamBold,
+            TextXAlignment = Enum.TextXAlignment.Left,
+        }, r)
+        make("Frame", {
+            AnchorPoint = Vector2.new(0, 0.5),
+            Position = UDim2.new(1, -10, 0.5, 0),
+            Size = UDim2.fromOffset(40, 1),
+            BackgroundColor3 = COLORS.Accent,
+            BackgroundTransparency = 0.5,
+            BorderSizePixel = 0,
+        }, r)
+        return {Instance = label}
+    end
+
+    -- ═══ AddButton ═══
     function tab:AddButton(text, callback)
-        local r = row(34)
+        local r = row(32)
         local b = make("TextButton", {
-            Position = UDim2.fromOffset(4, 3), Size = UDim2.new(1, -8, 1, -6),
-            BackgroundColor3 = COLORS.Accent2, BorderSizePixel = 0,
-            Text = tostring(text), TextColor3 = COLORS.Text, TextSize = 11,
+            Position = UDim2.fromOffset(4, 3),
+            Size = UDim2.new(1, -8, 1, -6),
+            BackgroundColor3 = COLORS.Accent2,
+            BorderSizePixel = 0,
+            Text = tostring(text),
+            TextColor3 = COLORS.Text,
+            TextSize = 11,
             Font = Enum.Font.GothamSemibold,
         }, r)
         corner(b, 7)
@@ -257,86 +463,241 @@ function KNI:AddTab(name)
         return b
     end
 
-    function tab:AddSwitch(text, callback)
-        local r = row(38)
-        local label = make("TextLabel", {
-            BackgroundTransparency = 1, Position = UDim2.fromOffset(10, 0),
-            Size = UDim2.new(1, -72, 1, 0), Text = tostring(text),
-            TextColor3 = COLORS.Text, TextSize = 11, Font = Enum.Font.Gotham,
-            TextXAlignment = Enum.TextXAlignment.Left, TextWrapped = true,
+    -- ═══ AddSwitch ═══
+    function tab:AddSwitch(text, callback, default)
+        local r = row(36)
+        make("TextLabel", {
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(10, 0),
+            Size = UDim2.new(1, -72, 1, 0),
+            Text = tostring(text),
+            TextColor3 = COLORS.Text,
+            TextSize = 11,
+            Font = Enum.Font.Gotham,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            TextWrapped = true,
         }, r)
         local b = make("TextButton", {
-            AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -7, 0.5, 0),
-            Size = UDim2.fromOffset(48, 23), BackgroundColor3 = COLORS.Panel,
-            BorderSizePixel = 0, Text = "OFF", TextColor3 = COLORS.Muted,
-            TextSize = 10, Font = Enum.Font.GothamBold,
+            AnchorPoint = Vector2.new(1, 0.5),
+            Position = UDim2.new(1, -7, 0.5, 0),
+            Size = UDim2.fromOffset(48, 23),
+            BackgroundColor3 = COLORS.Panel,
+            BorderSizePixel = 0,
+            Text = "OFF",
+            TextColor3 = COLORS.Muted,
+            TextSize = 10,
+            Font = Enum.Font.GothamBold,
         }, r)
         corner(b, 12)
-        local control = {Value = false}
-        function control:Set(value)
-            control.Value = value == true
+
+        local control = {Value = default == true}
+
+        local function render()
             b.Text = control.Value and "ON" or "OFF"
             b.BackgroundColor3 = control.Value and COLORS.Accent or COLORS.Panel
-            b.TextColor3 = COLORS.Text
-            if callback then callback(control.Value) end
+            b.TextColor3 = control.Value and COLORS.Text or COLORS.Muted
         end
-        table.insert(self._ui._connections, b.Activated:Connect(function() control:Set(not control.Value) end))
+
+        function control:Set(value, silent)
+            control.Value = value == true
+            render()
+            if not silent and callback then
+                local ok, err = pcall(callback, control.Value)
+                if not ok then warn("[KNI] Switch error:", err) end
+            end
+        end
+
+        function control:Get()
+            return control.Value
+        end
+
+        render()
+        table.insert(self._ui._connections, b.Activated:Connect(function()
+            control:Set(not control.Value)
+        end))
         return control
     end
 
+    -- ═══ AddTextBox ═══
     function tab:AddTextBox(text, callback, opts)
-        local r = row(58)
+        local r = row(56)
         make("TextLabel", {
-            BackgroundTransparency = 1, Position = UDim2.fromOffset(9, 2),
-            Size = UDim2.new(1, -18, 0, 19), Text = tostring(text),
-            TextColor3 = COLORS.Muted, TextSize = 10, Font = Enum.Font.Gotham,
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(9, 2),
+            Size = UDim2.new(1, -18, 0, 18),
+            Text = tostring(text),
+            TextColor3 = COLORS.Muted,
+            TextSize = 10,
+            Font = Enum.Font.Gotham,
             TextXAlignment = Enum.TextXAlignment.Left,
         }, r)
         local box = make("TextBox", {
-            Position = UDim2.fromOffset(7, 25), Size = UDim2.new(1, -14, 0, 26),
-            BackgroundColor3 = COLORS.Background, BorderSizePixel = 0,
-            Text = "", PlaceholderText = "Escribe aquí…", ClearTextOnFocus = not (opts and opts.clear == false),
-            TextColor3 = COLORS.Text, PlaceholderColor3 = COLORS.Muted, TextSize = 11,
-            Font = Enum.Font.Gotham, TextXAlignment = Enum.TextXAlignment.Left,
+            Position = UDim2.fromOffset(7, 24),
+            Size = UDim2.new(1, -14, 0, 26),
+            BackgroundColor3 = COLORS.Background,
+            BorderSizePixel = 0,
+            Text = "",
+            PlaceholderText = "Escribe aquí…",
+            ClearTextOnFocus = not (opts and opts.clear == false),
+            TextColor3 = COLORS.Text,
+            PlaceholderColor3 = COLORS.Muted,
+            TextSize = 11,
+            Font = Enum.Font.Gotham,
+            TextXAlignment = Enum.TextXAlignment.Left,
         }, r)
         corner(box, 6)
         padding(box, 7, 7, 0, 0)
-        table.insert(self._ui._connections, box.FocusLost:Connect(function()
-            if callback then callback(box.Text) end
+        table.insert(self._ui._connections, box.FocusLost:Connect(function(enter)
+            if callback then
+                local ok, err = pcall(callback, box.Text, enter)
+                if not ok then warn("[KNI] TextBox error:", err) end
+            end
         end))
         return box
     end
 
-    function tab:AddDropdown(text, callback)
-        local control = {Items = {}, Selected = nil}
-        local r = row(58)
+    -- ═══ AddSlider ═══
+    function tab:AddSlider(text, min, max, default, callback)
+        min, max = min or 0, max or 100
+        default = math.clamp(default or min, min, max)
+
+        local r = row(46)
+        make("TextLabel", {
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(10, 2),
+            Size = UDim2.new(1, -80, 0, 18),
+            Text = tostring(text),
+            TextColor3 = COLORS.Text,
+            TextSize = 11,
+            Font = Enum.Font.Gotham,
+            TextXAlignment = Enum.TextXAlignment.Left,
+        }, r)
+
+        local valueLabel = make("TextLabel", {
+            AnchorPoint = Vector2.new(1, 0),
+            Position = UDim2.new(1, -10, 0, 2),
+            Size = UDim2.fromOffset(60, 18),
+            BackgroundTransparency = 1,
+            Text = tostring(default),
+            TextColor3 = COLORS.Accent,
+            TextSize = 11,
+            Font = Enum.Font.GothamBold,
+            TextXAlignment = Enum.TextXAlignment.Right,
+        }, r)
+
+        local track = make("Frame", {
+            Position = UDim2.fromOffset(10, 26),
+            Size = UDim2.new(1, -20, 0, 5),
+            BackgroundColor3 = COLORS.Background,
+            BorderSizePixel = 0,
+        }, r)
+        corner(track, 3)
+
+        local fill = make("Frame", {
+            Size = UDim2.new(0, 0, 1, 0),
+            BackgroundColor3 = COLORS.Accent,
+            BorderSizePixel = 0,
+        }, track)
+        corner(fill, 3)
+
+        local currentValue = default
+        local initRel = (default - min) / (max - min)
+        fill.Size = UDim2.new(initRel, 0, 1, 0)
+
+        local function updateFromX(x)
+            local relX = math.clamp((x - track.AbsolutePosition.X) / track.AbsoluteSize.X, 0, 1)
+            currentValue = math.floor(min + (max - min) * relX + 0.5)
+            valueLabel.Text = tostring(currentValue)
+            tween(fill, 0.06, { Size = UDim2.new(relX, 0, 1, 0) }, Enum.EasingStyle.Linear)
+        end
+
+        local function startDrag(input)
+            updateFromX(input.Position.X)
+            local conn
+            conn = input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    conn:Disconnect()
+                    if callback then
+                        local ok, err = pcall(callback, currentValue)
+                        if not ok then warn("[KNI] Slider error:", err) end
+                    end
+                elseif input.UserInputState == Enum.UserInputState.Change then
+                    updateFromX(input.Position.X)
+                end
+            end)
+        end
+
+        track.InputBegan:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                startDrag(input)
+            end
+        end)
+
+        return {
+            Set = function(_, value)
+                value = math.clamp(value, min, max)
+                currentValue = value
+                valueLabel.Text = tostring(value)
+                local rel = (value - min) / (max - min)
+                fill.Size = UDim2.new(rel, 0, 1, 0)
+                if callback then pcall(callback, value) end
+            end,
+            Get = function() return currentValue end,
+        }
+    end
+
+    -- ═══ AddDropdown ═══
+    function tab:AddDropdown(text, callback, default)
+        local control = {Items = {}, Selected = default, _ui = self._ui}
+        local r = row(56)
         local b = make("TextButton", {
-            Position = UDim2.fromOffset(7, 5), Size = UDim2.new(1, -14, 0, 24),
-            BackgroundColor3 = COLORS.Background, BorderSizePixel = 0,
-            Text = tostring(text) .. "  ▾", TextColor3 = COLORS.Text, TextSize = 10,
-            Font = Enum.Font.Gotham, TextXAlignment = Enum.TextXAlignment.Left,
+            Position = UDim2.fromOffset(7, 5),
+            Size = UDim2.new(1, -14, 0, 24),
+            BackgroundColor3 = COLORS.Background,
+            BorderSizePixel = 0,
+            Text = tostring(text) .. "  ▾",
+            TextColor3 = COLORS.Text,
+            TextSize = 10,
+            Font = Enum.Font.Gotham,
+            TextXAlignment = Enum.TextXAlignment.Left,
         }, r)
         corner(b, 6)
         local menu = make("Frame", {
-            Position = UDim2.new(0, 7, 0, 32), Size = UDim2.new(1, -14, 0, 0),
-            BackgroundColor3 = COLORS.Background, BorderSizePixel = 0, Visible = false,
-            ClipsDescendants = true, ZIndex = 20,
+            Position = UDim2.new(0, 7, 0, 32),
+            Size = UDim2.new(1, -14, 0, 0),
+            BackgroundColor3 = COLORS.Background,
+            BorderSizePixel = 0,
+            Visible = false,
+            ClipsDescendants = true,
+            ZIndex = 20,
         }, r)
         corner(menu, 6)
         local list = make("ScrollingFrame", {
-            Size = UDim2.fromScale(1, 1), BackgroundTransparency = 1, BorderSizePixel = 0,
-            ScrollBarThickness = 3, CanvasSize = UDim2.new(0, 0, 0, 0),
-            AutomaticCanvasSize = Enum.AutomaticSize.Y, ZIndex = 21,
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            ScrollBarThickness = 3,
+            CanvasSize = UDim2.new(0, 0, 0, 0),
+            AutomaticCanvasSize = Enum.AutomaticSize.Y,
+            ZIndex = 21,
         }, menu)
         make("UIListLayout", {Padding = UDim.new(0, 2)}, list)
         local open = false
+
         local function refresh()
-            for _, child in ipairs(list:GetChildren()) do if child:IsA("TextButton") then child:Destroy() end end
+            for _, child in ipairs(list:GetChildren()) do
+                if child:IsA("TextButton") then child:Destroy() end
+            end
             for _, item in ipairs(control.Items) do
                 local choice = make("TextButton", {
-                    Size = UDim2.new(1, -4, 0, 24), BackgroundColor3 = COLORS.Panel2,
-                    BorderSizePixel = 0, Text = tostring(item), TextColor3 = COLORS.Text,
-                    TextSize = 10, Font = Enum.Font.Gotham, ZIndex = 22,
+                    Size = UDim2.new(1, -4, 0, 22),
+                    BackgroundColor3 = COLORS.Panel2,
+                    BorderSizePixel = 0,
+                    Text = tostring(item),
+                    TextColor3 = COLORS.Text,
+                    TextSize = 10,
+                    Font = Enum.Font.Gotham,
+                    ZIndex = 22,
                 }, list)
                 table.insert(self._ui._connections, choice.Activated:Connect(function()
                     control.Selected = tostring(item)
@@ -344,35 +705,79 @@ function KNI:AddTab(name)
                     open = false
                     menu.Visible = false
                     menu.Size = UDim2.new(1, -14, 0, 0)
-                    if callback then callback(control.Selected) end
+                    if callback then
+                        local ok, err = pcall(callback, control.Selected)
+                        if not ok then warn("[KNI] Dropdown error:", err) end
+                    end
                 end))
             end
         end
+
         function control:Add(item)
             table.insert(control.Items, tostring(item))
             refresh()
         end
+
         function control:Remove(item)
             for i, v in ipairs(control.Items) do
-                if v == item then table.remove(control.Items, i); break end
+                if v == item then
+                    table.remove(control.Items, i)
+                    break
+                end
             end
             refresh()
         end
+
+        function control:SetOptions(items)
+            control.Items = {}
+            for _, item in ipairs(items or {}) do
+                table.insert(control.Items, tostring(item))
+            end
+            refresh()
+        end
+
+        function control:Set(value)
+            control.Selected = tostring(value)
+            b.Text = tostring(text) .. ": " .. control.Selected .. "  ▾"
+        end
+
+        function control:Get()
+            return control.Selected
+        end
+
+        function control:Clear()
+            control.Items = {}
+            control.Selected = nil
+            b.Text = tostring(text) .. "  ▾"
+            refresh()
+        end
+
         table.insert(self._ui._connections, b.Activated:Connect(function()
             open = not open
             menu.Visible = open
-            menu.Size = open and UDim2.new(1, -14, 0, 100) or UDim2.new(1, -14, 0, 0)
+            local height = math.min(#control.Items * 24 + 6, 120)
+            menu.Size = open and UDim2.new(1, -14, 0, height) or UDim2.new(1, -14, 0, 0)
         end))
+
+        refresh()
         return control
+    end
+
+    -- ═══ Show (activar tab por código) ═══
+    function tab:Show()
+        activate()
     end
 
     return tab
 end
 
+-- ═══ KNI:Destroy ═══
 function KNI:Destroy()
     if self._destroyed then return end
     self._destroyed = true
-    for _, connection in ipairs(self._connections) do pcall(function() connection:Disconnect() end) end
+    for _, connection in ipairs(self._connections) do
+        pcall(function() connection:Disconnect() end)
+    end
     table.clear(self._connections)
     if self.Gui then self.Gui:Destroy() end
 end
