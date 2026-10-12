@@ -1,1 +1,4085 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('--[[2e|ah 9l 5d 7u 7z 8x jx 9n aN by 78/79/6j]]--═══iU 9n═══f g4="ac://go.kw.gm/jO-jQ/hx-hF/G/9n.iB"f 5J=gI(2T:gJ(g4,J))()if B 5J e hU("[2e] fl al i7 9n")w c--═══mz═══f C=2T:4b("1M").ap--═══my l9═══f ha="ac://ly.gm/go/kP"f h7,9o=1f(j()w gI(2T:gJ(ha,J))()c)if B h7 or 6G(9o)~="1J"e C:dr("[2e] fl al ni 9o. lUá al lC.")w c if B 9o[C.3r]e C:dr("[2e] eh mkás ml. mp a aL.gg/ax")w c 7U("[2e] 7I mu ✅")--═══mi═══f 13={1M=2T:4b("1M"),2u=2T:4b("2u"),5e=2T:4b("5e"),cG=2i,aD=2T:4b("aD"),aJ=2T:4b("aJ"),5I=2T:4b("5I"),42=2T:4b("42"),7M=2T:4b("7M"),9j=2T:4b("9j"),4C=2T:4b("4C"),}f kE=C:1O("kL")f da=C:1O("2D")--═══lq═══f u={}u.48={}T.7Q=T.7Q or{}O Q,7L in 1c(T.7Q)do 1f(j()7L:66()c)c T.7Q={}T.9p=(T.9p or 0)+1 u.1r=T.9p j u.1o()w u.1r==T.9p c j u.2F(dW,cR)f 7L=dW:lv(cR)1J.2A(T.7Q,7L)w 7L c u.1x={7l=C,2l=C.2l,W=C.W,1y=1b,2y=13.cG.oh,2D=da,}u.1x.1y=u.1x.W g u.1x.W:2s("1y")u.8V={8J=13.2u.2X.op,o3=C.2o,}j u.5c(n)n=1N(n)or 0 if n>=a2 e w 1G.2Q("%.o8",n/a2)2B n>=a1 e w 1G.2Q("%.mS",n/a1)2B n>=9X e w 1G.2Q("%.mU",n/9X)2B n>=9Y e w 1G.2Q("%.mL",n/9Y)2B n>=9Z e w 1G.2Q("%.mJ",n/9Z)2B n>=a0 e w 1G.2Q("%.nj",n/a0)1R w 5s(1s.2t(n))c c j u.4T(n)f s=5s(1s.2t(1N(n)or 0))1w J do f d0,7w=s:6J("^(-?%d+)(%d%d%d)","%1.%2")s=d0 if 7w==0 e 2j c c w s c j u.2d(fn,1d,9t,fo)5J.nc:gH(fn,1d,9t or 3,fo or"1W")c--═══i4 i1═══f 3N=5J.1l({11="2e",i2="2e | ah",iI=iF,iO=iw,})T.ix=3N--═══hA═══f b={G=3N:4p("33"),k=3N:4p("6e"),jY=3N:4p("cP"),t=3N:4p("5x"),F=3N:4p("⚡ 2N"),q=3N:4p("1U"),K=3N:4p("3Y"),1z=3N:4p("7V"),4P=3N:4p("dY"),1E=3N:4p("4C"),1W=3N:4p("cb"),}O Q,6T in 39(b)do 6T.48={}c--═══keÓN kn dT═══u.2F(C.67,j(1C)u.1x.W=1C u.1x.1y=1C:1O("1y",10)u.1x.2D=C:1O("2D")c)--═══gW-6y═══u.2F(C.j9,j()1f(j()13.5e:h5()13.5e:gl(aa.1l(0,0))13.5e:h6(aa.1l(0,0))c)c)--═══════════════════════════════════════════════════════════════--4k jf--═══════════════════════════════════════════════════════════════b.G:1F("j7 3p")b.G.3p={2C={1g=2,29=r},5U={1g=9r,29=r},5j={1g=70,29=r},}b.G:3t("2C (eZ 2):",j(1d)1d=1G.6J(1d,"%s+","")if 1N(1d)g 1N(1d)>0 e b.G.3p.2C.1g=1N(1d)c c,{4f=r})b.G:1u("1B 2C",j(1p)b.G.3p.2C.29=1p c)H.1A(j()1w u.1o()do if b.G.3p.2C.29 g u.1x.W g u.1x.1y e 1f(j()u.8V.8J:3F("fi",b.G.3p.2C.1g)c)c H.14(0.15)c c)b.G:3t("5U (eZ 9r):",j(1d)1d=1G.6J(1d,"%s+","")if 1N(1d)g 1N(1d)>0 e b.G.3p.5U.1g=1N(1d)c c,{4f=r})b.G:1u("1B 5U",j(1p)b.G.3p.5U.29=1p c)H.1A(j()1w u.1o()do if b.G.3p.5U.29 g u.1x.W g u.1x.1y e 1f(j()u.8V.8J:3F("j2",b.G.3p.5U.1g)c)c H.14(0.15)c c)b.G:3t("5j (1-9r):",j(1d)1d=1G.6J(1d,"%s+","")if 1N(1d)g 1N(1d)>=1 g 1N(1d)<=9r e b.G.3p.5j.1g=1N(1d)c c,{4f=r})b.G:1u("1B 5j",j(1p)b.G.3p.5j.29=1p if u.1x.2y e u.1x.2y.eP=1p g b.G.3p.5j.1g or 70 c c)H.1A(j()1w u.1o()do if b.G.3p.5j.29 g u.1x.2y e u.1x.2y.eP=b.G.3p.5j.1g c H.14(0.15)c c)b.G:1F("3m & jt")b.G.3m={9q={29=r},4j={29=r,1P=1b},}b.G.9k=j()if B b.G.3m.9q.29 or B C.W e w c f 1a=C.W:L("2n")if B 1a e w c if 1a:L("63")g 1a.63.9f==1D.1l(6c,0,6c)e 1a.63:5Q()c f bv=7N.1l("63")bv.9f=1D.1l(6c,0,6c)bv.js=1D.1l(0,0,0)bv.P=ju bv.28=1a b.G.48.bv=bv c b.G.aI=j()if B C.W e w c f 1a=C.W:L("2n")if B 1a e w c if 1a:L("63")g 1a.63.9f==1D.1l(6c,0,6c)e 1a.63:5Q()c c b.G:1u("6r jr",j(1p)b.G.3m.9q.29=1p if 1p e b.G.9k()1R b.G.aI()c c):1B(r)u.2F(C.67,j(54)54:1O("2n",5)if b.G.3m.9q.29 e b.G.9k()c c)b.G.9e=j()b.G.9k()if B b.G.3m.4j.29 or B b.G.3m.4j.1P e w c if B C.W e w c f 1a=C.W:L("2n")if B 1a e w c if 1a:L("7P")e 1a.7P.1P=b.G.3m.4j.1P 1R b.G.aI()f bp=7N.1l("jl")bp.11="7P"bp.9f=1D.1l(1s.aM,1s.aM,1s.aM)bp.1P=b.G.3m.4j.1P bp.P=6c bp.28=1a b.G.48.bp=bp c c b.G.eI=j()if C.W e f 1a=C.W:L("2n")if 1a g 1a:L("7P")e 1a.7P:5Q()c c b.G.3m.4j.1P=1b c b.G:1u("jG 1P",j(1p)b.G.3m.4j.29=1p if 1p e if C.W e f 1a=C.W:L("2n")if 1a e b.G.3m.4j.1P=1a.1P c c b.G.9e()1R b.G.eI()c c)u.2F(C.67,j(54)if b.G.3m.4j.29 g 54:1O("2n",5)e b.G.3m.4j.1P=54.2n.1P b.G.9e()c c)H.1A(j()1w u.1o()do if b.G.3m.4j.29 e b.G.9e()c H.14(0.1)c c)b.G.88={eK=r,eT=r,eL=13.2u.2X:1O("jE"),f0=13.2u.2X:1O("jA"),}b.G:1u("eS 3Y",j(19)b.G.88.eK=19 b.G.88.eL:1T(19 g"jC"or"jD")c):1B(r)b.G.f1=b.G:1u("eS jk",j(19)b.G.88.eT=19 b.G.88.f0:1T("j3")c)b.G.f1:1B(r)b.G.9h="2e/j5.j0"b.G.5r={85=r,7K=r,}b.G.eW=j()if 6G(f2)~="j"or 6G(f3)~="j"e w c 1f(j()if B f2(b.G.9h)e w c f 9g=13.9j:iV(f3(b.G.9h))if 5K(9g)=="1J"e b.G.5r.85=9g.85==J b.G.5r.7K=9g.7K==J c c)c b.G.aH=j()if 6G(eV)~="j"e w c 1f(j()if 6G(eU)=="j"g(6G(eY)~="j"or B eY("2e"))e 1f(eU,"2e")c eV(b.G.9h,13.9j:jg(b.G.5r))c)c b.G.eW()b.G.eX=b.G:1u("eG 11",j(19)b.G.5r.85=19 b.G.aH()c)b.G.eX:1B(b.G.5r.85)b.G.eF=b.G:1u("eG 4C",j(19)b.G.5r.7K=19 b.G.aH()c)b.G.eF:1B(b.G.5r.7K)b.G.30={aC={},3M=jb,aB=jc,eo=1D.1l(-2,-9.5,-2),}H.1A(j()O x=0,1s.em(b.G.30.aB/b.G.30.3M)-1 do O z=0,1s.em(b.G.30.aB/b.G.30.3M)-1 do O Q,43 in 1c({{x*b.G.30.3M,z*b.G.30.3M,"jL"..x.."Q"..z},{-x*b.G.30.3M,z*b.G.30.3M,"kl"..x.."Q"..z},{-x*b.G.30.3M,-z*b.G.30.3M,"kk"..x.."Q"..z},{x*b.G.30.3M,-z*b.G.30.3M,"km"..x.."Q"..z},})do f 2r=7N.1l("bC")2r.2C=1D.1l(b.G.30.3M,1,b.G.30.3M)2r.1P=b.G.30.eo+1D.1l(43[1],0,43[2])2r.b2=J 2r.b9=1 2r.8l=J 2r.11="kj"..43[3]2r.28=2i 1J.2A(b.G.30.aC,2r)c c c c)b.G.eq=b.G:1u("ki on kd",j(1p)O Q,2r in 1c(b.G.30.aC)do if 2r g 2r.28 e 2r.8l=1p c c c)b.G.eq:1B(r)b.G:1F("kh")b.G:1u("kp cT",j(1p)T.ek=1p if 1p e u.2F(13.aJ.ky,j()if T.ek g C.W e f 1e=C.W:2s("1y")if 1e e 1e:h4("ct")c c c)c c)b.G.5i={1h=r,1r=0,ej=13.2u.2X:1O("kz"),ef=13.2u:1O("bI"):1O("kA"):1O("kB"):1O("ee eg"),}b.G.ei=j()1f(j()b.G.5i.ej:3F("kx",b.G.5i.ef)c)c b.G:1u("ks ee eg",j(19)b.G.5i.1h=19 b.G.5i.1r+=1 b.G.48.1K=b.G.5i.1r if B 19 e w c H.1A(j()1w u.1o()g b.G.5i.1h g b.G.5i.1r==b.G.48.1K do b.G.ei()H.14(1)c c)c)f aE=b.G:2P("kr kt",j(3T)13.aD.kv=3T=="er"g 0 or 9 c)aE:1X("er")aE:1X("kb")--═══════════════════════════════════════════════════════════════--4k gr--═══════════════════════════════════════════════════════════════b.1W:1F("gGón")b.1W:1i("2e | ah")b.1W:1i("aN by 78 / 79 / 6j")b.1W:1i("")b.1W:4v("📋 g3 ae",j()if a9 e a9("ac://aL.gg/ax")u.2d("ae","hs hq",2,"2L")c c)b.1W:1i("")b.1W:1i("hf:")b.1W:1i("- 79 (@hj)")b.1W:1i("- 6j @hk")b.1W:1i("- 78 @gU")b.1W:1i("")b.1W:1i("5J 9m - ca.0")u.2d("2e","9l 3V gP ✅",3,"2L")--═══════════════════════════════════════════════════════════════--4k jU--═══════════════════════════════════════════════════════════════--jT de 6e b.k.ec=j()O Q,v in 39(C.2D:3j())do if v.11=="3b"g C.W g C.W:L("1y")e C.W.1y:4Z(v)c c if C.2o e C.2o:1T("2b","32")C.2o:1T("2b","3s")c c b.k.4t=j(p)w p g p.W g p.W:L("2n")g p.W:L("1y")g p.W.1y.2h>0 c b.k.41=j(p)if B p or B p.W e w r c if p.W:2s("jV")or p.W:L("jW")e w J c f aF=p.W:3y("jX")w 5K(aF)=="9N"g 2i:cj()<aF c b.k.6V=j()f U=C.W f 1e=U g U:2s("1y")f 1a=U g U:L("2n")if B U or B 1e or 1e.2h<=0 or B 1a e w c w U,1e,1a c b.k.9C=j(1V,4U)if B b.k.4t(1V)or b.k.41(1V)or b.k.41(C)e w r c f Q,Q,5A=b.k.6V()f 2S=1V.W g 1V.W:L("2n")if B 5A or B 2S e w r c 5A.1v=2S.1v*1v.1l(0,4U,0)5A.4B=1D.3n 5A.6f=1D.3n w J c b.k.8S=j(1V,4U)if B b.k.9C(1V,4U)e w r,r c 13.42.64:4H()if B b.k.9C(1V,4U)e w r,r c f U=b.k.6V()f 2S=1V.W g 1V.W:L("2n")f 5g=1V.W g 1V.W:2s("1y")if B U or B 2S or B 5g or b.k.41(1V)e w r,r c f 7D=U:L("59")or U:L("6A")if B 7D e w r,r c f 5D=U:L("3b")or C.2D:L("3b")f 1e=U:2s("1y")if 5D g 5D.28~=U g 1e e 1e:4Z(5D)c f eB=5g.2h f 9i=1f(j()if 2a e 2a(2S,7D,0)2a(2S,7D,1)c C.2o:1T("2b",7D.11=="59"g"32"or"3s")c)if B 9i e w r,r c O Q=1,4 do 13.42.64:4H()if B b.k.4t(1V)or 5g.2h<eB e w J,J c if b.k.41(1V)e w r,r c c w r,J c b.k.be=j(1V,eC,9D,4U)f 7C=0 1w u.1o()g 7C<eC g 9D()g b.k.4t(1V)g B b.k.41(1V)do f ay,9i=b.k.8S(1V,4U)if ay e 7C=7C+1 c if B 9i e 2j c if B ay e H.14(0.3K)c c w 7C c b.k.fK=j(1V,9t,9D,4U)f 5q=os.2V()1w u.1o()g os.2V()-5q<9t g 9D()g b.k.4t(1V)g B b.k.41(1V)do if b.k.9C(1V,4U)e f U=C.W f 2S=1V.W g 1V.W:L("2n")f 32=U g U:L("59")f 3s=U g U:L("6A")f 5D=U g U:L("3b")or C.2D:L("3b")f 1e=U g U:2s("1y")if 5D g 1e g 5D.28~=U e 1e:4Z(5D)c if 2S g 32 g 3s e 1f(j()if 2a e 2a(2S,32,0)2a(2S,32,1)2a(2S,3s,0)2a(2S,3s,1)c C.2o:1T("2b","32")C.2o:1T("2b","3s")c)c c 13.42.64:4H()c c--ew b.k:1F("ew")b.k.ao=j(as)O Q,6n in 39(C.56:3j())do if 6n:2z("gL")e O Q,2M in 39(6n:3j())do 13.2u.2X.87:1T("bV",2M)c c c H.14(0.2)f 7y={}O Q,2G in 1c(as)do 7y[2G]={}c O Q,2M in 39(C.56.bW:3j())do if 7y[2M.11]e 1J.2A(7y[2M.11],2M)c c f 5n=0 O Q,2G in 1c(as)do O Q,2M in 1c(7y[2G])do if 5n>=9 e w c 13.2u.2X.87:1T("gw",2M)5n=5n+1 H.14(0.1)c c c b.k:4v("f4 f5 jP",j()b.k.ao({"fB fA","6a fw","fC fD","fE fF"})c)b.k:4v("f4 f5 2h",j()b.k.ao({"fC fD","fE fF","fB fA","6a fw"})c)b.k:1u("5O k9 ka",j(1p)if 1p e f fx={["k6"]=J,["k5"]=J,["k1"]=J,["k0"]=J,["k2"]=J,["k3"]=J,["k4"]=J,["kC"]=J,}f fO=j(4Q)if B 4Q or B 4Q.an e w r c f fy=5s(4Q.an.hw):6C("%d+")f 9F=1G.3x((4Q.11 or"").." "..(4Q.an.11 or""))w fx[fy]==J or 1G.4u(9F,"2b",1,J)~=1b or 1G.4u(9F,"7p",1,J)~=1b or 1G.4u(9F,"hG",1,J)~=1b c f fG=j(2g)if B 2g or B 2g:2z("8E")e w r c f n=1G.3x(2g.11)w 1G.4u(n,"2b",1,J)~=1b c f fQ=j(1C)if B 1C e w r c O Q,fH in 1c(1C:3j())do if fG(fH)e w J c c w r c f fR=j(1C)f 1e=1C g 1C:2s("1y")if B 1e e w c O Q,4Q in 1c(1e:hy())do if fO(4Q)e 4Q:eH(0)c c c b.k.48.9G=u.2F(13.42.bT,j()f U=C.W if fQ(U)e fR(U)c c)1R if b.k.48.9G e b.k.48.9G:66()b.k.48.9G=1b c c c)--1S 3R b.k:1F("1S 3R")T.5V=T.5V or{}T.9z=T.9z or{}T.65=r T.6w=r T.hJ=r T.hE=r T.5G=(T.5G or 0)+1 T.5Y=(T.5Y or 0)+1 b.k.4M=j(p)O Q,1t in 1c(T.5V)do if 1t:3x()==p.11:3x()e w J c c w r c b.k.aQ=j(p)O Q,1t in 1c(T.9z)do if 1t:3x()==p.11:3x()e w J c c w r c--7I hH b.k.aq={}b.k.hL=j(2K)f 6K=b.k.aq[2K]if 6K e w 6K c f p=13.1M:L(2K)if p e b.k.aq[2K]=p.2l w p.2l c w 2K c f j 8R()f 9B={}O Q,p in 1c(13.1M:3D())do if p~=C e 1J.2A(9B,p.2l.." | "..p.11)c c 1J.89(9B)w 9B c b.k.9d=b.k:2P("1X fc 7I",j(9x)f 5W=9x:6C("| (.+)$")if 5W e 5W=5W:6J("^%s*(.-)%s*$","%1")O Q,1t in 1c(T.5V)do if 1t:3x()==5W:3x()e w c c 1J.2A(T.5V,5W)u.2d("7I","Añf7: "..5W,2,"2L")c c)O Q,2p in 1c(8R())do b.k.9d:1X(2p)c b.k:1u("3R hP",j(1p)T.65=1p T.5G=(T.5G or 0)+1 f 1K=T.5G if B 1p e w c H.1A(j()1w u.1o()g T.65 g T.5G==1K do f 73=r O Q,p in 1c(13.1M:3D())do if B T.65 or T.5G~=1K e 2j c if p~=C g B b.k.4M(p)g b.k.4t(p)g B b.k.41(p)e 73=J b.k.fK(p,4,j()w T.65 g T.5G==1K g B b.k.4M(p)c,3.5)c c if 73 e 13.42.64:4H()1R H.14(0.1)c c c)c)b.k:1u("7I hu",j(1p)T.fu=1p if 1p e O Q,p in 39(13.1M:3D())do if p~=C g p:ft(C.3r)e if B b.k.4M(p)e 1J.2A(T.5V,p.11)c c c u.2F(13.1M.6Z,j(p)if T.fu g p:ft(C.3r)e if B b.k.4M(p)e 1J.2A(T.5V,p.11)c c c)c c)--9w b.k:1F("9w 6e")b.k.3q={7F=r,7v=r,1r=0}b.k.bB=j(p)f at=p:L("iy")f az=p:L("iA")if B at or B az e w r c f gv,ev=at.1g or 0,az.1g or 0 if gv+ev<5 e w r c w(b.k.3q.7F g gv>ev)or(b.k.3q.7v g ev>gv)c b.k.bl=j()b.k.3q.1r+=1 f 1K=b.k.3q.1r if B b.k.3q.7F g B b.k.3q.7v e w c H.1A(j()1w u.1o()g(b.k.3q.7F or b.k.3q.7v)g b.k.3q.1r==1K do f 73=r O Q,p in 1c(13.1M:3D())do if b.k.3q.1r~=1K e 2j c if p~=C g B b.k.4M(p)g b.k.4t(p)g B b.k.41(p)g b.k.bB(p)e 73=J b.k.be(p,4,j()w b.k.3q.1r==1K g B b.k.4M(p)g b.k.bB(p)c,3.5)c c if 73 e 13.42.64:4H()1R H.14(0.1)c c c)c b.k:1u("8c iq 9w",j(19)b.k.3q.7F=19 b.k.bl()c)b.k:1u("8c it 9w",j(19)b.k.3q.7v=19 b.k.bl()c)--3O 6e b.k:1F("3O 6e")b.k.bm={}b.k.iD=j(2K)f 6K=b.k.bm[2K]if 6K e w 6K c f p=13.1M:L(2K)if p e b.k.bm[2K]=p.2l w p.2l c w 2K c b.k.9c=b.k:2P("1X fc fb",j(9x)f 5X=9x:6C("| (.+)$")if 5X e 5X=5X:6J("^%s*(.-)%s*$","%1")if B b.k.aQ({11=5X})e 1J.2A(T.9z,5X)u.2d("fb","Añf7: "..5X,2,"2L")c c c)O Q,2p in 1c(8R())do b.k.9c:1X(2p)c u.2F(13.1M.6Z,j(p)if p~=C e b.k.9d:1X(p.2l.." | "..p.11)b.k.9c:1X(p.2l.." | "..p.11)c c)u.2F(13.1M.7f,j(p)b.k.9d:5O(p.2l.." | "..p.11)b.k.9c:5O(p.2l.." | "..p.11)c)b.k:1u("3R iH",j(1p)T.6w=1p T.5Y=(T.5Y or 0)+1 f 1K=T.5Y if B 1p e w c H.1A(j()1w u.1o()g T.6w g T.5Y==1K do f 1V O Q,p in 1c(13.1M:3D())do if B T.6w or T.5Y~=1K e 2j c if p~=C g b.k.aQ(p)g b.k.4t(p)g B b.k.41(p)e 1V=p 2j c c if 1V e b.k.8S(1V,10)13.42.64:4H()1R H.14(0.1)c c c)c)--7m b.k:1F("7m")b.k.1j={2x=1b,3L=1b,4m=r,3k=1b,}b.k.6S=j()if b.k.1j.3k e b.k.1j.3k:66()b.k.1j.3k=1b c if C.W e f 1e=C.W:2s("1y")if 1e g u.1x.2y e u.1x.2y.5z=1e u.1x.2y.aj=2U.aj.gC c c c b.k.7b=j(p)if B p e b.k.6S()w c b.k.1j.3L=p.3r b.k.1j.2x=p if b.k.1j.3k e b.k.1j.3k:66()b.k.1j.3k=1b c f j 6E(U)if B b.k.1j.4m or b.k.1j.3L~=p.3r e w c f 1e=U:1O("1y",3)if 1e g u.1x.2y e u.1x.2y.5z=1e c c if p.W e 6E(p.W)c b.k.1j.3k=u.2F(p.67,j(54)if b.k.1j.4m e 6E(54)c c)c b.k.8Q=b.k:2P("4N 7l",j(1d)O Q,p in 1c(13.1M:3D())do if 1d==p.2l.." | "..p.11 e b.k.1j.2x=p b.k.1j.3L=p.3r if b.k.1j.4m e b.k.7b(p)c 2j c c c)O Q,2p in 1c(8R())do b.k.8Q:1X(2p)c b.k:1u("7m",j(1p)b.k.1j.4m=1p if 1p e b.k.7b(b.k.1j.2x)1R b.k.6S()c c)u.2F(13.1M.6Z,j(p)b.k.8Q:1X(p.2l.." | "..p.11)c)u.2F(13.1M.7f,j(p)b.k.8Q:5O(p.2l.." | "..p.11)if p.3r==b.k.1j.3L e b.k.6S()c c)--3R 4z b.k:1F("3R 4z")b.k.3l={2Y=1b,5b=20,29=r,1r=0,}T.4F=r T.4e=20 b.k:3t("5b (1-aG):",j(1d)if 1N(1d)e T.4e=1s.d3(1N(1d),1,aG)b.k.3l.5b=T.4e if b.k.3l.2Y e b.k.3l.2Y.2C=1D.1l(0.2,T.4e*2,T.4e*2)c c c,{4f=r})b.k:1u("3R 4z",j(1p)b.k.3l.29=1p b.k.3l.1r+=1 f 1K=b.k.3l.1r if B 1p e if b.k.3l.2Y e b.k.3l.2Y:5Q()b.k.3l.2Y=1b c w c--io bs f 1Z=7N.1l("bC")1Z.11="8k"1Z.gc=2U.ga.g8 1Z.8j=2U.8j.gd 1Z.2Z=3z.3w(8q,77,3v)1Z.b9=0.6 1Z.b2=J 1Z.8l=r 1Z.fV=r 1Z.gA=r 1Z.g9=r 1Z.2C=1D.1l(0.2,b.k.3l.5b*2,b.k.3l.5b*2)1Z.28=2i b.k.3l.2Y=1Z--br H.1A(j()1w u.1o()g b.k.3l.29 g b.k.3l.1r==1K do f U=C.W f 1a=U g U:L("2n")if 1a g 1Z.28 e 1Z.1v=1a.1v*1v.aT(0,0,1s.aR(90))O Q,p in 1c(13.1M:3D())do if p~=C g B b.k.4M(p)g b.k.4t(p)g B b.k.41(p)e f 2S=p.W g p.W:L("2n")if 2S g(1a.1P-2S.1P).3E<=b.k.3l.5b e b.k.8S(p,3.5)c c c c H.14(0.3K)c c)c)--4C b.k:1F("i3 4C")f bf=b.k:1i("bg: 0")T.8T=1b H.1A(j()1w u.1o()do f ls=C:L("3P")f 7t=ls g ls:L("bg")if 7t g bf e if B T.8T e T.8T=7t.1g c bf:V("bg: "..u.5c(7t.1g).." (i0ón: "..u.5c(7t.1g-T.8T)..")")c H.14(1)c c)u.2d("2e","aY 6e 3V ✅",3,"2L")--═══════════════════════════════════════════════════════════════--4k gQ--═══════════════════════════════════════════════════════════════b.t:1F("1n")b.t.2H={31=0,6H=r,1n=C.3P:1O("1n"),}f bn=b.t:1i("1n: 0")f bo=b.t:1i("3O: 3a")b.t:3t("1B 3f 3O:",j(1d)if 1N(1d)g 1N(1d)>=0 e b.t.2H.31=1N(1d)c c)b.t.2H.47=b.t:1u("1S 3f",j(4x)if 4x g b.t.2H.31>0 g b.t.2H.1n.1g<b.t.2H.31 e b.t.2H.6H=J H.1A(j()1w u.1o()g b.t.2H.6H g b.t.2H.1n.1g<b.t.2H.31 do 1f(j()13.2u.2X.8m:3F("8u")c)H.14(0.1)c b.t.2H.6H=r b.t.2H.47:1B(r,J)c)1R b.t.2H.6H=r c c)H.1A(j()1w u.1o()do if bn e bn:V("1n: "..u.4T(b.t.2H.1n.1g))c if bo e bo:V("3O 1n: "..u.4T(b.t.2H.31))c H.14(0.5)c c)--1S 2C 1 b.t:1F("1S 2C")b.t.8i={8A=r}b.t.6P=b.t:1u("1S 2C 1",j(1p)b.t.8i.8A=1p c)b.t.6P:1B(r)H.1A(j()1w u.1o()do if b.t.8i.8A g u.1x.W g u.1x.1y e 1f(j()u.8V.8J:3F("fi",1)c)c H.14(0.5)c c)--1S 4K b.t:1F("1S 4K")b.t.6M={bA=1v.1l(-dl.4,17.21,-dp.9),8B=r,}b.t.7q=b.t:1u("1S 4K",j(4x)b.t.6M.8B=4x c)H.1A(j()1w u.1o()do if b.t.6M.8B e f U=u.1x.W if U e f 1a=U:L("2n")if 1a g(1a.1P-b.t.6M.bA.1P).3E>5 e 1f(j()1a.1v=b.t.6M.bA c)c c c H.14(0.1)c c)--1S fq b.t:1F("1S fq")b.t.4q={6h=1b,7n=r,}f 83=b.t:2P("8d i8",j(3T)b.t.4q.6h=3T c)83:1X("ij")83:1X("7x")83:1X("ii")83:1X("ik")b.t.5S=b.t:1u("bz il",j(4x)b.t.4q.7n=4x if 4x e H.1A(j()1w u.1o()g b.t.4q.7n do f U=u.1x.W f 2E=u.1x.1y if U g 2E g 2E.2h>0 g b.t.4q.6h e f 2g=U:L(b.t.4q.6h)or C.2D:L(b.t.4q.6h)if 2g g 2g.28~=U e 1f(j()2E:4Z(2g)c)c if 2g g 2g.28==U e 1f(j()C.2o:1T("4V")c)c c H.14(0.3K)c c)1R if b.t.4q.6h g C.W e f 2g=C.W:L(b.t.4q.6h)if 2g e 2g.28=C.2D c c c c)b.t.8F=r b.t.7J=b.t:1u("1S 3C",j(19)b.t.8F=19 if B 19 e w c H.1A(j()1w u.1o()g b.t.8F do 1f(j()C.2o:1T("4V")c)H.14(0.1)c c)c)--1S 1Y b.t:1F("1S 1Y")b.t.5H={I={["du 1Y - 0 44"]=0,["ih 1Y - 7O 44"]=7O,["ig 1Y - 10 44"]=10,["ia 1Y - 5k 44"]=8s,["dz 1Y - i9 44"]=ib,["dq 1Y - ic 44"]=ie,["id 1Y - jM 44"]=mw,["nb 1Y - 1m 44"]=na,["7z 4K 1Y - 5m 44"]=nd,["8z 1Y - ne 44"]=n9,["8G 1Y - n8 44"]=n3,},84=1b,}b.t.6q=2i:1O("dE")f fk=b.t:2P("8d 1Y",j(3T)b.t.5H.84=3T c)O ed in 39(b.t.5H.I)do fk:1X(ed)c b.t.7g=b.t:1u("1S 1Y",j(4x)T.7B=4x if B 4x or B b.t.5H.84 e w c H.1A(j()1w u.1o()g T.7B do H.14(0.12)f U=u.1x.W if U g C:L("fS")g C.fS.1g>=b.t.5H.I[b.t.5H.84]e O Q,v in 39(b.t.6q:6u())do if v.11=="n4"g v.1g==b.t.5H.I[b.t.5H.84]g U:L("59")g v.28 g v.28:L("1Y")e 1f(j()if 2a e 2a(v.28.1Y,U.6A,0)2a(v.28.1Y,U.6A,1)2a(v.28.1Y,U.59,0)2a(v.28.1Y,U.59,1)c b.k.ec()c)c c c c c)c)--═══════════════════════════════════════════════════════════════--4k nf--═══════════════════════════════════════════════════════════════--2N 3C b.F:1F("2N 3C")b.F.5L={1h=r,2I=r,ng=40,8N=20,nq=d1,}f 8L=b.F:1i("1q: 4i")b.F.cZ=j()if b.F.5L.2I e w c b.F.5L.2I=J f 6Q=b.F.5L f d2=1/40 1w u.1o()g 6Q.1h do 1f(j()O i=1,20 do C.2o:1T("4V")c c)8L:V("1q: d1 bq/s (ns)")H.14(d2)c 6Q.2I=r c b.F:3t("nn ch nm (1-20):",j(1d)f 3d=1N(1d)if 3d g 3d>=1 e b.F.5L.8N=1s.d3(1s.2t(3d),1,20)c c)b.F.nh=b.F:1u("2N 3C (46 Ránk)",j(19)f 6Q=b.F.5L 6Q.1h=19 if 19 e 8L:V("1q: nl...")if B 6Q.2I e H.1A(b.F.cZ)c 1R 8L:V("1q: 4i")c c)--46 2N 3C cY b.F:1F("46 2N 3C cY")f 3Z={29=r,2I=r,8N=gk,cV=0.mG,8W=0,}T.c4=3Z H.1A(j()if 3Z.2I e w c 3Z.2I=J 1w u.1o()do if 3Z.29 e f bw=C:L("2o")if bw e f cU=os.2V()O i=1,3Z.8N do if B 3Z.29 e 2j c 1f(j()bw:1T("4V")c)3Z.8W=3Z.8W+1 c f 68=os.2V()-cU f bu=3Z.cV-68 if bu>0 e H.14(bu)1R H.14()c 1R H.14(0.3K)c 1R H.14(0.1)c c c)b.F:1u("🚀 46 2N 3C (mE bq/s)",j(19)3Z.29=19 if 19 e 3Z.8W=0 u.2d("46 2N 3C","🚀 mA - 20,eO bq/s",3,"2L")1R u.2d("46 2N 3C","⏸️ h1",2,"1W")c c)--2N 3f b.F:1F("2N 3f")b.F.26={1h=r,2I=r,1n=C.3P:1O("1n"),34=C.3P:1O("34"),31=0,4I=0,}f 6Y=b.F:1i("1q: 4i")f d5=b.F:1i("1n: 0 | 6D: 0")b.F.dc=j()f 6v=b.F.26.1n.1g b.F.26.4I=0 1w u.1o()g b.F.26.1h do if b.F.26.31>0 g b.F.26.1n.1g>=b.F.26.31 e 6Y:V("1q: ✅ 3O bZ!")b.F.26.1h=r 2j c f 6B=b.F.26.1n.1g f 4J=8s+6B*bY f 6F=C.6o==2U.6o.bX g 3 or 4 6Y:V("1q: 💪 bP... "..u.5c(b.F.26.34.1g).." / "..u.5c(4J))1w u.1o()g b.F.26.1h g b.F.26.34.1g<4J do O i=1,6F do 1f(j()C.2o:1T("4V")c)c H.14(0.3K)d5:V("1n: "..u.4T(b.F.26.1n.1g).." | 6D: "..u.4T(b.F.26.1n.1g-6v))c if u.1o()g b.F.26.1h g b.F.26.34.1g>=4J e 6Y:V("1q: 🔄 bH mC...")f 8X=b.F.26.1n.1g f 3Q=0 6s 1f(j()13.2u.2X.8m:3F("8u")c)H.14(0.12)3Q=3Q+1 71 B b.F.26.1h or b.F.26.1n.1g>8X or 3Q>=50 if b.F.26.1n.1g>8X e b.F.26.4I=b.F.26.4I+(b.F.26.1n.1g-8X)c c H.14(0.3)c b.F.26.2I=r c b.F:3t("3O bG (0 = mM):",j(1d)f 3d=1N(1d)if 3d g 3d>=0 e b.F.26.31=1s.2t(3d)c c)b.F.mW=b.F:1u("2N 3f 🔄",j(19)b.F.26.1h=19 if 19 e 6Y:V("1q: 🔄 bD...")if B b.F.26.2I e b.F.26.2I=J H.1A(b.F.dc)c 1R 6Y:V("1q: 4i")c c)b.F:1i("mY mZ gj, no mT mO")u.2d("2e","aY 5x + 2N 3V ✅",3,"2L")--═══════════════════════════════════════════════════════════════--4k 7Y--═══════════════════════════════════════════════════════════════b.q:1F("1U 5x")f 3g=b.q:1i("1q: 4s O 1U")f 7r=b.q:1i("1U: 3a")f 7s=b.q:1i("2h: 0 / 0")f aU=b.q:1i("b1 1U: N/A")b.q.I={1h=r,4O=1b,1r=0,cf=r,fj="4s",cp=0.3,82=0,5u={},ab={},72={},51={},}--mN mP b.q.co=j(1Q)if 1Q e if 1Q:2z("1y")e w 1Q.2h c f ok,4g=1f(j()w 1Q.1g c)if ok g 1N(4g)e w 1N(4g)c c w 2i:3y("mQ")or 0 c b.q.cn=j(2m)if 2m e if 2m:2z("1y")e w 2m.ai c f ok,4g=1f(j()w 2m.1g c)if ok g 1N(4g)e w 1N(4g)c c w 2i:3y("mR")or 0 c b.q.e1=j(1H,1k)f 86=1H:L("nv",J)or 1H:L("86",J)if 86 g 86:2z("5M")e w 86.1P c w 1k.1P+1D.1l(0,1k.2C.Y*0.35,0)c b.q.8K=j(27)27=27 or"33"--dg ch cD ff O Q,3i in 1c(13.7M:cg("cO"))do if 3i:2z("5R")g 3i:91(2i)e f 1k=3i:L("7W",J)if 1k g 1k:2z("5M")e f 1E=3i:L("1E")or 3i:L("4C")f 1Q=1E g(1E:L("2h")or 1E:L("1Q"))f 2m=1E g(1E:L("ai")or 1E:L("2m"))f 3A=1Q g 1N(1Q.1g)if 3A g 3A>0 e w 3i,1k,1Q,2m c f 2E=3i:2s("1y")if 2E g 2E.2h>0 e w 3i,1k,2E,2E c c c c--dg en 8Z/95 f 5f=2i:L("8Z")f 6z=5f g(5f:L("95")or 5f:L("db"))if 6z e O Q,2w in 1c(6z:6u())do if 2w:2z("5R")e f 1k=2w:L("7W",J)if 1k g 1k:2z("5M")e f 2E=2w:2s("1y")f 1E=2w:L("1E")or 2w:L("4C")f 1Q=1E g(1E:L("2h")or 1E:L("1Q"))f 3A=1Q g 1N(1Q.1g)if(3A g 3A>0)or(2E g 2E.2h>0)e w 2w,1k,1Q or 2E,1Q or 2E c c c c c w 1b c b.q.7p=j(1H,1Q,2m,1k)if B 1H or B 1k or B 1k.28 e w c f U=C.W f 2E=U g U:2s("1y")f 1a=U g U:L("2n")if B U or B 2E or B 1a or 2E.2h<=0 e w c--o6 3b f 2b=U:L("3b")or C.2D:L("3b")if 2b g 2b.28~=U e 1f(j()2E:4Z(2b)c)c--o5 o7 5P q f 49=1k.1P f 43=1a.1P-49 43=1D.1l(43.X,0,43.Z)if 43.3E<1 e 43=1k.1v.55 c f 98=49+43.97*1s.3J(4,1s.df(6,1k.2C.3E*0.2))+1D.1l(0,1.5,0)1a.1v=1v.81(98,49)1a.4B=1D.3n 1a.6f=1D.3n--o9 o4+2b f 9I=U:L("59")f 99=U:L("6A")1f(j()if 2a g 9I e 2a(1k,9I,0)2a(1k,9I,1)c if 2a g 99 e 2a(1k,99,0)2a(1k,99,1)c c)if os.2V()-b.q.I.82>=b.q.I.cp e b.q.I.82=os.2V()1f(j()C.2o:1T("2b","32")C.2o:1T("2b","3s")if 2b e 2b:d4()c c)c f 3H=2i:3y("cX")or 1H.11 7r:V("1U: "..3H)f hv=b.q.co(1Q)f 8M=b.q.cn(2m)7s:V("2h: "..u.5c(hv).." / "..u.5c(8M))c--nY o0 de o1 q b.q.b0=j(27,19)if B 19 e if b.q.I.4O==27 e b.q.I.1h=r b.q.I.4O=1b b.q.I.1r+=1 3g:V("1q: fs")c w c--9s el fr fp if 27=="33"g b.q.5v e b.q.5v:1B(r,J)2B 27=="2W"g b.q.5t e b.q.5t:1B(r,J)c b.q.I.4O=27 b.q.I.1h=J b.q.I.1r+=1 f 1K=b.q.I.1r H.1A(j()1w u.1o()g b.q.I.1h g b.q.I.1r==1K do f 1H,1k,1Q,2m=b.q.8K(27)if 1H g 1k e 3g:V("1q: fh "..(27=="2W"g"2W 1U"or"33 1U"))b.q.7p(1H,1Q,2m,1k)H.14(0.f6)1R 3g:V("1q: 4s O "..(27=="2W"g"2W 1U"or"33 1U"))7r:V("1U: 3a")7s:V("2h: 0 / 0")H.14(0.5)c c c)c b.q.5t=b.q:1u("1S 1U — 33 7i",j(19)b.q.b0("33",19)c)b.q.5t:1B(r)b.q.5v=b.q:1u("1S 1U — 2W",j(19)b.q.b0("2W",19)c)b.q.5v:1B(r)b.q:1u("ob fm oi 1U",j(19)b.q.I.cf=19 c)b.q:1F("cb")H.1A(j()1w u.1o()do if B b.q.I.1h e f aW=2i:3y("ol")if 5K(aW)=="9N"e f 9b=1s.3J(0,aW-2i:cj())f h=1s.2t(9b/5o)f m=1s.2t((9b%5o)/60)f s=1s.2t(9b%60)aU:V(1G.2Q("b1 1U: %dh %dm %ds",h,m,s))1R aU:V("b1 1U: N/A")c c H.14(1)c c)--═══════════════════════════════════════════════════════════════--4k oe--═══════════════════════════════════════════════════════════════b.K:1F("4L of")b.K.d6=13.2u:1O("bI"):1O("48")b.K.7G=b.K.d6:1O("oa")b.K.9u=13.2u.2X:1O("nX")b.K.38={5T={},2v={},3e={},75=1,}b.K.3W={92={},2v={},3e={},75=1,}O Q,2p in 1c(b.K.7G:3j())do if 2p:3y("nE")==J e 1J.2A(b.K.3W.92,2p.11)1R 1J.2A(b.K.38.5T,2p.11)c c 1J.89(b.K.38.5T)1J.89(b.K.3W.92)f b8=b.K:1i("2v 3Y: 3a")f d7=b.K:2P("4N 4L",j(1d)if B b.K.38.2v[1d]e b.K.38.2v[1d]=J 1J.2A(b.K.38.3e,1d)c b8:V("2v 3Y: "..(#b.K.38.3e>0 g 1J.5E(b.K.38.3e,", ")or"3a"))c)O Q,2G in 1c(b.K.38.5T)do d7:1X(2G)c b.K:3t("94 5B:",j(1d)b.K.38.75=1s.3J(1,1s.2t(1N(1d)or 1))c,{4f=r})b.K:1u("1S 94 4L",j(1p)T.d8=1p if B 1p e w c H.1A(j()1w u.1o()g T.d8 do O Q,2G in 1c(b.K.38.3e)do f 6W=b.K.7G:L(2G)if 6W e O Q=1,b.K.38.75 do 1f(j()b.K.9u:3F(6W)c)c c c H.14(0.1)c c)c)b.K:4v("nG 2v 3Y",j()b.K.38.2v={}b.K.38.3e={}b8:V("2v 3Y: 3a")c)--8Y b.K:1F("8Y")f dj=b.K:1i("2v 8Y: 3a")f cB=b.K:2P("4N 4z",j(1d)if B b.K.3W.2v[1d]e b.K.3W.2v[1d]=J 1J.2A(b.K.3W.3e,1d)c dj:V("2v 8Y: "..(#b.K.3W.3e>0 g 1J.5E(b.K.3W.3e,", ")or"3a"))c)O Q,8H in 1c(b.K.3W.92)do cB:1X(8H)c b.K:3t("94 5B:",j(1d)b.K.3W.75=1s.3J(1,1s.2t(1N(1d)or 1))c,{4f=r})b.K:1u("1S 94 4z",j(1p)T.cC=1p if B 1p e w c H.1A(j()1w u.1o()g T.cC do O Q,8H in 1c(b.K.3W.3e)do f b6=b.K.7G:L(8H)if b6 e O Q=1,b.K.3W.75 do 1f(j()b.K.9u:3F(b6)c)c c c H.14(0.1)c c)c)--1S 9H b.K:1F("1S 9H")b.K.4Y={2v={},3e={},5B=1}f cz=b.K:1i("2v 3Y: 3a")f cw=b.K:2P("4N 4L",j(1d)if B b.K.4Y.2v[1d]e b.K.4Y.2v[1d]=J 1J.2A(b.K.4Y.3e,1d)c cz:V("2v 3Y: "..(#b.K.4Y.3e>0 g 1J.5E(b.K.4Y.3e,", ")or"3a"))c)O Q,2G in 1c(b.K.38.5T)do cw:1X(2G)c b.K:3t("9H 5B:",j(1d)b.K.4Y.5B=1s.3J(1,1s.2t(1N(1d)or 1))c,{4f=r})b.K.b4=r b.K:1u("1S 9H",j(19)b.K.b4=19 if B 19 e w c H.1A(j()1w u.1o()g b.K.b4 do O Q,2G in 1c(b.K.4Y.3e)do O Q=1,b.K.4Y.5B do 1f(j()13.2u.2X.nS:1T("nR",2G)c)c c H.14(0.5)c c)c)--1S bb b.K:1F("1S bb")b.K.2k={7R={},4y={},b3={},6k={},1r=0,}f b7=b.K:1i("2v 1M: 3a")f cv=b.K:1i("2v 3Y: 3a")f ag=b.K:2P("4N 7l",j(1t)f 2K=1t:6C("| (.+)$")or 1t if B b.K.2k.7R[2K]e b.K.2k.7R[2K]=J 1J.2A(b.K.2k.4y,2K)c b7:V("2v 1M: "..(#b.K.2k.4y>0 g 1J.5E(b.K.2k.4y,", ")or"3a"))c)O Q,p in 1c(13.1M:3D())do if p~=C e ag:1X(p.2l.." | "..p.11)c c f cF=b.K:2P("4N 4L",j(1d)if B b.K.2k.b3[1d]e b.K.2k.b3[1d]=J 1J.2A(b.K.2k.6k,1d)c cv:V("2v 3Y: "..(#b.K.2k.6k>0 g 1J.5E(b.K.2k.6k,", ")or"3a"))c)O Q,2G in 1c(b.K.38.5T)do cF:1X(2G)c u.2F(13.1M.6Z,j(p)if p~=C e ag:1X(p.2l.." | "..p.11)c c)u.2F(13.1M.7f,j(p)ag:5O(p.2l.." | "..p.11)if b.K.2k.7R[p.11]e b.K.2k.7R[p.11]=1b O i,v in 1c(b.K.2k.4y)do if v==p.11 e 1J.nP(b.K.2k.4y,i)2j c c b7:V("2v 1M: "..(#b.K.2k.4y>0 g 1J.5E(b.K.2k.4y,", ")or"3a"))c c)b.K.af=r b.K:1u("1S bb",j(19)b.K.af=19 b.K.2k.1r+=1 if B 19 e w c f 1K=b.K.2k.1r H.1A(j()1w u.1o()g b.K.af g b.K.2k.1r==1K do if#b.K.2k.4y>0 g#b.K.2k.6k>0 e O Q,2K in 1c(b.K.2k.4y)do f aS=13.1M:L(2K)if B b.K.af or b.K.2k.1r~=1K e 2j c if aS e f 7S=13.2u.2X.7S f cI=C.56.bW 1f(j()7S:1T("nM",aS)c)H.14(0.5)f 7T=0 f aZ={}O Q,cH in 1c(b.K.2k.6k)do O Q,2M in 1c(cI:3j())do if 2M.11==cH g B aZ[2M]g 7T<6 e 1f(j()7S:1T("nu",2M)c)aZ[2M]=J 7T=7T+1 H.14(0.3K)2j c c c if 7T>0 e H.14(0.5)1f(j()7S:1T("li")c)H.14(2)c c c c H.14(2)c c)c)u.2d("2e","aY 1U + 3Y 3V ✅",3,"2L")--═══════════════════════════════════════════════════════════════--4k fe--═══════════════════════════════════════════════════════════════b.1z:1F("lk lf")b.1z.bc={1h=r}b.1z:1u("cL bK a3",j(19)b.1z.bc.1h=19 if B 19 e w c H.1A(j()1w u.1o()g b.1z.bc.1h do f U=C.W f 6x=U g U:L("4X 57")or C.2D:L("4X 57")if 6x e 1f(j()C.2o:1T("l8",6x)c)c H.14(0.25)c c)c):1B(r)b.1z.a7={dk={"6l 4o","cK 4o","4X bt","l7 bt","4X 4o","gt 4o","cK bt"},1h=r,}b.1z:1u("cL bK 7V (ld dy)",j(19)b.1z.a7.1h=19 if B 19 e w c H.1A(j()1w u.1o()g b.1z.a7.1h do f U=C.W O Q,a8 in 1c(b.1z.a7.dk)do f 2g=U g U:L(a8)or C.2D:L(a8)if 2g e f 5N={}O dV in a8:lw("%S+")do 1J.2A(5N,dV:3x())c O i=2,#5N do 5N[i]=5N[i]:dX(1,1):lx()..5N[i]:dX(2)c O Q=1,10 do 1f(j()C.2o:1T(1J.5E(5N),2g)c)c c c H.14(0.1)c c)c)--57 5C b.1z:1F("57 5C")b.1z.52={2x=1b,9S=0,}f dM=b.1z:1i("4X a3: 0")f 9R=b.1z:2P("4N 7l",j(1t)f 2K=1t:6C("| (.+)$")or 1t b.1z.52.2x=13.1M:L(2K)c)O Q,p in 1c(13.1M:3D())do if p~=C e 9R:1X(p.2l.." | "..p.11)c c u.2F(13.1M.6Z,j(p)if p~=C e 9R:1X(p.2l.." | "..p.11)c c)u.2F(13.1M.7f,j(p)9R:5O(p.2l.." | "..p.11)if b.1z.52.2x==p e b.1z.52.2x=1b c c)f dP=b.1z:3t("5B:",j(1d)f n=1N(1d)if n e b.1z.52.9S=1s.3J(0,1s.2t(n))c c,{4f=r})b.1z:4v("bz e8 a3",j()f 3U=1N(dP.ea)or b.1z.52.9S 3U=1s.3J(0,1s.2t(3U))b.1z.52.9S=3U if B b.1z.52.2x or 3U==0 e u.2d("57 5C","e7á e6 y e2",2,"c6")w c H.1A(j()O Q=1,3U do f 6x=C:L("9L")g C.9L:L("4X 57")if B 6x e 2j c 1f(j()13.2u.2X.e3:3F("e4",b.1z.52.2x,6x)c)H.14(0.1)c u.2d("57 5C","e5ío dN",3,"2L")c)c)--4o 5C b.1z:1F("4o 5C")b.1z.4S={2x=1b,9J=0,}f dw=b.1z:1i("6l bi: 0")f 9O=b.1z:2P("4N 7l",j(1t)f 2K=1t:6C("| (.+)$")or 1t b.1z.4S.2x=13.1M:L(2K)c)O Q,p in 1c(13.1M:3D())do if p~=C e 9O:1X(p.2l.." | "..p.11)c c u.2F(13.1M.6Z,j(p)if p~=C e 9O:1X(p.2l.." | "..p.11)c c)u.2F(13.1M.7f,j(p)9O:5O(p.2l.." | "..p.11)if b.1z.4S.2x==p e b.1z.4S.2x=1b c c)f e9=b.1z:3t("5B:",j(1d)f n=1N(1d)if n e b.1z.4S.9J=1s.3J(0,1s.2t(n))c c,{4f=r})b.1z:4v("bz e8 bi",j()f 3U=1N(e9.ea)or b.1z.4S.9J 3U=1s.3J(0,1s.2t(3U))b.1z.4S.9J=3U if B b.1z.4S.2x or 3U==0 e u.2d("4o 5C","e7á e6 y e2",2,"c6")w c H.1A(j()O Q=1,3U do f bh=C:L("9L")g C.9L:L("6l 4o")if B bh e 2j c 1f(j()13.2u.2X.e3:3F("e4",b.1z.4S.2x,bh)c)H.14(0.1)c u.2d("4o 5C","e5ío dN",3,"2L")c)c)--fd en kH H.1A(j()1w u.1o()do f 6t=0 f 6O=0 f U=C.W if U e O Q,2p in 1c(U:3j())do if 2p.11=="4X 57"e 6t=6t+1 2B 2p.11=="6l 4o"e 6O=6O+1 c c c O Q,2p in 1c(C.2D:3j())do if 2p.11=="4X 57"e 6t=6t+1 2B 2p.11=="6l 4o"e 6O=6O+1 c c dM:V("4X a3: "..6t)dw:V("6l bi: "..6O)H.14(2)c c)b.1z:1i("l3 6N 7V l4. kZí a kY mákU 7u kT dy.")--═══════════════════════════════════════════════════════════════--4k kV--═══════════════════════════════════════════════════════════════b.4P:1F("33")b.4P.dn={{1t="du 7i",3B=1v.1l(-37.1,9.2,kW)},{1t="33 7i",3B=1v.1l(16.kX,9.lA,lB.8)},{1t="me",3B=1v.1l(-8,9,-md.2)},}O Q,a5 in 1c(b.4P.dn)do b.4P:4v(a5.1t,j()f U=C.W if U e f 1a=U:L("2n")if 1a e 1a.1v=a5.3B u.2d("dL","dH a "..a5.1t,1.5,"2L")c c c)c b.4P:1F("mg")b.4P.dI={{1t="mh 5p",3B=1v.1l(-mc.mb,m6.m5,m7.m8)},{1t="8G 5p",3B=1v.1l(-ma.m9,58.mj,ms.mr)},{1t="8z 5p",3B=1v.1l(-mt,6.8,mv)},{1t="7z 4K 5p",3B=1v.1l(-dl.4,17.21,-dp.9)},{1t="8x 5p",3B=1v.1l(mm,mn.5,-mo)},{1t="m4 5p",3B=1v.1l(-m3,7.36,-lL)},{1t="dq 5p",3B=1v.1l(lK,7.37,lM.2)},{1t="dz 5p",3B=1v.1l(-lO,7.36,-lI)},}O Q,a6 in 1c(b.4P.dI)do b.4P:4v(a6.1t,j()f U=C.W if U e f 1a=U:L("2n")if 1a e 1a.1v=a6.3B u.2d("dL","dH a "..a6.1t,1.5,"2L")c c c)c--═══════════════════════════════════════════════════════════════--4k lD--═══════════════════════════════════════════════════════════════b.1E:1F("MélE en aA lF")b.1E.I={gT=gO(),gX=C.3P:1O("34").1g,hc=C.3P:1O("1n").1g,}f ho=b.1E:1i("hn hh: 0")f g7=b.1E:1i("x 1 9M: 0")f fW=b.1E:1i("x 1 Día: 0")f fU=b.1E:1i("x 1 9K: 0")b.1E:1i("")f g1=b.1E:1i("1n g2: 0")f gD=b.1E:1i("x 1 9M: 0")f gF=b.1E:1i("x 1 Día: 0")f gz=b.1E:1i("x 1 9K: 0")b.1E:1i("")f gn=b.1E:1i("aA en gsón: lH")f j 4R(n)if n==1b or n~=n e w"0"c f 3h=1s.lG(n)f 4W=n<0 g"-"or""if 3h>=a2 e w 4W..1G.2Q("%.lP",3h/a2)2B 3h>=a1 e w 4W..1G.2Q("%.lZ",3h/a1)2B 3h>=9X e w 4W..1G.2Q("%.m0",3h/9X)2B 3h>=9Y e w 4W..1G.2Q("%.m1",3h/9Y)2B 3h>=9Z e w 4W..1G.2Q("%.m2",3h/9Z)2B 3h>=a0 e w 4W..1G.2Q("%.lW",3h/a0)2B 3h>=1 e w 4W..1G.2Q("%.lR",3h)1R w 4W..1G.2Q("%.2f",3h)c c f j gu(4c)if 4c<60 e w 1G.2Q("%ds",1s.2t(4c))2B 4c<5o e w 1G.2Q("%dm %ds",1s.2t(4c/60),1s.2t(4c%60))2B 4c<ar e w 1G.2Q("%dh %dm",1s.2t(4c/5o),1s.2t((4c%5o)/60))1R w 1G.2Q("%dd %dh",1s.2t(4c/ar),1s.2t((4c%ar)/5o))c c H.1A(j()1w u.1o()do f gS=gO()f 68=gS-b.1E.I.gT if 68>0.5 e f gY=C.3P.34.1g f hd=C.3P.1n.1g f aw=gY-b.1E.I.gX f aK=hd-b.1E.I.hc f 9V=(aw/68)*5o f 9P=(aK/68)*5o ho:V("hn hh: "..4R(aw))g7:V("x 1 9M: "..4R(9V))fW:V("x 1 Día: "..4R(9V*24))fU:V("x 1 9K: "..4R(9V*24*7))g1:V("1n g2: "..4R(aK))gD:V("x 1 9M: "..4R(9P))gF:V("x 1 Día: "..4R(9P*24))gz:V("x 1 9K: "..4R(9P*24*7))gn:V("aA en gsón: "..gu(68))c H.14(1)c c)--═══════════════════════════════════════════════════════════════--4k gr(lo)--═══════════════════════════════════════════════════════════════b.1W:1F("gGón")b.1W:1i("2e | ah")b.1W:1i("lu 2.0 - 5J 9m")b.1W:1i("aN by 78 / 79 / 6j")b.1W:1i("")b.1W:4v("📋 g3 ae",j()if a9 e a9("ac://aL.gg/ax")u.2d("ae","hs hq",2,"2L")c c)b.1W:1i("")b.1W:1i("hf:")b.1W:1i("- 79 (@hj)")b.1W:1i("- 6j @hk")b.1W:1i("- 78 @gU")b.1W:1i("")b.1W:1i("5J 9m - ca.0")--═══════════════════════════════════════════════════════════════--gW-6y nU--═══════════════════════════════════════════════════════════════b.G:1F("6r-6y")T.7A=J b.G.h3=b.G:1u("6r 6y",j(19)T.7A=19 if 19 e u.2d("6r-6y","✅ nA",2,"2L")1R u.2d("6r-6y","❌ h1",2,"1W")c c)b.G.h3:1B(J)H.1A(j()1w u.1o()do H.14(60)if T.7A e 1f(j()13.5e:h5()13.5e:gl(aa.1l(0,0))13.5e:h6(aa.1l(0,0))c)c c c)--═══════════════════════════════════════════════════════════════--eR--═══════════════════════════════════════════════════════════════u.2d("2e","🎉 9l 5d 3V gP",4,"2L")7U("[2e] eN 3V al 7O%")--═══════════════════════════════════════════════════════════════--7k 2:7m 5d+3R 4z nH--nF eM nD og 5P 7j 2 gf--═══════════════════════════════════════════════════════════════--═══════════════════════════════════════════════════════════════--od cc(6N 5h+oj)--═══════════════════════════════════════════════════════════════7e().7d=7e().7d or{aX=1b,h2=r,}b.k.1j={2x=1b,3L=1b,4m=r,3k=1b,8g=1b,5h=1b,}b.k.6S=j()if b.k.1j.3k e b.k.1j.3k:66()b.k.1j.3k=1b c if b.k.1j.5h e b.k.1j.5h=r c f av=13.1M.ap if av.W e f 1e=av.W:2s("1y")if 1e g u.1x.2y e u.1x.2y.5z=1e u.1x.2y.aj=2U.aj.gC c c if u.1x.1y g u.1x.2y e u.1x.2y.5z=u.1x.1y c c b.k.gV=j()if b.k.1j.5h e b.k.1j.5h=r H.14(0.3)c b.k.1j.5h=J H.1A(j()1w u.1o()g b.k.1j.5h do H.14(0.2)if b.k.1j.4m g b.k.1j.2x e f am=b.k.1j.2x.W if am e f 5g=am:2s("1y")if 5g g u.1x.2y e if u.1x.2y.5z~=5g e u.1x.2y.5z=5g c c c 1R 2j c c c)c b.k.7b=j(p)if B p e if b.k.1j.3L e O Q,3G in 1c(13.1M:3D())do if 3G.3r==b.k.1j.3L e p=3G b.k.1j.2x=p 2j c c c if B p g 7e().7d.aX e O Q,3G in 1c(13.1M:3D())do if 3G.3r==7e().7d.aX e p=3G b.k.1j.2x=p b.k.1j.3L=p.3r 2j c c c if B p e b.k.6S()w c c b.k.1j.3L=p.3r b.k.1j.2x=p if b.k.1j.3k e b.k.1j.3k:66()b.k.1j.3k=1b c f j 6E(U)if B b.k.1j.4m or b.k.1j.3L~=p.3r e w c f 1e=U:1O("1y",3)if 1e g b.k.1j.4m g b.k.1j.3L==p.3r e if u.1x.2y e u.1x.2y.5z=1e c c c if p.W e 6E(p.W)c b.k.1j.3k=u.2F(p.67,j(54)if b.k.1j.4m g b.k.1j.3L==p.3r e 6E(54)c c)c--npón de n6 5P ap if b.k.1j.8g e b.k.1j.8g:66()c b.k.1j.8g=u.2F(C.67,j(U)f 1e=U:1O("1y",3)if 1e e u.1x.1y=1e c H.14(0.5)if 7e().7d.h2 e b.k.1j.4m=J b.k.7b()b.k.gV()1R if u.1x.1y g u.1x.2y e u.1x.2y.5z=u.1x.1y c c c)--═══════════════════════════════════════════════════════════════--hX hV hT(6N 69+1r+6r-i5 i6)--═══════════════════════════════════════════════════════════════b.k.1L={2Y=1b,ba=3z.3w(8q,77,3v),gh=0.6,4n=1b,69=r,1r=0,29=r,5b=20,}T.8C=r T.4F=r T.4e=20--iM bs gf dZ iN f bx=2i:L("8k")if bx e bx:5Q()c f bj={{11="2e",2Z=3z.3w(8q,77,3v)},{11="is",2Z=3z.3w(3v,60,60)},{11="iz",2Z=3z.3w(3v,gK,0)},{11="iS",2Z=3z.3w(3v,gb,0)},{11="hz",2Z=3z.3w(gK,3v,0)},{11="hQ",2Z=3z.3w(0,gk,70)},{11="hD",2Z=3z.3w(0,hI,3v)},{11="hC",2Z=3z.3w(0,7O,3v)},{11="hB",2Z=3z.3w(8q,70,3v)},{11="ht",2Z=3z.3w(3v,80,hR)},{11="6j",2Z=3z.3w(3v,3v,3v)},{11="hN",2Z=3z.3w(0,0,0)},}f hm=b.k:2P("8n 2Z",j(3T)O Q,76 in 1c(bj)do if 76.11==3T e b.k.1L.ba=76.2Z if b.k.1L.2Y e b.k.1L.2Y.2Z=76.2Z c 2j c c c)O Q,76 in 1c(bj)do hm:1X(76.11)c b.k.aV=j()if b.k.1L.2Y e b.k.1L.2Y:5Q()b.k.1L.2Y=1b c c b.k.gB=j()b.k.aV()f b5=2i:L("8k")if b5 e b5:5Q()c f 1Z=7N.1l("bC")1Z.11="8k"1Z.gc=2U.ga.g8 1Z.8j=2U.8j.gd 1Z.2Z=b.k.1L.ba 1Z.b9=b.k.1L.gh 1Z.b2=J 1Z.8l=r 1Z.fV=r 1Z.gA=r 1Z.g9=r 1Z.2C=1D.1l(0.2,T.4e*2,T.4e*2)if b.k.1L.4n e 1Z.1v=b.k.1L.4n*1v.aT(0,0,1s.aR(90))c 1Z.28=2i b.k.1L.2Y=1Z c b.k.8w=j()if b.k.1L.2Y g b.k.1L.4n e b.k.1L.2Y.1v=b.k.1L.4n*1v.aT(0,0,1s.aR(90))c c b.k.8D=b.k:1u("gH 8n",j(1p)if 1p g B T.4F e T.8C=r b.k.8D:1B(r,J)w c T.8C=1p if 1p e b.k.gB()1R b.k.aV()c c)--g5 8n kg 5d b.k:1u("g5 8n (3R 4z)",j(1p)T.4F=1p b.k.1L.29=1p b.k.1L.1r+=1 f 1K=b.k.1L.1r if B 1p e if b.k.8D g T.8C e b.k.8D:1B(r,J)c w c f Q,Q,bd=b.k.6V()if bd e b.k.1L.4n=bd.1v c--br de j6ón 5P bs H.1A(j()1w u.1o()g T.4F g b.k.1L.1r==1K do f Q,Q,5A=b.k.6V()if 5A g B b.k.1L.69 e b.k.1L.4n=5A.1v c b.k.8w()13.42.bT:4H()c c)--br de hb H.1A(j()1w u.1o()g T.4F g b.k.1L.1r==1K do if b.k.1L.69 or B b.k.1L.4n e H.14(0.3K)eA c f 6p=b.k.1L.4n f aP=r O Q,4h in 1c(13.1M:3D())do if B T.4F or b.k.1L.1r~=1K e 2j c f 2S=4h.W g 4h.W:L("2n")if 4h~=C g B b.k.4M(4h)g b.k.4t(4h)g B b.k.41(4h)g 2S g(6p.1P-2S.1P).3E<=T.4e e aP=J b.k.1L.69=J b.k.1L.4n=6p b.k.8w()b.k.be(4h,4,j()f bk=4h.W g 4h.W:L("2n")w T.4F g b.k.1L.1r==1K g B b.k.4M(4h)g bk g(6p.1P-bk.1P).3E<=T.4e c,3.5)--jJ al jH jyés 5P hb O Q=1,4 do f Q,Q,7H=b.k.6V()if 7H e 7H.1v=6p 7H.4B=1D.3n 7H.6f=1D.3n c b.k.1L.4n=6p b.k.8w()13.42.64:4H()c b.k.1L.69=r c c if B aP e H.14(0.3K)c c b.k.1L.69=r c)c)--jm 7u el jj 5P 3R 4z b.k:jd("3R 4z 5b",1,aG,20,j(4g)T.4e=4g b.k.1L.5b=4g if b.k.1L.2Y e b.k.1L.2Y.2C=1D.1l(0.2,4g*2,4g*2)c c)u.2d("2e","7j 2 3V: 7m + 3R 4z o2 ✅",3,"2L")--═══════════════════════════════════════════════════════════════--7k 3:5x 5d(2O/2R/gi 34/nO)--═══════════════════════════════════════════════════════════════--═══════════════════════════════════════════════════════════════--9y kO/9y kG l1 mq--═══════════════════════════════════════════════════════════════b.t.6q=2i:1O("dE")b.t.8a={}b.t.8b={}b.t.8f={}b.t.2q={2O={6i=1b,3S=1b,1h=r,1r=0,4E=0,3I=1b,6m={}},2R={6i=1b,3S=1b,1h=r,1r=0,4E=0,3I=1b,6m={}},}--l0 mákQ O Q,3o in 1c(b.t.6q:3j())do f 7Z=1G.3x(3o.11)if 1G.4u(7Z,"dU",1,J)g 7Z~="dU nw"e b.t.8a[3o.11]=b.t.8a[3o.11]or{}1J.2A(b.t.8a[3o.11],3o)2B 1G.4u(7Z,"nB",1,J)g 7Z~="nZ"e b.t.2q.2R.6m[3o.11]=3o 1J.2A(b.t.8f,3o.11)c c O 6b,cW in 39(b.t.8a)do b.t.2q.2O.6m[6b]=cW[1]1J.2A(b.t.8b,6b)c 1J.89(b.t.8b)1J.89(b.t.8f)b.t.f8=j(3o)O Q,2w in 1c(3o:6u())do if 2w:2z("5M")g 1G.3x(2w.11)=="hW"e w 2w c c c b.t.dt=j(3o)if B 3o or B 3o.28 e w r c f 1C=C.W or C.67:4H()f 7X=1C:1O("2n",5)f aO=b.t.f8(3o)if B 7X or B aO e w r c 7X.1v=aO.1v*1v.1l(0,3,0)7X.4B=1D.3n 7X.6f=1D.3n H.14(0.4)13.5I:6X(J,2U.6U.E,r,2T)H.14(0.1)13.5I:6X(r,2U.6U.E,r,2T)H.14(0.4)w J c b.t.cy=j(1I)1I.1r+=1 f 1K=1I.1r f au=C.W H.1A(j()1w u.1o()g 1I.1h g 1I.1r==1K do f 1C=C.W f 1e=1C g 1C:2s("1y")if 1C~=au e au=1C 1I.3S=1b 1I.3I=1b 1I.4E=os.2V()+3.5 c if B 1C or B 1e or 1e.2h<=0 e 1I.3S=1b 1I.3I=1b 1I.4E=1s.3J(1I.4E,os.2V()+3.5)H.14(0.1)eA c f ak=1e:jS()f eD=1I.3S g(ak==2U.cs.ct or ak==2U.cs.je or(1I.3I g 1e.3I~=1I.3I))if eD e 1I.3S=1b 1I.3I=1b 1I.4E=os.2V()+3.5 c if 1I.6i g B 1I.3S g os.2V()>=1I.4E e if b.t.dt(1I.6i)e 1I.3S=1I.6i 1I.3I=1e.3I c c H.14(0.1)c c)c b.t.cu=j(1I,hg,19)1I.1h=19 1I.1r+=1 1I.3S=1b 1I.3I=1b 1I.4E=0 if B 19 e w c if b.t.5S g b.t.4q.7n e b.t.5S:1B(r,J)c if hg.1h e if 1I==b.t.2q.2O g b.t.6d e b.t.6d:1B(r,J)2B 1I==b.t.2q.2R g b.t.5Z e b.t.5Z:1B(r,J)c c b.t.cy(1I)H.1A(j()1w u.1o()g 1I.1h g 1I.1r==1K do if 1I.3S e 1f(j()C.2o:1T("4V")c)c H.14(0.1)c c,1I.1r)c--kc y 7h f et=b.t:2P("8d 2O",j(3T)b.t.2q.2O.6i=b.t.2q.2O.6m[3T]b.t.2q.2O.3S=1b b.t.2q.2O.3I=1b b.t.2q.2O.4E=0 c)O Q,6b in 1c(b.t.8b)do et:1X(6b)c b.t.5Z=b.t:1u("1S 2O",j(19)b.t.cu(b.t.2q.2O,b.t.2q.2R,19)c)f ex=b.t:2P("8d 2R",j(3T)b.t.2q.2R.6i=b.t.2q.2R.6m[3T]b.t.2q.2R.3S=1b b.t.2q.2R.3I=1b b.t.2q.2R.4E=0 c)O Q,6b in 1c(b.t.8f)do ex:1X(6b)c b.t.6d=b.t:1u("1S 2R",j(19)b.t.cu(b.t.2q.2R,b.t.2q.2O,19)c)--═══════════════════════════════════════════════════════════════--iK hZ mF(7u 1U)--═══════════════════════════════════════════════════════════════b.t.he=j()f 1C=C.W f 1e=1C g 1C:2s("1y")f 1a=1C g 1C:L("2n")if B 1e or 1e.2h<=0 e w c 1f(j()13.5I:6X(J,2U.6U.g0,r,2T)1e.mX=r 1e.cT=J 1e:h4(2U.cs.ct)if 1a e 1a.4B=1D.1l(0,1s.3J(1a.4B.Y,50),0)c c)1f(j()13.5I:6X(r,2U.6U.g0,r,2T)c)H.14(0.2)c--═══════════════════════════════════════════════════════════════--hK hO gQ(4 k8)--═══════════════════════════════════════════════════════════════b.t:1F("gi 34 5x")b.t.6g={{1t="8y + 8G 1Y",2g="7x",4r="8G 1Y"},{1t="8y + 8z 1Y",2g="7x",4r="jq 8z 1Y"},{1t="8y + 7z 4K 1Y",2g="7x",4r="7z 4K jw"},{1t="8y + 8x 1Y",2g="7x",4r="1Y oc 8x"},}b.t.4G={}O Q,2c in 1c(b.t.6g)do b.t.4G[2c.1t]=r 2c.47=b.t:1u(2c.1t,j(19)b.t.4G[2c.1t]=19 if b.t.4G[2c.1t]e f 1C=C.W if 1C e f 1e=1C:2s("1y")f cq=C.2D:L(2c.2g)if cq g 1e g B 1C:L(2c.2g)e 1e:4Z(cq)c c H.1A(j()1w u.1o()g b.t.4G[2c.1t]do 1f(j()C.2o:1T("4V")c)f U=C.W if U g b.t.6q:L(2c.4r)e f bU=b.t.6q:L(2c.4r)f 4r=bU g bU:L("1Y")f 32=U:L("59")if 4r g 32 g 2a e 2a(4r,32,0)2a(4r,32,1)c c if U g C.2D:L("3b")e f 1e=U:2s("1y")if 1e e 1e:4Z(C.2D.3b)1f(j()C.2o:1T("2b","3s")C.2o:1T("2b","32")c)c c 13.42.bT:4H()f bS=C.W if bS g C.2D:L(2c.2g)e f bQ=bS:2s("1y")if bQ e bQ:4Z(C.2D[2c.2g])c c c c)1R f U=C.W if U g U:L(2c.2g)e U[2c.2g].28=C.2D c c c)c--═══════════════════════════════════════════════════════════════--jF/jz jB(7u 1U)--═══════════════════════════════════════════════════════════════b.q=b.q or{}b.q.I=b.q.I or{}b.q.I.3c=1b b.q.cm=j()if b.q.I.3c e w c b.q.I.3c={3f=b.t.2H.6H,2C=b.t.8i.8A,4K=b.t.6M.8B,8E=b.t.4q.7n,2O=b.t.2q.2O.1h,2R=b.t.2q.2R.1h,bR=b.t.8F,1Y=T.7B==J,6g={},}O Q,2c in 1c(b.t.6g)do b.q.I.3c.6g[2c.1t]=b.t.4G[2c.1t]==J if b.t.4G[2c.1t]g 2c.47 e 2c.47:1B(r,J)c c if b.q.I.3c.3f g b.t.2H.47 e b.t.2H.47:1B(r,J)c if b.q.I.3c.2C g b.t.6P e b.t.6P:1B(r,J)c if b.q.I.3c.4K g b.t.7q e b.t.7q:1B(r,J)c if b.q.I.3c.8E g b.t.5S e b.t.5S:1B(r,J)c if b.q.I.3c.2O g b.t.5Z e b.t.5Z:1B(r,J)c if b.q.I.3c.2R g b.t.6d e b.t.6d:1B(r,J)c if b.q.I.3c.2O or b.q.I.3c.2R e b.t.he()c if b.q.I.3c.bR g b.t.7J e b.t.7J:1B(r,J)c if b.q.I.3c.1Y g b.t.7g e b.t.7g:1B(r,J)c c b.q.62=j()f 4a=b.q.I.3c if B 4a e w c b.q.I.3c=1b if 4a.3f g b.t.2H.47 e b.t.2H.47:1B(r,J)c if 4a.2C g b.t.6P e b.t.6P:1B(r,J)c if 4a.4K g b.t.7q e b.t.7q:1B(r,J)c if 4a.8E g b.t.5S e b.t.5S:1B(r,J)c if 4a.2O g b.t.5Z e b.t.5Z:1B(r,J)c if 4a.2R g b.t.6d e b.t.6d:1B(r,J)c if 4a.bR g b.t.7J e b.t.7J:1B(r,J)c if 4a.1Y g b.t.7g e b.t.7g:1B(r,J)c O Q,2c in 1c(b.t.6g)do if 4a.6g[2c.1t]g 2c.47 e 2c.47:1B(r,J)c c c u.2d("2e","7j 3 3V: 5x 5d ✅",3,"2L")--═══════════════════════════════════════════════════════════════--7k 4:2N 3f gR-46 c0+6a bF--═══════════════════════════════════════════════════════════════--═══════════════════════════════════════════════════════════════--j1 j4:iZ y iX iY--═══════════════════════════════════════════════════════════════b.F.fY=j()f 56=C.56 O Q,6n in 39(56:3j())do if 6n:2z("gL")e O Q,2M in 39(6n:3j())do 1f(j()13.2u.2X.87:1T("bV",2M)c)c c c if C.W e O Q,8v in 39(C.W:3j())do if 8v:2z("jh")or 8v:2z("ji")e 1f(j()13.2u.2X.87:1T("bV",8v)c)c c c H.14(0.3)c b.F.7a=j(gE)f 56=C.56 f gx=56.bW b.F.fY()H.14(0.2)f 5n=0 O Q,2G in 1c(gE)do O Q,2M in 39(gx:3j())do if 2M.11==2G e 1f(j()13.2u.2X.87:1T("gw",2M)c)5n=5n+1 H.14(0.3K)c c c H.14(0.3)w 5n c--═══════════════════════════════════════════════════════════════--gt jR hi--═══════════════════════════════════════════════════════════════b.F:1F("46 c0 hp")b.F.23={1h=r,2I=r,1n=C.3P:1O("1n"),34=C.3P:1O("34"),31=0,4I=0,8p={"hr 8e"},8t={"hl 8o"},}f 4A=b.F:1i("1q: 4i")f g6=b.F:1i("1n: 0 | 6D: 0")b.F.gM=j()f 6v=b.F.23.1n.1g 1w u.1o()g b.F.23.1h do if b.F.23.31>0 g b.F.23.1n.1g>=b.F.23.31 e 4A:V("1q: 3O bZ")b.F.23.1h=r 2j c 4A:V("1q: 8r 3C...")f 6L=0 1f(j()6L=b.F.7a(b.F.23.8p)c)4A:V("1q: "..6L.." 3C bO")f 6B=b.F.23.1n.1g f 4J=8s+6B*bY f 6F=C.6o==2U.6o.bX g 6 or 12 4A:V("1q: bP...")1w u.1o()g b.F.23.1h g b.F.23.34.1g<4J do 1f(j()O Q=1,6F do C.2o:1T("4V")c c)H.14(0.3K)g6:V("1n: "..u.4T(b.F.23.1n.1g).." | 6D: "..u.4T(b.F.23.1n.1g-6v))c if u.1o()g b.F.23.1h g b.F.23.34.1g>=4J e 4A:V("1q: 8r 8o...")f 6I=0 1f(j()6I=b.F.7a(b.F.23.8t)c)4A:V("1q: "..6I.." 8o gj")H.14(0.5)4A:V("1q: bH 3f...")f 5w=b.F.23.1n.1g f 3Q=0 6s 1f(j()13.2u.2X.8m:3F("8u")c)H.14(0.3K)3Q=3Q+1 71 B b.F.23.1h or b.F.23.1n.1g>5w or 3Q>=50 if b.F.23.1n.1g>5w e b.F.23.4I=b.F.23.4I+(b.F.23.1n.1g-5w)c H.14(0.5)c H.14(0.1)c b.F.23.2I=r c b.F:3t("46 - 3O bG (0 = gN):",j(1d)f 3d=1N(1d)if 3d g 3d>=0 e b.F.23.31=1s.2t(3d)c c,{4f=r})b.F.iT=b.F:1u("2N 3f 46 c0",j(19)b.F.23.1h=19 if 19 e 4A:V("1q: bD 46...")if B b.F.23.2I e b.F.23.2I=J H.1A(b.F.gM)c 1R 4A:V("1q: 4i")c c)b.F:1i("hr 8e > 8c > hl 8o > 3f")--═══════════════════════════════════════════════════════════════--jZ k7 hi--═══════════════════════════════════════════════════════════════b.F:1F("6a bF hp")b.F.22={1h=r,2I=r,1n=C.3P:1O("1n"),34=C.3P:1O("34"),31=0,4I=0,8p={"h0 gZ"},8t={"8h 8e"},}f 4D=b.F:1i("1q: 4i")f ge=b.F:1i("1n: 0 | 6D: 0")b.F.h9=j()f 6v=b.F.22.1n.1g 1w u.1o()g b.F.22.1h do if b.F.22.31>0 g b.F.22.1n.1g>=b.F.22.31 e 4D:V("1q: 3O bZ")b.F.22.1h=r 2j c 4D:V("1q: 8r 3C...")f 6L=0 1f(j()6L=b.F.7a(b.F.22.8p)c)4D:V("1q: "..6L.." 3C bO")f 6B=b.F.22.1n.1g f 4J=8s+6B*bY f 6F=C.6o==2U.6o.bX g 6 or 12 4D:V("1q: bP...")1w u.1o()g b.F.22.1h g b.F.22.34.1g<4J do 1f(j()O Q=1,6F do C.2o:1T("4V")c c)H.14(0.3K)ge:V("1n: "..u.4T(b.F.22.1n.1g).." | 6D: "..u.4T(b.F.22.1n.1g-6v))c if u.1o()g b.F.22.1h g b.F.22.34.1g>=4J e 4D:V("1q: 8r 8h...")f 6I=0 1f(j()6I=b.F.7a(b.F.22.8t)c)4D:V("1q: "..6I.." 8h bO")H.14(0.5)4D:V("1q: bH 3f...")f 5w=b.F.22.1n.1g f 3Q=0 6s 1f(j()13.2u.2X.8m:3F("8u")c)H.14(0.3K)3Q=3Q+1 71 B b.F.22.1h or b.F.22.1n.1g>5w or 3Q>=50 if b.F.22.1n.1g>5w e b.F.22.4I=b.F.22.4I+(b.F.22.1n.1g-5w)c H.14(0.5)c H.14(0.1)c b.F.22.2I=r c b.F:3t("6a - 3O bG (0 = gN):",j(1d)f 3d=1N(1d)if 3d g 3d>=0 e b.F.22.31=1s.2t(3d)c c,{4f=r})b.F.im=b.F:1u("2N 3f 6a bF",j(19)b.F.22.1h=19 if 19 e 4D:V("1q: bD 6a...")if B b.F.22.2I e b.F.22.2I=J H.1A(b.F.h9)c 1R 4D:V("1q: 4i")c c)b.F:1i("h0 gZ > 8c > 8h 8e > 3f")u.2d("2e","7j 4 3V: 2N gR 5d ✅",3,"2L")--═══════════════════════════════════════════════════════════════--7k 5:1U 5d(n2+dF+ad+nr)--═══════════════════════════════════════════════════════════════--═══════════════════════════════════════════════════════════════--nt kD mH mK 7Y--═══════════════════════════════════════════════════════════════b.q.I=b.q.I or{}b.q.I.8O=1b b.q.I.8P=0 b.q.I.dQ=gb b.q.I.eb=45 b.q.I.dR=0.35 b.q.I.8U=r b.q.I.ab=b.q.I.ab or{}b.q.I.72=b.q.I.72 or{}b.q.I.51=b.q.I.51 or{}--═══════════════════════════════════════════════════════════════--mB 9A bJ 9A 7Y--═══════════════════════════════════════════════════════════════b.q:1F("3O mD 5u")f 9W=b.q:1i("bL 5u: mV...")b.q.h8=b.q:2P("3O nW 5u",j(3H)f bE=b.q.I.72[3H]if bE e O 4l in 39(b.q.I.51)do b.q.I.51[4l]=r c b.q.I.51[bE]=J 9W:V("bL 5u: "..3H)c c)b.q.fZ=j(4l,3H)4l=5s(4l or"")3H=5s(3H or 4l)if 4l==""or b.q.I.72[3H]e w c b.q.I.72[3H]=4l if b.q.I.51[4l]==1b e b.q.I.51[4l]=r c 1J.2A(b.q.I.ab,4l)b.q.h8:1X(3H)c--nx ny nz el 2c 5P nV f fX,9Q=1f(j()w nK(13.2u:1O("bI"):1O("2c"):1O("lg"))c)if fX g 9Q g 9Q.bJ e f gp={"lc","ll","lz","lt","lr","l6"}O Q,4w in 1c(9Q.bJ)do f gq=1G.3x(5s(4w.11 or 4w.2l or 4w.7c or""))f gy=1G.3x(5s(4w.7c or""))f bM=r O Q,bN in 1c(gp)do if 1G.4u(gq,bN,1,J)or 1G.4u(gy,bN,1,J)e bM=J 2j c c if bM g 4w.7c e b.q.fZ(4w.7c,4w.2l or 4w.11 or 4w.7c)c c 9W:V("bL 5u: 3a (lNí lQ)")1R 9W:V("lY 5u: 4s O lX")c--═══════════════════════════════════════════════════════════════--lV lT lS(2W)--═══════════════════════════════════════════════════════════════b.q:1F("dF a4 5u")f dx=b.q:1i("a4 cx: bK")b.q.I.5l={["dD dB"]=J,["dC"]=J,["dG dK"]=J,["dJ dA"]=J,}b.q.I.93={"dD dB","dC","dG dK","dJ dA",}b.q.I.c1={}f dv=b.q:2P("a4 q 1V (mf l2)",j(3H)f 3X=b.q.I.c1[3H]if 3X e O Q,1t in 1c(b.q.I.93)do b.q.I.5l[1t]=r c b.q.I.5l[3X]=J dx:V("a4 q 1V: "..3X)c c)O Q,3X in 1c(b.q.I.93)do b.q.I.c1[3X]=3X b.q.I.5l[3X]=r dv:1X(3X)c--═══════════════════════════════════════════════════════════════--kS kR(3b/9a)--═══════════════════════════════════════════════════════════════b.q.di=j(1H,1k,1a,1e)f 9U=1H:3y("kI")f 6R=1H:3y("kJ")f 4d=1H:3y("kF")f c2=1H:3y("kK")if 5K(9U)=="9N"g 9U~=b.q.I.8O e b.q.I.8O=9U if 5K(6R)=="1G"g 5K(4d)=="1v"g 5K(c2)=="9N"e b.q.I.8P=c2+0.6 c c if 5K(4d)~="1v"or 2i:cj()>b.q.I.8P e w c 6R=1G.3x(5s(6R or""))--e0 2b if 1G.4u(6R,"2b",1,J)e f 49=b.q.e1(1H,1k)f 3u=1D.1l(4d.55.X,0,4d.55.Z)if 3u.3E<1 e 3u=1D.1l(1k.1v.55.X,0,1k.1v.55.Z)c if 3u.3E<1 e 3u=1D.1l(0,0,1)c f 9T=49-3u.97*b.q.I.eb 1a.1v=1v.81(9T,49)1a.4B=1D.3n 1a.6f=1D.3n 3g:V("1q: dO 3b")w"3b"c--e0 dS(ep dZ kM kN l5)if B 1G.4u(6R,"dS",1,J)e w c if 1e.2h/1s.3J(1e.ai,1)<=b.q.I.dR e b.q.I.8U=J c if B b.q.I.8U e w c f 3u=1D.1l(1a.1P.X-4d.1P.X,0,1a.1P.Z-4d.1P.Z)if 3u.3E<1 e 3u=1D.1l(-4d.55.X,0,-4d.55.Z)c if 3u.3E<1 e 3u=1D.1l(1,0,0)c 3u=3u.97 f 9T=4d.1P+3u*b.q.I.dQ+1D.1l(0,18,0)1a.1v=1v.81(9T,4d.1P)1a.4B=1D.3n 1a.6f=1D.3n 3g:V("1q: dO 9a")w"9a"c--═══════════════════════════════════════════════════════════════--lp ln dT--═══════════════════════════════════════════════════════════════b.q.cN=j(1K,ci)f 5q=os.2V()6s f 1C=C.W f 1a=1C g 1C:L("2n")f 1e=1C g 1C:2s("1y")if 1a g 1e g 1e.2h>0 e u.1x.W=1C u.1x.1y=1e w 1C,1a,1e c 3g:V("1q: 4s O fa")H.14(0.1)71 B b.q.I.1h or b.q.I.1r~=1K or(ci g os.2V()-5q>=ci)c--═══════════════════════════════════════════════════════════════--cS d9+lm d9--═══════════════════════════════════════════════════════════════b.q.cM=j()f 2J O Q,3G in 1c(13.7M:cg("lb"))do if 3G:91(2i)e 2J=3G 2j c c if B 2J e 2J=2i:L("le",J)c if B 2J e O Q,3G in 1c(2i:6u())do if 3G:2z("lj")g 3G.11=="cJ"e 2J=3G.28 2j c c c if B 2J e w c f 5a=2J:L("cJ",J)f 2r=5a g 5a.28 or(2J:2z("5R")g(2J.lh or 2J:mx("5M",J)))or 2J if 2r g 2r:2z("5M")e w 2J,5a,2r c c b.q.f9=j(1K)3g:V("1q: 4s O ad")f 5q=os.2V()f 2J,5a,2r 6s 2J,5a,2r=b.q.cM()if 2J g 2J:3y("nN")~=J e 2j c H.14(0.1)71 B b.q.I.1h or b.q.I.1r~=1K or os.2V()-5q>=12 if B 2J or B 2r e w c 3g:V("1q: fT ad")5q=os.2V()6s f 1C,1a=b.q.cN(1K,2)if 1C g 1a g 2J.28 g 2r.28 e 3g:V("1q: fT ad")1f(j()1a.1v=1v.81(2r.1P+1D.1l(0,3,4),2r.1P)1a.4B=1D.3n c)H.14(0.15)if 5a g 5a.28 g cQ e 1f(j()cQ(5a)c)1R 1f(j()13.5I:6X(J,2U.6U.E,r,2T)H.14(0.1)13.5I:6X(r,2U.6U.E,r,2T)c)c c H.14(0.25)71 B b.q.I.1h or b.q.I.1r~=1K or C:3y("nL")==r or B 2J.28 or os.2V()-5q>=12 c--═══════════════════════════════════════════════════════════════--cS nT 7Y(6N nJ de nI+cA)--═══════════════════════════════════════════════════════════════b.q.8I=j(1H,27)if B 1H e w r c f cr=b.q.I.5l g b.q.I.5l[1H.11]~=1b if 27=="2W"e w cr g b.q.I.5l[1H.11]==J c if cr e w r c w b.q.I.51[1H.11]==J c b.q.8K=j(27)27=27 or"33"f j 96(1H,1k)if B 1H or B 1H:2z("5R")e w r c if B 1k or B 1k:2z("5M")e w r c if B 1H:91(2i)e w r c f 1E=1H:L("1E")or 1H:L("4C")f 1Q=1E g(1E:L("2h")or 1E:L("1Q"))f 2m=1E g(1E:L("ai")or 1E:L("2m"))f 1e=1H:2s("1y")f 3A=1Q g 1N(1Q.1g)if 3A==1b g 1e e 3A=1e.2h c if 3A==1b e 3A=1N(1H:3y("2h"))c if 3A~=1b g 3A<=0 e w r c w J,1E,1Q,2m c--cE 2W:ck cx cA if 27=="2W"e O Q,3X in 1c(b.q.I.93)do if b.q.I.5l[3X]==J e O Q,2w in 1c(2i:6u())do if 2w:2z("5R")g 2w.11==3X e f 1k=2w:L("7W",J)f 74,1E,1Q,2m=96(2w,1k)if 74 e w 2w,1k,1Q,2m c c c c c w 1b c--cE 33:ck ch cD O Q,3i in 1c(13.7M:cg("cO"))do if 3i:2z("5R")g 3i:91(2i)g b.q.8I(3i,27)e f 1k=3i:L("7W",J)f 74,1E,1Q,2m=96(3i,1k)if 74 e w 3i,1k,1Q,2m c c c--nC:ck en 8Z/95 f 5f=2i:L("8Z")f 6z=5f g(5f:L("95")or 5f:L("db"))if 6z e O Q,2w in 1c(6z:6u())do if 2w:2z("5R")g b.q.8I(2w,27)e f 1k=2w:L("7W",J)f 74,1E,1Q,2m=96(2w,1k)if 74 e w 2w,1k,1Q,2m c c c c w 1b c--═══════════════════════════════════════════════════════════════--om 7Y(6N oo oq)--═══════════════════════════════════════════════════════════════b.q.7p=j(1H,1Q,2m,1k)f 1C=C.W f 1a=1C g 1C:L("2n")f 1e=1C g 1C:2s("1y")if B 1a or B 1e or 1e.2h<=0 e w c f cl=b.q.di(1H,1k,1a,1e)if cl=="9a"e w c f 2b=1C:L("3b")or C.2D:L("3b")if 2b g 2b.28~=1C e 1f(j()1e:4Z(2b)c)c f 32=1C:L("59")f 3s=1C:L("6A")f 49=1k.1P if cl~="3b"e f 53=1a.1P-49 53=1D.1l(53.X,0,53.Z)if 53.3E<1 e 53=1D.1l(1k.1v.55.X,0,1k.1v.55.Z)c if 53.3E<1 e 53=1D.1l(0,0,1)c f 98=49+53.97*1s.3J(3,1s.df(6,1k.2C.3E*0.2))+1D.1l(0,1.5,0)1a.1v=1v.81(98,49)c 1a.4B=1D.3n 1a.6f=1D.3n 1f(j()if 2a g 32 e 2a(1k,32,0)2a(1k,32,1)c if 2a g 3s e 2a(1k,3s,0)2a(1k,3s,1)c c)if os.2V()-b.q.I.82>=b.q.I.cp e b.q.I.82=os.2V()1f(j()C.2o:1T("2b","32")C.2o:1T("2b","3s")if 2b e 2b:d4()c c)c 7r:V("1U: "..(2i:3y("cX")or 1H.11))f hv=b.q.co(1Q)f 8M=b.q.cn(2m)7s:V("2h: "..u.5c(hv).." / "..u.5c(8M))c--═══════════════════════════════════════════════════════════════--9y mI n0(6N n1+n7/n5 fm)--═══════════════════════════════════════════════════════════════b.q.c7=j(27,19)if B 19 e if b.q.I.4O==27 e b.q.I.1h=r b.q.I.4O=1b b.q.I.1r+=1 b.q.I.fj="4s"3g:V("1q: fs")if b.q.62 e b.q.62()c c w c--9s el fr fp if 27=="2W"g b.q.5t e b.q.5t:1B(r,J)2B 27=="33"g b.q.5v e b.q.5v:1B(r,J)c b.q.I.4O=27 b.q.I.1h=J b.q.I.1r+=1 f 1K=b.q.I.1r H.1A(j()f 61=r 1w u.1o()g b.q.I.1h g b.q.I.1r==1K g b.q.I.4O==27 do 1f(j()f 1H,1k,1Q,2m=b.q.8K(27)f ce=1H g b.q.8I(1H,27)if 1H g B ce e if 61 e 61=r if b.q.62 e b.q.62()c c 3g:V("1q: hY "..1H.11)2B 1H e if B 61 e 61=J b.q.I.8O=1b b.q.I.8P=0 b.q.I.8U=r if b.q.cm e b.q.cm()c c f U=C.W f 2E=U g U:2s("1y")if 2E g 2E.2h>0 e 3g:V("1q: fh "..(27=="2W"g"2W 1U"or"33 1U"))b.q.7p(1H,1Q,2m,1k)1R 3g:V("1q: 4s O fa")c 2B 61 e 61=r 1f(b.q.f9,1K)7r:V("1U: 3a")7s:V("2h: 0 / 0")if b.q.I.cf g b.q.62 e b.q.62()c 3g:V("1q: 4s O 1U")1R 3g:V("1q: 4s O "..(27=="2W"g"2W 1U"or"33-7i 1U"))c c)H.14(1H g ce g 0.f6 or 0.25)c c)c--ip 7o 7h iJ b.q.5t=b.q:1u("1S 1U — 33 7i",j(19)b.q.c7("33",19)c)b.q.5t:1B(r)b.q.5v=b.q:1u("1S 1U — 2W",j(19)b.q.c7("2W",19)c)b.q.5v:1B(r)u.2d("2e","7j 5 3V: 1U 5d ✅",3,"2L")--═══════════════════════════════════════════════════════════════--7k 6 eQ:1S 4L+iG+iL--═══════════════════════════════════════════════════════════════--═══════════════════════════════════════════════════════════════--9y iR(iQ iP el 2M iE)--═══════════════════════════════════════════════════════════════b.K:1F("1S 4L")b.K.5y={1h=r,7E=1b,}f 9v=b.K:1i("1q: 4i")f fg=b.K:2P("4N 4L",j(1d)b.K.5y.7E=1d c)O Q,2G in 1c(b.K.38.5T)do fg:1X(2G)c b.K:1u("1S 4L",j(19)b.K.5y.1h=19 if B 19 e 9v:V("1q: 4i")w c if B b.K.5y.7E e u.2d("1S 4L","iuí iv 2M ff",2,"c6")b.K.5y.1h=r w c 9v:V("1q: hS "..b.K.5y.7E)H.1A(j()1w u.1o()g b.K.5y.1h do f 2G=b.K.5y.7E f 6W=b.K.7G:L(2G)if 6W e 1f(j()b.K.9u:3F(6W)c)c H.14(0.2)c 9v:V("1q: 4i")c)c)--═══════════════════════════════════════════════════════════════--ir 9A iC 9A fe--═══════════════════════════════════════════════════════════════b.1z:1F("fd de 7V")b.1z.hM={fL=0,fJ=0,fI=0,fM=0,fN=0,fP=0,fz=0,fv=0,}f c5=b.1z:1i("c3: ey 1z")H.1A(j()1w u.1o()do f 5F={fL=0,fJ=0,fI=0,fM=0,fN=0,fP=0,fz=0,fv=0,}f U=C.W if U e O Q,2p in 1c(U:3j())do if 5F[2p.11]~=1b e 5F[2p.11]=5F[2p.11]+1 c c c O Q,2p in 1c(C.2D:3j())do if 5F[2p.11]~=1b e 5F[2p.11]=5F[2p.11]+1 c c f 9E={}O 1t,7w in 39(5F)do if 7w>0 e 1J.2A(9E,1t.." ("..7w..")")c c if#9E==0 e c5:V("c3: ey 1z")1R c5:V("c3: "..1J.5E(9E," · "))c H.14(2)c c)--═══════════════════════════════════════════════════════════════--eu ez--═══════════════════════════════════════════════════════════════b.1W:1F("eJ")b.1W:4v("🛑 eu ez",j()--9s eE 7o 7h if T.c4 e T.c4.29=r c if T.7B e T.7B=r c if T.4F e T.4F=r c if T.65 e T.65=r c if T.6w e T.6w=r c if T.7A e T.7A=r c--9s eE 7o 7h de la jN O Q,6T in 39(b)do if 6T.c8 g 6T.c8.es e O Q,c9 in 1c(6T.c8.es)do if c9 g c9.ku e--eh kq 7o 7h,ep kf 7o ko jK ja c c c c--cd j8 de 2N 3f if b.F e if b.F.5L e b.F.5L.1h=r c if b.F.26 e b.F.26.1h=r c if b.F.23 e b.F.23.1h=r c if b.F.22 e b.F.22.1h=r c c--cd 1U if b.q g b.q.I e b.q.I.1h=r b.q.I.4O=1b c--cd 5x if b.t e if b.t.2q e b.t.2q.2O.1h=r b.t.2q.2R.1h=r c if b.t.4G e O 1t in 39(b.t.4G)do b.t.4G[1t]=r c c c--iWón u.2d("eJ eH","jI eM jp jo",4,"jn")c)--═══════════════════════════════════════════════════════════════--eR eQ--═══════════════════════════════════════════════════════════════u.2d("2e","🎉 9l cc 3V — 4,eO+ líjv",5,"2L")7U("[2e] ✅ eN cc 3V al 7O%")7U("[2e] nQ: 33, 6e, cP, 5x, 2N, 1U, 3Y, 7V, dY, 4C, cb")7U("[2e] lJ: 5J 9m ca.0")',62,1517,'|||||||||||tabs|end||then|local|and|||function|killing||||||boss|false||farming|utils||return|||||not|player|||fast|main|task|Data|true|inventory|FindFirstChild|||for||_|||_G|char|SetText|Character|||||Name||services|wait|||||state|root|nil|ipairs|text|humanoid|pcall|Value|Running|AddLabel|SpectateData|hitbox|new||Rebirths|isCurrent|bool|Status|Generation|math|name|AddSwitch|CFrame|while|playerData|Humanoid|boosts|spawn|Set|character|Vector3|stats|AddSection|string|model|machineData|table|generation|KillAuraFull|Players|tonumber|WaitForChild|Position|health|else|Auto|FireServer|Boss|target|info|Add|Rock|ring|||ChaosData|UltraData|||FastRebirthData|mode|Parent|Enabled|firetouchinterest|punch|config|notify|HonenxWhite||tool|Health|workspace|break|TradeData|DisplayName|maxHealth|HumanoidRootPart|muscleEvent|item|MachineExerciseData|part|FindFirstChildOfClass|floor|ReplicatedStorage|Selected|descendant|SelectedPlayer|Camera|IsA|insert|elseif|Size|Backpack|hum|connect|petName|RebirthData|WorkerActive|chest|username|success|pet|Fast|Squat|AddDropdown|format|Lift|targetRoot|game|Enum|clock|Halloween|rEvents|RingPart|Color|WaterParts|TargetRebirths|leftHand|Main|Strength||||PetShopData|pairs|None|Punch|TrainingSnapshot|num|SelectedList|Rebirth|bossStatusLabel|absN|taggedBoss|GetChildren|CurrentTargetConnection|KillAura|Protection|zero|machine|Settings|KarmaData|UserId|rightHand|AddTextBox|direction|255|fromRGB|lower|GetAttribute|Color3|healthValue|pos|Rep|GetPlayers|Magnitude|InvokeServer|candidate|displayName|SeatPart|max|05|SelectedPlayerUserId|PartSize|window|Target|leaderstats|attempts|Kill|ActiveMachine|selection|amount|cargado|AuraData|bossName|Pets|UltraState||isSpawnProtected|RunService|offset|Dura||Ultra|Switch|runtime|center|snapshot|GetService|segundos|attackCFrame|deathRingRange|clear|value|targetPlayer|Inactive|PositionLock|TAB|modelName|Spectating|CenterCFrame|Shake|AddTab|ExerciseData|rock|Waiting|isPlayerAlive|find|AddButton|rarity|enabled|SelectedPlayerList|Aura|ultraStatus|AssemblyLinearVelocity|Stats|chaosStatus|ReenterAt|deathRingEnabled|ActiveConfigs|Wait|TotalRebirths|targetStrength|King|Pet|isWhitelisted|Choose|ActiveMode|teleport|track|formatStat|ShakeGifterData|formatWithCommas|heightOffset|rep|sign|Protein|EvolveData|EquipTool||SelectedBosses|EggGifterData|towardPlayer|newChar|LookVector|petsFolder|Egg||LeftHand|prompt|Range|formatNumber|completo|VirtualUser|events|targetHumanoid|CameraMonitorLoop|FortuneWheelData|FOV||SpecialBosses||equipped|3600|Gym|startedAt|RedactConfig|tostring|MainSwitch|Bosses|HalloweenSwitch|rebirthBefore|Farming|AutoPetData|CameraSubject|localRoot|Amount|Gifter|punchTool|concat|items|killAllGeneration|RockData|VirtualInputManager|KNI|typeof|FastRepData|BasePart|parts|Remove|del|Destroy|Model|ToolExerciseSwitch|PetList|Speed|whitelistedPlayers|playerName|selectedUsername|killListGeneration|SquatExerciseSwitch||wasFighting|resumeTraining|BodyVelocity|Heartbeat|killAll|Disconnect|CharacterAdded|elapsed|Frozen|Chaos|machineName|100000|LiftExerciseSwitch|Killing|AssemblyAngularVelocity|Configs|SelectedTool|SelectedMachine|White|SelectedPetList|Tropical|Choices|folder|MembershipType|centerCFrame|MachinesFolder|Anti|repeat|eggCount|GetDescendants|startRebirths|killBlacklistedOnly|egg|AFK|bossFolder|RightHand|currentRebirths|match|Gained|setCamera|repsPerBurst|type|IsAutoRebirthing|equippedReb|gsub|cached|equippedRep|KingData|con|shakeCount|SizeSwitch|data|attackKind|stopSpectating|tab|KeyCode|getLocalCombatCharacter|selectedPet|SendKeyEvent|fastRebirthStatus|PlayerAdded||until|BossByDisplayName|foundTarget|alive|BuyAmount|colorData||Honen|cyanam1|equipPets|updateSpectateTarget|BossModel|SpectateState|getgenv|PlayerRemoving|RockSwitch|switches|Island|Mensaje|MENSAJE|Player|Spectate|AutoFarm|los|attack|KingSwitch|bossLabel|bossHealthLabel|kills|para|FarmGood|count|Pushups|petsByName|Muscle|HonenxAntiAFK|RockFarmRunning|hits|hand|SelectedPet|FarmEvil|PetShopFolder|currentLocalRoot|Whitelist|AutoRepSwitch|RedactStats|connection|CollectionService|Instance|100|PositionLocker|HonenxWhiteMainConnections|SelectedPlayers|tradingEvent|offered|print|Boosts|BossDamageHitbox|humanoidRootPart|BOSS|lowerName||lookAt|LastPunch|exerciseDropdown|SelectedRock|RedactName|head|equipPetEvent|VisibilitySettings|sort|SquatsByName|SquatMachineNames|Farm|Select|Overlord|LiftMachineNames|LocalPlayerRespawnConnection|Tribal|SizeData|Material|HonenxWhiteKillAuraRing|CanCollide|rebirthRemote|Ring|Hydra|RepPets|145|Equipando|5000|RebirthPets|rebirthRequest|obj|updateKillAuraRing|Legends|Pushup|Jungle|Active|TeleportActive|showDeathRing|ShowRingSwitch|Tool|AutoRepRunning|Industrial|auraName|shouldFarmBoss|ChangeSpeedSize|findActiveBoss|fastRepStatus|mhv|RepsPerCycle|AttackSequence|EvadeUntil|SpectateDropdown|getPlayerList|touchAndPunchTarget|killSessionStart|DodgeStomps|remotes|TotalReps|rebirthValueBefore|Auras|Events||IsDescendantOf|AuraList|SpecialBossOrder|Buy|BossEvent|isAliveBoss|Unit|standPos|right|Stomp|seconds|BlacklistDropdown|WhitelistDropdown|lockPosition|MaxForce|savedConfig|RedactConfigPath|attempted|HttpService|enableAntiFling|Hub|UI|KNI_UI|whitelist|HonenxWhiteMainGeneration|AntiFling|120|Apagar|duration|PetShopRemote|autoPetStatus|Karma|selectedText|AUTO|blacklistedPlayers|DE|list|positionNearTarget|shouldContinue|active|animationName|animBlockConnection|Evolve|left|ShakeCount|Semana|consumablesFolder|Hora|number|shakePlayerDropdown|rateR|bossConfig|eggPlayerDropdown|EggCount|safePosition|sequence|rateS|selectedBossesLabel|1e12|1e9|1e6|1e3|1e15|1e18|Eggs|World|loc|gym|BoostData|itemName|setclipboard|Vector2|BossOrder|https|Chest|Discord|AutoTradeRunning|tradePlayerDropdown|Reborn|MaxHealth|CameraType|humanoidState||targetChar|Animation|equipBestStatPets|LocalPlayer|WhitelistDisplayNames|86400|priority|good|lastCharacter|localPlayer|gainS|bVDtwKF92|hitRegistered|evil|Tiempo|TotalDistance|Parts|Lighting|timeDropdown|protectedUntil|140|saveRedactConfig|disableAntiFling|UserInputService|gainR|discord|huge|Made|interactPart|attackedPlayer|isBlacklisted|rad|tradePlayer|Angles|nextBossLabel|destroyKillAuraRing|nextTime|SavedUserId|Tab|offeredPets|startAutoFarm|Next|Anchored|SelectedPets|AutoEvolveRunning|oldRing|selectedAura|tradePlayerLabel|buyPetLabel|Transparency|RingColor|Trade|EggEaterData|initialRoot|attackPlayerWithLimit|killStatsLabel|Kills|shake|Shakes|ringColors|currentTargetRoot|restartKarmaWorker|KilllistDisplayNames|rebirthLabel|targetLabel||reps|Loop|anillo|Bar|sleepTime||muscle|staleRing||Start|TargetPosition|matchesKarmaMode|Part|Iniciando|bossModelName|Overlords|rebirths|Haciendo|shared|RARITIES|All|Targeted|allowed|tier|equipados|Farmeando|humanoid2|AutoRep|char2|RenderStepped|rockFolder|unequipPet|Unique|Premium|2550|alcanzado|Titans|SpecialBossByDisplayName|impactTime|Combo|HonenxWhiteUltraFastRep|comboLabel|warning|startAutoFarmFull|_ui|conn|v2|Info|COMPLETO|Detener|selected|ContinueTraining|GetTagged|por|timeout|GetServerTimeNow|buscar|evadeMode|pauseTraining|getBossMaxHealth|getBossHealth|PunchInterval|backpackTool|isSpecial|HumanoidStateType|Jumping|setMachineExerciseState|tradePetLabel|evolveDropdown|bosses|startMachineExercise|evolveLabel|special|auraDropdown|AutoHatchAura|tag|Modo|tradePetDropdown|Workspace|selectedName|unique|bossChestPrompt|Energy|Eat|findChest|getAliveCharacter|BossEventBoss|Specs|fireproximityprompt|callback|FIND|Jump|start|CycleDelay|matchingSquats|BossDisplayName|20K|FastRepWorkerLoop|newS|800|interval|clamp|Activate|fastRebirthStats|PetShopRuntime|petShopDropdown|AutoHatchPet|CHEST|backpack|BossArena|FastRebirthWorker|||min|Buscar||evadeAttack|buyAuraLabel|ItemList|8665||Locations||5792|Mythical|Kick||enterExerciseMachine|Tiny|specialBossDropdown|shakeCountLabel|specialBossesLabel|lag|Frost|Colossus|Reaper|Frankenbrute|Grim|machinesFolder|Special|Pumpkin|Teletransportado|GymLocations|Scarecrow|Titan|Teleport|eggCountLabel|completado|Dodging|eggAmountBox|EvadeDistance|StompHealthThreshold|stomp|CHARACTER|squat|word|signal|sub|Teleports|si|Evadir|getBossHeadPosition|cantidad|giftRemote|giftRequest|Env|jugador|Configur|Gifting|shakeAmountBox|Text|PunchBehindDistance|getTool|rockName|Fortune|Chances|Wheel|No|spinFortuneWheel|Remote|InfiniteJump||ceil||StartPosition|solo|WalkOnWaterSwitch|Night|_connections|squatDropdown|EMERGENCY||Misc|liftDropdown|Sin|STOP|continue|healthBefore|hitLimit|jumpedOff|todos|RedactStatsSwitch|Redact|Stop|unlockPosition|Emergency|HidePets|ShowPetsEvent|las|Script|000|FieldOfView|FINAL|CIERRE|Hide|HidePopups|makefolder|writefile|loadRedactConfig|RedactNameSwitch|isfolder|default|SavePlayerSizeEvent|HidePopupsSwitch|isfile|readfile|Equip|Best|03|adido|getMachineInteractPart|collectChest|Respawn|Killlist|to|Contador|BOOSTS|primero|autoPetDropdown|Fighting|changeSize|Phase|rockDropdown|Error|Training|title|kind|modo|Exercises|otro|Disabled|IsFriendsWith|whitelistFriends|EnergyBar|Sorcerer|blockedAnimations|animationId|UltraShake|Wizard|Wild|Mighty|Monster|Small|Fry|isAttackTool|child|EnergyShake|TropicalShake|attackPlayerForDuration|ProteinEgg|ProteinBar|ToughBar|shouldBlockAnimation|ProteinShake|hasAttackToolEquipped|stopBlockedAnimations|Durability|Collecting|strengthWeekLabel|CanTouch|strengthDayLabel|configOk|desequipAll|addBossChoice|Space|rebirthsGainedLabel|ganados|Copiar|KNI_URL|Toggle|ultraStats|strengthHourLabel|Cylinder|CastShadow|PartType|230|Shape|Neon|chaosStats|viejo||RingTransparency|Better|equipadas|200|ClickButton2|com|sessionTimeLabel|raw|allowedBossTiers|tierText|INFO|sesi|ULTRA|formatTiempo||equipPet|uniquePets|modelText|rebirthsWeekLabel|CanQuery|createKillAuraRing|Custom|rebirthsHourLabel|petNames|rebirthsDayLabel|Informaci|Show|loadstring|HttpGet|128|Folder|UltraWorker|inf|tick|correctamente|FARMING|V2|now|StartTime|Owner|startCameraMonitor|ANTI|StartStrength|curStrength|Samurai|Swift|Desactivado|IsSpectating|AntiAFKSwitch|ChangeState|CaptureController|ClickButton1|whitelistOk|BossDropdown|ChaosWorker|WhitelistURL|ataque|StartRebirths|curRebirths|leaveExerciseMachine|Contributors|otherMachineData|ganada|PACK|honey|chilin6369|Titanium|ringColorDropdown|Fuerza|strengthGainedLabel|Pack|copiado|Omega|Link|Pink|Friends||AnimationId|nebula|GetPlayingAnimationTracks|Lime|TABS|Purple|Blue|Cyan|farmGoodKarma|gui|equip|dropdown|220|farmBadKarma|BETTER|getWhitelistDisplayName|ComboData|Black|STRENGTH|Everyone|Green|180|Comprando|COMPLETA|warn|AURA|interactseat|KILL|Skipping|EXERCISE|Sesi|VENTANA|Title|Session|CREAR|Gravity|opcional|cargar|Exercise|150k|Golden|150000|400k|Eternal|400000||Punching|Large|Situps|Weight|Handstands|Exercising|ChaosToggle||Crear|Reemplazar|Evil|CONTADOR|Red|Good|Eleg|un|420|HonenxWhiteWindow|goodKarma|Orange|evilKarma|luau|COMBOS|getKilllistDisplayName|seleccionado|620|Combos|List|Width|existentes|LEAVE|Cierre|Destruir|existe|Height|continuamente|comprar|PET|Yellow|UltraToggle|CARGAR|JSONDecode|Notificaci|equipar|pets|Desequipar|json|FUNCIONES|changeSpeed|showPopupsOption|AUXILIARES|MuscleLegendsMainConfig|actualizaci|User|loops|Idled|estado|2048|50000|AddSlider|Freefall|MAIN|JSONEncode|StringValue|ObjectValue|rango|Popups|BodyPosition|Slider|error|detenidas|funciones|Ancient|Fling|Velocity|Visuals|1250|neas|Mountain|usando|despu|RESUME|savePlayerSizeEvent|TRAINING|hidePets|showPets|showPetsEvent|PAUSE|Lock|centro|Todas|Volver|tienen|Side_|750k|GUI|rodriguezberiticajuliocesar|Damage|wq|TITANS|GetState|Utils|KILLING|ForceField|spawnProtectionHighlight|SpawnProtectedUntil|specs|CHAOS|522635514|507768375|522638767|182393478|129967390|3638767427|3638729053|OVERLORDS|configuraciones|Attack|Animations|Day|Dropdowns|Water|RECONEXI|apagamos|worker|Other|Walk|Part_|UpLeft_|LeftRight_|UpRight_|AL|que|Infinite|desconectamos|Change|Spin|Time|Connected|ClockTime|githubusercontent|openFortuneWheel|JumpRequest|openFortuneWheelRemote|catalogs|fortuneWheelChances|129967478|DATA|playerGui|BossAttackCFrame|LIFT|vivo|BossAttackSequence|BossAttackKind|BossAttackImpactTime|PlayerGui|tiene|poca|SQUAT|0Ne1DxbB|quinas|ATTACKS|EVADE|menos|quina|TELEPORTS|1919|07|una|Sub|Escanear|CON|one|Interfiere|regalados|vida|rainbow|TOUGH|proteinEgg|CHECK||BossEventChest|common|expect|BossChest|Eater|BossEventConfig|PrimaryPart|acceptTrade|ProximityPrompt|Boost|rare|COLLECT|ALIVE|ACTUALIZADO|GET|UTILS|mythic||legendary|Version|Connect|gmatch|upper|pastebin|epic|08|133|staff|STATS|tricas|Real|abs|0s|409|Build|2250|1284|1073|eleg|2623|2fqi|uno|0f|BOSSES|WORLD|Contact|SPECIAL|2fk|detection|Farmed|2fqa|2ft|2fb|2fm|6759|Infernal|797|151|4994|552|681641|5254|766|2941|169|Beach|select|Gyms|Overcharged|SERVICIOS|342850|est|autorizado|4516|991|3856|Unite|MAQUINAS|850586|4931|8543|verificada|2400|750000|FindFirstChildWhichIsA|WHITELIST|JUGADOR|ACTIVADO|SELECTOR|rebirth|Specific|20000|MACHINE|01|EXTENDIDA|FARM|1fm|DEL|1fb|infinito|Funciones|packs|auxiliares|BossHealth|BossMaxHealth|1fqa|activa|1ft|Detecting|FastRebirthToggle|Sit|Conserva|mascotas|LOOP|CollectChest|Rarities|25000000|neededDurability|Resume|respawn|Pause|25m|10000000|1000000|Legend|Notify|5000000|10m|FAST|CyclesPerSecond|FastRepToggle|verificar|1fk|pido|Activando|ciclo|Reps||Conexi|SendRate|Evade|MAX|INICIALIZAR|offerItem|Head|rack|Cargar|rarities|desde|Activado|lift|Fallback|versiones|IsPowerUp|Reemplaza|Clear|completa|rareza|filtros|require|BossChestPending|sendTradeRequest|BossChestEmerging|Leave|remove|Tabs|evolvePet|petEvolveEvent|ACTIVE|INDEPENDIENTE|juego|specific|cPetShopRemote|Worker|deadlift|principal|auto|completos|MuscleEvent|touch|Posicionarse|Equipar|cerca|1fqi|Fire|cPetShopFolder|Continue|Of|SPECTATE|PETS|Shop|simples|CurrentCamera|after|LocalPlayerRespawn||BossSpawnNextTime|ATTACK||evade|changeSpeedSizeRemote|integrado||'.split('|'),0,{}))
+--[[
+    HonenxWhite | Reborn
+    Hub completo para Muscle Legends usando KNI_UI
+    Made by Honen / cyanam1 / White
+]]
+
+-- ═══ CARGAR KNI_UI ═══
+local KNI_URL = "https://raw.githubusercontent.com/rodriguezberiticajuliocesar-wq/nebula-gui/main/KNI_UI.luau"
+local KNI = loadstring(game:HttpGet(KNI_URL, true))()
+
+if not KNI then
+    warn("[HonenxWhite] Error al cargar KNI_UI")
+    return
+end
+
+-- ═══ JUGADOR ═══
+local player = game:GetService("Players").LocalPlayer
+
+-- ═══ WHITELIST CHECK ═══
+local WhitelistURL = "https://pastebin.com/raw/0Ne1DxbB"
+local whitelistOk, whitelist = pcall(function()
+    return loadstring(game:HttpGet(WhitelistURL, true))()
+end)
+
+if not whitelistOk or type(whitelist) ~= "table" then
+    player:Kick("[HonenxWhite] Error al verificar whitelist. Contactá al staff.")
+    return
+end
+
+if not whitelist[player.UserId] then
+    player:Kick("[HonenxWhite] No estás autorizado. Unite a discord.gg/bVDtwKF92")
+    return
+end
+
+print("[HonenxWhite] Whitelist verificada ✅")
+
+-- ═══ SERVICIOS ═══
+local services = {
+    Players = game:GetService("Players"),
+    ReplicatedStorage = game:GetService("ReplicatedStorage"),
+    VirtualUser = game:GetService("VirtualUser"),
+    Workspace = workspace,
+    Lighting = game:GetService("Lighting"),
+    UserInputService = game:GetService("UserInputService"),
+    VirtualInputManager = game:GetService("VirtualInputManager"),
+    RunService = game:GetService("RunService"),
+    CollectionService = game:GetService("CollectionService"),
+    HttpService = game:GetService("HttpService"),
+    Stats = game:GetService("Stats"),
+}
+local playerGui = player:WaitForChild("PlayerGui")
+local backpack = player:WaitForChild("Backpack")
+
+-- ═══ UTILS ═══
+local utils = {}
+utils.runtime = {}
+
+_G.HonenxWhiteMainConnections = _G.HonenxWhiteMainConnections or {}
+for _, connection in ipairs(_G.HonenxWhiteMainConnections) do
+    pcall(function() connection:Disconnect() end)
+end
+_G.HonenxWhiteMainConnections = {}
+_G.HonenxWhiteMainGeneration = (_G.HonenxWhiteMainGeneration or 0) + 1
+utils.Generation = _G.HonenxWhiteMainGeneration
+
+function utils.isCurrent()
+    return utils.Generation == _G.HonenxWhiteMainGeneration
+end
+
+function utils.connect(signal, callback)
+    local connection = signal:Connect(callback)
+    table.insert(_G.HonenxWhiteMainConnections, connection)
+    return connection
+end
+
+utils.playerData = {
+    Player = player,
+    DisplayName = player.DisplayName,
+    Character = player.Character,
+    Humanoid = nil,
+    Camera = services.Workspace.CurrentCamera,
+    Backpack = backpack,
+}
+
+utils.playerData.Humanoid = utils.playerData.Character and utils.playerData.Character:FindFirstChildOfClass("Humanoid")
+
+utils.remotes = {
+    ChangeSpeedSize = services.ReplicatedStorage.rEvents.changeSpeedSizeRemote,
+    MuscleEvent = player.muscleEvent,
+}
+
+function utils.formatNumber(n)
+    n = tonumber(n) or 0
+    if n >= 1e18 then return string.format("%.1fqi", n / 1e18)
+    elseif n >= 1e15 then return string.format("%.1fqa", n / 1e15)
+    elseif n >= 1e12 then return string.format("%.1ft", n / 1e12)
+    elseif n >= 1e9 then return string.format("%.1fb", n / 1e9)
+    elseif n >= 1e6 then return string.format("%.1fm", n / 1e6)
+    elseif n >= 1e3 then return string.format("%.1fk", n / 1e3)
+    else return tostring(math.floor(n)) end
+end
+
+function utils.formatWithCommas(n)
+    local s = tostring(math.floor(tonumber(n) or 0))
+    while true do
+        local newS, count = s:gsub("^(-?%d+)(%d%d%d)", "%1.%2")
+        s = newS
+        if count == 0 then break end
+    end
+    return s
+end
+
+function utils.notify(title, text, duration, kind)
+    KNI.Notify:Show(title, text, duration or 3, kind or "info")
+end
+
+-- ═══ CREAR VENTANA ═══
+local window = KNI.new({
+    Name = "HonenxWhite",
+    Title = "HonenxWhite | Reborn",
+    Width = 620,
+    Height = 420,
+})
+
+_G.HonenxWhiteWindow = window
+
+-- ═══ TABS ═══
+local tabs = {
+    main = window:AddTab("Main"),
+    killing = window:AddTab("Killing"),
+    specs = window:AddTab("Specs"),
+    farming = window:AddTab("Farming"),
+    fast = window:AddTab("⚡ Fast"),
+    boss = window:AddTab("Boss"),
+    inventory = window:AddTab("Pets"),
+    boosts = window:AddTab("Boosts"),
+    teleport = window:AddTab("Teleports"),
+    stats = window:AddTab("Stats"),
+    info = window:AddTab("Info"),
+}
+
+for _, tab in pairs(tabs) do
+    tab.runtime = {}
+end
+
+-- ═══ RECONEXIÓN AL CHARACTER ═══
+utils.connect(player.CharacterAdded, function(character)
+    utils.playerData.Character = character
+    utils.playerData.Humanoid = character:WaitForChild("Humanoid", 10)
+    utils.playerData.Backpack = player:WaitForChild("Backpack")
+end)
+
+-- ═══ ANTI-AFK ═══
+utils.connect(player.Idled, function()
+    pcall(function()
+        services.VirtualUser:CaptureController()
+        services.VirtualUser:ClickButton2(Vector2.new(0, 0))
+        services.VirtualUser:ClickButton1(Vector2.new(0, 0))
+    end)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB MAIN
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.main:AddSection("User Settings")
+
+tabs.main.Settings = {
+    Size = {Value = 2, Enabled = false},
+    Speed = {Value = 120, Enabled = false},
+    FOV = {Value = 70, Enabled = false},
+}
+
+tabs.main:AddTextBox("Size (default 2):", function(text)
+    text = string.gsub(text, "%s+", "")
+    if tonumber(text) and tonumber(text) > 0 then
+        tabs.main.Settings.Size.Value = tonumber(text)
+    end
+end, {clear = false})
+
+tabs.main:AddSwitch("Set Size", function(bool)
+    tabs.main.Settings.Size.Enabled = bool
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Settings.Size.Enabled and utils.playerData.Character and utils.playerData.Humanoid then
+            pcall(function()
+                utils.remotes.ChangeSpeedSize:InvokeServer("changeSize", tabs.main.Settings.Size.Value)
+            end)
+        end
+        task.wait(0.15)
+    end
+end)
+
+tabs.main:AddTextBox("Speed (default 120):", function(text)
+    text = string.gsub(text, "%s+", "")
+    if tonumber(text) and tonumber(text) > 0 then
+        tabs.main.Settings.Speed.Value = tonumber(text)
+    end
+end, {clear = false})
+
+tabs.main:AddSwitch("Set Speed", function(bool)
+    tabs.main.Settings.Speed.Enabled = bool
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Settings.Speed.Enabled and utils.playerData.Character and utils.playerData.Humanoid then
+            pcall(function()
+                utils.remotes.ChangeSpeedSize:InvokeServer("changeSpeed", tabs.main.Settings.Speed.Value)
+            end)
+        end
+        task.wait(0.15)
+    end
+end)
+
+tabs.main:AddTextBox("FOV (1-120):", function(text)
+    text = string.gsub(text, "%s+", "")
+    if tonumber(text) and tonumber(text) >= 1 and tonumber(text) <= 120 then
+        tabs.main.Settings.FOV.Value = tonumber(text)
+    end
+end, {clear = false})
+
+tabs.main:AddSwitch("Set FOV", function(bool)
+    tabs.main.Settings.FOV.Enabled = bool
+    if utils.playerData.Camera then
+        utils.playerData.Camera.FieldOfView = bool and tabs.main.Settings.FOV.Value or 70
+    end
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Settings.FOV.Enabled and utils.playerData.Camera then
+            utils.playerData.Camera.FieldOfView = tabs.main.Settings.FOV.Value
+        end
+        task.wait(0.15)
+    end
+end)
+
+tabs.main:AddSection("Protection & Visuals")
+
+tabs.main.Protection = {
+    AntiFling = {Enabled = false},
+    PositionLock = {Enabled = false, Position = nil},
+}
+
+tabs.main.enableAntiFling = function()
+    if not tabs.main.Protection.AntiFling.Enabled or not player.Character then return end
+    local root = player.Character:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+    if root:FindFirstChild("BodyVelocity") and root.BodyVelocity.MaxForce == Vector3.new(100000, 0, 100000) then
+        root.BodyVelocity:Destroy()
+    end
+    local bv = Instance.new("BodyVelocity")
+    bv.MaxForce = Vector3.new(100000, 0, 100000)
+    bv.Velocity = Vector3.new(0, 0, 0)
+    bv.P = 1250
+    bv.Parent = root
+    tabs.main.runtime.bv = bv
+end
+
+tabs.main.disableAntiFling = function()
+    if not player.Character then return end
+    local root = player.Character:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+    if root:FindFirstChild("BodyVelocity") and root.BodyVelocity.MaxForce == Vector3.new(100000, 0, 100000) then
+        root.BodyVelocity:Destroy()
+    end
+end
+
+tabs.main:AddSwitch("Anti Fling", function(bool)
+    tabs.main.Protection.AntiFling.Enabled = bool
+    if bool then tabs.main.enableAntiFling() else tabs.main.disableAntiFling() end
+end):Set(false)
+
+utils.connect(player.CharacterAdded, function(newChar)
+    newChar:WaitForChild("HumanoidRootPart", 5)
+    if tabs.main.Protection.AntiFling.Enabled then tabs.main.enableAntiFling() end
+end)
+
+tabs.main.lockPosition = function()
+    tabs.main.enableAntiFling()
+    if not tabs.main.Protection.PositionLock.Enabled or not tabs.main.Protection.PositionLock.Position then return end
+    if not player.Character then return end
+    local root = player.Character:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+    if root:FindFirstChild("PositionLocker") then
+        root.PositionLocker.Position = tabs.main.Protection.PositionLock.Position
+    else
+        tabs.main.disableAntiFling()
+        local bp = Instance.new("BodyPosition")
+        bp.Name = "PositionLocker"
+        bp.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+        bp.Position = tabs.main.Protection.PositionLock.Position
+        bp.P = 100000
+        bp.Parent = root
+        tabs.main.runtime.bp = bp
+    end
+end
+
+tabs.main.unlockPosition = function()
+    if player.Character then
+        local root = player.Character:FindFirstChild("HumanoidRootPart")
+        if root and root:FindFirstChild("PositionLocker") then
+            root.PositionLocker:Destroy()
+        end
+    end
+    tabs.main.Protection.PositionLock.Position = nil
+end
+
+tabs.main:AddSwitch("Lock Position", function(bool)
+    tabs.main.Protection.PositionLock.Enabled = bool
+    if bool then
+        if player.Character then
+            local root = player.Character:FindFirstChild("HumanoidRootPart")
+            if root then tabs.main.Protection.PositionLock.Position = root.Position end
+        end
+        tabs.main.lockPosition()
+    else
+        tabs.main.unlockPosition()
+    end
+end)
+
+utils.connect(player.CharacterAdded, function(newChar)
+    if tabs.main.Protection.PositionLock.Enabled and newChar:WaitForChild("HumanoidRootPart", 5) then
+        tabs.main.Protection.PositionLock.Position = newChar.HumanoidRootPart.Position
+        tabs.main.lockPosition()
+    end
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.main.Protection.PositionLock.Enabled then tabs.main.lockPosition() end
+        task.wait(0.1)
+    end
+end)
+
+tabs.main.VisibilitySettings = {
+    HidePets = false,
+    HidePopups = false,
+    ShowPetsEvent = services.ReplicatedStorage.rEvents:WaitForChild("showPetsEvent"),
+    SavePlayerSizeEvent = services.ReplicatedStorage.rEvents:WaitForChild("savePlayerSizeEvent"),
+}
+
+tabs.main:AddSwitch("Hide Pets", function(state)
+    tabs.main.VisibilitySettings.HidePets = state
+    tabs.main.VisibilitySettings.ShowPetsEvent:FireServer(state and "hidePets" or "showPets")
+end):Set(false)
+
+tabs.main.HidePopupsSwitch = tabs.main:AddSwitch("Hide Popups", function(state)
+    tabs.main.VisibilitySettings.HidePopups = state
+    tabs.main.VisibilitySettings.SavePlayerSizeEvent:FireServer("showPopupsOption")
+end)
+tabs.main.HidePopupsSwitch:Set(false)
+
+tabs.main.RedactConfigPath = "HonenxWhite/MuscleLegendsMainConfig.json"
+tabs.main.RedactConfig = {
+    RedactName = false,
+    RedactStats = false,
+}
+
+tabs.main.loadRedactConfig = function()
+    if type(isfile) ~= "function" or type(readfile) ~= "function" then return end
+    pcall(function()
+        if not isfile(tabs.main.RedactConfigPath) then return end
+        local savedConfig = services.HttpService:JSONDecode(readfile(tabs.main.RedactConfigPath))
+        if typeof(savedConfig) == "table" then
+            tabs.main.RedactConfig.RedactName = savedConfig.RedactName == true
+            tabs.main.RedactConfig.RedactStats = savedConfig.RedactStats == true
+        end
+    end)
+end
+
+tabs.main.saveRedactConfig = function()
+    if type(writefile) ~= "function" then return end
+    pcall(function()
+        if type(makefolder) == "function"
+            and (type(isfolder) ~= "function" or not isfolder("HonenxWhite")) then
+            pcall(makefolder, "HonenxWhite")
+        end
+        writefile(tabs.main.RedactConfigPath, services.HttpService:JSONEncode(tabs.main.RedactConfig))
+    end)
+end
+
+tabs.main.loadRedactConfig()
+
+tabs.main.RedactNameSwitch = tabs.main:AddSwitch("Redact Name", function(state)
+    tabs.main.RedactConfig.RedactName = state
+    tabs.main.saveRedactConfig()
+end)
+tabs.main.RedactNameSwitch:Set(tabs.main.RedactConfig.RedactName)
+
+tabs.main.RedactStatsSwitch = tabs.main:AddSwitch("Redact Stats", function(state)
+    tabs.main.RedactConfig.RedactStats = state
+    tabs.main.saveRedactConfig()
+end)
+tabs.main.RedactStatsSwitch:Set(tabs.main.RedactConfig.RedactStats)
+
+tabs.main.WaterParts = {
+    Parts = {},
+    PartSize = 2048,
+    TotalDistance = 50000,
+    StartPosition = Vector3.new(-2, -9.5, -2),
+}
+
+task.spawn(function()
+    for x = 0, math.ceil(tabs.main.WaterParts.TotalDistance / tabs.main.WaterParts.PartSize) - 1 do
+        for z = 0, math.ceil(tabs.main.WaterParts.TotalDistance / tabs.main.WaterParts.PartSize) - 1 do
+            for _, offset in ipairs({
+                {x * tabs.main.WaterParts.PartSize, z * tabs.main.WaterParts.PartSize, "Side_" .. x .. "_" .. z},
+                {-x * tabs.main.WaterParts.PartSize, z * tabs.main.WaterParts.PartSize, "LeftRight_" .. x .. "_" .. z},
+                {-x * tabs.main.WaterParts.PartSize, -z * tabs.main.WaterParts.PartSize, "UpLeft_" .. x .. "_" .. z},
+                {x * tabs.main.WaterParts.PartSize, -z * tabs.main.WaterParts.PartSize, "UpRight_" .. x .. "_" .. z},
+            }) do
+                local part = Instance.new("Part")
+                part.Size = Vector3.new(tabs.main.WaterParts.PartSize, 1, tabs.main.WaterParts.PartSize)
+                part.Position = tabs.main.WaterParts.StartPosition + Vector3.new(offset[1], 0, offset[2])
+                part.Anchored = true
+                part.Transparency = 1
+                part.CanCollide = true
+                part.Name = "Part_" .. offset[3]
+                part.Parent = workspace
+                table.insert(tabs.main.WaterParts.Parts, part)
+            end
+        end
+    end
+end)
+
+tabs.main.WalkOnWaterSwitch = tabs.main:AddSwitch("Walk on Water", function(bool)
+    for _, part in ipairs(tabs.main.WaterParts.Parts) do
+        if part and part.Parent then part.CanCollide = bool end
+    end
+end)
+tabs.main.WalkOnWaterSwitch:Set(false)
+
+tabs.main:AddSection("Other")
+
+tabs.main:AddSwitch("Infinite Jump", function(bool)
+    _G.InfiniteJump = bool
+    if bool then
+        utils.connect(services.UserInputService.JumpRequest, function()
+            if _G.InfiniteJump and player.Character then
+                local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                if humanoid then humanoid:ChangeState("Jumping") end
+            end
+        end)
+    end
+end)
+
+tabs.main.FortuneWheelData = {
+    Running = false,
+    Generation = 0,
+    Remote = services.ReplicatedStorage.rEvents:WaitForChild("openFortuneWheelRemote"),
+    Chances = services.ReplicatedStorage
+        :WaitForChild("shared")
+        :WaitForChild("catalogs")
+        :WaitForChild("fortuneWheelChances")
+        :WaitForChild("Fortune Wheel"),
+}
+
+tabs.main.spinFortuneWheel = function()
+    pcall(function()
+        tabs.main.FortuneWheelData.Remote:InvokeServer("openFortuneWheel", tabs.main.FortuneWheelData.Chances)
+    end)
+end
+
+tabs.main:AddSwitch("Spin Fortune Wheel", function(state)
+    tabs.main.FortuneWheelData.Running = state
+    tabs.main.FortuneWheelData.Generation += 1
+    tabs.main.runtime.generation = tabs.main.FortuneWheelData.Generation
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.main.FortuneWheelData.Running and tabs.main.FortuneWheelData.Generation == tabs.main.runtime.generation do
+            tabs.main.spinFortuneWheel()
+            task.wait(1)
+        end
+    end)
+end)
+
+local timeDropdown = tabs.main:AddDropdown("Change Time", function(selection)
+    services.Lighting.ClockTime = selection == "Night" and 0 or 9
+end)
+timeDropdown:Add("Night")
+timeDropdown:Add("Day")
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB INFO
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.info:AddSection("Información")
+tabs.info:AddLabel("HonenxWhite | Reborn")
+tabs.info:AddLabel("Made by Honen / cyanam1 / White")
+tabs.info:AddLabel("")
+
+tabs.info:AddButton("📋 Copiar Discord", function()
+    if setclipboard then
+        setclipboard("https://discord.gg/bVDtwKF92")
+        utils.notify("Discord", "Link copiado", 2, "success")
+    end
+end)
+
+tabs.info:AddLabel("")
+tabs.info:AddLabel("Contributors:")
+tabs.info:AddLabel("- cyanam1 (@honey)")
+tabs.info:AddLabel("- White @chilin6369")
+tabs.info:AddLabel("- Honen @Owner")
+tabs.info:AddLabel("")
+tabs.info:AddLabel("KNI UI - v2.0")
+
+utils.notify("HonenxWhite", "Hub cargado correctamente ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB KILLING
+-- ═══════════════════════════════════════════════════════════════
+
+-- Utils de Killing
+tabs.killing.getTool = function()
+    for _, v in pairs(player.Backpack:GetChildren()) do
+        if v.Name == "Punch" and player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid:EquipTool(v)
+        end
+    end
+    if player.muscleEvent then
+        player.muscleEvent:FireServer("punch", "leftHand")
+        player.muscleEvent:FireServer("punch", "rightHand")
+    end
+end
+
+tabs.killing.isPlayerAlive = function(p)
+    return p and p.Character and p.Character:FindFirstChild("HumanoidRootPart") and
+        p.Character:FindFirstChild("Humanoid") and p.Character.Humanoid.Health > 0
+end
+
+tabs.killing.isSpawnProtected = function(p)
+    if not p or not p.Character then return false end
+    if p.Character:FindFirstChildOfClass("ForceField")
+        or p.Character:FindFirstChild("spawnProtectionHighlight") then
+        return true
+    end
+    local protectedUntil = p.Character:GetAttribute("SpawnProtectedUntil")
+    return typeof(protectedUntil) == "number" and workspace:GetServerTimeNow() < protectedUntil
+end
+
+tabs.killing.getLocalCombatCharacter = function()
+    local char = player.Character
+    local humanoid = char and char:FindFirstChildOfClass("Humanoid")
+    local root = char and char:FindFirstChild("HumanoidRootPart")
+    if not char or not humanoid or humanoid.Health <= 0 or not root then return end
+    return char, humanoid, root
+end
+
+tabs.killing.positionNearTarget = function(target, heightOffset)
+    if not tabs.killing.isPlayerAlive(target)
+        or tabs.killing.isSpawnProtected(target)
+        or tabs.killing.isSpawnProtected(player) then
+        return false
+    end
+    local _, _, localRoot = tabs.killing.getLocalCombatCharacter()
+    local targetRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
+    if not localRoot or not targetRoot then return false end
+    localRoot.CFrame = targetRoot.CFrame * CFrame.new(0, heightOffset, 0)
+    localRoot.AssemblyLinearVelocity = Vector3.zero
+    localRoot.AssemblyAngularVelocity = Vector3.zero
+    return true
+end
+
+tabs.killing.touchAndPunchTarget = function(target, heightOffset)
+    if not tabs.killing.positionNearTarget(target, heightOffset) then return false, false end
+    services.RunService.Heartbeat:Wait()
+    if not tabs.killing.positionNearTarget(target, heightOffset) then return false, false end
+
+    local char = tabs.killing.getLocalCombatCharacter()
+    local targetRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
+    local targetHumanoid = target.Character and target.Character:FindFirstChildOfClass("Humanoid")
+    if not char or not targetRoot or not targetHumanoid or tabs.killing.isSpawnProtected(target) then return false, false end
+
+    local hand = char:FindFirstChild("LeftHand") or char:FindFirstChild("RightHand")
+    if not hand then return false, false end
+
+    local punchTool = char:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+    local humanoid = char:FindFirstChildOfClass("Humanoid")
+    if punchTool and punchTool.Parent ~= char and humanoid then
+        humanoid:EquipTool(punchTool)
+    end
+
+    local healthBefore = targetHumanoid.Health
+    local attempted = pcall(function()
+        if firetouchinterest then
+            firetouchinterest(targetRoot, hand, 0)
+            firetouchinterest(targetRoot, hand, 1)
+        end
+        player.muscleEvent:FireServer("punch", hand.Name == "LeftHand" and "leftHand" or "rightHand")
+    end)
+    if not attempted then return false, false end
+
+    for _ = 1, 4 do
+        services.RunService.Heartbeat:Wait()
+        if not tabs.killing.isPlayerAlive(target) or targetHumanoid.Health < healthBefore then
+            return true, true
+        end
+        if tabs.killing.isSpawnProtected(target) then
+            return false, false
+        end
+    end
+
+    return false, true
+end
+
+tabs.killing.attackPlayerWithLimit = function(target, hitLimit, shouldContinue, heightOffset)
+    local hits = 0
+    while utils.isCurrent() and hits < hitLimit and shouldContinue()
+        and tabs.killing.isPlayerAlive(target) and not tabs.killing.isSpawnProtected(target) do
+        local hitRegistered, attempted = tabs.killing.touchAndPunchTarget(target, heightOffset)
+        if hitRegistered then hits = hits + 1 end
+        if not attempted then break end
+        if not hitRegistered then task.wait(0.05) end
+    end
+    return hits
+end
+
+tabs.killing.attackPlayerForDuration = function(target, duration, shouldContinue, heightOffset)
+    local startedAt = os.clock()
+    while utils.isCurrent() and os.clock() - startedAt < duration
+        and shouldContinue()
+        and tabs.killing.isPlayerAlive(target)
+        and not tabs.killing.isSpawnProtected(target) do
+        if tabs.killing.positionNearTarget(target, heightOffset) then
+            local char = player.Character
+            local targetRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
+            local leftHand = char and char:FindFirstChild("LeftHand")
+            local rightHand = char and char:FindFirstChild("RightHand")
+            local punchTool = char and char:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+            local humanoid = char and char:FindFirstChildOfClass("Humanoid")
+            if punchTool and humanoid and punchTool.Parent ~= char then
+                humanoid:EquipTool(punchTool)
+            end
+            if targetRoot and leftHand and rightHand then
+                pcall(function()
+                    if firetouchinterest then
+                        firetouchinterest(targetRoot, leftHand, 0)
+                        firetouchinterest(targetRoot, leftHand, 1)
+                        firetouchinterest(targetRoot, rightHand, 0)
+                        firetouchinterest(targetRoot, rightHand, 1)
+                    end
+                    player.muscleEvent:FireServer("punch", "leftHand")
+                    player.muscleEvent:FireServer("punch", "rightHand")
+                end)
+            end
+        end
+        services.RunService.Heartbeat:Wait()
+    end
+end
+
+-- Misc
+tabs.killing:AddSection("Misc")
+
+tabs.killing.equipBestStatPets = function(priority)
+    for _, folder in pairs(player.petsFolder:GetChildren()) do
+        if folder:IsA("Folder") then
+            for _, pet in pairs(folder:GetChildren()) do
+                services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", pet)
+            end
+        end
+    end
+    task.wait(0.2)
+    local petsByName = {}
+    for _, petName in ipairs(priority) do petsByName[petName] = {} end
+    for _, pet in pairs(player.petsFolder.Unique:GetChildren()) do
+        if petsByName[pet.Name] then
+            table.insert(petsByName[pet.Name], pet)
+        end
+    end
+    local equipped = 0
+    for _, petName in ipairs(priority) do
+        for _, pet in ipairs(petsByName[petName]) do
+            if equipped >= 9 then return end
+            services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("equipPet", pet)
+            equipped = equipped + 1
+            task.wait(0.1)
+        end
+    end
+end
+
+tabs.killing:AddButton("Equip Best Damage", function()
+    tabs.killing.equipBestStatPets({"Wild Wizard", "Chaos Sorcerer", "Mighty Monster", "Small Fry"})
+end)
+
+tabs.killing:AddButton("Equip Best Health", function()
+    tabs.killing.equipBestStatPets({"Mighty Monster", "Small Fry", "Wild Wizard", "Chaos Sorcerer"})
+end)
+
+tabs.killing:AddSwitch("Remove Attack Animations", function(bool)
+    if bool then
+        local blockedAnimations = {
+            ["3638729053"] = true, ["3638767427"] = true, ["507768375"] = true,
+            ["522635514"] = true, ["522638767"] = true, ["182393478"] = true,
+            ["129967390"] = true, ["129967478"] = true,
+        }
+        local shouldBlockAnimation = function(track)
+            if not track or not track.Animation then return false end
+            local animationId = tostring(track.Animation.AnimationId):match("%d+")
+            local animationName = string.lower((track.Name or "") .. " " .. (track.Animation.Name or ""))
+            return blockedAnimations[animationId] == true
+                or string.find(animationName, "punch", 1, true) ~= nil
+                or string.find(animationName, "attack", 1, true) ~= nil
+                or string.find(animationName, "equip", 1, true) ~= nil
+        end
+        local isAttackTool = function(tool)
+            if not tool or not tool:IsA("Tool") then return false end
+            local n = string.lower(tool.Name)
+            return string.find(n, "punch", 1, true) ~= nil
+        end
+        local hasAttackToolEquipped = function(character)
+            if not character then return false end
+            for _, child in ipairs(character:GetChildren()) do
+                if isAttackTool(child) then return true end
+            end
+            return false
+        end
+        local stopBlockedAnimations = function(character)
+            local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+            if not humanoid then return end
+            for _, track in ipairs(humanoid:GetPlayingAnimationTracks()) do
+                if shouldBlockAnimation(track) then track:Stop(0) end
+            end
+        end
+        tabs.killing.runtime.animBlockConnection = utils.connect(services.RunService.RenderStepped, function()
+            local char = player.Character
+            if hasAttackToolEquipped(char) then
+                stopBlockedAnimations(char)
+            end
+        end)
+    else
+        if tabs.killing.runtime.animBlockConnection then
+            tabs.killing.runtime.animBlockConnection:Disconnect()
+            tabs.killing.runtime.animBlockConnection = nil
+        end
+    end
+end)
+
+-- Auto Kill
+tabs.killing:AddSection("Auto Kill")
+
+_G.whitelistedPlayers = _G.whitelistedPlayers or {}
+_G.blacklistedPlayers = _G.blacklistedPlayers or {}
+
+_G.killAll = false
+_G.killBlacklistedOnly = false
+_G.farmBadKarma = false
+_G.farmGoodKarma = false
+_G.killAllGeneration = (_G.killAllGeneration or 0) + 1
+_G.killListGeneration = (_G.killListGeneration or 0) + 1
+
+tabs.killing.isWhitelisted = function(p)
+    for _, name in ipairs(_G.whitelistedPlayers) do
+        if name:lower() == p.Name:lower() then return true end
+    end
+    return false
+end
+
+tabs.killing.isBlacklisted = function(p)
+    for _, name in ipairs(_G.blacklistedPlayers) do
+        if name:lower() == p.Name:lower() then return true end
+    end
+    return false
+end
+
+-- Whitelist dropdown
+tabs.killing.WhitelistDisplayNames = {}
+
+tabs.killing.getWhitelistDisplayName = function(username)
+    local cached = tabs.killing.WhitelistDisplayNames[username]
+    if cached then return cached end
+    local p = services.Players:FindFirstChild(username)
+    if p then
+        tabs.killing.WhitelistDisplayNames[username] = p.DisplayName
+        return p.DisplayName
+    end
+    return username
+end
+
+local function getPlayerList()
+    local list = {}
+    for _, p in ipairs(services.Players:GetPlayers()) do
+        if p ~= player then
+            table.insert(list, p.DisplayName .. " | " .. p.Name)
+        end
+    end
+    table.sort(list)
+    return list
+end
+
+tabs.killing.WhitelistDropdown = tabs.killing:AddDropdown("Add to Whitelist", function(selectedText)
+    local playerName = selectedText:match("| (.+)$")
+    if playerName then
+        playerName = playerName:gsub("^%s*(.-)%s*$", "%1")
+        for _, name in ipairs(_G.whitelistedPlayers) do
+            if name:lower() == playerName:lower() then return end
+        end
+        table.insert(_G.whitelistedPlayers, playerName)
+        utils.notify("Whitelist", "Añadido: " .. playerName, 2, "success")
+    end
+end)
+for _, item in ipairs(getPlayerList()) do tabs.killing.WhitelistDropdown:Add(item) end
+
+tabs.killing:AddSwitch("Kill Everyone", function(bool)
+    _G.killAll = bool
+    _G.killAllGeneration = (_G.killAllGeneration or 0) + 1
+    local generation = _G.killAllGeneration
+    if not bool then return end
+
+    task.spawn(function()
+        while utils.isCurrent() and _G.killAll and _G.killAllGeneration == generation do
+            local foundTarget = false
+            for _, p in ipairs(services.Players:GetPlayers()) do
+                if not _G.killAll or _G.killAllGeneration ~= generation then break end
+                if p ~= player and not tabs.killing.isWhitelisted(p)
+                    and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p) then
+                    foundTarget = true
+                    tabs.killing.attackPlayerForDuration(p, 4, function()
+                        return _G.killAll and _G.killAllGeneration == generation and not tabs.killing.isWhitelisted(p)
+                    end, 3.5)
+                end
+            end
+            if foundTarget then
+                services.RunService.Heartbeat:Wait()
+            else
+                task.wait(0.1)
+            end
+        end
+    end)
+end)
+
+tabs.killing:AddSwitch("Whitelist Friends", function(bool)
+    _G.whitelistFriends = bool
+    if bool then
+        for _, p in pairs(services.Players:GetPlayers()) do
+            if p ~= player and p:IsFriendsWith(player.UserId) then
+                if not tabs.killing.isWhitelisted(p) then
+                    table.insert(_G.whitelistedPlayers, p.Name)
+                end
+            end
+        end
+        utils.connect(services.Players.PlayerAdded, function(p)
+            if _G.whitelistFriends and p:IsFriendsWith(player.UserId) then
+                if not tabs.killing.isWhitelisted(p) then
+                    table.insert(_G.whitelistedPlayers, p.Name)
+                end
+            end
+        end)
+    end
+end)
+
+-- Karma
+tabs.killing:AddSection("Karma Killing")
+
+tabs.killing.KarmaData = {FarmEvil = false, FarmGood = false, Generation = 0}
+
+tabs.killing.matchesKarmaMode = function(p)
+    local good = p:FindFirstChild("goodKarma")
+    local evil = p:FindFirstChild("evilKarma")
+    if not good or not evil then return false end
+    local gv, ev = good.Value or 0, evil.Value or 0
+    if gv + ev < 5 then return false end
+    return (tabs.killing.KarmaData.FarmEvil and gv > ev)
+        or (tabs.killing.KarmaData.FarmGood and ev > gv)
+end
+
+tabs.killing.restartKarmaWorker = function()
+    tabs.killing.KarmaData.Generation += 1
+    local generation = tabs.killing.KarmaData.Generation
+    if not tabs.killing.KarmaData.FarmEvil and not tabs.killing.KarmaData.FarmGood then return end
+    task.spawn(function()
+        while utils.isCurrent() and (tabs.killing.KarmaData.FarmEvil or tabs.killing.KarmaData.FarmGood)
+            and tabs.killing.KarmaData.Generation == generation do
+            local foundTarget = false
+            for _, p in ipairs(services.Players:GetPlayers()) do
+                if tabs.killing.KarmaData.Generation ~= generation then break end
+                if p ~= player and not tabs.killing.isWhitelisted(p)
+                    and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p)
+                    and tabs.killing.matchesKarmaMode(p) then
+                    foundTarget = true
+                    tabs.killing.attackPlayerWithLimit(p, 4, function()
+                        return tabs.killing.KarmaData.Generation == generation
+                            and not tabs.killing.isWhitelisted(p)
+                            and tabs.killing.matchesKarmaMode(p)
+                    end, 3.5)
+                end
+            end
+            if foundTarget then
+                services.RunService.Heartbeat:Wait()
+            else
+                task.wait(0.1)
+            end
+        end
+    end)
+end
+
+tabs.killing:AddSwitch("Farm Evil Karma", function(state)
+    tabs.killing.KarmaData.FarmEvil = state
+    tabs.killing.restartKarmaWorker()
+end)
+
+tabs.killing:AddSwitch("Farm Good Karma", function(state)
+    tabs.killing.KarmaData.FarmGood = state
+    tabs.killing.restartKarmaWorker()
+end)
+
+-- Target Killing
+tabs.killing:AddSection("Target Killing")
+
+tabs.killing.KilllistDisplayNames = {}
+
+tabs.killing.getKilllistDisplayName = function(username)
+    local cached = tabs.killing.KilllistDisplayNames[username]
+    if cached then return cached end
+    local p = services.Players:FindFirstChild(username)
+    if p then
+        tabs.killing.KilllistDisplayNames[username] = p.DisplayName
+        return p.DisplayName
+    end
+    return username
+end
+
+tabs.killing.BlacklistDropdown = tabs.killing:AddDropdown("Add to Killlist", function(selectedText)
+    local selectedUsername = selectedText:match("| (.+)$")
+    if selectedUsername then
+        selectedUsername = selectedUsername:gsub("^%s*(.-)%s*$", "%1")
+        if not tabs.killing.isBlacklisted({Name = selectedUsername}) then
+            table.insert(_G.blacklistedPlayers, selectedUsername)
+            utils.notify("Killlist", "Añadido: " .. selectedUsername, 2, "success")
+        end
+    end
+end)
+for _, item in ipairs(getPlayerList()) do tabs.killing.BlacklistDropdown:Add(item) end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        tabs.killing.WhitelistDropdown:Add(p.DisplayName .. " | " .. p.Name)
+        tabs.killing.BlacklistDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    tabs.killing.WhitelistDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    tabs.killing.BlacklistDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+end)
+
+tabs.killing:AddSwitch("Kill List", function(bool)
+    _G.killBlacklistedOnly = bool
+    _G.killListGeneration = (_G.killListGeneration or 0) + 1
+    local generation = _G.killListGeneration
+    if not bool then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.killBlacklistedOnly and _G.killListGeneration == generation do
+            local target
+            for _, p in ipairs(services.Players:GetPlayers()) do
+                if not _G.killBlacklistedOnly or _G.killListGeneration ~= generation then break end
+                if p ~= player and tabs.killing.isBlacklisted(p)
+                    and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p) then
+                    target = p
+                    break
+                end
+            end
+            if target then
+                tabs.killing.touchAndPunchTarget(target, 10)
+                services.RunService.Heartbeat:Wait()
+            else
+                task.wait(0.1)
+            end
+        end
+    end)
+end)
+
+-- Spectate
+tabs.killing:AddSection("Spectate")
+
+tabs.killing.SpectateData = {
+    SelectedPlayer = nil,
+    SelectedPlayerUserId = nil,
+    Spectating = false,
+    CurrentTargetConnection = nil,
+}
+
+tabs.killing.stopSpectating = function()
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    if player.Character then
+        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = humanoid
+            utils.playerData.Camera.CameraType = Enum.CameraType.Custom
+        end
+    end
+end
+
+tabs.killing.updateSpectateTarget = function(p)
+    if not p then
+        tabs.killing.stopSpectating()
+        return
+    end
+    tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+    tabs.killing.SpectateData.SelectedPlayer = p
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    local function setCamera(char)
+        if not tabs.killing.SpectateData.Spectating or tabs.killing.SpectateData.SelectedPlayerUserId ~= p.UserId then return end
+        local humanoid = char:WaitForChild("Humanoid", 3)
+        if humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = humanoid
+        end
+    end
+    if p.Character then setCamera(p.Character) end
+    tabs.killing.SpectateData.CurrentTargetConnection = utils.connect(p.CharacterAdded, function(newChar)
+        if tabs.killing.SpectateData.Spectating then setCamera(newChar) end
+    end)
+end
+
+tabs.killing.SpectateDropdown = tabs.killing:AddDropdown("Choose Player", function(text)
+    for _, p in ipairs(services.Players:GetPlayers()) do
+        if text == p.DisplayName .. " | " .. p.Name then
+            tabs.killing.SpectateData.SelectedPlayer = p
+            tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+            if tabs.killing.SpectateData.Spectating then
+                tabs.killing.updateSpectateTarget(p)
+            end
+            break
+        end
+    end
+end)
+for _, item in ipairs(getPlayerList()) do tabs.killing.SpectateDropdown:Add(item) end
+
+tabs.killing:AddSwitch("Spectate", function(bool)
+    tabs.killing.SpectateData.Spectating = bool
+    if bool then
+        tabs.killing.updateSpectateTarget(tabs.killing.SpectateData.SelectedPlayer)
+    else
+        tabs.killing.stopSpectating()
+    end
+end)
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    tabs.killing.SpectateDropdown:Add(p.DisplayName .. " | " .. p.Name)
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    tabs.killing.SpectateDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if p.UserId == tabs.killing.SpectateData.SelectedPlayerUserId then
+        tabs.killing.stopSpectating()
+    end
+end)
+
+-- Kill Aura
+tabs.killing:AddSection("Kill Aura")
+
+tabs.killing.KillAura = {
+    RingPart = nil,
+    Range = 20,
+    Enabled = false,
+    Generation = 0,
+}
+
+_G.deathRingEnabled = false
+_G.deathRingRange = 20
+
+tabs.killing:AddTextBox("Range (1-140):", function(text)
+    if tonumber(text) then
+        _G.deathRingRange = math.clamp(tonumber(text), 1, 140)
+        tabs.killing.KillAura.Range = _G.deathRingRange
+        if tabs.killing.KillAura.RingPart then
+            tabs.killing.KillAura.RingPart.Size = Vector3.new(0.2, _G.deathRingRange * 2, _G.deathRingRange * 2)
+        end
+    end
+end, {clear = false})
+
+tabs.killing:AddSwitch("Kill Aura", function(bool)
+    tabs.killing.KillAura.Enabled = bool
+    tabs.killing.KillAura.Generation += 1
+    local generation = tabs.killing.KillAura.Generation
+
+    if not bool then
+        if tabs.killing.KillAura.RingPart then
+            tabs.killing.KillAura.RingPart:Destroy()
+            tabs.killing.KillAura.RingPart = nil
+        end
+        return
+    end
+
+    -- Crear anillo
+    local ring = Instance.new("Part")
+    ring.Name = "HonenxWhiteKillAuraRing"
+    ring.Shape = Enum.PartType.Cylinder
+    ring.Material = Enum.Material.Neon
+    ring.Color = Color3.fromRGB(145, 77, 255)
+    ring.Transparency = 0.6
+    ring.Anchored = true
+    ring.CanCollide = false
+    ring.CanTouch = false
+    ring.CanQuery = false
+    ring.CastShadow = false
+    ring.Size = Vector3.new(0.2, tabs.killing.KillAura.Range * 2, tabs.killing.KillAura.Range * 2)
+    ring.Parent = workspace
+    tabs.killing.KillAura.RingPart = ring
+
+    -- Loop
+    task.spawn(function()
+        while utils.isCurrent() and tabs.killing.KillAura.Enabled and tabs.killing.KillAura.Generation == generation do
+            local char = player.Character
+            local root = char and char:FindFirstChild("HumanoidRootPart")
+            if root and ring.Parent then
+                ring.CFrame = root.CFrame * CFrame.Angles(0, 0, math.rad(90))
+                for _, p in ipairs(services.Players:GetPlayers()) do
+                    if p ~= player and not tabs.killing.isWhitelisted(p)
+                        and tabs.killing.isPlayerAlive(p) and not tabs.killing.isSpawnProtected(p) then
+                        local targetRoot = p.Character and p.Character:FindFirstChild("HumanoidRootPart")
+                        if targetRoot and (root.Position - targetRoot.Position).Magnitude <= tabs.killing.KillAura.Range then
+                            tabs.killing.touchAndPunchTarget(p, 3.5)
+                        end
+                    end
+                end
+            end
+            task.wait(0.05)
+        end
+    end)
+end)
+
+-- Stats
+tabs.killing:AddSection("Session Stats")
+local killStatsLabel = tabs.killing:AddLabel("Kills: 0")
+_G.killSessionStart = nil
+
+task.spawn(function()
+    while utils.isCurrent() do
+        local ls = player:FindFirstChild("leaderstats")
+        local kills = ls and ls:FindFirstChild("Kills")
+        if kills and killStatsLabel then
+            if not _G.killSessionStart then _G.killSessionStart = kills.Value end
+            killStatsLabel:SetText("Kills: " .. utils.formatNumber(kills.Value) .. " (Sesión: " .. utils.formatNumber(kills.Value - _G.killSessionStart) .. ")")
+        end
+        task.wait(1)
+    end
+end)
+
+utils.notify("HonenxWhite", "Tab Killing cargado ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB FARMING
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming:AddSection("Rebirths")
+
+tabs.farming.RebirthData = {
+    TargetRebirths = 0,
+    IsAutoRebirthing = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+}
+
+local rebirthLabel = tabs.farming:AddLabel("Rebirths: 0")
+local targetLabel = tabs.farming:AddLabel("Target: None")
+
+tabs.farming:AddTextBox("Set Rebirth Target:", function(text)
+    if tonumber(text) and tonumber(text) >= 0 then
+        tabs.farming.RebirthData.TargetRebirths = tonumber(text)
+    end
+end)
+
+tabs.farming.RebirthData.Switch = tabs.farming:AddSwitch("Auto Rebirth", function(enabled)
+    if enabled and tabs.farming.RebirthData.TargetRebirths > 0 and tabs.farming.RebirthData.Rebirths.Value < tabs.farming.RebirthData.TargetRebirths then
+        tabs.farming.RebirthData.IsAutoRebirthing = true
+        task.spawn(function()
+            while utils.isCurrent() and tabs.farming.RebirthData.IsAutoRebirthing
+                and tabs.farming.RebirthData.Rebirths.Value < tabs.farming.RebirthData.TargetRebirths do
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.1)
+            end
+            tabs.farming.RebirthData.IsAutoRebirthing = false
+            tabs.farming.RebirthData.Switch:Set(false, true)
+        end)
+    else
+        tabs.farming.RebirthData.IsAutoRebirthing = false
+    end
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if rebirthLabel then
+            rebirthLabel:SetText("Rebirths: " .. utils.formatWithCommas(tabs.farming.RebirthData.Rebirths.Value))
+        end
+        if targetLabel then
+            targetLabel:SetText("Target Rebirths: " .. utils.formatWithCommas(tabs.farming.RebirthData.TargetRebirths))
+        end
+        task.wait(0.5)
+    end
+end)
+
+-- Auto Size 1
+tabs.farming:AddSection("Auto Size")
+
+tabs.farming.SizeData = {Active = false}
+
+tabs.farming.SizeSwitch = tabs.farming:AddSwitch("Auto Size 1", function(bool)
+    tabs.farming.SizeData.Active = bool
+end)
+tabs.farming.SizeSwitch:Set(false)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.farming.SizeData.Active and utils.playerData.Character and utils.playerData.Humanoid then
+            pcall(function()
+                utils.remotes.ChangeSpeedSize:InvokeServer("changeSize", 1)
+            end)
+        end
+        task.wait(0.5)
+    end
+end)
+
+-- Auto King
+tabs.farming:AddSection("Auto King")
+
+tabs.farming.KingData = {
+    TargetPosition = CFrame.new(-8665.4, 17.21, -5792.9),
+    TeleportActive = false,
+}
+
+tabs.farming.KingSwitch = tabs.farming:AddSwitch("Auto King", function(enabled)
+    tabs.farming.KingData.TeleportActive = enabled
+end)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        if tabs.farming.KingData.TeleportActive then
+            local char = utils.playerData.Character
+            if char then
+                local root = char:FindFirstChild("HumanoidRootPart")
+                if root and (root.Position - tabs.farming.KingData.TargetPosition.Position).Magnitude > 5 then
+                    pcall(function()
+                        root.CFrame = tabs.farming.KingData.TargetPosition
+                    end)
+                end
+            end
+        end
+        task.wait(0.1)
+    end
+end)
+
+-- Auto Exercises
+tabs.farming:AddSection("Auto Exercises")
+
+tabs.farming.ExerciseData = {
+    SelectedTool = nil,
+    AutoFarm = false,
+}
+
+local exerciseDropdown = tabs.farming:AddDropdown("Select Exercise", function(selection)
+    tabs.farming.ExerciseData.SelectedTool = selection
+end)
+exerciseDropdown:Add("Weight")
+exerciseDropdown:Add("Pushups")
+exerciseDropdown:Add("Situps")
+exerciseDropdown:Add("Handstands")
+
+tabs.farming.ToolExerciseSwitch = tabs.farming:AddSwitch("Start Exercising", function(enabled)
+    tabs.farming.ExerciseData.AutoFarm = enabled
+    if enabled then
+        task.spawn(function()
+            while utils.isCurrent() and tabs.farming.ExerciseData.AutoFarm do
+                local char = utils.playerData.Character
+                local hum = utils.playerData.Humanoid
+                if char and hum and hum.Health > 0 and tabs.farming.ExerciseData.SelectedTool then
+                    local tool = char:FindFirstChild(tabs.farming.ExerciseData.SelectedTool)
+                        or player.Backpack:FindFirstChild(tabs.farming.ExerciseData.SelectedTool)
+                    if tool and tool.Parent ~= char then
+                        pcall(function() hum:EquipTool(tool) end)
+                    end
+                    if tool and tool.Parent == char then
+                        pcall(function()
+                            player.muscleEvent:FireServer("rep")
+                        end)
+                    end
+                end
+                task.wait(0.05)
+            end
+        end)
+    else
+        if tabs.farming.ExerciseData.SelectedTool and player.Character then
+            local tool = player.Character:FindFirstChild(tabs.farming.ExerciseData.SelectedTool)
+            if tool then tool.Parent = player.Backpack end
+        end
+    end
+end)
+
+tabs.farming.AutoRepRunning = false
+tabs.farming.AutoRepSwitch = tabs.farming:AddSwitch("Auto Rep", function(state)
+    tabs.farming.AutoRepRunning = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.farming.AutoRepRunning do
+            pcall(function()
+                player.muscleEvent:FireServer("rep")
+            end)
+            task.wait(0.1)
+        end
+    end)
+end)
+
+-- Auto Rock
+tabs.farming:AddSection("Auto Rock")
+
+tabs.farming.RockData = {
+    Data = {
+        ["Tiny Rock - 0 Dura"] = 0, ["Large Rock - 100 Dura"] = 100, ["Punching Rock - 10 Dura"] = 10,
+        ["Golden Rock - 5k Dura"] = 5000, ["Frost Rock - 150k Dura"] = 150000, ["Mythical Rock - 400k Dura"] = 400000,
+        ["Eternal Rock - 750k Dura"] = 750000, ["Legend Rock - 1m Dura"] = 1000000, ["Muscle King Rock - 5m Dura"] = 5000000,
+        ["Jungle Rock - 10m Dura"] = 10000000, ["Industrial Rock - 25m Dura"] = 25000000,
+    },
+    SelectedRock = nil,
+}
+
+tabs.farming.MachinesFolder = workspace:WaitForChild("machinesFolder")
+
+local rockDropdown = tabs.farming:AddDropdown("Select Rock", function(selection)
+    tabs.farming.RockData.SelectedRock = selection
+end)
+for rockName in pairs(tabs.farming.RockData.Data) do
+    rockDropdown:Add(rockName)
+end
+
+tabs.farming.RockSwitch = tabs.farming:AddSwitch("Auto Rock", function(enabled)
+    _G.RockFarmRunning = enabled
+    if not enabled or not tabs.farming.RockData.SelectedRock then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.RockFarmRunning do
+            task.wait(0.12)
+            local char = utils.playerData.Character
+            if char and player:FindFirstChild("Durability") and player.Durability.Value >= tabs.farming.RockData.Data[tabs.farming.RockData.SelectedRock] then
+                for _, v in pairs(tabs.farming.MachinesFolder:GetDescendants()) do
+                    if v.Name == "neededDurability" and v.Value == tabs.farming.RockData.Data[tabs.farming.RockData.SelectedRock]
+                        and char:FindFirstChild("LeftHand") and v.Parent and v.Parent:FindFirstChild("Rock") then
+                        pcall(function()
+                            if firetouchinterest then
+                                firetouchinterest(v.Parent.Rock, char.RightHand, 0)
+                                firetouchinterest(v.Parent.Rock, char.RightHand, 1)
+                                firetouchinterest(v.Parent.Rock, char.LeftHand, 0)
+                                firetouchinterest(v.Parent.Rock, char.LeftHand, 1)
+                            end
+                            tabs.killing.getTool()
+                        end)
+                    end
+                end
+            end
+        end
+    end)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB FAST
+-- ═══════════════════════════════════════════════════════════════
+
+-- Fast Rep
+tabs.fast:AddSection("Fast Rep")
+
+tabs.fast.FastRepData = {
+    Running = false,
+    WorkerActive = false,
+    CyclesPerSecond = 40,
+    RepsPerCycle = 20,
+    SendRate = 800,
+}
+
+local fastRepStatus = tabs.fast:AddLabel("Status: Inactive")
+
+tabs.fast.FastRepWorkerLoop = function()
+    if tabs.fast.FastRepData.WorkerActive then return end
+    tabs.fast.FastRepData.WorkerActive = true
+    local data = tabs.fast.FastRepData
+    local interval = 1 / 40
+
+    while utils.isCurrent() and data.Running do
+        pcall(function()
+            for i = 1, 20 do
+                player.muscleEvent:FireServer("rep")
+            end
+        end)
+        fastRepStatus:SetText("Status: 800 reps/s (MAX)")
+        task.wait(interval)
+    end
+    data.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Reps por ciclo (1-20):", function(text)
+    local num = tonumber(text)
+    if num and num >= 1 then
+        tabs.fast.FastRepData.RepsPerCycle = math.clamp(math.floor(num), 1, 20)
+    end
+end)
+
+tabs.fast.FastRepToggle = tabs.fast:AddSwitch("Fast Rep (Ultra Rápido)", function(state)
+    local data = tabs.fast.FastRepData
+    data.Running = state
+    if state then
+        fastRepStatus:SetText("Status: Activando...")
+        if not data.WorkerActive then
+            task.spawn(tabs.fast.FastRepWorkerLoop)
+        end
+    else
+        fastRepStatus:SetText("Status: Inactive")
+    end
+end)
+
+-- Ultra Fast Rep 20K
+tabs.fast:AddSection("Ultra Fast Rep 20K")
+
+local UltraState = {
+    Enabled = false,
+    WorkerActive = false,
+    RepsPerCycle = 200,
+    CycleDelay = 0.01,
+    TotalReps = 0,
+}
+_G.HonenxWhiteUltraFastRep = UltraState
+
+task.spawn(function()
+    if UltraState.WorkerActive then return end
+    UltraState.WorkerActive = true
+    while utils.isCurrent() do
+        if UltraState.Enabled then
+            local muscle = player:FindFirstChild("muscleEvent")
+            if muscle then
+                local start = os.clock()
+                for i = 1, UltraState.RepsPerCycle do
+                    if not UltraState.Enabled then break end
+                    pcall(function() muscle:FireServer("rep") end)
+                    UltraState.TotalReps = UltraState.TotalReps + 1
+                end
+                local elapsed = os.clock() - start
+                local sleepTime = UltraState.CycleDelay - elapsed
+                if sleepTime > 0 then task.wait(sleepTime) else task.wait() end
+            else
+                task.wait(0.05)
+            end
+        else
+            task.wait(0.1)
+        end
+    end
+end)
+
+tabs.fast:AddSwitch("🚀 Ultra Fast Rep (20000 reps/s)", function(state)
+    UltraState.Enabled = state
+    if state then
+        UltraState.TotalReps = 0
+        utils.notify("Ultra Fast Rep", "🚀 ACTIVADO - 20,000 reps/s", 3, "success")
+    else
+        utils.notify("Ultra Fast Rep", "⏸️ Desactivado", 2, "info")
+    end
+end)
+
+-- Fast Rebirth
+tabs.fast:AddSection("Fast Rebirth")
+
+tabs.fast.FastRebirthData = {
+    Running = false,
+    WorkerActive = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+    Strength = player.leaderstats:WaitForChild("Strength"),
+    TargetRebirths = 0,
+    TotalRebirths = 0,
+}
+
+local fastRebirthStatus = tabs.fast:AddLabel("Status: Inactive")
+local fastRebirthStats = tabs.fast:AddLabel("Rebirths: 0 | Gained: 0")
+
+tabs.fast.FastRebirthWorker = function()
+    local startRebirths = tabs.fast.FastRebirthData.Rebirths.Value
+    tabs.fast.FastRebirthData.TotalRebirths = 0
+
+    while utils.isCurrent() and tabs.fast.FastRebirthData.Running do
+        if tabs.fast.FastRebirthData.TargetRebirths > 0
+            and tabs.fast.FastRebirthData.Rebirths.Value >= tabs.fast.FastRebirthData.TargetRebirths then
+            fastRebirthStatus:SetText("Status: ✅ Target alcanzado!")
+            tabs.fast.FastRebirthData.Running = false
+            break
+        end
+
+        local currentRebirths = tabs.fast.FastRebirthData.Rebirths.Value
+        local targetStrength = 5000 + currentRebirths * 2550
+        local repsPerBurst = player.MembershipType == Enum.MembershipType.Premium and 3 or 4
+
+        fastRebirthStatus:SetText("Status: 💪 Farmeando... "
+            .. utils.formatNumber(tabs.fast.FastRebirthData.Strength.Value)
+            .. " / " .. utils.formatNumber(targetStrength))
+
+        while utils.isCurrent() and tabs.fast.FastRebirthData.Running
+            and tabs.fast.FastRebirthData.Strength.Value < targetStrength do
+            for i = 1, repsPerBurst do
+                pcall(function()
+                    player.muscleEvent:FireServer("rep")
+                end)
+            end
+            task.wait(0.05)
+            fastRebirthStats:SetText("Rebirths: "
+                .. utils.formatWithCommas(tabs.fast.FastRebirthData.Rebirths.Value)
+                .. " | Gained: "
+                .. utils.formatWithCommas(tabs.fast.FastRebirthData.Rebirths.Value - startRebirths))
+        end
+
+        if utils.isCurrent() and tabs.fast.FastRebirthData.Running
+            and tabs.fast.FastRebirthData.Strength.Value >= targetStrength then
+            fastRebirthStatus:SetText("Status: 🔄 Haciendo rebirth...")
+            local rebirthValueBefore = tabs.fast.FastRebirthData.Rebirths.Value
+            local attempts = 0
+            repeat
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.12)
+                attempts = attempts + 1
+            until not tabs.fast.FastRebirthData.Running
+                or tabs.fast.FastRebirthData.Rebirths.Value > rebirthValueBefore
+                or attempts >= 50
+            if tabs.fast.FastRebirthData.Rebirths.Value > rebirthValueBefore then
+                tabs.fast.FastRebirthData.TotalRebirths = tabs.fast.FastRebirthData.TotalRebirths +
+                    (tabs.fast.FastRebirthData.Rebirths.Value - rebirthValueBefore)
+            end
+        end
+        task.wait(0.3)
+    end
+    tabs.fast.FastRebirthData.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Target rebirths (0 = infinito):", function(text)
+    local num = tonumber(text)
+    if num and num >= 0 then
+        tabs.fast.FastRebirthData.TargetRebirths = math.floor(num)
+    end
+end)
+
+tabs.fast.FastRebirthToggle = tabs.fast:AddSwitch("Fast Rebirth 🔄", function(state)
+    tabs.fast.FastRebirthData.Running = state
+    if state then
+        fastRebirthStatus:SetText("Status: 🔄 Iniciando...")
+        if not tabs.fast.FastRebirthData.WorkerActive then
+            tabs.fast.FastRebirthData.WorkerActive = true
+            task.spawn(tabs.fast.FastRebirthWorker)
+        end
+    else
+        fastRebirthStatus:SetText("Status: Inactive")
+    end
+end)
+
+tabs.fast:AddLabel("Conserva mascotas equipadas, no activa packs")
+
+utils.notify("HonenxWhite", "Tab Farming + Fast cargado ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB BOSS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss:AddSection("Boss Farming")
+
+local bossStatusLabel = tabs.boss:AddLabel("Status: Waiting for Boss")
+local bossLabel = tabs.boss:AddLabel("Boss: None")
+local bossHealthLabel = tabs.boss:AddLabel("Health: 0 / 0")
+local nextBossLabel = tabs.boss:AddLabel("Next Boss: N/A")
+
+tabs.boss.Data = {
+    Running = false,
+    ActiveMode = nil,
+    Generation = 0,
+    ContinueTraining = false,
+    Phase = "Waiting",
+    PunchInterval = 0.3,
+    LastPunch = 0,
+    Bosses = {},
+    BossOrder = {},
+    BossByDisplayName = {},
+    SelectedBosses = {},
+}
+
+-- Funciones auxiliares
+tabs.boss.getBossHealth = function(health)
+    if health then
+        if health:IsA("Humanoid") then return health.Health end
+        local ok, value = pcall(function() return health.Value end)
+        if ok and tonumber(value) then return tonumber(value) end
+    end
+    return workspace:GetAttribute("BossHealth") or 0
+end
+
+tabs.boss.getBossMaxHealth = function(maxHealth)
+    if maxHealth then
+        if maxHealth:IsA("Humanoid") then return maxHealth.MaxHealth end
+        local ok, value = pcall(function() return maxHealth.Value end)
+        if ok and tonumber(value) then return tonumber(value) end
+    end
+    return workspace:GetAttribute("BossMaxHealth") or 0
+end
+
+tabs.boss.getBossHeadPosition = function(model, hitbox)
+    local head = model:FindFirstChild("Head", true) or model:FindFirstChild("head", true)
+    if head and head:IsA("BasePart") then return head.Position end
+    return hitbox.Position + Vector3.new(0, hitbox.Size.Y * 0.35, 0)
+end
+
+tabs.boss.findActiveBoss = function(mode)
+    mode = mode or "Main"
+
+    -- Buscar por tag primero
+    for _, taggedBoss in ipairs(services.CollectionService:GetTagged("BossEventBoss")) do
+        if taggedBoss:IsA("Model") and taggedBoss:IsDescendantOf(workspace) then
+            local hitbox = taggedBoss:FindFirstChild("BossDamageHitbox", true)
+            if hitbox and hitbox:IsA("BasePart") then
+                local stats = taggedBoss:FindFirstChild("stats") or taggedBoss:FindFirstChild("Stats")
+                local health = stats and (stats:FindFirstChild("Health") or stats:FindFirstChild("health"))
+                local maxHealth = stats and (stats:FindFirstChild("MaxHealth") or stats:FindFirstChild("maxHealth"))
+                local healthValue = health and tonumber(health.Value)
+                if healthValue and healthValue > 0 then
+                    return taggedBoss, hitbox, health, maxHealth
+                end
+                local hum = taggedBoss:FindFirstChildOfClass("Humanoid")
+                if hum and hum.Health > 0 then
+                    return taggedBoss, hitbox, hum, hum
+                end
+            end
+        end
+    end
+
+    -- Buscar en Events/BossEvent
+    local events = workspace:FindFirstChild("Events")
+    local bossFolder = events and (events:FindFirstChild("BossEvent") or events:FindFirstChild("BossArena"))
+    if bossFolder then
+        for _, descendant in ipairs(bossFolder:GetDescendants()) do
+            if descendant:IsA("Model") then
+                local hitbox = descendant:FindFirstChild("BossDamageHitbox", true)
+                if hitbox and hitbox:IsA("BasePart") then
+                    local hum = descendant:FindFirstChildOfClass("Humanoid")
+                    local stats = descendant:FindFirstChild("stats") or descendant:FindFirstChild("Stats")
+                    local health = stats and (stats:FindFirstChild("Health") or stats:FindFirstChild("health"))
+                    local healthValue = health and tonumber(health.Value)
+                    if (healthValue and healthValue > 0) or (hum and hum.Health > 0) then
+                        return descendant, hitbox, health or hum, health or hum
+                    end
+                end
+            end
+        end
+    end
+
+    return nil
+end
+
+tabs.boss.attack = function(model, health, maxHealth, hitbox)
+    if not model or not hitbox or not hitbox.Parent then return end
+    local char = player.Character
+    local hum = char and char:FindFirstChildOfClass("Humanoid")
+    local root = char and char:FindFirstChild("HumanoidRootPart")
+    if not char or not hum or not root or hum.Health <= 0 then return end
+
+    -- Equipar Punch
+    local punch = char:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+    if punch and punch.Parent ~= char then
+        pcall(function() hum:EquipTool(punch) end)
+    end
+
+    -- Posicionarse cerca del boss
+    local center = hitbox.Position
+    local offset = root.Position - center
+    offset = Vector3.new(offset.X, 0, offset.Z)
+    if offset.Magnitude < 1 then offset = hitbox.CFrame.LookVector end
+    local standPos = center + offset.Unit * math.max(4, math.min(6, hitbox.Size.Magnitude * 0.2)) + Vector3.new(0, 1.5, 0)
+    root.CFrame = CFrame.lookAt(standPos, center)
+    root.AssemblyLinearVelocity = Vector3.zero
+    root.AssemblyAngularVelocity = Vector3.zero
+
+    -- Fire touch + punch
+    local left = char:FindFirstChild("LeftHand")
+    local right = char:FindFirstChild("RightHand")
+    pcall(function()
+        if firetouchinterest and left then
+            firetouchinterest(hitbox, left, 0)
+            firetouchinterest(hitbox, left, 1)
+        end
+        if firetouchinterest and right then
+            firetouchinterest(hitbox, right, 0)
+            firetouchinterest(hitbox, right, 1)
+        end
+    end)
+
+    if os.clock() - tabs.boss.Data.LastPunch >= tabs.boss.Data.PunchInterval then
+        tabs.boss.Data.LastPunch = os.clock()
+        pcall(function()
+            player.muscleEvent:FireServer("punch", "leftHand")
+            player.muscleEvent:FireServer("punch", "rightHand")
+            if punch then punch:Activate() end
+        end)
+    end
+
+    local displayName = workspace:GetAttribute("BossDisplayName") or model.Name
+    bossLabel:SetText("Boss: " .. displayName)
+    local hv = tabs.boss.getBossHealth(health)
+    local mhv = tabs.boss.getBossMaxHealth(maxHealth)
+    bossHealthLabel:SetText("Health: " .. utils.formatNumber(hv) .. " / " .. utils.formatNumber(mhv))
+end
+
+-- Worker principal de auto boss
+tabs.boss.startAutoFarm = function(mode, state)
+    if not state then
+        if tabs.boss.Data.ActiveMode == mode then
+            tabs.boss.Data.Running = false
+            tabs.boss.Data.ActiveMode = nil
+            tabs.boss.Data.Generation += 1
+            bossStatusLabel:SetText("Status: Disabled")
+        end
+        return
+    end
+
+    -- Apagar el otro modo
+    if mode == "Main" and tabs.boss.HalloweenSwitch then
+        tabs.boss.HalloweenSwitch:Set(false, true)
+    elseif mode == "Halloween" and tabs.boss.MainSwitch then
+        tabs.boss.MainSwitch:Set(false, true)
+    end
+
+    tabs.boss.Data.ActiveMode = mode
+    tabs.boss.Data.Running = true
+    tabs.boss.Data.Generation += 1
+    local generation = tabs.boss.Data.Generation
+
+    task.spawn(function()
+        while utils.isCurrent() and tabs.boss.Data.Running and tabs.boss.Data.Generation == generation do
+            local model, hitbox, health, maxHealth = tabs.boss.findActiveBoss(mode)
+            if model and hitbox then
+                bossStatusLabel:SetText("Status: Fighting " .. (mode == "Halloween" and "Halloween Boss" or "Main Boss"))
+                tabs.boss.attack(model, health, maxHealth, hitbox)
+                task.wait(0.03)
+            else
+                bossStatusLabel:SetText("Status: Waiting for " .. (mode == "Halloween" and "Halloween Boss" or "Main Boss"))
+                bossLabel:SetText("Boss: None")
+                bossHealthLabel:SetText("Health: 0 / 0")
+                task.wait(0.5)
+            end
+        end
+    end)
+end
+
+tabs.boss.MainSwitch = tabs.boss:AddSwitch("Auto Boss — Main Island", function(state)
+    tabs.boss.startAutoFarm("Main", state)
+end)
+tabs.boss.MainSwitch:Set(false)
+
+tabs.boss.HalloweenSwitch = tabs.boss:AddSwitch("Auto Boss — Halloween", function(state)
+    tabs.boss.startAutoFarm("Halloween", state)
+end)
+tabs.boss.HalloweenSwitch:Set(false)
+
+tabs.boss:AddSwitch("Continue Training after Boss", function(state)
+    tabs.boss.Data.ContinueTraining = state
+end)
+
+tabs.boss:AddSection("Info")
+task.spawn(function()
+    while utils.isCurrent() do
+        if not tabs.boss.Data.Running then
+            local nextTime = workspace:GetAttribute("BossSpawnNextTime")
+            if typeof(nextTime) == "number" then
+                local seconds = math.max(0, nextTime - workspace:GetServerTimeNow())
+                local h = math.floor(seconds / 3600)
+                local m = math.floor((seconds % 3600) / 60)
+                local s = math.floor(seconds % 60)
+                nextBossLabel:SetText(string.format("Next Boss: %dh %dm %ds", h, m, s))
+            else
+                nextBossLabel:SetText("Next Boss: N/A")
+            end
+        end
+        task.wait(1)
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB PETS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.inventory:AddSection("Pet Shop")
+
+tabs.inventory.PetShopRuntime = services.ReplicatedStorage:WaitForChild("shared"):WaitForChild("runtime")
+tabs.inventory.PetShopFolder = tabs.inventory.PetShopRuntime:WaitForChild("cPetShopFolder")
+tabs.inventory.PetShopRemote = services.ReplicatedStorage.rEvents:WaitForChild("cPetShopRemote")
+
+tabs.inventory.PetShopData = {
+    PetList = {},
+    Selected = {},
+    SelectedList = {},
+    BuyAmount = 1,
+}
+
+tabs.inventory.AuraData = {
+    AuraList = {},
+    Selected = {},
+    SelectedList = {},
+    BuyAmount = 1,
+}
+
+for _, item in ipairs(tabs.inventory.PetShopFolder:GetChildren()) do
+    if item:GetAttribute("IsPowerUp") == true then
+        table.insert(tabs.inventory.AuraData.AuraList, item.Name)
+    else
+        table.insert(tabs.inventory.PetShopData.PetList, item.Name)
+    end
+end
+table.sort(tabs.inventory.PetShopData.PetList)
+table.sort(tabs.inventory.AuraData.AuraList)
+
+local buyPetLabel = tabs.inventory:AddLabel("Selected Pets: None")
+
+local petShopDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    if not tabs.inventory.PetShopData.Selected[text] then
+        tabs.inventory.PetShopData.Selected[text] = true
+        table.insert(tabs.inventory.PetShopData.SelectedList, text)
+    end
+    buyPetLabel:SetText("Selected Pets: " .. (#tabs.inventory.PetShopData.SelectedList > 0 and table.concat(tabs.inventory.PetShopData.SelectedList, ", ") or "None"))
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    petShopDropdown:Add(petName)
+end
+
+tabs.inventory:AddTextBox("Buy Amount:", function(text)
+    tabs.inventory.PetShopData.BuyAmount = math.max(1, math.floor(tonumber(text) or 1))
+end, {clear = false})
+
+tabs.inventory:AddSwitch("Auto Buy Pet", function(bool)
+    _G.AutoHatchPet = bool
+    if not bool then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.AutoHatchPet do
+            for _, petName in ipairs(tabs.inventory.PetShopData.SelectedList) do
+                local selectedPet = tabs.inventory.PetShopFolder:FindFirstChild(petName)
+                if selectedPet then
+                    for _ = 1, tabs.inventory.PetShopData.BuyAmount do
+                        pcall(function()
+                            tabs.inventory.PetShopRemote:InvokeServer(selectedPet)
+                        end)
+                    end
+                end
+            end
+            task.wait(0.1)
+        end
+    end)
+end)
+
+tabs.inventory:AddButton("Clear Selected Pets", function()
+    tabs.inventory.PetShopData.Selected = {}
+    tabs.inventory.PetShopData.SelectedList = {}
+    buyPetLabel:SetText("Selected Pets: None")
+end)
+
+-- Auras
+tabs.inventory:AddSection("Auras")
+
+local buyAuraLabel = tabs.inventory:AddLabel("Selected Auras: None")
+
+local auraDropdown = tabs.inventory:AddDropdown("Choose Aura", function(text)
+    if not tabs.inventory.AuraData.Selected[text] then
+        tabs.inventory.AuraData.Selected[text] = true
+        table.insert(tabs.inventory.AuraData.SelectedList, text)
+    end
+    buyAuraLabel:SetText("Selected Auras: " .. (#tabs.inventory.AuraData.SelectedList > 0 and table.concat(tabs.inventory.AuraData.SelectedList, ", ") or "None"))
+end)
+for _, auraName in ipairs(tabs.inventory.AuraData.AuraList) do
+    auraDropdown:Add(auraName)
+end
+
+tabs.inventory:AddTextBox("Buy Amount:", function(text)
+    tabs.inventory.AuraData.BuyAmount = math.max(1, math.floor(tonumber(text) or 1))
+end, {clear = false})
+
+tabs.inventory:AddSwitch("Auto Buy Aura", function(bool)
+    _G.AutoHatchAura = bool
+    if not bool then return end
+    task.spawn(function()
+        while utils.isCurrent() and _G.AutoHatchAura do
+            for _, auraName in ipairs(tabs.inventory.AuraData.SelectedList) do
+                local selectedAura = tabs.inventory.PetShopFolder:FindFirstChild(auraName)
+                if selectedAura then
+                    for _ = 1, tabs.inventory.AuraData.BuyAmount do
+                        pcall(function()
+                            tabs.inventory.PetShopRemote:InvokeServer(selectedAura)
+                        end)
+                    end
+                end
+            end
+            task.wait(0.1)
+        end
+    end)
+end)
+
+-- Auto Evolve
+tabs.inventory:AddSection("Auto Evolve")
+
+tabs.inventory.EvolveData = {Selected = {}, SelectedList = {}, Amount = 1}
+
+local evolveLabel = tabs.inventory:AddLabel("Selected Pets: None")
+
+local evolveDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    if not tabs.inventory.EvolveData.Selected[text] then
+        tabs.inventory.EvolveData.Selected[text] = true
+        table.insert(tabs.inventory.EvolveData.SelectedList, text)
+    end
+    evolveLabel:SetText("Selected Pets: " .. (#tabs.inventory.EvolveData.SelectedList > 0 and table.concat(tabs.inventory.EvolveData.SelectedList, ", ") or "None"))
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    evolveDropdown:Add(petName)
+end
+
+tabs.inventory:AddTextBox("Evolve Amount:", function(text)
+    tabs.inventory.EvolveData.Amount = math.max(1, math.floor(tonumber(text) or 1))
+end, {clear = false})
+
+tabs.inventory.AutoEvolveRunning = false
+tabs.inventory:AddSwitch("Auto Evolve", function(state)
+    tabs.inventory.AutoEvolveRunning = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.inventory.AutoEvolveRunning do
+            for _, petName in ipairs(tabs.inventory.EvolveData.SelectedList) do
+                for _ = 1, tabs.inventory.EvolveData.Amount do
+                    pcall(function()
+                        services.ReplicatedStorage.rEvents.petEvolveEvent:FireServer("evolvePet", petName)
+                    end)
+                end
+            end
+            task.wait(0.5)
+        end
+    end)
+end)
+
+-- Auto Trade
+tabs.inventory:AddSection("Auto Trade")
+
+tabs.inventory.TradeData = {
+    SelectedPlayers = {},
+    SelectedPlayerList = {},
+    SelectedPets = {},
+    SelectedPetList = {},
+    Generation = 0,
+}
+
+local tradePlayerLabel = tabs.inventory:AddLabel("Selected Players: None")
+local tradePetLabel = tabs.inventory:AddLabel("Selected Pets: None")
+
+local tradePlayerDropdown = tabs.inventory:AddDropdown("Choose Player", function(name)
+    local username = name:match("| (.+)$") or name
+    if not tabs.inventory.TradeData.SelectedPlayers[username] then
+        tabs.inventory.TradeData.SelectedPlayers[username] = true
+        table.insert(tabs.inventory.TradeData.SelectedPlayerList, username)
+    end
+    tradePlayerLabel:SetText("Selected Players: " .. (#tabs.inventory.TradeData.SelectedPlayerList > 0 and table.concat(tabs.inventory.TradeData.SelectedPlayerList, ", ") or "None"))
+end)
+
+for _, p in ipairs(services.Players:GetPlayers()) do
+    if p ~= player then
+        tradePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end
+
+local tradePetDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    if not tabs.inventory.TradeData.SelectedPets[text] then
+        tabs.inventory.TradeData.SelectedPets[text] = true
+        table.insert(tabs.inventory.TradeData.SelectedPetList, text)
+    end
+    tradePetLabel:SetText("Selected Pets: " .. (#tabs.inventory.TradeData.SelectedPetList > 0 and table.concat(tabs.inventory.TradeData.SelectedPetList, ", ") or "None"))
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    tradePetDropdown:Add(petName)
+end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        tradePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    tradePlayerDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if tabs.inventory.TradeData.SelectedPlayers[p.Name] then
+        tabs.inventory.TradeData.SelectedPlayers[p.Name] = nil
+        for i, v in ipairs(tabs.inventory.TradeData.SelectedPlayerList) do
+            if v == p.Name then table.remove(tabs.inventory.TradeData.SelectedPlayerList, i) break end
+        end
+        tradePlayerLabel:SetText("Selected Players: " .. (#tabs.inventory.TradeData.SelectedPlayerList > 0 and table.concat(tabs.inventory.TradeData.SelectedPlayerList, ", ") or "None"))
+    end
+end)
+
+tabs.inventory.AutoTradeRunning = false
+tabs.inventory:AddSwitch("Auto Trade", function(state)
+    tabs.inventory.AutoTradeRunning = state
+    tabs.inventory.TradeData.Generation += 1
+    if not state then return end
+    local generation = tabs.inventory.TradeData.Generation
+
+    task.spawn(function()
+        while utils.isCurrent() and tabs.inventory.AutoTradeRunning and tabs.inventory.TradeData.Generation == generation do
+            if #tabs.inventory.TradeData.SelectedPlayerList > 0 and #tabs.inventory.TradeData.SelectedPetList > 0 then
+                for _, username in ipairs(tabs.inventory.TradeData.SelectedPlayerList) do
+                    local tradePlayer = services.Players:FindFirstChild(username)
+                    if not tabs.inventory.AutoTradeRunning or tabs.inventory.TradeData.Generation ~= generation then break end
+                    if tradePlayer then
+                        local tradingEvent = services.ReplicatedStorage.rEvents.tradingEvent
+                        local unique = player.petsFolder.Unique
+                        pcall(function()
+                            tradingEvent:FireServer("sendTradeRequest", tradePlayer)
+                        end)
+                        task.wait(0.5)
+                        local offered = 0
+                        local offeredPets = {}
+                        for _, selectedName in ipairs(tabs.inventory.TradeData.SelectedPetList) do
+                            for _, pet in ipairs(unique:GetChildren()) do
+                                if pet.Name == selectedName and not offeredPets[pet] and offered < 6 then
+                                    pcall(function()
+                                        tradingEvent:FireServer("offerItem", pet)
+                                    end)
+                                    offeredPets[pet] = true
+                                    offered = offered + 1
+                                    task.wait(0.05)
+                                    break
+                                end
+                            end
+                        end
+                        if offered > 0 then
+                            task.wait(0.5)
+                            pcall(function()
+                                tradingEvent:FireServer("acceptTrade")
+                            end)
+                            task.wait(2)
+                        end
+                    end
+                end
+            end
+            task.wait(2)
+        end
+    end)
+end)
+
+utils.notify("HonenxWhite", "Tab Boss + Pets cargado ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- TAB BOOSTS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boosts:AddSection("Boost Eater")
+
+tabs.boosts.EggEaterData = {Running = false}
+
+tabs.boosts:AddSwitch("Eat All Eggs", function(state)
+    tabs.boosts.EggEaterData.Running = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.boosts.EggEaterData.Running do
+            local char = player.Character
+            local egg = char and char:FindFirstChild("Protein Egg") or player.Backpack:FindFirstChild("Protein Egg")
+            if egg then
+                pcall(function()
+                    player.muscleEvent:FireServer("proteinEgg", egg)
+                end)
+            end
+            task.wait(0.25)
+        end
+    end)
+end):Set(false)
+
+tabs.boosts.BoostData = {
+    ItemList = {"Tropical Shake", "Energy Shake", "Protein Bar", "TOUGH Bar", "Protein Shake", "ULTRA Shake", "Energy Bar"},
+    Running = false,
+}
+
+tabs.boosts:AddSwitch("Eat All Boosts (expect lag)", function(state)
+    tabs.boosts.BoostData.Running = state
+    if not state then return end
+    task.spawn(function()
+        while utils.isCurrent() and tabs.boosts.BoostData.Running do
+            local char = player.Character
+            for _, itemName in ipairs(tabs.boosts.BoostData.ItemList) do
+                local tool = char and char:FindFirstChild(itemName) or player.Backpack:FindFirstChild(itemName)
+                if tool then
+                    local parts = {}
+                    for word in itemName:gmatch("%S+") do
+                        table.insert(parts, word:lower())
+                    end
+                    for i = 2, #parts do
+                        parts[i] = parts[i]:sub(1, 1):upper() .. parts[i]:sub(2)
+                    end
+                    for _ = 1, 10 do
+                        pcall(function()
+                            player.muscleEvent:FireServer(table.concat(parts), tool)
+                        end)
+                    end
+                end
+            end
+            task.wait(0.1)
+        end
+    end)
+end)
+
+-- Egg Gifter
+tabs.boosts:AddSection("Egg Gifter")
+
+tabs.boosts.EggGifterData = {
+    SelectedPlayer = nil,
+    EggCount = 0,
+}
+
+local eggCountLabel = tabs.boosts:AddLabel("Protein Eggs: 0")
+
+local eggPlayerDropdown = tabs.boosts:AddDropdown("Choose Player", function(name)
+    local username = name:match("| (.+)$") or name
+    tabs.boosts.EggGifterData.SelectedPlayer = services.Players:FindFirstChild(username)
+end)
+
+for _, p in ipairs(services.Players:GetPlayers()) do
+    if p ~= player then
+        eggPlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        eggPlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    eggPlayerDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if tabs.boosts.EggGifterData.SelectedPlayer == p then
+        tabs.boosts.EggGifterData.SelectedPlayer = nil
+    end
+end)
+
+local eggAmountBox = tabs.boosts:AddTextBox("Amount:", function(text)
+    local n = tonumber(text)
+    if n then
+        tabs.boosts.EggGifterData.EggCount = math.max(0, math.floor(n))
+    end
+end, {clear = false})
+
+tabs.boosts:AddButton("Start Gifting Eggs", function()
+    local amount = tonumber(eggAmountBox.Text) or tabs.boosts.EggGifterData.EggCount
+    amount = math.max(0, math.floor(amount))
+    tabs.boosts.EggGifterData.EggCount = amount
+
+    if not tabs.boosts.EggGifterData.SelectedPlayer or amount == 0 then
+        utils.notify("Egg Gifter", "Configurá jugador y cantidad", 2, "warning")
+        return
+    end
+
+    task.spawn(function()
+        for _ = 1, amount do
+            local egg = player:FindFirstChild("consumablesFolder") and player.consumablesFolder:FindFirstChild("Protein Egg")
+            if not egg then break end
+            pcall(function()
+                services.ReplicatedStorage.rEvents.giftRemote:InvokeServer("giftRequest", tabs.boosts.EggGifterData.SelectedPlayer, egg)
+            end)
+            task.wait(0.1)
+        end
+        utils.notify("Egg Gifter", "Envío completado", 3, "success")
+    end)
+end)
+
+-- Shake Gifter
+tabs.boosts:AddSection("Shake Gifter")
+
+tabs.boosts.ShakeGifterData = {
+    SelectedPlayer = nil,
+    ShakeCount = 0,
+}
+
+local shakeCountLabel = tabs.boosts:AddLabel("Tropical Shakes: 0")
+
+local shakePlayerDropdown = tabs.boosts:AddDropdown("Choose Player", function(name)
+    local username = name:match("| (.+)$") or name
+    tabs.boosts.ShakeGifterData.SelectedPlayer = services.Players:FindFirstChild(username)
+end)
+
+for _, p in ipairs(services.Players:GetPlayers()) do
+    if p ~= player then
+        shakePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end
+
+utils.connect(services.Players.PlayerAdded, function(p)
+    if p ~= player then
+        shakePlayerDropdown:Add(p.DisplayName .. " | " .. p.Name)
+    end
+end)
+
+utils.connect(services.Players.PlayerRemoving, function(p)
+    shakePlayerDropdown:Remove(p.DisplayName .. " | " .. p.Name)
+    if tabs.boosts.ShakeGifterData.SelectedPlayer == p then
+        tabs.boosts.ShakeGifterData.SelectedPlayer = nil
+    end
+end)
+
+local shakeAmountBox = tabs.boosts:AddTextBox("Amount:", function(text)
+    local n = tonumber(text)
+    if n then
+        tabs.boosts.ShakeGifterData.ShakeCount = math.max(0, math.floor(n))
+    end
+end, {clear = false})
+
+tabs.boosts:AddButton("Start Gifting Shakes", function()
+    local amount = tonumber(shakeAmountBox.Text) or tabs.boosts.ShakeGifterData.ShakeCount
+    amount = math.max(0, math.floor(amount))
+    tabs.boosts.ShakeGifterData.ShakeCount = amount
+
+    if not tabs.boosts.ShakeGifterData.SelectedPlayer or amount == 0 then
+        utils.notify("Shake Gifter", "Configurá jugador y cantidad", 2, "warning")
+        return
+    end
+
+    task.spawn(function()
+        for _ = 1, amount do
+            local shake = player:FindFirstChild("consumablesFolder") and player.consumablesFolder:FindFirstChild("Tropical Shake")
+            if not shake then break end
+            pcall(function()
+                services.ReplicatedStorage.rEvents.giftRemote:InvokeServer("giftRequest", tabs.boosts.ShakeGifterData.SelectedPlayer, shake)
+            end)
+            task.wait(0.1)
+        end
+        utils.notify("Shake Gifter", "Envío completado", 3, "success")
+    end)
+end)
+
+-- Contador en vivo
+task.spawn(function()
+    while utils.isCurrent() do
+        local eggCount = 0
+        local shakeCount = 0
+        local char = player.Character
+        if char then
+            for _, item in ipairs(char:GetChildren()) do
+                if item.Name == "Protein Egg" then eggCount = eggCount + 1
+                elseif item.Name == "Tropical Shake" then shakeCount = shakeCount + 1 end
+            end
+        end
+        for _, item in ipairs(player.Backpack:GetChildren()) do
+            if item.Name == "Protein Egg" then eggCount = eggCount + 1
+            elseif item.Name == "Tropical Shake" then shakeCount = shakeCount + 1 end
+        end
+        eggCountLabel:SetText("Protein Eggs: " .. eggCount)
+        shakeCountLabel:SetText("Tropical Shakes: " .. shakeCount)
+        task.wait(2)
+    end
+end)
+
+tabs.boosts:AddLabel("Interfiere con Boosts regalados. Subí a una máquina para menos lag.")
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB TELEPORTS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.teleport:AddSection("Main")
+
+tabs.teleport.Locations = {
+    {name = "Tiny Island", pos = CFrame.new(-37.1, 9.2, 1919)},
+    {name = "Main Island", pos = CFrame.new(16.07, 9.08, 133.8)},
+    {name = "Beach", pos = CFrame.new(-8, 9, -169.2)},
+}
+
+for _, loc in ipairs(tabs.teleport.Locations) do
+    tabs.teleport:AddButton(loc.name, function()
+        local char = player.Character
+        if char then
+            local root = char:FindFirstChild("HumanoidRootPart")
+            if root then
+                root.CFrame = loc.pos
+                utils.notify("Teleport", "Teletransportado a " .. loc.name, 1.5, "success")
+            end
+        end
+    end)
+end
+
+tabs.teleport:AddSection("Gyms")
+
+tabs.teleport.GymLocations = {
+    {name = "Overcharged Gym", pos = CFrame.new(-2941.766, 151.797, 4994.552)},
+    {name = "Industrial Gym", pos = CFrame.new(-5254.681641, 58.342850, 4931.850586)},
+    {name = "Jungle Gym", pos = CFrame.new(-8543, 6.8, 2400)},
+    {name = "Muscle King Gym", pos = CFrame.new(-8665.4, 17.21, -5792.9)},
+    {name = "Legends Gym", pos = CFrame.new(4516, 991.5, -3856)},
+    {name = "Infernal Gym", pos = CFrame.new(-6759, 7.36, -1284)},
+    {name = "Mythical Gym", pos = CFrame.new(2250, 7.37, 1073.2)},
+    {name = "Frost Gym", pos = CFrame.new(-2623, 7.36, -409)},
+}
+
+for _, gym in ipairs(tabs.teleport.GymLocations) do
+    tabs.teleport:AddButton(gym.name, function()
+        local char = player.Character
+        if char then
+            local root = char:FindFirstChild("HumanoidRootPart")
+            if root then
+                root.CFrame = gym.pos
+                utils.notify("Teleport", "Teletransportado a " .. gym.name, 1.5, "success")
+            end
+        end
+    end)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB STATS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.stats:AddSection("Métricas en Tiempo Real")
+
+tabs.stats.Data = {
+    StartTime = tick(),
+    StartStrength = player.leaderstats:WaitForChild("Strength").Value,
+    StartRebirths = player.leaderstats:WaitForChild("Rebirths").Value,
+}
+
+local strengthGainedLabel = tabs.stats:AddLabel("Fuerza ganada: 0")
+local strengthHourLabel = tabs.stats:AddLabel("x 1 Hora: 0")
+local strengthDayLabel = tabs.stats:AddLabel("x 1 Día: 0")
+local strengthWeekLabel = tabs.stats:AddLabel("x 1 Semana: 0")
+
+tabs.stats:AddLabel("")
+
+local rebirthsGainedLabel = tabs.stats:AddLabel("Rebirths ganados: 0")
+local rebirthsHourLabel = tabs.stats:AddLabel("x 1 Hora: 0")
+local rebirthsDayLabel = tabs.stats:AddLabel("x 1 Día: 0")
+local rebirthsWeekLabel = tabs.stats:AddLabel("x 1 Semana: 0")
+
+tabs.stats:AddLabel("")
+
+local sessionTimeLabel = tabs.stats:AddLabel("Tiempo en sesión: 0s")
+
+local function formatStat(n)
+    if n == nil or n ~= n then return "0" end
+    local absN = math.abs(n)
+    local sign = n < 0 and "-" or ""
+    if absN >= 1e18 then return sign .. string.format("%.2fqi", absN / 1e18)
+    elseif absN >= 1e15 then return sign .. string.format("%.2fqa", absN / 1e15)
+    elseif absN >= 1e12 then return sign .. string.format("%.2ft", absN / 1e12)
+    elseif absN >= 1e9 then return sign .. string.format("%.2fb", absN / 1e9)
+    elseif absN >= 1e6 then return sign .. string.format("%.2fm", absN / 1e6)
+    elseif absN >= 1e3 then return sign .. string.format("%.2fk", absN / 1e3)
+    elseif absN >= 1 then return sign .. string.format("%.0f", absN)
+    else return sign .. string.format("%.2f", absN) end
+end
+
+local function formatTiempo(segundos)
+    if segundos < 60 then return string.format("%ds", math.floor(segundos))
+    elseif segundos < 3600 then return string.format("%dm %ds", math.floor(segundos / 60), math.floor(segundos % 60))
+    elseif segundos < 86400 then return string.format("%dh %dm", math.floor(segundos / 3600), math.floor((segundos % 3600) / 60))
+    else return string.format("%dd %dh", math.floor(segundos / 86400), math.floor((segundos % 86400) / 3600)) end
+end
+
+task.spawn(function()
+    while utils.isCurrent() do
+        local now = tick()
+        local elapsed = now - tabs.stats.Data.StartTime
+        if elapsed > 0.5 then
+            local curStrength = player.leaderstats.Strength.Value
+            local curRebirths = player.leaderstats.Rebirths.Value
+            local gainS = curStrength - tabs.stats.Data.StartStrength
+            local gainR = curRebirths - tabs.stats.Data.StartRebirths
+            local rateS = (gainS / elapsed) * 3600
+            local rateR = (gainR / elapsed) * 3600
+            strengthGainedLabel:SetText("Fuerza ganada: " .. formatStat(gainS))
+            strengthHourLabel:SetText("x 1 Hora: " .. formatStat(rateS))
+            strengthDayLabel:SetText("x 1 Día: " .. formatStat(rateS * 24))
+            strengthWeekLabel:SetText("x 1 Semana: " .. formatStat(rateS * 24 * 7))
+            rebirthsGainedLabel:SetText("Rebirths ganados: " .. formatStat(gainR))
+            rebirthsHourLabel:SetText("x 1 Hora: " .. formatStat(rateR))
+            rebirthsDayLabel:SetText("x 1 Día: " .. formatStat(rateR * 24))
+            rebirthsWeekLabel:SetText("x 1 Semana: " .. formatStat(rateR * 24 * 7))
+            sessionTimeLabel:SetText("Tiempo en sesión: " .. formatTiempo(elapsed))
+        end
+        task.wait(1)
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- TAB INFO (ACTUALIZADO)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.info:AddSection("Información")
+tabs.info:AddLabel("HonenxWhite | Reborn")
+tabs.info:AddLabel("Version 2.0 - KNI UI")
+tabs.info:AddLabel("Made by Honen / cyanam1 / White")
+tabs.info:AddLabel("")
+
+tabs.info:AddButton("📋 Copiar Discord", function()
+    if setclipboard then
+        setclipboard("https://discord.gg/bVDtwKF92")
+        utils.notify("Discord", "Link copiado", 2, "success")
+    end
+end)
+
+tabs.info:AddLabel("")
+tabs.info:AddLabel("Contributors:")
+tabs.info:AddLabel("- cyanam1 (@honey)")
+tabs.info:AddLabel("- White @chilin6369")
+tabs.info:AddLabel("- Honen @Owner")
+tabs.info:AddLabel("")
+tabs.info:AddLabel("KNI UI - v2.0")
+
+-- ═══════════════════════════════════════════════════════════════
+-- ANTI-AFK INDEPENDIENTE
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.main:AddSection("Anti-AFK")
+
+_G.HonenxAntiAFK = true
+tabs.main.AntiAFKSwitch = tabs.main:AddSwitch("Anti AFK", function(state)
+    _G.HonenxAntiAFK = state
+    if state then
+        utils.notify("Anti-AFK", "✅ Activado", 2, "success")
+    else
+        utils.notify("Anti-AFK", "❌ Desactivado", 2, "info")
+    end
+end)
+tabs.main.AntiAFKSwitch:Set(true)
+
+task.spawn(function()
+    while utils.isCurrent() do
+        task.wait(60)
+        if _G.HonenxAntiAFK then
+            pcall(function()
+                services.VirtualUser:CaptureController()
+                services.VirtualUser:ClickButton2(Vector2.new(0, 0))
+                services.VirtualUser:ClickButton1(Vector2.new(0, 0))
+            end)
+        end
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- CIERRE
+-- ═══════════════════════════════════════════════════════════════
+
+utils.notify("HonenxWhite", "🎉 Hub completo cargado correctamente", 4, "success")
+print("[HonenxWhite] Script cargado al 100%")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 2: Spectate completo + Kill Aura completa
+-- Reemplaza las versiones simples del Mensaje 2 viejo
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- SPECTATE COMPLETO (con CameraMonitorLoop + LocalPlayerRespawn)
+-- ═══════════════════════════════════════════════════════════════
+
+getgenv().SpectateState = getgenv().SpectateState or {
+    SavedUserId = nil,
+    IsSpectating = false,
+}
+
+tabs.killing.SpectateData = {
+    SelectedPlayer = nil,
+    SelectedPlayerUserId = nil,
+    Spectating = false,
+    CurrentTargetConnection = nil,
+    LocalPlayerRespawnConnection = nil,
+    CameraMonitorLoop = nil,
+}
+
+tabs.killing.stopSpectating = function()
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    if tabs.killing.SpectateData.CameraMonitorLoop then
+        tabs.killing.SpectateData.CameraMonitorLoop = false
+    end
+    local localPlayer = services.Players.LocalPlayer
+    if localPlayer.Character then
+        local humanoid = localPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = humanoid
+            utils.playerData.Camera.CameraType = Enum.CameraType.Custom
+        end
+    end
+    if utils.playerData.Humanoid and utils.playerData.Camera then
+        utils.playerData.Camera.CameraSubject = utils.playerData.Humanoid
+    end
+end
+
+tabs.killing.startCameraMonitor = function()
+    if tabs.killing.SpectateData.CameraMonitorLoop then
+        tabs.killing.SpectateData.CameraMonitorLoop = false
+        task.wait(0.3)
+    end
+    tabs.killing.SpectateData.CameraMonitorLoop = true
+    task.spawn(function()
+        while utils.isCurrent() and tabs.killing.SpectateData.CameraMonitorLoop do
+            task.wait(0.2)
+            if tabs.killing.SpectateData.Spectating and tabs.killing.SpectateData.SelectedPlayer then
+                local targetChar = tabs.killing.SpectateData.SelectedPlayer.Character
+                if targetChar then
+                    local targetHumanoid = targetChar:FindFirstChildOfClass("Humanoid")
+                    if targetHumanoid and utils.playerData.Camera then
+                        if utils.playerData.Camera.CameraSubject ~= targetHumanoid then
+                            utils.playerData.Camera.CameraSubject = targetHumanoid
+                        end
+                    end
+                end
+            else
+                break
+            end
+        end
+    end)
+end
+
+tabs.killing.updateSpectateTarget = function(p)
+    if not p then
+        if tabs.killing.SpectateData.SelectedPlayerUserId then
+            for _, candidate in ipairs(services.Players:GetPlayers()) do
+                if candidate.UserId == tabs.killing.SpectateData.SelectedPlayerUserId then
+                    p = candidate
+                    tabs.killing.SpectateData.SelectedPlayer = p
+                    break
+                end
+            end
+        end
+        if not p and getgenv().SpectateState.SavedUserId then
+            for _, candidate in ipairs(services.Players:GetPlayers()) do
+                if candidate.UserId == getgenv().SpectateState.SavedUserId then
+                    p = candidate
+                    tabs.killing.SpectateData.SelectedPlayer = p
+                    tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+                    break
+                end
+            end
+        end
+        if not p then
+            tabs.killing.stopSpectating()
+            return
+        end
+    end
+    tabs.killing.SpectateData.SelectedPlayerUserId = p.UserId
+    tabs.killing.SpectateData.SelectedPlayer = p
+    if tabs.killing.SpectateData.CurrentTargetConnection then
+        tabs.killing.SpectateData.CurrentTargetConnection:Disconnect()
+        tabs.killing.SpectateData.CurrentTargetConnection = nil
+    end
+    local function setCamera(char)
+        if not tabs.killing.SpectateData.Spectating or tabs.killing.SpectateData.SelectedPlayerUserId ~= p.UserId then return end
+        local humanoid = char:WaitForChild("Humanoid", 3)
+        if humanoid and tabs.killing.SpectateData.Spectating and tabs.killing.SpectateData.SelectedPlayerUserId == p.UserId then
+            if utils.playerData.Camera then
+                utils.playerData.Camera.CameraSubject = humanoid
+            end
+        end
+    end
+    if p.Character then setCamera(p.Character) end
+    tabs.killing.SpectateData.CurrentTargetConnection = utils.connect(p.CharacterAdded, function(newChar)
+        if tabs.killing.SpectateData.Spectating and tabs.killing.SpectateData.SelectedPlayerUserId == p.UserId then
+            setCamera(newChar)
+        end
+    end)
+end
+
+-- Conexión de respawn del LocalPlayer
+if tabs.killing.SpectateData.LocalPlayerRespawnConnection then
+    tabs.killing.SpectateData.LocalPlayerRespawnConnection:Disconnect()
+end
+tabs.killing.SpectateData.LocalPlayerRespawnConnection = utils.connect(player.CharacterAdded, function(char)
+    local humanoid = char:WaitForChild("Humanoid", 3)
+    if humanoid then
+        utils.playerData.Humanoid = humanoid
+    end
+    task.wait(0.5)
+    if getgenv().SpectateState.IsSpectating then
+        tabs.killing.SpectateData.Spectating = true
+        tabs.killing.updateSpectateTarget()
+        tabs.killing.startCameraMonitor()
+    else
+        if utils.playerData.Humanoid and utils.playerData.Camera then
+            utils.playerData.Camera.CameraSubject = utils.playerData.Humanoid
+        end
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- KILL AURA COMPLETA (con Frozen + Generation + Anti-Gravity opcional)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.killing.KillAuraFull = {
+    RingPart = nil,
+    RingColor = Color3.fromRGB(145, 77, 255),
+    RingTransparency = 0.6,
+    CenterCFrame = nil,
+    Frozen = false,
+    Generation = 0,
+    Enabled = false,
+    Range = 20,
+}
+
+_G.showDeathRing = false
+_G.deathRingEnabled = false
+_G.deathRingRange = 20
+
+-- Destruir anillo viejo si existe
+local staleRing = workspace:FindFirstChild("HonenxWhiteKillAuraRing")
+if staleRing then staleRing:Destroy() end
+
+local ringColors = {
+    {Name = "HonenxWhite", Color = Color3.fromRGB(145, 77, 255)},
+    {Name = "Red", Color = Color3.fromRGB(255, 60, 60)},
+    {Name = "Orange", Color = Color3.fromRGB(255, 128, 0)},
+    {Name = "Yellow", Color = Color3.fromRGB(255, 230, 0)},
+    {Name = "Lime", Color = Color3.fromRGB(128, 255, 0)},
+    {Name = "Green", Color = Color3.fromRGB(0, 200, 70)},
+    {Name = "Cyan", Color = Color3.fromRGB(0, 220, 255)},
+    {Name = "Blue", Color = Color3.fromRGB(0, 100, 255)},
+    {Name = "Purple", Color = Color3.fromRGB(145, 70, 255)},
+    {Name = "Pink", Color = Color3.fromRGB(255, 80, 180)},
+    {Name = "White", Color = Color3.fromRGB(255, 255, 255)},
+    {Name = "Black", Color = Color3.fromRGB(0, 0, 0)},
+}
+
+local ringColorDropdown = tabs.killing:AddDropdown("Ring Color", function(selection)
+    for _, colorData in ipairs(ringColors) do
+        if colorData.Name == selection then
+            tabs.killing.KillAuraFull.RingColor = colorData.Color
+            if tabs.killing.KillAuraFull.RingPart then
+                tabs.killing.KillAuraFull.RingPart.Color = colorData.Color
+            end
+            break
+        end
+    end
+end)
+for _, colorData in ipairs(ringColors) do
+    ringColorDropdown:Add(colorData.Name)
+end
+
+tabs.killing.destroyKillAuraRing = function()
+    if tabs.killing.KillAuraFull.RingPart then
+        tabs.killing.KillAuraFull.RingPart:Destroy()
+        tabs.killing.KillAuraFull.RingPart = nil
+    end
+end
+
+tabs.killing.createKillAuraRing = function()
+    tabs.killing.destroyKillAuraRing()
+    local oldRing = workspace:FindFirstChild("HonenxWhiteKillAuraRing")
+    if oldRing then oldRing:Destroy() end
+
+    local ring = Instance.new("Part")
+    ring.Name = "HonenxWhiteKillAuraRing"
+    ring.Shape = Enum.PartType.Cylinder
+    ring.Material = Enum.Material.Neon
+    ring.Color = tabs.killing.KillAuraFull.RingColor
+    ring.Transparency = tabs.killing.KillAuraFull.RingTransparency
+    ring.Anchored = true
+    ring.CanCollide = false
+    ring.CanTouch = false
+    ring.CanQuery = false
+    ring.CastShadow = false
+    ring.Size = Vector3.new(0.2, _G.deathRingRange * 2, _G.deathRingRange * 2)
+    if tabs.killing.KillAuraFull.CenterCFrame then
+        ring.CFrame = tabs.killing.KillAuraFull.CenterCFrame * CFrame.Angles(0, 0, math.rad(90))
+    end
+    ring.Parent = workspace
+    tabs.killing.KillAuraFull.RingPart = ring
+end
+
+tabs.killing.updateKillAuraRing = function()
+    if tabs.killing.KillAuraFull.RingPart and tabs.killing.KillAuraFull.CenterCFrame then
+        tabs.killing.KillAuraFull.RingPart.CFrame = tabs.killing.KillAuraFull.CenterCFrame * CFrame.Angles(0, 0, math.rad(90))
+    end
+end
+
+tabs.killing.ShowRingSwitch = tabs.killing:AddSwitch("Show Ring", function(bool)
+    if bool and not _G.deathRingEnabled then
+        _G.showDeathRing = false
+        tabs.killing.ShowRingSwitch:Set(false, true)
+        return
+    end
+    _G.showDeathRing = bool
+    if bool then
+        tabs.killing.createKillAuraRing()
+    else
+        tabs.killing.destroyKillAuraRing()
+    end
+end)
+
+-- Toggle Ring worker completo
+tabs.killing:AddSwitch("Toggle Ring (Kill Aura)", function(bool)
+    _G.deathRingEnabled = bool
+    tabs.killing.KillAuraFull.Enabled = bool
+    tabs.killing.KillAuraFull.Generation += 1
+    local generation = tabs.killing.KillAuraFull.Generation
+
+    if not bool then
+        if tabs.killing.ShowRingSwitch and _G.showDeathRing then
+            tabs.killing.ShowRingSwitch:Set(false, true)
+        end
+        return
+    end
+
+    local _, _, initialRoot = tabs.killing.getLocalCombatCharacter()
+    if initialRoot then
+        tabs.killing.KillAuraFull.CenterCFrame = initialRoot.CFrame
+    end
+
+    -- Loop de actualización del anillo
+    task.spawn(function()
+        while utils.isCurrent() and _G.deathRingEnabled and tabs.killing.KillAuraFull.Generation == generation do
+            local _, _, localRoot = tabs.killing.getLocalCombatCharacter()
+            if localRoot and not tabs.killing.KillAuraFull.Frozen then
+                tabs.killing.KillAuraFull.CenterCFrame = localRoot.CFrame
+            end
+            tabs.killing.updateKillAuraRing()
+            services.RunService.RenderStepped:Wait()
+        end
+    end)
+
+    -- Loop de ataque
+    task.spawn(function()
+        while utils.isCurrent() and _G.deathRingEnabled and tabs.killing.KillAuraFull.Generation == generation do
+            if tabs.killing.KillAuraFull.Frozen or not tabs.killing.KillAuraFull.CenterCFrame then
+                task.wait(0.05)
+                continue
+            end
+
+            local centerCFrame = tabs.killing.KillAuraFull.CenterCFrame
+            local attackedPlayer = false
+
+            for _, targetPlayer in ipairs(services.Players:GetPlayers()) do
+                if not _G.deathRingEnabled or tabs.killing.KillAuraFull.Generation ~= generation then break end
+                local targetRoot = targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+                if targetPlayer ~= player
+                    and not tabs.killing.isWhitelisted(targetPlayer)
+                    and tabs.killing.isPlayerAlive(targetPlayer)
+                    and not tabs.killing.isSpawnProtected(targetPlayer)
+                    and targetRoot
+                    and (centerCFrame.Position - targetRoot.Position).Magnitude <= _G.deathRingRange then
+
+                    attackedPlayer = true
+                    tabs.killing.KillAuraFull.Frozen = true
+                    tabs.killing.KillAuraFull.CenterCFrame = centerCFrame
+                    tabs.killing.updateKillAuraRing()
+
+                    tabs.killing.attackPlayerWithLimit(targetPlayer, 4, function()
+                        local currentTargetRoot = targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+                        return _G.deathRingEnabled
+                            and tabs.killing.KillAuraFull.Generation == generation
+                            and not tabs.killing.isWhitelisted(targetPlayer)
+                            and currentTargetRoot
+                            and (centerCFrame.Position - currentTargetRoot.Position).Magnitude <= _G.deathRingRange
+                    end, 3.5)
+
+                    -- Volver al centro después del ataque
+                    for _ = 1, 4 do
+                        local _, _, currentLocalRoot = tabs.killing.getLocalCombatCharacter()
+                        if currentLocalRoot then
+                            currentLocalRoot.CFrame = centerCFrame
+                            currentLocalRoot.AssemblyLinearVelocity = Vector3.zero
+                            currentLocalRoot.AssemblyAngularVelocity = Vector3.zero
+                        end
+                        tabs.killing.KillAuraFull.CenterCFrame = centerCFrame
+                        tabs.killing.updateKillAuraRing()
+                        services.RunService.Heartbeat:Wait()
+                    end
+                    tabs.killing.KillAuraFull.Frozen = false
+                end
+            end
+
+            if not attackedPlayer then
+                task.wait(0.05)
+            end
+        end
+        tabs.killing.KillAuraFull.Frozen = false
+    end)
+end)
+
+-- Slider para el rango del Kill Aura
+tabs.killing:AddSlider("Kill Aura Range", 1, 140, 20, function(value)
+    _G.deathRingRange = value
+    tabs.killing.KillAuraFull.Range = value
+    if tabs.killing.KillAuraFull.RingPart then
+        tabs.killing.KillAuraFull.RingPart.Size = Vector3.new(0.2, value * 2, value * 2)
+    end
+end)
+
+utils.notify("HonenxWhite", "Mensaje 2 cargado: Spectate + Kill Aura completos ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 3: Farming completo (Squat/Lift/Better Strength/Leave)
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- AUTO SQUAT / AUTO LIFT CON MAQUINAS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming.MachinesFolder = workspace:WaitForChild("machinesFolder")
+
+tabs.farming.SquatsByName = {}
+tabs.farming.SquatMachineNames = {}
+tabs.farming.LiftMachineNames = {}
+
+tabs.farming.MachineExerciseData = {
+    Squat = {SelectedMachine = nil, ActiveMachine = nil, Running = false, Generation = 0, ReenterAt = 0, SeatPart = nil, Choices = {}},
+    Lift = {SelectedMachine = nil, ActiveMachine = nil, Running = false, Generation = 0, ReenterAt = 0, SeatPart = nil, Choices = {}},
+}
+
+-- Escanear máquinas
+for _, machine in ipairs(tabs.farming.MachinesFolder:GetChildren()) do
+    local lowerName = string.lower(machine.Name)
+    if string.find(lowerName, "squat", 1, true) and lowerName ~= "squat rack" then
+        tabs.farming.SquatsByName[machine.Name] = tabs.farming.SquatsByName[machine.Name] or {}
+        table.insert(tabs.farming.SquatsByName[machine.Name], machine)
+    elseif string.find(lowerName, "lift", 1, true) and lowerName ~= "deadlift" then
+        tabs.farming.MachineExerciseData.Lift.Choices[machine.Name] = machine
+        table.insert(tabs.farming.LiftMachineNames, machine.Name)
+    end
+end
+
+for machineName, matchingSquats in pairs(tabs.farming.SquatsByName) do
+    tabs.farming.MachineExerciseData.Squat.Choices[machineName] = matchingSquats[1]
+    table.insert(tabs.farming.SquatMachineNames, machineName)
+end
+
+table.sort(tabs.farming.SquatMachineNames)
+table.sort(tabs.farming.LiftMachineNames)
+
+tabs.farming.getMachineInteractPart = function(machine)
+    for _, descendant in ipairs(machine:GetDescendants()) do
+        if descendant:IsA("BasePart") and string.lower(descendant.Name) == "interactseat" then
+            return descendant
+        end
+    end
+end
+
+tabs.farming.enterExerciseMachine = function(machine)
+    if not machine or not machine.Parent then return false end
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoidRootPart = character:WaitForChild("HumanoidRootPart", 5)
+    local interactPart = tabs.farming.getMachineInteractPart(machine)
+    if not humanoidRootPart or not interactPart then return false end
+
+    humanoidRootPart.CFrame = interactPart.CFrame * CFrame.new(0, 3, 0)
+    humanoidRootPart.AssemblyLinearVelocity = Vector3.zero
+    humanoidRootPart.AssemblyAngularVelocity = Vector3.zero
+    task.wait(0.4)
+    services.VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.E, false, game)
+    task.wait(0.1)
+    services.VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.E, false, game)
+    task.wait(0.4)
+    return true
+end
+
+tabs.farming.startMachineExercise = function(machineData)
+    machineData.Generation += 1
+    local generation = machineData.Generation
+    local lastCharacter = player.Character
+
+    task.spawn(function()
+        while utils.isCurrent() and machineData.Running and machineData.Generation == generation do
+            local character = player.Character
+            local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+
+            if character ~= lastCharacter then
+                lastCharacter = character
+                machineData.ActiveMachine = nil
+                machineData.SeatPart = nil
+                machineData.ReenterAt = os.clock() + 3.5
+            end
+
+            if not character or not humanoid or humanoid.Health <= 0 then
+                machineData.ActiveMachine = nil
+                machineData.SeatPart = nil
+                machineData.ReenterAt = math.max(machineData.ReenterAt, os.clock() + 3.5)
+                task.wait(0.1)
+                continue
+            end
+
+            local humanoidState = humanoid:GetState()
+            local jumpedOff = machineData.ActiveMachine and (
+                humanoidState == Enum.HumanoidStateType.Jumping
+                or humanoidState == Enum.HumanoidStateType.Freefall
+                or (machineData.SeatPart and humanoid.SeatPart ~= machineData.SeatPart)
+            )
+
+            if jumpedOff then
+                machineData.ActiveMachine = nil
+                machineData.SeatPart = nil
+                machineData.ReenterAt = os.clock() + 3.5
+            end
+
+            if machineData.SelectedMachine and not machineData.ActiveMachine and os.clock() >= machineData.ReenterAt then
+                if tabs.farming.enterExerciseMachine(machineData.SelectedMachine) then
+                    machineData.ActiveMachine = machineData.SelectedMachine
+                    machineData.SeatPart = humanoid.SeatPart
+                end
+            end
+
+            task.wait(0.1)
+        end
+    end)
+end
+
+tabs.farming.setMachineExerciseState = function(machineData, otherMachineData, state)
+    machineData.Running = state
+    machineData.Generation += 1
+    machineData.ActiveMachine = nil
+    machineData.SeatPart = nil
+    machineData.ReenterAt = 0
+
+    if not state then return end
+    if tabs.farming.ToolExerciseSwitch and tabs.farming.ExerciseData.AutoFarm then
+        tabs.farming.ToolExerciseSwitch:Set(false, true)
+    end
+    if otherMachineData.Running then
+        if machineData == tabs.farming.MachineExerciseData.Squat and tabs.farming.LiftExerciseSwitch then
+            tabs.farming.LiftExerciseSwitch:Set(false, true)
+        elseif machineData == tabs.farming.MachineExerciseData.Lift and tabs.farming.SquatExerciseSwitch then
+            tabs.farming.SquatExerciseSwitch:Set(false, true)
+        end
+    end
+    tabs.farming.startMachineExercise(machineData)
+    task.spawn(function()
+        while utils.isCurrent() and machineData.Running and machineData.Generation == generation do
+            if machineData.ActiveMachine then
+                pcall(function()
+                    player.muscleEvent:FireServer("rep")
+                end)
+            end
+            task.wait(0.1)
+        end
+    end, machineData.Generation)
+end
+
+-- Dropdowns y switches
+local squatDropdown = tabs.farming:AddDropdown("Select Squat", function(selection)
+    tabs.farming.MachineExerciseData.Squat.SelectedMachine = tabs.farming.MachineExerciseData.Squat.Choices[selection]
+    tabs.farming.MachineExerciseData.Squat.ActiveMachine = nil
+    tabs.farming.MachineExerciseData.Squat.SeatPart = nil
+    tabs.farming.MachineExerciseData.Squat.ReenterAt = 0
+end)
+for _, machineName in ipairs(tabs.farming.SquatMachineNames) do
+    squatDropdown:Add(machineName)
+end
+
+tabs.farming.SquatExerciseSwitch = tabs.farming:AddSwitch("Auto Squat", function(state)
+    tabs.farming.setMachineExerciseState(tabs.farming.MachineExerciseData.Squat, tabs.farming.MachineExerciseData.Lift, state)
+end)
+
+local liftDropdown = tabs.farming:AddDropdown("Select Lift", function(selection)
+    tabs.farming.MachineExerciseData.Lift.SelectedMachine = tabs.farming.MachineExerciseData.Lift.Choices[selection]
+    tabs.farming.MachineExerciseData.Lift.ActiveMachine = nil
+    tabs.farming.MachineExerciseData.Lift.SeatPart = nil
+    tabs.farming.MachineExerciseData.Lift.ReenterAt = 0
+end)
+for _, machineName in ipairs(tabs.farming.LiftMachineNames) do
+    liftDropdown:Add(machineName)
+end
+
+tabs.farming.LiftExerciseSwitch = tabs.farming:AddSwitch("Auto Lift", function(state)
+    tabs.farming.setMachineExerciseState(tabs.farming.MachineExerciseData.Lift, tabs.farming.MachineExerciseData.Squat, state)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- LEAVE EXERCISE MACHINE (para Boss)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming.leaveExerciseMachine = function()
+    local character = player.Character
+    local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+    local root = character and character:FindFirstChild("HumanoidRootPart")
+    if not humanoid or humanoid.Health <= 0 then return end
+
+    pcall(function()
+        services.VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
+        humanoid.Sit = false
+        humanoid.Jump = true
+        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+        if root then
+            root.AssemblyLinearVelocity = Vector3.new(0, math.max(root.AssemblyLinearVelocity.Y, 50), 0)
+        end
+    end)
+    pcall(function()
+        services.VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
+    end)
+    task.wait(0.2)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- BETTER STRENGTH FARMING (4 configuraciones)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.farming:AddSection("Better Strength Farming")
+
+tabs.farming.Configs = {
+    {name = "Pushup + Industrial Rock", tool = "Pushups", rock = "Industrial Rock"},
+    {name = "Pushup + Jungle Rock", tool = "Pushups", rock = "Ancient Jungle Rock"},
+    {name = "Pushup + Muscle King Rock", tool = "Pushups", rock = "Muscle King Mountain"},
+    {name = "Pushup + Legends Rock", tool = "Pushups", rock = "Rock Of Legends"},
+}
+tabs.farming.ActiveConfigs = {}
+
+for _, config in ipairs(tabs.farming.Configs) do
+    tabs.farming.ActiveConfigs[config.name] = false
+    config.Switch = tabs.farming:AddSwitch(config.name, function(state)
+        tabs.farming.ActiveConfigs[config.name] = state
+        if tabs.farming.ActiveConfigs[config.name] then
+            local character = player.Character
+            if character then
+                local humanoid = character:FindFirstChildOfClass("Humanoid")
+                local backpackTool = player.Backpack:FindFirstChild(config.tool)
+                if backpackTool and humanoid and not character:FindFirstChild(config.tool) then
+                    humanoid:EquipTool(backpackTool)
+                end
+            end
+            task.spawn(function()
+                while utils.isCurrent() and tabs.farming.ActiveConfigs[config.name] do
+                    pcall(function()
+                        player.muscleEvent:FireServer("rep")
+                    end)
+                    local char = player.Character
+                    if char and tabs.farming.MachinesFolder:FindFirstChild(config.rock) then
+                        local rockFolder = tabs.farming.MachinesFolder:FindFirstChild(config.rock)
+                        local rock = rockFolder and rockFolder:FindFirstChild("Rock")
+                        local leftHand = char:FindFirstChild("LeftHand")
+                        if rock and leftHand and firetouchinterest then
+                            firetouchinterest(rock, leftHand, 0)
+                            firetouchinterest(rock, leftHand, 1)
+                        end
+                    end
+                    if char and player.Backpack:FindFirstChild("Punch") then
+                        local humanoid = char:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            humanoid:EquipTool(player.Backpack.Punch)
+                            pcall(function()
+                                player.muscleEvent:FireServer("punch", "rightHand")
+                                player.muscleEvent:FireServer("punch", "leftHand")
+                            end)
+                        end
+                    end
+                    services.RunService.RenderStepped:Wait()
+                    local char2 = player.Character
+                    if char2 and player.Backpack:FindFirstChild(config.tool) then
+                        local humanoid2 = char2:FindFirstChildOfClass("Humanoid")
+                        if humanoid2 then
+                            humanoid2:EquipTool(player.Backpack[config.tool])
+                        end
+                    end
+                end
+            end)
+        else
+            local char = player.Character
+            if char and char:FindFirstChild(config.tool) then
+                char[config.tool].Parent = player.Backpack
+            end
+        end
+    end)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- PAUSE/RESUME TRAINING (para Boss)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss = tabs.boss or {}
+tabs.boss.Data = tabs.boss.Data or {}
+tabs.boss.Data.TrainingSnapshot = nil
+
+tabs.boss.pauseTraining = function()
+    if tabs.boss.Data.TrainingSnapshot then return end
+    tabs.boss.Data.TrainingSnapshot = {
+        Rebirth = tabs.farming.RebirthData.IsAutoRebirthing,
+        Size = tabs.farming.SizeData.Active,
+        King = tabs.farming.KingData.TeleportActive,
+        Tool = tabs.farming.ExerciseData.AutoFarm,
+        Squat = tabs.farming.MachineExerciseData.Squat.Running,
+        Lift = tabs.farming.MachineExerciseData.Lift.Running,
+        AutoRep = tabs.farming.AutoRepRunning,
+        Rock = _G.RockFarmRunning == true,
+        Configs = {},
+    }
+    for _, config in ipairs(tabs.farming.Configs) do
+        tabs.boss.Data.TrainingSnapshot.Configs[config.name] = tabs.farming.ActiveConfigs[config.name] == true
+        if tabs.farming.ActiveConfigs[config.name] and config.Switch then
+            config.Switch:Set(false, true)
+        end
+    end
+    if tabs.boss.Data.TrainingSnapshot.Rebirth and tabs.farming.RebirthData.Switch then
+        tabs.farming.RebirthData.Switch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Size and tabs.farming.SizeSwitch then
+        tabs.farming.SizeSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.King and tabs.farming.KingSwitch then
+        tabs.farming.KingSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Tool and tabs.farming.ToolExerciseSwitch then
+        tabs.farming.ToolExerciseSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Squat and tabs.farming.SquatExerciseSwitch then
+        tabs.farming.SquatExerciseSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Lift and tabs.farming.LiftExerciseSwitch then
+        tabs.farming.LiftExerciseSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Squat or tabs.boss.Data.TrainingSnapshot.Lift then
+        tabs.farming.leaveExerciseMachine()
+    end
+    if tabs.boss.Data.TrainingSnapshot.AutoRep and tabs.farming.AutoRepSwitch then
+        tabs.farming.AutoRepSwitch:Set(false, true)
+    end
+    if tabs.boss.Data.TrainingSnapshot.Rock and tabs.farming.RockSwitch then
+        tabs.farming.RockSwitch:Set(false, true)
+    end
+end
+
+tabs.boss.resumeTraining = function()
+    local snapshot = tabs.boss.Data.TrainingSnapshot
+    if not snapshot then return end
+    tabs.boss.Data.TrainingSnapshot = nil
+    if snapshot.Rebirth and tabs.farming.RebirthData.Switch then
+        tabs.farming.RebirthData.Switch:Set(false, true)
+    end
+    if snapshot.Size and tabs.farming.SizeSwitch then
+        tabs.farming.SizeSwitch:Set(false, true)
+    end
+    if snapshot.King and tabs.farming.KingSwitch then
+        tabs.farming.KingSwitch:Set(false, true)
+    end
+    if snapshot.Tool and tabs.farming.ToolExerciseSwitch then
+        tabs.farming.ToolExerciseSwitch:Set(false, true)
+    end
+    if snapshot.Squat and tabs.farming.SquatExerciseSwitch then
+        tabs.farming.SquatExerciseSwitch:Set(false, true)
+    end
+    if snapshot.Lift and tabs.farming.LiftExerciseSwitch then
+        tabs.farming.LiftExerciseSwitch:Set(false, true)
+    end
+    if snapshot.AutoRep and tabs.farming.AutoRepSwitch then
+        tabs.farming.AutoRepSwitch:Set(false, true)
+    end
+    if snapshot.Rock and tabs.farming.RockSwitch then
+        tabs.farming.RockSwitch:Set(false, true)
+    end
+    for _, config in ipairs(tabs.farming.Configs) do
+        if snapshot.Configs[config.name] and config.Switch then
+            config.Switch:Set(false, true)
+        end
+    end
+end
+
+utils.notify("HonenxWhite", "Mensaje 3 cargado: Farming completo ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 4: Fast Rebirth V2 - Ultra Titans + Chaos Overlords
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- FUNCIONES AUXILIARES: Desequipar y equipar pets
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.fast.desequipAll = function()
+    local petsFolder = player.petsFolder
+    for _, folder in pairs(petsFolder:GetChildren()) do
+        if folder:IsA("Folder") then
+            for _, pet in pairs(folder:GetChildren()) do
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", pet)
+                end)
+            end
+        end
+    end
+    if player.Character then
+        for _, obj in pairs(player.Character:GetChildren()) do
+            if obj:IsA("StringValue") or obj:IsA("ObjectValue") then
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", obj)
+                end)
+            end
+        end
+    end
+    task.wait(0.3)
+end
+
+tabs.fast.equipPets = function(petNames)
+    local petsFolder = player.petsFolder
+    local uniquePets = petsFolder.Unique
+    tabs.fast.desequipAll()
+    task.wait(0.2)
+    local equipped = 0
+    for _, petName in ipairs(petNames) do
+        for _, pet in pairs(uniquePets:GetChildren()) do
+            if pet.Name == petName then
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.equipPetEvent:FireServer("equipPet", pet)
+                end)
+                equipped = equipped + 1
+                task.wait(0.05)
+            end
+        end
+    end
+    task.wait(0.3)
+    return equipped
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- ULTRA TITANS PACK
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.fast:AddSection("Ultra Titans Pack")
+
+tabs.fast.UltraData = {
+    Running = false,
+    WorkerActive = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+    Strength = player.leaderstats:WaitForChild("Strength"),
+    TargetRebirths = 0,
+    TotalRebirths = 0,
+    RepPets = {"Omega Overlord"},
+    RebirthPets = {"Titanium Hydra"},
+}
+
+local ultraStatus = tabs.fast:AddLabel("Status: Inactive")
+local ultraStats = tabs.fast:AddLabel("Rebirths: 0 | Gained: 0")
+
+tabs.fast.UltraWorker = function()
+    local startRebirths = tabs.fast.UltraData.Rebirths.Value
+
+    while utils.isCurrent() and tabs.fast.UltraData.Running do
+        if tabs.fast.UltraData.TargetRebirths > 0
+            and tabs.fast.UltraData.Rebirths.Value >= tabs.fast.UltraData.TargetRebirths then
+            ultraStatus:SetText("Status: Target alcanzado")
+            tabs.fast.UltraData.Running = false
+            break
+        end
+
+        ultraStatus:SetText("Status: Equipando Rep...")
+        local equippedRep = 0
+        pcall(function()
+            equippedRep = tabs.fast.equipPets(tabs.fast.UltraData.RepPets)
+        end)
+        ultraStatus:SetText("Status: " .. equippedRep .. " Rep equipados")
+
+        local currentRebirths = tabs.fast.UltraData.Rebirths.Value
+        local targetStrength = 5000 + currentRebirths * 2550
+        local repsPerBurst = player.MembershipType == Enum.MembershipType.Premium and 6 or 12
+
+        ultraStatus:SetText("Status: Farmeando...")
+        while utils.isCurrent() and tabs.fast.UltraData.Running
+            and tabs.fast.UltraData.Strength.Value < targetStrength do
+            pcall(function()
+                for _ = 1, repsPerBurst do
+                    player.muscleEvent:FireServer("rep")
+                end
+            end)
+            task.wait(0.05)
+            ultraStats:SetText("Rebirths: "
+                .. utils.formatWithCommas(tabs.fast.UltraData.Rebirths.Value)
+                .. " | Gained: "
+                .. utils.formatWithCommas(tabs.fast.UltraData.Rebirths.Value - startRebirths))
+        end
+
+        if utils.isCurrent() and tabs.fast.UltraData.Running
+            and tabs.fast.UltraData.Strength.Value >= targetStrength then
+            ultraStatus:SetText("Status: Equipando Hydra...")
+            local equippedReb = 0
+            pcall(function()
+                equippedReb = tabs.fast.equipPets(tabs.fast.UltraData.RebirthPets)
+            end)
+            ultraStatus:SetText("Status: " .. equippedReb .. " Hydra equipadas")
+            task.wait(0.5)
+
+            ultraStatus:SetText("Status: Haciendo Rebirth...")
+            local rebirthBefore = tabs.fast.UltraData.Rebirths.Value
+            local attempts = 0
+            repeat
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.05)
+                attempts = attempts + 1
+            until not tabs.fast.UltraData.Running
+                or tabs.fast.UltraData.Rebirths.Value > rebirthBefore
+                or attempts >= 50
+            if tabs.fast.UltraData.Rebirths.Value > rebirthBefore then
+                tabs.fast.UltraData.TotalRebirths = tabs.fast.UltraData.TotalRebirths
+                    + (tabs.fast.UltraData.Rebirths.Value - rebirthBefore)
+            end
+            task.wait(0.5)
+        end
+        task.wait(0.1)
+    end
+    tabs.fast.UltraData.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Ultra - Target rebirths (0 = inf):", function(text)
+    local num = tonumber(text)
+    if num and num >= 0 then
+        tabs.fast.UltraData.TargetRebirths = math.floor(num)
+    end
+end, {clear = false})
+
+tabs.fast.UltraToggle = tabs.fast:AddSwitch("Fast Rebirth Ultra Titans", function(state)
+    tabs.fast.UltraData.Running = state
+    if state then
+        ultraStatus:SetText("Status: Iniciando Ultra...")
+        if not tabs.fast.UltraData.WorkerActive then
+            tabs.fast.UltraData.WorkerActive = true
+            task.spawn(tabs.fast.UltraWorker)
+        end
+    else
+        ultraStatus:SetText("Status: Inactive")
+    end
+end)
+
+tabs.fast:AddLabel("Omega Overlord > Farm > Titanium Hydra > Rebirth")
+
+-- ═══════════════════════════════════════════════════════════════
+-- CHAOS OVERLORDS PACK
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.fast:AddSection("Chaos Overlords Pack")
+
+tabs.fast.ChaosData = {
+    Running = false,
+    WorkerActive = false,
+    Rebirths = player.leaderstats:WaitForChild("Rebirths"),
+    Strength = player.leaderstats:WaitForChild("Strength"),
+    TargetRebirths = 0,
+    TotalRebirths = 0,
+    RepPets = {"Swift Samurai"},
+    RebirthPets = {"Tribal Overlord"},
+}
+
+local chaosStatus = tabs.fast:AddLabel("Status: Inactive")
+local chaosStats = tabs.fast:AddLabel("Rebirths: 0 | Gained: 0")
+
+tabs.fast.ChaosWorker = function()
+    local startRebirths = tabs.fast.ChaosData.Rebirths.Value
+
+    while utils.isCurrent() and tabs.fast.ChaosData.Running do
+        if tabs.fast.ChaosData.TargetRebirths > 0
+            and tabs.fast.ChaosData.Rebirths.Value >= tabs.fast.ChaosData.TargetRebirths then
+            chaosStatus:SetText("Status: Target alcanzado")
+            tabs.fast.ChaosData.Running = false
+            break
+        end
+
+        chaosStatus:SetText("Status: Equipando Rep...")
+        local equippedRep = 0
+        pcall(function()
+            equippedRep = tabs.fast.equipPets(tabs.fast.ChaosData.RepPets)
+        end)
+        chaosStatus:SetText("Status: " .. equippedRep .. " Rep equipados")
+
+        local currentRebirths = tabs.fast.ChaosData.Rebirths.Value
+        local targetStrength = 5000 + currentRebirths * 2550
+        local repsPerBurst = player.MembershipType == Enum.MembershipType.Premium and 6 or 12
+
+        chaosStatus:SetText("Status: Farmeando...")
+        while utils.isCurrent() and tabs.fast.ChaosData.Running
+            and tabs.fast.ChaosData.Strength.Value < targetStrength do
+            pcall(function()
+                for _ = 1, repsPerBurst do
+                    player.muscleEvent:FireServer("rep")
+                end
+            end)
+            task.wait(0.05)
+            chaosStats:SetText("Rebirths: "
+                .. utils.formatWithCommas(tabs.fast.ChaosData.Rebirths.Value)
+                .. " | Gained: "
+                .. utils.formatWithCommas(tabs.fast.ChaosData.Rebirths.Value - startRebirths))
+        end
+
+        if utils.isCurrent() and tabs.fast.ChaosData.Running
+            and tabs.fast.ChaosData.Strength.Value >= targetStrength then
+            chaosStatus:SetText("Status: Equipando Tribal...")
+            local equippedReb = 0
+            pcall(function()
+                equippedReb = tabs.fast.equipPets(tabs.fast.ChaosData.RebirthPets)
+            end)
+            chaosStatus:SetText("Status: " .. equippedReb .. " Tribal equipados")
+            task.wait(0.5)
+
+            chaosStatus:SetText("Status: Haciendo Rebirth...")
+            local rebirthBefore = tabs.fast.ChaosData.Rebirths.Value
+            local attempts = 0
+            repeat
+                pcall(function()
+                    services.ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                end)
+                task.wait(0.05)
+                attempts = attempts + 1
+            until not tabs.fast.ChaosData.Running
+                or tabs.fast.ChaosData.Rebirths.Value > rebirthBefore
+                or attempts >= 50
+            if tabs.fast.ChaosData.Rebirths.Value > rebirthBefore then
+                tabs.fast.ChaosData.TotalRebirths = tabs.fast.ChaosData.TotalRebirths
+                    + (tabs.fast.ChaosData.Rebirths.Value - rebirthBefore)
+            end
+            task.wait(0.5)
+        end
+        task.wait(0.1)
+    end
+    tabs.fast.ChaosData.WorkerActive = false
+end
+
+tabs.fast:AddTextBox("Chaos - Target rebirths (0 = inf):", function(text)
+    local num = tonumber(text)
+    if num and num >= 0 then
+        tabs.fast.ChaosData.TargetRebirths = math.floor(num)
+    end
+end, {clear = false})
+
+tabs.fast.ChaosToggle = tabs.fast:AddSwitch("Fast Rebirth Chaos Overlords", function(state)
+    tabs.fast.ChaosData.Running = state
+    if state then
+        chaosStatus:SetText("Status: Iniciando Chaos...")
+        if not tabs.fast.ChaosData.WorkerActive then
+            tabs.fast.ChaosData.WorkerActive = true
+            task.spawn(tabs.fast.ChaosWorker)
+        end
+    else
+        chaosStatus:SetText("Status: Inactive")
+    end
+end)
+
+tabs.fast:AddLabel("Swift Samurai > Farm > Tribal Overlord > Rebirth")
+
+utils.notify("HonenxWhite", "Mensaje 4 cargado: Fast V2 completo ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 5: Boss completo (Rarities + Special + Chest + Evade)
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- INICIALIZAR DATA EXTENDIDA DEL BOSS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.Data = tabs.boss.Data or {}
+tabs.boss.Data.AttackSequence = nil
+tabs.boss.Data.EvadeUntil = 0
+tabs.boss.Data.EvadeDistance = 230
+tabs.boss.Data.PunchBehindDistance = 45
+tabs.boss.Data.StompHealthThreshold = 0.35
+tabs.boss.Data.DodgeStomps = false
+tabs.boss.Data.BossOrder = tabs.boss.Data.BossOrder or {}
+tabs.boss.Data.BossByDisplayName = tabs.boss.Data.BossByDisplayName or {}
+tabs.boss.Data.SelectedBosses = tabs.boss.Data.SelectedBosses or {}
+
+-- ═══════════════════════════════════════════════════════════════
+-- SELECTOR DE RARITIES DE BOSS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss:AddSection("Target Specific Bosses")
+
+local selectedBossesLabel = tabs.boss:AddLabel("Targeted Bosses: Detecting...")
+
+tabs.boss.BossDropdown = tabs.boss:AddDropdown("Target specific Bosses", function(displayName)
+    local bossModelName = tabs.boss.Data.BossByDisplayName[displayName]
+    if bossModelName then
+        for modelName in pairs(tabs.boss.Data.SelectedBosses) do
+            tabs.boss.Data.SelectedBosses[modelName] = false
+        end
+        tabs.boss.Data.SelectedBosses[bossModelName] = true
+        selectedBossesLabel:SetText("Targeted Bosses: " .. displayName)
+    end
+end)
+
+tabs.boss.addBossChoice = function(modelName, displayName)
+    modelName = tostring(modelName or "")
+    displayName = tostring(displayName or modelName)
+    if modelName == "" or tabs.boss.Data.BossByDisplayName[displayName] then return end
+    tabs.boss.Data.BossByDisplayName[displayName] = modelName
+    if tabs.boss.Data.SelectedBosses[modelName] == nil then
+        tabs.boss.Data.SelectedBosses[modelName] = false
+    end
+    table.insert(tabs.boss.Data.BossOrder, modelName)
+    tabs.boss.BossDropdown:Add(displayName)
+end
+
+-- Cargar rarities desde el config del juego
+local configOk, bossConfig = pcall(function()
+    return require(services.ReplicatedStorage:WaitForChild("shared"):WaitForChild("config"):WaitForChild("BossEventConfig"))
+end)
+
+if configOk and bossConfig and bossConfig.RARITIES then
+    local allowedBossTiers = {"common", "rare", "epic", "legendary", "mythic", "rainbow"}
+    for _, rarity in ipairs(bossConfig.RARITIES) do
+        local tierText = string.lower(tostring(rarity.Name or rarity.DisplayName or rarity.BossModel or ""))
+        local modelText = string.lower(tostring(rarity.BossModel or ""))
+        local allowed = false
+        for _, tier in ipairs(allowedBossTiers) do
+            if string.find(tierText, tier, 1, true) or string.find(modelText, tier, 1, true) then
+                allowed = true
+                break
+            end
+        end
+        if allowed and rarity.BossModel then
+            tabs.boss.addBossChoice(rarity.BossModel, rarity.DisplayName or rarity.Name or rarity.BossModel)
+        end
+    end
+    selectedBossesLabel:SetText("Targeted Bosses: None (elegí uno)")
+else
+    selectedBossesLabel:SetText("Farmed Bosses: Waiting for detection")
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- SPECIAL WORLD BOSSES (Halloween)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss:AddSection("Special World Bosses")
+
+local specialBossesLabel = tabs.boss:AddLabel("World bosses: All")
+
+tabs.boss.Data.SpecialBosses = {
+    ["Grim Reaper"] = true,
+    ["Frankenbrute"] = true,
+    ["Pumpkin Titan"] = true,
+    ["Scarecrow Colossus"] = true,
+}
+
+tabs.boss.Data.SpecialBossOrder = {
+    "Grim Reaper",
+    "Frankenbrute",
+    "Pumpkin Titan",
+    "Scarecrow Colossus",
+}
+
+tabs.boss.Data.SpecialBossByDisplayName = {}
+
+local specialBossDropdown = tabs.boss:AddDropdown("World boss target (select one)", function(displayName)
+    local bossName = tabs.boss.Data.SpecialBossByDisplayName[displayName]
+    if bossName then
+        for _, name in ipairs(tabs.boss.Data.SpecialBossOrder) do
+            tabs.boss.Data.SpecialBosses[name] = false
+        end
+        tabs.boss.Data.SpecialBosses[bossName] = true
+        specialBossesLabel:SetText("World boss target: " .. bossName)
+    end
+end)
+
+for _, bossName in ipairs(tabs.boss.Data.SpecialBossOrder) do
+    tabs.boss.Data.SpecialBossByDisplayName[bossName] = bossName
+    tabs.boss.Data.SpecialBosses[bossName] = false
+    specialBossDropdown:Add(bossName)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- EVADE ATTACKS (Punch / Stomp)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.evadeAttack = function(model, hitbox, root, humanoid)
+    local sequence = model:GetAttribute("BossAttackSequence")
+    local attackKind = model:GetAttribute("BossAttackKind")
+    local attackCFrame = model:GetAttribute("BossAttackCFrame")
+    local impactTime = model:GetAttribute("BossAttackImpactTime")
+
+    if typeof(sequence) == "number" and sequence ~= tabs.boss.Data.AttackSequence then
+        tabs.boss.Data.AttackSequence = sequence
+        if typeof(attackKind) == "string" and typeof(attackCFrame) == "CFrame" and typeof(impactTime) == "number" then
+            tabs.boss.Data.EvadeUntil = impactTime + 0.6
+        end
+    end
+
+    if typeof(attackCFrame) ~= "CFrame" or workspace:GetServerTimeNow() > tabs.boss.Data.EvadeUntil then
+        return
+    end
+
+    attackKind = string.lower(tostring(attackKind or ""))
+
+    -- Evadir punch
+    if string.find(attackKind, "punch", 1, true) then
+        local center = tabs.boss.getBossHeadPosition(model, hitbox)
+        local direction = Vector3.new(attackCFrame.LookVector.X, 0, attackCFrame.LookVector.Z)
+        if direction.Magnitude < 1 then
+            direction = Vector3.new(hitbox.CFrame.LookVector.X, 0, hitbox.CFrame.LookVector.Z)
+        end
+        if direction.Magnitude < 1 then direction = Vector3.new(0, 0, 1) end
+        local safePosition = center - direction.Unit * tabs.boss.Data.PunchBehindDistance
+        root.CFrame = CFrame.lookAt(safePosition, center)
+        root.AssemblyLinearVelocity = Vector3.zero
+        root.AssemblyAngularVelocity = Vector3.zero
+        bossStatusLabel:SetText("Status: Dodging Punch")
+        return "Punch"
+    end
+
+    -- Evadir stomp (solo si tiene poca vida)
+    if not string.find(attackKind, "stomp", 1, true) then return end
+    if humanoid.Health / math.max(humanoid.MaxHealth, 1) <= tabs.boss.Data.StompHealthThreshold then
+        tabs.boss.Data.DodgeStomps = true
+    end
+    if not tabs.boss.Data.DodgeStomps then return end
+
+    local direction = Vector3.new(root.Position.X - attackCFrame.Position.X, 0, root.Position.Z - attackCFrame.Position.Z)
+    if direction.Magnitude < 1 then
+        direction = Vector3.new(-attackCFrame.LookVector.X, 0, -attackCFrame.LookVector.Z)
+    end
+    if direction.Magnitude < 1 then direction = Vector3.new(1, 0, 0) end
+    direction = direction.Unit
+    local safePosition = attackCFrame.Position + direction * tabs.boss.Data.EvadeDistance + Vector3.new(0, 18, 0)
+    root.CFrame = CFrame.lookAt(safePosition, attackCFrame.Position)
+    root.AssemblyLinearVelocity = Vector3.zero
+    root.AssemblyAngularVelocity = Vector3.zero
+    bossStatusLabel:SetText("Status: Dodging Stomp")
+    return "Stomp"
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- GET ALIVE CHARACTER
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.getAliveCharacter = function(generation, timeout)
+    local startedAt = os.clock()
+    repeat
+        local character = player.Character
+        local root = character and character:FindFirstChild("HumanoidRootPart")
+        local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+        if root and humanoid and humanoid.Health > 0 then
+            utils.playerData.Character = character
+            utils.playerData.Humanoid = humanoid
+            return character, root, humanoid
+        end
+        bossStatusLabel:SetText("Status: Waiting for Respawn")
+        task.wait(0.1)
+    until not tabs.boss.Data.Running
+        or tabs.boss.Data.Generation ~= generation
+        or (timeout and os.clock() - startedAt >= timeout)
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- FIND CHEST + COLLECT CHEST
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.findChest = function()
+    local chest
+    for _, candidate in ipairs(services.CollectionService:GetTagged("BossEventChest")) do
+        if candidate:IsDescendantOf(workspace) then
+            chest = candidate
+            break
+        end
+    end
+    if not chest then
+        chest = workspace:FindFirstChild("BossChest", true)
+    end
+    if not chest then
+        for _, candidate in ipairs(workspace:GetDescendants()) do
+            if candidate:IsA("ProximityPrompt") and candidate.Name == "bossChestPrompt" then
+                chest = candidate.Parent
+                break
+            end
+        end
+    end
+    if not chest then return end
+    local prompt = chest:FindFirstChild("bossChestPrompt", true)
+    local part = prompt and prompt.Parent
+        or (chest:IsA("Model") and (chest.PrimaryPart or chest:FindFirstChildWhichIsA("BasePart", true)))
+        or chest
+    if part and part:IsA("BasePart") then
+        return chest, prompt, part
+    end
+end
+
+tabs.boss.collectChest = function(generation)
+    bossStatusLabel:SetText("Status: Waiting for Chest")
+    local startedAt = os.clock()
+    local chest, prompt, part
+    repeat
+        chest, prompt, part = tabs.boss.findChest()
+        if chest and chest:GetAttribute("BossChestEmerging") ~= true then break end
+        task.wait(0.1)
+    until not tabs.boss.Data.Running or tabs.boss.Data.Generation ~= generation or os.clock() - startedAt >= 12
+    if not chest or not part then return end
+
+    bossStatusLabel:SetText("Status: Collecting Chest")
+    startedAt = os.clock()
+    repeat
+        local character, root = tabs.boss.getAliveCharacter(generation, 2)
+        if character and root and chest.Parent and part.Parent then
+            bossStatusLabel:SetText("Status: Collecting Chest")
+            pcall(function()
+                root.CFrame = CFrame.lookAt(part.Position + Vector3.new(0, 3, 4), part.Position)
+                root.AssemblyLinearVelocity = Vector3.zero
+            end)
+            task.wait(0.15)
+            if prompt and prompt.Parent and fireproximityprompt then
+                pcall(function() fireproximityprompt(prompt) end)
+            else
+                pcall(function()
+                    services.VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.E, false, game)
+                    task.wait(0.1)
+                    services.VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.E, false, game)
+                end)
+            end
+        end
+        task.wait(0.25)
+    until not tabs.boss.Data.Running
+        or tabs.boss.Data.Generation ~= generation
+        or player:GetAttribute("BossChestPending") == false
+        or not chest.Parent
+        or os.clock() - startedAt >= 12
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- FIND ACTIVE BOSS (con filtros de rareza + special)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.shouldFarmBoss = function(model, mode)
+    if not model then return false end
+    local isSpecial = tabs.boss.Data.SpecialBosses and tabs.boss.Data.SpecialBosses[model.Name] ~= nil
+    if mode == "Halloween" then
+        return isSpecial and tabs.boss.Data.SpecialBosses[model.Name] == true
+    end
+    if isSpecial then return false end
+    return tabs.boss.Data.SelectedBosses[model.Name] == true
+end
+
+tabs.boss.findActiveBoss = function(mode)
+    mode = mode or "Main"
+
+    local function isAliveBoss(model, hitbox)
+        if not model or not model:IsA("Model") then return false end
+        if not hitbox or not hitbox:IsA("BasePart") then return false end
+        if not model:IsDescendantOf(workspace) then return false end
+        local stats = model:FindFirstChild("stats") or model:FindFirstChild("Stats")
+        local health = stats and (stats:FindFirstChild("Health") or stats:FindFirstChild("health"))
+        local maxHealth = stats and (stats:FindFirstChild("MaxHealth") or stats:FindFirstChild("maxHealth"))
+        local humanoid = model:FindFirstChildOfClass("Humanoid")
+        local healthValue = health and tonumber(health.Value)
+        if healthValue == nil and humanoid then healthValue = humanoid.Health end
+        if healthValue == nil then healthValue = tonumber(model:GetAttribute("Health")) end
+        if healthValue ~= nil and healthValue <= 0 then return false end
+        return true, stats, health, maxHealth
+    end
+
+    -- Modo Halloween: buscar bosses special
+    if mode == "Halloween" then
+        for _, bossName in ipairs(tabs.boss.Data.SpecialBossOrder) do
+            if tabs.boss.Data.SpecialBosses[bossName] == true then
+                for _, descendant in ipairs(workspace:GetDescendants()) do
+                    if descendant:IsA("Model") and descendant.Name == bossName then
+                        local hitbox = descendant:FindFirstChild("BossDamageHitbox", true)
+                        local alive, stats, health, maxHealth = isAliveBoss(descendant, hitbox)
+                        if alive then return descendant, hitbox, health, maxHealth end
+                    end
+                end
+            end
+        end
+        return nil
+    end
+
+    -- Modo Main: buscar por tag
+    for _, taggedBoss in ipairs(services.CollectionService:GetTagged("BossEventBoss")) do
+        if taggedBoss:IsA("Model") and taggedBoss:IsDescendantOf(workspace)
+            and tabs.boss.shouldFarmBoss(taggedBoss, mode) then
+            local hitbox = taggedBoss:FindFirstChild("BossDamageHitbox", true)
+            local alive, stats, health, maxHealth = isAliveBoss(taggedBoss, hitbox)
+            if alive then return taggedBoss, hitbox, health, maxHealth end
+        end
+    end
+
+    -- Fallback: buscar en Events/BossEvent
+    local events = workspace:FindFirstChild("Events")
+    local bossFolder = events and (events:FindFirstChild("BossEvent") or events:FindFirstChild("BossArena"))
+    if bossFolder then
+        for _, descendant in ipairs(bossFolder:GetDescendants()) do
+            if descendant:IsA("Model") and tabs.boss.shouldFarmBoss(descendant, mode) then
+                local hitbox = descendant:FindFirstChild("BossDamageHitbox", true)
+                local alive, stats, health, maxHealth = isAliveBoss(descendant, hitbox)
+                if alive then return descendant, hitbox, health, maxHealth end
+            end
+        end
+    end
+
+    return nil
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- ATTACK BOSS (con evade integrado)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.attack = function(model, health, maxHealth, hitbox)
+    local character = player.Character
+    local root = character and character:FindFirstChild("HumanoidRootPart")
+    local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+    if not root or not humanoid or humanoid.Health <= 0 then return end
+
+    local evadeMode = tabs.boss.evadeAttack(model, hitbox, root, humanoid)
+    if evadeMode == "Stomp" then return end
+
+    local punch = character:FindFirstChild("Punch") or player.Backpack:FindFirstChild("Punch")
+    if punch and punch.Parent ~= character then
+        pcall(function() humanoid:EquipTool(punch) end)
+    end
+
+    local leftHand = character:FindFirstChild("LeftHand")
+    local rightHand = character:FindFirstChild("RightHand")
+    local center = hitbox.Position
+
+    if evadeMode ~= "Punch" then
+        local towardPlayer = root.Position - center
+        towardPlayer = Vector3.new(towardPlayer.X, 0, towardPlayer.Z)
+        if towardPlayer.Magnitude < 1 then
+            towardPlayer = Vector3.new(hitbox.CFrame.LookVector.X, 0, hitbox.CFrame.LookVector.Z)
+        end
+        if towardPlayer.Magnitude < 1 then towardPlayer = Vector3.new(0, 0, 1) end
+        local standPos = center + towardPlayer.Unit * math.max(3, math.min(6, hitbox.Size.Magnitude * 0.2)) + Vector3.new(0, 1.5, 0)
+        root.CFrame = CFrame.lookAt(standPos, center)
+    end
+
+    root.AssemblyLinearVelocity = Vector3.zero
+    root.AssemblyAngularVelocity = Vector3.zero
+
+    pcall(function()
+        if firetouchinterest and leftHand then
+            firetouchinterest(hitbox, leftHand, 0)
+            firetouchinterest(hitbox, leftHand, 1)
+        end
+        if firetouchinterest and rightHand then
+            firetouchinterest(hitbox, rightHand, 0)
+            firetouchinterest(hitbox, rightHand, 1)
+        end
+    end)
+
+    if os.clock() - tabs.boss.Data.LastPunch >= tabs.boss.Data.PunchInterval then
+        tabs.boss.Data.LastPunch = os.clock()
+        pcall(function()
+            player.muscleEvent:FireServer("punch", "leftHand")
+            player.muscleEvent:FireServer("punch", "rightHand")
+            if punch then punch:Activate() end
+        end)
+    end
+
+    bossLabel:SetText("Boss: " .. (workspace:GetAttribute("BossDisplayName") or model.Name))
+    local hv = tabs.boss.getBossHealth(health)
+    local mhv = tabs.boss.getBossMaxHealth(maxHealth)
+    bossHealthLabel:SetText("Health: " .. utils.formatNumber(hv) .. " / " .. utils.formatNumber(mhv))
+end
+
+-- ═══════════════════════════════════════════════════════════════
+-- AUTO FARM LOOP (con CollectChest + Pause/Resume Training)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boss.startAutoFarmFull = function(mode, state)
+    if not state then
+        if tabs.boss.Data.ActiveMode == mode then
+            tabs.boss.Data.Running = false
+            tabs.boss.Data.ActiveMode = nil
+            tabs.boss.Data.Generation += 1
+            tabs.boss.Data.Phase = "Waiting"
+            bossStatusLabel:SetText("Status: Disabled")
+            if tabs.boss.resumeTraining then tabs.boss.resumeTraining() end
+        end
+        return
+    end
+
+    -- Apagar el otro modo
+    if mode == "Halloween" and tabs.boss.MainSwitch then
+        tabs.boss.MainSwitch:Set(false, true)
+    elseif mode == "Main" and tabs.boss.HalloweenSwitch then
+        tabs.boss.HalloweenSwitch:Set(false, true)
+    end
+
+    tabs.boss.Data.ActiveMode = mode
+    tabs.boss.Data.Running = true
+    tabs.boss.Data.Generation += 1
+    local generation = tabs.boss.Data.Generation
+
+    task.spawn(function()
+        local wasFighting = false
+        while utils.isCurrent() and tabs.boss.Data.Running
+            and tabs.boss.Data.Generation == generation and tabs.boss.Data.ActiveMode == mode do
+            pcall(function()
+                local model, hitbox, health, maxHealth = tabs.boss.findActiveBoss(mode)
+                local selected = model and tabs.boss.shouldFarmBoss(model, mode)
+                if model and not selected then
+                    if wasFighting then
+                        wasFighting = false
+                        if tabs.boss.resumeTraining then tabs.boss.resumeTraining() end
+                    end
+                    bossStatusLabel:SetText("Status: Skipping " .. model.Name)
+                elseif model then
+                    if not wasFighting then
+                        wasFighting = true
+                        tabs.boss.Data.AttackSequence = nil
+                        tabs.boss.Data.EvadeUntil = 0
+                        tabs.boss.Data.DodgeStomps = false
+                        if tabs.boss.pauseTraining then tabs.boss.pauseTraining() end
+                    end
+                    local char = player.Character
+                    local hum = char and char:FindFirstChildOfClass("Humanoid")
+                    if hum and hum.Health > 0 then
+                        bossStatusLabel:SetText("Status: Fighting " .. (mode == "Halloween" and "Halloween Boss" or "Main Boss"))
+                        tabs.boss.attack(model, health, maxHealth, hitbox)
+                    else
+                        bossStatusLabel:SetText("Status: Waiting for Respawn")
+                    end
+                elseif wasFighting then
+                    wasFighting = false
+                    pcall(tabs.boss.collectChest, generation)
+                    bossLabel:SetText("Boss: None")
+                    bossHealthLabel:SetText("Health: 0 / 0")
+                    if tabs.boss.Data.ContinueTraining and tabs.boss.resumeTraining then
+                        tabs.boss.resumeTraining()
+                    end
+                    bossStatusLabel:SetText("Status: Waiting for Boss")
+                else
+                    bossStatusLabel:SetText("Status: Waiting for " .. (mode == "Halloween" and "Halloween Boss" or "Main-Island Boss"))
+                end
+            end)
+            task.wait(model and selected and 0.03 or 0.25)
+        end
+    end)
+end
+
+-- Reemplazar los switches existentes
+tabs.boss.MainSwitch = tabs.boss:AddSwitch("Auto Boss — Main Island", function(state)
+    tabs.boss.startAutoFarmFull("Main", state)
+end)
+tabs.boss.MainSwitch:Set(false)
+
+tabs.boss.HalloweenSwitch = tabs.boss:AddSwitch("Auto Boss — Halloween", function(state)
+    tabs.boss.startAutoFarmFull("Halloween", state)
+end)
+tabs.boss.HalloweenSwitch:Set(false)
+
+utils.notify("HonenxWhite", "Mensaje 5 cargado: Boss completo ✅", 3, "success")
+-- ═══════════════════════════════════════════════════════════════
+-- MENSAJE 6 FINAL: Auto Pet + Combos + Cierre
+-- ═══════════════════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════════════════
+-- AUTO PET (comprar continuamente el pet seleccionado)
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.inventory:AddSection("Auto Pet")
+
+tabs.inventory.AutoPetData = {
+    Running = false,
+    SelectedPet = nil,
+}
+
+local autoPetStatus = tabs.inventory:AddLabel("Status: Inactive")
+
+local autoPetDropdown = tabs.inventory:AddDropdown("Choose Pet", function(text)
+    tabs.inventory.AutoPetData.SelectedPet = text
+end)
+for _, petName in ipairs(tabs.inventory.PetShopData.PetList) do
+    autoPetDropdown:Add(petName)
+end
+
+tabs.inventory:AddSwitch("Auto Pet", function(state)
+    tabs.inventory.AutoPetData.Running = state
+    if not state then
+        autoPetStatus:SetText("Status: Inactive")
+        return
+    end
+    if not tabs.inventory.AutoPetData.SelectedPet then
+        utils.notify("Auto Pet", "Elegí un pet primero", 2, "warning")
+        tabs.inventory.AutoPetData.Running = false
+        return
+    end
+
+    autoPetStatus:SetText("Status: Comprando " .. tabs.inventory.AutoPetData.SelectedPet)
+    task.spawn(function()
+        while utils.isCurrent() and tabs.inventory.AutoPetData.Running do
+            local petName = tabs.inventory.AutoPetData.SelectedPet
+            local selectedPet = tabs.inventory.PetShopFolder:FindFirstChild(petName)
+            if selectedPet then
+                pcall(function()
+                    tabs.inventory.PetShopRemote:InvokeServer(selectedPet)
+                end)
+            end
+            task.wait(0.2)
+        end
+        autoPetStatus:SetText("Status: Inactive")
+    end)
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- CONTADOR DE COMBOS DE BOOSTS
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.boosts:AddSection("Contador de Boosts")
+
+tabs.boosts.ComboData = {
+    ProteinEgg = 0,
+    TropicalShake = 0,
+    EnergyShake = 0,
+    ProteinBar = 0,
+    ToughBar = 0,
+    ProteinShake = 0,
+    UltraShake = 0,
+    EnergyBar = 0,
+}
+
+local comboLabel = tabs.boosts:AddLabel("Combo: Sin boosts")
+
+task.spawn(function()
+    while utils.isCurrent() do
+        local items = {
+            ProteinEgg = 0, TropicalShake = 0, EnergyShake = 0, ProteinBar = 0,
+            ToughBar = 0, ProteinShake = 0, UltraShake = 0, EnergyBar = 0,
+        }
+        local char = player.Character
+        if char then
+            for _, item in ipairs(char:GetChildren()) do
+                if items[item.Name] ~= nil then items[item.Name] = items[item.Name] + 1 end
+            end
+        end
+        for _, item in ipairs(player.Backpack:GetChildren()) do
+            if items[item.Name] ~= nil then items[item.Name] = items[item.Name] + 1 end
+        end
+        local active = {}
+        for name, count in pairs(items) do
+            if count > 0 then table.insert(active, name .. " (" .. count .. ")") end
+        end
+        if #active == 0 then
+            comboLabel:SetText("Combo: Sin boosts")
+        else
+            comboLabel:SetText("Combo: " .. table.concat(active, " · "))
+        end
+        task.wait(2)
+    end
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- EMERGENCY STOP
+-- ═══════════════════════════════════════════════════════════════
+
+tabs.info:AddSection("Emergency")
+
+tabs.info:AddButton("🛑 EMERGENCY STOP", function()
+    -- Apagar todos los switches
+    if _G.HonenxWhiteUltraFastRep then _G.HonenxWhiteUltraFastRep.Enabled = false end
+    if _G.RockFarmRunning then _G.RockFarmRunning = false end
+    if _G.deathRingEnabled then _G.deathRingEnabled = false end
+    if _G.killAll then _G.killAll = false end
+    if _G.killBlacklistedOnly then _G.killBlacklistedOnly = false end
+    if _G.HonenxAntiAFK then _G.HonenxAntiAFK = false end
+
+    -- Apagar todos los switches de la GUI
+    for _, tab in pairs(tabs) do
+        if tab._ui and tab._ui._connections then
+            for _, conn in ipairs(tab._ui._connections) do
+                if conn and conn.Connected then
+                    -- No desconectamos los switches, solo apagamos los que tienen estado
+                end
+            end
+        end
+    end
+
+    -- Detener loops de Fast Rebirth
+    if tabs.fast then
+        if tabs.fast.FastRepData then tabs.fast.FastRepData.Running = false end
+        if tabs.fast.FastRebirthData then tabs.fast.FastRebirthData.Running = false end
+        if tabs.fast.UltraData then tabs.fast.UltraData.Running = false end
+        if tabs.fast.ChaosData then tabs.fast.ChaosData.Running = false end
+    end
+
+    -- Detener Boss
+    if tabs.boss and tabs.boss.Data then
+        tabs.boss.Data.Running = false
+        tabs.boss.Data.ActiveMode = nil
+    end
+
+    -- Detener Farming
+    if tabs.farming then
+        if tabs.farming.MachineExerciseData then
+            tabs.farming.MachineExerciseData.Squat.Running = false
+            tabs.farming.MachineExerciseData.Lift.Running = false
+        end
+        if tabs.farming.ActiveConfigs then
+            for name in pairs(tabs.farming.ActiveConfigs) do
+                tabs.farming.ActiveConfigs[name] = false
+            end
+        end
+    end
+
+    -- Notificación
+    utils.notify("Emergency Stop", "Todas las funciones detenidas", 4, "error")
+end)
+
+-- ═══════════════════════════════════════════════════════════════
+-- CIERRE FINAL
+-- ═══════════════════════════════════════════════════════════════
+
+utils.notify("HonenxWhite", "🎉 Hub COMPLETO cargado — 4,000+ líneas", 5, "success")
+print("[HonenxWhite] ✅ Script COMPLETO cargado al 100%")
+print("[HonenxWhite] Tabs: Main, Killing, Specs, Farming, Fast, Boss, Pets, Boosts, Teleports, Stats, Info")
+print("[HonenxWhite] Build: KNI UI v2.0")
