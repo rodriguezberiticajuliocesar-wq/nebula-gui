@@ -2,6 +2,12 @@
 -- Librería de interfaz compacta para Roblox.
 -- Incluye: AddTab, AddLabel, AddSection, AddButton, AddSwitch, AddTextBox, AddDropdown, AddSlider
 -- Con :Set(), :Get(), notificaciones, dropdowns dinámicos y más.
+--
+-- Cambios v2.0.1:
+--   • ClipsDescendants=false en el page y en el row del dropdown
+--     → el menú puede salir del ScrollingFrame y se ve.
+--   • ZIndex alto (50/51/52) → el menú aparece por encima del resto.
+--   • AddBulk() para cargar dropdowns grandes de una sola vez (más rápido).
 
 local KNI = {}
 KNI.__index = KNI
@@ -361,6 +367,7 @@ function KNI:AddTab(name)
         ScrollBarImageColor3 = COLORS.Accent,
         CanvasSize = UDim2.new(0, 0, 0, 0),
         AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        ClipsDescendants = false,   -- 👈 CAMBIO 1: deja salir el dropdown
     }, self.Pages)
     padding(page, 10, 10, 10, 10)
     make("UIListLayout", {Padding = UDim.new(0, 7), SortOrder = Enum.SortOrder.LayoutOrder}, page)
@@ -641,6 +648,8 @@ function KNI:AddTab(name)
     function tab:AddDropdown(text, callback, default)
         local control = {Items = {}, Selected = default, _ui = self._ui}
         local r = row(56)
+        r.ClipsDescendants = false   -- 👈 CAMBIO 2: el row deja salir el menú
+        r.ZIndex = 5
         local b = make("TextButton", {
             Position = UDim2.fromOffset(7, 5),
             Size = UDim2.new(1, -14, 0, 24),
@@ -660,9 +669,10 @@ function KNI:AddTab(name)
             BorderSizePixel = 0,
             Visible = false,
             ClipsDescendants = true,
-            ZIndex = 20,
+            ZIndex = 50,   -- 👈 CAMBIO 3: ZIndex alto
         }, r)
         corner(menu, 6)
+        stroke(menu, COLORS.Border, 1, 0.2)
         local list = make("ScrollingFrame", {
             Size = UDim2.fromScale(1, 1),
             BackgroundTransparency = 1,
@@ -670,7 +680,7 @@ function KNI:AddTab(name)
             ScrollBarThickness = 3,
             CanvasSize = UDim2.new(0, 0, 0, 0),
             AutomaticCanvasSize = Enum.AutomaticSize.Y,
-            ZIndex = 21,
+            ZIndex = 51,
         }, menu)
         make("UIListLayout", {Padding = UDim.new(0, 2)}, list)
         local open = false
@@ -688,7 +698,7 @@ function KNI:AddTab(name)
                     TextColor3 = COLORS.Text,
                     TextSize = 10,
                     Font = Enum.Font.Gotham,
-                    ZIndex = 22,
+                    ZIndex = 52,
                 }, list)
                 table.insert(self._ui._connections, choice.Activated:Connect(function()
                     control.Selected = tostring(item)
@@ -706,6 +716,14 @@ function KNI:AddTab(name)
 
         function control:Add(item)
             table.insert(control.Items, tostring(item))
+            refresh()
+        end
+
+        -- 👇 NUEVO: cargar muchos items de una sola vez (más rápido)
+        function control:AddBulk(items)
+            for _, item in ipairs(items or {}) do
+                table.insert(control.Items, tostring(item))
+            end
             refresh()
         end
 
@@ -746,7 +764,7 @@ function KNI:AddTab(name)
         table.insert(self._ui._connections, b.Activated:Connect(function()
             open = not open
             menu.Visible = open
-            local height = math.min(#control.Items * 24 + 6, 120)
+            local height = math.min(#control.Items * 24 + 6, 200)
             menu.Size = open and UDim2.new(1, -14, 0, height) or UDim2.new(1, -14, 0, 0)
         end))
 
