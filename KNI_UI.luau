@@ -1,7 +1,8 @@
--- KNI_UI.luau v2.4
--- Base: v2.3 (carga rápida con AddBulk + tabs sin cortar)
--- Cambio: el menú del dropdown se renderiza en un ScreenGui overlay
---         con DisplayOrder 999 → siempre aparece ADELANTE del hub.
+-- KNI_UI.luau v2.5
+-- Librería de interfaz compacta para Roblox.
+-- Base: tu librería original intacta.
+-- Único cambio: el menú del dropdown se crea en un ScreenGui overlay
+-- con DisplayOrder 999, para que aparezca SIEMPRE por encima del hub.
 
 local KNI = {}
 KNI.__index = KNI
@@ -20,9 +21,6 @@ local COLORS = {
     Warn = Color3.fromRGB(240, 180, 80),
 }
 
-local DROPDOWN_MAX_HEIGHT = 200
-local DROPDOWN_ITEM_HEIGHT = 22
-
 local Services = {
     Players = game:GetService("Players"),
     UserInputService = game:GetService("UserInputService"),
@@ -30,18 +28,18 @@ local Services = {
     RunService = game:GetService("RunService"),
 }
 
--- ═══ OVERLAY GLOBAL PARA DROPDOWNS (por encima de todo el hub) ═══
+-- ═══ OVERLAY GLOBAL PARA DROPDOWNS ═══
+-- ScreenGui aparte con DisplayOrder 999 → siempre por encima del hub (que usa 50).
 local DropdownOverlay = nil
 
 local function ensureDropdownOverlay()
     if DropdownOverlay and DropdownOverlay.Parent then return DropdownOverlay end
-    local player = Services.Players.LocalPlayer
-    local pg = player:WaitForChild("PlayerGui")
+    local pg = Services.Players.LocalPlayer:WaitForChild("PlayerGui")
     local screen = Instance.new("ScreenGui")
     screen.Name = "KNI_DropdownOverlay"
     screen.ResetOnSpawn = false
     screen.IgnoreGuiInset = true
-    screen.DisplayOrder = 999   -- 👈 el hub usa 50, este usa 999 → siempre adelante
+    screen.DisplayOrder = 999
     screen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     screen.Parent = pg
     DropdownOverlay = screen
@@ -286,7 +284,6 @@ function KNI.new(options)
     }, root)
     self.Content = content
 
-    -- Rail con ancho 140px para que los nombres entren completos
     local rail = make("ScrollingFrame", {
         Name = "TabRail",
         Position = UDim2.fromOffset(10, 10),
@@ -327,7 +324,7 @@ function KNI.new(options)
             root.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
             -- Reposicionar dropdowns abiertos al mover la ventana
             for _, dd in ipairs(self._openDropdowns) do
-                if dd._reposition then dd:_reposition() end
+                if dd._reposition then dd._reposition() end
             end
         end
     end))
@@ -342,7 +339,7 @@ function KNI.new(options)
         root.Visible = false
         restore.Visible = true
         for _, dd in ipairs(self._openDropdowns) do
-            if dd._close then dd:_close() end
+            if dd._close then dd._close() end
         end
     end)
     topButton("×", -38, Color3.fromRGB(130, 43, 65), function()
@@ -365,7 +362,7 @@ function KNI.new(options)
         for i = #self._openDropdowns, 1, -1 do
             local dd = self._openDropdowns[i]
             if dd ~= except and dd._close then
-                dd:_close()
+                dd._close()
             end
         end
     end
@@ -417,7 +414,7 @@ function KNI:AddTab(name)
         page.Visible = true
         button.BackgroundColor3 = COLORS.Accent2
         button.TextColor3 = COLORS.Text
-        self._ui:_closeAllDropdowns()
+        if self._ui._closeAllDropdowns then self._ui:_closeAllDropdowns() end
     end
     table.insert(self._connections, button.Activated:Connect(activate))
     tab.Button, tab.Page = button, page
@@ -683,22 +680,12 @@ function KNI:AddTab(name)
     end
 
     -- ═══════════════════════════════════════════════════════════════
-    -- DROPDOWN v2.4 — mismo diseño, pero el menú vive en overlay
-    --   • Carga rápida con AddBulk + task.defer
-    --   • El menú se renderiza ADELANTE del hub (DisplayOrder 999)
-    --   • Posición absoluta debajo del botón (o arriba si no cabe)
-    --   • Se cierra al click afuera, al cambiar de tab, al abrir otro
+    -- DROPDOWN — lógica idéntica a tu librería original.
+    -- Único cambio: el menú se parenta al overlay (DisplayOrder 999)
+    -- y se posiciona en coordenadas absolutas debajo del botón.
     -- ═══════════════════════════════════════════════════════════════
     function tab:AddDropdown(text, callback, default)
-        local control = {
-            Items = {},
-            Selected = default,
-            _ui = self._ui,
-            _open = false,
-            _itemButtons = {},
-            _refreshQueued = false,
-        }
-
+        local control = {Items = {}, Selected = default, _ui = self._ui}
         local r = row(56)
         local b = make("TextButton", {
             Position = UDim2.fromOffset(7, 5),
@@ -713,15 +700,14 @@ function KNI:AddTab(name)
         }, r)
         corner(b, 6)
 
-        -- 👇 El menú se parenta al overlay (DisplayOrder 999)
-        local overlay = ensureDropdownOverlay()
+        -- 👇 El menú vive en el overlay, NO en el row
         local menu = make("Frame", {
             BackgroundColor3 = COLORS.Background,
             BorderSizePixel = 0,
             Visible = false,
             ClipsDescendants = true,
             ZIndex = 10,
-        }, overlay)
+        }, ensureDropdownOverlay())
         corner(menu, 6)
         stroke(menu, COLORS.Border, 1, 0.2)
 
@@ -729,86 +715,23 @@ function KNI:AddTab(name)
             Size = UDim2.fromScale(1, 1),
             BackgroundTransparency = 1,
             BorderSizePixel = 0,
-            ScrollBarThickness = 4,
-            ScrollBarImageColor3 = COLORS.Accent,
+            ScrollBarThickness = 3,
             CanvasSize = UDim2.new(0, 0, 0, 0),
             AutomaticCanvasSize = Enum.AutomaticSize.Y,
         }, menu)
-        make("UIListLayout", {
-            Padding = UDim.new(0, 2),
-            SortOrder = Enum.SortOrder.LayoutOrder,
-        }, list)
-        make("UIPadding", {
-            PaddingTop = UDim.new(0, 4),
-            PaddingBottom = UDim.new(0, 4),
-            PaddingLeft = UDim.new(0, 4),
-            PaddingRight = UDim.new(0, 4),
-        }, list)
+        make("UIListLayout", {Padding = UDim.new(0, 2), SortOrder = Enum.SortOrder.LayoutOrder}, list)
 
-        local function refresh()
-            if control._refreshQueued then return end
-            control._refreshQueued = true
-            task.defer(function()
-                control._refreshQueued = false
-                if not menu.Parent then return end
-                for item, btn in pairs(control._itemButtons) do
-                    local exists = false
-                    for _, v in ipairs(control.Items) do
-                        if v == item then exists = true break end
-                    end
-                    if not exists then
-                        btn:Destroy()
-                        control._itemButtons[item] = nil
-                    end
-                end
-                for i, item in ipairs(control.Items) do
-                    local btn = control._itemButtons[item]
-                    if not btn then
-                        btn = make("TextButton", {
-                            Size = UDim2.new(1, 0, 0, DROPDOWN_ITEM_HEIGHT),
-                            BackgroundColor3 = COLORS.Panel2,
-                            BorderSizePixel = 0,
-                            Text = tostring(item),
-                            TextColor3 = COLORS.Text,
-                            TextSize = 10,
-                            Font = Enum.Font.Gotham,
-                            TextXAlignment = Enum.TextXAlignment.Left,
-                            TextTruncate = Enum.TextTruncate.AtEnd,
-                            AutoButtonColor = true,
-                        }, list)
-                        corner(btn, 5)
-                        padding(btn, 6, 6, 0, 0)
-                        table.insert(self._ui._connections, btn.Activated:Connect(function()
-                            control.Selected = tostring(item)
-                            b.Text = tostring(text) .. ": " .. control.Selected .. "  ▾"
-                            control:_close()
-                            if callback then
-                                local ok, err = pcall(callback, control.Selected)
-                                if not ok then warn("[KNI] Dropdown error:", err) end
-                            end
-                        end))
-                        control._itemButtons[item] = btn
-                    end
-                    btn.LayoutOrder = i
-                end
-                if control._open then control:_reposition() end
-            end)
-        end
+        local open = false
 
-        local function computeMenuHeight()
-            local total = #control.Items * (DROPDOWN_ITEM_HEIGHT + 2) + 8
-            return math.min(total, DROPDOWN_MAX_HEIGHT)
-        end
-
-        -- 👇 Posiciona el menú en coordenadas absolutas de pantalla
-        control._reposition = function()
+        -- 👇 Posiciona el menú justo debajo del botón (o arriba si no cabe)
+        local function repositionMenu()
             if not b.Parent then return end
             local btnAbs = b.AbsolutePosition
             local btnSize = b.AbsoluteSize
-            local h = computeMenuHeight()
+            local totalHeight = #control.Items * 24 + 6
+            local h = math.min(totalHeight, 200)
             local cam = workspace.CurrentCamera
             local viewportY = cam and cam.ViewportSize.Y or 600
-
             local y = btnAbs.Y + btnSize.Y + 2
             if y + h > viewportY - 4 then
                 y = btnAbs.Y - h - 2
@@ -816,30 +739,39 @@ function KNI:AddTab(name)
             menu.Position = UDim2.fromOffset(btnAbs.X, y)
             menu.Size = UDim2.fromOffset(btnSize.X, h)
         end
+        control._reposition = repositionMenu
 
-        function control:_open()
-            self._ui:_closeAllDropdowns(control)
-            control._open = true
-            menu.Visible = true
-            control:_reposition()
-            table.insert(self._ui._openDropdowns, control)
-        end
-
-        function control:_close()
-            if not control._open then return end
-            control._open = false
-            menu.Visible = false
-            for i, dd in ipairs(self._ui._openDropdowns) do
-                if dd == control then
-                    table.remove(self._ui._openDropdowns, i)
-                    break
-                end
+        local function refresh()
+            for _, child in ipairs(list:GetChildren()) do
+                if child:IsA("TextButton") then child:Destroy() end
+            end
+            for _, item in ipairs(control.Items) do
+                local choice = make("TextButton", {
+                    Size = UDim2.new(1, -4, 0, 22),
+                    BackgroundColor3 = COLORS.Panel2,
+                    BorderSizePixel = 0,
+                    Text = tostring(item),
+                    TextColor3 = COLORS.Text,
+                    TextSize = 10,
+                    Font = Enum.Font.Gotham,
+                }, list)
+                table.insert(self._ui._connections, choice.Activated:Connect(function()
+                    control.Selected = tostring(item)
+                    b.Text = tostring(text) .. ": " .. control.Selected .. "  ▾"
+                    open = false
+                    menu.Visible = false
+                    if callback then
+                        local ok, err = pcall(callback, control.Selected)
+                        if not ok then warn("[KNI] Dropdown error:", err) end
+                    end
+                end))
             end
         end
 
         function control:Add(item)
             table.insert(control.Items, tostring(item))
             refresh()
+            if open then repositionMenu() end
         end
 
         function control:AddBulk(items)
@@ -847,6 +779,7 @@ function KNI:AddTab(name)
                 table.insert(control.Items, tostring(item))
             end
             refresh()
+            if open then repositionMenu() end
         end
 
         function control:Remove(item)
@@ -857,6 +790,7 @@ function KNI:AddTab(name)
                 end
             end
             refresh()
+            if open then repositionMenu() end
         end
 
         function control:SetOptions(items)
@@ -865,6 +799,7 @@ function KNI:AddTab(name)
                 table.insert(control.Items, tostring(item))
             end
             refresh()
+            if open then repositionMenu() end
         end
 
         function control:Set(value)
@@ -883,16 +818,40 @@ function KNI:AddTab(name)
             refresh()
         end
 
+        function control:_close()
+            if not open then return end
+            open = false
+            menu.Visible = false
+            for i, dd in ipairs(self._ui._openDropdowns) do
+                if dd == control then
+                    table.remove(self._ui._openDropdowns, i)
+                    break
+                end
+            end
+        end
+
+        -- Toggle al hacer click en el botón
         table.insert(self._ui._connections, b.Activated:Connect(function()
-            if control._open then
-                control:_close()
+            open = not open
+            if open then
+                if self._ui:_closeAllDropdowns then self._ui:_closeAllDropdowns(control) end
+                repositionMenu()
+                menu.Visible = true
+                table.insert(self._ui._openDropdowns, control)
             else
-                control:_open()
+                menu.Visible = false
+                for i, dd in ipairs(self._ui._openDropdowns) do
+                    if dd == control then
+                        table.remove(self._ui._openDropdowns, i)
+                        break
+                    end
+                end
             end
         end))
 
+        -- Cerrar al click afuera
         table.insert(self._ui._connections, Services.UserInputService.InputBegan:Connect(function(input)
-            if not control._open then return end
+            if not open then return end
             if input.UserInputType == Enum.UserInputType.MouseButton1
                 or input.UserInputType == Enum.UserInputType.Touch then
                 local pos = input.Position
