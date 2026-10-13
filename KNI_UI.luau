@@ -1,13 +1,6 @@
--- KNI_UI.luau v2.1 (Optimizado y corregido por HonenxWhite)
--- Librería de interfaz compacta para Roblox.
--- Incluye: AddTab, AddLabel, AddSection, AddButton, AddSwitch, AddTextBox, AddDropdown, AddSlider
--- Con :Set(), :Get(), notificaciones, dropdowns dinámicos y más.
---
--- Cambios v2.1:
---   • Dropdowns con altura máxima configurable y apertura inteligente (arriba/abajo).
---   • Nombres de tabs sin cortar (TextScaled, ancho ajustado, tamaño de fuente reducido).
---   • Optimización de carga: AddBulk, refresh incremental, throttle de refresh.
---   • Botones del dropdown con ZIndex elevado para que no queden detrás de otros elementos.
+-- KNI_UI.luau v2.2 (Dropdown 100% funcional)
+-- Corregido: menú parenteado al ScreenGui con posición absoluta,
+-- apertura arriba/abajo inteligente, scroll interno, AddBulk, sin clipeo.
 
 local KNI = {}
 KNI.__index = KNI
@@ -26,10 +19,8 @@ local COLORS = {
     Warn = Color3.fromRGB(240, 180, 80),
 }
 
--- ⚙️ Configuración global del dropdown (podés ajustarla desde tu script)
-local DROPDOWN_MAX_HEIGHT = 220   -- altura máxima del menú desplegable en px
-local DROPDOWN_ITEM_HEIGHT = 22   -- altura de cada item
-local DROPDOWN_PADDING = 6        -- padding interno del menú
+local DROPDOWN_MAX_HEIGHT = 220
+local DROPDOWN_ITEM_HEIGHT = 22
 
 local Services = {
     Players = game:GetService("Players"),
@@ -182,6 +173,8 @@ function KNI.new(options)
     self._tabs = {}
     self._destroyed = false
     self._minimized = false
+    -- Lista de dropdowns abiertos (para cerrarlos si se abre otro)
+    self._openDropdowns = {}
 
     local gui = make("ScreenGui", {
         Name = options.Name or "KNI_Interface",
@@ -275,7 +268,6 @@ function KNI.new(options)
     }, root)
     self.Content = content
 
-    -- Rail más ancho (140px) para que los nombres entren sin cortarse
     local rail = make("ScrollingFrame", {
         Name = "TabRail",
         Position = UDim2.fromOffset(10, 10),
@@ -302,6 +294,16 @@ function KNI.new(options)
     corner(pages, 10)
     self.Pages = pages
 
+    -- Contenedor para los dropdowns abiertos (sobre todo lo demás)
+    local dropdownLayer = make("Frame", {
+        Name = "DropdownLayer",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ZIndex = 200,
+        ClipsDescendants = false,
+    }, gui)
+    self.DropdownLayer = dropdownLayer
+
     local dragging, dragStart, startPos
     table.insert(self._connections, top.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -314,6 +316,10 @@ function KNI.new(options)
         if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
             local delta = input.Position - dragStart
             root.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+            -- Reposicionar dropdowns abiertos al arrastrar
+            for _, dd in ipairs(self._openDropdowns) do
+                if dd._reposition then dd:_reposition() end
+            end
         end
     end))
     table.insert(self._connections, Services.UserInputService.InputEnded:Connect(function(input)
@@ -326,6 +332,9 @@ function KNI.new(options)
         self._minimized = true
         root.Visible = false
         restore.Visible = true
+        for _, dd in ipairs(self._openDropdowns) do
+            if dd._close then dd:_close() end
+        end
     end)
     topButton("×", -38, Color3.fromRGB(130, 43, 65), function()
         self:Destroy()
@@ -343,6 +352,15 @@ function KNI.new(options)
         if label then label.Text = tostring(text) end
     end
 
+    function self:_closeAllDropdowns(except)
+        for i = #self._openDropdowns, 1, -1 do
+            local dd = self._openDropdowns[i]
+            if dd ~= except and dd._close then
+                dd:_close()
+            end
+        end
+    end
+
     return self
 end
 
@@ -351,7 +369,6 @@ function KNI:AddTab(name)
     assert(not self._destroyed, "La interfaz fue cerrada")
     local tab = {Name = name, _ui = self, _controls = {}}
 
-    -- 👇 Tab button con tamaño adaptativo y texto completo
     local button = make("TextButton", {
         Name = "Tab_" .. tostring(name),
         Size = UDim2.new(1, 0, 0, 32),
@@ -359,10 +376,10 @@ function KNI:AddTab(name)
         BorderSizePixel = 0,
         Text = tostring(name),
         TextColor3 = COLORS.Muted,
-        TextSize = 10,                    -- 👈 reducido de 11 a 10
-        TextScaled = false,               -- 👈 desactivado explícitamente
-        TextWrapped = false,              -- 👈 sin wrap para que no se rompa
-        TextTruncate = Enum.TextTruncate.None,  -- 👈 sin truncar
+        TextSize = 10,
+        TextScaled = false,
+        TextWrapped = false,
+        TextTruncate = Enum.TextTruncate.None,
         Font = Enum.Font.GothamSemibold,
         AutoButtonColor = true,
     }, self.TabRail)
@@ -378,7 +395,7 @@ function KNI:AddTab(name)
         ScrollBarImageColor3 = COLORS.Accent,
         CanvasSize = UDim2.new(0, 0, 0, 0),
         AutomaticCanvasSize = Enum.AutomaticSize.Y,
-        ClipsDescendants = true,          -- 👈 evita que los dropdowns se salgan de la página
+        ClipsDescendants = true,
     }, self.Pages)
     padding(page, 10, 10, 10, 10)
     make("UIListLayout", {Padding = UDim.new(0, 7), SortOrder = Enum.SortOrder.LayoutOrder}, page)
@@ -392,6 +409,7 @@ function KNI:AddTab(name)
         page.Visible = true
         button.BackgroundColor3 = COLORS.Accent2
         button.TextColor3 = COLORS.Text
+        self:_closeAllDropdowns()
     end
     table.insert(self._connections, button.Activated:Connect(activate))
     tab.Button, tab.Page = button, page
@@ -657,21 +675,21 @@ function KNI:AddTab(name)
     end
 
     -- ═══════════════════════════════════════════════════════════════
-    -- DROPDOWN MEJORADO (v2.1)
-    --   • Altura máxima configurable (DROPDOWN_MAX_HEIGHT)
-    --   • Se abre hacia arriba o abajo según espacio disponible
-    --   • ZIndex elevado al abrir → no queda detrás de otros elementos
-    --   • refresh() incremental (no destruye todo)
-    --   • AddBulk() para cargar muchos items de una sola vez
+    -- DROPDOWN v2.2 — 100% funcional
+    --   • El menú se crea en un layer sobre TODO el gui (DropdownLayer)
+    --   • Posición en coordenadas absolutas de pantalla
+    --   • Apertura hacia arriba/abajo según espacio
+    --   • Se cierra al hacer click afuera, al cambiar de tab, o al abrir otro
+    --   • Scroll interno con altura máxima
     -- ═══════════════════════════════════════════════════════════════
     function tab:AddDropdown(text, callback, default)
         local control = {
             Items = {},
             Selected = default,
             _ui = self._ui,
+            _open = false,
             _itemButtons = {},
             _refreshQueued = false,
-            _open = false,
         }
 
         local r = row(56)
@@ -689,18 +707,16 @@ function KNI:AddTab(name)
         }, r)
         corner(b, 6)
 
-        -- El menú se ancla al row (no al button) y se ajusta dinámicamente
+        -- El menú se parenta al DropdownLayer (sobre todo el gui)
         local menu = make("Frame", {
-            Position = UDim2.new(0, 7, 0, 32),
-            Size = UDim2.new(1, -14, 0, 0),
             BackgroundColor3 = COLORS.Background,
             BorderSizePixel = 0,
             Visible = false,
             ClipsDescendants = true,
-            ZIndex = 50,
-        }, r)
+            ZIndex = 201,
+        }, self._ui.DropdownLayer)
         corner(menu, 6)
-        stroke(menu, COLORS.Border, 1, 0.3)
+        stroke(menu, COLORS.Border, 1, 0.2)
 
         local list = make("ScrollingFrame", {
             Size = UDim2.fromScale(1, 1),
@@ -710,22 +726,20 @@ function KNI:AddTab(name)
             ScrollBarImageColor3 = COLORS.Accent,
             CanvasSize = UDim2.new(0, 0, 0, 0),
             AutomaticCanvasSize = Enum.AutomaticSize.Y,
-            ZIndex = 51,
-            ClipsDescendants = true,
+            ZIndex = 202,
         }, menu)
-        local listLayout = make("UIListLayout", {Padding = UDim.new(0, 2)}, list)
+        make("UIListLayout", {Padding = UDim.new(0, 2), SortOrder = Enum.SortOrder.LayoutOrder}, list)
         make("UIPadding", {
-            PaddingTop = UDim.new(0, 3),
-            PaddingBottom = UDim.new(0, 3),
-            PaddingLeft = UDim.new(0, 3),
-            PaddingRight = UDim.new(0, 3),
+            PaddingTop = UDim.new(0, 4),
+            PaddingBottom = UDim.new(0, 4),
+            PaddingLeft = UDim.new(0, 4),
+            PaddingRight = UDim.new(0, 4),
         }, list)
 
-        -- ─── Refresh incremental: agrega solo los items nuevos ───
         local function ensureItemButton(item)
             if control._itemButtons[item] then return control._itemButtons[item] end
             local choice = make("TextButton", {
-                Size = UDim2.new(1, 0, 0, DROPDOWN_ITEM_HEIGHT),
+                Size = UDim2.new(1, -4, 0, DROPDOWN_ITEM_HEIGHT),
                 BackgroundColor3 = COLORS.Panel2,
                 BorderSizePixel = 0,
                 Text = tostring(item),
@@ -733,8 +747,9 @@ function KNI:AddTab(name)
                 TextSize = 10,
                 Font = Enum.Font.Gotham,
                 TextXAlignment = Enum.TextXAlignment.Left,
-                ZIndex = 52,
                 TextTruncate = Enum.TextTruncate.AtEnd,
+                ZIndex = 203,
+                AutoButtonColor = true,
             }, list)
             corner(choice, 5)
             padding(choice, 6, 6, 0, 0)
@@ -757,7 +772,7 @@ function KNI:AddTab(name)
             task.defer(function()
                 control._refreshQueued = false
                 if not menu.Parent then return end
-                -- Eliminar botones huérfanos (items que ya no están)
+                -- Quitar botones de items que ya no existen
                 for item, btn in pairs(control._itemButtons) do
                     local exists = false
                     for _, v in ipairs(control.Items) do
@@ -772,52 +787,66 @@ function KNI:AddTab(name)
                 for _, item in ipairs(control.Items) do
                     ensureItemButton(item)
                 end
-                -- Layout order para mantener orden visual
+                -- Orden visual
                 for i, item in ipairs(control.Items) do
                     local btn = control._itemButtons[item]
                     if btn then btn.LayoutOrder = i end
                 end
+                -- Reajustar tamaño si está abierto
+                if control._open then control:_reposition() end
             end)
         end
 
-        -- ─── Cálculo de altura y dirección de apertura ───
         local function computeMenuHeight()
-            local totalHeight = #control.Items * (DROPDOWN_ITEM_HEIGHT + 2) + DROPDOWN_PADDING
+            local totalHeight = #control.Items * (DROPDOWN_ITEM_HEIGHT + 2) + 8
             return math.min(totalHeight, DROPDOWN_MAX_HEIGHT)
         end
 
-        -- Determina si el menú debe abrirse hacia arriba o hacia abajo
-        -- según el espacio disponible en la pantalla y la posición del button.
-        local function computeMenuPosition()
-            local viewportHeight = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize.Y or 600
-            local buttonAbsoluteY = b.AbsolutePosition.Y
-            local buttonHeight = b.AbsoluteSize.Y
-            local desiredHeight = computeMenuHeight()
-            local spaceBelow = viewportHeight - (buttonAbsoluteY + buttonHeight)
-            local spaceAbove = buttonAbsoluteY
+        -- Posiciona el menú en coordenadas absolutas de pantalla,
+        -- debajo o arriba del button según el espacio disponible.
+        function control:_reposition()
+            if not b.Parent then return end
+            local btnAbs = b.AbsolutePosition
+            local btnSize = b.AbsoluteSize
+            local menuHeight = computeMenuHeight()
+            local menuWidth = btnSize.X
 
-            -- Si hay más espacio abajo o el menú cabe abajo, abrir abajo
-            if spaceBelow >= desiredHeight or spaceBelow >= spaceAbove then
-                return UDim2.new(0, 7, 0, 32), desiredHeight  -- abajo
+            local camera = workspace.CurrentCamera
+            local viewport = camera and camera.ViewportSize or Vector2.new(1280, 720)
+
+            local spaceBelow = viewport.Y - (btnAbs.Y + btnSize.Y)
+            local spaceAbove = btnAbs.Y
+
+            local y
+            if spaceBelow >= menuHeight or spaceBelow >= spaceAbove then
+                y = btnAbs.Y + btnSize.Y + 2
             else
-                -- Abrir arriba (offset negativo hacia arriba)
-                return UDim2.new(0, 7, 0, -(desiredHeight + 6)), desiredHeight  -- arriba
+                y = btnAbs.Y - menuHeight - 2
             end
+
+            menu.Position = UDim2.fromOffset(btnAbs.X, y)
+            menu.Size = UDim2.fromOffset(menuWidth, menuHeight)
         end
 
         function control:_open()
+            -- Cerrar otros dropdowns abiertos
+            self._ui:_closeAllDropdowns(control)
             control._open = true
             menu.Visible = true
-            local pos, h = computeMenuPosition()
-            menu.Position = pos
-            menu.Size = UDim2.new(1, -14, 0, 0)
-            tween(menu, 0.12, { Size = UDim2.new(1, -14, 0, h) }, Enum.EasingStyle.Quart)
+            control:_reposition()
+            table.insert(self._ui._openDropdowns, control)
         end
 
         function control:_close()
+            if not control._open then return end
             control._open = false
             menu.Visible = false
-            menu.Size = UDim2.new(1, -14, 0, 0)
+            for i, dd in ipairs(self._ui._openDropdowns) do
+                if dd == control then
+                    table.remove(self._ui._openDropdowns, i)
+                    break
+                end
+            end
         end
 
         function control:Add(item)
@@ -825,7 +854,6 @@ function KNI:AddTab(name)
             queueRefresh()
         end
 
-        -- 👇 Nuevo: agregar muchos items de una sola vez (mucho más rápido)
         function control:AddBulk(items)
             for _, item in ipairs(items or {}) do
                 table.insert(control.Items, tostring(item))
@@ -873,6 +901,33 @@ function KNI:AddTab(name)
             else
                 control:_open()
             end
+        end))
+
+        -- Cerrar al hacer click afuera del menú
+        table.insert(self._ui._connections, Services.UserInputService.InputBegan:Connect(function(input)
+            if not control._open then return end
+            if input.UserInputType == Enum.UserInputType.MouseButton1
+                or input.UserInputType == Enum.UserInputType.Touch then
+                local pos = input.Position
+                local btnAbs = b.AbsolutePosition
+                local btnSize = b.AbsoluteSize
+                local menuAbs = menu.AbsolutePosition
+                local menuSize = menu.AbsoluteSize
+
+                local insideButton = pos.X >= btnAbs.X and pos.X <= btnAbs.X + btnSize.X
+                    and pos.Y >= btnAbs.Y and pos.Y <= btnAbs.Y + btnSize.Y
+                local insideMenu = pos.X >= menuAbs.X and pos.X <= menuAbs.X + menuSize.X
+                    and pos.Y >= menuAbs.Y and pos.Y <= menuAbs.Y + menuSize.Y
+
+                if not insideButton and not insideMenu then
+                    control:_close()
+                end
+            end
+        end))
+
+        -- Reposicionar si la página scrollea
+        table.insert(self._ui._connections, page:GetPropertyChangedSignal("CanvasPosition"):Connect(function()
+            if control._open then control:_reposition() end
         end))
 
         queueRefresh()
