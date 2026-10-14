@@ -662,15 +662,29 @@ function KNI:AddTab(name)
             TextXAlignment = Enum.TextXAlignment.Left,
         }, r)
         corner(b, 6)
+
+        -- 👇 El menú se crea en un ScreenGui overlay con DisplayOrder 999
+        local overlayScreen
+        local existingOverlay = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("KNI_DropdownOverlay")
+        if existingOverlay then
+            overlayScreen = existingOverlay
+        else
+            overlayScreen = Instance.new("ScreenGui")
+            overlayScreen.Name = "KNI_DropdownOverlay"
+            overlayScreen.ResetOnSpawn = false
+            overlayScreen.IgnoreGuiInset = true
+            overlayScreen.DisplayOrder = 999
+            overlayScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+            overlayScreen.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+        end
+
         local menu = make("Frame", {
-            Position = UDim2.new(0, 7, 0, 32),
-            Size = UDim2.new(1, -14, 0, 0),
             BackgroundColor3 = COLORS.Background,
             BorderSizePixel = 0,
             Visible = false,
             ClipsDescendants = true,
-            ZIndex = 20,
-        }, r)
+            ZIndex = 10,
+        }, overlayScreen)
         corner(menu, 6)
         local list = make("ScrollingFrame", {
             Size = UDim2.fromScale(1, 1),
@@ -679,10 +693,25 @@ function KNI:AddTab(name)
             ScrollBarThickness = 3,
             CanvasSize = UDim2.new(0, 0, 0, 0),
             AutomaticCanvasSize = Enum.AutomaticSize.Y,
-            ZIndex = 21,
         }, menu)
         make("UIListLayout", {Padding = UDim.new(0, 2)}, list)
         local open = false
+
+        local function repositionMenu()
+            if not b.Parent then return end
+            local btnAbs = b.AbsolutePosition
+            local btnSize = b.AbsoluteSize
+            local totalHeight = #control.Items * 24 + 6
+            local h = math.min(totalHeight, 200)
+            local cam = workspace.CurrentCamera
+            local viewportY = cam and cam.ViewportSize.Y or 600
+            local y = btnAbs.Y + btnSize.Y + 2
+            if y + h > viewportY - 4 then
+                y = btnAbs.Y - h - 2
+            end
+            menu.Position = UDim2.fromOffset(btnAbs.X, y)
+            menu.Size = UDim2.fromOffset(btnSize.X, h)
+        end
 
         local function refresh()
             for _, child in ipairs(list:GetChildren()) do
@@ -751,13 +780,6 @@ function KNI:AddTab(name)
             b.Text = tostring(text) .. "  ▾"
             refresh()
         end
-
-        table.insert(self._ui._connections, b.Activated:Connect(function()
-            open = not open
-            menu.Visible = open
-            local height = math.min(#control.Items * 24 + 6, 120)
-            menu.Size = open and UDim2.new(1, -14, 0, height) or UDim2.new(1, -14, 0, 0)
-        end))
 
         refresh()
         return control
