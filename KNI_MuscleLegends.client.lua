@@ -847,7 +847,7 @@ function KNI:AddTab(name)
         end
 
         -- Toggle: abre/cierra el menú al hacer click en el botón
-        table.insert(self._ui._connections, b.Activated:Connect(function()
+        table.insert(self._ui._connections, b.MouseButton1Click:Connect(function()
             open = not open
             if open then
                 repositionMenu()
@@ -885,6 +885,11 @@ end)()
 -- ═══ JUGADOR ═══
 local player = game:GetService("Players").LocalPlayer
 
+-- Limpiar overlay viejo de dropdowns (por si se re-ejecuta el script)
+local oldOverlay = player:WaitForChild("PlayerGui"):FindFirstChild("KNI_DropdownOverlay")
+if oldOverlay then
+    oldOverlay:Destroy()
+end
 
 -- ═══ WHITELIST CHECK ═══
 local WhitelistURL = "https://pastebin.com/raw/0Ne1DxbB"
