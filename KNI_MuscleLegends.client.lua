@@ -643,9 +643,74 @@ function KNI:AddTab(name)
                 fill.Size = UDim2.new(rel, 0, 1, 0)
                 if callback then pcall(callback, value) end
             end,
-            Get = function() return currentValue end,
+                        Get = function() return currentValue end,
         }
     end
+
+    function tab:AddDropdown(text, callback, default)
+        local control = {Items = {}, Selected = default, _ui = self._ui}
+        local r = row(56)
+        local b = make("TextButton", {
+            Position = UDim2.fromOffset(7, 5),
+            Size = UDim2.new(1, -14, 0, 24),
+            BackgroundColor3 = COLORS.Background,
+            BorderSizePixel = 0,
+            Text = tostring(text) .. "  ▾",
+            TextColor3 = COLORS.Text,
+            TextSize = 10,
+            Font = Enum.Font.Gotham,
+            TextXAlignment = Enum.TextXAlignment.Left,
+        }, r)
+        corner(b, 6)
+
+        -- Overlay global (se crea una sola vez)
+        local overlayScreen = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("KNI_DropdownOverlay")
+        if not overlayScreen then
+            overlayScreen = Instance.new("ScreenGui")
+            overlayScreen.Name = "KNI_DropdownOverlay"
+            overlayScreen.ResetOnSpawn = false
+            overlayScreen.IgnoreGuiInset = true
+            overlayScreen.DisplayOrder = 999
+            overlayScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+            overlayScreen.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+        end
+
+        local menu = make("Frame", {
+            BackgroundColor3 = COLORS.Background,
+            BorderSizePixel = 0,
+            Visible = false,
+            ClipsDescendants = true,
+            ZIndex = 10,
+        }, overlayScreen)
+        corner(menu, 6)
+        local list = make("ScrollingFrame", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            ScrollBarThickness = 3,
+            CanvasSize = UDim2.new(0, 0, 0, 0),
+            AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        }, menu)
+        make("UIListLayout", {Padding = UDim.new(0, 2)}, list)
+        local open = false
+
+        local function repositionMenu()
+            if not b.Parent then return end
+            local btnAbs = b.AbsolutePosition
+            local btnSize = b.AbsoluteSize
+            local totalHeight = #control.Items * 24 + 6
+            local h = math.min(totalHeight, 200)
+            local cam = workspace.CurrentCamera
+            local viewportY = cam and cam.ViewportSize.Y or 600
+            local y = btnAbs.Y + btnSize.Y + 2
+            if y + h > viewportY - 4 then
+                y = btnAbs.Y - h - 2
+            end
+            menu.Position = UDim2.fromOffset(btnAbs.X, y)
+            menu.Size = UDim2.fromOffset(btnSize.X, h)
+        end
+
+        local function refresh()
 
     function tab:AddDropdown(text, callback, default)
         local control = {Items = {}, Selected = default, _ui = self._ui}
@@ -780,6 +845,17 @@ function KNI:AddTab(name)
             b.Text = tostring(text) .. "  ▾"
             refresh()
         end
+
+        -- Toggle: abre/cierra el menú al hacer click en el botón
+        table.insert(self._ui._connections, b.Activated:Connect(function()
+            open = not open
+            if open then
+                repositionMenu()
+                menu.Visible = true
+            else
+                menu.Visible = false
+            end
+        end))
 
         refresh()
         return control
