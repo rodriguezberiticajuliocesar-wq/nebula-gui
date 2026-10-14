@@ -4,6 +4,9 @@
     Made by Honen / cyanam1 / White
 ]]
 
+-- ═══ CARGAR KNI_UI (embebido) ═══
+local KNI = (function()
+
 -- KNI_UI.luau v2.0
 -- Librería de interfaz compacta para Roblox.
 -- Incluye: AddTab, AddLabel, AddSection, AddButton, AddSwitch, AddTextBox, AddDropdown, AddSlider
@@ -776,6 +779,13 @@ function KNI:Destroy()
     table.clear(self._connections)
     if self.Gui then self.Gui:Destroy() end
 end
+
+return KNI
+end)()
+
+
+-- ═══ JUGADOR ═══
+local player = game:GetService("Players").LocalPlayer
 
 
 -- ═══ WHITELIST CHECK ═══
