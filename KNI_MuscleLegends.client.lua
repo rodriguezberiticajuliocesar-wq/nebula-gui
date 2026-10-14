@@ -710,9 +710,6 @@ function KNI:AddTab(name)
             menu.Size = UDim2.fromOffset(btnSize.X, h)
         end
 
-        local function refresh()
-
-    function tab:AddDropdown(text, callback, default)
         local control = {Items = {}, Selected = default, _ui = self._ui}
         local r = row(56)
         local b = make("TextButton", {
