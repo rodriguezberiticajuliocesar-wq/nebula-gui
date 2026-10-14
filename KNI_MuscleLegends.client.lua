@@ -6,7 +6,7 @@
 
 -- ═══ CARGAR KNI_UI ═══
 local KNI_URL = "https://raw.githubusercontent.com/rodriguezberiticajuliocesar-wq/nebula-gui/main/KNI_UI.luau"
-local KNI = loadstring(game:HttpGet(KNI_URL))()
+local KNI = loadstring(game:HttpGet(KNI_URL, true))()
 
 if not KNI then
     warn("[HonenxWhite] Error al cargar KNI_UI")
